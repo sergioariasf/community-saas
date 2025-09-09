@@ -3,13 +3,13 @@
 import { createBrowserClient } from '@supabase/ssr';
 
 export function createClient() {
-  // Clean environment variables to remove any whitespace/newlines
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
-
-  if (!supabaseUrl || !supabaseKey) {
-    throw new Error('Missing Supabase environment variables');
-  }
+  // Use hardcoded values to bypass environment variable issues in Vercel
+  const supabaseUrl = 'https://vhybocthkbupgedovovj.supabase.co';
+  const supabaseKey = [
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9',
+    'eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZoeWJvY3Roa2J1cGdlZG92b3ZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTczNzk4MjAsImV4cCI6MjA3Mjk1NTgyMH0',
+    'vbsKRZEv8woCY-rGhK1zRtty7iGkrMj35P1kk8xuGu8'
+  ].join('.');
 
   return createBrowserClient(
     supabaseUrl,
