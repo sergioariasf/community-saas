@@ -11,7 +11,8 @@ import {
   BarChart3, 
   Settings,
   Shield,
-  ExternalLink
+  ExternalLink,
+  type LucideIcon
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePermissions } from '@/hooks/usePermissions';
@@ -26,7 +27,7 @@ const QuickActionCard = ({
 }: {
   title: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
   href: string;
   buttonText: string;
   badge?: string;

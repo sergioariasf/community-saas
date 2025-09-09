@@ -6,12 +6,13 @@ import { EditUserForm } from './EditUserForm';
 import { notFound } from 'next/navigation';
 
 interface EditUserPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export default async function EditUserPage({ params }: EditUserPageProps) {
+  const { id } = await params;
   return (
     <div className="space-y-8">
       <div>
@@ -22,7 +23,7 @@ export default async function EditUserPage({ params }: EditUserPageProps) {
       </div>
 
       <Suspense fallback={<div>Cargando formulario...</div>}>
-        <EditUserPageContent userId={params.id} />
+        <EditUserPageContent userId={id} />
       </Suspense>
     </div>
   );

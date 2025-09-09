@@ -145,8 +145,10 @@ export const CreateUserForm = ({ communities }: CreateUserFormProps) => {
                 type="email"
                 placeholder="usuario@ejemplo.com"
                 {...register('email')}
-                error={errors.email?.message}
               />
+              {errors.email && (
+                <p className="text-sm text-red-600">{errors.email.message}</p>
+              )}
             </div>
 
             {/* Password */}
@@ -157,8 +159,10 @@ export const CreateUserForm = ({ communities }: CreateUserFormProps) => {
                 type="password"
                 placeholder="Mínimo 6 caracteres"
                 {...register('password')}
-                error={errors.password?.message}
               />
+              {errors.password && (
+                <p className="text-sm text-red-600">{errors.password.message}</p>
+              )}
             </div>
           </CardContent>
         </Card>
