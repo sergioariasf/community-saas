@@ -21,7 +21,7 @@ export const getCommunity = async (
   // Verificar que el usuario puede acceder a esta comunidad
   await requirePermission('resident', id);
 
-  const supabase = createSupabaseClient();
+  const supabase = await createSupabaseClient();
   const { data, error } = await supabase
     .from('communities')
     .select('*')
@@ -58,7 +58,7 @@ export const insertCommunityAction = authActionClient
     // 🔐 Solo ADMIN puede crear comunidades
     await requirePermission('admin');
 
-    const supabaseClient = createSupabaseClient();
+    const supabaseClient = await createSupabaseClient();
     const { data, error } = await supabaseClient
       .from('communities')
       .insert(parsedInput)
@@ -81,7 +81,7 @@ export const updateCommunityAction = authActionClient
     // 🔐 Solo ADMIN o MANAGER de esta comunidad puede editar
     await requirePermission('manager', id);
 
-    const supabaseClient = createSupabaseClient();
+    const supabaseClient = await createSupabaseClient();
     const { data, error } = await supabaseClient
       .from('communities')
       .update(updateData)
@@ -108,7 +108,7 @@ export const deleteCommunityAction = authActionClient
     // 🔐 Solo ADMIN puede eliminar comunidades (operación crítica)
     await requirePermission('admin');
 
-    const supabaseClient = createSupabaseClient();
+    const supabaseClient = await createSupabaseClient();
     const { error } = await supabaseClient
       .from('communities')
       .delete()

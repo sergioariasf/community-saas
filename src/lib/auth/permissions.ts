@@ -19,7 +19,7 @@ export interface UserPermissions {
 
 // 🔐 Obtener permisos del usuario actual (server-side)
 export async function getCurrentUserPermissions(): Promise<UserPermissions | null> {
-  const supabase = createSupabaseClient();
+  const supabase = await createSupabaseClient();
   
   // Obtener usuario actual
   const { data: { user }, error: userError } = await supabase.auth.getUser();
@@ -136,7 +136,7 @@ export async function getAccessibleCommunities() {
   
   if (!permissions) return [];
 
-  const supabase = createSupabaseClient();
+  const supabase = await createSupabaseClient();
 
   // Admin ve todas las comunidades
   if (permissions.isAdmin) {

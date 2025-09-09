@@ -11,7 +11,7 @@ import type { UserRole } from '@/lib/auth/permissions';
 export const getAllUsers = async () => {
   await requirePermission('admin');
 
-  const supabase = createSupabaseClient();
+  const supabase = await createSupabaseClient();
   
   try {
     // 1. Intentar obtener TODOS los usuarios de auth.users
@@ -96,7 +96,7 @@ export const createUserAction = authActionClient
     await requirePermission('admin');
     
     const { email, password, roles } = parsedInput;
-    const supabase = createSupabaseClient();
+    const supabase = await createSupabaseClient();
 
     // 1. Crear usuario en Supabase Auth
     const { data: authUser, error: authError } = await supabase.auth.admin.createUser({
@@ -154,7 +154,7 @@ export const updateUserRolesAction = authActionClient
     await requirePermission('admin');
     
     const { userId, roles } = parsedInput;
-    const supabase = createSupabaseClient();
+    const supabase = await createSupabaseClient();
 
     // 1. Eliminar roles existentes
     const { error: deleteError } = await supabase
@@ -199,7 +199,7 @@ export const deleteUserAction = authActionClient
     await requirePermission('admin');
     
     const { userId } = parsedInput;
-    const supabase = createSupabaseClient();
+    const supabase = await createSupabaseClient();
 
     // 1. Eliminar roles del usuario
     const { error: rolesError } = await supabase
@@ -226,7 +226,7 @@ export const deleteUserAction = authActionClient
 export const getUsersByCommunity = async (communityId: string) => {
   await requirePermission('manager', communityId);
 
-  const supabase = createSupabaseClient();
+  const supabase = await createSupabaseClient();
   
   const { data: users, error } = await supabase
     .from('user_roles')
