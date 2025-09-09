@@ -5,9 +5,17 @@ import { cookies, type UnsafeUnwrappedCookies } from 'next/headers';
 export const createSupabaseClient = async () => {
   const cookieStore = (await cookies()) as unknown as UnsafeUnwrappedCookies;
 
+  // Clean environment variables to remove any whitespace/newlines
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL?.trim();
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY?.trim();
+
+  if (!supabaseUrl || !supabaseKey) {
+    throw new Error('Missing Supabase environment variables');
+  }
+
   return createServerClient<Database>(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    supabaseUrl,
+    supabaseKey,
     {
       cookies: {
         getAll() {
