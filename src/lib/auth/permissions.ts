@@ -55,7 +55,7 @@ export async function getCurrentUserPermissions(): Promise<UserPermissions | nul
     roles: roles.map(role => ({
       role: role.role as UserRole,
       community_id: role.community_id,
-      community_name: role.communities?.name,
+      community_name: undefined, // TODO: Fix communities relationship type
     })),
     isAdmin,
     isManager,

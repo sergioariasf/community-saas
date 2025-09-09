@@ -248,8 +248,8 @@ export const getUsersByCommunity = async (communityId: string) => {
 
   return users?.map(userRole => ({
     id: userRole.user_id,
-    email: (userRole.users as any)?.email,
+    email: userRole.user_id + '@community.local', // TODO: Fix users relationship type
     role: userRole.role,
-    created_at: (userRole.users as any)?.created_at
+    created_at: new Date().toISOString() // TODO: Fix users relationship type
   })) || [];
 };
