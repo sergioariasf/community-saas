@@ -1,15 +1,17 @@
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { T } from '@/components/ui/Typography';
 import { getAllItems } from '@/data/anon/items';
 import { getAllPrivateItems } from '@/data/anon/privateItems';
-import { PlusCircle } from 'lucide-react';
+import { PlusCircle, Users, Building2, BarChart3, Settings } from 'lucide-react';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import { ItemsList } from '../../ItemsList';
 import { PrivateItemsList } from '../../PrivateItemsList';
+import { PermissionsDebug } from '@/components/PermissionsDebug';
+import { AdminQuickActions } from './AdminQuickActions';
 
 export const dynamic = 'force-dynamic';
 
@@ -62,6 +64,14 @@ export default function DashboardPage() {
           </Button>
         </Link>
       </div>
+
+      {/* 🏗️ PANEL DE ADMINISTRACIÓN - Solo admins */}
+      <Suspense fallback={<div>Cargando acciones...</div>}>
+        <AdminQuickActions />
+      </Suspense>
+
+      {/* 🧪 COMPONENTE DE PRUEBA - Solo desarrollo */}
+      <PermissionsDebug />
 
       <Tabs defaultValue="private" className="w-full">
         <TabsList className="mb-4">

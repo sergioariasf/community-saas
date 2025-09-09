@@ -95,6 +95,7 @@
     "next-themes": "^0.2.1",
     "npm-check-updates": "^16.14.20",
     "path-to-regexp": "^8.2.0",
+    "pg": "^8.16.3",
     "postcss": "^8.5.3",
     "prettier": "^2.8.8",
     "react": "19.1.0",

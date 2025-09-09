@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { getCachedLoggedInVerifiedSupabaseUser } from '@/rsc-data/supabase';
-import { Home, List, Lock, PlusCircle, User } from 'lucide-react';
+import { Home, List, Lock, PlusCircle, User, Building2 } from 'lucide-react';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
@@ -32,6 +32,13 @@ export default async function Layout({ children }: { children: ReactNode }) {
             >
               <Home className="h-4 w-4" />
               <span>Dashboard</span>
+            </Link>
+            <Link
+              href="/communities"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground flex items-center gap-1"
+            >
+              <Building2 className="h-4 w-4" />
+              <span>Comunidades</span>
             </Link>
             <Link
               href="/items"
