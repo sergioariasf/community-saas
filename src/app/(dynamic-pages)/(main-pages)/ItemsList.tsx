@@ -71,9 +71,9 @@ export const ItemsList = ({ items, showActions = true }: ItemsListProps) => {
                     )}
                   </TableCell>
                   <TableCell className="hidden md:table-cell text-muted-foreground">
-                    {item.description.length > 100
+                    {item.description && item.description.length > 100
                       ? `${item.description.slice(0, 100)}...`
-                      : item.description}
+                      : item.description || 'Sin descripción'}
                   </TableCell>
                   <TableCell className="text-right">
                     <Link href={`/item/${item.id}`}>

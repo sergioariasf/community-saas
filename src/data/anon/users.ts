@@ -65,7 +65,7 @@ export const getAllUsers = async () => {
         roles: roles.map(role => ({
           role: role.role,
           community_id: role.community_id,
-          community_name: role.communities?.name
+          community_name: undefined // TODO: Fix communities relationship type
         }))
       };
     });
@@ -248,8 +248,8 @@ export const getUsersByCommunity = async (communityId: string) => {
 
   return users?.map(userRole => ({
     id: userRole.user_id,
-    email: userRole.users?.email,
+    email: (userRole.users as any)?.email,
     role: userRole.role,
-    created_at: userRole.users?.created_at
+    created_at: (userRole.users as any)?.created_at
   })) || [];
 };
