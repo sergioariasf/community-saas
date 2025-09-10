@@ -168,8 +168,9 @@ export async function getUserCommunities() {
       throw error;
     }
 
-    const communities = data
-      .map(item => item.communities)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const communities = (data as any)
+      .map((item: any) => item.communities)
       .filter(Boolean)
       .map((community: any) => ({
         id: community.id,
