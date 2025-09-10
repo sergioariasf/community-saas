@@ -1,0 +1,259 @@
+{
+  "agent_name": "deployment-master",
+  "description": "Specialized deployment agent for Next.js 15 + Supabase production deployments with multi-tenant architecture expertise",
+  "tools": ["Bash", "Read", "Write", "Edit", "WebFetch"],
+  "expertise": [
+    "vercel_deployment",
+    "nextjs_15_production_optimization",
+    "supabase_production_configuration",
+    "environment_variables_management",
+    "database_migration_production",
+    "multi_tenant_production_validation",
+    "performance_monitoring",
+    "rollback_procedures"
+  ],
+  "deployment_phases": {
+    "phase_1": {
+      "name": "pre_deployment_preparation",
+      "tasks": [
+        "validate_local_build",
+        "check_environment_variables", 
+        "verify_database_migrations",
+        "test_multi_tenant_isolation",
+        "validate_rls_policies_production",
+        "check_nextjs_15_compatibility"
+      ]
+    },
+    "phase_2": {
+      "name": "production_deployment",
+      "deployment_strategy": "github_vercel_integration",
+      "workflow": [
+        "commit_all_changes_build_fixes_and_features",
+        "push_to_github_main_branch", 
+        "vercel_auto_deploy_triggered_by_push"
+      ],
+      "traditional_tasks_if_not_connected": [
+        "configure_vercel_project",
+        "setup_environment_variables", 
+        "deploy_to_vercel",
+        "run_production_migrations",
+        "verify_supabase_connection"
+      ],
+      "git_integration_flow": {
+        "step_1": {
+          "action": "git_commit",
+          "description": "Commit all pending changes with descriptive message",
+          "includes": ["build_fixes", "new_features", "typescript_improvements", "database_migrations"]
+        },
+        "step_2": {
+          "action": "git_push", 
+          "target": "origin main",
+          "description": "Push to GitHub main branch to trigger automatic deployment"
+        },
+        "step_3": {
+          "action": "vercel_auto_deploy",
+          "trigger": "github_webhook",
+          "description": "Vercel automatically detects push and starts build process"
+        }
+      }
+    },
+    "phase_3": {
+      "name": "post_deployment_validation",
+      "tasks": [
+        "health_check_endpoints",
+        "test_authentication_flow",
+        "validate_multi_tenant_data_isolation", 
+        "performance_benchmarking",
+        "security_validation",
+        "create_rollback_plan"
+      ]
+    }
+  },
+  "project_context": {
+    "stack": "Next.js 15 + Supabase + TypeScript + TailwindCSS",
+    "architecture": "multi_tenant_saas",
+    "database": "PostgreSQL with RLS (Row Level Security)",
+    "auth": "Supabase Auth with custom user_roles",
+    "key_features": [
+      "organizations_management",
+      "communities_crud", 
+      "incidents_tracking",
+      "role_based_permissions"
+    ],
+    "current_state": "fully_functional_local_development"
+  },
+  "deployment_checklist": {
+    "pre_deploy": [
+      "✅ Multi-tenant architecture implemented with organizations",
+      "✅ RLS policies working correctly",
+      "✅ User roles and permissions system functional", 
+      "✅ CRUD operations include organization_id",
+      "✅ Local testing with ui-guardian methodology completed",
+      "🔲 Production environment variables configured",
+      "🔲 Database migrations ready for production",
+      "🔲 Vercel project configured"
+    ],
+    "deploy": [
+      "🔲 Build successful on Vercel",
+      "🔲 Environment variables set correctly",
+      "🔲 Database connection established", 
+      "🔲 Migrations applied successfully"
+    ],
+    "post_deploy": [
+      "🔲 Login flow working",
+      "🔲 Multi-tenant data isolation verified",
+      "🔲 Communities CRUD functional",
+      "🔲 Incidents system working",
+      "🔲 Performance acceptable",
+      "🔲 No console errors in production"
+    ]
+  },
+  "environment_variables": {
+    "source_file": ".env.local",
+    "note": "All required environment variables can be found in .env.local file in project root",
+    "required_for_production": [
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY", 
+      "SUPABASE_PROJECT_REF"
+    ],
+    "production_adjustments": [
+      "NEXT_PUBLIC_APP_URL: Update from localhost:3001 to production domain",
+      "PORT: Remove or adjust for Vercel (handles automatically)"
+    ],
+    "optional_for_monitoring": [
+      "VERCEL_URL",
+      "SENTRY_DSN",
+      "ANALYTICS_ID"
+    ]
+  },
+  "rollback_strategy": {
+    "automatic_triggers": [
+      "build_failure",
+      "database_connection_failure",
+      "critical_functionality_broken"
+    ],
+    "manual_triggers": [
+      "performance_degradation",
+      "security_issues",
+      "user_reported_critical_bugs"
+    ],
+    "rollback_steps": [
+      "revert_to_previous_vercel_deployment",
+      "restore_database_if_needed",
+      "update_dns_if_custom_domain",
+      "notify_users_of_maintenance"
+    ]
+  },
+  "validation_tests": {
+    "authentication": {
+      "test_login": "sergioariasf@gmail.com / Elpato_46",
+      "verify_dashboard_access": true,
+      "check_role_permissions": true
+    },
+    "multi_tenancy": {
+      "verify_organization_isolation": true,
+      "test_cross_tenant_data_access": false,
+      "validate_rls_policies": true
+    },
+    "core_functionality": {
+      "communities_crud": true,
+      "incidents_creation": true,
+      "user_management": true
+    },
+    "performance": {
+      "page_load_times": "< 2 seconds",
+      "api_response_times": "< 500ms",
+      "lighthouse_score": "> 80"
+    }
+  },
+  "success_criteria": {
+    "deployment_successful": [
+      "application_accessible_at_production_url",
+      "authentication_working",
+      "multi_tenant_isolation_verified",
+      "no_critical_console_errors",
+      "core_features_functional"
+    ],
+    "performance_acceptable": [
+      "first_contentful_paint < 2s",
+      "time_to_interactive < 3s", 
+      "cumulative_layout_shift < 0.1"
+    ]
+  },
+  "github_vercel_workflow": {
+    "description": "Automated deployment workflow using GitHub-Vercel integration",
+    "prerequisites": [
+      "Repository connected to Vercel via GitHub integration",
+      "Auto-deploy enabled for main branch",
+      "Environment variables configured in Vercel dashboard"
+    ],
+    "deployment_steps": {
+      "step_1_commit": {
+        "command": "git add .",
+        "description": "Stage all changes for commit",
+        "includes": ["build_fixes", "new_features", "TypeScript_improvements", "database_migrations"]
+      },
+      "step_2_commit": {
+        "command": "git commit -m 'descriptive message with deployment info'",
+        "description": "Commit with detailed message including deployment readiness indicators"
+      },
+      "step_3_push": {
+        "command": "git push origin main",
+        "description": "Push to main branch triggers automatic Vercel deployment"
+      }
+    },
+    "automatic_triggers": [
+      "Vercel webhook detects GitHub push",
+      "Build environment variables loaded from Vercel config",
+      "Next.js build process executed",
+      "Production deployment if build succeeds"
+    ]
+  },
+  "monitoring_setup": {
+    "vercel_analytics": true,
+    "vercel_speed_insights": true,
+    "supabase_dashboard_monitoring": true,
+    "custom_health_endpoints": [
+      "/api/health",
+      "/api/db-health"
+    ]
+  },
+  "documentation_requirements": {
+    "create_deployment_guide": true,
+    "document_environment_setup": true,
+    "record_performance_baselines": true,
+    "create_troubleshooting_guide": true,
+    "update_project_readme": true
+  },
+  "typescript_best_practices": {
+    "rule_enforcement": "@typescript-eslint/no-explicit-any",
+    "deployment_requirement": "Build must pass without TypeScript errors for production deployment",
+    "code_quality_standards": {
+      "avoid_any_type": {
+        "description": "Never use 'any' type - use specific interfaces or types",
+        "bad_example": "function processData(data: any) { ... }",
+        "good_example": "interface UserProfile { id: number; name: string; } function processData(data: UserProfile) { ... }"
+      },
+      "flexible_typing": {
+        "description": "Use generic types when structure is partially unknown",
+        "example": "interface IApiResponse<T = unknown> { data: T; status: number; }"
+      },
+      "exceptional_cases": {
+        "description": "If 'any' is absolutely necessary, disable rule with comment explaining why",
+        "example": "// eslint-disable-next-line @typescript-eslint/no-explicit-any\nconst result: any = externalLibrary.fetch(); // Third-party lib without types"
+      }
+    },
+    "pre_deployment_checklist": [
+      "✅ No TypeScript compilation errors",
+      "✅ All 'any' types replaced with proper interfaces",
+      "✅ ESLint warnings reviewed and addressed",
+      "✅ Build passes successfully with strict type checking"
+    ],
+    "benefits": [
+      "Prevents runtime errors in production",
+      "Improves code maintainability and readability", 
+      "Enables better IDE support and auto-completion",
+      "Communicates good development practices to team"
+    ]
+  }
+}

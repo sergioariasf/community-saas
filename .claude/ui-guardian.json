@@ -1,0 +1,175 @@
+{
+  "name": "ui-guardian",
+  "description": "UI/UX Expert Agent with Playwright automation for interface validation and testing",
+  "mcpServers": {
+    "playwright": {
+      "command": "mcp-server-playwright",
+      "args": ["--browser", "chrome", "--host", "localhost", "--viewport-size", "1280,720"],
+      "env": {
+        "BASE_URL": "http://localhost:3001"
+      }
+    }
+  },
+  "capabilities": [
+    "ui_automation",
+    "visual_testing",
+    "error_detection",
+    "user_flow_validation",
+    "accessibility_testing",
+    "performance_monitoring",
+    "regression_testing",
+    "component_consistency_validation"
+  ],
+  "testing_framework": {
+    "browser": "chromium",
+    "viewport": { "width": 1280, "height": 720 },
+    "timeout": 30000,
+    "screenshots": true,
+    "videos": true
+  },
+  "validation_criteria": {
+    "design_system": {
+      "components": ["Button", "Card", "Input", "Select", "Badge", "Dialog"],
+      "colors": {
+        "primary": "#0f172a",
+        "secondary": "#64748b", 
+        "accent": "#3b82f6",
+        "destructive": "#ef4444"
+      },
+      "typography": {
+        "headings": ["text-3xl", "text-2xl", "text-xl", "text-lg"],
+        "body": ["text-base", "text-sm"],
+        "font_family": "Inter, system-ui, sans-serif"
+      },
+      "spacing": {
+        "container": "container mx-auto",
+        "sections": "space-y-6",
+        "cards": "p-6"
+      }
+    },
+    "critical_flows": [
+      "authentication_flow",
+      "community_management",
+      "incident_creation",
+      "incident_status_updates",
+      "user_role_management"
+    ],
+    "accessibility": {
+      "wcag_level": "AA",
+      "keyboard_navigation": true,
+      "screen_reader_support": true,
+      "color_contrast": "4.5:1"
+    }
+  },
+  "context": {
+    "project": "Community SaaS",
+    "stack": "Next.js 15 + Supabase + TypeScript + TailwindCSS + ShadCN/UI",
+    "auth": {
+      "test_user": "sergioariasf@gmail.com",
+      "test_password": "Elpato_46"
+    },
+    "base_url": "http://localhost:3001",
+    "key_pages": [
+      "/login",
+      "/dashboard", 
+      "/communities",
+      "/incidents",
+      "/users"
+    ]
+  },
+  "file_organization": {
+    "tests_path": "e2e/ui-tests/",
+    "screenshots_path": "e2e/screenshots/",
+    "reports_path": "e2e/reports/",
+    "instructions_path": "e2e/instructions/",
+    "test_management": {
+      "keep_successful_tests": true,
+      "remove_obsolete_tests": true,
+      "naming_convention": "test-{feature}-{version}.js",
+      "useful_patterns": [
+        "test-incident-creation-v2.js - Successful form analysis and submission testing",
+        "test-incident-creation.js - Basic incident flow testing"
+      ]
+    }
+  },
+  "rules": [
+    "WHEN Claude Code doesn't recognize ui-guardian agent, use direct Playwright scripts",
+    "ALWAYS follow server lifecycle management: kill zombies → verify health → restart clean",
+    "ALWAYS store useful tests in e2e/ui-tests/ directory following naming convention",
+    "STEP 1: Kill any zombie Next.js processes (pkill -f 'next-server')",
+    "STEP 2: Verify port 3001 is free (ss -tlnp | grep 3001)",  
+    "STEP 3: Start clean server (npm run dev in background)",
+    "STEP 4: Health check (curl -I http://localhost:3001)",
+    "STEP 5: Run Playwright verification (node e2e/ui-tests/test-{feature}-v{version}.js)",
+    "CAPTURE screenshots only when issues are found",
+    "VALIDATE critical flows: login → dashboard → communities → incidents"
+  ],
+  "automation_patterns": {
+    "page_interaction": [
+      "navigate_to_page",
+      "wait_for_element",
+      "click_element", 
+      "fill_form_field",
+      "select_dropdown_option",
+      "upload_file",
+      "validate_text_content"
+    ],
+    "validation_checks": [
+      "element_visibility",
+      "element_styling", 
+      "responsive_layout",
+      "error_states",
+      "loading_states",
+      "success_feedback"
+    ],
+    "screenshot_scenarios": [
+      "initial_page_load",
+      "after_user_interaction",
+      "error_states",
+      "success_states",
+      "mobile_responsive",
+      "dark_mode_if_applicable"
+    ]
+  },
+  "successful_workflow": {
+    "description": "Proven UI testing workflow that works even when MCP doesn't connect",
+    "steps": [
+      {
+        "step": 1,
+        "action": "server_cleanup",
+        "commands": [
+          "pkill -f 'next-server'",
+          "ss -tlnp | grep 3001"
+        ],
+        "expected": "Port 3001 should be free"
+      },
+      {
+        "step": 2, 
+        "action": "start_server",
+        "commands": [
+          "npm run dev (in background)",
+          "wait for 'Ready in XXXXms' message"
+        ],
+        "expected": "Server running on localhost:3001"
+      },
+      {
+        "step": 3,
+        "action": "health_check", 
+        "commands": [
+          "curl -I http://localhost:3001"
+        ],
+        "expected": "HTTP/1.1 200 OK response"
+      },
+      {
+        "step": 4,
+        "action": "playwright_verification",
+        "commands": [
+          "node e2e/ui-tests/test-{feature}-v{version}.js"
+        ],
+        "expected": "✅ SUCCESS: Feature working correctly"
+      }
+    ],
+    "fallback_strategy": "If ui-guardian agent not available, use general-purpose agent with these steps",
+    "success_pattern": "✅ Login → ✅ Dashboard → ✅ Communities → ✅ Incidents"
+  }
+}

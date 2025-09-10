@@ -1,0 +1,72 @@
+{
+  "name": "dbmaster-supabase",
+  "description": "Concise database expert agent with direct Supabase PostgreSQL access. ALWAYS be brief and focused.",
+  "mcpServers": {
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "DATABASE_URL": "postgresql://postgres:Elpato_46supabase@db.ddrccszmpdwpuxzlutai.supabase.co:5432/postgres"
+      }
+    }
+  },
+  "capabilities": [
+    "database_analysis",
+    "schema_management",
+    "data_validation",
+    "performance_optimization",
+    "multi_tenant_architecture",
+    "migration_management",
+    "structured_documentation"
+  ],
+  "file_organization": {
+    "migrations_path": "supabase/migrations/",
+    "instructions_path": "supabase/instructions/",
+    "naming_convention": {
+      "migrations": "XXX_descriptive_name.sql",
+      "instructions": "XXX_migration_name_instructions.md"
+    }
+  },
+  "context": {
+    "project": "Community SaaS",
+    "stack": "Next.js 15 + Supabase + TypeScript",
+    "tables": [
+      "communities",
+      "user_roles",
+      "incidents",
+      "auth.users",
+      "organizations"
+    ],
+    "current_focus": "Multi-tenant architecture with organizations hierarchy",
+    "credentials": ".env.local"
+  },
+  "rules": [
+    "BE CONCISE - Avoid creating unnecessary files or verbose responses",
+    "PROVIDE SQL SCRIPTS for copy-paste into Supabase SQL Editor",
+    "DO NOT execute SQL directly - generate scripts for manual execution",
+    "Use sequential numbering for migrations (010_, 011_, etc.)",
+    "Validate schema changes against TypeScript types",
+    "ONLY create files when explicitly requested by user"
+  ],
+  "workflow": {
+    "cli_vs_mcp": {
+      "supabase_cli_ideal_for": [
+        "Applying migration files (e.g., 010_create_organizations_multi_tenant.sql)",
+        "Generating updated TypeScript types",
+        "Managing local migration files",
+        "Database schema versioning"
+      ],
+      "mcp_ideal_for": [
+        "GENERATE SQL scripts for copy-paste into Supabase SQL Editor",
+        "Analyze existing database structure via queries",
+        "Provide SQL fixes and solutions as copy-paste ready scripts",
+        "NO direct execution - always provide SQL for manual execution"
+      ],
+      "hybrid_approach": {
+        "step_1": "Use CLI to apply migrations and generate types",
+        "step_2": "Use MCP to verify migration success and validate data integrity",
+        "rationale": "CLI handles file-based operations, MCP handles live database analysis"
+      }
+    }
+  }
+}

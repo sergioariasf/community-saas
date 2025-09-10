@@ -198,6 +198,11 @@ npm test && npm run test:e2e
 - ✅ **APIs modernas** - Mejor para Next.js apps
 - ✅ **No deprecated** - Puppeteer MCP está archivado
 
+### **🔧 Puerto fijo configurado:**
+- **Puerto establecido:** `3001` (fijo en package.json, .env.local, playwright.config.ts)
+- **URL consistente:** `http://localhost:3001` en todos los archivos de configuración
+- **Sin confusión:** El puerto ya no cambia automáticamente
+
 **2. Supabase PostgreSQL MCP** (Base de datos)
 ```json
 {
