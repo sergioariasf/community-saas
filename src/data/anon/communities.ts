@@ -168,11 +168,18 @@ export async function getUserCommunities() {
       throw error;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const communities = (data as any)
-      .map((item: any) => item.communities)
-      .filter(Boolean)
-      .map((community: any) => ({
+    // Use proper typing for Supabase query response with unknown first
+    interface SupabaseUserRoleResponse {
+      communities: {
+        id: string;
+        name: string;
+      } | null;
+    }
+    
+    const communities = (data as unknown as SupabaseUserRoleResponse[])
+      .map(item => item.communities)
+      .filter((community): community is { id: string; name: string } => Boolean(community))
+      .map(community => ({
         id: community.id,
         name: community.name
       }));
@@ -208,11 +215,21 @@ export async function getCommunityUsers(communityId: string) {
       throw error;
     }
 
-    const users = data
+    // Type for community users query response
+    interface CommunityUserResponse {
+      role: string;
+      user_id: string;
+      auth_users: {
+        id: string;
+        email: string;
+      } | null;
+    }
+
+    const users = (data as unknown as CommunityUserResponse[])
       .filter(item => item.auth_users)
       .map(item => ({
-        id: item.auth_users.id,
-        email: item.auth_users.email,
+        id: item.auth_users!.id,
+        email: item.auth_users!.email,
         role: item.role
       }));
 

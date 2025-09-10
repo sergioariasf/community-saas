@@ -154,7 +154,7 @@ export async function updateIncidentStatus(
   
   if (status === 'cerrado') {
     updates.resolved_at = new Date().toISOString();
-  } else if (status !== 'cerrado') {
+  } else {
     updates.resolved_at = null;
   }
   

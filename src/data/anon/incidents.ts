@@ -171,7 +171,7 @@ export async function updateIncidentStatus(
   // Si se cierra la incidencia, marcar fecha de resolución
   if (status === 'cerrado') {
     updates.resolved_at = new Date().toISOString();
-  } else if (status !== 'cerrado') {
+  } else {
     // Si se reabre, limpiar fecha de resolución
     updates.resolved_at = null;
   }
