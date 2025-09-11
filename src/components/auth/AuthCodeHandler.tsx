@@ -2,42 +2,34 @@
 
 import { useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { createClient } from '@/supabase-clients/client';
 
 export function AuthCodeHandler() {
   const router = useRouter();
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    const handleAuthCode = async () => {
+    const handleAuthCode = () => {
       const code = searchParams.get('code');
       
       if (code) {
-        console.log('Processing auth code:', code);
+        console.log('Auth code detected, redirecting to callback handler:', code);
         
-        try {
-          const supabase = createClient();
-          
-          // Exchange code for session
-          const { data, error } = await supabase.auth.exchangeCodeForSession(code);
-          
-          if (error) {
-            console.error('Error exchanging code for session:', error);
-            // Redirect to login on error
-            router.push('/login?error=auth_failed');
-            return;
-          }
-          
-          if (data.session) {
-            console.log('Session created successfully:', data.session.user.email);
-            // Redirect to dashboard on success
-            router.push('/dashboard');
-          }
-          
-        } catch (error) {
-          console.error('Auth code processing error:', error);
-          router.push('/login?error=auth_failed');
-        }
+        // Redirect to server-side route handler to process the code
+        const currentUrl = new URL(window.location.href);
+        const callbackUrl = new URL('/auth/callback', window.location.origin);
+        
+        // Copy all search params to the callback URL
+        currentUrl.searchParams.forEach((value, key) => {
+          callbackUrl.searchParams.set(key, value);
+        });
+        
+        // Add next parameter for dashboard redirect
+        callbackUrl.searchParams.set('next', '/dashboard');
+        
+        console.log('Redirecting to:', callbackUrl.toString());
+        
+        // Use window.location.href for server-side processing
+        window.location.href = callbackUrl.toString();
       }
     };
 
