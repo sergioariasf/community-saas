@@ -1,0 +1,181 @@
+{
+  "agent_name": "vercel-master",
+  "description": "Specialized Vercel deployment debugging and management agent for production troubleshooting and deployment monitoring",
+  "tools": ["Bash", "Read", "Write", "Edit"],
+  "expertise": [
+    "vercel_cli_operations",
+    "deployment_debugging", 
+    "environment_variables_management",
+    "runtime_logs_analysis",
+    "domain_configuration",
+    "build_error_resolution",
+    "performance_monitoring",
+    "production_troubleshooting"
+  ],
+  "authentication": {
+    "method": "vercel_token",
+    "setup": "Create token at vercel.com → Settings → Tokens → Create Token",
+    "scope_required": "Full Account or Project-specific",
+    "usage": "vercel --token YOUR_TOKEN_HERE",
+    "current_token": "yIgkiliALpcaECEtv5jGmFR2",
+    "token_scope": "Full Account",
+    "project_linked": "sergioariasf-8853s-projects/community-saas"
+  },
+  "core_commands": {
+    "environment_debugging": [
+      "vercel env ls --scope=production",
+      "vercel env ls --scope=preview", 
+      "vercel env ls --scope=development"
+    ],
+    "deployment_monitoring": [
+      "vercel ls",
+      "vercel inspect [deployment-id]",
+      "vercel logs [deployment-url]"
+    ],
+    "project_management": [
+      "vercel link",
+      "vercel project ls",
+      "vercel domains ls"
+    ],
+    "debugging_specific": [
+      "vercel logs --follow",
+      "vercel inspect --meta",
+      "vercel env add",
+      "vercel env rm"
+    ]
+  },
+  "common_issues": {
+    "redirecting_loop_after_login": {
+      "description": "User sees 'Redirecting to Dashboard... Please wait' indefinitely",
+      "probable_causes": [
+        "NEXT_PUBLIC_APP_URL pointing to localhost instead of production URL",
+        "Missing SUPABASE_SERVICE_ROLE_KEY environment variable", 
+        "Authentication cookies not being set due to domain mismatch",
+        "Middleware authentication failing due to missing environment variables"
+      ],
+      "diagnostic_commands": [
+        "vercel env ls --scope=production | grep NEXT_PUBLIC_APP_URL",
+        "vercel env ls --scope=production | grep SUPABASE",
+        "vercel logs --tail=50"
+      ],
+      "fixes": [
+        "Update NEXT_PUBLIC_APP_URL to production domain",
+        "Add missing SUPABASE_SERVICE_ROLE_KEY",
+        "Trigger redeploy after environment variable changes"
+      ]
+    },
+    "build_failures": {
+      "typescript_errors": "Check for any types, missing imports, compilation issues",
+      "missing_dependencies": "Verify package.json and node_modules consistency",
+      "environment_variables": "Ensure all required env vars are set for build process"
+    }
+  },
+  "debugging_workflow": {
+    "step_1_environment_audit": {
+      "action": "Check all environment variables are correctly set",
+      "command": "vercel env ls --scope=production",
+      "validation": "Verify NEXT_PUBLIC_APP_URL points to production domain"
+    },
+    "step_2_deployment_logs": {
+      "action": "Review recent deployment and runtime logs",
+      "command": "vercel logs --tail=100",
+      "look_for": ["authentication errors", "middleware failures", "supabase connection issues"]
+    },
+    "step_3_runtime_inspection": {
+      "action": "Inspect latest deployment metadata",
+      "command": "vercel inspect",
+      "check": "Build output, function execution, error traces"
+    },
+    "step_4_targeted_fixes": {
+      "action": "Apply specific fixes based on findings",
+      "common_fixes": [
+        "vercel env add NEXT_PUBLIC_APP_URL https://your-domain.vercel.app",
+        "vercel --prod (trigger redeploy)",
+        "vercel domains ls (check domain configuration)"
+      ]
+    }
+  },
+  "project_context": {
+    "stack": "Next.js 15 + Supabase + TypeScript",
+    "deployment_platform": "Vercel",
+    "authentication": "Supabase Auth",
+    "architecture": "Multi-tenant SaaS",
+    "current_issue": "Login redirect loop - user authentication successful but dashboard redirect fails"
+  },
+  "expected_environment_variables": [
+    "NEXT_PUBLIC_SUPABASE_URL",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY", 
+    "SUPABASE_SERVICE_ROLE_KEY",
+    "SUPABASE_PROJECT_REF",
+    "NEXT_PUBLIC_APP_URL"
+  ],
+  "success_criteria": {
+    "authentication_working": "User can login and access dashboard without redirect loops",
+    "environment_properly_configured": "All required environment variables set correctly",
+    "deployment_healthy": "No errors in deployment logs, functions executing properly"
+  },
+  "lessons_learned": {
+    "what_works_with_vercel_cli": {
+      "successful_operations": [
+        "vercel link --yes - Links codebase to existing project automatically",
+        "vercel env ls - Lists all environment variables with encryption status",
+        "vercel ls - Shows deployment history with status and timing",
+        "vercel --token TOKEN_HERE - Authentication via token works perfectly",
+        "Project linking - CLI can successfully connect to existing Vercel projects"
+      ],
+      "diagnostics_capabilities": [
+        "Environment variable audit - Can see which vars are missing",
+        "Deployment status tracking - Shows Ready/Error states clearly",
+        "Build history analysis - Reveals patterns of failed/successful deployments"
+      ]
+    },
+    "limitations_and_constraints": {
+      "interactive_commands": [
+        "vercel env add requires interactive input - Cannot automate value entry",
+        "CLI prompts for confirmation - Needs --yes flag for automation", 
+        "Value input prompts - Must be handled manually or via dashboard"
+      ],
+      "command_syntax_issues": [
+        "vercel env ls --scope=production fails - Scope parameter not recognized",
+        "vercel logs --tail not supported - Must use vercel logs DEPLOYMENT_URL format",
+        "Environment variable creation requires manual intervention"
+      ],
+      "workarounds_needed": [
+        "Use Vercel Dashboard for adding environment variables instead of CLI",
+        "Manual redeploy from dashboard more reliable than CLI redeploy",
+        "CLI best for diagnostics, dashboard best for configuration changes"
+      ]
+    },
+    "optimal_workflow": {
+      "diagnosis_phase": [
+        "1. Use vercel link --yes to connect project",
+        "2. Use vercel env ls to audit missing variables", 
+        "3. Use vercel ls to check deployment status",
+        "4. Identify gaps in environment configuration"
+      ],
+      "fix_phase": [
+        "1. Add missing environment variables via Vercel Dashboard (not CLI)",
+        "2. Verify variables saved and encrypted properly",
+        "3. Trigger redeploy from dashboard",
+        "4. Monitor deployment completion"
+      ],
+      "validation_phase": [
+        "1. Use vercel env ls to confirm all variables present",
+        "2. Test application functionality",
+        "3. Monitor runtime logs if issues persist"
+      ]
+    },
+    "critical_environment_variables_for_nextjs_supabase": {
+      "authentication_variables": [
+        "NEXT_PUBLIC_SUPABASE_URL - Required for Supabase client initialization",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY - Public key for frontend operations",
+        "SUPABASE_SERVICE_ROLE_KEY - Server-side operations and admin access"
+      ],
+      "application_variables": [
+        "NEXT_PUBLIC_APP_URL - CRITICAL for authentication redirects and cookie domains",
+        "SUPABASE_PROJECT_REF - Project reference for backend operations"
+      ],
+      "common_redirect_loop_cause": "NEXT_PUBLIC_APP_URL pointing to localhost instead of production domain"
+    }
+  }
+}

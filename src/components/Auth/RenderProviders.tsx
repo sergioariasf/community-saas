@@ -14,7 +14,7 @@ function capitalize(word: string) {
   return word.charAt(0).toUpperCase() + lower.slice(1);
 }
 
-const isDemo = true;
+const isDemo = false;
 
 export const RenderProviders = ({
   providers,
