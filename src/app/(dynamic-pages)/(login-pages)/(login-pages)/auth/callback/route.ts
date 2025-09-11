@@ -13,7 +13,7 @@ export async function GET(request: Request) {
 
   if (code) {
     const cookieStore = cookies();
-    
+
     const supabase = createServerClient(
       process.env.NEXT_PUBLIC_SUPABASE_URL!,
       process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
@@ -22,14 +22,14 @@ export async function GET(request: Request) {
           get(name: string) {
             return cookieStore.get(name)?.value;
           },
-          set(name: string, value: string, options: any) {
+          set(name: string, value: string, options: { [key: string]: unknown }) {
             try {
               cookieStore.set({ name, value, ...options });
             } catch (error) {
               // Handle error (cookies can only be set in Server Actions/Route Handlers)
             }
           },
-          remove(name: string, options: any) {
+          remove(name: string, options: { [key: string]: unknown }) {
             try {
               cookieStore.set({ name, value: '', ...options });
             } catch (error) {
