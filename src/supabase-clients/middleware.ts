@@ -35,24 +35,38 @@ export async function updateSession(request: NextRequest) {
   // issues with users being randomly logged out.
 
   const protectedPages = ['/dashboard', '/private-item'];
+  const currentPath = request.nextUrl.pathname;
+
+  console.log('Middleware - Checking path:', currentPath);
 
   const {
     data: { user },
+    error
   } = await supabase.auth.getUser();
 
+  console.log('Middleware - User check result:', {
+    user: user?.email || 'No user',
+    error: error?.message || 'No error'
+  });
+
+  // Check if current page is protected
+  const isProtectedPage = protectedPages.some((page) => {
+    const matcher = match(page);
+    return matcher(currentPath);
+  });
+
+  console.log('Middleware - Is protected page:', isProtectedPage);
+
   // if user doesn't exist and the page is protected, redirect to login
-  if (
-    !user &&
-    protectedPages.some((page) => {
-      // eslint-disable-next-line no-unexpected-multiline
-      const matcher = match(page);
-      return matcher(request.nextUrl.pathname);
-    })
-  ) {
-    // no user, potentially respond by redirecting the user to the login page
+  if (!user && isProtectedPage) {
+    console.log('Middleware - Redirecting to login - no user for protected page');
     const url = request.nextUrl.clone();
     url.pathname = '/login';
     return NextResponse.redirect(url);
+  }
+
+  if (user && isProtectedPage) {
+    console.log('Middleware - Allowing access to protected page for user:', user.email);
   }
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
