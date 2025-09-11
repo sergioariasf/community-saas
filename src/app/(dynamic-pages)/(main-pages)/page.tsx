@@ -5,10 +5,12 @@
  */
 import { ArrowRight, Github, Star } from 'lucide-react';
 import Link from 'next/link';
+import { AuthCodeHandler } from '@/components/auth/AuthCodeHandler';
 
 export default function LandingPage() {
   return (
     <>
+      <AuthCodeHandler />
       <section className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 via-transparent to-transparent dark:from-blue-900/20 dark:via-transparent dark:to-transparent"></div>
         <div className="container px-4 md:px-6 mx-auto">
