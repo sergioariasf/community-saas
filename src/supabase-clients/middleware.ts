@@ -34,7 +34,8 @@ export async function updateSession(request: NextRequest) {
   // supabase.auth.getUser(). A simple mistake could make it very hard to debug
   // issues with users being randomly logged out.
 
-  const protectedPages = ['/dashboard', '/private-item'];
+  // Temporarily disable dashboard protection while debugging auth issues
+  const protectedPages = ['/private-item'];
   const currentPath = request.nextUrl.pathname;
 
   console.log('Middleware - Checking path:', currentPath);
