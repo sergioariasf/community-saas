@@ -73,6 +73,7 @@ import { ExternalLinkIcon } from 'lucide-react';
 // }
 
 import Link from 'next/link';
+import { AuthNavLinks } from '@/components/navigation/AuthNavLinks';
 // import { ThemeToggle } from '@/components/tailwind/ThemeToggle';
 
 export const ExternalNavigation = () => {
@@ -106,6 +107,7 @@ export const ExternalNavigation = () => {
         >
           About
         </Link>
+        <AuthNavLinks />
         <Link
           className="text-sm font-medium hover:underline underline-offset-4"
           href="https://usenextbase.com"
