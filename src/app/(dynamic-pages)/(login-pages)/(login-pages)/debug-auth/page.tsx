@@ -3,11 +3,12 @@
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { createClient } from '@/supabase-clients/client';
+import type { Session } from '@supabase/supabase-js';
 
 export default function DebugAuthPage() {
   const searchParams = useSearchParams();
   const [logs, setLogs] = useState<string[]>([]);
-  const [session, setSession] = useState<any>(null);
+  const [session, setSession] = useState<Session | null>(null);
   
   const addLog = (message: string) => {
     setLogs(prev => [...prev, `${new Date().toISOString()}: ${message}`]);
