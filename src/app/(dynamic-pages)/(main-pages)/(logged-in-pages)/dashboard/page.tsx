@@ -12,6 +12,7 @@ import { ItemsList } from '../../ItemsList';
 import { PrivateItemsList } from '../../PrivateItemsList';
 import { PermissionsDebug } from '@/components/PermissionsDebug';
 import { AdminQuickActions } from './AdminQuickActions';
+import { LogoutButton } from '@/components/auth/LogoutButton';
 
 export const dynamic = 'force-dynamic';
 
@@ -58,11 +59,14 @@ export default function DashboardPage() {
     <div className="container mx-auto py-6 space-y-8">
       <div className="flex justify-between items-center">
         <T.H1>Dashboard</T.H1>
-        <Link href="/dashboard/new">
-          <Button className="flex items-center gap-2">
-            <PlusCircle className="h-4 w-4" /> New Private Item
-          </Button>
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link href="/dashboard/new">
+            <Button className="flex items-center gap-2">
+              <PlusCircle className="h-4 w-4" /> New Private Item
+            </Button>
+          </Link>
+          <LogoutButton />
+        </div>
       </div>
 
       {/* 🏗️ PANEL DE ADMINISTRACIÓN - Solo admins */}
