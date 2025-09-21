@@ -1,0 +1,72 @@
+[dotenv@17.2.2] injecting env (10) from .env.local -- tip: 📡 auto-backup env with Radar: https://dotenvx.com/radar
+🧪 TEST FINAL: Pipeline Progresivo con Schema Real
+================================================
+
+🔐 Autenticando...
+✅ Autenticado: sergioariasf@gmail.com
+
+📖 Procesando PDF...
+✅ PDF: 18 páginas, 40092 chars
+
+📝 PASO 3: Insertando documento...
+────────────────────────────────────────
+✅ Documento insertado: 3c4f2778-7ba5-4cf1-99eb-53a915f1ed37
+
+🏷️  PASO 4: Insertando clasificación...
+────────────────────────────────────────
+✅ Clasificación: acta (0.95)
+
+📋 PASO 5: Insertando metadata...
+────────────────────────────────────────
+✅ Metadata: 2022-05-19 - ACTA JUNTA GENERAL EXTRAORDINARIA
+
+🔧 PASO 6: Insertando chunks...
+────────────────────────────────────────
+✅ Chunks insertados: 5/5
+
+📊 PASO 7: Verificando integridad...
+────────────────────────────────────────
+📋 Registros por tabla:
+   - documents: 1 ✅
+   - document_classifications: 1 ✅
+   - document_metadata: 1 ✅
+   - document_chunks: 5 ✅
+
+📄 PASO 8: Estado final del documento...
+────────────────────────────────────────
+🎯 Pipeline Status:
+   - Processing Level: 4/4
+   - Extraction: completed
+   - Classification: completed
+   - Metadata: completed
+   - Chunking: completed
+   - Chunks Count: 5
+
+🗑️  PASO 9: Probando borrado en cascada...
+────────────────────────────────────────
+🔥 Borrando documento 3c4f2778-7ba5-4cf1-99eb-53a915f1ed37...
+✅ Documento borrado
+📊 Después del borrado:
+   - documents: 0 ✅
+   - document_classifications: 0 ✅
+   - document_metadata: 0 ✅
+   - document_chunks: 0 ✅
+
+🏆 ¡CASCADE DELETE FUNCIONANDO PERFECTAMENTE!
+
+🎉 RESULTADO FINAL
+==================
+✅ Schema real compatible: OK
+✅ Pipeline 4 niveles: OK
+✅ Todas las tablas: OK
+✅ Foreign keys CASCADE: OK
+✅ RLS organization isolation: OK
+✅ Borrado en cascada: OK
+
+🚀 SISTEMA DE INGESTA PROGRESIVA 100% FUNCIONAL
+   ✅ Compatible con tu base de datos existente
+   ✅ Usa todos los campos y enums correctos
+   ✅ Respeta las políticas de seguridad
+   ✅ Pipeline progresivo Levels 1→2→3→4 operativo
+
+👋 Sesión cerrada

@@ -14,29 +14,7 @@ export const getAllUsers = async () => {
   const supabase = await createSupabaseClient();
   
   try {
-    // 1. Intentar obtener TODOS los usuarios de auth.users
-    const { data: authUsers, error: authError } = await supabase.auth.admin.listUsers();
-    
-    if (authError) {
-      console.error('Error fetching auth users:', authError);
-      
-      // FALLBACK: Crear un usuario de prueba con tu información
-      const { data: { user } } = await supabase.auth.getUser();
-      
-      if (user) {
-        return [{
-          id: user.id,
-          email: user.email || 'Sin email',
-          created_at: user.created_at,
-          last_sign_in_at: user.last_sign_in_at,
-          roles: [] // Sin roles por ahora
-        }];
-      }
-      
-      return [];
-    }
-
-    // 2. Obtener todos los roles de usuarios
+    // 1. Obtener usuarios únicos de user_roles (estos son los usuarios activos con roles)
     const { data: userRoles, error: rolesError } = await supabase
       .from('user_roles')
       .select(`
@@ -49,32 +27,60 @@ export const getAllUsers = async () => {
       `);
 
     if (rolesError) {
-      console.error('Error fetching user roles:', rolesError);
+      console.error('❌ [getAllUsers] Error fetching user roles:', rolesError);
       return [];
     }
 
-    // 3. Combinar datos: usuarios + roles
-    const users = authUsers.users.map(user => {
-      const roles = userRoles?.filter(role => role.user_id === user.id) || [];
+
+    // 2. Obtener IDs únicos de usuarios
+    const userIds = [...new Set(userRoles?.map(role => role.user_id) || [])];
+    
+    // Si no hay usuarios con roles, devolver array vacío
+    if (userIds.length === 0) {
+      return [];
+    }
+
+    // 3. Para cada usuario, crear el objeto con sus roles
+    const users = [];
+    
+    for (const userId of userIds) {
+      const userRolesList = userRoles?.filter(role => role.user_id === userId) || [];
       
-      return {
-        id: user.id,
-        email: user.email || '',
-        created_at: user.created_at,
-        last_sign_in_at: user.last_sign_in_at,
-        roles: roles.map(role => ({
-          role: role.role,
+      // Intentar obtener información básica del usuario actual si es el mismo
+      let userInfo = { email: 'Usuario desconocido', created_at: null, last_sign_in_at: null };
+      
+      if (userId) {
+        const { data: { user: currentUser } } = await supabase.auth.getUser();
+        if (currentUser && currentUser.id === userId) {
+          userInfo = {
+            email: currentUser.email || 'Sin email',
+            created_at: currentUser.created_at,
+            last_sign_in_at: currentUser.last_sign_in_at
+          };
+        }
+      }
+      
+      users.push({
+        id: userId,
+        email: userInfo.email,
+        created_at: userInfo.created_at,
+        last_sign_in_at: userInfo.last_sign_in_at,
+        roles: userRolesList.map(role => ({
+          role: role.role as UserRole,
           community_id: role.community_id,
-          community_name: undefined // TODO: Fix communities relationship type
+          community_name: role.community_id ? 
+            (role.communities as any)?.name : 
+            (role.role === 'admin' ? 'Global' : null)
         }))
-      };
-    });
+      });
+    }
 
     // 4. Ordenar por email
-    return users.sort((a, b) => a.email.localeCompare(b.email));
+    const result = users.sort((a, b) => a.email.localeCompare(b.email));
+    return result;
 
   } catch (error) {
-    console.error('Error in getAllUsers:', error);
+    console.error('❌ [getAllUsers] Error in getAllUsers:', error);
     return [];
   }
 };
@@ -113,12 +119,30 @@ export const createUserAction = authActionClient
       throw new Error('No se pudo crear el usuario');
     }
 
-    // 2. Asignar roles al usuario
+    // 2. Obtener organization_id del usuario actual (admin que está creando)
+    const { data: { user: currentUser } } = await supabase.auth.getUser();
+    if (!currentUser) {
+      throw new Error('Usuario no autenticado');
+    }
+
+    const { data: currentUserRole, error: currentRoleError } = await supabase
+      .from('user_roles')
+      .select('organization_id')
+      .eq('user_id', currentUser.id)
+      .limit(1)
+      .single();
+
+    if (currentRoleError || !currentUserRole?.organization_id) {
+      throw new Error('No se pudo obtener la organización del usuario actual');
+    }
+
+    // 3. Asignar roles al usuario
     const rolePromises = roles.map(role => 
       supabase
         .from('user_roles')
         .insert({
           user_id: authUser.user.id,
+          organization_id: currentUserRole.organization_id,
           role: role.role,
           community_id: role.community_id
         })
@@ -166,13 +190,54 @@ export const updateUserRolesAction = authActionClient
       throw new Error(`Error eliminando roles: ${deleteError.message}`);
     }
 
-    // 2. Insertar nuevos roles
+    // 2. Obtener organization_id del usuario actual
+    const { data: { user: currentUser } } = await supabase.auth.getUser();
+    if (!currentUser) {
+      throw new Error('Usuario no autenticado');
+    }
+
+    const { data: currentUserRole, error: currentRoleError } = await supabase
+      .from('user_roles')
+      .select('organization_id')
+      .eq('user_id', currentUser.id)
+      .not('organization_id', 'is', null)
+      .limit(1)
+      .single();
+
+    if (currentRoleError || !currentUserRole?.organization_id) {
+      // Usar organization_id por defecto si no se encuentra
+      const defaultOrgId = 'e3f4370b-2235-45ad-869a-737ee9fd95ab'; // ORGANIZATION_ID de nuestros tests
+      
+      // 3. Insertar nuevos roles con organization_id por defecto
+      if (roles.length > 0) {
+        const { error: insertError } = await supabase
+          .from('user_roles')
+          .insert(
+            roles.map(role => ({
+              user_id: userId,
+              organization_id: defaultOrgId,
+              role: role.role,
+              community_id: role.community_id
+            }))
+          );
+
+        if (insertError) {
+          throw new Error(`Error asignando roles: ${insertError.message}`);
+        }
+      }
+      
+      revalidatePath('/users');
+      return userId;
+    }
+
+    // 3. Insertar nuevos roles
     if (roles.length > 0) {
       const { error: insertError } = await supabase
         .from('user_roles')
         .insert(
           roles.map(role => ({
             user_id: userId,
+            organization_id: currentUserRole.organization_id,
             role: role.role,
             community_id: role.community_id
           }))

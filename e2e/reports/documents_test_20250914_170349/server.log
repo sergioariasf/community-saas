@@ -1,0 +1,424 @@
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm.
+
+> nextbase-nextjs13-supabase-starter@2.2.0 dev
+> next dev --turbopack --port 3001
+
+   ▲ Next.js 15.3.0 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://10.255.255.254:3001
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 335ms
+ ✓ Ready in 1451ms
+Middleware - Checking path: /
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ○ Compiling / ...
+ ✓ Compiled / in 2.8s
+ GET / 200 in 3078ms
+Middleware - Checking path: /login
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ○ Compiling /login ...
+ ✓ Compiled /login in 1791ms
+ GET /login 200 in 1951ms
+Middleware - Checking path: /images/logo-black-main.ico
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+Middleware - Checking path: /login
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ○ Compiling /_not-found/page ...
+LOGGING MIDDLEWARE
+Result -> {
+  success: true,
+  ctx: {},
+  data: undefined,
+  parsedInput: { email: 'sergioariasf@gmail.com', password: 'Elpato_46' },
+  bindArgsParsedInputs: []
+}
+Client input -> { email: 'sergioariasf@gmail.com', password: 'Elpato_46' }
+Metadata -> undefined
+Action execution took 339.2639710000003 ms
+ POST /login 200 in 452ms
+Middleware - Checking path: /dashboard
+Middleware - User check result: { user: 'sergioariasf@gmail.com', error: 'No error' }
+Middleware - Is protected page: false
+ GET /images/logo-black-main.ico 404 in 1204ms
+ ✓ Compiled /_not-found/page in 2.8s
+Middleware - Checking path: /documents
+Middleware - User check result: { user: 'sergioariasf@gmail.com', error: 'No error' }
+Middleware - Is protected page: false
+ GET /dashboard 200 in 2175ms
+ ○ Compiling /documents ...
+ ✓ Compiled /documents in 1377ms
+ GET /documents 200 in 1636ms
+Middleware - Checking path: /documents
+Middleware - User check result: { user: 'sergioariasf@gmail.com', error: 'No error' }
+Middleware - Is protected page: false
+ GET /documents 200 in 320ms
+Middleware - Checking path: /documents/upload
+Middleware - User check result: { user: 'sergioariasf@gmail.com', error: 'No error' }
+Middleware - Is protected page: false
+ ○ Compiling /documents/upload ...
+ ✓ Compiled /documents/upload in 5.8s
+ ⨯ ./src/lib/ingesta/modules/classification/documentClassifier.ts:15:11
+Parsing ecmascript source code failed
+[0m [90m 13 |[39m [90m// RESPONSABILIDADES:[39m[0m
+[0m [90m 14 |[39m [90m// - Clasificar documentos en: acta, contrato, factura, comunicado[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m  [33m*[39m [33m-[39m [33mUsar[39m solo primeras [33m~[39m[35m1000[39m caracteres para reducir coste[0m
+[0m [90m    |[39m           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m  [33m*[39m [33m-[39m [33mProporcionar[39m fallbacks basados en nombre de archivo[0m
+[0m [90m 17 |[39m  [33m*[39m [33m-[39m [33mManejar[39m casos edge y documentos no categorizados[0m
+[0m [90m 18 |[39m  [33m*[39m [33m-[39m [33mValidar[39m que el tipo detectado esté en categorías soportadas[0m
+
+Expected ';', '}' or <eof>
+
+
+
+./src/lib/ingesta/core/progressivePipeline.ts:31:1
+Export DocumentClassifier doesn't exist in target module
+[0m [90m 29 |[39m } [36mfrom[39m [32m'../modules/extraction/ocrExtraction'[39m[33m;[39m[0m
+[0m [90m 30 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 31 |[39m [36mimport[39m { [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 32 |[39m   [33mDocumentClassifier[39m [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 33 |[39m } [36mfrom[39m [32m'../modules/classification/documentClassifier'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 34 |[39m[0m
+[0m [90m 35 |[39m [36mimport[39m { [0m
+[0m [90m 36 |[39m   [33mActaMetadataExtractor[39m [0m
+
+The export DocumentClassifier was not found in module [project]/src/lib/ingesta/modules/classification/documentClassifier.ts [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1543ms
+ GET /documents/upload 500 in 7516ms
+Middleware - Checking path: /documents/upload
+Middleware - User check result: { user: 'sergioariasf@gmail.com', error: 'No error' }
+Middleware - Is protected page: false
+ ⨯ ./src/lib/ingesta/modules/classification/documentClassifier.ts:15:11
+Parsing ecmascript source code failed
+[0m [90m 13 |[39m [90m// RESPONSABILIDADES:[39m[0m
+[0m [90m 14 |[39m [90m// - Clasificar documentos en: acta, contrato, factura, comunicado[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m  [33m*[39m [33m-[39m [33mUsar[39m solo primeras [33m~[39m[35m1000[39m caracteres para reducir coste[0m
+[0m [90m    |[39m           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m  [33m*[39m [33m-[39m [33mProporcionar[39m fallbacks basados en nombre de archivo[0m
+[0m [90m 17 |[39m  [33m*[39m [33m-[39m [33mManejar[39m casos edge y documentos no categorizados[0m
+[0m [90m 18 |[39m  [33m*[39m [33m-[39m [33mValidar[39m que el tipo detectado esté en categorías soportadas[0m
+
+Expected ';', '}' or <eof>
+
+
+
+./src/lib/ingesta/core/progressivePipeline.ts:31:1
+Export DocumentClassifier doesn't exist in target module
+[0m [90m 29 |[39m } [36mfrom[39m [32m'../modules/extraction/ocrExtraction'[39m[33m;[39m[0m
+[0m [90m 30 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 31 |[39m [36mimport[39m { [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 32 |[39m   [33mDocumentClassifier[39m [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 33 |[39m } [36mfrom[39m [32m'../modules/classification/documentClassifier'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 34 |[39m[0m
+[0m [90m 35 |[39m [36mimport[39m { [0m
+[0m [90m 36 |[39m   [33mActaMetadataExtractor[39m [0m
+
+The export DocumentClassifier was not found in module [project]/src/lib/ingesta/modules/classification/documentClassifier.ts [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /documents/upload 500 in 96ms
+Middleware - Checking path: /documents/upload
+Middleware - User check result: { user: 'sergioariasf@gmail.com', error: 'No error' }
+Middleware - Is protected page: false
+ ⨯ ./src/lib/ingesta/modules/classification/documentClassifier.ts:15:11
+Parsing ecmascript source code failed
+[0m [90m 13 |[39m [90m// RESPONSABILIDADES:[39m[0m
+[0m [90m 14 |[39m [90m// - Clasificar documentos en: acta, contrato, factura, comunicado[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m  [33m*[39m [33m-[39m [33mUsar[39m solo primeras [33m~[39m[35m1000[39m caracteres para reducir coste[0m
+[0m [90m    |[39m           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m  [33m*[39m [33m-[39m [33mProporcionar[39m fallbacks basados en nombre de archivo[0m
+[0m [90m 17 |[39m  [33m*[39m [33m-[39m [33mManejar[39m casos edge y documentos no categorizados[0m
+[0m [90m 18 |[39m  [33m*[39m [33m-[39m [33mValidar[39m que el tipo detectado esté en categorías soportadas[0m
+
+Expected ';', '}' or <eof>
+
+
+
+./src/lib/ingesta/core/progressivePipeline.ts:31:1
+Export DocumentClassifier doesn't exist in target module
+[0m [90m 29 |[39m } [36mfrom[39m [32m'../modules/extraction/ocrExtraction'[39m[33m;[39m[0m
+[0m [90m 30 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 31 |[39m [36mimport[39m { [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 32 |[39m   [33mDocumentClassifier[39m [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 33 |[39m } [36mfrom[39m [32m'../modules/classification/documentClassifier'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 34 |[39m[0m
+[0m [90m 35 |[39m [36mimport[39m { [0m
+[0m [90m 36 |[39m   [33mActaMetadataExtractor[39m [0m
+
+The export DocumentClassifier was not found in module [project]/src/lib/ingesta/modules/classification/documentClassifier.ts [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /documents/upload 500 in 60ms
+Middleware - Checking path: /documents/upload
+Middleware - User check result: { user: 'sergioariasf@gmail.com', error: 'No error' }
+Middleware - Is protected page: false
+ ⨯ ./src/lib/ingesta/modules/classification/documentClassifier.ts:15:11
+Parsing ecmascript source code failed
+[0m [90m 13 |[39m [90m// RESPONSABILIDADES:[39m[0m
+[0m [90m 14 |[39m [90m// - Clasificar documentos en: acta, contrato, factura, comunicado[39m[0m
+[0m[31m[1m>[22m[39m[90m 15 |[39m  [33m*[39m [33m-[39m [33mUsar[39m solo primeras [33m~[39m[35m1000[39m caracteres para reducir coste[0m
+[0m [90m    |[39m           [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 16 |[39m  [33m*[39m [33m-[39m [33mProporcionar[39m fallbacks basados en nombre de archivo[0m
+[0m [90m 17 |[39m  [33m*[39m [33m-[39m [33mManejar[39m casos edge y documentos no categorizados[0m
+[0m [90m 18 |[39m  [33m*[39m [33m-[39m [33mValidar[39m que el tipo detectado esté en categorías soportadas[0m
+
+Expected ';', '}' or <eof>
+
+
+
+./src/lib/ingesta/core/progressivePipeline.ts:31:1
+Export DocumentClassifier doesn't exist in target module
+[0m [90m 29 |[39m } [36mfrom[39m [32m'../modules/extraction/ocrExtraction'[39m[33m;[39m[0m
+[0m [90m 30 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 31 |[39m [36mimport[39m { [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 32 |[39m   [33mDocumentClassifier[39m [0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m[31m[1m>[22m[39m[90m 33 |[39m } [36mfrom[39m [32m'../modules/classification/documentClassifier'[39m[33m;[39m[0m
+[0m [90m    |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[0m
+[0m [90m 34 |[39m[0m
+[0m [90m 35 |[39m [36mimport[39m { [0m
+[0m [90m 36 |[39m   [33mActaMetadataExtractor[39m [0m
+
+The export DocumentClassifier was not found in module [project]/src/lib/ingesta/modules/classification/documentClassifier.ts [app-rsc] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+ GET /documents/upload 500 in 67ms
+Middleware - Checking path: /login
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /login 200 in 155ms
+Middleware - Checking path: /images/logo-black-main.ico
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /images/logo-black-main.ico 404 in 68ms
+Middleware - Checking path: /login
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /login 200 in 91ms
+Middleware - Checking path: /images/logo-black-main.ico
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /images/logo-black-main.ico 404 in 76ms
+Middleware - Checking path: /login
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /login 200 in 96ms
+Middleware - Checking path: /images/logo-black-main.ico
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /images/logo-black-main.ico 404 in 66ms
+Middleware - Checking path: /login
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /login 200 in 94ms
+Middleware - Checking path: /images/logo-black-main.ico
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /images/logo-black-main.ico 404 in 70ms
+Middleware - Checking path: /login
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /login 200 in 101ms
+Middleware - Checking path: /images/logo-black-main.ico
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /images/logo-black-main.ico 404 in 77ms
+Middleware - Checking path: /
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2113:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+AuthApiError: Invalid Refresh Token: Refresh Token Not Found
+    at handleError (../../../src/lib/fetch.ts:102:8)
+    at async _handleRequest (../../../src/lib/fetch.ts:195:4)
+    at async _request (../../../src/lib/fetch.ts:157:15)
+    at async (../../src/GoTrueClient.ts:2113:17)
+    at async (../../../src/lib/helpers.ts:228:25) {
+  __isAuthError: true,
+  status: 400,
+  code: 'refresh_token_not_found'
+}
+Middleware - User check result: {
+  user: 'No user',
+  error: 'Invalid Refresh Token: Refresh Token Not Found'
+}
+Middleware - Is protected page: false
+ GET / 200 in 114ms
+Middleware - Checking path: /images/logo-black-main.ico
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ GET /images/logo-black-main.ico 404 in 70ms
+Middleware - Checking path: /
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ✓ Compiled in 254ms
+ GET / 200 in 53ms
+Middleware - Checking path: /
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ✓ Compiled in 228ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+Middleware - Checking path: /
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+ ✓ Compiled in 188ms
+ ✓ Compiled middleware in 1ms
+Middleware - Checking path: /
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+Middleware - Checking path: /
+Middleware - User check result: { user: 'No user', error: 'Auth session missing!' }
+Middleware - Is protected page: false
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/app/(dynamic-pages)/(main-pages)/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/sergi/proyectos/community-saas/.next/server/pages/_app/build-manifest.json'
+}
+[?25h

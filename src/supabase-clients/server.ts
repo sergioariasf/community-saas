@@ -1,5 +1,6 @@
 import { Database } from '@/lib/database.types';
 import { createServerClient } from '@supabase/ssr';
+import { createClient } from '@supabase/supabase-js';
 import { cookies, type UnsafeUnwrappedCookies } from 'next/headers';
 
 export const createSupabaseClient = async () => {
@@ -35,4 +36,24 @@ export const createSupabaseClient = async () => {
       },
     }
   );
+};
+
+/**
+ * Create Supabase client with Service Role key for server-side operations
+ * Use this for pipeline processing, admin operations, and bypassing RLS
+ */
+export const createSupabaseServiceClient = () => {
+  const supabaseUrl = 'https://vhybocthkbupgedovovj.supabase.co';
+  const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  
+  if (!serviceRoleKey) {
+    throw new Error('SUPABASE_SERVICE_ROLE_KEY environment variable is required');
+  }
+
+  return createClient<Database>(supabaseUrl, serviceRoleKey, {
+    auth: {
+      autoRefreshToken: false,
+      persistSession: false
+    }
+  });
 };

@@ -1,0 +1,106 @@
+🔍 Verificando prerequisitos...
+✅ PDF_EDITABLE: ACTA 19 MAYO 2022.pdf
+✅ PDF_ESCANEADO: Acta junta extraordinaria 02.06.25.pdf
+✅ FACTURA: GIMNASIO_2023-1-230230.pdf
+✅ ACTA_SIMPLE: acta_prueba.pdf
+✅ Prerequisitos verificados
+
+🧪 INICIANDO TEST COMPLETO DEL PIPELINE PROGRESIVO
+===================================================
+
+🔐 PASO 1: Autenticación
+------------------------------
+✅ Login exitoso
+
+📄 PASO 2: Navegación a módulo documentos
+------------------------------
+✅ Módulo documentos accesible
+
+🔄 PASO 3.1: Testing Nivel 1: Solo almacenamiento y extracción de texto
+--------------------------------------------------
+📤 Subiendo: ACTA 19 MAYO 2022.pdf (Nivel 1)
+❌ Error durante upload: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+❌ Nivel 1: FALLO
+⏱️ Tiempo: 37728ms
+❌ Error: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+
+🔄 PASO 3.2: Testing Nivel 2: + Clasificación automática del documento
+--------------------------------------------------
+📤 Subiendo: GIMNASIO_2023-1-230230.pdf (Nivel 2)
+❌ Error durante upload: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+❌ Nivel 2: FALLO
+⏱️ Tiempo: 30326ms
+❌ Error: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+
+🔄 PASO 3.3: Testing Nivel 3: + Extracción de fechas, importes y datos estructurados
+--------------------------------------------------
+📤 Subiendo: ACTA 19 MAYO 2022.pdf (Nivel 3)
+❌ Error durante upload: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+❌ Nivel 3: FALLO
+⏱️ Tiempo: 30818ms
+❌ Error: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+
+🔄 PASO 3.4: Testing Nivel 4: + Segmentación para búsqueda avanzada (RAG)
+--------------------------------------------------
+📤 Subiendo: acta_prueba.pdf (Nivel 4)
+❌ Error durante upload: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+❌ Nivel 4: FALLO
+⏱️ Tiempo: 30354ms
+❌ Error: page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+
+📊 RESUMEN FINAL DEL TESTING
+==================================================
+✅ Tests exitosos: 0/4
+
+❌ Nivel 1: Solo almacenamiento y extracción de texto
+   ⏱️ 37728ms
+   💥 page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+❌ Nivel 2: + Clasificación automática del documento
+   ⏱️ 30326ms
+   💥 page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+❌ Nivel 3: + Extracción de fechas, importes y datos estructurados
+   ⏱️ 30818ms
+   💥 page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+❌ Nivel 4: + Segmentación para búsqueda avanzada (RAG)
+   ⏱️ 30354ms
+   💥 page.waitForSelector: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('h2:has-text("Subir Documento")') to be visible[22m
+
+
+🎉 TESTING COMPLETO
+
+❌ FAILURE: Algunos tests fallaron

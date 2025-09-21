@@ -88,6 +88,7 @@ const RoleBadge = ({ role }: { role: UserRole }) => {
 };
 
 export const UsersList = ({ users }: UsersListProps) => {
+  
   const { isAdmin, loading } = usePermissions();
 
   if (loading) {
@@ -176,12 +177,15 @@ export const UsersList = ({ users }: UsersListProps) => {
                   <TableCell className="hidden md:table-cell">
                     <div className="space-y-1 text-sm">
                       {user.roles.length > 0 ? (
-                        user.roles.map((roleInfo, index) => (
-                          <div key={index} className="text-muted-foreground">
-                            {roleInfo.community_name || 
-                             (roleInfo.role === 'admin' ? 'Global' : 'Sin asignar')}
-                          </div>
-                        ))
+                        user.roles.map((roleInfo, index) => {
+                          const communityText = roleInfo.community_name || 
+                             (roleInfo.role === 'admin' ? 'Global' : 'Sin asignar');
+                          return (
+                            <div key={index} className="text-muted-foreground">
+                              {communityText}
+                            </div>
+                          );
+                        })
                       ) : (
                         <div className="text-muted-foreground italic">
                           Sin asignaciones

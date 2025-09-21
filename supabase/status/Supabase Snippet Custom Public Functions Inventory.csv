@@ -1,0 +1,275 @@
+| routine_name                     | routine_type | return_type | routine_definition                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| -------------------------------- | ------------ | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| calculate_chunk_length           | FUNCTION     | trigger     | 
+BEGIN
+  NEW.content_length := LENGTH(NEW.content);
+  RETURN NEW;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| can_access_organization          | FUNCTION     | boolean     | 
+BEGIN
+    RETURN EXISTS (
+        SELECT 1 FROM public.user_roles ur
+        WHERE ur.user_id = auth.uid()
+        AND ur.organization_id = org_id
+    ) OR EXISTS (
+        SELECT 1 FROM public.organizations o
+        WHERE o.id = org_id
+        AND o.owner_id = auth.uid()
+    );
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| debug_user_permissions           | FUNCTION     | record      | 
+BEGIN
+  IF check_user_id IS NULL THEN
+    check_user_id := auth.uid();
+  END IF;
+  
+  RETURN QUERY
+  SELECT 
+    COALESCE(au.email, 'Unknown User') as user_email,
+    COALESCE(ur.role, 'No Role') as role_type,
+    COALESCE(c.name, 'Global Admin') as community_name,
+    (ur.community_id IS NULL AND ur.role = 'admin') as can_see_all_incidents,
+    COUNT(i.id) as total_visible_incidents
+  FROM auth.users au
+  LEFT JOIN user_roles ur ON au.id = ur.user_id
+  LEFT JOIN communities c ON ur.community_id = c.id
+  LEFT JOIN incidents i ON (
+    -- Global admin sees all
+    (ur.community_id IS NULL AND ur.role = 'admin') 
+    OR 
+    -- Community member sees their community's incidents
+    ur.community_id = i.community_id
+    OR 
+    -- Reporter sees their own incidents
+    i.reported_by = au.id
+  )
+  WHERE au.id = check_user_id
+  GROUP BY au.email, ur.role, c.name, ur.community_id;
+END;
+                                                                                                                                                                                                                     |
+| ensure_user_has_organization     | FUNCTION     | uuid        | 
+  DECLARE
+      current_user_id UUID := auth.uid();
+      user_org_id UUID;
+      default_org_id UUID;
+  BEGIN
+      -- Check if user already has an organization
+      SELECT DISTINCT ur.organization_id INTO user_org_id
+      FROM public.user_roles ur
+      WHERE ur.user_id = current_user_id
+      LIMIT 1;
+
+      IF user_org_id IS NOT NULL THEN
+          RETURN user_org_id;
+      END IF;
+
+      -- If no organization, assign to default
+      SELECT id INTO default_org_id
+      FROM public.organizations
+      WHERE name = 'Organización Principal'
+      LIMIT 1;
+
+      IF default_org_id IS NULL THEN
+          RAISE EXCEPTION 'No default organization found. Please contact administrator.';
+      END IF;
+
+      -- Add user to default organization with resident role
+      INSERT INTO public.user_roles (user_id, community_id, organization_id, role)
+      VALUES (current_user_id, NULL, default_org_id, 'resident')
+      ON CONFLICT (user_id, community_id, organization_id)
+      DO NOTHING;
+
+      RETURN default_org_id;
+  END;
+                                                                  |
+| get_documents_needing_processing | FUNCTION     | record      | 
+BEGIN
+  RETURN QUERY
+  SELECT 
+    d.id,
+    d.filename,
+    d.processing_level,
+    CASE 
+      WHEN d.extraction_status != 'completed' THEN 'extraction_needed'
+      WHEN d.processing_level >= 2 AND (d.classification_status IS NULL OR d.classification_status != 'completed') THEN 'classification_needed'
+      WHEN d.processing_level >= 3 AND (d.metadata_status IS NULL OR d.metadata_status != 'completed') THEN 'metadata_needed'
+      WHEN d.processing_level >= 4 AND (d.chunking_status IS NULL OR d.chunking_status != 'completed') THEN 'chunking_needed'
+      ELSE 'completed'
+    END as current_status,
+    d.organization_id
+  FROM documents d
+  WHERE 
+    (target_level IS NULL OR d.processing_level = target_level)
+    AND (
+      d.extraction_status != 'completed' OR
+      (d.processing_level >= 2 AND (d.classification_status IS NULL OR d.classification_status != 'completed')) OR
+      (d.processing_level >= 3 AND (d.metadata_status IS NULL OR d.metadata_status != 'completed')) OR
+      (d.processing_level >= 4 AND (d.chunking_status IS NULL OR d.chunking_status != 'completed'))
+    );
+END;
+ |
+| get_organization_document_stats  | FUNCTION     | record      | 
+DECLARE
+    target_org_id UUID;
+BEGIN
+    -- Use provided org_id or get current user's organization
+    target_org_id := COALESCE(org_id, get_user_organization_id());
+    
+    RETURN QUERY
+    SELECT 
+        COUNT(*)::BIGINT as total_documents,
+        COUNT(*) FILTER (WHERE status = 'processing')::BIGINT as processing_documents,
+        COUNT(*) FILTER (WHERE status = 'completed')::BIGINT as completed_documents,
+        COUNT(*) FILTER (WHERE status = 'error')::BIGINT as error_documents,
+        COUNT(*) FILTER (WHERE document_type = 'acta')::BIGINT as total_actas,
+        COUNT(*) FILTER (WHERE document_type = 'factura')::BIGINT as total_facturas,
+        ROUND((SUM(file_size) / 1024.0 / 1024.0)::NUMERIC, 2) as total_size_mb
+    FROM public.documents
+    WHERE organization_id = target_org_id;
+END;
+                                                                                                                                                                                                                                                                                                             |
+| get_user_id_by_email             | FUNCTION     | uuid        | 
+DECLARE
+    user_uuid uuid;
+    user_count integer;
+BEGIN
+    -- First check how many users exist with this email
+    SELECT COUNT(*) INTO user_count 
+    FROM auth.users 
+    WHERE email = email_address;
+    
+    -- Handle different scenarios
+    IF user_count = 0 THEN
+        RAISE EXCEPTION 'No user found with email: %', email_address;
+    ELSIF user_count > 1 THEN
+        RAISE NOTICE 'WARNING: Multiple users found with email %. Using the most recently created one.', email_address;
+        -- Use LIMIT 1 and ORDER BY to get the most recent user
+        SELECT id INTO user_uuid 
+        FROM auth.users 
+        WHERE email = email_address
+        ORDER BY created_at DESC
+        LIMIT 1;
+    ELSE
+        -- Exactly one user found - the ideal case
+        SELECT id INTO user_uuid 
+        FROM auth.users 
+        WHERE email = email_address;
+    END IF;
+    
+    RAISE NOTICE 'Found user ID % for email %', user_uuid, email_address;
+    RETURN user_uuid;
+END;
+                                                                                                                               |
+| get_user_organization_id         | FUNCTION     | uuid        | 
+DECLARE
+    org_id UUID;
+BEGIN
+    SELECT DISTINCT ur.organization_id INTO org_id
+    FROM public.user_roles ur
+    WHERE ur.user_id = auth.uid()
+    LIMIT 1;
+    
+    RETURN org_id;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| manage_current_classification    | FUNCTION     | trigger     | 
+BEGIN
+  IF NEW.is_current = TRUE THEN
+    UPDATE document_classifications 
+    SET is_current = FALSE, superseded_by = NEW.id
+    WHERE document_id = NEW.document_id 
+      AND id != NEW.id 
+      AND is_current = TRUE;
+  END IF;
+  RETURN NEW;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| search_documents_by_content      | FUNCTION     | record      | 
+BEGIN
+    RETURN QUERY
+    SELECT 
+        d.id,
+        d.filename,
+        d.document_type,
+        LEFT(ve.content, 200) as content_snippet,
+        (1 - (ve.embedding <=> query_embedding)) as similarity_score,
+        d.created_at
+    FROM public.vector_embeddings ve
+    JOIN public.documents d ON ve.document_id = d.id
+    WHERE 
+        ve.organization_id = get_user_organization_id()
+        AND d.organization_id = get_user_organization_id()
+        AND (1 - (ve.embedding <=> query_embedding)) >= similarity_threshold
+    ORDER BY ve.embedding <=> query_embedding
+    LIMIT max_results;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| update_communities_updated_at    | FUNCTION     | trigger     | 
+BEGIN
+    NEW.updated_at = NOW();
+    RETURN NEW;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| update_document_chunks_count     | FUNCTION     | trigger     | 
+BEGIN
+  IF TG_OP = 'INSERT' THEN
+    UPDATE documents SET chunks_count = chunks_count + 1 WHERE id = NEW.document_id;
+    RETURN NEW;
+  END IF;
+  
+  IF TG_OP = 'DELETE' THEN
+    UPDATE documents SET chunks_count = chunks_count - 1 WHERE id = OLD.document_id;
+    RETURN OLD;
+  END IF;
+  
+  RETURN NULL;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| update_incidents_updated_at      | FUNCTION     | trigger     | 
+BEGIN
+  NEW.updated_at = NOW();
+  
+  -- Si se cambia a 'cerrado', marcar resolved_at
+  IF NEW.status = 'cerrado' AND OLD.status != 'cerrado' THEN
+    NEW.resolved_at = NOW();
+  END IF;
+  
+  -- Si se reabre, limpiar resolved_at
+  IF NEW.status != 'cerrado' AND OLD.status = 'cerrado' THEN
+    NEW.resolved_at = NULL;
+  END IF;
+  
+  RETURN NEW;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| update_organization_updated_at   | FUNCTION     | trigger     | 
+BEGIN
+    NEW.updated_at = NOW();
+    RETURN NEW;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| update_processing_status         | FUNCTION     | boolean     | 
+DECLARE
+  update_query TEXT;
+BEGIN
+  update_query := format(
+    'UPDATE documents SET %I = $1, %I = $2, %I = CASE WHEN $1 = ''completed'' THEN NOW() ELSE %I END, updated_at = NOW() WHERE id = $3',
+    step_name || '_status',
+    step_name || '_error', 
+    step_name || '_completed_at',
+    step_name || '_completed_at'
+  );
+  
+  EXECUTE update_query USING new_status, error_message, doc_id;
+  
+  RETURN FOUND;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| update_updated_at_column         | FUNCTION     | trigger     | 
+BEGIN
+    NEW.updated_at = NOW();
+    RETURN NEW;
+END;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |

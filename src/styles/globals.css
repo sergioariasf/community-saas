@@ -8,74 +8,118 @@
 @import 'tw-animate-css';
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* === FAZIL ELEGANT COLOR SYSTEM (Inspirado en SolarOne) === */
+  
+  /* Backgrounds - Blanco como protagonista */
+  --background: oklch(1 0 0);                    /* Pure white */
+  --card: oklch(0.995 0 0);                      /* Subtle off-white */
+  --popover: oklch(1 0 0);                       /* Pure white */
+  
+  /* Foregrounds - Grises elegantes y refinados */
+  --foreground: oklch(0.12 0 0);                 /* Rich charcoal - más elegante que negro puro */
+  --card-foreground: oklch(0.12 0 0);            /* Consistent charcoal */
+  --popover-foreground: oklch(0.12 0 0);         /* Consistent charcoal */
+  
+  /* Primary - Azul sofisticado (como SolarOne #044FE7) */
+  --primary: oklch(0.45 0.18 250);               /* Elegant deep blue */
+  --primary-foreground: oklch(0.98 0 0);         /* Clean white */
+  
+  /* Secondary - Gris muy sutil y elegante */
+  --secondary: oklch(0.975 0 0);                 /* Barely-there gray */
+  --secondary-foreground: oklch(0.15 0 0);       /* Soft charcoal */
+  
+  /* Muted - Grises más refinados */
+  --muted: oklch(0.96 0 0);                      /* Elegant light gray */
+  --muted-foreground: oklch(0.45 0 0);           /* Sophisticated mid-gray */
+  
+  /* Accent - Sutil y elegante */
+  --accent: oklch(0.98 0 0);                     /* Ultra-subtle accent */
+  --accent-foreground: oklch(0.12 0 0);          /* Rich charcoal */
+  
+  /* Destructive - Rojo elegante */
+  --destructive: oklch(0.55 0.22 15);            /* Sophisticated red */
+  --destructive-foreground: oklch(0.98 0 0);     /* Clean white */
+  
+  /* Borders y inputs - Grises premium */
+  --border: oklch(0.9 0 0);                      /* Clean, visible border */
+  --input: oklch(0.95 0 0);                      /* Elegant input background */
+  --ring: oklch(0.45 0.18 250);                  /* Elegant focus ring (matches primary) */
+  
+  /* Charts - Paleta elegante y cohesiva */
+  --chart-1: oklch(0.45 0.18 250);               /* Primary blue */
+  --chart-2: oklch(0.55 0.15 180);               /* Elegant teal */
+  --chart-3: oklch(0.5 0.12 280);                /* Sophisticated purple */
+  --chart-4: oklch(0.6 0.14 150);                /* Refined green */
+  --chart-5: oklch(0.65 0.16 50);                /* Warm amber */
+  
+  /* Sidebar - Consistente con el sistema */
+  --sidebar: oklch(0.995 0 0);                   /* Subtle background */
+  --sidebar-foreground: oklch(0.12 0 0);         /* Rich charcoal */
+  --sidebar-primary: oklch(0.45 0.18 250);       /* Elegant blue */
+  --sidebar-primary-foreground: oklch(0.98 0 0); /* Clean white */
+  --sidebar-accent: oklch(0.975 0 0);            /* Barely-there accent */
+  --sidebar-accent-foreground: oklch(0.15 0 0);  /* Soft charcoal */
+  --sidebar-border: oklch(0.9 0 0);              /* Clean border */
+  --sidebar-ring: oklch(0.45 0.18 250);          /* Elegant focus */
+  
+  /* Border radius - Más moderno y elegante */
+  --radius: 0.75rem;                             /* Slightly more rounded for elegance */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  /* === FAZIL ELEGANT DARK MODE === */
+  
+  /* Backgrounds - Dark elegante, no negro puro */
+  --background: oklch(0.08 0 0);                 /* Rich dark gray */
+  --card: oklch(0.1 0 0);                        /* Slightly lighter for cards */
+  --popover: oklch(0.08 0 0);                    /* Consistent dark */
+  
+  /* Foregrounds - Blancos suaves */
+  --foreground: oklch(0.95 0 0);                 /* Soft white, not harsh */
+  --card-foreground: oklch(0.95 0 0);            /* Consistent soft white */
+  --popover-foreground: oklch(0.95 0 0);         /* Consistent soft white */
+  
+  /* Primary - Azul más brillante para dark mode */
+  --primary: oklch(0.65 0.20 250);               /* Brighter elegant blue */
+  --primary-foreground: oklch(0.08 0 0);         /* Dark contrast */
+  
+  /* Secondary - Gris oscuro elegante */
+  --secondary: oklch(0.15 0 0);                  /* Elegant dark gray */
+  --secondary-foreground: oklch(0.95 0 0);       /* Soft white */
+  
+  /* Muted - Grises oscuros refinados */
+  --muted: oklch(0.12 0 0);                      /* Refined dark gray */
+  --muted-foreground: oklch(0.65 0 0);           /* Sophisticated light gray */
+  
+  /* Accent - Sutil en dark mode */
+  --accent: oklch(0.15 0 0);                     /* Subtle dark accent */
+  --accent-foreground: oklch(0.95 0 0);          /* Soft white */
+  
+  /* Destructive - Rojo elegante para dark */
+  --destructive: oklch(0.65 0.25 15);            /* Brighter sophisticated red */
+  --destructive-foreground: oklch(0.95 0 0);     /* Soft white */
+  
+  /* Borders y inputs - Grises premium oscuros */
+  --border: oklch(0.2 0 0);                      /* Visible but not harsh border */
+  --input: oklch(0.12 0 0);                      /* Elegant input background */
+  --ring: oklch(0.65 0.20 250);                  /* Bright focus ring */
+  
+  /* Charts - Paleta vibrante para dark mode */
+  --chart-1: oklch(0.65 0.20 250);               /* Bright primary blue */
+  --chart-2: oklch(0.7 0.18 180);                /* Bright elegant teal */
+  --chart-3: oklch(0.68 0.15 280);               /* Bright sophisticated purple */
+  --chart-4: oklch(0.72 0.16 150);               /* Bright refined green */
+  --chart-5: oklch(0.75 0.18 50);                /* Bright warm amber */
+  
+  /* Sidebar - Consistente con dark mode */
+  --sidebar: oklch(0.1 0 0);                     /* Subtle dark background */
+  --sidebar-foreground: oklch(0.95 0 0);         /* Soft white */
+  --sidebar-primary: oklch(0.65 0.20 250);       /* Bright elegant blue */
+  --sidebar-primary-foreground: oklch(0.08 0 0); /* Dark contrast */
+  --sidebar-accent: oklch(0.15 0 0);             /* Subtle dark accent */
+  --sidebar-accent-foreground: oklch(0.95 0 0);  /* Soft white */
+  --sidebar-border: oklch(0.2 0 0);              /* Visible border */
+  --sidebar-ring: oklch(0.65 0.20 250);          /* Bright focus */
 }
 
 @theme inline {

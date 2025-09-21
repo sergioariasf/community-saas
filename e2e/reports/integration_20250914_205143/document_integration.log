@@ -1,0 +1,30 @@
+🧪 TEST INTEGRACIÓN UI+BACKEND MEJORADO
+=========================================
+
+🔐 PASO 1: Autenticación robusta
+----------------------------------------
+✅ Login exitoso - Redirigido al dashboard
+
+📄 PASO 2: Navegación a módulo documentos
+----------------------------------------
+✅ Página de documentos cargada
+
+📤 PASO 3: Navegación al formulario de upload
+----------------------------------------
+✅ Formulario encontrado con selector: h2:has-text("Subir Documento")
+
+📝 PASO 4: Llenando formulario de upload
+----------------------------------------
+✅ Archivo seleccionado
+✅ Archivo confirmado en UI
+❌ ERROR EN TEST DE INTEGRACIÓN: locator.click: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('select[name="community_id"], [name="community_id"]').first()[22m
+
+
+📊 RESULTADO FINAL:
+====================
+{
+  "success": false,
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('select[name=\"community_id\"], [name=\"community_id\"]').first()\u001b[22m\n"
+}

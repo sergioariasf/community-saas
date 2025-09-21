@@ -73,48 +73,33 @@ import { ExternalLinkIcon } from 'lucide-react';
 // }
 
 import Link from 'next/link';
-import { AuthNavLinks } from '@/components/navigation/AuthNavLinks';
+import Image from 'next/image';
 // import { ThemeToggle } from '@/components/tailwind/ThemeToggle';
 
 export const ExternalNavigation = () => {
   return (
     <header className="container mx-auto px-4 lg:px-6 h-14 flex items-center">
       <Link className="flex items-center justify-center" href="/">
-        <MountainIcon className="h-6 w-6" />
-        <span className="hidden lg:block ml-2 text-xl font-semibold text-gray-900 dark:text-gray-100">
-          Nextbase Open Source
-        </span>
-        <span className="block lg:hidden ml-2 text-xl font-semibold text-gray-900 dark:text-gray-100">
-          Nextbase
-        </span>
+        <Image 
+          src="/logos/logo-fazil.svg" 
+          alt="Fazil Logo" 
+          width={140} 
+          height={36}
+          className="h-9 w-auto"
+        />
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
         <Link
-          className="text-sm hidden lg:block font-medium hover:underline underline-offset-4"
-          href="#"
+          className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          href="/auth?mode=login"
         >
-          Features
+          Acceso Clientes
         </Link>
         <Link
-          className="text-sm hidden lg:block font-medium hover:underline underline-offset-4"
-          href="#"
+          href="/auth?mode=register"
         >
-          Pricing
-        </Link>
-        <Link
-          className="text-sm hidden lg:block font-medium hover:underline underline-offset-4"
-          href="#"
-        >
-          About
-        </Link>
-        <AuthNavLinks />
-        <Link
-          className="text-sm font-medium hover:underline underline-offset-4"
-          href="https://usenextbase.com"
-          target="_blank"
-        >
-          <Button className="inline-flex items-center gap-2 justify-center rounded-md bg-linear-to-r from-blue-500 to-purple-500 px-6 py-2 text-sm font-medium text-white shadow-lg transition-colors hover:from-blue-600 hover:to-purple-600 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-            Premium Nextbase Starter Kits <ExternalLinkIcon />
+          <Button className="inline-flex items-center gap-2 justify-center rounded-md bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-2 text-sm font-medium text-white shadow-lg transition-colors hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Empezar Gratis
           </Button>
         </Link>
       </nav>

@@ -1,72 +1,18 @@
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Skeleton } from '@/components/ui/skeleton';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { T } from '@/components/ui/Typography';
-import { getAllItems } from '@/data/anon/items';
-import { getAllPrivateItems } from '@/data/anon/privateItems';
-import { PlusCircle, Users, Building2, BarChart3, Settings } from 'lucide-react';
+import { Users, Building2, FileText, AlertTriangle, MessageSquare, UserCog } from 'lucide-react';
 import Link from 'next/link';
 import { Suspense } from 'react';
-import { ItemsList } from '../../ItemsList';
-import { PrivateItemsList } from '../../PrivateItemsList';
 import { PermissionsDebug } from '@/components/PermissionsDebug';
 import { AdminQuickActions } from './AdminQuickActions';
-import { LogoutButton } from '@/components/auth/LogoutButton';
 
 export const dynamic = 'force-dynamic';
-
-async function ItemsListContainer() {
-  const items = await getAllItems();
-  return <ItemsList items={items} showActions={false} />;
-}
-
-async function PrivateItemsListContainer() {
-  const privateItems = await getAllPrivateItems();
-  return <PrivateItemsList privateItems={privateItems} showActions={false} />;
-}
-
-function ListSkeleton() {
-  return (
-    <div className="space-y-8">
-      <div className="flex justify-between items-center">
-        <div className="space-y-2">
-          <Skeleton className="h-8 w-40" />
-          <Skeleton className="h-4 w-64" />
-        </div>
-        <Skeleton className="h-10 w-32" />
-      </div>
-
-      <Card>
-        <CardHeader>
-          <Skeleton className="h-6 w-full mb-2" />
-          <Skeleton className="h-4 w-3/4" />
-        </CardHeader>
-        <CardContent className="space-y-2">
-          {Array(3)
-            .fill(0)
-            .map((_, i) => (
-              <Skeleton key={i} className="h-16 w-full" />
-            ))}
-        </CardContent>
-      </Card>
-    </div>
-  );
-}
 
 export default function DashboardPage() {
   return (
     <div className="container mx-auto py-6 space-y-8">
       <div className="flex justify-between items-center">
         <T.H1>Dashboard</T.H1>
-        <div className="flex items-center gap-3">
-          <Link href="/dashboard/new">
-            <Button className="flex items-center gap-2">
-              <PlusCircle className="h-4 w-4" /> New Private Item
-            </Button>
-          </Link>
-          <LogoutButton />
-        </div>
       </div>
 
       {/* 🏗️ PANEL DE ADMINISTRACIÓN - Solo admins */}
@@ -77,24 +23,121 @@ export default function DashboardPage() {
       {/* 🧪 COMPONENTE DE PRUEBA - Solo desarrollo */}
       <PermissionsDebug />
 
-      <Tabs defaultValue="private" className="w-full">
-        <TabsList className="mb-4">
-          <TabsTrigger value="private">Private Items</TabsTrigger>
-          <TabsTrigger value="public">Public Items</TabsTrigger>
-        </TabsList>
+      {/* 📊 RESUMEN DE MÓDULOS */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Link href="/communities" className="block">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer">
+            <CardHeader className="flex flex-row items-center space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Comunidades
+              </CardTitle>
+              <Building2 className="h-4 w-4 text-muted-foreground ml-auto" />
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Gestión de comunidades de propietarios
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </Link>
 
-        <TabsContent value="private" className="space-y-4">
-          <Suspense fallback={<ListSkeleton />}>
-            <PrivateItemsListContainer />
-          </Suspense>
-        </TabsContent>
+        <Link href="/incidents" className="block">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer">
+            <CardHeader className="flex flex-row items-center space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Incidencias
+              </CardTitle>
+              <AlertTriangle className="h-4 w-4 text-muted-foreground ml-auto" />
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Sistema de gestión de incidencias
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </Link>
 
-        <TabsContent value="public" className="space-y-4">
-          <Suspense fallback={<ListSkeleton />}>
-            <ItemsListContainer />
-          </Suspense>
-        </TabsContent>
-      </Tabs>
+        <Link href="/documents" className="block">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer">
+            <CardHeader className="flex flex-row items-center space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Documentos
+              </CardTitle>
+              <FileText className="h-4 w-4 text-muted-foreground ml-auto" />
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Gestión inteligente de documentos con IA
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </Link>
+
+        <Link href="/chat-ia" className="block">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer border-blue-200 bg-blue-50/50">
+            <CardHeader className="flex flex-row items-center space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium flex items-center gap-2">
+                Chat IA
+                <span className="text-xs bg-blue-100 text-blue-700 px-1.5 py-0.5 rounded">Próximamente</span>
+              </CardTitle>
+              <MessageSquare className="h-4 w-4 text-blue-600 ml-auto" />
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Asistente inteligente para gestión comunitaria
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </Link>
+
+        <Link href="/foro" className="block">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer border-green-200 bg-green-50/50">
+            <CardHeader className="flex flex-row items-center space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium flex items-center gap-2">
+                Foro
+                <span className="text-xs bg-green-100 text-green-700 px-1.5 py-0.5 rounded">Próximamente</span>
+              </CardTitle>
+              <Users className="h-4 w-4 text-green-600 ml-auto" />
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Espacio de comunicación para la comunidad
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </Link>
+
+        <Link href="/usuarios" className="block">
+          <Card className="hover:shadow-md transition-shadow cursor-pointer">
+            <CardHeader className="flex flex-row items-center space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">
+                Usuarios
+              </CardTitle>
+              <UserCog className="h-4 w-4 text-muted-foreground ml-auto" />
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Gestión de usuarios, roles y permisos
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </Link>
+      </div>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Bienvenido al Sistema de Gestión</CardTitle>
+          <CardDescription>
+            Sistema completo para la administración de comunidades de propietarios
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground">
+            Utiliza la navegación superior para acceder a los diferentes módulos del sistema.
+            Cada módulo está diseñado para cubrir aspectos específicos de la gestión comunitaria.
+          </p>
+        </CardContent>
+      </Card>
     </div>
   );
 }

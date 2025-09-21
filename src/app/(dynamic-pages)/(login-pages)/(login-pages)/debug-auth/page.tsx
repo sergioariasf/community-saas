@@ -19,9 +19,9 @@ export default function DebugAuthPage() {
       addLog('Starting auth debug...');
       
       // Check URL parameters
-      const code = searchParams.get('code');
-      const error = searchParams.get('error');
-      const state = searchParams.get('state');
+      const code = searchParams?.get('code');
+      const error = searchParams?.get('error');
+      const state = searchParams?.get('state');
       
       addLog(`URL Code: ${code ? 'PRESENT' : 'MISSING'}`);
       addLog(`URL Error: ${error || 'NONE'}`);

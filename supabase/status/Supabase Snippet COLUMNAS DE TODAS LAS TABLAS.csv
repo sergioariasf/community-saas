@@ -1,0 +1,239 @@
+| table_name               | column_name                 | data_type                | is_nullable | column_default                 | character_maximum_length | numeric_precision |
+| ------------------------ | --------------------------- | ------------------------ | ----------- | ------------------------------ | ------------------------ | ----------------- |
+| agents                   | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| agents                   | organization_id             | uuid                     | YES         | null                           | null                     | null              |
+| agents                   | name                        | text                     | NO          | null                           | null                     | null              |
+| agents                   | purpose                     | text                     | NO          | null                           | null                     | null              |
+| agents                   | prompt_template             | text                     | NO          | null                           | null                     | null              |
+| agents                   | variables                   | jsonb                    | NO          | '{}'::jsonb                    | null                     | null              |
+| agents                   | is_active                   | boolean                  | NO          | true                           | null                     | null              |
+| agents                   | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| agents                   | updated_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| communities              | id                          | uuid                     | NO          | uuid_generate_v4()             | null                     | null              |
+| communities              | name                        | character varying        | NO          | null                           | 255                      | null              |
+| communities              | address                     | text                     | YES         | null                           | null                     | null              |
+| communities              | postal_code                 | character varying        | YES         | null                           | 10                       | null              |
+| communities              | admin_contact               | character varying        | YES         | null                           | 255                      | null              |
+| communities              | max_units                   | integer                  | YES         | 100                            | null                     | 32                |
+| communities              | is_active                   | boolean                  | YES         | true                           | null                     | null              |
+| communities              | created_at                  | timestamp with time zone | YES         | now()                          | null                     | null              |
+| communities              | updated_at                  | timestamp with time zone | YES         | now()                          | null                     | null              |
+| communities              | description                 | text                     | YES         | null                           | null                     | null              |
+| communities              | city                        | character varying        | YES         | null                           | 100                      | null              |
+| communities              | country                     | character varying        | YES         | null                           | 100                      | null              |
+| communities              | user_id                     | uuid                     | YES         | null                           | null                     | null              |
+| communities              | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| document_chunks          | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| document_chunks          | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| document_chunks          | document_id                 | uuid                     | NO          | null                           | null                     | null              |
+| document_chunks          | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| document_chunks          | chunk_number                | integer                  | NO          | null                           | null                     | 32                |
+| document_chunks          | chunk_type                  | text                     | NO          | null                           | null                     | null              |
+| document_chunks          | content                     | text                     | NO          | null                           | null                     | null              |
+| document_chunks          | content_length              | integer                  | NO          | 0                              | null                     | 32                |
+| document_chunks          | start_position              | integer                  | YES         | null                           | null                     | 32                |
+| document_chunks          | end_position                | integer                  | YES         | null                           | null                     | 32                |
+| document_chunks          | page_numbers                | ARRAY                    | YES         | null                           | null                     | null              |
+| document_chunks          | chunk_metadata              | jsonb                    | YES         | '{}'::jsonb                    | null                     | null              |
+| document_chunks          | embedding                   | USER-DEFINED             | YES         | null                           | null                     | null              |
+| document_chunks          | embedding_model             | text                     | YES         | 'text-embedding-ada-002'::text | null                     | null              |
+| document_chunks          | embedding_created_at        | timestamp with time zone | YES         | null                           | null                     | null              |
+| document_chunks          | chunking_method             | text                     | NO          | null                           | null                     | null              |
+| document_chunks          | confidence                  | real                     | YES         | null                           | null                     | 24                |
+| document_chunks          | quality_score               | real                     | YES         | null                           | null                     | 24                |
+| document_chunks          | processing_time_ms          | integer                  | YES         | null                           | null                     | 32                |
+| document_chunks          | tokens_used                 | integer                  | YES         | 0                              | null                     | 32                |
+| document_chunks          | input_sample_length         | integer                  | YES         | null                           | null                     | 32                |
+| document_chunks          | chunking_config             | jsonb                    | YES         | '{}'::jsonb                    | null                     | null              |
+| document_chunks          | chunked_by                  | uuid                     | YES         | null                           | null                     | null              |
+| document_classifications | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| document_classifications | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| document_classifications | document_id                 | uuid                     | NO          | null                           | null                     | null              |
+| document_classifications | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| document_classifications | document_type               | text                     | NO          | null                           | null                     | null              |
+| document_classifications | confidence                  | real                     | NO          | null                           | null                     | 24                |
+| document_classifications | classification_method       | text                     | NO          | null                           | null                     | null              |
+| document_classifications | processing_time_ms          | integer                  | YES         | null                           | null                     | 32                |
+| document_classifications | tokens_used                 | integer                  | YES         | 0                              | null                     | 32                |
+| document_classifications | input_sample_length         | integer                  | YES         | null                           | null                     | 32                |
+| document_classifications | filename_analyzed           | text                     | YES         | null                           | null                     | null              |
+| document_classifications | raw_response                | text                     | YES         | null                           | null                     | null              |
+| document_classifications | is_current                  | boolean                  | YES         | true                           | null                     | null              |
+| document_classifications | superseded_by               | uuid                     | YES         | null                           | null                     | null              |
+| document_classifications | classified_by               | uuid                     | YES         | null                           | null                     | null              |
+| document_metadata        | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| document_metadata        | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| document_metadata        | document_id                 | uuid                     | NO          | null                           | null                     | null              |
+| document_metadata        | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| document_metadata        | metadata                    | jsonb                    | NO          | '{}'::jsonb                    | null                     | null              |
+| document_metadata        | metadata_version            | text                     | YES         | '1.0'::text                    | null                     | null              |
+| document_metadata        | confidence                  | real                     | NO          | null                           | null                     | 24                |
+| document_metadata        | extraction_method           | text                     | NO          | null                           | null                     | null              |
+| document_metadata        | processing_time_ms          | integer                  | YES         | null                           | null                     | 32                |
+| document_metadata        | tokens_used                 | integer                  | YES         | 0                              | null                     | 32                |
+| document_metadata        | validation_status           | text                     | YES         | 'valid'::text                  | null                     | null              |
+| document_metadata        | validation_errors           | ARRAY                    | YES         | null                           | null                     | null              |
+| document_metadata        | validation_warnings         | ARRAY                    | YES         | null                           | null                     | null              |
+| document_metadata        | document_type               | text                     | YES         | null                           | null                     | null              |
+| document_metadata        | document_date               | date                     | YES         | null                           | null                     | null              |
+| document_metadata        | topic_keywords              | ARRAY                    | YES         | null                           | null                     | null              |
+| document_metadata        | input_sample_length         | integer                  | YES         | null                           | null                     | 32                |
+| document_metadata        | filename_analyzed           | text                     | YES         | null                           | null                     | null              |
+| document_metadata        | raw_response                | text                     | YES         | null                           | null                     | null              |
+| document_metadata        | is_current                  | boolean                  | YES         | true                           | null                     | null              |
+| document_metadata        | superseded_by               | uuid                     | YES         | null                           | null                     | null              |
+| document_metadata        | extracted_by                | uuid                     | YES         | null                           | null                     | null              |
+| documents                | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| documents                | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| documents                | community_id                | uuid                     | YES         | null                           | null                     | null              |
+| documents                | filename                    | text                     | NO          | null                           | null                     | null              |
+| documents                | file_path                   | text                     | NO          | null                           | null                     | null              |
+| documents                | file_size                   | bigint                   | NO          | null                           | null                     | 64                |
+| documents                | file_hash                   | text                     | NO          | null                           | null                     | null              |
+| documents                | document_type               | text                     | YES         | null                           | null                     | null              |
+| documents                | legacy_status               | text                     | NO          | 'processing'::text             | null                     | null              |
+| documents                | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| documents                | processed_at                | timestamp with time zone | YES         | null                           | null                     | null              |
+| documents                | extracted_text              | text                     | YES         | null                           | null                     | null              |
+| documents                | text_length                 | integer                  | YES         | 0                              | null                     | 32                |
+| documents                | page_count                  | integer                  | YES         | 0                              | null                     | 32                |
+| documents                | processing_level            | integer                  | YES         | 1                              | null                     | 32                |
+| documents                | processing_config           | jsonb                    | YES         | '{}'::jsonb                    | null                     | null              |
+| documents                | extraction_status           | text                     | YES         | 'pending'::text                | null                     | null              |
+| documents                | extraction_error            | text                     | YES         | null                           | null                     | null              |
+| documents                | extraction_method           | text                     | YES         | null                           | null                     | null              |
+| documents                | extraction_completed_at     | timestamp with time zone | YES         | null                           | null                     | null              |
+| documents                | classification_status       | text                     | YES         | null                           | null                     | null              |
+| documents                | classification_error        | text                     | YES         | null                           | null                     | null              |
+| documents                | classification_completed_at | timestamp with time zone | YES         | null                           | null                     | null              |
+| documents                | metadata_status             | text                     | YES         | null                           | null                     | null              |
+| documents                | metadata_error              | text                     | YES         | null                           | null                     | null              |
+| documents                | metadata_completed_at       | timestamp with time zone | YES         | null                           | null                     | null              |
+| documents                | chunking_status             | text                     | YES         | null                           | null                     | null              |
+| documents                | chunking_error              | text                     | YES         | null                           | null                     | null              |
+| documents                | chunking_completed_at       | timestamp with time zone | YES         | null                           | null                     | null              |
+| documents                | chunks_count                | integer                  | YES         | 0                              | null                     | 32                |
+| documents                | total_processing_time_ms    | integer                  | YES         | 0                              | null                     | 32                |
+| documents                | total_tokens_used           | integer                  | YES         | 0                              | null                     | 32                |
+| documents                | estimated_cost_usd          | numeric                  | YES         | 0.000000                       | null                     | 10                |
+| documents                | processing_started_at       | timestamp with time zone | YES         | null                           | null                     | null              |
+| documents                | processing_completed_at     | timestamp with time zone | YES         | null                           | null                     | null              |
+| documents                | last_processed_by           | uuid                     | YES         | null                           | null                     | null              |
+| documents                | uploaded_by                 | uuid                     | YES         | null                           | null                     | null              |
+| documents                | mime_type                   | text                     | YES         | null                           | null                     | null              |
+| documents                | original_filename           | text                     | YES         | null                           | null                     | null              |
+| extracted_invoices       | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| extracted_invoices       | document_id                 | uuid                     | NO          | null                           | null                     | null              |
+| extracted_invoices       | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| extracted_invoices       | provider_name               | text                     | YES         | null                           | null                     | null              |
+| extracted_invoices       | client_name                 | text                     | YES         | null                           | null                     | null              |
+| extracted_invoices       | amount                      | numeric                  | YES         | null                           | null                     | 12                |
+| extracted_invoices       | invoice_date                | date                     | YES         | null                           | null                     | null              |
+| extracted_invoices       | category                    | text                     | YES         | null                           | null                     | null              |
+| extracted_invoices       | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| extracted_minutes        | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| extracted_minutes        | document_id                 | uuid                     | NO          | null                           | null                     | null              |
+| extracted_minutes        | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| extracted_minutes        | president_in                | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | president_out               | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | administrator               | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | summary                     | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | decisions                   | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| extracted_minutes        | document_date               | date                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | tipo_reunion                | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | lugar                       | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | comunidad_nombre            | text                     | YES         | null                           | null                     | null              |
+| extracted_minutes        | orden_del_dia               | jsonb                    | YES         | '[]'::jsonb                    | null                     | null              |
+| extracted_minutes        | acuerdos                    | jsonb                    | YES         | '[]'::jsonb                    | null                     | null              |
+| extracted_minutes        | topic_keywords              | ARRAY                    | YES         | ARRAY[]::text[]                | null                     | null              |
+| extracted_minutes        | topic_presupuesto           | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_mantenimiento         | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_administracion        | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_piscina               | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_jardin                | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_limpieza              | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_balance               | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_paqueteria            | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_energia               | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_normativa             | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_proveedor             | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_dinero                | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_ascensor              | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_incendios             | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | topic_porteria              | boolean                  | YES         | false                          | null                     | null              |
+| extracted_minutes        | estructura_detectada        | jsonb                    | YES         | '{}'::jsonb                    | null                     | null              |
+| incidents                | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| incidents                | title                       | text                     | NO          | null                           | null                     | null              |
+| incidents                | description                 | text                     | NO          | null                           | null                     | null              |
+| incidents                | status                      | text                     | NO          | 'abierto'::text                | null                     | null              |
+| incidents                | priority                    | text                     | NO          | 'media'::text                  | null                     | null              |
+| incidents                | community_id                | uuid                     | NO          | null                           | null                     | null              |
+| incidents                | reported_by                 | uuid                     | NO          | null                           | null                     | null              |
+| incidents                | assigned_to                 | uuid                     | YES         | null                           | null                     | null              |
+| incidents                | created_at                  | timestamp with time zone | YES         | now()                          | null                     | null              |
+| incidents                | updated_at                  | timestamp with time zone | YES         | now()                          | null                     | null              |
+| incidents                | resolved_at                 | timestamp with time zone | YES         | null                           | null                     | null              |
+| incidents                | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| incidents_summary        | id                          | uuid                     | YES         | null                           | null                     | null              |
+| incidents_summary        | title                       | text                     | YES         | null                           | null                     | null              |
+| incidents_summary        | status                      | text                     | YES         | null                           | null                     | null              |
+| incidents_summary        | priority                    | text                     | YES         | null                           | null                     | null              |
+| incidents_summary        | community_name              | character varying        | YES         | null                           | 255                      | null              |
+| incidents_summary        | community_city              | character varying        | YES         | null                           | 100                      | null              |
+| incidents_summary        | reporter_email              | character varying        | YES         | null                           | 255                      | null              |
+| incidents_summary        | created_at                  | timestamp with time zone | YES         | null                           | null                     | null              |
+| incidents_summary        | updated_at                  | timestamp with time zone | YES         | null                           | null                     | null              |
+| incidents_summary        | resolved_at                 | timestamp with time zone | YES         | null                           | null                     | null              |
+| incidents_summary        | days_open                   | numeric                  | YES         | null                           | null                     | null              |
+| items                    | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| items                    | id                          | uuid                     | NO          | uuid_generate_v4()             | null                     | null              |
+| items                    | name                        | character varying        | NO          | null                           | null                     | null              |
+| items                    | description                 | character varying        | NO          | null                           | null                     | null              |
+| organization_dashboard   | id                          | uuid                     | YES         | null                           | null                     | null              |
+| organization_dashboard   | name                        | text                     | YES         | null                           | null                     | null              |
+| organization_dashboard   | description                 | text                     | YES         | null                           | null                     | null              |
+| organization_dashboard   | subscription_plan           | text                     | YES         | null                           | null                     | null              |
+| organization_dashboard   | max_communities             | integer                  | YES         | null                           | null                     | 32                |
+| organization_dashboard   | max_users_per_community     | integer                  | YES         | null                           | null                     | 32                |
+| organization_dashboard   | is_active                   | boolean                  | YES         | null                           | null                     | null              |
+| organization_dashboard   | created_at                  | timestamp with time zone | YES         | null                           | null                     | null              |
+| organization_dashboard   | total_communities           | bigint                   | YES         | null                           | null                     | 64                |
+| organization_dashboard   | total_users                 | bigint                   | YES         | null                           | null                     | 64                |
+| organization_dashboard   | open_incidents              | bigint                   | YES         | null                           | null                     | 64                |
+| organization_dashboard   | total_incidents             | bigint                   | YES         | null                           | null                     | 64                |
+| organization_dashboard   | owner_email                 | character varying        | YES         | null                           | 255                      | null              |
+| organizations            | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| organizations            | name                        | text                     | NO          | null                           | null                     | null              |
+| organizations            | description                 | text                     | YES         | null                           | null                     | null              |
+| organizations            | owner_id                    | uuid                     | NO          | null                           | null                     | null              |
+| organizations            | contact_email               | text                     | YES         | null                           | null                     | null              |
+| organizations            | contact_phone               | text                     | YES         | null                           | null                     | null              |
+| organizations            | subscription_plan           | text                     | NO          | 'basic'::text                  | null                     | null              |
+| organizations            | max_communities             | integer                  | NO          | 5                              | null                     | 32                |
+| organizations            | max_users_per_community     | integer                  | NO          | 500                            | null                     | 32                |
+| organizations            | is_active                   | boolean                  | NO          | true                           | null                     | null              |
+| organizations            | timezone                    | text                     | YES         | 'UTC'::text                    | null                     | null              |
+| organizations            | locale                      | text                     | YES         | 'es-ES'::text                  | null                     | null              |
+| organizations            | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| organizations            | updated_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| private_items            | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |
+| private_items            | id                          | uuid                     | NO          | uuid_generate_v4()             | null                     | null              |
+| private_items            | name                        | character varying        | NO          | null                           | null                     | null              |
+| private_items            | description                 | character varying        | NO          | null                           | null                     | null              |
+| private_items            | user_id                     | uuid                     | NO          | null                           | null                     | null              |
+| user_roles               | id                          | uuid                     | NO          | uuid_generate_v4()             | null                     | null              |
+| user_roles               | user_id                     | uuid                     | NO          | null                           | null                     | null              |
+| user_roles               | community_id                | uuid                     | YES         | null                           | null                     | null              |
+| user_roles               | role                        | text                     | NO          | null                           | null                     | null              |
+| user_roles               | created_at                  | timestamp with time zone | YES         | now()                          | null                     | null              |
+| user_roles               | updated_at                  | timestamp with time zone | YES         | now()                          | null                     | null              |
+| user_roles               | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| vector_embeddings        | id                          | uuid                     | NO          | gen_random_uuid()              | null                     | null              |
+| vector_embeddings        | document_id                 | uuid                     | NO          | null                           | null                     | null              |
+| vector_embeddings        | organization_id             | uuid                     | NO          | null                           | null                     | null              |
+| vector_embeddings        | content                     | text                     | NO          | null                           | null                     | null              |
+| vector_embeddings        | embedding                   | USER-DEFINED             | YES         | null                           | null                     | null              |
+| vector_embeddings        | chunk_index                 | integer                  | YES         | 0                              | null                     | 32                |
+| vector_embeddings        | chunk_size                  | integer                  | YES         | null                           | null                     | 32                |
+| vector_embeddings        | created_at                  | timestamp with time zone | NO          | now()                          | null                     | null              |

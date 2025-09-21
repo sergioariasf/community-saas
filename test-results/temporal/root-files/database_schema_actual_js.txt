@@ -1,0 +1,4 @@
+❌ Error en tabla communities: Invalid API key
+❌ Error en tabla user_roles: Invalid API key
+❌ Error en tabla items: Invalid API key
+❌ Error en tabla private_items: Invalid API key

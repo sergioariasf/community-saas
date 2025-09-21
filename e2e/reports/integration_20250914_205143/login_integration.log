@@ -1,0 +1,31 @@
+🔐 TEST LOGIN INTEGRATION - Manejo nextjs-portal
+==================================================
+
+🌐 PASO 1: Navegando a página de login
+✅ Página de login cargada
+
+📝 PASO 2: Llenando credenciales
+✅ Credenciales ingresadas
+
+🔍 PASO 3: Localizando botón de envío
+✅ Botón encontrado con selector: button[type="submit"]
+
+🚀 PASO 4: Enviando formulario con estrategias anti-portal
+🎯 Probando estrategia 1...
+✅ Login exitoso con: normal click
+
+✅ PASO 5: Validando resultado del login
+
+🧭 PASO 6: Verificando navegación post-login
+✅ Navegación a documentos exitosa - Sesión válida
+
+🎉 TEST LOGIN INTEGRATION COMPLETADO
+🎯 Estrategia exitosa: normal click
+
+📊 RESULTADO LOGIN INTEGRATION:
+==============================
+{
+  "success": true,
+  "strategy": "normal click",
+  "canNavigate": true
+}

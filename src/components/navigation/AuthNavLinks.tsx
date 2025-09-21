@@ -73,7 +73,7 @@ export function AuthNavLinks() {
     return (
       <Link
         className="text-sm font-medium hover:underline underline-offset-4"
-        href="/login"
+        href="/auth?mode=login"
       >
         Login
       </Link>

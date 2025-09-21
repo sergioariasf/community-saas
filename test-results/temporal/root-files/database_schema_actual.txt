@@ -1,0 +1,90 @@
+===============================================================================
+SCHEMA COMPLETO DE SUPABASE - 10 QUERIES EXACTAS
+===============================================================================
+Fecha: 2025-09-14T05:11:24.442Z
+Método: Supabase JS Client con Service Role - Queries Exactas de get_full_schema.sql
+Archivo origen: supabase/scripts/get_full_schema.sql
+
+=============================================================================
+-- 1. EXTENSIONES HABILITADAS
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 2. TABLAS EXISTENTES (Schema público)
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 3. COLUMNAS DE TODAS LAS TABLAS
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 4. PRIMARY KEYS
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 5. FOREIGN KEYS Y REFERENCIAS
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 6. CHECK CONSTRAINTS
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 7. ÍNDICES
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 8. FUNCIONES CUSTOM (Solo las tuyas, no pgvector)
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 9. TRIGGERS
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+=============================================================================
+-- 10. RLS (Row Level Security) POLICIES
+=============================================================================
+❌ Error: Could not find the function public.sql(query) in the schema cache
+⚠️ Esta query requiere acceso directo a PostgreSQL que puede no estar disponible via JS Client
+
+
+===============================================================================
+RESUMEN DE EJECUCIÓN
+===============================================================================
+✅ Queries exitosas: 0/10
+❌ Queries fallidas: 10/10
+📊 Total queries ejecutadas: 10
+
+⚠️ NOTA: Algunas queries fallan porque el JS Client no tiene acceso completo
+   a los schemas del sistema (information_schema, pg_*). Esto es normal.
+   Para obtener TODA la información, usar el método manual:
+   1. Ir a Supabase SQL Editor
+   2. Ejecutar las queries de supabase/scripts/get_full_schema.sql
+   3. Copiar resultados manualmente

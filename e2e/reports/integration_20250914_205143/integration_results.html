@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Tests Integración UI+Backend</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f5f7fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; }
+        .metric h3 { margin: 0; font-size: 2em; }
+        .metric p { margin: 5px 0 0 0; opacity: 0.9; }
+        .test-result { margin: 15px 0; padding: 15px; border-radius: 8px; border-left: 5px solid; }
+        .pass { background: #d4edda; border-color: #28a745; color: #155724; }
+        .fail { background: #f8d7da; border-color: #dc3545; color: #721c24; }
+        .skip { background: #fff3cd; border-color: #ffc107; color: #856404; }
+        .log-link { color: #007bff; text-decoration: none; font-weight: 500; }
+        .log-link:hover { text-decoration: underline; }
+        .footer { margin-top: 40px; text-align: center; color: #6c757d; border-top: 1px solid #dee2e6; padding-top: 20px; }
+        .icon { font-size: 1.2em; margin-right: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Reporte Tests Integración UI+Backend</h1>
+        <p><strong>Ejecutado:</strong> Sun Sep 14 20:52:22 CEST 2025</p>
+        <p><strong>Servidor:</strong> http://localhost:3001</p>
+        
+        <div class="summary">
+            <div class="metric">
+                <h3>2</h3>
+                <p>Tests Totales</p>
+            </div>
+            <div class="metric" style="background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);">
+                <h3>1</h3>
+                <p>Tests Pasados</p>
+            </div>
+            <div class="metric" style="background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);">
+                <h3>1</h3>
+                <p>Tests Fallados</p>
+            </div>
+        </div>
+
+        <h2>📋 Resultados Detallados</h2>
+        
+        <div class="test-result pass">
+            <span class="icon">🔐</span>
+            <strong>Login Integration Test</strong> - PASS
+            <br><small>Manejo de nextjs-portal pointer events y estrategias de click</small>
+            <br><a href="login_integration.log" class="log-link">📄 Ver log detallado</a>
+        </div>
+        
+        <div class="test-result fail">
+            <span class="icon">📄</span>
+            <strong>Document Integration Test</strong> - FAIL  
+            <br><small>Test completo UI + Backend con FormData y Server Actions</small>
+            <br><a href="document_integration.log" class="log-link">📄 Ver log detallado</a>
+        </div>
+        
+        <div class="test-result skip">
+            <span class="icon">🔄</span>
+            <strong>Pipeline E2E Test</strong> - SKIP
+            <br><small>Pipeline completo de 4 niveles end-to-end</small>
+            
+        </div>
+
+        <h2>🎯 Conclusiones</h2>
+        
+        <div class='test-result fail'>
+<span class='icon'>⚠️</span>
+<strong>Algunos tests fallaron</strong><br>
+Revisar logs individuales para detalles específicos. Tests que pasaron indican componentes funcionando correctamente.
+</div>
+
+        <div class="footer">
+            <p>Generado automáticamente por el sistema de testing Community-SaaS</p>
+            <p>📁 Todos los logs y archivos disponibles en: e2e/reports/integration_20250914_205143</p>
+        </div>
+    </div>
+</body>
+</html>

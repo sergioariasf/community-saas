@@ -153,6 +153,41 @@ export async function getUserCommunities() {
       return { success: false, error: 'User not authenticated' };
     }
 
+    // Primero verificar si es admin
+    const { data: userRoles, error: rolesError } = await supabase
+      .from('user_roles')
+      .select('role, community_id')
+      .eq('user_id', user.id);
+
+    if (rolesError) {
+      console.error('Error fetching user roles:', rolesError);
+      return { success: false, error: 'Failed to fetch user roles' };
+    }
+
+    const isAdmin = userRoles?.some(role => role.role === 'admin') || false;
+
+    if (isAdmin) {
+      // Admin puede ver TODAS las comunidades
+      const { data: allCommunities, error: communitiesError } = await supabase
+        .from('communities')
+        .select('id, name')
+        .order('name');
+
+      if (communitiesError) {
+        console.error('Error fetching all communities:', communitiesError);
+        return { success: false, error: 'Failed to fetch communities' };
+      }
+
+      return { 
+        success: true, 
+        data: allCommunities.map(community => ({
+          id: community.id,
+          name: community.name
+        }))
+      };
+    }
+
+    // Para managers y residents, solo comunidades asignadas
     const { data, error } = await supabase
       .from('user_roles')
       .select(`
@@ -161,11 +196,12 @@ export async function getUserCommunities() {
           name
         )
       `)
-      .eq('user_id', user.id);
+      .eq('user_id', user.id)
+      .not('community_id', 'is', null); // Excluir roles admin (community_id = null)
 
     if (error) {
       console.error('Error fetching user communities:', error);
-      throw error;
+      return { success: false, error: 'Failed to fetch user communities' };
     }
 
     // Use proper typing for Supabase query response with unknown first

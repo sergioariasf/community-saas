@@ -1,0 +1,35 @@
+
+=============================================
+🔍 Explorando endpoints disponibles...
+📊 TABLA: communities
+----------------------------------------
+{"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+
+📊 TABLA: user_roles
+----------------------------------------
+{"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+
+📊 TABLA: items
+----------------------------------------
+{"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+
+📊 TABLA: private_items
+----------------------------------------
+{"message":"Invalid API key","hint":"Double check your Supabase `anon` or `service_role` API key."}
+
+📦 Instalando dependencias necesarias...
+✅ @supabase/supabase-js ya disponible
+🚀 Ejecutando extractor Node.js...
+🔍 Extrayendo schema via Supabase JS Client...
+📊 Analizando tabla: communities
+📊 Analizando tabla: user_roles
+📊 Analizando tabla: items
+📊 Analizando tabla: private_items
+✅ Resultados guardados en database_schema_actual_js.txt
+❌ Error en tabla communities: Invalid API key
+❌ Error en tabla user_roles: Invalid API key
+❌ Error en tabla items: Invalid API key
+❌ Error en tabla private_items: Invalid API key
+
+🏁 ANÁLISIS VIA API COMPLETADO
+================================================

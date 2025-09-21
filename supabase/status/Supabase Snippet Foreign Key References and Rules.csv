@@ -1,0 +1,24 @@
+| constraint_name                               | source_table             | source_column   | target_table             | target_column | update_rule | delete_rule |
+| --------------------------------------------- | ------------------------ | --------------- | ------------------------ | ------------- | ----------- | ----------- |
+| agents_organization_id_fkey                   | agents                   | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| communities_organization_id_fkey              | communities              | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| document_chunks_document_id_fkey              | document_chunks          | document_id     | documents                | id            | NO ACTION   | CASCADE     |
+| document_chunks_organization_id_fkey          | document_chunks          | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| document_classifications_document_id_fkey     | document_classifications | document_id     | documents                | id            | NO ACTION   | CASCADE     |
+| document_classifications_organization_id_fkey | document_classifications | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| document_classifications_superseded_by_fkey   | document_classifications | superseded_by   | document_classifications | id            | NO ACTION   | NO ACTION   |
+| document_metadata_document_id_fkey            | document_metadata        | document_id     | documents                | id            | NO ACTION   | CASCADE     |
+| document_metadata_organization_id_fkey        | document_metadata        | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| document_metadata_superseded_by_fkey          | document_metadata        | superseded_by   | document_metadata        | id            | NO ACTION   | NO ACTION   |
+| documents_community_id_fkey                   | documents                | community_id    | communities              | id            | NO ACTION   | CASCADE     |
+| documents_organization_id_fkey                | documents                | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| extracted_invoices_document_id_fkey           | extracted_invoices       | document_id     | documents                | id            | NO ACTION   | CASCADE     |
+| extracted_invoices_organization_id_fkey       | extracted_invoices       | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| extracted_minutes_document_id_fkey            | extracted_minutes        | document_id     | documents                | id            | NO ACTION   | CASCADE     |
+| extracted_minutes_organization_id_fkey        | extracted_minutes        | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| incidents_community_id_fkey                   | incidents                | community_id    | communities              | id            | NO ACTION   | CASCADE     |
+| incidents_organization_id_fkey                | incidents                | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| user_roles_community_id_fkey                  | user_roles               | community_id    | communities              | id            | NO ACTION   | CASCADE     |
+| user_roles_organization_id_fkey               | user_roles               | organization_id | organizations            | id            | NO ACTION   | CASCADE     |
+| vector_embeddings_document_id_fkey            | vector_embeddings        | document_id     | documents                | id            | NO ACTION   | CASCADE     |
+| vector_embeddings_organization_id_fkey        | vector_embeddings        | organization_id | organizations            | id            | NO ACTION   | CASCADE     |

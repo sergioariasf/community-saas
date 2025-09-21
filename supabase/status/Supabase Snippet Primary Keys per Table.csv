@@ -1,0 +1,16 @@
+| table_name               | column_name | constraint_name               |
+| ------------------------ | ----------- | ----------------------------- |
+| agents                   | id          | agents_pkey                   |
+| communities              | id          | communities_pkey              |
+| document_chunks          | id          | document_chunks_pkey          |
+| document_classifications | id          | document_classifications_pkey |
+| document_metadata        | id          | document_metadata_pkey        |
+| documents                | id          | documents_pkey                |
+| extracted_invoices       | id          | extracted_invoices_pkey       |
+| extracted_minutes        | id          | extracted_minutes_pkey        |
+| incidents                | id          | incidents_pkey                |
+| items                    | id          | items_pkey                    |
+| organizations            | id          | organizations_pkey            |
+| private_items            | id          | private_items_pkey            |
+| user_roles               | id          | user_roles_pkey               |
+| vector_embeddings        | id          | vector_embeddings_pkey        |

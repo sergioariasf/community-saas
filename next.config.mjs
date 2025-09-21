@@ -21,4 +21,9 @@ export default {
       },
     ],
   },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb', // Permitir archivos hasta 10MB
+    },
+  },
 };

@@ -87,75 +87,37 @@ export const AdminQuickActions = () => {
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* 👥 GESTIÓN DE USUARIOS - Solo Admin */}
-        {isAdmin && (
-          <QuickActionCard
-            title="Usuarios"
-            description="Gestionar usuarios y roles del sistema"
-            icon={Users}
-            href="/users"
-            buttonText="Ver Usuarios"
-            badge="Admin"
-          />
-        )}
-
-        {/* 🏢 GESTIÓN DE COMUNIDADES */}
+        {/* 📊 RESUMEN RÁPIDO */}
         <QuickActionCard
-          title="Comunidades"
-          description={
-            isAdmin 
-              ? "Administrar todas las comunidades" 
-              : "Gestionar tus comunidades asignadas"
-          }
-          icon={Building2}
-          href="/communities"
-          buttonText="Ver Comunidades"
-          badge={isAdmin ? 'Admin' : 'Manager'}
-        />
-
-        {/* ➕ CREAR USUARIO - Solo Admin */}
-        {isAdmin && (
-          <QuickActionCard
-            title="Nuevo Usuario"
-            description="Crear usuario y asignar roles"
-            icon={UserPlus}
-            href="/users/new"
-            buttonText="Crear Usuario"
-            badge="Admin"
-          />
-        )}
-
-        {/* ➕ CREAR COMUNIDAD */}
-        {isAdmin && (
-          <QuickActionCard
-            title="Nueva Comunidad"
-            description="Registrar nueva comunidad"
-            icon={PlusCircle}
-            href="/communities/new"
-            buttonText="Crear Comunidad"
-            badge="Admin"
-          />
-        )}
-
-        {/* 📊 ANALYTICS - Futuro */}
-        <QuickActionCard
-          title="Analytics"
-          description="Estadísticas y métricas del sistema"
+          title="Resumen del Sistema"
+          description="Vista general de actividad y métricas"
           icon={BarChart3}
-          href="/analytics"
-          buttonText="Ver Estadísticas"
-          badge="Próximamente"
+          href="/dashboard/stats"
+          buttonText="Ver Resumen"
+          badge="Dashboard"
         />
 
-        {/* ⚙️ CONFIGURACIÓN - Futuro */}
+        {/* 🚨 ACCIONES URGENTES */}
         <QuickActionCard
-          title="Configuración"
-          description="Ajustes del sistema y plataforma"
-          icon={Settings}
-          href="/settings"
-          buttonText="Configurar"
-          badge="Próximamente"
+          title="Tareas Pendientes"
+          description="Incidencias sin resolver y tareas críticas"
+          icon={PlusCircle}
+          href="/dashboard/urgent"
+          buttonText="Ver Pendientes"
+          badge="Urgente"
         />
+
+        {/* 📈 ESTADÍSTICAS RÁPIDAS */}
+        {isAdmin && (
+          <QuickActionCard
+            title="Panel de Control"
+            description="Métricas de usuarios, comunidades y sistema"
+            icon={Shield}
+            href="/dashboard/admin"
+            buttonText="Panel Admin"
+            badge="Admin"
+          />
+        )}
       </div>
 
       {/* 🔑 RESUMEN DE PERMISOS */}

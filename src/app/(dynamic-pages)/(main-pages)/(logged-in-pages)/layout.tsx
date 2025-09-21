@@ -1,16 +1,16 @@
-import { Avatar, AvatarFallback } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { getCachedLoggedInVerifiedSupabaseUser } from '@/rsc-data/supabase';
-import { Home, List, Lock, PlusCircle, User, Building2, AlertTriangle } from 'lucide-react';
+import { Home, Building2, AlertTriangle, FileText, MessageSquare, Users, UserCog } from 'lucide-react';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
+import { UserDropdown } from '@/components/navigation/UserDropdown';
 
 export default async function Layout({ children }: { children: ReactNode }) {
   try {
     await getCachedLoggedInVerifiedSupabaseUser();
   } catch (error) {
-    redirect('/login');
+    redirect('/auth?mode=login');
   }
 
   return (
@@ -22,7 +22,7 @@ export default async function Layout({ children }: { children: ReactNode }) {
             className="font-semibold text-lg flex items-center gap-2"
           >
             <Home className="h-5 w-5" />
-            <span>Nextbase</span>
+            <span>Fazil</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-6">
@@ -48,34 +48,37 @@ export default async function Layout({ children }: { children: ReactNode }) {
               <span>Incidencias</span>
             </Link>
             <Link
-              href="/items"
+              href="/documents"
               className="text-sm font-medium text-muted-foreground hover:text-foreground flex items-center gap-1"
             >
-              <List className="h-4 w-4" />
-              <span>Public Items</span>
+              <FileText className="h-4 w-4" />
+              <span>Documentos</span>
             </Link>
             <Link
-              href="/private-items"
+              href="/chat-ia"
               className="text-sm font-medium text-muted-foreground hover:text-foreground flex items-center gap-1"
             >
-              <Lock className="h-4 w-4" />
-              <span>Private Items</span>
+              <MessageSquare className="h-4 w-4" />
+              <span>Chat IA</span>
+            </Link>
+            <Link
+              href="/foro"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground flex items-center gap-1"
+            >
+              <Users className="h-4 w-4" />
+              <span>Foro</span>
+            </Link>
+            <Link
+              href="/usuarios"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground flex items-center gap-1"
+            >
+              <UserCog className="h-4 w-4" />
+              <span>Usuarios</span>
             </Link>
           </nav>
 
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm" asChild>
-              <Link href="/dashboard/new" className="flex items-center gap-1">
-                <PlusCircle className="h-3.5 w-3.5" />
-                <span className="hidden sm:inline">New Item</span>
-              </Link>
-            </Button>
-
-            <Avatar className="h-8 w-8">
-              <AvatarFallback>
-                <User className="h-4 w-4" />
-              </AvatarFallback>
-            </Avatar>
+            <UserDropdown />
           </div>
         </div>
       </header>

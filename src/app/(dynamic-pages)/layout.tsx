@@ -3,10 +3,10 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   icons: {
-    icon: '/images/logo-black-main.ico',
+    icon: '/images/favicon.svg',
   },
-  title: 'Nextbase Open source',
-  description: 'Nextbase Open source',
+  title: 'Fazil - Community Management',
+  description: 'Sistema de gestión integral para comunidades de propietarios',
 };
 
 export default async function RootLayout({

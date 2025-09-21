@@ -3,6 +3,9 @@ import { T } from '@/components/ui/Typography';
 import { getAllUsers } from '@/data/anon/users';
 import { UsersList } from './UsersList';
 
+// Disable caching for this page to ensure fresh data
+export const dynamic = 'force-dynamic';
+
 export default async function UsersPage() {
   return (
     <div className="space-y-8">

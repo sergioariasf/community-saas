@@ -1,0 +1,11 @@
+| trigger_name                          | table_name               | action_timing | event_manipulation | action_statement                                  |
+| ------------------------------------- | ------------------------ | ------------- | ------------------ | ------------------------------------------------- |
+| agents_updated_at_trigger             | agents                   | BEFORE        | UPDATE             | EXECUTE FUNCTION update_updated_at_column()       |
+| communities_updated_at_trigger        | communities              | BEFORE        | UPDATE             | EXECUTE FUNCTION update_communities_updated_at()  |
+| calculate_chunk_length_trigger        | document_chunks          | BEFORE        | INSERT             | EXECUTE FUNCTION calculate_chunk_length()         |
+| calculate_chunk_length_trigger        | document_chunks          | BEFORE        | UPDATE             | EXECUTE FUNCTION calculate_chunk_length()         |
+| update_document_chunks_count_trigger  | document_chunks          | AFTER         | INSERT             | EXECUTE FUNCTION update_document_chunks_count()   |
+| update_document_chunks_count_trigger  | document_chunks          | AFTER         | DELETE             | EXECUTE FUNCTION update_document_chunks_count()   |
+| manage_current_classification_trigger | document_classifications | AFTER         | INSERT             | EXECUTE FUNCTION manage_current_classification()  |
+| incidents_updated_at_trigger          | incidents                | BEFORE        | UPDATE             | EXECUTE FUNCTION update_incidents_updated_at()    |
+| organizations_updated_at_trigger      | organizations            | BEFORE        | UPDATE             | EXECUTE FUNCTION update_organization_updated_at() |

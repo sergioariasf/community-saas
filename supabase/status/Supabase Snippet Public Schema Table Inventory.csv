@@ -1,0 +1,18 @@
+| table_name               | table_type | is_insertable_into | is_typed |
+| ------------------------ | ---------- | ------------------ | -------- |
+| agents                   | BASE TABLE | YES                | NO       |
+| communities              | BASE TABLE | YES                | NO       |
+| document_chunks          | BASE TABLE | YES                | NO       |
+| document_classifications | BASE TABLE | YES                | NO       |
+| document_metadata        | BASE TABLE | YES                | NO       |
+| documents                | BASE TABLE | YES                | NO       |
+| extracted_invoices       | BASE TABLE | YES                | NO       |
+| extracted_minutes        | BASE TABLE | YES                | NO       |
+| incidents                | BASE TABLE | YES                | NO       |
+| incidents_summary        | VIEW       | NO                 | NO       |
+| items                    | BASE TABLE | YES                | NO       |
+| organization_dashboard   | VIEW       | NO                 | NO       |
+| organizations            | BASE TABLE | YES                | NO       |
+| private_items            | BASE TABLE | YES                | NO       |
+| user_roles               | BASE TABLE | YES                | NO       |
+| vector_embeddings        | BASE TABLE | YES                | NO       |
