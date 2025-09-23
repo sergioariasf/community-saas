@@ -1,7 +1,8 @@
 'use server';
 
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { createSupabaseClient } from '@/supabase-clients/server';
+import { createSupabaseClient, createSupabaseServiceClient } from '@/supabase-clients/server';
+import { getGeminiConfigForAgent, TIMEOUT_CONFIG } from '../ingesta/config/agentConfig';
 
 /**
  * Integración con agentes SaaS usando Gemini Flash 1.5
@@ -46,7 +47,8 @@ function getGeminiClient(): GoogleGenerativeAI {
  */
 export async function callSaaSAgent(
   agentName: string, 
-  inputs: Record<string, any>
+  inputs: Record<string, any>,
+  useServiceClient = false
 ): Promise<AgentResponse> {
   const startTime = Date.now();
   
@@ -54,7 +56,7 @@ export async function callSaaSAgent(
     console.log(`[SaaS Agent] Calling agent: ${agentName}`);
     
     // 1. Obtener configuración del agente desde BD
-    const agent = await getAgentConfig(agentName);
+    const agent = await getAgentConfig(agentName, useServiceClient);
     if (!agent) {
       return {
         success: false,
@@ -104,9 +106,9 @@ export async function callSaaSAgent(
 /**
  * Obtiene la configuración de un agente desde la base de datos
  */
-async function getAgentConfig(agentName: string): Promise<SaaSAgent | null> {
+async function getAgentConfig(agentName: string, useServiceClient = false): Promise<SaaSAgent | null> {
   try {
-    const supabase = await createSupabaseClient();
+    const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
     
     // Buscar agente global primero, luego específico de organización
     const { data, error } = await supabase
@@ -193,12 +195,10 @@ IMPORTANTE: Responde SOLO con "acta" o "factura", sin texto adicional.`;
 async function callGemini(prompt: string, agentName: string): Promise<AgentResponse> {
   try {
     const genAI = getGeminiClient();
+    const geminiConfig = getGeminiConfigForAgent(agentName);
     const model = genAI.getGenerativeModel({ 
       model: 'gemini-1.5-flash', // Más rápido y económico
-      generationConfig: {
-        temperature: 0.1, // Respuestas más deterministas para extracción de datos
-        maxOutputTokens: (agentName === 'acta_extractor_v2' || agentName === 'contrato_extractor_v1') ? 3000 : 1000, // Más tokens para extractores complejos
-      }
+      generationConfig: geminiConfig
     });
 
     console.log(`[Gemini] Calling model for agent: ${agentName}`);
@@ -220,8 +220,16 @@ async function callGemini(prompt: string, agentName: string): Promise<AgentRespo
     // Auto-parse JSON responses for consistency across all agents
     let responseData = text.trim();
     try {
+      // Clean JSON from markdown code blocks
+      let cleanText = text.trim();
+      if (cleanText.startsWith('```json')) {
+        cleanText = cleanText.replace(/^```json\s*/i, '').replace(/\s*```\s*$/, '');
+      } else if (cleanText.startsWith('```')) {
+        cleanText = cleanText.replace(/^```\s*/, '').replace(/\s*```\s*$/, '');
+      }
+      
       // Try to parse as JSON - if successful, return parsed object
-      responseData = JSON.parse(text.trim());
+      responseData = JSON.parse(cleanText);
       console.log(`[Gemini] JSON parsed successfully for agent: ${agentName}`);
     } catch (parseError) {
       // If parsing fails, return as string (for non-JSON responses)
@@ -284,8 +292,14 @@ function processAgentResponse(agentName: string, rawResponse: any): any {
         parsed = rawResponse;
       } else if (typeof rawResponse === 'string') {
         // Limpiar la respuesta por si tiene texto extra - buscar JSON en bloques de código o directo
-        let jsonMatch = rawResponse.match(/```json\s*(\{[\s\S]*?\})\s*```/) || rawResponse.match(/\{[\s\S]*\}/);
-        if (!jsonMatch) {
+        let cleanText = rawResponse.trim();
+        if (cleanText.startsWith('```json')) {
+          cleanText = cleanText.replace(/^```json\s*/i, '').replace(/\s*```\s*$/, '');
+        } else if (cleanText.startsWith('```')) {
+          cleanText = cleanText.replace(/^```\s*/, '').replace(/\s*```\s*$/, '');
+        }
+        
+        if (!cleanText || !cleanText.trim()) {
           console.warn(`[Agent Response] No JSON found in response of length ${rawResponse.length}:`);
           console.warn(`[Agent Response] Full response (first 2000 chars):`, rawResponse.substring(0, 2000));
           if (rawResponse.length > 2000) {
@@ -293,9 +307,8 @@ function processAgentResponse(agentName: string, rawResponse: any): any {
           }
           return null;
         }
-        // Si encontró un match con grupo capturado (```json), usar el grupo 1, sino usar el match completo
-        const jsonString = jsonMatch[1] || jsonMatch[0];
-        parsed = JSON.parse(jsonString);
+        // Usar el texto limpio directamente
+        parsed = JSON.parse(cleanText);
       } else {
         console.warn(`[Agent Response] Invalid response type: ${typeof rawResponse}`);
         return null;
@@ -356,16 +369,18 @@ function validateMinutesData(data: any): any {
     estructura_detectada: validateEstructuraDetectada(data.estructura_detectada),
   };
 
-  // Validar campos topic-xxx como booleanos
+  // Validar campos topic_xxx como booleanos (usar guiones bajos para BD)
   const topicFields = [
-    'topic-presupuesto', 'topic-mantenimiento', 'topic-administracion', 'topic-piscina',
-    'topic-jardin', 'topic-limpieza', 'topic-balance', 'topic-paqueteria', 
-    'topic-energia', 'topic-normativa', 'topic-proveedor', 'topic-dinero',
-    'topic-ascensor', 'topic-incendios', 'topic-porteria'
+    'topic_presupuesto', 'topic_mantenimiento', 'topic_administracion', 'topic_piscina',
+    'topic_jardin', 'topic_limpieza', 'topic_balance', 'topic_paqueteria', 
+    'topic_energia', 'topic_normativa', 'topic_proveedor', 'topic_dinero',
+    'topic_ascensor', 'topic_incendios', 'topic_porteria'
   ];
 
   topicFields.forEach(field => {
-    validated[field] = typeof data[field] === 'boolean' ? data[field] : false;
+    // Mapear desde guión medio (agente) a guión bajo (BD)
+    const agentField = field.replace(/_/g, '-'); // topic_presupuesto -> topic-presupuesto
+    validated[field] = typeof data[agentField] === 'boolean' ? data[agentField] : false;
   });
 
   return validated;
@@ -519,9 +534,9 @@ export async function saveCompleteActaMetadata(documentId: string, data: any): P
 /**
  * Guarda datos extraídos de actas en la base de datos (versión simple para compatibilidad)
  */
-export async function saveExtractedMinutes(documentId: string, data: any): Promise<boolean> {
+export async function saveExtractedMinutes(documentId: string, data: any, useServiceClient = false): Promise<boolean> {
   try {
-    const supabase = await createSupabaseClient();
+    const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
     
     // Obtener organization_id del documento
     const { data: document } = await supabase
@@ -817,12 +832,44 @@ export async function saveExtractedInvoice(documentId: string, data: any): Promi
       return false;
     }
 
+    // Optimización para facturas complejas: manejar tanto formato nuevo como legacy
+    const processedData = { ...data };
+    
+    // Si tenemos products_summary y products_count (formato optimizado), usarlos
+    if (data.products_summary && data.products_count !== undefined) {
+      console.log(`[Save Invoice] Using optimized format: ${data.products_count} products, summary: ${data.products_summary?.substring(0, 50)}...`);
+      // Mantener products_summary y products_count, limpiar el array detallado
+      processedData.products = null; // No guardar detalle para facturas complejas
+    }
+    // Si tenemos un array products detallado (formato legacy), mantenerlo para facturas simples
+    else if (data.products && Array.isArray(data.products)) {
+      const productCount = data.products.length;
+      console.log(`[Save Invoice] Using detailed format: ${productCount} products`);
+      
+      // Generar resumen automático para retrocompatibilidad
+      if (productCount > 5) {
+        // Para facturas complejas, generar resumen y limpiar detalle
+        const descriptions = data.products.slice(0, 3).map((p: any) => p.description || '').filter(Boolean);
+        processedData.products_summary = descriptions.length > 0 
+          ? `${descriptions.join(', ')} y ${productCount - descriptions.length} productos más`
+          : `Factura con ${productCount} productos`;
+        processedData.products_count = productCount;
+        processedData.products = null; // Limpiar detalle para facturas complejas
+      } else {
+        // Para facturas simples, mantener detalle y agregar resumen
+        const descriptions = data.products.map((p: any) => p.description || '').filter(Boolean);
+        processedData.products_summary = descriptions.slice(0, 2).join(', ');
+        processedData.products_count = productCount;
+        // Mantener processedData.products para facturas simples
+      }
+    }
+
     const { error } = await supabase
       .from('extracted_invoices')
       .insert({
         document_id: documentId,
         organization_id: document.organization_id,
-        ...data
+        ...processedData
       });
 
     if (error) {
@@ -1032,6 +1079,11 @@ export async function saveExtractedEscritura(documentId: string, data: any): Pro
     return false;
   }
 }
+
+/**
+ * Alias para saveExtractedEscritura - mantiene compatibilidad con EscrituraExtractor
+ */
+export const saveExtractedPropertyDeed = saveExtractedEscritura;
 
 /**
  * Guarda datos extraídos de contratos en la base de datos

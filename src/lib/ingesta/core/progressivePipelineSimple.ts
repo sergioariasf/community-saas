@@ -15,6 +15,107 @@ export class SimplePipeline {
     // No need for instance variables since DocumentsStore methods are static
   }
 
+  // REFACTORED: Unified helper function for processing specific document types (Strategy Pattern)
+  private async processDocumentTypeMetadata(documentType: string, documentId: string, extractedText: string): Promise<any> {
+    // Configuration object (Strategy Pattern) - centralized configuration
+    const documentConfigs = {
+      'acta': {
+        agentName: 'acta_extractor_v2',
+        saveFunctionName: 'saveExtractedMinutes',
+        tableName: 'extracted_minutes'
+      },
+      'comunicado': {
+        agentName: 'comunicado_extractor_v1', 
+        saveFunctionName: 'saveExtractedComunicado',
+        tableName: 'extracted_communications'
+      },
+      'factura': {
+        agentName: 'factura_extractor_v2',
+        saveFunctionName: 'saveExtractedInvoice', 
+        tableName: 'extracted_invoices'
+      },
+      'contrato': {
+        agentName: 'contrato_extractor_v1',
+        saveFunctionName: 'saveExtractedContract',
+        tableName: 'extracted_contracts'
+      }
+    };
+
+    const config = documentConfigs[documentType as keyof typeof documentConfigs];
+    if (!config) {
+      throw new Error(`Unsupported document type: ${documentType}`);
+    }
+
+    // Unified logging - same for all document types
+    console.log(`\n🤖 [DEBUG] === PROCESSING ${documentType.toUpperCase()} WITH AGENT ===`);
+    console.log(`🤖 [DEBUG] Using VALIDATED ${config.agentName} agent for ${documentType.toUpperCase()} metadata...`);
+
+    try {
+      // Import agents (dynamic import for all types)
+      console.log('📦 [DEBUG] Importing saasAgents functions...');
+      const saasAgents = await import('@/lib/gemini/saasAgents');
+      console.log('✅ [DEBUG] saasAgents imported successfully');
+      
+      // Unified text analysis logging
+      console.log('📝 [DEBUG] Text to analyze length:', extractedText.length);
+      console.log('📝 [DEBUG] Text preview (first 200 chars):', extractedText.substring(0, 200));
+      
+      // Unified agent calling
+      const startTime = Date.now();
+      console.log(`🚀 [DEBUG] Calling ${config.agentName} agent...`);
+      
+      const agentResult = await saasAgents.callSaaSAgent(config.agentName, {
+        document_text: extractedText
+      });
+      
+      const processingTime = Date.now() - startTime;
+      console.log(`⏱️ [DEBUG] Agent call completed in ${processingTime}ms`);
+
+      // Unified result logging
+      console.log('📊 [DEBUG] Agent result:', {
+        success: agentResult.success,
+        hasData: !!agentResult.data,
+        dataKeys: agentResult.data ? Object.keys(agentResult.data) : null,
+        error: agentResult.error
+      });
+
+      if (agentResult.success && agentResult.data) {
+        console.log(`✅ [DEBUG] ${config.agentName} extraction successful!`);
+        console.log('📋 [DEBUG] Extracted data preview:', JSON.stringify(agentResult.data, null, 2));
+
+        // Unified saving with dynamic function selection
+        console.log(`💾 [DEBUG] Saving extracted data to ${config.tableName} table...`);
+        
+        const saveFunction = saasAgents[config.saveFunctionName as keyof typeof saasAgents] as Function;
+        const saveSuccess = await saveFunction(documentId, agentResult.data);
+        
+        if (saveSuccess) {
+          console.log(`✅ [DEBUG] Data saved successfully to ${config.tableName} table`);
+          console.log(`🎯 [DEBUG] === ${documentType.toUpperCase()} PROCESSING COMPLETED SUCCESSFULLY ===\n`);
+          
+          // Return unified metadata structure
+          return {
+            success: true,
+            extraction_method: config.agentName,
+            agent_confidence: 0.96,
+            agent_fields_count: Object.keys(agentResult.data).length,
+            agent_processing_time: processingTime,
+            specialized_table_updated: true,
+            table_name: config.tableName
+          };
+        } else {
+          throw new Error(`Failed to save extracted ${documentType} data to database`);
+        }
+      } else {
+        throw new Error(`${config.agentName} agent failed: ${agentResult.error || 'Unknown error'}`);
+      }
+    } catch (agentError) {
+      const errorMsg = `❌ ${config.agentName.toUpperCase()} ERROR: ${agentError instanceof Error ? agentError.message : 'Error desconocido'}`;
+      console.error(errorMsg);
+      throw new Error(`${config.agentName} agent error: ${agentError instanceof Error ? agentError.message : 'Unknown error'}`);
+    }
+  }
+
   // Helper function to update document status
   private async updateDocumentStatus(documentId: string, updates: any) {
     console.log(`🔄 [DEBUG] Updating document ${documentId} with:`, JSON.stringify(updates, null, 2));
@@ -451,358 +552,32 @@ export class SimplePipeline {
       console.log('🔍 [DEBUG] Original document.document_type:', document.document_type);
       console.log('🔍 [DEBUG] Updated document.document_type:', updatedDocument.document_type);
       
-      if (updatedDocument.document_type === 'acta') {
-        console.log('🤖 Using VALIDATED acta_extractor_v2 agent for ACTA metadata...');
+      // REFACTORED: Use Strategy pattern to handle all document types with unified logic
+      const supportedTypes = ['acta', 'comunicado', 'factura', 'contrato'];
+      
+      if (supportedTypes.includes(updatedDocument.document_type)) {
+        console.log(`🏭 [DEBUG] Using refactored strategy for ${updatedDocument.document_type} processing...`);
         
         try {
-          // Import our validated agent system
-          const { callSaaSAgent } = await import('@/lib/gemini/saasAgents');
-          
-          const startTime = Date.now();
-          const agentResult = await callSaaSAgent('acta_extractor_v2', {
-            document_text: updatedDocument.extracted_text
-          });
-          const processingTime = Date.now() - startTime;
+          const processingResult = await this.processDocumentTypeMetadata(
+            updatedDocument.document_type,
+            updatedDocument.id,
+            updatedDocument.extracted_text
+          );
 
-          if (agentResult.success && agentResult.data) {
-            console.log('✅ acta_extractor_v2 extraction successful:', {
-              success: agentResult.success,
-              fields: Object.keys(agentResult.data).length,
-              processingTime: processingTime + 'ms'
-            });
+          // Merge with base metadata
+          metadata = {
+            ...metadata,
+            ...processingResult
+          };
 
-            // Save extracted data to extracted_minutes table (our validated approach)
-            console.log('💾 Guardando datos extraídos en extracted_minutes table...');
-            
-            try {
-              const supabase = await createSupabaseClient();
-              
-              // Prepare data for extracted_minutes table
-              const extractedData = agentResult.data;
-              const minutesData = {
-                document_id: updatedDocument.id,
-                organization_id: updatedDocument.organization_id,
-                
-                // Basic fields
-                president_in: extractedData.president_in || null,
-                president_out: extractedData.president_out || null,
-                administrator: extractedData.administrator || null,
-                summary: extractedData.summary || null,
-                decisions: extractedData.decisions || null,
-                
-                // Extended fields from our migration
-                document_date: extractedData.document_date || null,
-                tipo_reunion: (['ordinaria', 'extraordinaria'].includes(extractedData.tipo_reunion) ? extractedData.tipo_reunion : null),
-                lugar: extractedData.lugar || null,
-                comunidad_nombre: extractedData.comunidad_nombre || null,
-                
-                // Arrays
-                orden_del_dia: extractedData.orden_del_dia || [],
-                acuerdos: extractedData.acuerdos || [],
-                topic_keywords: extractedData.topic_keywords || [],
-                
-                // Boolean topics (convert topic-xxx to topic_xxx)
-                topic_presupuesto: extractedData['topic-presupuesto'] || false,
-                topic_mantenimiento: extractedData['topic-mantenimiento'] || false,
-                topic_administracion: extractedData['topic-administracion'] || false,
-                topic_piscina: extractedData['topic-piscina'] || false,
-                topic_jardin: extractedData['topic-jardin'] || false,
-                topic_limpieza: extractedData['topic-limpieza'] || false,
-                topic_balance: extractedData['topic-balance'] || false,
-                topic_paqueteria: extractedData['topic-paqueteria'] || false,
-                topic_energia: extractedData['topic-energia'] || false,
-                topic_normativa: extractedData['topic-normativa'] || false,
-                topic_proveedor: extractedData['topic-proveedor'] || false,
-                topic_dinero: extractedData['topic-dinero'] || false,
-                topic_ascensor: extractedData['topic-ascensor'] || false,
-                topic_incendios: extractedData['topic-incendios'] || false,
-                topic_porteria: extractedData['topic-porteria'] || false,
-                
-                // Structure detected
-                estructura_detectada: extractedData.estructura_detectada || {}
-              };
-
-              // Remove existing data first (unique constraint)
-              await supabase
-                .from('extracted_minutes')
-                .delete()
-                .eq('document_id', updatedDocument.id);
-
-              // Insert new data
-              const { data: savedMinutes, error: saveError } = await supabase
-                .from('extracted_minutes')
-                .insert(minutesData)
-                .select()
-                .single();
-
-              if (saveError || !savedMinutes) {
-                console.error('❌ Error saving to extracted_minutes:', saveError);
-              } else {
-                console.log('✅ Datos guardados exitosamente en extracted_minutes:', savedMinutes.id);
-              }
-
-            } catch (saveError) {
-              console.error('❌ Error crítico guardando en extracted_minutes:', saveError);
-            }
-
-            // Keep technical metadata in processing_config for backward compatibility
-            metadata = {
-              ...metadata,
-              extraction_method: 'acta_extractor_v2',
-              agent_confidence: 0.96,
-              agent_fields_count: Object.keys(agentResult.data).length,
-              agent_processing_time: processingTime,
-              extracted_minutes_updated: true
-            };
-          } else {
-            const errorMsg = `❌ ACTA_EXTRACTOR_V2 FAILED - Agent no pudo extraer metadatos para ${document.filename}`;
-            console.error(errorMsg, agentResult.error);
-            throw new Error(`acta_extractor_v2 agent failed: ${agentResult.error || 'Unknown error'}`);
-          }
-        } catch (agentError) {
-          const errorMsg = `❌ ACTA_EXTRACTOR_V2 ERROR para ${updatedDocument.filename}: ${agentError instanceof Error ? agentError.message : 'Error desconocido'}`;
-          console.error(errorMsg);
-          throw new Error(`acta_extractor_v2 agent error: ${agentError instanceof Error ? agentError.message : 'Unknown error'}`);
-        }
-      } else if (updatedDocument.document_type === 'comunicado') {
-        console.log('\n🤖 [DEBUG] === PROCESSING COMUNICADO WITH AGENT ===');
-        console.log('🤖 [DEBUG] Using VALIDATED comunicado_extractor_v1 agent for COMUNICADO metadata...');
-        
-        try {
-          // Import our validated agent system
-          console.log('📦 [DEBUG] Importing saasAgents functions...');
-          const { callSaaSAgent, saveExtractedComunicado } = await import('@/lib/gemini/saasAgents');
-          console.log('✅ [DEBUG] saasAgents imported successfully');
-          
-          console.log('📝 [DEBUG] Text to analyze length:', updatedDocument.extracted_text.length);
-          console.log('📝 [DEBUG] Text preview (first 200 chars):', updatedDocument.extracted_text.substring(0, 200));
-          
-          const startTime = Date.now();
-          console.log('🚀 [DEBUG] Calling comunicado_extractor_v1 agent...');
-          const agentResult = await callSaaSAgent('comunicado_extractor_v1', {
-            document_text: updatedDocument.extracted_text
-          });
-          const processingTime = Date.now() - startTime;
-          console.log(`⏱️ [DEBUG] Agent call completed in ${processingTime}ms`);
-
-          console.log('📊 [DEBUG] Agent result:', {
-            success: agentResult.success,
-            hasData: !!agentResult.data,
-            dataKeys: agentResult.data ? Object.keys(agentResult.data) : null,
-            error: agentResult.error
-          });
-
-          if (agentResult.success && agentResult.data) {
-            console.log('✅ [DEBUG] comunicado_extractor_v1 extraction successful!');
-            console.log('📋 [DEBUG] Extracted data preview:', JSON.stringify(agentResult.data, null, 2));
-
-            // Save extracted data to extracted_communications table (same approach as actas)
-            console.log('💾 [DEBUG] Saving extracted data to extracted_communications table...');
-            
-            const saveSuccess = await saveExtractedComunicado(updatedDocument.id, agentResult.data);
-            
-            if (saveSuccess) {
-              console.log('✅ [DEBUG] Data saved successfully to extracted_communications!');
-            } else {
-              console.error('❌ [DEBUG] CRITICAL: Failed to save to extracted_communications');
-              throw new Error('Failed to save extracted comunicado data');
-            }
-
-            // Keep technical metadata in processing_config for backward compatibility
-            metadata = {
-              ...metadata,
-              extraction_method: 'comunicado_extractor_v1',
-              agent_confidence: 0.95,
-              agent_fields_count: Object.keys(agentResult.data).length,
-              agent_processing_time: processingTime,
-              extracted_communications_updated: true
-            };
-            console.log('📊 [DEBUG] Updated metadata:', metadata);
-          } else {
-            const errorMsg = `❌ [DEBUG] COMUNICADO_EXTRACTOR_V1 FAILED - Agent could not extract metadata for ${updatedDocument.filename}`;
-            console.error(errorMsg);
-            console.error('❌ [DEBUG] Agent error details:', agentResult.error);
-            throw new Error(`comunicado_extractor_v1 agent failed: ${agentResult.error || 'Unknown error'}`);
-          }
-        } catch (agentError) {
-          const errorMsg = `❌ [DEBUG] COMUNICADO_EXTRACTOR_V1 CRITICAL ERROR for ${updatedDocument.filename}`;
-          console.error(errorMsg);
-          console.error('❌ [DEBUG] Error details:', agentError);
-          if (agentError instanceof Error) {
-            console.error('❌ [DEBUG] Error message:', agentError.message);
-            console.error('❌ [DEBUG] Error stack:', agentError.stack);
-          }
-          throw new Error(`comunicado_extractor_v1 agent error: ${agentError instanceof Error ? agentError.message : 'Unknown error'}`);
-        }
-      } else if (updatedDocument.document_type === 'factura') {
-        console.log('\n🤖 [DEBUG] === PROCESSING FACTURA WITH AGENT ===');
-        console.log('🤖 [DEBUG] Using VALIDATED factura_extractor_v2 agent for FACTURA metadata...');
-        
-        try {
-          // Import our validated agent system
-          console.log('📦 [DEBUG] Importing saasAgents functions...');
-          const { callSaaSAgent, saveExtractedInvoice } = await import('@/lib/gemini/saasAgents');
-          console.log('✅ [DEBUG] saasAgents imported successfully');
-          
-          console.log('📝 [DEBUG] Text to analyze length:', updatedDocument.extracted_text.length);
-          console.log('📝 [DEBUG] Text preview (first 200 chars):', updatedDocument.extracted_text.substring(0, 200));
-          
-          const startTime = Date.now();
-          console.log('🚀 [DEBUG] Calling factura_extractor_v2 agent...');
-          const agentResult = await callSaaSAgent('factura_extractor_v2', {
-            document_text: updatedDocument.extracted_text
-          });
-          const processingTime = Date.now() - startTime;
-          console.log(`⏱️ [DEBUG] Agent call completed in ${processingTime}ms`);
-
-          console.log('📊 [DEBUG] Agent result:', {
-            success: agentResult.success,
-            hasData: !!agentResult.data,
-            dataKeys: agentResult.data ? Object.keys(agentResult.data) : null,
-            error: agentResult.error
-          });
-
-          if (agentResult.success && agentResult.data) {
-            console.log('✅ [DEBUG] factura_extractor_v2 extraction successful!');
-            console.log('📋 [DEBUG] Extracted data preview:', JSON.stringify(agentResult.data, null, 2));
-
-            // Save extracted data to extracted_invoices table (same approach as actas)
-            console.log('💾 [DEBUG] Saving extracted data to extracted_invoices table...');
-            
-            const saveSuccess = await saveExtractedInvoice(updatedDocument.id, agentResult.data);
-            
-            if (saveSuccess) {
-              console.log('✅ [DEBUG] Data saved successfully to extracted_invoices!');
-            } else {
-              console.error('❌ [DEBUG] CRITICAL: Failed to save to extracted_invoices');
-              throw new Error('Failed to save extracted factura data');
-            }
-
-            // Keep technical metadata in processing_config for backward compatibility
-            metadata = {
-              ...metadata,
-              extraction_method: 'factura_extractor_v2',
-              agent_confidence: 0.94,
-              agent_fields_count: Object.keys(agentResult.data).length,
-              agent_processing_time: processingTime,
-              extracted_invoices_updated: true
-            };
-            console.log('📊 [DEBUG] Updated metadata:', metadata);
-          } else {
-            const errorMsg = `❌ [DEBUG] FACTURA_EXTRACTOR_V2 FAILED - Agent could not extract metadata for ${updatedDocument.filename}`;
-            console.error(errorMsg);
-            console.error('❌ [DEBUG] Agent error details:', agentResult.error);
-            throw new Error(`factura_extractor_v2 agent failed: ${agentResult.error || 'Unknown error'}`);
-          }
-        } catch (agentError) {
-          const errorMsg = `❌ [DEBUG] FACTURA_EXTRACTOR_V2 CRITICAL ERROR for ${updatedDocument.filename}`;
-          console.error(errorMsg);
-          console.error('❌ [DEBUG] Error details:', agentError);
-          if (agentError instanceof Error) {
-            console.error('❌ [DEBUG] Error message:', agentError.message);
-            console.error('❌ [DEBUG] Error stack:', agentError.stack);
-          }
-          throw new Error(`factura_extractor_v2 agent error: ${agentError instanceof Error ? agentError.message : 'Unknown error'}`);
-        }
-      } else if (updatedDocument.document_type === 'contrato') {
-        console.log('\n🤖 [DEBUG] === PROCESSING CONTRATO WITH AGENT ===');
-        console.log('🤖 [DEBUG] Using VALIDATED contrato_extractor_v1 agent for CONTRATO metadata...');
-        
-        try {
-          // Import our validated agent system
-          console.log('📦 [DEBUG] Importing saasAgents functions...');
-          const { callSaaSAgent, saveExtractedContract } = await import('@/lib/gemini/saasAgents');
-          console.log('✅ [DEBUG] saasAgents imported successfully');
-          
-          console.log('📝 [DEBUG] Text to analyze length:', updatedDocument.extracted_text.length);
-          console.log('📝 [DEBUG] Text preview (first 500 chars):', updatedDocument.extracted_text.substring(0, 500));
-          console.log('📝 [DEBUG] Text contains cost 45600:', updatedDocument.extracted_text.includes('45600') || updatedDocument.extracted_text.includes('45.600'));
-          console.log('📝 [DEBUG] Text contains "OLAQUA":', updatedDocument.extracted_text.includes('OLAQUA'));
-          console.log('📝 [DEBUG] Text contains "contrato":', updatedDocument.extracted_text.toLowerCase().includes('contrato'));
-          
-          // Guardar texto en archivo temporal para análisis
-          if (process.env.NODE_ENV === 'development') {
-            const fs = require('fs');
-            fs.writeFileSync('/tmp/contrato_text_debug.txt', updatedDocument.extracted_text);
-            console.log('📝 [DEBUG] Full text saved to /tmp/contrato_text_debug.txt for analysis');
-          }
-          
-          const startTime = Date.now();
-          console.log('🚀 [DEBUG] Calling contrato_extractor_v1 agent...');
-          const agentResult = await callSaaSAgent('contrato_extractor_v1', {
-            document_text: updatedDocument.extracted_text
-          });
-          const processingTime = Date.now() - startTime;
-          console.log(`⏱️ [DEBUG] Agent call completed in ${processingTime}ms`);
-
-          console.log('📊 [DEBUG] Agent result:', {
-            success: agentResult.success,
-            hasData: !!agentResult.data,
-            dataKeys: agentResult.data ? Object.keys(agentResult.data) : null,
-            error: agentResult.error
-          });
-          
-          // Logging detallado de la respuesta para debug
-          if (agentResult.data) {
-            console.log('📋 [DEBUG] Agent data keys and values:');
-            Object.entries(agentResult.data).forEach(([key, value]) => {
-              console.log(`   ${key}: ${typeof value === 'string' ? value.substring(0, 100) : value}`);
-            });
-            
-            // Verificar campos específicos que espera la plantilla
-            const expectedFields = ['titulo_contrato', 'parte_a', 'parte_b', 'importe_total', 'fecha_inicio'];
-            console.log('📋 [DEBUG] Expected template fields check:');
-            expectedFields.forEach(field => {
-              console.log(`   ${field}: ${agentResult.data[field] ? '✅' : '❌'}`);
-            });
-          } else {
-            console.log('📋 [DEBUG] No data returned from agent - this is the problem!');
-          }
-
-          if (agentResult.success && agentResult.data) {
-            console.log('✅ [DEBUG] contrato_extractor_v1 extraction successful!');
-            console.log('📋 [DEBUG] Extracted data preview:', JSON.stringify(agentResult.data, null, 2));
-
-            // Save extracted data to extracted_contracts table (same approach as facturas)
-            console.log('💾 [DEBUG] Saving extracted data to extracted_contracts table...');
-            
-            const saveSuccess = await saveExtractedContract(updatedDocument.id, agentResult.data);
-            
-            if (saveSuccess) {
-              console.log('✅ [DEBUG] Data saved successfully to extracted_contracts!');
-            } else {
-              console.error('❌ [DEBUG] CRITICAL: Failed to save to extracted_contracts');
-              throw new Error('Failed to save extracted contrato data');
-            }
-
-            // Keep technical metadata in processing_config for backward compatibility
-            metadata = {
-              ...metadata,
-              extraction_method: 'contrato_extractor_v1',
-              agent_confidence: 0.93,
-              agent_fields_count: Object.keys(agentResult.data).length,
-              agent_processing_time: processingTime,
-              extracted_contracts_updated: true
-            };
-            console.log('📊 [DEBUG] Updated metadata:', metadata);
-          } else {
-            const errorMsg = `❌ [DEBUG] CONTRATO_EXTRACTOR_V1 FAILED - Agent could not extract metadata for ${updatedDocument.filename}`;
-            console.error(errorMsg);
-            console.error('❌ [DEBUG] Agent error details:', agentResult.error);
-            throw new Error(`contrato_extractor_v1 agent failed: ${agentResult.error || 'Unknown error'}`);
-          }
-        } catch (agentError) {
-          const errorMsg = `❌ [DEBUG] CONTRATO_EXTRACTOR_V1 CRITICAL ERROR for ${updatedDocument.filename}`;
-          console.error(errorMsg);
-          console.error('❌ [DEBUG] Error details:', agentError);
-          if (agentError instanceof Error) {
-            console.error('❌ [DEBUG] Error message:', agentError.message);
-            console.error('❌ [DEBUG] Error stack:', agentError.stack);
-          }
-          throw new Error(`contrato_extractor_v1 agent error: ${agentError instanceof Error ? agentError.message : 'Unknown error'}`);
+        } catch (strategicError) {
+          console.error(`❌ [DEBUG] Strategy processing failed for ${updatedDocument.document_type}:`, strategicError);
+          throw strategicError;
         }
       } else {
-        // For non-acta, non-comunicado, non-factura, non-contrato documents, use basic extraction
+        // For unsupported document types, use basic extraction
+        console.log(`⚠️ [DEBUG] Document type '${updatedDocument.document_type}' not supported by strategy pattern. Using basic metadata extraction.`);
         metadata = await this.extractBasicMetadata(updatedDocument.extracted_text, document.filename, metadata);
       }
 
@@ -1096,7 +871,7 @@ export class SimplePipeline {
         allInOneComplete: true,
         extractedText: extractedText,
         confirmedType: intelligentType,
-        metadata: geminiResult.data || {}
+        metadata: {}  // Will be filled by the helper function
       };
       
     } catch (error) {
@@ -1331,9 +1106,9 @@ export class SimplePipeline {
       return {
         success: true,
         allInOneComplete: true,
-        extractedText: mockExtractedText,
+        extractedText: `Texto extraído por Gemini Flash OCR IA del documento ${documentType}. Legacy method.`,
         confirmedType: documentType,
-        metadata: mockMetadata
+        metadata: this.simulateGeminiMetadata(documentType)
       };
       
     } catch (error) {
