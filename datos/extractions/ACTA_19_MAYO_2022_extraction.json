@@ -1,0 +1,173 @@
+{
+  "filename": "ACTA 19 MAYO 2022.pdf",
+  "document_type": "acta",
+  "success": true,
+  "extracted_data": {
+    "president_in": "Carlos Sánchez Pérez",
+    "president_out": "Camilo J. Fernández Hernández",
+    "administrator": "ASEGRAMAR",
+    "summary": "Junta Extraordinaria para la elección de nuevo administrador. Se aprueba la dimisión del presidente Camilo J. Fernández Hernández y se nombra a Carlos Sánchez Pérez como nuevo presidente. Se elige a ASEGRAMAR como nueva administración tras la presentación de varias opciones. Se tratan incidencias con Neinor, normativa interna, toldos y cerramientos, y presupuesto para gimnasio.  Algunos puntos del orden del día se aplazan para una próxima junta.",
+    "decisions": "1. Aprobación de la dimisión del presidente Camilo J. Fernández Hernández y nombramiento de Carlos Sánchez Pérez como nuevo presidente. 2. Elección de ASEGRAMAR como nueva administración de la comunidad. 3. Aprobación de la inclusión de problemas o defectos particulares como comunitarios si se generalizan a la mayoría de los vecinos. 4. Aprobación de los puntos sobre cerramientos de tendederos y terrazas. 5. Aprobación del color gris (R-114 o Sauleda 2821 Silver) para los toldos. 6. Aplazamiento de la votación sobre el presupuesto del gimnasio y otros puntos del orden del día para una próxima junta.",
+    "document_date": "2022-05-19",
+    "tipo_reunion": "extraordinaria",
+    "lugar": "hotel Attica 2 (Calle Chile, 2 en las Rozas)",
+    "comunidad_nombre": "C.P. Amara Homes",
+    "orden_del_dia": [
+      "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+      "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+      "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+      "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+      "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+      "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE."
+    ],
+    "acuerdos": [
+      "Aprobación de la dimisión del presidente y nombramiento del nuevo presidente.",
+      "Elección de ASEGRAMAR como administradora.",
+      "Inclusión de problemas o defectos particulares como comunitarios si se generalizan.",
+      "Aprobación de puntos sobre cerramientos.",
+      "Aprobación del color gris para los toldos.",
+      "Aplazamiento de la votación sobre el gimnasio y otros puntos."
+    ],
+    "topic_keywords": [
+      "administrador",
+      "Neinor",
+      "incidencias",
+      "normativa interna",
+      "toldos",
+      "cerramientos",
+      "gimnasio",
+      "presupuesto",
+      "votación",
+      "reunión",
+      "humedades",
+      "seguridad",
+      "barbacoas",
+      "piscinas"
+    ],
+    "estructura_detectada": {
+      "quorum_alcanzado": true,
+      "propietarios_totales": null,
+      "capitulos": [
+        {
+          "numero": 1,
+          "titulo": "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+          "pagina": 1,
+          "subsecciones": []
+        },
+        {
+          "numero": 2,
+          "titulo": "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+          "pagina": 2,
+          "subsecciones": [
+            {
+              "titulo": "ACTIVA",
+              "pagina": 2
+            },
+            {
+              "titulo": "ZARATE",
+              "pagina": 3
+            },
+            {
+              "titulo": "ASEGRAMAR",
+              "pagina": 4
+            },
+            {
+              "titulo": "TU ABOGADO VECINO",
+              "pagina": 5
+            },
+            {
+              "titulo": "INMHO",
+              "pagina": 5
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "titulo": "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+          "pagina": 6,
+          "subsecciones": []
+        },
+        {
+          "numero": 4,
+          "titulo": "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+          "pagina": 7,
+          "subsecciones": []
+        },
+        {
+          "numero": 5,
+          "titulo": "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+          "pagina": 8,
+          "subsecciones": [
+            {
+              "titulo": "CERRAMIENTOS DE TENDEDEROS Y TERRAZAS",
+              "pagina": 8
+            },
+            {
+              "titulo": "TOLDOS",
+              "pagina": 9
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "titulo": "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE.",
+          "pagina": 10,
+          "subsecciones": []
+        }
+      ],
+      "total_paginas": 10,
+      "votaciones": [
+        {
+          "tema": "Dimisión del presidente Camilo J. Fernández Hernández",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 2
+        },
+        {
+          "tema": "Nombramiento de Carlos Sánchez Pérez como presidente",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 2
+        },
+        {
+          "tema": "Elección de administrador",
+          "resultado": "aprobado",
+          "votos": "mayoría cualificada",
+          "pagina": 6
+        },
+        {
+          "tema": "Inclusión de problemas o defectos particulares como comunitarios",
+          "resultado": "aprobado",
+          "votos": "mayoría absoluta",
+          "pagina": 7
+        },
+        {
+          "tema": "Color de los toldos",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 9
+        }
+      ]
+    },
+    "topic-presupuesto": true,
+    "topic-mantenimiento": true,
+    "topic-administracion": true,
+    "topic-piscina": true,
+    "topic-jardin": true,
+    "topic-limpieza": true,
+    "topic-balance": false,
+    "topic-paqueteria": false,
+    "topic-energia": true,
+    "topic-normativa": true,
+    "topic-proveedor": true,
+    "topic-dinero": true,
+    "topic-ascensor": false,
+    "topic-incendios": false,
+    "topic-porteria": false
+  },
+  "processing_time": 12950,
+  "error": null,
+  "extractor_used": "ActaExtractor",
+  "generated_at": "2025-09-22T09:40:09.653Z",
+  "tool": "test-metadata-extraction-only.ts"
+}

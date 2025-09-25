@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-09-22T18:56:17.052Z",
+  "summary": {
+    "total": 1,
+    "successful": 0,
+    "failed": 1,
+    "success_rate": 0,
+    "phase_stats": {
+      "extraction": 1,
+      "classification": 1,
+      "metadata": 0,
+      "template_validation": 0
+    },
+    "by_type": {
+      "escritura": {
+        "count": 1,
+        "valid_templates": 0,
+        "avg_compatibility": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "escritura_D102B",
+      "success": false,
+      "phases": {
+        "extraction": {
+          "success": true,
+          "text_length": 51609,
+          "method": "pdf-parse-external"
+        },
+        "classification": {
+          "success": true,
+          "type": "escritura",
+          "confidence": 0.9
+        },
+        "metadata": {
+          "success": false,
+          "error": "Agent escritura_extractor_v1 failed to extract metadata"
+        },
+        "template_validation": {
+          "success": false
+        },
+        "db_schema_validation": {
+          "success": false
+        }
+      },
+      "total_time": 6703
+    }
+  ]
+}

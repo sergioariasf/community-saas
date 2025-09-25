@@ -4,7 +4,7 @@
  * ESTADO: development
  * DEPENDENCIAS: BaseDocumentExtractor, estrategias específicas
  * OUTPUTS: Instancias de extractores según el tipo de documento
- * ACTUALIZADO: 2025-09-21
+ * ACTUALIZADO: 2025-09-23
  */
 
 import { BaseDocumentExtractor } from './BaseDocumentExtractor';
@@ -12,6 +12,10 @@ import { ActaExtractor } from './ActaExtractor';
 import { ComunicadoExtractor } from './ComunicadoExtractor';
 import { FacturaExtractor } from './FacturaExtractor';
 import { ContratoExtractor } from './ContratoExtractor';
+import { EscrituraExtractor } from './EscrituraExtractor';
+import { AlbaranExtractor } from './AlbaranExtractor';
+import { PresupuestoExtractor } from './PresupuestoExtractor';
+import { getSupportedDocumentTypes } from '../schemaBasedConfig';
 
 export class DocumentExtractorFactory {
   private static extractors: Map<string, BaseDocumentExtractor> = new Map();
@@ -35,6 +39,15 @@ export class DocumentExtractorFactory {
         case 'contrato':
           this.extractors.set(documentType, new ContratoExtractor());
           break;
+        case 'escritura':
+          this.extractors.set(documentType, new EscrituraExtractor());
+          break;
+        case 'presupuesto':
+          this.extractors.set(documentType, new PresupuestoExtractor());
+          break;
+        case 'albaran':
+          this.extractors.set(documentType, new AlbaranExtractor());
+          break;
         default:
           throw new Error(`Unsupported document type: ${documentType}`);
       }
@@ -45,17 +58,19 @@ export class DocumentExtractorFactory {
 
   /**
    * Verifica si un tipo de documento está soportado
+   * Usa la fuente de verdad (schema) para auto-discovery
    */
   static isSupported(documentType: string): boolean {
-    const supportedTypes = ['acta', 'comunicado', 'factura', 'contrato'];
+    const supportedTypes = getSupportedDocumentTypes();
     return supportedTypes.includes(documentType.toLowerCase());
   }
 
   /**
    * Obtiene la lista de tipos de documentos soportados
+   * Usa la fuente de verdad (schema) para auto-discovery
    */
   static getSupportedTypes(): string[] {
-    return ['acta', 'comunicado', 'factura', 'contrato'];
+    return getSupportedDocumentTypes();
   }
 
   /**

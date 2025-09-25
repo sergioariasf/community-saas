@@ -1,0 +1,18 @@
+{
+  "original_file": "Contrato OLAQUA Piscinas.pdf",
+  "base_filename": "Contrato_OLAQUA_Piscinas",
+  "extraction_method": "google-vision-ocr",
+  "classification": {
+    "document_type": "contrato",
+    "confidence": 0.95,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for contrato",
+    "processing_time": 1
+  },
+  "text_info": {
+    "length": 26516,
+    "pages": 10
+  },
+  "generated_at": "2025-09-22T10:09:35.134Z",
+  "tool": "test-classification-real.ts"
+}

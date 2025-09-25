@@ -1,0 +1,18 @@
+{
+  "original_file": "albaran.pdf",
+  "base_filename": "albaran",
+  "extraction_method": "google-vision-ocr",
+  "classification": {
+    "document_type": "albaran",
+    "confidence": 0.9,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for albaran",
+    "processing_time": 0
+  },
+  "text_info": {
+    "length": 2217,
+    "pages": 1
+  },
+  "generated_at": "2025-09-22T10:09:35.142Z",
+  "tool": "test-classification-real.ts"
+}

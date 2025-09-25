@@ -1,0 +1,18 @@
+{
+  "original_file": "GIMNASIO_2023-1-230230.pdf",
+  "base_filename": "GIMNASIO_2023-1-230230",
+  "extraction_method": "pdf-parse-external",
+  "classification": {
+    "document_type": "factura",
+    "confidence": 0.95,
+    "method": "text-analysis",
+    "reasoning": "Text analysis found 48 keyword matches for factura",
+    "processing_time": 1
+  },
+  "text_info": {
+    "length": 5037,
+    "pages": 3
+  },
+  "generated_at": "2025-09-22T10:09:35.137Z",
+  "tool": "test-classification-real.ts"
+}

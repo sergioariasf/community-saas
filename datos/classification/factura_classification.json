@@ -1,0 +1,18 @@
+{
+  "original_file": "factura.pdf",
+  "base_filename": "factura",
+  "extraction_method": "google-vision-ocr",
+  "classification": {
+    "document_type": "factura",
+    "confidence": 0.95,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for factura",
+    "processing_time": 0
+  },
+  "text_info": {
+    "length": 1113,
+    "pages": 1
+  },
+  "generated_at": "2025-09-22T10:09:35.144Z",
+  "tool": "test-classification-real.ts"
+}

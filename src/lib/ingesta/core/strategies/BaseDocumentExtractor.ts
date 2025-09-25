@@ -29,7 +29,7 @@ export abstract class BaseDocumentExtractor {
   /**
    * Procesa los metadatos del documento usando el agente específico
    */
-  abstract processMetadata(documentId: string, extractedText: string): Promise<DocumentMetadata>;
+  abstract processMetadata(documentId: string, extractedText: string, testMode?: boolean): Promise<DocumentMetadata>;
 
   /**
    * Obtiene la configuración del extractor

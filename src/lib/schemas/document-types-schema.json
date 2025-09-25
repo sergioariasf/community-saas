@@ -1,0 +1,674 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "description": "FUENTE DE VERDAD ÚNICA para tipos de documentos - Genera automáticamente tablas, componentes, prompts y pipeline",
+    "updated": "2025-09-23",
+    "generator_version": "1.0.0"
+  },
+  "document_types": {
+    "acta": {
+      "metadata": {
+        "display_name": "Acta de Reunión",
+        "icon": "📝",
+        "color": "blue",
+        "table_name": "extracted_minutes",
+        "agent_name": "acta_extractor_v2",
+        "component_name": "ActaDetailView",
+        "template_route": "/documents/templates/actas",
+        "extraction_complexity": "complex"
+      },
+      "database_schema": {
+        "primary_fields": [
+          {"name": "document_date", "type": "date", "required": false, "description": "Fecha del documento"},
+          {"name": "tipo_reunion", "type": "text", "required": false, "description": "Tipo de reunión (ordinaria/extraordinaria)"},
+          {"name": "lugar", "type": "text", "required": false, "description": "Lugar de la reunión"},
+          {"name": "comunidad_nombre", "type": "text", "required": false, "description": "Nombre de la comunidad"},
+          {"name": "president_in", "type": "text", "required": false, "description": "Presidente entrante"},
+          {"name": "president_out", "type": "text", "required": false, "description": "Presidente saliente"},
+          {"name": "administrator", "type": "text", "required": false, "description": "Administrador"},
+          {"name": "summary", "type": "text", "required": false, "description": "Resumen ejecutivo"},
+          {"name": "decisions", "type": "text", "required": false, "description": "Decisiones principales"}
+        ],
+        "detail_fields": [
+          {"name": "orden_del_dia", "type": "jsonb", "required": false, "description": "Puntos del orden del día"},
+          {"name": "acuerdos", "type": "jsonb", "required": false, "description": "Acuerdos tomados"},
+          {"name": "topic_keywords", "type": "text[]", "required": false, "description": "Palabras clave del tema"},
+          {"name": "estructura_detectada", "type": "jsonb", "required": false, "description": "Estructura del documento detectada"}
+        ],
+        "topic_fields": [
+          {"name": "topic_presupuesto", "type": "boolean", "required": false, "description": "Tema sobre presupuesto"},
+          {"name": "topic_mantenimiento", "type": "boolean", "required": false, "description": "Tema sobre mantenimiento"},
+          {"name": "topic_administracion", "type": "boolean", "required": false, "description": "Tema sobre administración"},
+          {"name": "topic_piscina", "type": "boolean", "required": false, "description": "Tema sobre piscina"},
+          {"name": "topic_jardin", "type": "boolean", "required": false, "description": "Tema sobre jardín"},
+          {"name": "topic_limpieza", "type": "boolean", "required": false, "description": "Tema sobre limpieza"},
+          {"name": "topic_balance", "type": "boolean", "required": false, "description": "Tema sobre balance"},
+          {"name": "topic_paqueteria", "type": "boolean", "required": false, "description": "Tema sobre paquetería"},
+          {"name": "topic_energia", "type": "boolean", "required": false, "description": "Tema sobre energía"},
+          {"name": "topic_normativa", "type": "boolean", "required": false, "description": "Tema sobre normativa"},
+          {"name": "topic_proveedor", "type": "boolean", "required": false, "description": "Tema sobre proveedor"},
+          {"name": "topic_dinero", "type": "boolean", "required": false, "description": "Tema sobre dinero"},
+          {"name": "topic_ascensor", "type": "boolean", "required": false, "description": "Tema sobre ascensor"},
+          {"name": "topic_incendios", "type": "boolean", "required": false, "description": "Tema sobre incendios"},
+          {"name": "topic_porteria", "type": "boolean", "required": false, "description": "Tema sobre portería"}
+        ]
+      },
+      "ui_template": {
+        "sections": [
+          {
+            "name": "info_principal",
+            "title": "📋 Información Principal", 
+            "icon": "FileText",
+            "fields": ["document_date", "tipo_reunion", "lugar", "comunidad_nombre"]
+          },
+          {
+            "name": "participantes",
+            "title": "👥 Participantes",
+            "icon": "Users", 
+            "fields": ["president_in", "president_out", "administrator"]
+          },
+          {
+            "name": "contenido",
+            "title": "📝 Contenido",
+            "icon": "List",
+            "fields": ["summary", "decisions", "orden_del_dia", "acuerdos"]
+          },
+          {
+            "name": "temas",
+            "title": "🏷️ Temas Tratados",
+            "icon": "Tags",
+            "fields": ["topic_keywords", "topic_presupuesto", "topic_mantenimiento", "topic_administracion", "topic_piscina"]
+          },
+          {
+            "name": "estructura",
+            "title": "📊 Estructura",
+            "icon": "BarChart",
+            "fields": ["estructura_detectada"]
+          }
+        ]
+      }
+    },
+    "escritura": {
+      "metadata": {
+        "display_name": "Escritura de Compraventa",
+        "icon": "🏠",
+        "color": "green", 
+        "table_name": "extracted_property_deeds",
+        "agent_name": "escritura_extractor_v1",
+        "component_name": "EscrituraCompraventaDetailView",
+        "template_route": "/documents/templates/escrituras",
+        "extraction_complexity": "complex"
+      },
+      "database_schema": {
+        "primary_fields": [
+          {"name": "vendedor_nombre", "type": "text", "required": false, "description": "Nombre completo del vendedor"},
+          {"name": "comprador_nombre", "type": "text", "required": false, "description": "Nombre completo del comprador"},
+          {"name": "direccion_inmueble", "type": "text", "required": false, "description": "Dirección completa del inmueble"},
+          {"name": "precio_venta", "type": "numeric", "required": false, "description": "Precio de venta"},
+          {"name": "fecha_escritura", "type": "date", "required": false, "description": "Fecha de la escritura"},
+          {"name": "notario_nombre", "type": "text", "required": false, "description": "Nombre completo del notario"},
+          {"name": "referencia_catastral", "type": "text", "required": false, "description": "Referencia catastral del inmueble"},
+          {"name": "superficie_m2", "type": "numeric", "required": false, "description": "Superficie en m²"},
+          {"name": "category", "type": "text", "required": false, "description": "Categoría (vivienda, local, terreno, garaje, trastero, etc.)"}
+        ],
+        "detail_fields": [
+          {"name": "vendedor_dni", "type": "text", "required": false, "description": "DNI/NIF del vendedor"},
+          {"name": "vendedor_direccion", "type": "text", "required": false, "description": "Dirección del vendedor"},
+          {"name": "vendedor_estado_civil", "type": "text", "required": false, "description": "Estado civil del vendedor"},
+          {"name": "vendedor_nacionalidad", "type": "text", "required": false, "description": "Nacionalidad del vendedor"},
+          {"name": "vendedor_profesion", "type": "text", "required": false, "description": "Profesión del vendedor"},
+          {"name": "comprador_dni", "type": "text", "required": false, "description": "DNI/NIF del comprador"},
+          {"name": "comprador_direccion", "type": "text", "required": false, "description": "Dirección del comprador"},
+          {"name": "comprador_estado_civil", "type": "text", "required": false, "description": "Estado civil del comprador"},
+          {"name": "comprador_nacionalidad", "type": "text", "required": false, "description": "Nacionalidad del comprador"},
+          {"name": "comprador_profesion", "type": "text", "required": false, "description": "Profesión del comprador"},
+          {"name": "tipo_inmueble", "type": "text", "required": false, "description": "Tipo específico (vivienda, local, terreno, plaza_garaje, etc.)"},
+          {"name": "superficie_util", "type": "numeric", "required": false, "description": "Superficie útil en m²"},
+          {"name": "numero_habitaciones", "type": "integer", "required": false, "description": "Número de habitaciones"},
+          {"name": "numero_banos", "type": "integer", "required": false, "description": "Número de baños"},
+          {"name": "planta", "type": "text", "required": false, "description": "Planta del inmueble"},
+          {"name": "orientacion", "type": "text", "required": false, "description": "Orientación del inmueble"},
+          {"name": "descripcion_inmueble", "type": "text", "required": false, "description": "Descripción detallada del inmueble"},
+          {"name": "registro_propiedad", "type": "text", "required": false, "description": "Nombre del registro de la propiedad"},
+          {"name": "tomo", "type": "text", "required": false, "description": "Tomo registral"},
+          {"name": "libro", "type": "text", "required": false, "description": "Libro registral"},
+          {"name": "folio", "type": "text", "required": false, "description": "Folio registral"},
+          {"name": "finca", "type": "text", "required": false, "description": "Número de finca"},
+          {"name": "inscripcion", "type": "text", "required": false, "description": "Número de inscripción"},
+          {"name": "moneda", "type": "text", "required": false, "description": "Moneda (EUR)"},
+          {"name": "forma_pago", "type": "text", "required": false, "description": "Método de pago y fechas clave"},
+          {"name": "precio_en_letras", "type": "text", "required": false, "description": "Precio escrito en letras"},
+          {"name": "impuestos_incluidos", "type": "boolean", "required": false, "description": "Si los impuestos están incluidos"},
+          {"name": "gastos_a_cargo_comprador", "type": "jsonb", "required": false, "description": "Gastos que paga el comprador"},
+          {"name": "gastos_a_cargo_vendedor", "type": "jsonb", "required": false, "description": "Gastos que paga el vendedor"},
+          {"name": "cargas_existentes", "type": "jsonb", "required": false, "description": "Cargas existentes sobre el inmueble"},
+          {"name": "hipotecas_pendientes", "type": "text", "required": false, "description": "Información sobre hipotecas pendientes"},
+          {"name": "servidumbres", "type": "text", "required": false, "description": "Servidumbres sobre el inmueble"},
+          {"name": "libre_cargas", "type": "boolean", "required": false, "description": "Si está libre de cargas"},
+          {"name": "condicion_suspensiva", "type": "boolean", "required": false, "description": "Si tiene condición suspensiva"},
+          {"name": "condiciones_especiales", "type": "jsonb", "required": false, "description": "Condiciones especiales de la compraventa"},
+          {"name": "clausulas_particulares", "type": "jsonb", "required": false, "description": "Cláusulas particulares"},
+          {"name": "fecha_entrega", "type": "date", "required": false, "description": "Fecha de entrega"},
+          {"name": "entrega_inmediata", "type": "boolean", "required": false, "description": "Si la entrega es inmediata"},
+          {"name": "estado_conservacion", "type": "text", "required": false, "description": "Estado de conservación"},
+          {"name": "inventario_incluido", "type": "text", "required": false, "description": "Inventario incluido en la venta"},
+          {"name": "notario_numero_colegiado", "type": "text", "required": false, "description": "Número de colegiado del notario"},
+          {"name": "notaria_direccion", "type": "text", "required": false, "description": "Dirección de la notaría"},
+          {"name": "protocolo_numero", "type": "text", "required": false, "description": "Número de protocolo"},
+          {"name": "autorizacion_notarial", "type": "boolean", "required": false, "description": "Si tiene autorización notarial"},
+          {"name": "valor_catastral", "type": "numeric", "required": false, "description": "Valor catastral"},
+          {"name": "coeficiente_participacion", "type": "text", "required": false, "description": "Coeficiente de participación"},
+          {"name": "itp_aplicable", "type": "numeric", "required": false, "description": "ITP aplicable"},
+          {"name": "base_imponible_itp", "type": "numeric", "required": false, "description": "Base imponible para ITP"},
+          {"name": "inscripcion_registro", "type": "text", "required": false, "description": "Estado de inscripción registral"}
+        ]
+      },
+      "ui_template": {
+        "sections": [
+          {
+            "name": "info_principal", 
+            "title": "🏠 Información Principal",
+            "icon": "Home",
+            "fields": ["fecha_escritura", "notario_nombre", "precio_venta", "direccion_inmueble", "category"]
+          },
+          {
+            "name": "vendedor",
+            "title": "👤 Vendedor", 
+            "icon": "User",
+            "fields": ["vendedor_nombre", "vendedor_dni", "vendedor_direccion", "vendedor_estado_civil", "vendedor_nacionalidad"]
+          },
+          {
+            "name": "comprador",
+            "title": "👥 Comprador",
+            "icon": "Users", 
+            "fields": ["comprador_nombre", "comprador_dni", "comprador_direccion", "comprador_estado_civil", "comprador_nacionalidad"]
+          },
+          {
+            "name": "inmueble",
+            "title": "🏘️ Identificación de la Propiedad",
+            "icon": "MapPin",
+            "fields": ["tipo_inmueble", "superficie_m2", "superficie_util", "numero_habitaciones", "numero_banos", "referencia_catastral"]
+          },
+          {
+            "name": "registros",
+            "title": "📋 Datos Registrales",
+            "icon": "Building",
+            "fields": ["registro_propiedad", "tomo", "libro", "folio", "finca", "inscripcion"]
+          },
+          {
+            "name": "condiciones",
+            "title": "💰 Condiciones de la Compraventa",
+            "icon": "Euro",
+            "fields": ["precio_venta", "moneda", "forma_pago", "valor_catastral", "itp_aplicable"]
+          },
+          {
+            "name": "legal",
+            "title": "⚖️ Aspectos Legales", 
+            "icon": "Scale",
+            "fields": ["libre_cargas", "hipotecas_pendientes", "servidumbres", "condicion_suspensiva"]
+          }
+        ]
+      }
+    },
+    "albaran": {
+      "metadata": {
+        "display_name": "Albarán de Entrega",
+        "icon": "📦",
+        "color": "orange",
+        "table_name": "extracted_delivery_notes", 
+        "agent_name": "albaran_extractor_v1",
+        "component_name": "AlbaranDetailView",
+        "template_route": "/documents/templates/albaranes",
+        "extraction_complexity": "complex"
+      },
+      "database_schema": {
+        "primary_fields": [
+          {"name": "emisor_name", "type": "text", "required": true, "description": "Nombre de la empresa emisora"},
+          {"name": "receptor_name", "type": "text", "required": true, "description": "Nombre del cliente receptor"},
+          {"name": "numero_albaran", "type": "text", "required": true, "description": "Número del albarán"},
+          {"name": "fecha_emision", "type": "date", "required": true, "description": "Fecha de emisión del albarán"},
+          {"name": "numero_pedido", "type": "text", "required": false, "description": "Número de pedido asociado"},
+          {"name": "category", "type": "text", "required": false, "description": "Categoría del albarán"}
+        ],
+        "detail_fields": [
+          {"name": "emisor_direccion", "type": "text", "required": false, "description": "Dirección del emisor"},
+          {"name": "emisor_telefono", "type": "text", "required": false, "description": "Teléfono del emisor"},
+          {"name": "emisor_email", "type": "text", "required": false, "description": "Email del emisor"},
+          {"name": "receptor_direccion", "type": "text", "required": false, "description": "Dirección del receptor"},
+          {"name": "receptor_telefono", "type": "text", "required": false, "description": "Teléfono del receptor"},
+          {"name": "mercancia", "type": "jsonb", "required": false, "description": "Lista detallada de mercancía"},
+          {"name": "cantidad_total", "type": "numeric", "required": false, "description": "Cantidad total de items"},
+          {"name": "peso_total", "type": "numeric", "required": false, "description": "Peso total en kg"},
+          {"name": "observaciones", "type": "text", "required": false, "description": "Observaciones del albarán"},
+          {"name": "estado_entrega", "type": "text", "required": false, "description": "Estado de la entrega"},
+          {"name": "firma_receptor", "type": "boolean", "required": false, "description": "Si hay firma del receptor"},
+          {"name": "transportista", "type": "text", "required": false, "description": "Empresa de transporte"},
+          {"name": "vehiculo_matricula", "type": "text", "required": false, "description": "Matrícula del vehículo de entrega"}
+        ]
+      },
+      "ui_template": {
+        "sections": [
+          {
+            "name": "info_principal",
+            "title": "📦 Información Principal",
+            "icon": "Package",
+            "fields": ["numero_albaran", "fecha_emision", "numero_pedido", "category"]
+          },
+          {
+            "name": "emisor",
+            "title": "🏢 Datos del Emisor", 
+            "icon": "Building",
+            "fields": ["emisor_name", "emisor_direccion", "emisor_telefono", "emisor_email"]
+          },
+          {
+            "name": "receptor",
+            "title": "👤 Datos del Receptor",
+            "icon": "User",
+            "fields": ["receptor_name", "receptor_direccion", "receptor_telefono"]
+          },
+          {
+            "name": "mercancia",
+            "title": "📋 Mercancía",
+            "icon": "List",
+            "fields": ["mercancia", "cantidad_total", "peso_total"]
+          },
+          {
+            "name": "entrega",
+            "title": "🚚 Detalles de Entrega",
+            "icon": "Truck", 
+            "fields": ["transportista", "vehiculo_matricula", "estado_entrega", "firma_receptor", "observaciones"]
+          }
+        ]
+      }
+    },
+    "factura": {
+      "metadata": {
+        "display_name": "Factura Comercial",
+        "icon": "💰",
+        "color": "green",
+        "table_name": "extracted_invoices",
+        "agent_name": "factura_extractor_v2",
+        "component_name": "FacturaDetailView", 
+        "template_route": "/documents/templates/facturas",
+        "extraction_complexity": "complex"
+      },
+      "database_schema": {
+        "primary_fields": [
+          {"name": "provider_name", "type": "text", "required": true, "description": "Nombre del proveedor"},
+          {"name": "client_name", "type": "text", "required": true, "description": "Nombre del cliente"},
+          {"name": "amount", "type": "numeric", "required": true, "description": "Importe total"},
+          {"name": "invoice_date", "type": "date", "required": true, "description": "Fecha de la factura"},
+          {"name": "category", "type": "text", "required": false, "description": "Categoría"}
+        ],
+        "detail_fields": [
+          {"name": "invoice_number", "type": "text", "required": false, "description": "Número de factura"},
+          {"name": "issue_date", "type": "date", "required": false, "description": "Fecha de emisión"},
+          {"name": "due_date", "type": "date", "required": false, "description": "Fecha de vencimiento"},
+          {"name": "subtotal", "type": "numeric", "required": false, "description": "Subtotal"},
+          {"name": "tax_amount", "type": "numeric", "required": false, "description": "Importe de impuestos"},
+          {"name": "total_amount", "type": "numeric", "required": false, "description": "Importe total final"},
+          {"name": "currency", "type": "text", "required": false, "description": "Moneda"},
+          {"name": "payment_method", "type": "text", "required": false, "description": "Método de pago"},
+          {"name": "vendor_address", "type": "text", "required": false, "description": "Dirección del vendedor"},
+          {"name": "vendor_tax_id", "type": "text", "required": false, "description": "CIF/NIF del vendedor"},
+          {"name": "vendor_phone", "type": "text", "required": false, "description": "Teléfono del vendedor"},
+          {"name": "vendor_email", "type": "text", "required": false, "description": "Email del vendedor"},
+          {"name": "client_address", "type": "text", "required": false, "description": "Dirección del cliente"},
+          {"name": "client_tax_id", "type": "text", "required": false, "description": "CIF/NIF del cliente"},
+          {"name": "client_phone", "type": "text", "required": false, "description": "Teléfono del cliente"},
+          {"name": "client_email", "type": "text", "required": false, "description": "Email del cliente"},
+          {"name": "products_summary", "type": "text", "required": false, "description": "Resumen de productos"},
+          {"name": "products_count", "type": "integer", "required": false, "description": "Cantidad de productos"},
+          {"name": "products", "type": "jsonb", "required": false, "description": "Array de productos detallado"},
+          {"name": "payment_terms", "type": "text", "required": false, "description": "Condiciones de pago"},
+          {"name": "notes", "type": "text", "required": false, "description": "Observaciones o notas adicionales"},
+          {"name": "bank_details", "type": "text", "required": false, "description": "Datos bancarios"}
+        ]
+      },
+      "ui_template": {
+        "sections": [
+          {
+            "name": "info_principal",
+            "title": "💰 Información Principal",
+            "icon": "CreditCard",
+            "fields": ["invoice_number", "invoice_date", "due_date", "total_amount"]
+          },
+          {
+            "name": "vendedor", 
+            "title": "🏢 Información del Vendedor",
+            "icon": "Building2",
+            "fields": ["provider_name", "vendor_address", "vendor_tax_id", "vendor_phone", "vendor_email"]
+          },
+          {
+            "name": "cliente",
+            "title": "👤 Información del Cliente", 
+            "icon": "User",
+            "fields": ["client_name", "client_address", "client_tax_id", "client_phone", "client_email"]
+          },
+          {
+            "name": "productos",
+            "title": "📋 Productos/Servicios",
+            "icon": "List",
+            "fields": ["products_summary", "products_count", "subtotal", "tax_amount"]
+          },
+          {
+            "name": "pago",
+            "title": "💳 Detalles de Pago",
+            "icon": "CreditCard",
+            "fields": ["payment_method", "payment_terms", "bank_details", "currency"]
+          },
+          {
+            "name": "adicional",
+            "title": "📝 Información Adicional",
+            "icon": "FileText",
+            "fields": ["notes"]
+          }
+        ]
+      }
+    },
+    "comunicado": {
+      "metadata": {
+        "display_name": "Comunicado Vecinal",
+        "icon": "📢",
+        "color": "blue", 
+        "table_name": "extracted_communications",
+        "agent_name": "comunicado_extractor_v1",
+        "component_name": "ComunicadoDetailView",
+        "template_route": "/documents/templates/comunicados",
+        "extraction_complexity": "simple"
+      },
+      "database_schema": {
+        "primary_fields": [
+          {"name": "fecha", "type": "date", "required": true, "description": "Fecha del comunicado"},
+          {"name": "comunidad", "type": "text", "required": true, "description": "Nombre de la comunidad"},
+          {"name": "remitente", "type": "text", "required": true, "description": "Remitente"},
+          {"name": "resumen", "type": "text", "required": true, "description": "Resumen del contenido"},
+          {"name": "category", "type": "text", "required": false, "description": "Categoría"}
+        ],
+        "detail_fields": [
+          {"name": "asunto", "type": "text", "required": false, "description": "Asunto del comunicado"},
+          {"name": "tipo_comunicado", "type": "text", "required": false, "description": "Tipo de comunicado"},
+          {"name": "urgencia", "type": "text", "required": false, "description": "Nivel de urgencia"},
+          {"name": "comunidad_direccion", "type": "text", "required": false, "description": "Dirección de la comunidad"},
+          {"name": "remitente_cargo", "type": "text", "required": false, "description": "Cargo del remitente"},
+          {"name": "destinatarios", "type": "jsonb", "required": false, "description": "Lista de destinatarios"},
+          {"name": "fecha_limite", "type": "date", "required": false, "description": "Fecha límite"},
+          {"name": "requiere_respuesta", "type": "boolean", "required": false, "description": "Si requiere respuesta"},
+          {"name": "accion_requerida", "type": "jsonb", "required": false, "description": "Acciones requeridas"},
+          {"name": "anexos", "type": "jsonb", "required": false, "description": "Documentos anexos"},
+          {"name": "contacto_info", "type": "jsonb", "required": false, "description": "Información de contacto"}
+        ],
+        "topic_fields": [
+          {"name": "topic_presupuesto", "type": "boolean", "required": false, "description": "Tema sobre presupuesto"},
+          {"name": "topic_mantenimiento", "type": "boolean", "required": false, "description": "Tema sobre mantenimiento"},
+          {"name": "topic_administracion", "type": "boolean", "required": false, "description": "Tema sobre administración"},
+          {"name": "topic_piscina", "type": "boolean", "required": false, "description": "Tema sobre piscina"},
+          {"name": "topic_jardin", "type": "boolean", "required": false, "description": "Tema sobre jardín"},
+          {"name": "topic_limpieza", "type": "boolean", "required": false, "description": "Tema sobre limpieza"},
+          {"name": "topic_balance", "type": "boolean", "required": false, "description": "Tema sobre balance"},
+          {"name": "topic_paqueteria", "type": "boolean", "required": false, "description": "Tema sobre paquetería"},
+          {"name": "topic_energia", "type": "boolean", "required": false, "description": "Tema sobre energía"},
+          {"name": "topic_normativa", "type": "boolean", "required": false, "description": "Tema sobre normativa"},
+          {"name": "topic_proveedor", "type": "boolean", "required": false, "description": "Tema sobre proveedor"},
+          {"name": "topic_dinero", "type": "boolean", "required": false, "description": "Tema sobre dinero"},
+          {"name": "topic_ascensor", "type": "boolean", "required": false, "description": "Tema sobre ascensor"},
+          {"name": "topic_incendios", "type": "boolean", "required": false, "description": "Tema sobre incendios"},
+          {"name": "topic_porteria", "type": "boolean", "required": false, "description": "Tema sobre portería"}
+        ]
+      },
+      "ui_template": {
+        "sections": [
+          {
+            "name": "info_principal",
+            "title": "📢 Información Principal",
+            "icon": "Megaphone",
+            "fields": ["fecha", "asunto", "tipo_comunicado", "urgencia"]
+          },
+          {
+            "name": "remitente",
+            "title": "👤 Remitente",
+            "icon": "User", 
+            "fields": ["remitente", "remitente_cargo", "contacto_info"]
+          },
+          {
+            "name": "comunidad",
+            "title": "🏢 Comunidad",
+            "icon": "Building2",
+            "fields": ["comunidad", "comunidad_direccion", "destinatarios"]
+          },
+          {
+            "name": "contenido",
+            "title": "📝 Contenido",
+            "icon": "FileText",
+            "fields": ["resumen", "accion_requerida", "fecha_limite"]
+          },
+          {
+            "name": "anexos",
+            "title": "📎 Anexos",
+            "icon": "Paperclip",
+            "fields": ["anexos", "requiere_respuesta"]
+          },
+          {
+            "name": "temas",
+            "title": "🏷️ Temas Tratados",
+            "icon": "Tags",
+            "fields": ["topic_presupuesto", "topic_mantenimiento", "topic_administracion", "topic_piscina", "topic_jardin", "topic_limpieza", "topic_balance", "topic_paqueteria", "topic_energia", "topic_normativa", "topic_proveedor", "topic_dinero", "topic_ascensor", "topic_incendios", "topic_porteria"]
+          }
+        ]
+      }
+    },
+    "contrato": {
+      "metadata": {
+        "display_name": "Contrato Legal",
+        "icon": "📃",
+        "color": "purple",
+        "table_name": "extracted_contracts", 
+        "agent_name": "contrato_extractor_v1",
+        "component_name": "ContratoDetailView",
+        "template_route": "/documents/templates/contratos",
+        "extraction_complexity": "complex"
+      },
+      "database_schema": {
+        "primary_fields": [
+          {"name": "titulo_contrato", "type": "text", "required": true, "description": "Título del contrato"},
+          {"name": "parte_a", "type": "text", "required": true, "description": "Parte A del contrato"},
+          {"name": "parte_b", "type": "text", "required": true, "description": "Parte B del contrato"},
+          {"name": "objeto_contrato", "type": "text", "required": true, "description": "Objeto del contrato"},
+          {"name": "duracion", "type": "text", "required": false, "description": "Duración"},
+          {"name": "importe_total", "type": "numeric", "required": false, "description": "Importe total"},
+          {"name": "fecha_inicio", "type": "date", "required": false, "description": "Fecha de inicio"},
+          {"name": "fecha_fin", "type": "date", "required": false, "description": "Fecha de fin"},
+          {"name": "category", "type": "text", "required": false, "description": "Categoría"}
+        ],
+        "detail_fields": [
+          {"name": "tipo_contrato", "type": "text", "required": false, "description": "Tipo de contrato"},
+          {"name": "parte_a_direccion", "type": "text", "required": false, "description": "Dirección parte A"},
+          {"name": "parte_a_identificacion_fiscal", "type": "text", "required": false, "description": "CIF/NIF parte A"},
+          {"name": "parte_a_representante", "type": "text", "required": false, "description": "Representante parte A"},
+          {"name": "parte_b_direccion", "type": "text", "required": false, "description": "Dirección parte B"},
+          {"name": "parte_b_identificacion_fiscal", "type": "text", "required": false, "description": "CIF/NIF parte B"},
+          {"name": "parte_b_representante", "type": "text", "required": false, "description": "Representante parte B"},
+          {"name": "alcance_servicios", "type": "jsonb", "required": false, "description": "Alcance de servicios"},
+          {"name": "obligaciones_parte_a", "type": "jsonb", "required": false, "description": "Obligaciones parte A"},
+          {"name": "obligaciones_parte_b", "type": "jsonb", "required": false, "description": "Obligaciones parte B"},
+          {"name": "moneda", "type": "text", "required": false, "description": "Moneda"},
+          {"name": "forma_pago", "type": "text", "required": false, "description": "Forma de pago"},
+          {"name": "plazos_pago", "type": "jsonb", "required": false, "description": "Plazos de pago"},
+          {"name": "confidencialidad", "type": "boolean", "required": false, "description": "Confidencialidad"},
+          {"name": "legislacion_aplicable", "type": "text", "required": false, "description": "Legislación aplicable"},
+          {"name": "fecha_firma", "type": "date", "required": false, "description": "Fecha de firma"},
+          {"name": "lugar_firma", "type": "text", "required": false, "description": "Lugar de firma"}
+        ],
+        "topic_fields": [
+          {"name": "topic_keywords", "type": "text[]", "required": false, "description": "Palabras clave del contrato"},
+          {"name": "topic_mantenimiento", "type": "boolean", "required": false, "description": "Tema sobre mantenimiento"},
+          {"name": "topic_jardines", "type": "boolean", "required": false, "description": "Tema sobre jardines"},
+          {"name": "topic_ascensores", "type": "boolean", "required": false, "description": "Tema sobre ascensores"},
+          {"name": "topic_limpieza", "type": "boolean", "required": false, "description": "Tema sobre limpieza"},
+          {"name": "topic_emergencias", "type": "boolean", "required": false, "description": "Tema sobre emergencias"},
+          {"name": "topic_instalaciones", "type": "boolean", "required": false, "description": "Tema sobre instalaciones"},
+          {"name": "topic_electricidad", "type": "boolean", "required": false, "description": "Tema sobre electricidad"},
+          {"name": "topic_seguridad", "type": "boolean", "required": false, "description": "Tema sobre seguridad"},
+          {"name": "topic_agua", "type": "boolean", "required": false, "description": "Tema sobre agua"},
+          {"name": "topic_gas", "type": "boolean", "required": false, "description": "Tema sobre gas"},
+          {"name": "topic_climatizacion", "type": "boolean", "required": false, "description": "Tema sobre climatización"},
+          {"name": "topic_parking", "type": "boolean", "required": false, "description": "Tema sobre parking"}
+        ]
+      },
+      "ui_template": {
+        "sections": [
+          {
+            "name": "info_principal",
+            "title": "📃 Información Principal",
+            "icon": "FileText",
+            "fields": ["titulo_contrato", "tipo_contrato", "objeto_contrato", "category"]
+          },
+          {
+            "name": "partes",
+            "title": "👥 Partes del Contrato", 
+            "icon": "Users",
+            "fields": ["parte_a", "parte_a_identificacion_fiscal", "parte_b", "parte_b_identificacion_fiscal"]
+          },
+          {
+            "name": "duracion_importe",
+            "title": "⏰ Duración e Importe",
+            "icon": "Clock",
+            "fields": ["fecha_inicio", "fecha_fin", "duracion", "importe_total", "moneda"]
+          },
+          {
+            "name": "obligaciones",
+            "title": "⚖️ Obligaciones",
+            "icon": "Scale",
+            "fields": ["alcance_servicios", "obligaciones_parte_a", "obligaciones_parte_b"]
+          },
+          {
+            "name": "legal_pago",
+            "title": "💳 Aspectos Legales y Pago",
+            "icon": "CreditCard", 
+            "fields": ["forma_pago", "plazos_pago", "legislacion_aplicable", "confidencialidad"]
+          }
+        ]
+      }
+    },
+    "presupuesto": {
+      "metadata": {
+        "display_name": "Presupuesto Comercial",
+        "icon": "📊",
+        "color": "cyan",
+        "table_name": "extracted_budgets",
+        "agent_name": "presupuesto_extractor_v1",
+        "component_name": "PresupuestoDetailView",
+        "template_route": "/documents/templates/presupuestos",
+        "extraction_complexity": "complex"
+      },
+      "database_schema": {
+        "primary_fields": [
+          {"name": "numero_presupuesto", "type": "text", "required": true, "description": "Número del presupuesto"},
+          {"name": "emisor_name", "type": "text", "required": true, "description": "Nombre del emisor"},
+          {"name": "cliente_name", "type": "text", "required": true, "description": "Nombre del cliente"},
+          {"name": "fecha_emision", "type": "date", "required": true, "description": "Fecha de emisión"},
+          {"name": "fecha_validez", "type": "date", "required": false, "description": "Fecha de validez"},
+          {"name": "total", "type": "numeric", "required": true, "description": "Importe total"},
+          {"name": "category", "type": "text", "required": false, "description": "Categoría"}
+        ],
+        "detail_fields": [
+          {"name": "titulo", "type": "text", "required": false, "description": "Título del presupuesto"},
+          {"name": "tipo_documento", "type": "text", "required": false, "description": "Tipo de documento"},
+          {"name": "emisor_direccion", "type": "text", "required": false, "description": "Dirección del emisor"},
+          {"name": "emisor_telefono", "type": "text", "required": false, "description": "Teléfono del emisor"},
+          {"name": "emisor_email", "type": "text", "required": false, "description": "Email del emisor"},
+          {"name": "emisor_identificacion_fiscal", "type": "text", "required": false, "description": "CIF/NIF del emisor"},
+          {"name": "cliente_direccion", "type": "text", "required": false, "description": "Dirección del cliente"},
+          {"name": "cliente_identificacion_fiscal", "type": "text", "required": false, "description": "CIF/NIF del cliente"},
+          {"name": "subtotal", "type": "numeric", "required": false, "description": "Subtotal"},
+          {"name": "impuestos", "type": "numeric", "required": false, "description": "Importe de impuestos"},
+          {"name": "porcentaje_impuestos", "type": "numeric", "required": false, "description": "Porcentaje de impuestos"},
+          {"name": "moneda", "type": "text", "required": false, "description": "Moneda"},
+          {"name": "descripcion_servicios", "type": "jsonb", "required": false, "description": "Descripción de servicios"},
+          {"name": "cantidades", "type": "jsonb", "required": false, "description": "Cantidades de productos/servicios"},
+          {"name": "precios_unitarios", "type": "jsonb", "required": false, "description": "Precios unitarios"},
+          {"name": "importes_totales", "type": "jsonb", "required": false, "description": "Importes totales por línea"},
+          {"name": "descripciones_detalladas", "type": "jsonb", "required": false, "description": "Descripciones detalladas"},
+          {"name": "condiciones_pago", "type": "text", "required": false, "description": "Condiciones de pago"},
+          {"name": "plazos_entrega", "type": "text", "required": false, "description": "Plazos de entrega"},
+          {"name": "pago_inicial_requerido", "type": "boolean", "required": false, "description": "Si requiere pago inicial"},
+          {"name": "notas_adicionales", "type": "text", "required": false, "description": "Notas adicionales"},
+          {"name": "garantia", "type": "text", "required": false, "description": "Garantía ofrecida"}
+        ]
+      },
+      "ui_template": {
+        "sections": [
+          {
+            "name": "info_principal",
+            "title": "📊 Información Principal",
+            "icon": "Calculator",
+            "fields": ["numero_presupuesto", "fecha_emision", "fecha_validez", "titulo", "categoria"]
+          },
+          {
+            "name": "emisor",
+            "title": "🏢 Datos del Emisor",
+            "icon": "Building2", 
+            "fields": ["emisor_name", "emisor_direccion", "emisor_telefono", "emisor_email", "emisor_identificacion_fiscal"]
+          },
+          {
+            "name": "cliente",
+            "title": "👤 Datos del Cliente",
+            "icon": "Users",
+            "fields": ["cliente_name", "cliente_direccion", "cliente_identificacion_fiscal"]
+          },
+          {
+            "name": "servicios",
+            "title": "📋 Servicios/Productos", 
+            "icon": "FileText",
+            "fields": ["descripcion_servicios", "cantidades", "precios_unitarios", "importes_totales", "descripciones_detalladas"]
+          },
+          {
+            "name": "resumen_economico",
+            "title": "💰 Resumen Económico",
+            "icon": "Euro",
+            "fields": ["subtotal", "porcentaje_impuestos", "impuestos", "total", "moneda"]
+          },
+          {
+            "name": "condiciones",
+            "title": "⏰ Condiciones y Plazos",
+            "icon": "Clock",
+            "fields": ["condiciones_pago", "plazos_entrega", "pago_inicial_requerido", "garantia", "notas_adicionales"]
+          }
+        ]
+      }
+    }
+  },
+  "generation_rules": {
+    "database": {
+      "base_columns": [
+        {"name": "id", "type": "uuid", "default": "gen_random_uuid()", "primary_key": true},
+        {"name": "document_id", "type": "uuid", "references": "documents(id)", "cascade": true},
+        {"name": "organization_id", "type": "uuid", "references": "organizations(id)", "cascade": true},
+        {"name": "created_at", "type": "timestamptz", "default": "now()"},
+        {"name": "updated_at", "type": "timestamptz", "default": "now()"}
+      ],
+      "indexes": [
+        "document_id",
+        "organization_id", 
+        "created_at"
+      ]
+    },
+    "ui_components": {
+      "base_props": [
+        "documentType",
+        "specificData", 
+        "confidence",
+        "extractionMethod",
+        "processingTime",
+        "tokensUsed"
+      ],
+      "common_imports": [
+        "@/components/ui/badge",
+        "@/components/ui/card", 
+        "@/components/ui/separator",
+        "@/components/ui/Typography",
+        "lucide-react"
+      ]
+    }
+  }
+}

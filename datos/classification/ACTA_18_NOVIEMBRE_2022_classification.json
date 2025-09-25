@@ -1,0 +1,18 @@
+{
+  "original_file": "ACTA 18 NOVIEMBRE 2022.pdf",
+  "base_filename": "ACTA_18_NOVIEMBRE_2022",
+  "extraction_method": "pdf-parse-external",
+  "classification": {
+    "document_type": "acta",
+    "confidence": 0.95,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for acta",
+    "processing_time": 1
+  },
+  "text_info": {
+    "length": 64859,
+    "pages": 25
+  },
+  "generated_at": "2025-09-22T10:09:35.128Z",
+  "tool": "test-classification-real.ts"
+}

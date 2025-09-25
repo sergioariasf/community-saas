@@ -1,0 +1,64 @@
+{
+  "timestamp": "2025-09-24T14:04:08.447Z",
+  "config": {
+    "target_file": "factura",
+    "steps_executed": [
+      3
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 0,
+    "failed": 1,
+    "success_rate": 0,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "factura": {
+        "count": 1,
+        "successful": 0,
+        "success_rate": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "factura",
+      "success": false,
+      "steps_executed": [
+        3
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": false
+        },
+        "step2_classification": {
+          "success": false
+        },
+        "step3_metadata": {
+          "success": false,
+          "error": "Error extracción metadata: extractor.processMetadata is not a function"
+        },
+        "step4_validation": {
+          "success": false
+        },
+        "step5_template_compatibility": {
+          "success": false
+        },
+        "step6_schema_validation": {
+          "success": false
+        }
+      },
+      "total_time": 1687,
+      "document_type": "factura"
+    }
+  ]
+}

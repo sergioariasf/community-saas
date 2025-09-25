@@ -1,0 +1,18 @@
+{
+  "original_file": "escritura_D102B.pdf",
+  "base_filename": "escritura_D102B",
+  "extraction_method": "pdf-parse-external",
+  "classification": {
+    "document_type": "escritura",
+    "confidence": 0.9,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for escritura",
+    "processing_time": 1
+  },
+  "text_info": {
+    "length": 51609,
+    "pages": 72
+  },
+  "generated_at": "2025-09-22T10:09:35.143Z",
+  "tool": "test-classification-real.ts"
+}

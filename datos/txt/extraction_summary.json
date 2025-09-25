@@ -1,0 +1,116 @@
+{
+  "generated_at": "2025-09-22T05:31:54.379Z",
+  "tool": "test-simple-extraction.js",
+  "total_files": 13,
+  "successful_extractions": 13,
+  "failed_extractions": 0,
+  "methods_used": {
+    "pdf-parse": 13
+  },
+  "files": {
+    "ACTA_18_NOVIEMBRE_2022": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 64876,
+      "processing_time": 478,
+      "pages": 25,
+      "error": null
+    },
+    "ACTA_19_MAYO_2022": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 40092,
+      "processing_time": 139,
+      "pages": 18,
+      "error": null
+    },
+    "Acta_junta_extraordinaria_02_06_25": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 40,
+      "processing_time": 14,
+      "pages": 20,
+      "error": null
+    },
+    "Comunicado-_INFORMACI_N_RELACIONADA_CONTADORES_LECTURA_DE_SUNFLOWER_C_P___AMARA_HOMES_": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 2726,
+      "processing_time": 19,
+      "pages": 2,
+      "error": null
+    },
+    "Contrato_OLAQUA_Piscinas": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 20,
+      "processing_time": 3,
+      "pages": 10,
+      "error": null
+    },
+    "GIMNASIO_2023-1-230230": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 5039,
+      "processing_time": 16,
+      "pages": 3,
+      "error": null
+    },
+    "acta_prueba": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 3351,
+      "processing_time": 22,
+      "pages": 2,
+      "error": null
+    },
+    "acta_prueba_v2": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 3351,
+      "processing_time": 14,
+      "pages": 2,
+      "error": null
+    },
+    "acta_test": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 3351,
+      "processing_time": 14,
+      "pages": 2,
+      "error": null
+    },
+    "albaran": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 2,
+      "processing_time": 1,
+      "pages": 1,
+      "error": null
+    },
+    "escritura_D102B": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 51644,
+      "processing_time": 92,
+      "pages": 72,
+      "error": null
+    },
+    "factura": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 2,
+      "processing_time": 1,
+      "pages": 1,
+      "error": null
+    },
+    "presupuesto": {
+      "method": "pdf-parse",
+      "success": true,
+      "length": 2,
+      "processing_time": 1,
+      "pages": 1,
+      "error": null
+    }
+  }
+}

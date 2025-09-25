@@ -1,0 +1,11 @@
+{
+  "original_file": "Comunicado- INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. _AMARA HOMES_.pdf",
+  "base_filename": "Comunicado-_INFORMACI_N_RELACIONADA_CONTADORES_LECTURA_DE_SUNFLOWER_C_P___AMARA_HOMES_",
+  "document_type": "comunicado",
+  "error": "Failed to save extracted comunicado data to database",
+  "extractor_used": "ComunicadoExtractor",
+  "processing_time": 1193,
+  "text_length": 2724,
+  "generated_at": "2025-09-22T09:29:56.128Z",
+  "tool": "test-metadata-real.ts"
+}

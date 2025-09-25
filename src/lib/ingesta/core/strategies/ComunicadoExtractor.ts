@@ -1,74 +1,83 @@
 /**
  * ARCHIVO: ComunicadoExtractor.ts
- * PROPÓSITO: Estrategia de extracción específica para documentos de tipo Comunicado
+ * PROPÓSITO: Extractor específico para documentos tipo Comunicado Vecinal
  * ESTADO: development
- * DEPENDENCIAS: BaseDocumentExtractor, saasAgents
- * OUTPUTS: Procesamiento de metadatos para Comunicados
- * ACTUALIZADO: 2025-09-21
+ * DEPENDENCIAS: BaseDocumentExtractor, AgentOrchestrator
+ * OUTPUTS: Datos estructurados de comunicado
+ * ACTUALIZADO: 2025-09-24
  */
 
-import { BaseDocumentExtractor, DocumentMetadata } from './BaseDocumentExtractor';
+import { BaseDocumentExtractor, ExtractionResult } from './BaseDocumentExtractor';
+import { callSaaSAgent } from '@/lib/agents/AgentOrchestrator';
 
 export class ComunicadoExtractor extends BaseDocumentExtractor {
-  constructor() {
-    super({
-      agentName: 'comunicado_extractor_v1',
-      saveFunctionName: 'saveExtractedComunicado',
-      documentType: 'comunicado'
-    });
+  getDocumentType(): string {
+    return 'comunicado';
   }
 
-  async processMetadata(documentId: string, extractedText: string): Promise<DocumentMetadata> {
-    this.logStart('comunicado');
-    
+  getAgentName(): string {
+    return 'comunicado_extractor_v1';
+  }
+
+  async extractData(content: string): Promise<ExtractionResult> {
     try {
-      // Import our validated agent system
-      console.log('📦 [DEBUG] Importing saasAgents functions...');
-      const { callSaaSAgent, saveExtractedComunicado } = await import('@/lib/gemini/saasAgents');
-      console.log('✅ [DEBUG] saasAgents imported successfully');
+      console.log(`[ComunicadoExtractor] Extrayendo datos de ${this.getDocumentType()}...`);
       
-      this.logTextAnalysis(extractedText);
-      
-      const startTime = Date.now();
-      this.logAgentCall(this.config.agentName);
-      
-      const agentResult = await callSaaSAgent(this.config.agentName, {
-        document_text: extractedText
-      });
-      
-      const processingTime = Date.now() - startTime;
-      this.logAgentResult(agentResult, processingTime);
+      const inputs = {
+        document_content: content,
+        document_type: 'comunicado',
+        extraction_mode: 'complete'
+      };
 
-      if (agentResult.success && agentResult.data) {
-        this.logSuccess(this.config.agentName, agentResult.data);
-
-        // Save extracted data to extracted_communications table
-        this.logSaveAttempt('extracted_communications');
-        
-        const saveSuccess = await saveExtractedComunicado(documentId, agentResult.data);
-        
-        if (saveSuccess) {
-          console.log('✅ [DEBUG] Data saved successfully to extracted_communications table');
-          console.log('🎯 [DEBUG] === COMUNICADO PROCESSING COMPLETED SUCCESSFULLY ===\n');
-          
-          return {
-            success: true,
-            data: agentResult.data
-          };
-        } else {
-          throw new Error('Failed to save extracted comunicado data to database');
-        }
-      } else {
-        throw new Error(`${this.config.agentName} agent failed: ${agentResult.error || 'Unknown error'}`);
+      const agentResponse = await callSaaSAgent(this.getAgentName(), inputs);
+      
+      if (!agentResponse.success) {
+        console.error(`[ComunicadoExtractor] Error del agente:`, agentResponse.error);
+        return {
+          success: false,
+          error: agentResponse.error || 'Error desconocido del agente',
+          data: null,
+          processingTime: agentResponse.processingTime || 0
+        };
       }
-    } catch (agentError) {
-      const errorMsg = `❌ ${this.config.agentName.toUpperCase()} ERROR: ${agentError instanceof Error ? agentError.message : 'Error desconocido'}`;
-      console.error(errorMsg);
+
+      // Validar estructura de datos esperada
+      const extractedData = agentResponse.data;
+      if (!this.validateExtractedData(extractedData)) {
+        return {
+          success: false,
+          error: 'Datos extraídos no cumplen estructura esperada',
+          data: null,
+          processingTime: agentResponse.processingTime || 0
+        };
+      }
+
+      console.log(`[ComunicadoExtractor] Extracción exitosa en ${agentResponse.processingTime}ms`);
       
       return {
+        success: true,
+        data: extractedData,
+        processingTime: agentResponse.processingTime || 0,
+        tokensUsed: agentResponse.tokensUsed || 0
+      };
+
+    } catch (error) {
+      console.error(`[ComunicadoExtractor] Error durante extracción:`, error);
+      return {
         success: false,
-        error: agentError instanceof Error ? agentError.message : 'Unknown error'
+        error: error instanceof Error ? error.message : 'Error desconocido',
+        data: null,
+        processingTime: 0
       };
     }
+  }
+
+  private validateExtractedData(data: any): boolean {
+    if (!data || typeof data !== 'object') return false;
+    
+    // Validar campos obligatorios según schema
+    const requiredFields = ['fecha', 'comunidad', 'remitente', 'resumen'];
+    
+    return requiredFields.every(field => data.hasOwnProperty(field));
   }
 }

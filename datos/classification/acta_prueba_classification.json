@@ -1,0 +1,18 @@
+{
+  "original_file": "acta_prueba.pdf",
+  "base_filename": "acta_prueba",
+  "extraction_method": "pdf-parse-external",
+  "classification": {
+    "document_type": "acta",
+    "confidence": 0.95,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for acta",
+    "processing_time": 1
+  },
+  "text_info": {
+    "length": 3347,
+    "pages": 2
+  },
+  "generated_at": "2025-09-22T10:09:35.138Z",
+  "tool": "test-classification-real.ts"
+}

@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-09-24T14:09:25.846Z",
+  "config": {
+    "target_file": "factura",
+    "steps_executed": [
+      4
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 0,
+    "failed": 1,
+    "success_rate": 0,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "desconocido": {
+        "count": 1,
+        "successful": 0,
+        "success_rate": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "factura",
+      "success": false,
+      "steps_executed": [
+        4
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": false
+        },
+        "step2_classification": {
+          "success": false
+        },
+        "step3_metadata": {
+          "success": false
+        },
+        "step4_validation": {
+          "success": false,
+          "error": "Validación falló: No se encontró JSON válido en respuesta de null"
+        },
+        "step5_template_compatibility": {
+          "success": false
+        },
+        "step6_schema_validation": {
+          "success": false
+        }
+      },
+      "total_time": 0
+    }
+  ]
+}

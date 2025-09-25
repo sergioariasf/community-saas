@@ -1,0 +1,758 @@
+[METADATA]
+Original: ACTA 19 MAYO 2022.pdf
+Method: pdf-parse-external
+Length: 40077 characters
+Pages: 18
+Generated: 2025-09-22T10:05:22.131Z
+Processing: 285ms
+
+[CONTENT]
+C.P. Amara Homes 
+C/ Acanto 2 Bis 
+28231 Las Rozas, Madrid 
+ 
+Las Rozas, 19 de mayo de 2022 
+ 
+ 
+ACTA JUNTA GENERAL EXTRAORDINARIA 
+ 
+Da comienzo la junta el día 19 de mayo de 2022, a las 19.10 horas en segunda 
+convocatoria, en el hotel Attica 2 (Calle Chile, 2 en las Rozas), con la asistencia 
+y representaciones siguientes: 
+ 
+Bloque Propiedad Nombre Coeficiente 
+Presente/ 
+Representado 
+A 
+Portal 1, Bajo B Flavia Ozores Henriquez de Luna 0,258747 Representado 
+Portal 1, Bajo C Cecilia María García Mesuro 0,230923 Representado 
+Portal 1, 2A Ramon Caballer Revenga 0,254175 Presente 
+Portal 1, 2C Roberto Vaquero Via 0,258076 Presente 
+Portal 2, Bajo B Dimas García Olgueras 0,218055 Representado 
+Portal 3, Bajo A Carlos Poggio Moro 0,256346 Presente 
+Portal 3, 2 A Agustín Vegas Barriuso  0,241420 Presente 
+Portal 4, Bajo A Jorge Lopez Lopez 0,218208 Presente 
+Portal 5, 1 A Marta Romero Dominguez 0,230809 Representado 
+Portal 5, 1B Manuel Valdez 0,199751 Presente 
+Portal 5, 2A Cristina Lopez Marcos 0,230809 Presente 
+Portal 6, Bajo B Ignacio Villalba Ranz 0,220721 Representado 
+Portal 6, 1B Juan Carlos Carrasco Garate 0,242768 Presente 
+Portal 6, 2A Francisco Martinez Perez 0,230978 Presente 
+Portal 6, 2B Diego Ruben Vilarño Butta 0,231346 Presente 
+Portal 7, Bajo A Instituto Tecnológico Montealto 0,340092 Presente 
+Portal 7, Bajo B Enrique Garcia Fernandez 0,232050 Presente 
+Portal 7, 1B José Ramón Olivera Aneiros 0,220898 Presente 
+Portal 7, 2A Instituto Tecnológico Montealto 0,310292 Presente 
+Portal 8, 1A Juan Royano Esguevillas 0,254030 Presente 
+Portal 9, Bajo B Raquel Reñones García 0,266476 Presente 
+Portal 9, 2A Rafael Rodríguez Guzman 0,298765 Presente 
+Portal 9, 2B Carolina Hernandez Muñoz 0,240365 Presente 
+Portal 10, Bajo B Diego Cesar Fernández Castro 0,267210 Presente 
+Portal 10, 1A Jorge Gonzalez Gomez 0,253292 Presente 
+Portal 10, 2B Instituto Tecnológico Montealto 0,253672 Presente 
+Portal 11, 1A Instituto Tecnológico Montealto 0,253353 Presente 
+Portal 11, 2A Instituto Tecnológico Montealto 0,240721 Presente 
+Portal 11, 2B Concepción Soria Torralba 0,240414 Presente 
+Portal 12, Bajo C Paula de la Peña Díez 0,276585 Presente 
+Portal 12, 1A Nuria Fernández Martinez 0,202953 Presente 
+
+Portal 12, 1C Instituto Tecnológico Montealto 0,291672 Presente 
+Portal 12, 2A Marco Laurenti 0,203088 Presente 
+Portal 12, 2C Instituto Tecnológico Montealto 0,278991 Presente 
+ 
+Bloque Propiedad Nombre Coeficiente 
+Presente/ 
+Representado 
+B 
+Portal 1, Bajo A Olga Azcue Gamallo 0,227353 Presente 
+Portal 1, Bajo B Elena Diaz Cano Martinez 0,263293 Presente 
+Portal 2, Bajo B Carmela Garbajosa de la Fuente 0,262970 Presente 
+Portal 2, 2A Ana Mª Silva García Olgueras 0,241322 Presente 
+Portal 2, 2B Marcos Alvarez Pascual 0,240639 Presente 
+Portal 4, 3A Daniel Carrasco Lopez-Villanueva 0,379001 Representado 
+Portal 5, 1A Vega Sanchez Hernandez 0,294862 Representado 
+Portal 5, 2B María Eugenia Manrique Carreño 0,255170 Representado 
+Portal 5, 3A José Ignacio Rojo Lopez 0,344340 Representado 
+Portal 7, Bajo A Esther Samper Pinilla 0,246125 Presente 
+Portal 7, 2B Felipe del Baño Giraldez 0,242216 Presente 
+Portal 8, Bajo B José Megía García de la Beldad 0,206744 Presente 
+Portal 8, 1B Miguel Bellido Lopez 0,251097 Presente 
+Portal 8, 2A Francisco Javier Sanz Ramirez 0,223529 Presente 
+Portal 9, Bajo B Jose Sanchez Gonzalez 0,279323 Presente 
+Portal 9, 1B Isabel Ana Ortiz Villareal 0,253550 Presente 
+Portal 9,2B Henar Cuñado Manso 0,267766 Presente 
+Portal 10, 1A Maria Sol Berenguer Delia 0,267741 Presente 
+Portal 11, 2A Ismael Perez Zabaleta 0,301534 Presente 
+Portal 11, 2B Jorge Leon Martin 0,279574 Presente 
+Portal 12, Bajo B Maria Blanca Ariño Palao 0,277158 Presente 
+Portal 12, 1A Carlos Andres-Gayon Gil 0,253084 Presente 
+ 
+Bloque Propiedad Nombre Coeficiente 
+Presente/ 
+Representado 
+C 
+Portal 1, Bajo A Dennis Pragasam San Martin 0,257644 Presente 
+Portal 1, Bajo B Evaristo Jose Abril Domingo 0,263298 Representado 
+Portal 1, Bajo C Jorge del Pozo Mazo 0,233621 Representado 
+Portal 1, 2B Paloma Alvaro Fernandez de Simon 0,248570 Presente 
+Portal 2, Bajo B Luis Fariñas Garcia 0,218322 Representado 
+Portal 3, 1A Francisco Borja Lopez Villar 0,254421 Presente 
+Portal 3, 1B Elena Martin Moreno 0,253562 Presente 
+Portal 3, 2A Angel Luis Muñoz Cánovas 0,254151 Presente 
+Portal 3, 2B Monica Arévalo 0,253685 Representado 
+Portal 4, Bajo A Diego Bravo Lozano 0,279346 Representado 
+Portal 4, 1A Maria Candelaria Leon Alvarez 0,253942 Presente 
+Portal 5, Bajo A Cesar Portillo Olivas 0,219958 Presente 
+Portal 5, 1A Rocio Stelzer Bercovich 0,229707 Presente 
+Portal 6, 1A David Arribas Mendez 0,245566 Presente 
+Portal 6, 1B Maribel Jimenez Ramirez 0,212729 Representado 
+Portal 6, 2A Akthar Ahsan Sabera 0,242940 Representado 
+
+Bloque Propiedad Nombre Coeficiente 
+Presente/ 
+Representado 
+Portal 7, Bajo A Macarena Saenz Garcia 0,318725 Presente 
+Portal 7, 2B Juan Jose Sanchez Esteban 0,202204 Presente 
+Portal 7, 2C Emilio Manzanares Cabezuelo 0,225241 Presente 
+Portal 8, 1B Antonio Madeira Bettencourt 0,254506 Presente 
+Portal 9, Bajo A Elia Maria Molina Cabrera 0,257839 Presente 
+Portal 9, Bajo B Rocio Carazo Carmona 0,218885 Presente 
+Portal 9, 1A Sandra Pilar Burgos Parra 0,254456 Representado 
+Portal 9,2B Jesus Miralles de Imperial Roda 0,307202 Representado 
+Portal 10, Bajo B Javier Ruiz Monge 0,219766 Presente 
+Portal 11, Bajo A Maria Cristina Terres Sanchez 0,257747 Representado 
+Portal 11, Bajo C Esmeralda Salinas Rodriguez 0,209872 Presente 
+Portal 11, 1A Carlos Sánchez Pérez 0,254053 Presente 
+Portal 11, 2C Gonzalo Giner Simón 0,240474 Presente 
+Portal 1, Bajo A Francisco Ros Peran 0,282364 Presente 
+ 
+Bloqu
+e Propiedad Nombre Coeficiente 
+Presente/ 
+Representado 
+D 
+Portal 2, Bajo A Maria de la Cruz Melendi Platero 0,273817 Presente 
+Portal 2, 2B Camilo Jose Fernandez Hernandez 0,254543 Presente 
+Portal 3, 3A Luis Carlos Gutiérrrez Martin 0,253464 Presente 
+Portal 4, 1B Guillermo Ranz Gomez 0,254421 Presente 
+Portal 4, 2B Clara Ramos Martin 0,254543 Presente 
+Portal 6, 2A Javier Rodriguez Izquierdo 0,230855 Presente 
+Portal 6, 2B Jose Ignacio Becerril Sanchez 0,262081 Representado 
+Portal 7, Bajo A Nuria Calo Casanova 0,210030 Representado 
+Portal 7, 2A Almudena de Esteban Maurer 0,309372 Presente 
+Portal 8, 1B Fernando Garcia Gonzalez 0,216089 Presente 
+Portal 8, 2A Maria Eugenia Ortiz Franco 0,253721 Representado 
+Portal 8, 2B Ismael Garcia Palomero 0,254556 Presente 
+Portal 8, 3A Eva Mendez 0,220120 Presente 
+Portal 9, Bajo A Diego Alberto del Baño 0,283695 Presente 
+Portal 9, 1A Lourdes Jimenez Boza 0,254580 Representado 
+Portal 9, 1B Ignacio Fernandez Galera 0,215538 Presente 
+Portal 10, 1B Aida de Miguel Sabate 0,253881 Presente 
+Portal 10, 2B Sergio Arias Fernandez 0,240761 Representado 
+Portal 11, 2A Noelia Sanchez Perez 0,253194 Representado 
+Portal 11, 2B Juan Antonio Jimenez Brito 0,258419 Presente 
+ 
+Empieza hablando el señor presidente, Camilo J. Hernández, dando las gracias 
+a  los  vecinos por  su  asistencia, y  comentando que  se analizará la  solicitud de 
+algún vecino, de poder celebrar las juntas otro día que no sean los jueves. 
+Comenta la forma en la que se va a realizar la reunión y cómo se va a tratar el 
+tema de la presentación de los distintos administradores candidatos. Para que 
+la elección de la nueva administración sea lo más transparente posible, cada 
+candidato expondrá durante 5 minutos su propuesta y seguidamente habrá un 
+
+turno  de  preguntas  por  parte  de  los  propietarios  de 5 minutos para  aclarar 
+dudas.  
+Al  haberse  enviado  los  presupuestos  de  cada  administrador  con  tiempo 
+suficiente  se  espera  que  el  proceso  de  elección  sea  lo  más  fluido  y  rápido 
+posible.  
+El orden del día es largo, y se pretende acabar la reunión sobre las 22:00 horas 
+por lo que se pide a todos agilidad y concreción con los temas a tratar sin entrar 
+en debates improductivos. A continuación se lee el orden del día. 
+ 
+1. PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE. 
+Toma la palabra señor presidente, Camilo José Fernández Hernández (D2, 2B) e 
+informa a los presentes que necesita dejar el cargo de presidente por motivos 
+personales y por la falta del tiempo que se requiere para poder sacar todos los 
+temas que hay. Comenta que seguirá en la junta de gobierno como vocal. 
+Dos  vecinos,  se  quejan  de  que  no  es la  forma  de  hacerlo,  a  lo  que INMHO 
+responde que el proceso legal, tal cuál se va a proceder es admitir y aprobar 
+por  parte  de  los propietarios  la  dimisión  del  actual  presidente,  Camilo,  tras  lo 
+cual se presentarían voluntarios o se seguiría el proceso de elección acordado 
+en la primera junta general. Se postula como voluntario a presidente el actual 
+vocal  de  la  junta  de  gobierno,  Carlos  Sánchez  Pérez  (C11,  1A),  sin  que  nadie 
+más se presente. 
+Se procede a votar si se acepta o no la dimisión del actual presidente, Camilo 
+José Fernández Hernández. Por mayoría se aprueba aceptar la dimisión.  
+Posteriormente se nombra a Carlos Sánchez Pérez como nuevo presidente al ser 
+el único que se presenta al cargo. 
+Sunflower 
+Antes de continuar con el segundo punto del orden del día se pasa a informar 
+a  los  propietarios  de  la  reunión  que  la  junta  de  gobierno  mantuvo  el  pasado 
+martes 17 de mayo con Sunflower encargados del suministro de calefacción y 
+ACS. El motivo de dicha reunión son los reiterados problemas que están sufriendo 
+los propietarios todos los meses con los consumos elevados, períodos de lectura 
+y facturación incoherentes y cargos de facturas en fechas aleatorias. 
+En dicha reunión se consigue nos den por escrito los siguientes compromisos: 
+• Facturaciones mensuales (12 por año). 
+• Las facturas se harán con lecturas realizadas en los primeros días del mes. 
+• Las facturas se enviarán al cobro el día 5 de cada mes. 
+• Las facturas se colgarán en la aplicación de Sunflower disponible en IOS 
+y Android y así poder consultarlas y conocer de antemano los importes y 
+fechas de cargo. 
+• El sistema será auditado por la entidad OCA GLOBAL externa a Sunflower, 
+con  el  fin  de comprobar  el  grado  de  eficiencia  de  la  instalación  y  su 
+correcto   funcionamiento. OCA   GLOBLA   emitirá el   correspondiente 
+
+informe.  Se  solicita  que  en  dicha  revisión  de  las  instalaciones  esté 
+presente el perito que tiene contratado la comunidad.  
+ 
+Una   vecina pregunta si es   posible   que   hagan   fotos   de   las   lecturas 
+correspondientes. Otro   vecino responde que   las   lecturas se   hacen por 
+radiofrecuencia, por lo que no es posible. La junta en cualquier caso toma nota 
+de la sugerencia. 
+  
+ 
+2. PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR. 
+Se  vuelve  a  recordar  que  cada  administración  candidata  dispondrá  de  5 
+minutos de exposición y 5 minutos de preguntas de los propietarios. Se solicita a 
+los  actuales  y  salientes  administradores  que salgan de  la  sala  mientras  cada 
+administración presenta sus proyectos.  
+ 
+ACTIVA 
+Los primeros en exponer son Activa. Juan Manuel Morfino presenta y explica su 
+propuesta. 
+Su  propuesta está  basada en  una aplicación a  medida  desarrollada por  ellos 
+en la que estaría toda la documentación de la comunidad a disposición de los 
+propietarios. Las juntas serán siempre físicas. 
+Se podrán hacer las reservas de las zonas comunes a través de la aplicación. Y 
+los propietarios tendrían la posibilidad de generar incidencias de zonas comunes 
+en la aplicación, por ejemplo, una cerradura rota. 
+Acaba  comentando que  en  comunidades  tan  grandes  es interesante una 
+aplicación tan colaborativa de este tipo.  
+ 
+Turno de Preguntas: 
+ 
+- Pregunta: Un vecino, que ¿cuántas comunidades tienen? 
+ 
+Respuesta: Ellos  no  son  una  administración  muy  grande,  que  llevan 12 
+comunidades y la más grande tiene 150 viviendas.  
+ 
+- Pregunta: El mismo vecino quiere saber con qué equipo cuentan.              
+ 
+Respuesta: En el equipo son 3 personas, 2 administradores y 1 persona que 
+hace las gestiones. El despacho profesional lo tienen en Madrid.  
+ 
+
+- Pregunta: El  mismo  vecino,  menciona  que  si  todo  está  en  la  aplicación 
+¿Qué  si  no  es  una  locura?  Porque  así  todos  los  vecinos podrán marear 
+tanto a la administración como a la Junta de Gobierno. 
+ 
+Respuesta: Juan  Manuel responde,  que  aporta,  que  la  filosofía  y  el 
+objetivo  es  tener  transparencia y  con  la  aplicación está  dando  todo.  Y 
+en muchas ocasiones, pasa que se solicita a las administraciones dicha 
+información y no se facilita.  
+ 
+- Pregunta: Otro  vecino,  pregunta  que la  presentación ha  sido muy 
+centrada en  la  aplicación.  Dice  que  hay  más  cosas,  como el tema 
+jurídico...Y que ayuda que en la  administración  haya  algún abogado 
+experto en la Ley de Propiedad Horizontal. Pregunta si tienen algún jurista, 
+con experiencia. 
+ 
+Respuesta: Contesta que, en la administración, la parte de jurídica, salvo 
+que sea un despacho de abogados, no disponen de ella. Siempre que 
+necesitan, un arquitecto o abogado tienen despachos colaboradores a 
+quien acudir.  
+ 
+- Presunta: Otro vecino pregunta si tienen experiencia en el entorno de las 
+Rozas,  para  conocer  las normativas locales  y  también  si  conocen  a  los 
+proveedores de la zona. 
+ 
+Respuesta: Juan Manuel contesta que una de las comunidades con las 
+que trabajan está en Majadahonda, que en las Rozas no tienen. Y que 
+están abiertos a trabajar con proveedores de la zona. 
+ 
+- Pregunta: Otro vecino pregunta ¿Qué experiencia tienen en pegarse con 
+constructoras y demás? 
+ 
+Respuesta: Ellos tienen experiencia en el arranque de dos comunidades. 
+Y es un trabajo, que, aunque sea un poco pesado, ya que se alargan en 
+exceso los plazos y tienen experiencia y que a día de hoy lo han sacado 
+adelante.  
+ 
+ 
+ZARATE 
+Rafael Zárate explica que lleva metido en el mundo de la administración 23 años 
+y que son 5 personas en la administración. Que se dedica a llevar pocas fincas, 
+pero  grandes  o  muy  grandes.  Su  experiencia  son  fincas  grandes. Tras  estas 
+breves palabras dice que lo mejor es empezar con las preguntas. 
+ 
+ 
+Turno de Preguntas: 
+
+ 
+- Pregunta: Un vecino pregunta ¿Por qué pide dos años de contrato? 
+ 
+Respuesta: Zarate  contesta que  es  un  agujero  negro, que él  lo  ha 
+valorado en 1.750 + IVA, y los costes directos ya son 1.300€, por lo que por 
+300-400€ solo le puede dedicar a la comunidad 10 ó 12 horas al mes. Por 
+lo que eso no le interesa. Quiere ser franco y dice el trabajo que lleva una 
+finca  nueva,  y que  tenemos  muchos  problemas. Expone  que  nuestro 
+principal problema es el  tema  económico y  que  tenemos  unos costes 
+entre un 20-30% por encima de lo que debería ser. 
+ 
+- Pregunta: Otro vecino le dice que quiere cobrar 53.000€ más los 60.000€, 
+en total 110.000€. 
+ 
+Respuesta: Zarate dice que eso no es correcto.   
+ 
+- Pregunta: Otro vecino pregunta ¿En qué se diferenciaría del resto? 
+  
+Respuesta: Contesta que él no se mide con los demás y que por lo tanto 
+no va a contestar. 
+ 
+- Pregunta: Otro vecino como abogado dice que lo único que entienden 
+las multinacionales son los pleitos. ¿Qué se puede esperar de él? 
+ 
+Respuesta: Zarate contesta que, si nos metemos en un problema civil, esto 
+va a ser como el Señor de los Anillos, que sales mal, y no sabes cómo salir. 
+Dice que es lo que quiere el abogado de la constructora, pero que no 
+debemos  hacerlo.  También  dice  que  el  problema,  es  que  no  hay 
+defectos de construcción, sino que es una obra inacabada. 
+ 
+Otra vecina menciona los presupuestos. 
+ 
+- Pregunta: Un  vecino  pregunta, que  si  por  tener  a  una  persona  8  horas 
+dedicadas a la urbanización nos puede asegurar que se resuelvan todas 
+las incidencias. 
+ 
+Respuesta: Contesta que no se puede comprometer a eso. 
+ 
+ 
+ 
+ 
+ 
+ 
+ASEGRAMAR 
+ 
+
+Se   presentan,   Nuria (abogada   y   administradora) y Javier (Abogado). 
+Asegramar dispone  de  despachos en  las  Rozas  y  en  Madrid.  Cuentan  con 
+experiencia  en  comunidades  similares a  la  nuestra,  y  por  eso  creen  que  lo 
+pueden hacer bastante bien.  
+Lo componen 6 abogados, 5 administradores de fincas, contables economistas 
+y personal administrativo. Creen que su estructura se puede ajustar muy bien a 
+lo que necesitamos. Cada abogado está especializado en un área, por lo que 
+podríamos tener cubiertos la mayoría de los frentes.  
+Nuria, especifica que todos,  tanto  abogados  como  administradores están 
+colegiados, y que disponen de un seguro de responsabilidad de 650.000€. Otra 
+de las ventajas que tienen es que están muy cercanos a nosotros, que tienen la 
+oficina y  viven  en Las  Rozas,  por  lo  tanto  conocen  el  municipio,  saben  las 
+necesidades del entorno y tienen relación directa con el ayuntamiento por lo 
+que están informados continuamente.  
+Disponen de una persona que hace revisiones de la urbanización y que su labor 
+como administración es  constante  y  periódica. Esto  es  así porque  tienen 
+personal con experiencia para hacerlo.  
+Los  contables  son  economistas  o  licenciados. Confeccionan presupuestos 
+reales, proponen  los  que  es  o no  necesario y junto con  un  agente  de  seguros 
+realizan comparativos de  los  distintos  servicios  y  proveedores cada  año para 
+ajustar y ahorrar costes. 
+  
+Turno de Preguntas: 
+ 
+- Pregunta: Un vecino comienza preguntando, qué pasa si se llega a juicio, 
+si está incluido en el presupuesto o va a parte. 
+Respuesta: Contestan que todo el asesoramiento jurídico está incluido y 
+que en caso de tener que emprender acciones judiciales sería a parte. 
+En   ese   caso la   comunidad   tendría un   descuento. Puntualizan   la 
+importancia de una administración que cuenta con abogados frente a 
+otras que no lo tienen. 
+ 
+- Pregunta: Otro vecino pregunta si son conscientes del esfuerzo adicional 
+que conlleva apoyarnos en los muchos frentes que tenemos abiertos con 
+Neinor teniendo en cuenta que nos presentan unos honorarios normales 
+de administración y si están dispuestos a ello.  
+Respuesta: Responden afirmativamente, a parte de que siempre hacen 
+el  esfuerzo,  saben  de  las  complicaciones  del  primer  año de  toda 
+comunidad.  
+- Pregunta: Otro  vecino pregunta  que  si  a  los  3-5  meses hubieran  que 
+buscar   otra   administración, si   supondría   alguna   pega   o   pondrían 
+problemas. 
+ 
+
+Respuesta: Contestan que no, que no lo tendrían.  
+ 
+- Pregunta: Se  pregunta si  alguna  de  las comunidades con  las  que  han 
+trabajado ha sido de Neinor. 
+ 
+Respuesta: No. 
+  
+- Pregunta: Otro  vecino comenta que  Neinor  nos  ha  dejado  una  obra 
+inacabada y que si tienen experiencia de reclamaciones en este tipo de 
+casos.  
+ 
+Respuesta: Responden que estos procesos y procedimientos son siempre 
+lentos y tediosos pero que lo más importante para sacarlos adelante es 
+recabar el mayor número de pruebas posibles. 
+ 
+ 
+TU ABOGADO VECINO 
+  
+Ahora  le  tocaría  el  turno  de  exposición  a Tu Abogado Vecino pero  no han 
+venido a presentar su proyecto, por lo que simplemente se dispone del dossier 
+informativo  y  presupuesto  que enviaron  y  se  hizo  llegar  a  los  propietarios  con 
+anterioridad a la presente junta. 
+ 
+INMHO 
+Llegados a este punto INMHO, actual y saliente administración, solicitan poder 
+dirigirse a los propietarios. Por parte de Inmho  toma la palabra Carmen Ureta, 
+que comenta que nos quieren hacer una propuesta para ver si es posible revertir 
+la decisión de no seguir contando con ellos como administradores, decisión que 
+se tomó en la anterior junta general. Comenta que dicha junta fue un poco rara, 
+y que para ellos los motivos que han llevado a los propietarios a decidir cambiar 
+de administración no se ajustan a la realidad.  
+Carmen Ureta reitera que no tienen nada que ver con Neinor, que concurrieron 
+a un concurso abierto por Neinor junto con otros muchos administradores, y que 
+fueron elegidos por ser los más baratos, 3,32€ por vecino.  
+Explican  que INMHO  tiene  muchos  recursos,  más  que  otros  administradores. 
+Disponen de personal, conserjes y demás.  
+Dice  que  lo  normal en  otras  administraciones es  que  tengan  una  gestoría o 
+alguien  que les  hace las  nóminas. Explica  que  ellos  tienen  un departamento 
+jurídico para saber si está los temas a tratar están o no dentro de normativa.  
+De  nuevo  recalca que  ellos  no  tienen  nada  que  ver  con  Neinor  y  quieren 
+puntualizar que efectivamente nos encontramos en una situación complicada 
+y que un cambio de administrador en estos momentos no es lo más conveniente 
+
+para  esta  comunidad.  Ella  nos  quiere  dejar  claro,  que  defenderá  nuestros 
+derechos hasta la última consecuencia. 
+Dice que siempre se ha trabajado en exclusiva para nosotros.  
+Menciona  que NEINOR  nos  ha  entregado  unas calidades  que no  son las 
+correctas y que seguro que terminamos en los tribunales.  
+Para concluir dice que están en la lucha contra Neinor y a nuestro favor, y que 
+estarían encantados de defendernos en los tribunales.  
+Carmen Ureta  propone  que  pueden poner  una  persona  en la  comunidad, 
+revisando las reparaciones que Neinor hace. Poner a esa persona externa 3 días 
+a la semana tendría un coste adicional a lo que cobran actualmente de 300€ 
+al mes.  
+ 
+Turno de Preguntas: 
+ 
+- Pregunta: Una vecina, pregunta cuales son sus condiciones económicas. 
+Respuesta: Carmen Ureta dice que serían 3,32€ por vecino, 1.200€ al mes. 
+Y la persona externa, 300€. Por tanto 1.500€ al mes + IVA. 
+ 
+Acabadas  las  exposiciones  se  pasa  a realizar  las  votaciones.  La  intención  es 
+votar de forma nominativa pero ante la claridad en los votos de los vecinos se 
+acuerda hacerlo a mano alzada. 
+La mayoría   de   los   propietarios vota   la   opción   de   ASEGRAMAR   como 
+administración,  seguido  de  Zarate  con 6 votos. El  resto  de  administraciones 
+presentadas no reciben ningún voto. 
+Por  lo  tanto, por  mayoría cualificada sin  abstenciones se  decide  que el 
+administrador de la comunidad de Amara Homes sea ASEGRAMAR. 
+ 
+Datos contacto ASEGRAMAR nueva administración: 
+Dirección:  C/ San Vicente, 3 Majadahonda 
+Tel. 916381285  -   Correo: administracion@asegramar.com 
+A las 20.50 INMHO se ausenta de la junta dejando solos a la Junta de Gobierno. 
+Se explica a los propietarios que la Junta de Gobierno puede continuar con la 
+reunión ya  que  pueden  hacer  de  secretarios de  la  misma. Se continúa con el 
+orden del día establecido. 
+ 
+3. SEGUIMIENTO  INCIDENCIAS  CON  NEINOR;  EXPOSICIÓN  DE  SITUACIÓN  Y 
+AVANCES. 
+ 
+
+Se explica a los propietarios todos los avances que ha habido con NEINOR. Se 
+mantuvo  una  reunión con  ellos el  pasado  18  de  mayo,  en  la que  se trató  el 
+listado de incidencias. Se cuenta que se va a abrir una única incidencia general 
+por portal para algunas de ellas como los imanes de las puertas de madera, las 
+arquetas de los garajes o la limpiezas, ya que se repiten y son generales.  
+NEINOR comenta que se va a dar un gran empujón a las incidencias a partir de 
+junio. Se nos irán entregando los partes de las cosas que se vayan arreglando. 
+Estos partes hay  la  intención  de  enviarlos  a  todos  los  vecinos  con  una 
+periodicidad  a  establecer mediante una  relación  creada  por  la  Junta  de 
+Gobierno. 
+Sobre las humedades tienen previsto terminarlas a finales de este mes de mayo, 
+y sólo les quedaría pintar y terminar de colocar.  
+Sobre la preocupación de los vecinos por la zona de toboganes, Neinor nos dice 
+que vana acortar los travesaños para que haya el espacio suficiente y se lijarán 
+los cantos para evitar más accidentes.  
+La vicepresidenta Paula de la Peña, comenta que Neinor no nos ha dado una 
+planificación  exacta sobre  las  actuaciones  a  realizar,  más  allá  de  las  fechas 
+referentes a las humedades y las piscinas.  
+Se informa que se está creando un único Excel con Neinor, en el que se recogen 
+todas las incidencias detectadas y al ser un documento vivo se incluirán las que 
+se vayan viendo posteriormente. Este documento se enviará a los vecinos para 
+que sepan qué ocurre y cuál es la situación de la urbanización. 
+Se comenta que el Perito ha preguntado por una serie de temas a la Dirección 
+Facultativa, para poder dar una respuesta entre otros al problema de la rampa 
+del garaje del C/D por el que rozan los vehículos.  
+Se indica que al perito le falta documentación para continuar trabajando, que 
+esta  documentación  se  ha  solicitado en  innumerables  ocasiones  a  Neinor,  así 
+como en lo que le compete al Ayuntamiento.  
+Se  informa  que  Neinor sigue  estudiando el  tema  del suelo  de  la  urbanización, 
+que  aún  no  nos  pueden  dar  una  respuesta  porque  están  viendo  las  posibles 
+opciones viables que podrían plantearnos. Se les ha instado seriamente a que 
+agilicen esta decisión.  
+En este punto la Junta de Gobierno pide a los propietarios que voten si permiten 
+a  la  Junta  de  Gobierno  incluir problemas  o  defectos particulares  como 
+comunitarios por ver que se generaliza a la mayoría de los vecinos. Se acepta 
+por mayoría absoluta. 
+Por último, se comenta que se ha trasladado a Neinor nuestras quejas sobre los 
+escombros que hay continuamente en la salida de bomberos del D, la suciedad 
+que  provocan los  obreros con orines en los  cuartos  y  zonas comunitarias,  las 
+basuras y molestias que ocasionan sin respetar que no están en una obra sino 
+en una propiedad privada y residencial. 
+
+Sobre  los  escombros  en  la  salida  de  bomberos  del  D,  Neinor  con  dice  que lo 
+denunciemos  directamente  a  la  policía  y  ayuntamiento,  ya  que  Sacyr  no  les 
+está haciendo caso. 
+Sobre los orines y suciedad, la Junta de Gobierno traslada a Neinor que de seguir 
+así se tomarán medidas drásticas entre las que se encuentran no permitir a Sacyr 
+disponer de   cuartos   comunitarios   para   almacenar   materiales   y que   se 
+establezcan fuera del recinto comunitario. 
+Una vecina, da las gracias a la junta, y menciona que se ha llegado al punto de 
+que no puede seguir así. 
+Se vuelve a sacar el tema de la garita del B, por una vecina.  
+Sale el tema de la seguridad de nuevo.  
+Se comenta que la Junta de Gobierno va a estar más pendiente del tema de la 
+seguridad y de los obreros, siendo muy insistentes con los conserjes en tener un 
+control de acceso únicamente por la entrada principal. 
+Una vecina dice que no está de acuerdo con la Junta de Gobierno por alguno 
+de los resultados de votaciones reflejado en el acta de la anterior junta general 
+y enseña el burofax que envió a la administración. Se le explica que la Junta de 
+Gobierno no es quien tomó las notas de lo que iba ocurriendo en dicha junta, 
+ya  que  el  secretario  de  la  misma  era  INMHO  en  calidad  de administrador-
+secretario. Que si  hubo  algún  error  en  dicha  acta disponía  de  medios  legales 
+para  que  se  subsanara,  pero  que  en ningún  caso  la  Junta  de  Gobierno tomó 
+nota de los resultados de las votaciones. 
+Un  vecino  llama  al  razonamiento  colectivo, dice  que  habrá  cosas  que  se 
+repercutirán a  la  constructora y otras  que  tendremos  que  asumir como 
+comunidad  y  que  es  importante  contar  con dinero  para  arreglos y  hacer 
+mejoras en la urbanización. 
+ 
+ 
+PUNTO 4. APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE. 
+ 
+El primer tema en salir es el de las barbacoas. Se comenta que indica que serán 
+de gas.  
+Un vecino pregunta que si se ha tenido en cuenta hablar con el Ayuntamiento 
+de  las  Rozas para decidir  esto. Se  le  dice  que  sí  que  se  ha  consultado  al 
+Ayuntamiento y  que  a  la  ordenanza  municipal  relativa  a  barbacoas,  la  Junta 
+General  de  Propietarios  de  una  comunidad  por  mayoría  puede  aprobar  las 
+restricciones que considere oportunas.  
+El mismo propietario dice que se debería definir y poner también el tema de la 
+plancha. Que no se define en la normativa interna lo que es la barbacoa.  
+La  Junta  de  Gobierno modificará  el  artículo  de  la  normativa  interna de la 
+barbacoa dejando  como contenido  del  mismo  la Normativa  Municipal del 
+
+Ayuntamiento  de  Las  Rozas y  que  por  lo  tanto  si  esta  ordenanza  municipal  lo 
+permite se podrían utilizar tanto barbacoas de carbón como de gas.  
+Una  vecina comenta  que  no  quiere  que se  puedan  utilizar  pelotas  en  las 
+piscinas.  
+La  misma  vecina  menciona también que  no  le  parece  bien  que  se puedan 
+hacer cursos de natación de piscinas, dice que no quiere eso.  
+Carlos Sánchez explica que estos cursos de natación en caso de aprobarse o 
+permitirse  en  normativa serían siempre fuera  del horario  oficial  de  piscina,  por 
+ejemplo  una  hora  antes  de  la  hora  de  apertura,  que  nunca en  horarios  que 
+impidan  o  dificulten  a  los  vecinos  el  disfrute  de  las  piscinas. Este  punto en  la 
+normativa siempre se incluiría si lo aprobara la junta general de propietarios.  
+Otro  vecino  habla  del  cuarto  de  las  bicicletas,  mencionan  que es bastante 
+molesto  y  complicado  dada  la  lejanía  tener  que  estar  yendo  a  conserjería  a 
+solicitar que abran y cierren el cuarto. 
+Se informa que se están estudiando varias posibilidades, entre ellas dotar a los 
+cuartos  de anclajes para  que  cada  vecino  pueda  dejar  su  bicicleta con  su 
+cadena de seguridad y así que todos los vecinos dispongan de llave para poder 
+acceder en cualquier momento. 
+Sale el tema de las basuras, se comenta que se está en gestiones con INMHO 
+Multiservicios para encontrar la mejor solución para poder poner en marcha este 
+servicio. Se informará a los propietarios cuando se tenga en claro cómo actuar. 
+Otro vecino saca el tema de tender la ropa en las terrazas. Dice que porqué se 
+prohíbe. Se le aclara que ya hay una Ordenanza Municipal del Ayuntamiento 
+de Las Rozas que así lo establece y que únicamente se traslada a la normativa 
+interna de la comunidad.  
+El  mismo  vecino que  no lo convence  que  la  Junta  de  Gobierno decida  sobre 
+quién puede o no acceder a la piscina. Se le explica que de lo que se trata es 
+de facultar a la Junta de Gobierno a tomar medidas de acceso a las piscinas 
+permitiendo que sólo puedan acceder a ellas los propietarios en el caso de que 
+se descontrole por que venga mucha gente de fuera de la comunidad.  
+Se apela al buen criterio de todos los propietarios haciendo un uso racional de 
+las piscinas.  
+Otro vecino dice que la normativa interna es muy importante y lo debería revisar 
+la administración entrante.  
+Se acuerda dejar para más adelante la aprobación de la normativa interna de 
+la  comunidad y  se pide  a  todos  los  propietarios  que  mientras  no  tengamos 
+aprobadas unas normas de convivencia, se aplique la lógica y se recuerda que 
+hay  Ordenanzas  y  Normativas  Municipales en  muchas  materias  que  deben 
+cumplirse. 
+ 
+
+4. TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE 
+PÉRGOLAS/CERRAMIENTOS  TRAS  REUNIÓN  CON  LA  TÉCNICO  MUNICIPAL, 
+VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN. 
+ 
+Antes de empezar con este punto se indica que quedan 15 minutos del tiempo 
+establecido  para  la  realización  de  la junta.  Se  decide  por  mayoría  continuar 
+más tiempo con la reunión.  
+Tómala   palabra Javier Rodríguez como miembro   de   la   comisión de 
+cerramientos para exponer y explicar los tipos de cerramientos para terrazas y 
+tendederos que pueden instalarse tras las consultas realizadas al Ayuntamiento 
+de Las Rozas y su respuesta por escrito. 
+ 
+CERRAMIENTOS DE TENDEDEROS Y TERRAZAS 
+Por votación de la mayoría se aprueban los siguientes puntos:  
+• Cierre de tendederos: 
+ 
+o Se tiene que realizar por el interior del tendedero/lamas 
+o Los  cristales  serán  transparentes  o  translucido  blanco  de  tipo 
+Lumon (cortinas de cristal) sin perfilería intermedia. 
+o Los  perfiles  serán del RAL7022,  mismo  color  que  la  carpintería  de 
+aluminio de la urbanización. 
+o Se podrá poner puerta, siempre que se mantenga la estructura de 
+lamas en el exterior de la misma, y manteniendo la estética previa 
+inalterada. 
+o En ningún caso se podrá eliminar total o parcialmente la estructura 
+existente de lamas del tendedero. 
+ 
+• Cerramiento para bajos en jardines sin techo: 
+  
+o Se  permite  la  instalación  de  pérgolas  con  lonas  retráctiles  para 
+jardines sin zona techada.  
+o La  perfilería  de  la  pérgola  será del  RAL  7022,  mismo  color  que  la 
+carpintería de aluminio de la urbanización. 
+o La  altura  de  la  pérgola  no  podrá  superar  el  borde  inferior  de  la 
+fachada de la terraza del piso que está encima. 
+o La colocación de la pérgola tendrá que dejar una distancia con 
+la valla exterior de al menos 1,5 metros. 
+o Por  normativa  municipal,  no  está  permitida  la  instalación  de 
+elementos fijos, tampoco de lamas oscilantes o bioclimáticas. 
+o No   está   permitido perforar   la   fachada   para   el   anclaje   de 
+estructuras. 
+o Los   propietarios   están obligados   a   hacer   un   mantenimiento 
+periódico  de  los  techos de  las  pérgolas para  su  limpieza  y 
+conservación. 
+ 
+
+• Cerramiento para pisos intermedios con techo: 
+ 
+o El  cerramiento  frontal  deberá  ser  tipo Lumon (cortinas  de  cristal) 
+transparentes sin perfilería intermedia. 
+o La perfilería será del RAL  7022, mismo color que la carpintería de 
+aluminio de la urbanización. 
+o No   está   permitido perforar   la   fachada   para   el   anclaje   de 
+estructuras. 
+ 
+ 
+• Cerramiento  para  pisos  intermedios  con  estructuras  de  hormigón  (sin 
+techar): 
+ 
+o Se permite el cerramiento del techo con cristal fijo o retráctil. 
+o La perfilería será del RAL 7022, para la sustentación de los techos 
+de  cristal del  mismo  color  que  la  carpintería  de  aluminio  de  la 
+urbanización. 
+o El  cerramiento  frontal  deberá  ser tipo Lumon (cortinas  de  cristal) 
+transparente sin perfilería intermedia. 
+o No   está   permitido perforar   la   fachada   para   el   anclaje   de 
+estructuras. 
+o Los   propietarios   están   obligados   a   hacer   un   mantenimiento 
+periódico de los techos para su limpieza y conservación. 
+ 
+• Cerramiento para áticos: 
+ 
+o Se permite la instalación de pérgolas. 
+o Se permite el cerramiento de techo con cristal, fijo o retráctil. 
+o La perfilería de la pérgola y de los perfiles para la sustentación del 
+techo de cristal será del RAL 7022, mismo color que la carpintería 
+de aluminio de la urbanización. 
+o El  cerramiento  frontal  deberá  tipo Lumon (cortinas  de  cristal) 
+transparentes sin perfilería. 
+o La perfilería de la pérgola sería del RAL 7022,  mismo color que la 
+carpintería de aluminio de la urbanización. 
+o Plano de sección en el que se represente que la pérgola no podrá 
+rebasar el plano trazado desde el borde superior del forjado de la 
+última planta en fachadas y patios con una inclinación máxima de 
+45 grados. (artículo 5.6.5 del PGOU)  
+o No se podrá perforar la fachada para el anclaje de estructuras.  
+o Los   propietarios   están   obligados   a   hacer   un   mantenimiento 
+periódico de los techos para su limpieza y conservación. 
+ 
+ 
+TOLDOS 
+Se  comentan los  problemas  que  ha  habido  con  el  color  elegido  en  la  junta 
+anterior. Se habla de que puede haber problemas de suministros y se somete a 
+
+votación entre gris perla (R-114) o gris 2821 Silver de Sauleda y color marfil liso. Se 
+hace un inciso para comentar en que los colores claros, tanto gris como marfil 
+actualmente hay problemas de suministros, y que los fabricantes sólo garantizan 
+colores oscuros.  
+Por votación de la gran mayoría sale aprobado el color gris. Por lo los toldos para 
+las diferentes terrazas quedan definidos de la siguiente forma: 
+• Toldos para las diferentes terrazas: 
+ 
+o Todos los toldos o velas serán del mismo color y material. 
+o El color elegido es el R-114 de la gama “Recacril de Recasens” y 
+su  equivalente  Sauleda  2821  Silver:  Colección  Solar  Pro.  Lona 
+acrílica normal, sin impermeabilizar.  
+o Todos los brazos, cofres y perfiles serán del color RAL 7022. 
+o En los dormitorios los toldos podrán ser de tipo:  
+▪ De brazo de punto recto sin faldón con cofre o  
+▪ Toldos verticales. 
+o En las terrazas de bajos, intermedios y áticos podrán ser de tipo: 
+▪ De brazo extensible sin faldón con cofre o 
+▪ Toldos verticales. 
+o En los bajos, pisos intermedios con terrazas con techo descubierto 
+y  áticos,  se  permitirán  los  toldos retráctiles y/o  velas,  del  mismo 
+color  y  material  que  los  aprobados  para  el  conjunto  de  la 
+urbanización. 
+o En los dormitorios tanto el cofre como los brazos deberán anclarse 
+a  las  jambas  o  al  dintel  interior  de  la  ventana  de  los  dormitorios, 
+prohibiendo su anclaje en la fachada. 
+o En terrazas se podrán anclar al techo o paredes internas de las de 
+dichas terrazas, sin  afectar  en  ningún  caso  a  los  parámetros 
+verticales de la fachada. 
+Una vecina pregunta sobre la pérgola en el ático, que como se puede hacer, 
+a lo que se le responde que el ayuntamiento ha indicado que tienen que poder 
+quitarse  en  cualquier  momento. Las  opciones  para  poder  hacerlo  debe 
+hablarse con los instaladores correspondientes.  
+Pregunta  también  sobre  el  cierre  de  los  tendederos y pregunta  por  qué  se 
+consultó esto al Ayuntamiento de Las Rozas, se le explica que eso se hizo para 
+saber la legalidad aplicada en este caso.  
+Otro vecino dice que si esto lo dice la normativa municipal y si está por escrito 
+en algún lado. Carlos Sánchez comenta que es la Normativa del Ayuntamiento 
+de Las Rozas que nos han facilitado por escrito y que se ha copiado y pegado 
+tal cuál. Se enseña un de los emails recibidos del Ayuntamiento con este tema.  
+Una vecina dice que la comisión de cerramientos no se ha leído la normativa 
+del  ayuntamiento, otro  vecino  le  responde  que  sí, que  se  ha  leído y, además 
+Carlos  Sánchez  informa  que se  han tenido  tres  reuniones con la  Arquitecto 
+Técnico y la Adjunta a la Dirección General de Urbanismo del Ayuntamiento de 
+Las Rozas.  
+
+Otro  vecino pregunta  que  pasa  con  los  bajos  que  tienen  terraza  techada y, 
+además,  jardín. Se  le  indica  que  deberá  hacerlo según la normativa  de  piso 
+intermedio para la zona techada y de bajo sin jardín para la zona no techada.  
+PUNTO 6. GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE. 
+Toma la palabra Rocío Seltzer miembro del comité de gimnasios. 
+Se comenta que se hizo un estudio de ruido con dos propietarios colindantes a 
+la sala D y que se oía muy poquito.  Se explica mediante presentación y plano 
+cómo quedaría el nuevo gimnasio con la ubicación de las diferentes máquinas. 
+Los vecinos, mencionan que he han en falta más alternativas para ejercicios de 
+cardio.  
+Otra  vecina,  menciona  que  los 12.500€ que  tenemos  aprobados,  se  puede 
+dedicar a otra partida más necesaria, que es un dinero que se puede necesitar 
+al final. Se le explica que esa partida ya estaba aprobada en los presupuestos 
+para uso de gimnasio. 
+Otro vecino dice que está muy bien equipado el gimnasio y que le ha gustado 
+la propuesta. 
+Otro miembro de la comisión aclara que es posible ajustar algo el presupuesto, 
+pero   que realmente   el   coste   por   vecino   sería el equivalente   a dos 
+mensualidades de un gimnasio de fuera y se tendría para siempre. 
+Al  pasar  a  votarse y  ver  que  hay  mucha  igualdad la  votación  tiene  que  ser 
+nominativa. Se  explica  que  al  no  tener las  hojas  de  asistentes  y  su  relación al 
+habérselas llevado INMHO, no se puede proceder a realizar la votación nominal. 
+En  vista  de  que tanto  este  punto  como  los  restantes  del  orden  del  día  vana 
+requerir de votaciones nominativas y al no disponer del listado de asistente, se 
+acuerda    por    unanimidad dejarlos    para    una    próxima    junta    general 
+extraordinaria, dando por concluida la presente junta. 
+VºBº Camilo J. Fernández Hernández      
+Presidente Saliente  
+VºBº Paula de la Peña Díez 
+Secretaria

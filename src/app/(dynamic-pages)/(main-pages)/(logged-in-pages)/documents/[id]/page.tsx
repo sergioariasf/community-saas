@@ -112,6 +112,34 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
       });
 
       extractedData = contrato;
+    } else if (document.document_type === 'escritura') {
+      console.log('DocumentPageSimple - Document is escritura, fetching extracted_property_deeds...');
+      const { data: escritura, error: escrituraError } = await supabase
+        .from('extracted_property_deeds')
+        .select('*')
+        .eq('document_id', id)
+        .single();
+
+      console.log('DocumentPageSimple - Escritura query result:', {
+        hasEscritura: !!escritura,
+        error: escrituraError?.message || 'no error'
+      });
+
+      extractedData = escritura;
+    } else if (document.document_type === 'albaran') {
+      console.log('DocumentPageSimple - Document is albaran, fetching extracted_delivery_notes...');
+      const { data: albaran, error: albaranError } = await supabase
+        .from('extracted_delivery_notes')
+        .select('*')
+        .eq('document_id', id)
+        .single();
+
+      console.log('DocumentPageSimple - Albaran query result:', {
+        hasAlbaran: !!albaran,
+        error: albaranError?.message || 'no error'
+      });
+
+      extractedData = albaran;
     }
 
     console.log('DocumentPageSimple - Rendering page...');
@@ -224,6 +252,28 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                 </div>
               )}
 
+              {extractedData && document.document_type === 'escritura' && (
+                <div>
+                  <T.H4>🏠 Datos extraídos (extracted_property_deeds)</T.H4>
+                  <div className="bg-orange-50 p-3 rounded text-sm">
+                    <div><strong>Vendedor:</strong> {extractedData.vendedor_nombre || 'N/A'}</div>
+                    <div><strong>Comprador:</strong> {extractedData.comprador_nombre || 'N/A'}</div>
+                    <div><strong>Dirección inmueble:</strong> {extractedData.direccion_inmueble || 'N/A'}</div>
+                    <div><strong>Precio venta:</strong> {extractedData.precio_venta ? `${extractedData.precio_venta.toLocaleString()} €` : 'N/A'}</div>
+                    <div><strong>Fecha escritura:</strong> {extractedData.fecha_escritura || 'N/A'}</div>
+                    <div><strong>Notario:</strong> {extractedData.notario_nombre || 'N/A'}</div>
+                    <div><strong>Referencia catastral:</strong> {extractedData.referencia_catastral || 'N/A'}</div>
+                    <div><strong>Superficie:</strong> {extractedData.superficie_m2 ? `${extractedData.superficie_m2} m²` : 'N/A'}</div>
+                    <div><strong>Tipo inmueble:</strong> {extractedData.tipo_inmueble || 'N/A'}</div>
+                    <div><strong>Categoría:</strong> {extractedData.category || 'N/A'}</div>
+                    <div><strong>Registro:</strong> {extractedData.registro_propiedad?.substring(0, 50) + '...' || 'N/A'}</div>
+                    <div><strong>Moneda:</strong> {extractedData.moneda || 'N/A'}</div>
+                    <div><strong>Estado conservación:</strong> {extractedData.estado_conservacion || 'N/A'}</div>
+                    <div><strong>Libre de cargas:</strong> {extractedData.libre_cargas ? 'Sí' : 'No'}</div>
+                  </div>
+                </div>
+              )}
+
               {document.document_type === 'acta' && !extractedData && (
                 <div>
                   <T.H4>⚠️ Sin datos extraídos</T.H4>
@@ -264,6 +314,49 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                 </div>
               )}
 
+              {document.document_type === 'escritura' && !extractedData && (
+                <div>
+                  <T.H4>⚠️ Sin datos extraídos</T.H4>
+                  <div className="bg-yellow-50 p-3 rounded text-sm">
+                    Este documento es una escritura pero no tiene datos en extracted_property_deeds.
+                    Necesita ser procesado por el agente escritura_extractor_v1.
+                  </div>
+                </div>
+              )}
+
+              {extractedData && document.document_type === 'albaran' && (
+                <div>
+                  <T.H4>📦 Datos extraídos (extracted_delivery_notes)</T.H4>
+                  <div className="bg-blue-50 p-3 rounded text-sm">
+                    <div><strong>Emisor:</strong> {extractedData.emisor_name || 'N/A'}</div>
+                    <div><strong>Receptor:</strong> {extractedData.receptor_name || 'N/A'}</div>
+                    <div><strong>Número albarán:</strong> {extractedData.numero_albaran || 'N/A'}</div>
+                    <div><strong>Fecha emisión:</strong> {extractedData.fecha_emision || 'N/A'}</div>
+                    <div><strong>Número pedido:</strong> {extractedData.numero_pedido || 'N/A'}</div>
+                    <div><strong>Productos:</strong> {
+                      extractedData.productos && extractedData.productos.length > 0 
+                        ? `${extractedData.productos.length} producto(s)`
+                        : 'No especificados'
+                    }</div>
+                    <div><strong>Lugar entrega:</strong> {extractedData.lugar_entrega || 'N/A'}</div>
+                    <div><strong>Transportista:</strong> {extractedData.transportista_nombre || 'N/A'}</div>
+                    <div><strong>Observaciones:</strong> {extractedData.observaciones?.substring(0, 100) || 'Ninguna'}</div>
+                    <div><strong>Estado entrega:</strong> {extractedData.estado_entrega || 'N/A'}</div>
+                    <div><strong>Categoría:</strong> {extractedData.category || 'N/A'}</div>
+                  </div>
+                </div>
+              )}
+
+              {document.document_type === 'albaran' && !extractedData && (
+                <div>
+                  <T.H4>⚠️ Sin datos extraídos</T.H4>
+                  <div className="bg-yellow-50 p-3 rounded text-sm">
+                    Este documento es un albarán pero no tiene datos en extracted_delivery_notes.
+                    Necesita ser procesado por el agente albaran_extractor_v1.
+                  </div>
+                </div>
+              )}
+
               {/* RENDER ACTA TEMPLATE si hay datos */}
               {document.document_type === 'acta' && extractedData && (
                 <div className="mt-8">
@@ -274,41 +367,11 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                         const { ActaDetailView } = require('@/components/documents/templates/ActaDetailView');
                         
                         const actaData = {
-                          id: extractedData.id,
-                          document_id: extractedData.document_id,
-                          organization_id: extractedData.organization_id,
-                          president_in: extractedData.president_in,
-                          president_out: extractedData.president_out,
-                          administrator: extractedData.administrator,
-                          summary: extractedData.summary,
-                          decisions: extractedData.decisions,
-                          created_at: extractedData.created_at
+                          ...extractedData  // Pasar todos los campos automáticamente
                         };
                         
                         const metadata = {
-                          document_date: extractedData.document_date,
-                          tipo_reunion: extractedData.tipo_reunion,
-                          lugar: extractedData.lugar,
-                          comunidad_nombre: extractedData.comunidad_nombre,
-                          orden_del_dia: extractedData.orden_del_dia || [],
-                          acuerdos: extractedData.acuerdos || [],
-                          topic_keywords: extractedData.topic_keywords || [],
-                          estructura_detectada: extractedData.estructura_detectada || {},
-                          'topic-presupuesto': extractedData.topic_presupuesto,
-                          'topic-mantenimiento': extractedData.topic_mantenimiento,
-                          'topic-administracion': extractedData.topic_administracion,
-                          'topic-piscina': extractedData.topic_piscina,
-                          'topic-jardin': extractedData.topic_jardin,
-                          'topic-limpieza': extractedData.topic_limpieza,
-                          'topic-balance': extractedData.topic_balance,
-                          'topic-paqueteria': extractedData.topic_paqueteria,
-                          'topic-energia': extractedData.topic_energia,
-                          'topic-normativa': extractedData.topic_normativa,
-                          'topic-proveedor': extractedData.topic_proveedor,
-                          'topic-dinero': extractedData.topic_dinero,
-                          'topic-ascensor': extractedData.topic_ascensor,
-                          'topic-incendios': extractedData.topic_incendios,
-                          'topic-porteria': extractedData.topic_porteria,
+                          ...extractedData  // Pasar todos los campos automáticamente como metadata también
                         };
                         
                         return (
@@ -347,27 +410,7 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                         const { ComunicadoDetailView } = require('@/components/documents/templates/ComunicadoDetailView');
                         
                         const comunicadoData = {
-                          id: extractedData.id,
-                          document_id: extractedData.document_id,
-                          organization_id: extractedData.organization_id,
-                          fecha: extractedData.fecha,
-                          comunidad: extractedData.comunidad,
-                          remitente: extractedData.remitente,
-                          resumen: extractedData.resumen,
-                          category: extractedData.category,
-                          asunto: extractedData.asunto,
-                          tipo_comunicado: extractedData.tipo_comunicado,
-                          urgencia: extractedData.urgencia,
-                          comunidad_direccion: extractedData.comunidad_direccion,
-                          remitente_cargo: extractedData.remitente_cargo,
-                          destinatarios: extractedData.destinatarios,
-                          fecha_limite: extractedData.fecha_limite,
-                          categoria_comunicado: extractedData.categoria_comunicado,
-                          requiere_respuesta: extractedData.requiere_respuesta,
-                          accion_requerida: extractedData.accion_requerida,
-                          anexos: extractedData.anexos,
-                          contacto_info: extractedData.contacto_info,
-                          created_at: extractedData.created_at
+                          ...extractedData  // Pasar todos los campos automáticamente
                         };
                         
                         return (
@@ -405,58 +448,11 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                         const { FacturaDetailView } = require('@/components/documents/templates/FacturaDetailView');
                         
                         const facturaData = {
-                          id: extractedData.id,
-                          document_id: extractedData.document_id,
-                          organization_id: extractedData.organization_id,
-                          provider_name: extractedData.provider_name,
-                          client_name: extractedData.client_name,
-                          amount: extractedData.amount,
-                          invoice_date: extractedData.invoice_date,
-                          category: extractedData.category,
-                          created_at: extractedData.created_at
+                          ...extractedData  // Pasar todos los campos automáticamente
                         };
 
                         const facturaMetadata = {
-                          // Campos principales de la tabla
-                          invoice_number: extractedData.invoice_number,
-                          issue_date: extractedData.issue_date,
-                          due_date: extractedData.due_date,
-                          subtotal: extractedData.subtotal,
-                          tax_amount: extractedData.tax_amount,
-                          total_amount: extractedData.total_amount,
-                          currency: extractedData.currency,
-                          payment_method: extractedData.payment_method,
-                          vendor_address: extractedData.vendor_address,
-                          vendor_tax_id: extractedData.vendor_tax_id,
-                          client_address: extractedData.client_address,
-                          client_tax_id: extractedData.client_tax_id,
-                          products: extractedData.products,
-                          payment_terms: extractedData.payment_terms,
-                          notes: extractedData.notes,
-                          
-                          // Campos compatibles con plantilla
-                          document_date: extractedData.issue_date || extractedData.invoice_date,
-                          proveedor: extractedData.provider_name,
-                          cliente: extractedData.client_name,
-                          importe: extractedData.total_amount || extractedData.amount,
-                          numero_factura: extractedData.invoice_number,
-                          fecha_emision: extractedData.issue_date,
-                          fecha_vencimiento: extractedData.due_date,
-                          vendedor_nombre: extractedData.provider_name,
-                          vendedor_direccion: extractedData.vendor_address,
-                          vendedor_identificacion_fiscal: extractedData.vendor_tax_id,
-                          vendedor_telefono: extractedData.vendor_phone,
-                          vendedor_email: extractedData.vendor_email,
-                          cliente_nombre: extractedData.client_name,
-                          cliente_direccion: extractedData.client_address,
-                          cliente_identificacion_fiscal: extractedData.client_tax_id,
-                          subtotal: extractedData.subtotal,
-                          iva: extractedData.tax_amount,
-                          importe_total: extractedData.total_amount,
-                          forma_pago: extractedData.payment_method,
-                          moneda: extractedData.currency || 'EUR',
-                          vencimiento: extractedData.due_date,
-                          datos_bancarios: extractedData.bank_details
+                          ...extractedData  // Pasar todos los campos automáticamente
                         };
                         
                         return (
@@ -495,56 +491,11 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                         const { ContratoDetailView } = require('@/components/documents/templates/ContratoDetailView');
                         
                         const contratoData = {
-                          id: extractedData.id,
-                          document_id: extractedData.document_id,
-                          organization_id: extractedData.organization_id,
-                          titulo_contrato: extractedData.titulo_contrato,
-                          parte_a: extractedData.parte_a,
-                          parte_b: extractedData.parte_b,
-                          objeto_contrato: extractedData.objeto_contrato,
-                          duracion: extractedData.duracion,
-                          importe_total: extractedData.importe_total,
-                          fecha_inicio: extractedData.fecha_inicio,
-                          fecha_fin: extractedData.fecha_fin,
-                          category: extractedData.category,
-                          created_at: extractedData.created_at
+                          ...extractedData  // Pasar todos los campos automáticamente
                         };
 
                         const contratoMetadata = {
-                          // Campos principales de la tabla
-                          tipo_contrato: extractedData.tipo_contrato,
-                          parte_a_direccion: extractedData.parte_a_direccion,
-                          parte_a_identificacion_fiscal: extractedData.parte_a_identificacion_fiscal,
-                          parte_a_representante: extractedData.parte_a_representante,
-                          parte_b_direccion: extractedData.parte_b_direccion,
-                          parte_b_identificacion_fiscal: extractedData.parte_b_identificacion_fiscal,
-                          parte_b_representante: extractedData.parte_b_representante,
-                          descripcion_detallada: extractedData.descripcion_detallada,
-                          alcance_servicios: extractedData.alcance_servicios,
-                          obligaciones_parte_a: extractedData.obligaciones_parte_a,
-                          obligaciones_parte_b: extractedData.obligaciones_parte_b,
-                          moneda: extractedData.moneda,
-                          forma_pago: extractedData.forma_pago,
-                          plazos_pago: extractedData.plazos_pago,
-                          penalizaciones: extractedData.penalizaciones,
-                          confidencialidad: extractedData.confidencialidad,
-                          condiciones_terminacion: extractedData.condiciones_terminacion,
-                          legislacion_aplicable: extractedData.legislacion_aplicable,
-                          jurisdiccion: extractedData.jurisdiccion,
-                          fecha_firma: extractedData.fecha_firma,
-                          lugar_firma: extractedData.lugar_firma,
-                          firmas_presentes: extractedData.firmas_presentes,
-                          
-                          // Campos compatibles con plantilla
-                          document_date: extractedData.fecha_inicio,
-                          titulo_contrato: extractedData.titulo_contrato,
-                          parte_a_nombre: extractedData.parte_a,
-                          parte_b_nombre: extractedData.parte_b,
-                          objeto_contrato: extractedData.objeto_contrato,
-                          fecha_inicio: extractedData.fecha_inicio,
-                          fecha_fin: extractedData.fecha_fin,
-                          duracion: extractedData.duracion,
-                          importe_total: extractedData.importe_total
+                          ...extractedData  // Pasar todos los campos automáticamente
                         };
                         
                         return (
@@ -559,6 +510,92 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                         );
                       } catch (error) {
                         console.error('Error renderizando ContratoDetailView:', error);
+                        return (
+                          <div className="bg-red-50 p-4 rounded border border-red-200">
+                            <T.H4 className="text-red-800">Error renderizando plantilla</T.H4>
+                            <T.Small className="text-red-700">
+                              {error instanceof Error ? error.message : 'Error desconocido'}
+                            </T.Small>
+                          </div>
+                        );
+                      }
+                    })()}
+                  </div>
+                </div>
+              )}
+
+              {/* RENDER ESCRITURA TEMPLATE si hay datos */}
+              {document.document_type === 'escritura' && extractedData && (
+                <div className="mt-8">
+                  <div className="border-t border-gray-200 pt-6">
+                    <T.H3 className="mb-4">🏠 Vista Completa de la Escritura</T.H3>
+                    {(() => {
+                      try {
+                        const { EscrituraCompraventaDetailView } = require('@/components/documents/templates/EscrituraCompraventaDetailView');
+                        
+                        // Pasar TODOS los campos de la tabla directamente en escrituraData
+                        const escrituraData = {
+                          ...extractedData // Pasar todos los campos de la base de datos directamente
+                        };
+
+                        // Ya no necesitamos metadata, la plantilla usa directamente escrituraData
+                        const escrituraMetadata = null;
+                        
+                        return (
+                          <EscrituraCompraventaDetailView
+                            escrituraData={escrituraData}
+                            metadata={escrituraMetadata}
+                            confidence={0.96}
+                            extractionMethod="escritura_extractor_v1"
+                            processingTime={8800}
+                            tokensUsed={1200}
+                          />
+                        );
+                      } catch (error) {
+                        console.error('Error renderizando EscrituraCompraventaDetailView:', error);
+                        return (
+                          <div className="bg-red-50 p-4 rounded border border-red-200">
+                            <T.H4 className="text-red-800">Error renderizando plantilla</T.H4>
+                            <T.Small className="text-red-700">
+                              {error instanceof Error ? error.message : 'Error desconocido'}
+                            </T.Small>
+                          </div>
+                        );
+                      }
+                    })()}
+                  </div>
+                </div>
+              )}
+
+              {/* RENDER ALBARAN TEMPLATE si hay datos */}
+              {document.document_type === 'albaran' && extractedData && (
+                <div className="mt-8">
+                  <div className="border-t border-gray-200 pt-6">
+                    <T.H3 className="mb-4">📦 Vista Completa del Albarán</T.H3>
+                    {(() => {
+                      try {
+                        const { AlbaranDetailView } = require('@/components/documents/templates/AlbaranDetailView');
+                        
+                        const albaranData = {
+                          ...extractedData  // Pasar todos los campos automáticamente
+                        };
+
+                        const albaranMetadata = {
+                          ...extractedData  // Pasar todos los campos automáticamente
+                        };
+                        
+                        return (
+                          <AlbaranDetailView
+                            albaranData={albaranData}
+                            metadata={albaranMetadata}
+                            confidence={0.95}
+                            extractionMethod="albaran_extractor_v1"
+                            processingTime={3000}
+                            tokensUsed={750}
+                          />
+                        );
+                      } catch (error) {
+                        console.error('Error renderizando AlbaranDetailView:', error);
                         return (
                           <div className="bg-red-50 p-4 rounded border border-red-200">
                             <T.H4 className="text-red-800">Error renderizando plantilla</T.H4>

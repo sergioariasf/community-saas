@@ -9,39 +9,113 @@
 
 import { DocumentsStore } from '../storage/documentsStore';
 import { createSupabaseClient } from '@/supabase-clients/server';
+import { 
+  getDocumentConfigs, 
+  getSupportedDocumentTypes, 
+  isDocumentTypeSupported,
+  getDocumentTypeConfig,
+  logSchemaBasedConfig
+} from './schemaBasedConfig';
 
 export class SimplePipeline {
   constructor() {
     // No need for instance variables since DocumentsStore methods are static
   }
 
+  // REFACTORED: Text Extraction using modular extractors (Factory Pattern)
+  private async tryExtractionStrategies(buffer: Buffer, document: any): Promise<any> {
+    console.log('🔧 [DEBUG] Using refactored extraction strategy chain...');
+    
+    try {
+      // Import the new extraction factory
+      const { TextExtractionFactory } = await import('./extraction');
+      const extractionFactory = new TextExtractionFactory();
+      
+      // Create extraction context
+      const context = {
+        buffer,
+        filename: document.filename,
+        documentId: document.id,
+        minTextLength: 50,
+        maxPages: 5
+      };
+      
+      // Execute extraction strategy chain
+      const result = await extractionFactory.extractText(context);
+      
+      // Handle Gemini Flash TODO-EN-UNO special case
+      if (result.success && (result as any).allInOneComplete) {
+        console.log('✅ [DEBUG] Gemini Flash TODO-EN-UNO completed - marking for pipeline bypass');
+        (document as any)._geminiOCRIACompleted = true;
+        
+        return {
+          success: true,
+          text: result.text,
+          method: result.method,
+          confidence: result.confidence || 0.85,
+          pages: result.pages,
+          strategy: 'gemini-flash-ocr-ia',
+          allInOneComplete: true
+        };
+      }
+      
+      // Handle normal extraction results
+      if (result.success && result.text) {
+        console.log(`✅ [DEBUG] Extraction successful using ${result.method}`);
+        return {
+          success: true,
+          text: result.text,
+          method: result.method,
+          confidence: result.confidence || 0.8,
+          pages: result.pages,
+          strategy: this.mapMethodToStrategy(result.method)
+        };
+      } else {
+        console.log('❌ [DEBUG] All extraction strategies failed');
+        return {
+          success: false,
+          text: '',
+          method: result.method || 'unknown',
+          error: result.error || 'All text extraction strategies failed'
+        };
+      }
+      
+    } catch (error) {
+      console.error('❌ [DEBUG] Extraction factory error:', error);
+      return {
+        success: false,
+        text: '',
+        method: 'factory-error',
+        error: error instanceof Error ? error.message : 'Unknown extraction error'
+      };
+    }
+  }
+
+  /**
+   * Maps extraction method to legacy strategy name for backward compatibility
+   */
+  private mapMethodToStrategy(method: string): string {
+    const methodMap: { [key: string]: string } = {
+      'pdf-parse-external': 'pdf-parse',
+      'google-vision-ocr': 'google-vision-ocr',
+      'gemini-flash-ocr-ia': 'gemini-flash-ocr-ia',
+      'gemini-flash-ocr-ia-all-in-one': 'gemini-flash-ocr-ia'
+    };
+    
+    return methodMap[method] || method;
+  }
+
   // REFACTORED: Unified helper function for processing specific document types (Strategy Pattern)
   private async processDocumentTypeMetadata(documentType: string, documentId: string, extractedText: string): Promise<any> {
-    // Configuration object (Strategy Pattern) - centralized configuration
-    const documentConfigs = {
-      'acta': {
-        agentName: 'acta_extractor_v2',
-        saveFunctionName: 'saveExtractedMinutes',
-        tableName: 'extracted_minutes'
-      },
-      'comunicado': {
-        agentName: 'comunicado_extractor_v1', 
-        saveFunctionName: 'saveExtractedComunicado',
-        tableName: 'extracted_communications'
-      },
-      'factura': {
-        agentName: 'factura_extractor_v2',
-        saveFunctionName: 'saveExtractedInvoice', 
-        tableName: 'extracted_invoices'
-      },
-      'contrato': {
-        agentName: 'contrato_extractor_v1',
-        saveFunctionName: 'saveExtractedContract',
-        tableName: 'extracted_contracts'
-      }
-    };
+    // AUTO-DISCOVERY: Get configuration dynamically from schema
+    console.log('🔍 [AUTO-DISCOVERY] Loading document type configurations from schema...');
+    
+    // Log auto-discovered configuration for debugging
+    if (process.env.NODE_ENV === 'development') {
+      logSchemaBasedConfig();
+    }
 
-    const config = documentConfigs[documentType as keyof typeof documentConfigs];
+    const config = getDocumentTypeConfig(documentType);
     if (!config) {
       throw new Error(`Unsupported document type: ${documentType}`);
     }
@@ -51,10 +125,10 @@ export class SimplePipeline {
     console.log(`🤖 [DEBUG] Using VALIDATED ${config.agentName} agent for ${documentType.toUpperCase()} metadata...`);
 
     try {
-      // Import agents (dynamic import for all types)
-      console.log('📦 [DEBUG] Importing saasAgents functions...');
-      const saasAgents = await import('@/lib/gemini/saasAgents');
-      console.log('✅ [DEBUG] saasAgents imported successfully');
+      // Import agents (using new modular system)
+      console.log('📦 [DEBUG] Using AgentOrchestrator for agent calls...');
+      const { callSaaSAgent } = await import('@/lib/agents/AgentOrchestrator');
+      console.log('✅ [DEBUG] AgentOrchestrator system ready');
       
       // Unified text analysis logging
       console.log('📝 [DEBUG] Text to analyze length:', extractedText.length);
@@ -64,7 +138,7 @@ export class SimplePipeline {
       const startTime = Date.now();
       console.log(`🚀 [DEBUG] Calling ${config.agentName} agent...`);
       
-      const agentResult = await saasAgents.callSaaSAgent(config.agentName, {
+      const agentResult = await callSaaSAgent(config.agentName, {
         document_text: extractedText
       });
       
@@ -86,8 +160,9 @@ export class SimplePipeline {
         // Unified saving with dynamic function selection
         console.log(`💾 [DEBUG] Saving extracted data to ${config.tableName} table...`);
         
-        const saveFunction = saasAgents[config.saveFunctionName as keyof typeof saasAgents] as Function;
-        const saveSuccess = await saveFunction(documentId, agentResult.data);
+        // ELIMINADO HARDCODING: Import and call the appropriate save function dynamically
+        console.log(`💾 [AUTO-DISCOVERY] Dynamically importing save function for ${documentType}...`);
+        const saveSuccess = await this.dynamicSaveExtractedData(documentType, documentId, agentResult.data);
         
         if (saveSuccess) {
           console.log(`✅ [DEBUG] Data saved successfully to ${config.tableName} table`);
@@ -113,6 +188,53 @@ export class SimplePipeline {
       const errorMsg = `❌ ${config.agentName.toUpperCase()} ERROR: ${agentError instanceof Error ? agentError.message : 'Error desconocido'}`;
       console.error(errorMsg);
       throw new Error(`${config.agentName} agent error: ${agentError instanceof Error ? agentError.message : 'Unknown error'}`);
+    }
+  }
+
+
+  /**
+   * AUTO-GENERATED: Save function switcher - Updated by master-generator
+   */
+  private async dynamicSaveExtractedData(documentType: string, documentId: string, extractedData: any): Promise<boolean> {
+    console.log(`💾 [AUTO-DISCOVERY] Saving ${documentType} data using static imports...`);
+    
+    try {
+      switch (documentType) {
+        case 'acta':
+          const { saveExtractedMinutes } = await import('@/lib/agents/persistence/ActaPersistence');
+          return await saveExtractedMinutes(documentId, extractedData);
+        
+        case 'escritura':
+          const { saveExtractedEscritura } = await import('@/lib/agents/persistence/EscrituraPersistence');
+          return await saveExtractedEscritura(documentId, extractedData);
+        
+        case 'albaran':
+          const { saveExtractedAlbaran } = await import('@/lib/agents/persistence/AlbaranPersistence');
+          return await saveExtractedAlbaran(documentId, extractedData);
+        
+        case 'presupuesto':
+          const { saveExtractedPresupuesto } = await import('@/lib/agents/persistence/PresupuestoPersistence');
+          return await saveExtractedPresupuesto(documentId, extractedData);
+        
+        // Legacy types (will be migrated to modern persistence)
+        case 'factura':
+          const { saveExtractedInvoice } = await import('@/lib/gemini/saasAgents');
+          return await saveExtractedInvoice(documentId, extractedData);
+        
+        case 'comunicado':
+          const { saveExtractedComunicado } = await import('@/lib/gemini/saasAgents');
+          return await saveExtractedComunicado(documentId, extractedData);
+        
+        case 'contrato':
+          const { saveExtractedContract } = await import('@/lib/gemini/saasAgents');
+          return await saveExtractedContract(documentId, extractedData);
+
+        default:
+          throw new Error(`No save function configured for document type: ${documentType}`);
+      }
+    } catch (error) {
+      console.error(`❌ [PERSISTENCE] Save failed for ${documentType}:`, error);
+      throw error;
     }
   }
 
@@ -155,73 +277,7 @@ export class SimplePipeline {
     }
   }
 
-  // External process for PDF extraction (Next.js compatible)
-  private async extractWithExternalProcess(buffer: Buffer): Promise<any> {
-    const fs = await import('fs/promises');
-    const path = await import('path');
-    const { execFile } = await import('child_process');
-    const { promisify } = await import('util');
-    const execFileAsync = promisify(execFile);
-
-    try {
-      console.log('[PDF External] Starting external extraction...');
-      
-      // Create temporary file
-      const tempDir = '/tmp';
-      const tempFile = path.join(tempDir, `pdf_temp_${Date.now()}.pdf`);
-      
-      console.log('[PDF External] Writing temp file:', tempFile);
-      await fs.writeFile(tempFile, buffer);
-      
-      try {
-        // Execute external script
-        const scriptPath = path.join(process.cwd(), 'extract-pdf-text.js');
-        console.log('[PDF External] Executing script:', scriptPath);
-        
-        const { stdout, stderr } = await execFileAsync('node', [scriptPath, tempFile], {
-          timeout: 30000, // 30 seconds
-          maxBuffer: 10 * 1024 * 1024 // 10MB
-        });
-        
-        if (stderr) {
-          console.warn('[PDF External] Stderr (warnings):', stderr);
-        }
-        
-        // Limpiar stdout eliminando posibles warnings o logs
-        const cleanOutput = stdout.trim();
-        
-        // Intentar encontrar JSON válido en la salida
-        let jsonStart = cleanOutput.indexOf('{');
-        if (jsonStart === -1) {
-          throw new Error('No JSON found in output');
-        }
-        
-        const jsonOutput = cleanOutput.substring(jsonStart);
-        const result = JSON.parse(jsonOutput);
-        console.log('[PDF External] Result:', {
-          success: result.success,
-          textLength: result.text?.length || 0,
-          pages: result.pages
-        });
-        
-        return result;
-        
-      } finally {
-        // Clean up temp file
-        await fs.unlink(tempFile).catch(() => {});
-      }
-
-    } catch (error) {
-      console.error('[PDF External] Error:', error);
-      return {
-        success: false,
-        text: '',
-        pages: 0,
-        error: error instanceof Error ? error.message : 'External process failed',
-        method: 'external-process-error'
-      };
-    }
-  }
+  // REMOVED: extractWithExternalProcess - moved to PdfParseExtractor.ts
 
   async processDocument(documentId: string, processingLevel: number = 4) {
     console.log(`\n🚀 [DEBUG] === STARTING PIPELINE FOR DOCUMENT ${documentId} ===`);
@@ -315,143 +371,38 @@ export class SimplePipeline {
       const buffer = Buffer.from(await fileData.arrayBuffer());
       console.log(`📄 [DEBUG] File downloaded successfully: ${buffer.length} bytes`);
 
-      // Extract text using external process (Next.js compatible solution)
-      console.log('[PDF Parse] [DEBUG] Using external process for Next.js compatibility...');
-      const pdfData = await this.extractWithExternalProcess(buffer);
+      // REFACTORED: Use extraction strategy chain
+      console.log('🔧 [DEBUG] Using refactored extraction strategy chain...');
+      const extractionResult = await this.tryExtractionStrategies(buffer, document);
       
-      console.log('[PDF Parse] [DEBUG] External process result:', {
-        success: pdfData.success,
-        textLength: pdfData.text?.length || 0,
-        pages: pdfData.pages,
-        method: pdfData.method,
-        error: pdfData.error
+      console.log('📊 [DEBUG] Final extraction result:', {
+        success: extractionResult.success,
+        strategy: extractionResult.strategy,
+        method: extractionResult.method,
+        textLength: extractionResult.text?.length || 0,
+        confidence: extractionResult.confidence,
+        pages: extractionResult.pages
       });
-      
-      if (!pdfData.success) {
-        console.error('❌ [DEBUG] PDF extraction failed:', pdfData.error);
-        throw new Error(pdfData.error || 'PDF extraction failed');
-      }
-      
-      const extractedText = pdfData.text || '';
-      console.log(`📝 [DEBUG] Extracted text length: ${extractedText.length} characters`);
-      console.log(`📝 [DEBUG] Text preview (first 300 chars):`, extractedText.substring(0, 300));
 
-      // OCR Fallback Logic
-      let finalText = extractedText;
-      let extractionMethod = pdfData.method || 'external-process';
-      let ocrConfidence = 0.9;
-
-      if (extractedText.length < 50) {
-        console.log('⚠️ [DEBUG] Insufficient text extracted (' + extractedText.length + ' characters) - triggering OCR fallback');
-        console.log('🔄 [DEBUG] Attempting Google Vision OCR...');
-        
-        try {
-          // Import Google Vision OCR using the wrapper function
-          const { extractWithGoogleVision } = await import('@/lib/pdf/textExtraction');
-          const { isGoogleVisionAvailable } = await import('@/lib/pdf/googleVision');
-          
-          if (!isGoogleVisionAvailable()) {
-            console.log('❌ [DEBUG] Google Vision OCR not available - continuing with pdf-parse text');
-            console.log('🔧 [DEBUG] To enable OCR, configure GOOGLE_APPLICATION_CREDENTIALS');
-          } else {
-            console.log('🚀 [DEBUG] Starting Google Vision OCR extraction...');
-            const startTime = Date.now();
-            
-            const ocrResult = await extractWithGoogleVision(buffer);
-            const ocrTime = Date.now() - startTime;
-            
-            console.log('📊 [DEBUG] OCR Result:', {
-              success: ocrResult.success,
-              textLength: ocrResult.text?.length || 0,
-              confidence: ocrResult.metadata?.confidence || 0,
-              pages: ocrResult.metadata?.pages || 0,
-              processingTime: ocrTime + 'ms'
-            });
-
-            if (ocrResult.success && ocrResult.text && ocrResult.text.length > extractedText.length) {
-              console.log('✅ [DEBUG] OCR extracted more text than pdf-parse - using OCR result');
-              finalText = ocrResult.text;
-              extractionMethod = 'pdf-parse + google-vision-ocr';
-              ocrConfidence = ocrResult.metadata?.confidence || 0.8;
-            } else if (ocrResult.success && ocrResult.text && ocrResult.text.length > 0) {
-              console.log('✅ [DEBUG] OCR extracted some text - using OCR result');
-              finalText = ocrResult.text;
-              extractionMethod = 'google-vision-ocr-only';
-              ocrConfidence = ocrResult.metadata?.confidence || 0.8;
-            } else {
-              console.log('❌ [DEBUG] OCR failed or extracted no text');
-              console.log('🤔 [DEBUG] Checking if eligible for Gemini Flash OCR IA...');
-              
-              // Gemini Flash OCR IA como último recurso - PARA CUALQUIER CANTIDAD DE PÁGINAS
-              console.log(`🤖 [DEBUG] Document ${pdfData.pages || 'unknown'} pages - attempting Gemini Flash OCR IA TODO-EN-UNO`);
-              
-              try {
-                // Gemini Flash OCR IA con clasificación inteligente (NO usar document_type inicial)
-                console.log('🧠 [DEBUG] Using intelligent classification - NOT initial document_type');
-                const geminiResult = await this.tryGeminiOCRIAWithClassification(buffer, document.filename, pdfData.pages, document.id);
-                
-                if (geminiResult.success && geminiResult.allInOneComplete) {
-                  console.log('🎯 [DEBUG] Gemini Flash OCR IA completed todo-en-uno successfully!');
-                  console.log(`📋 [DEBUG] Detected document type: ${geminiResult.confirmedType}`);
-                  console.log('⏭️ [DEBUG] Skipping rest of pipeline - all processing done');
-                  
-                  // Actualizar con información correcta de Gemini
-                  finalText = geminiResult.extractedText || '';
-                  extractionMethod = 'gemini-flash-ocr-ia';
-                  ocrConfidence = 0.95;
-                  
-                  // Marcar que el pipeline debe terminar aquí
-                  (document as any)._geminiOCRIACompleted = true;
-                  
-                } else {
-                  console.log('❌ [DEBUG] Gemini Flash OCR IA failed - using pdf-parse result');
-                  if (geminiResult.error) {
-                    console.log('❌ [DEBUG] Gemini Error:', geminiResult.error);
-                  }
-                  
-                  // Para documentos > 5 páginas, si Gemini falla, marcamos para revisión manual
-                  if (pdfData.pages && pdfData.pages > 5) {
-                    console.log(`⚠️ [DEBUG] Document ${pdfData.pages} pages > 5 and Gemini failed - marking for manual review`);
-                    // TODO: Implementar flag de manual review
-                  }
-                }
-              } catch (geminiError) {
-                console.error('❌ [DEBUG] Gemini Flash OCR IA execution failed:', geminiError);
-                
-                // Para documentos > 5 páginas, si Gemini falla, marcamos para revisión manual
-                if (pdfData.pages && pdfData.pages > 5) {
-                  console.log(`⚠️ [DEBUG] Document ${pdfData.pages} pages > 5 and Gemini error - marking for manual review`);
-                  // TODO: Implementar flag de manual review
-                }
-              }
-              
-              if (ocrResult.metadata?.error) {
-                console.log('❌ [DEBUG] Original OCR Error:', ocrResult.metadata.error);
-              }
-            }
-          }
-        } catch (ocrError) {
-          console.error('❌ [DEBUG] OCR import/execution failed:', ocrError);
-          console.log('🔄 [DEBUG] Continuing with pdf-parse text');
-        }
-      } else {
-        console.log('✅ [DEBUG] Sufficient text extracted from pdf-parse - skipping OCR');
+      if (!extractionResult.success) {
+        throw new Error('All extraction strategies failed');
       }
 
-      // Save extracted text (using final text after OCR if applied)
-      console.log('💾 [DEBUG] Saving extracted text to database...');
-      console.log('📊 [DEBUG] Final extraction stats:', {
-        method: extractionMethod,
-        textLength: finalText.length,
-        confidence: ocrConfidence,
-        pages: pdfData.pages || 1
-      });
+      // Check if Gemini OCR IA completed everything
+      if (extractionResult.allInOneComplete) {
+        console.log('🎯 [DEBUG] Gemini OCR IA completed all pipeline steps - marking for early completion');
+        (document as any)._geminiOCRIACompleted = true;
+      }
+
+      const finalText = extractionResult.text || '';
+      const extractionMethod = extractionResult.method;
+      const ocrConfidence = extractionResult.confidence;
       
       await this.saveExtractionData(document.id, {
         text: finalText,
         method: extractionMethod,
         confidence: ocrConfidence,
-        page_count: pdfData.pages || 1
+        page_count: extractionResult.pages || 1
       });
 
       // Update status to completed
@@ -471,53 +422,48 @@ export class SimplePipeline {
   }
 
   private async classifyDocument(document: any) {
-    console.log('🏷️ [DEBUG] Level 2: Classification (improved filename-based)');
+    console.log('🏷️ [DEBUG] Level 2: Classification (REFACTORED - Intelligent)');
     
     try {
       // Update status
       console.log(`🔄 [DEBUG] Setting classification_status to 'processing'`);
       await this.updateDocumentStatus(document.id, { classification_status: 'processing' });
       
-      // Improved classification based on filename with better matching
-      let documentType = 'acta'; // default
-      const filename = document.filename.toLowerCase();
-      console.log(`📁 [DEBUG] Analyzing filename: "${filename}"`);
+      // Get extracted text if available for better classification
+      const updatedDocument = await DocumentsStore.getDocument(document.id);
+      const extractedText = updatedDocument?.extracted_text;
       
-      // Use word boundaries and specific patterns to avoid false matches
-      if (/\bacta\b/.test(filename) || filename.startsWith('acta')) {
-        documentType = 'acta';
-        console.log(`🎯 [DEBUG] Matched ACTA pattern`);
-      } else if (/\bfactura\b/.test(filename) || filename.startsWith('factura')) {
-        documentType = 'factura';
-        console.log(`🎯 [DEBUG] Matched FACTURA pattern`);
-      } else if (/\bcontrato\b/.test(filename) || filename.startsWith('contrato')) {
-        documentType = 'contrato';
-        console.log(`🎯 [DEBUG] Matched CONTRATO pattern`);
-      } else if (/\bcomunicado\b/.test(filename) || filename.startsWith('comunicado')) {
-        documentType = 'comunicado';
-        console.log(`🎯 [DEBUG] Matched COMUNICADO pattern - THIS IS WHAT WE WANT!`);
-      } else if (/\bpresupuesto\b/.test(filename) || filename.startsWith('presupuesto')) {
-        documentType = 'presupuesto';
-        console.log(`🎯 [DEBUG] Matched PRESUPUESTO pattern`);
-      } else if (/\balbaran\b/.test(filename) || filename.startsWith('albaran')) {
-        documentType = 'albaran';
-        console.log(`🎯 [DEBUG] Matched ALBARAN pattern`);
-      } else if (/\bescritura\b/.test(filename) || filename.startsWith('escritura')) {
-        documentType = 'escritura';
-        console.log(`🎯 [DEBUG] Matched ESCRITURA pattern`);
-      } else {
-        console.log(`⚠️ [DEBUG] No specific pattern matched, defaulting to: ${documentType}`);
-      }
+      console.log(`📁 [DEBUG] Document info:`, {
+        filename: document.filename,
+        hasExtractedText: !!extractedText,
+        textLength: extractedText?.length || 0
+      });
 
-      console.log(`📋 [DEBUG] Final classification: ${documentType}`);
+      // REFACTORED: Use intelligent classifier
+      const { DocumentClassifier } = await import('./strategies');
+      const classifier = new DocumentClassifier();
+      
+      const classificationResult = await classifier.classifyDocument({
+        filename: document.filename,
+        extractedText: extractedText,
+        useAI: true // Enable AI agent classification
+      });
 
-      // Save classification
+      console.log(`📊 [DEBUG] Classification result:`, {
+        documentType: classificationResult.documentType,
+        confidence: classificationResult.confidence,
+        method: classificationResult.method,
+        reasoning: classificationResult.reasoning,
+        fallbackUsed: classificationResult.fallbackUsed
+      });
+
+      // Save classification (without metadata column that doesn't exist)
       await this.updateDocumentStatus(document.id, {
-        document_type: documentType,
+        document_type: classificationResult.documentType,
         classification_status: 'completed'
       });
 
-      console.log(`✅ [DEBUG] Document classified as: ${documentType}`);
+      console.log(`✅ [DEBUG] Document classified as: ${classificationResult.documentType} (${classificationResult.method}, confidence: ${classificationResult.confidence})`);
 
     } catch (error) {
       console.error('❌ [DEBUG] Classification failed:', error);
@@ -532,7 +478,7 @@ export class SimplePipeline {
     try {
       await this.updateDocumentStatus(document.id, { metadata_status: 'processing' });
       
-      // Get updated document with extracted text
+      // Get updated document with extracted text AND current classification
       const updatedDocument = await DocumentsStore.getDocument(document.id);
       if (!updatedDocument?.extracted_text) {
         throw new Error('No extracted text available for metadata extraction');
@@ -552,10 +498,12 @@ export class SimplePipeline {
       console.log('🔍 [DEBUG] Original document.document_type:', document.document_type);
       console.log('🔍 [DEBUG] Updated document.document_type:', updatedDocument.document_type);
       
-      // REFACTORED: Use Strategy pattern to handle all document types with unified logic
-      const supportedTypes = ['acta', 'comunicado', 'factura', 'contrato'];
+      // AUTO-DISCOVERY: Use Schema-based configuration to determine supported types
+      console.log('🔍 [AUTO-DISCOVERY] Loading supported document types from schema...');
+      const supportedTypes = getSupportedDocumentTypes();
+      console.log('📋 [AUTO-DISCOVERY] Supported types:', supportedTypes);
       
-      if (supportedTypes.includes(updatedDocument.document_type)) {
+      if (isDocumentTypeSupported(updatedDocument.document_type)) {
         console.log(`🏭 [DEBUG] Using refactored strategy for ${updatedDocument.document_type} processing...`);
         
         try {
@@ -801,8 +749,8 @@ export class SimplePipeline {
       console.log(`🚀 [DEBUG] Processing with Gemini Flash OCR IA for ${intelligentType}... (REAL IMPLEMENTATION)`);
       
       try {
-        // Importar función real de Gemini Flash OCR IA
-        const { callGeminiFlashOCRIA } = await import('@/lib/gemini/saasAgents');
+        // Importar función migrada de Gemini Flash OCR IA
+        const { callGeminiFlashOCRIA } = await import('@/lib/agents/AgentOrchestrator');
         
         // Llamar a Gemini Flash OCR IA con PDF + prompt del agente
         const geminiResult = await callGeminiFlashOCRIA(buffer, agent.name, agent.prompt_template);
@@ -1053,8 +1001,8 @@ export class SimplePipeline {
       console.log(`🚀 [DEBUG] Processing with Gemini Flash OCR IA... (REAL IMPLEMENTATION)`);
       
       try {
-        // Importar función real de Gemini Flash OCR IA
-        const { callGeminiFlashOCRIA } = await import('@/lib/gemini/saasAgents');
+        // Importar función migrada de Gemini Flash OCR IA
+        const { callGeminiFlashOCRIA } = await import('@/lib/agents/AgentOrchestrator');
         
         // Llamar a Gemini Flash OCR IA con PDF + prompt del agente
         const geminiResult = await callGeminiFlashOCRIA(buffer, agent.name, agent.prompt_template);

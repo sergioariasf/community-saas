@@ -13,11 +13,12 @@ import { Separator } from '@/components/ui/separator';
 import { T } from '@/components/ui/Typography';
 import { Home, Users, MapPin, Euro, Tag, FileText, PenTool, Scale, Calendar, Building } from 'lucide-react';
 
-// Tipos basados en la tabla extracted_property_deeds
+// Tipos basados en la tabla extracted_property_deeds - COMPLETA
 export type ExtractedEscrituraCompraventa = {
   id: string;
   document_id: string;
   organization_id: string;
+  // Campos principales
   vendedor_nombre: string | null;
   comprador_nombre: string | null;
   direccion_inmueble: string | null;
@@ -27,6 +28,63 @@ export type ExtractedEscrituraCompraventa = {
   referencia_catastral: string | null;
   superficie_m2: number | null;
   category: string | null;
+  // Campos de detalle - Vendedor
+  vendedor_dni: string | null;
+  vendedor_direccion: string | null;
+  vendedor_estado_civil: string | null;
+  vendedor_nacionalidad: string | null;
+  vendedor_profesion: string | null;
+  // Campos de detalle - Comprador
+  comprador_dni: string | null;
+  comprador_direccion: string | null;
+  comprador_estado_civil: string | null;
+  comprador_nacionalidad: string | null;
+  comprador_profesion: string | null;
+  // Campos inmueble
+  tipo_inmueble: string | null;
+  superficie_util: number | null;
+  numero_habitaciones: number | null;
+  numero_banos: number | null;
+  planta: string | null;
+  orientacion: string | null;
+  descripcion_inmueble: string | null;
+  // Campos registrales
+  registro_propiedad: string | null;
+  tomo: string | null;
+  libro: string | null;
+  folio: string | null;
+  finca: string | null;
+  inscripcion: string | null;
+  // Campos económicos y legales
+  moneda: string | null;
+  forma_pago: string | null;
+  precio_en_letras: string | null;
+  impuestos_incluidos: boolean | null;
+  gastos_a_cargo_comprador: any | null;
+  gastos_a_cargo_vendedor: any | null;
+  cargas_existentes: any | null;
+  hipotecas_pendientes: string | null;
+  servidumbres: string | null;
+  libre_cargas: boolean | null;
+  condicion_suspensiva: boolean | null;
+  condiciones_especiales: any | null;
+  clausulas_particulares: any | null;
+  fecha_entrega: string | null;
+  entrega_inmediata: boolean | null;
+  estado_conservacion: string | null;
+  inventario_incluido: string | null;
+  // Campos notariales
+  notario_numero_colegiado: string | null;
+  notaria_direccion: string | null;
+  protocolo_numero: string | null;
+  autorizacion_notarial: boolean | null;
+  // Campos fiscales
+  valor_catastral: number | null;
+  coeficiente_participacion: string | null;
+  itp_aplicable: number | null;
+  base_imponible_itp: number | null;
+  inscripcion_registro: string | null;
+  // Metadatos
   created_at: string;
 };
 
@@ -245,35 +303,41 @@ export function EscrituraCompraventaDetailView({
                     {escrituraData.vendedor_nombre || '❌ No especificado'}
                   </span>
                 </div>
-                {metadata?.vendedor_estado_civil && (
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">DNI/NIE:</span>
+                  <span className={escrituraData.vendedor_dni ? 'text-blue-600 font-medium' : 'text-muted-foreground'}>
+                    {escrituraData.vendedor_dni || 'No especificado'}
+                  </span>
+                </div>
+                <div>
+                  <span className="text-muted-foreground block mb-1">Dirección:</span>
+                  <span className={`text-gray-800 bg-muted/50 rounded p-2 block text-xs ${
+                    escrituraData.vendedor_direccion ? '' : 'text-muted-foreground'
+                  }`}>
+                    {escrituraData.vendedor_direccion || 'No especificada'}
+                  </span>
+                </div>
+                {escrituraData.vendedor_estado_civil && (
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Estado civil:</span>
                     <span className="text-blue-600">
-                      {metadata.vendedor_estado_civil}
+                      {escrituraData.vendedor_estado_civil}
                     </span>
                   </div>
                 )}
-                {metadata?.vendedor_nacionalidad && (
+                {escrituraData.vendedor_nacionalidad && (
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Nacionalidad:</span>
                     <span className="text-blue-600">
-                      {metadata.vendedor_nacionalidad}
+                      {escrituraData.vendedor_nacionalidad}
                     </span>
                   </div>
                 )}
-                {metadata?.vendedor_domicilio && (
-                  <div>
-                    <span className="text-muted-foreground block mb-1">Domicilio:</span>
-                    <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                      {metadata.vendedor_domicilio}
-                    </span>
-                  </div>
-                )}
-                {metadata?.vendedor_dni_nie && (
+                {escrituraData.vendedor_profesion && (
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">DNI/NIE:</span>
-                    <span className="text-blue-600 font-medium">
-                      {metadata.vendedor_dni_nie}
+                    <span className="text-muted-foreground">Profesión:</span>
+                    <span className="text-blue-600">
+                      {escrituraData.vendedor_profesion}
                     </span>
                   </div>
                 )}
@@ -303,35 +367,41 @@ export function EscrituraCompraventaDetailView({
                     {escrituraData.comprador_nombre || '❌ No especificado'}
                   </span>
                 </div>
-                {metadata?.comprador_estado_civil && (
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">DNI/NIE:</span>
+                  <span className={escrituraData.comprador_dni ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
+                    {escrituraData.comprador_dni || 'No especificado'}
+                  </span>
+                </div>
+                <div>
+                  <span className="text-muted-foreground block mb-1">Dirección:</span>
+                  <span className={`text-gray-800 bg-muted/50 rounded p-2 block text-xs ${
+                    escrituraData.comprador_direccion ? '' : 'text-muted-foreground'
+                  }`}>
+                    {escrituraData.comprador_direccion || 'No especificada'}
+                  </span>
+                </div>
+                {escrituraData.comprador_estado_civil && (
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Estado civil:</span>
                     <span className="text-chart-4">
-                      {metadata.comprador_estado_civil}
+                      {escrituraData.comprador_estado_civil}
                     </span>
                   </div>
                 )}
-                {metadata?.comprador_nacionalidad && (
+                {escrituraData.comprador_nacionalidad && (
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Nacionalidad:</span>
                     <span className="text-chart-4">
-                      {metadata.comprador_nacionalidad}
+                      {escrituraData.comprador_nacionalidad}
                     </span>
                   </div>
                 )}
-                {metadata?.comprador_domicilio && (
-                  <div>
-                    <span className="text-muted-foreground block mb-1">Domicilio:</span>
-                    <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                      {metadata.comprador_domicilio}
-                    </span>
-                  </div>
-                )}
-                {metadata?.comprador_dni_nie && (
+                {escrituraData.comprador_profesion && (
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">DNI/NIE:</span>
-                    <span className="text-chart-4 font-medium">
-                      {metadata.comprador_dni_nie}
+                    <span className="text-muted-foreground">Profesión:</span>
+                    <span className="text-chart-4">
+                      {escrituraData.comprador_profesion}
                     </span>
                   </div>
                 )}
@@ -364,20 +434,42 @@ export function EscrituraCompraventaDetailView({
                     {escrituraData.direccion_inmueble || '❌ No especificada'}
                   </span>
                 </div>
-                {metadata?.tipo_inmueble && (
+                {escrituraData.tipo_inmueble && (
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Tipo:</span>
                     <span className="text-chart-1 font-medium">
-                      {metadata.tipo_inmueble}
+                      {escrituraData.tipo_inmueble}
                     </span>
                   </div>
                 )}
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Superficie:</span>
+                  <span className="text-muted-foreground">Superficie total:</span>
                   <span className={escrituraData.superficie_m2 ? 'text-chart-1 font-medium' : 'text-muted-foreground'}>
                     {escrituraData.superficie_m2 ? `${escrituraData.superficie_m2} m²` : 'No especificada'}
                   </span>
                 </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Superficie útil:</span>
+                  <span className={escrituraData.superficie_util ? 'text-chart-1 font-medium' : 'text-muted-foreground'}>
+                    {escrituraData.superficie_util ? `${escrituraData.superficie_util} m²` : 'No especificada'}
+                  </span>
+                </div>
+                {escrituraData.numero_habitaciones && (
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Habitaciones:</span>
+                    <span className="text-chart-1 font-medium">
+                      {escrituraData.numero_habitaciones}
+                    </span>
+                  </div>
+                )}
+                {escrituraData.numero_banos && (
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Baños:</span>
+                    <span className="text-chart-1 font-medium">
+                      {escrituraData.numero_banos}
+                    </span>
+                  </div>
+                )}
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Ref. Catastral:</span>
                   <span className={escrituraData.referencia_catastral ? 'text-chart-1 font-medium' : 'text-muted-foreground'}>
@@ -405,7 +497,7 @@ export function EscrituraCompraventaDetailView({
           </Card>
 
           {/* Datos Registrales */}
-          {metadata && (metadata.numero_finca || metadata.tomo || metadata.libro || metadata.folio) && (
+          {escrituraData && (escrituraData.finca || escrituraData.tomo || escrituraData.libro || escrituraData.folio || escrituraData.registro_propiedad) && (
             <Card>
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-2">
@@ -415,43 +507,51 @@ export function EscrituraCompraventaDetailView({
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="space-y-2 text-sm">
-                  {metadata.numero_finca && (
+                  {escrituraData.finca && (
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Nº Finca:</span>
                       <span className="text-chart-3 font-medium">
-                        {metadata.numero_finca}
+                        {escrituraData.finca}
                       </span>
                     </div>
                   )}
-                  {metadata.tomo && (
+                  {escrituraData.tomo && (
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Tomo:</span>
                       <span className="text-chart-3 font-medium">
-                        {metadata.tomo}
+                        {escrituraData.tomo}
                       </span>
                     </div>
                   )}
-                  {metadata.libro && (
+                  {escrituraData.libro && (
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Libro:</span>
                       <span className="text-chart-3 font-medium">
-                        {metadata.libro}
+                        {escrituraData.libro}
                       </span>
                     </div>
                   )}
-                  {metadata.folio && (
+                  {escrituraData.folio && (
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Folio:</span>
                       <span className="text-chart-3 font-medium">
-                        {metadata.folio}
+                        {escrituraData.folio}
                       </span>
                     </div>
                   )}
-                  {metadata.registro_propiedad && (
+                  {escrituraData.inscripcion && (
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Inscripción:</span>
+                      <span className="text-chart-3 font-medium">
+                        {escrituraData.inscripcion}
+                      </span>
+                    </div>
+                  )}
+                  {escrituraData.registro_propiedad && (
                     <div>
                       <span className="text-muted-foreground block mb-1">Registro:</span>
                       <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                        {metadata.registro_propiedad}
+                        {escrituraData.registro_propiedad}
                       </span>
                     </div>
                   )}
@@ -476,43 +576,41 @@ export function EscrituraCompraventaDetailView({
                     {formatAmount(escrituraData.precio_venta)}
                   </span>
                 </div>
-                {metadata?.forma_pago && (
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Moneda:</span>
+                  <span className="text-chart-4 font-medium">
+                    {escrituraData.moneda || 'EUR'}
+                  </span>
+                </div>
+                {escrituraData.forma_pago && (
                   <div>
                     <span className="text-muted-foreground block mb-1">Forma de pago:</span>
                     <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                      {metadata.forma_pago}
+                      {escrituraData.forma_pago}
                     </span>
                   </div>
                 )}
-                {metadata?.impuestos_aplicables && (
-                  <div>
-                    <span className="text-muted-foreground block mb-1">Impuestos:</span>
-                    <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                      {metadata.impuestos_aplicables}
-                    </span>
-                  </div>
-                )}
-                {metadata?.quien_paga_impuestos && (
+                {escrituraData.valor_catastral && (
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Pago impuestos:</span>
+                    <span className="text-muted-foreground">Valor catastral:</span>
                     <span className="text-chart-4 font-medium">
-                      {metadata.quien_paga_impuestos}
+                      {formatAmount(escrituraData.valor_catastral)}
                     </span>
                   </div>
                 )}
-                {metadata?.gastos_notaria && (
+                {escrituraData.itp_aplicable && (
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Gastos notaría:</span>
+                    <span className="text-muted-foreground">ITP aplicable:</span>
                     <span className="text-chart-4 font-medium">
-                      {metadata.gastos_notaria}
+                      {escrituraData.itp_aplicable}%
                     </span>
                   </div>
                 )}
-                {metadata?.gastos_registro && (
+                {escrituraData.base_imponible_itp && (
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Gastos registro:</span>
+                    <span className="text-muted-foreground">Base imponible ITP:</span>
                     <span className="text-chart-4 font-medium">
-                      {metadata.gastos_registro}
+                      {formatAmount(escrituraData.base_imponible_itp)}
                     </span>
                   </div>
                 )}
@@ -532,53 +630,59 @@ export function EscrituraCompraventaDetailView({
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-muted-foreground">Libre de cargas:</span>
-                  <span className={metadata?.libre_cargas ? 'text-chart-4 font-medium' : 'text-destructive'}>
-                    {metadata?.libre_cargas ? '✅ Sí' : '❌ Verificar'}
+                  <span className={escrituraData.libre_cargas ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
+                    {escrituraData.libre_cargas !== null ? (escrituraData.libre_cargas ? '✅ Sí' : '❌ No') : '❓ No especificado'}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Hipotecas:</span>
-                  <span className={metadata?.hipotecas_existentes ? 'text-destructive' : 'text-chart-4'}>
-                    {metadata?.hipotecas_existentes ? '⚠️ Existen' : '✅ No hay'}
+                  <span className="text-muted-foreground">Condición suspensiva:</span>
+                  <span className={escrituraData.condicion_suspensiva ? 'text-destructive' : 'text-chart-4'}>
+                    {escrituraData.condicion_suspensiva !== null ? (escrituraData.condicion_suspensiva ? '⚠️ Sí' : '✅ No') : '❓ No especificado'}
                   </span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Embargos:</span>
-                  <span className={metadata?.embargos_existentes ? 'text-destructive' : 'text-chart-4'}>
-                    {metadata?.embargos_existentes ? '⚠️ Existen' : '✅ No hay'}
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Libre arrendamientos:</span>
-                  <span className={metadata?.libre_arrendamientos ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
-                    {metadata?.libre_arrendamientos ? '✅ Sí' : '❓ No especificado'}
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Al corriente comunidad:</span>
-                  <span className={metadata?.al_corriente_comunidad ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
-                    {metadata?.al_corriente_comunidad ? '✅ Sí' : '❓ No especificado'}
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Al corriente IBI:</span>
-                  <span className={metadata?.al_corriente_ibi ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
-                    {metadata?.al_corriente_ibi ? '✅ Sí' : '❓ No especificado'}
-                  </span>
-                </div>
-                {metadata?.fecha_entrega_posesion && (
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Entrega posesión:</span>
-                    <span className="text-chart-4 font-medium">
-                      {formatDate(metadata.fecha_entrega_posesion)}
+                {escrituraData.hipotecas_pendientes && (
+                  <div>
+                    <span className="text-muted-foreground block mb-1">Hipotecas:</span>
+                    <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
+                      {escrituraData.hipotecas_pendientes}
                     </span>
                   </div>
                 )}
-                {metadata?.como_adquirio_vendedor && (
+                {escrituraData.servidumbres && (
                   <div>
-                    <span className="text-muted-foreground block mb-1">Título de propiedad:</span>
+                    <span className="text-muted-foreground block mb-1">Servidumbres:</span>
                     <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                      {metadata.como_adquirio_vendedor}
+                      {escrituraData.servidumbres}
+                    </span>
+                  </div>
+                )}
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Entrega inmediata:</span>
+                  <span className={escrituraData.entrega_inmediata ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
+                    {escrituraData.entrega_inmediata !== null ? (escrituraData.entrega_inmediata ? '✅ Sí' : '❌ No') : '❓ No especificado'}
+                  </span>
+                </div>
+                {escrituraData.fecha_entrega && (
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Fecha entrega:</span>
+                    <span className="text-chart-4 font-medium">
+                      {formatDate(escrituraData.fecha_entrega)}
+                    </span>
+                  </div>
+                )}
+                {escrituraData.estado_conservacion && (
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Estado conservación:</span>
+                    <span className="text-chart-4 font-medium">
+                      {escrituraData.estado_conservacion}
+                    </span>
+                  </div>
+                )}
+                {escrituraData.inscripcion_registro && (
+                  <div>
+                    <span className="text-muted-foreground block mb-1">Inscripción registro:</span>
+                    <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
+                      {escrituraData.inscripcion_registro}
                     </span>
                   </div>
                 )}

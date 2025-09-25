@@ -1,0 +1,11 @@
+{
+  "filename": "albaran.pdf",
+  "document_type": "albaran",
+  "success": false,
+  "extracted_data": null,
+  "processing_time": 0,
+  "error": "Unsupported document type: albaran",
+  "extractor_used": "error",
+  "generated_at": "2025-09-22T18:59:34.377Z",
+  "tool": "test-metadata-extraction-only.ts"
+}

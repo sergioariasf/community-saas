@@ -80,7 +80,12 @@ node src/lib/ingesta/test/test_full_pipeline_real.js
 Para que tengas el contexto actualizado en cada momento mira:
 
 - `node scripts/contexto_proyecto.js` - Genera `scripts/CONTEXTO_PROYECTO_OUT.md`
-- Status de supabase en supabase\status
+  **MODULO DOCUMENTOS**
+- Status de modulo documentos en `docs\status_docuemntos.md`
+  **SUPABASE**
+- Script: supabase/scripts/update-database-schema.js
+- Documentación: supabase/database_schema_current.md Y supabase\docs\status_supabase.md
+- Comando: `npm run generate:schema`
 
 **ENCABEZADO OBLIGATORIO** (añadir a TODOS los archivos creados/editados):
 
@@ -162,14 +167,14 @@ ACTUALIZADO: 2025-09-14
   - calsificacion
   - metadatos
   - chunks
-- Tipos de documentos:
+- Tipos de documentos ✅:
   - Actas (plantilla ✅, base de datos✅, integracion pipeline✅)
   - Comunicados (plantilla ✅, base de datos✅, integracion pipeline✅)
   - Facturas (plantilla ✅, base de datos✅, integracion pipeline✅)
   - Contratos (plantilla ✅, base de datos✅, integracion pipeline✅)
-  - Escrituras (plantilla ✅, base de datos✅, integracion pipeline🚧)
-  - Alabaran (plantilla ✅, base de datos✅, integracion pipeline🚧)
-  - Presupuestos (plantilla ✅, base de datos✅, integracion pipeline🚧)
+  - Escrituras (plantilla ✅, base de datos✅, integracion pipeline✅)
+  - Alabaran (plantilla ✅, base de datos✅, integracion pipeline✅)
+  - Presupuestos (plantilla ✅, base de datos✅, integracion pipeline✅)
 - Test masivo para ver robustez del metodo
 - Fragmentar multidocumento
 - Chunkig
@@ -243,3 +248,14 @@ el script get_full_schema.sql está correcto y muy completo. Analiza:
 ## documentacion por modulo
 
 Mirar como ejemplo src\lib\ingesta\Ingesta_doc.md
+
+# 📁 ARCHIVOS DE CONFIGURACIÓN CRÍTICOS
+
+| Archivo              | Propósito                                 | Impacto en Módulo Documentos           |
+| -------------------- | ----------------------------------------- | -------------------------------------- |
+| `package.json`       | Dependencias y scripts NPM                | 🚀 Scripts test específicos módulo     |
+| `tsconfig.json`      | Configuración TypeScript                  | 🔧 Tipos documentos y pipeline         |
+| `.env.local`         | Variables de entorno                      | 🔐 APIs Supabase, Google, Gemini       |
+| `next.config.js`     | Configuración Next.js                     | ⚡ Upload files, optimizaciones        |
+| `tailwind.config.js` | Estilos UI                                | 🎨 Templates documentos                |
+| **`agentConfig.ts`** | **Configuración centralizada agentes IA** | **🤖 Modelo Gemini, tokens, timeouts** |

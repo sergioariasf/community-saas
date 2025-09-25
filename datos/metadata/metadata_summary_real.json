@@ -1,0 +1,137 @@
+{
+  "generated_at": "2025-09-22T09:30:47.470Z",
+  "tool": "test-metadata-real.ts",
+  "total_files": 13,
+  "successful_extractions": 0,
+  "failed_extractions": 13,
+  "document_types": {
+    "acta": 6,
+    "comunicado": 1,
+    "contrato": 1,
+    "factura": 2,
+    "albaran": 1,
+    "escritura": 1,
+    "presupuesto": 1
+  },
+  "extractors_used": {},
+  "average_fields_per_document": 0,
+  "files": {
+    "ACTA_18_NOVIEMBRE_2022": {
+      "document_type": "acta",
+      "success": false,
+      "processing_time": 17640,
+      "text_length": 64859,
+      "extractor_used": "ActaExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted acta data to database"
+    },
+    "ACTA_19_MAYO_2022": {
+      "document_type": "acta",
+      "success": false,
+      "processing_time": 10407,
+      "text_length": 40077,
+      "extractor_used": "ActaExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted acta data to database"
+    },
+    "Acta_junta_extraordinaria_02_06_25": {
+      "document_type": "acta",
+      "success": false,
+      "processing_time": 23506,
+      "text_length": 49803,
+      "extractor_used": "ActaExtractor",
+      "data_fields": [],
+      "error": "acta_extractor_v2 agent failed: Unknown error"
+    },
+    "Comunicado-_INFORMACI_N_RELACIONADA_CONTADORES_LECTURA_DE_SUNFLOWER_C_P___AMARA_HOMES_": {
+      "document_type": "comunicado",
+      "success": false,
+      "processing_time": 1193,
+      "text_length": 2724,
+      "extractor_used": "ComunicadoExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted comunicado data to database"
+    },
+    "Contrato_OLAQUA_Piscinas": {
+      "document_type": "contrato",
+      "success": false,
+      "processing_time": 11877,
+      "text_length": 26516,
+      "extractor_used": "ContratoExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted contrato data to database"
+    },
+    "GIMNASIO_2023-1-230230": {
+      "document_type": "factura",
+      "success": false,
+      "processing_time": 7732,
+      "text_length": 5037,
+      "extractor_used": "FacturaExtractor",
+      "data_fields": [],
+      "error": "factura_extractor_v2 agent failed: Unknown error"
+    },
+    "acta_prueba": {
+      "document_type": "acta",
+      "success": false,
+      "processing_time": 9904,
+      "text_length": 3347,
+      "extractor_used": "ActaExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted acta data to database"
+    },
+    "acta_prueba_v2": {
+      "document_type": "acta",
+      "success": false,
+      "processing_time": 7390,
+      "text_length": 3347,
+      "extractor_used": "ActaExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted acta data to database"
+    },
+    "acta_test": {
+      "document_type": "acta",
+      "success": false,
+      "processing_time": 9950,
+      "text_length": 3347,
+      "extractor_used": "ActaExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted acta data to database"
+    },
+    "albaran": {
+      "document_type": "albaran",
+      "success": false,
+      "processing_time": 0,
+      "text_length": 2217,
+      "extractor_used": "error",
+      "data_fields": [],
+      "error": "Unsupported document type: albaran"
+    },
+    "escritura_D102B": {
+      "document_type": "escritura",
+      "success": false,
+      "processing_time": 0,
+      "text_length": 51609,
+      "extractor_used": "error",
+      "data_fields": [],
+      "error": "Unsupported document type: escritura"
+    },
+    "factura": {
+      "document_type": "factura",
+      "success": false,
+      "processing_time": 4479,
+      "text_length": 1113,
+      "extractor_used": "FacturaExtractor",
+      "data_fields": [],
+      "error": "Failed to save extracted factura data to database"
+    },
+    "presupuesto": {
+      "document_type": "presupuesto",
+      "success": false,
+      "processing_time": 0,
+      "text_length": 1780,
+      "extractor_used": "error",
+      "data_fields": [],
+      "error": "Unsupported document type: presupuesto"
+    }
+  }
+}

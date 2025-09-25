@@ -1,0 +1,18 @@
+{
+  "original_file": "Comunicado- INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. _AMARA HOMES_.pdf",
+  "base_filename": "Comunicado-_INFORMACI_N_RELACIONADA_CONTADORES_LECTURA_DE_SUNFLOWER_C_P___AMARA_HOMES_",
+  "extraction_method": "pdf-parse-external",
+  "classification": {
+    "document_type": "comunicado",
+    "confidence": 0.95,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for comunicado",
+    "processing_time": 0
+  },
+  "text_info": {
+    "length": 2724,
+    "pages": 2
+  },
+  "generated_at": "2025-09-22T10:09:35.133Z",
+  "tool": "test-classification-real.ts"
+}

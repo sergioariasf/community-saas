@@ -1,0 +1,11 @@
+{
+  "original_file": "acta_prueba_v2.pdf",
+  "base_filename": "acta_prueba_v2",
+  "document_type": "acta",
+  "error": "Failed to save extracted acta data to database",
+  "extractor_used": "ActaExtractor",
+  "processing_time": 7390,
+  "text_length": 3347,
+  "generated_at": "2025-09-22T09:30:33.036Z",
+  "tool": "test-metadata-real.ts"
+}

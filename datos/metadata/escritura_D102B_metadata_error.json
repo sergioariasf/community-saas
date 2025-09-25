@@ -1,0 +1,11 @@
+{
+  "original_file": "escritura_D102B.pdf",
+  "base_filename": "escritura_D102B",
+  "document_type": "escritura",
+  "error": "Unsupported document type: escritura",
+  "extractor_used": "unknown",
+  "processing_time": 0,
+  "text_length": 51609,
+  "generated_at": "2025-09-22T09:30:42.989Z",
+  "tool": "test-metadata-real.ts"
+}

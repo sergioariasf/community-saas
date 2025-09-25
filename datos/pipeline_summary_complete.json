@@ -1,0 +1,47 @@
+{
+  "started_at": "2025-09-22T09:17:57.608Z",
+  "completed_at": "2025-09-22T09:18:11.041Z",
+  "total_processing_time": 13433,
+  "modules": [
+    {
+      "module": "TEXT_EXTRACTION",
+      "success": true,
+      "totalFiles": 13,
+      "successfulFiles": 13,
+      "failedFiles": 0,
+      "processingTime": 13252,
+      "errors": []
+    },
+    {
+      "module": "CLASSIFICATION",
+      "success": true,
+      "totalFiles": 13,
+      "successfulFiles": 13,
+      "failedFiles": 0,
+      "processingTime": 24,
+      "errors": []
+    },
+    {
+      "module": "METADATA_EXTRACTION",
+      "success": false,
+      "totalFiles": 13,
+      "successfulFiles": 0,
+      "failedFiles": 13,
+      "processingTime": 157,
+      "errors": []
+    }
+  ],
+  "overall_success": false,
+  "chain_efficiency": {
+    "extraction_rate": 100,
+    "classification_rate": 100,
+    "metadata_rate": 0,
+    "end_to_end_rate": 0
+  },
+  "files_by_stage": {
+    "initial_pdfs": 13,
+    "extracted_texts": 13,
+    "classified_documents": 13,
+    "metadata_extracted": 0
+  }
+}

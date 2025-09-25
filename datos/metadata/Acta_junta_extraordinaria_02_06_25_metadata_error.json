@@ -1,0 +1,11 @@
+{
+  "original_file": "Acta junta extraordinaria 02.06.25.pdf",
+  "base_filename": "Acta_junta_extraordinaria_02_06_25",
+  "document_type": "acta",
+  "error": "acta_extractor_v2 agent failed: Unknown error",
+  "extractor_used": "ActaExtractor",
+  "processing_time": 23506,
+  "text_length": 49803,
+  "generated_at": "2025-09-22T09:29:54.934Z",
+  "tool": "test-metadata-real.ts"
+}

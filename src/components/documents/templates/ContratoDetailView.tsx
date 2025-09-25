@@ -1,96 +1,137 @@
 /**
  * ARCHIVO: ContratoDetailView.tsx
- * PROPÓSITO: Plantilla específica para mostrar detalles de documentos tipo CONTRATO
+ * PROPÓSITO: Plantilla específica para mostrar detalles de documentos tipo Contrato Legal
  * ESTADO: development
- * DEPENDENCIAS: @/components/ui, @/data/anon/documents
- * OUTPUTS: Vista detallada optimizada para contratos con campos específicos
- * ACTUALIZADO: 2025-09-18
+ * DEPENDENCIAS: @/components/ui/badge, @/components/ui/card, @/components/ui/separator, @/components/ui/Typography, lucide-react
+ * OUTPUTS: Vista detallada optimizada para Contrato Legal
+ * ACTUALIZADO: 2025-09-24
  */
 
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { T } from '@/components/ui/Typography';
-import { Building2, Users, Calendar, Euro, Tag, FileText, PenTool, Scale, Clock } from 'lucide-react';
+import { Calendar, Clock, FileText, Users, Scale, CreditCard } from 'lucide-react';
 
 // Tipos basados en la tabla extracted_contracts
 export type ExtractedContrato = {
   id: string;
   document_id: string;
   organization_id: string;
-  titulo_contrato: string | null;
-  parte_a: string | null;
-  parte_b: string | null;
-  objeto_contrato: string | null;
+  created_at: string;
+  titulo_contrato: string;
+  parte_a: string;
+  parte_b: string;
+  objeto_contrato: string;
   duracion: string | null;
   importe_total: number | null;
   fecha_inicio: string | null;
   fecha_fin: string | null;
   category: string | null;
-  created_at: string;
+  tipo_contrato: string | null;
+  parte_a_direccion: string | null;
+  parte_a_identificacion_fiscal: string | null;
+  parte_a_representante: string | null;
+  parte_b_direccion: string | null;
+  parte_b_identificacion_fiscal: string | null;
+  parte_b_representante: string | null;
+  alcance_servicios: any[] | null;
+  obligaciones_parte_a: any[] | null;
+  obligaciones_parte_b: any[] | null;
+  moneda: string | null;
+  forma_pago: string | null;
+  plazos_pago: any[] | null;
+  confidencialidad: boolean | null;
+  legislacion_aplicable: string | null;
+  fecha_firma: string | null;
+  lugar_firma: string | null;
+  topic_keywords: any | null;
+  topic_mantenimiento: boolean | null;
+  topic_jardines: boolean | null;
+  topic_ascensores: boolean | null;
+  topic_limpieza: boolean | null;
+  topic_emergencias: boolean | null;
+  topic_instalaciones: boolean | null;
+  topic_electricidad: boolean | null;
+  topic_seguridad: boolean | null;
+  topic_agua: boolean | null;
+  topic_gas: boolean | null;
+  topic_climatizacion: boolean | null;
+  topic_parking: boolean | null;
 };
 
-// Tipo para metadatos adicionales de document_metadata
 export type ContratoMetadata = {
-  // Encabezado o título
   titulo_contrato?: string;
+  parte_a?: string;
+  parte_b?: string;
+  objeto_contrato?: string;
+  duracion?: string;
+  importe_total?: number;
+  fecha_inicio?: string;
+  fecha_fin?: string;
+  category?: string;
   tipo_contrato?: string;
-  
-  // Identificación de las partes
-  parte_a_nombre?: string;
   parte_a_direccion?: string;
   parte_a_identificacion_fiscal?: string;
   parte_a_representante?: string;
-  
-  parte_b_nombre?: string;
   parte_b_direccion?: string;
   parte_b_identificacion_fiscal?: string;
   parte_b_representante?: string;
-  
-  // Objeto y alcance del acuerdo
-  objeto_contrato?: string;
-  descripcion_detallada?: string;
-  alcance_servicios?: string[];
-  
-  // Términos y condiciones
-  fecha_inicio?: string;
-  fecha_fin?: string;
-  duracion?: string;
-  obligaciones_parte_a?: string[];
-  obligaciones_parte_b?: string[];
-  
-  // Condiciones económicas
-  importe_total?: number;
+  alcance_servicios?: any[];
+  obligaciones_parte_a?: any[];
+  obligaciones_parte_b?: any[];
   moneda?: string;
   forma_pago?: string;
-  plazos_pago?: string[];
-  penalizaciones?: string;
-  
-  // Aspectos legales
+  plazos_pago?: any[];
   confidencialidad?: boolean;
-  condiciones_terminacion?: string;
   legislacion_aplicable?: string;
-  jurisdiccion?: string;
-  
-  // Firma
   fecha_firma?: string;
   lugar_firma?: string;
-  firmas_presentes?: boolean;
-  
-  // Campos existentes mantenidos
-  document_date?: string;
-  concepto?: string;
-  topic_keywords?: string[];
-  [key: string]: any; // Para topic-xxx dinámicos
+  topic_keywords?: any;
+  topic_mantenimiento?: boolean;
+  topic_jardines?: boolean;
+  topic_ascensores?: boolean;
+  topic_limpieza?: boolean;
+  topic_emergencias?: boolean;
+  topic_instalaciones?: boolean;
+  topic_electricidad?: boolean;
+  topic_seguridad?: boolean;
+  topic_agua?: boolean;
+  topic_gas?: boolean;
+  topic_climatizacion?: boolean;
+  topic_parking?: boolean;
+};
+
+// Funciones de formateo
+const formatDate = (date: string | null): string => {
+  if (!date) return '❌ No especificada';
+  try {
+    return new Date(date).toLocaleDateString('es-ES');
+  } catch {
+    return date;
+  }
+};
+
+const formatAmount = (amount: number | null): string => {
+  if (!amount) return '❌ No especificado';
+  return new Intl.NumberFormat('es-ES', {
+    style: 'currency',
+    currency: 'EUR'
+  }).format(amount);
+};
+
+const formatArray = (arr: any[] | null): string => {
+  if (!arr || !Array.isArray(arr) || arr.length === 0) return 'No especificado';
+  return arr.join(', ');
 };
 
 interface ContratoDetailViewProps {
-  contratoData?: ExtractedContrato | null;
-  metadata?: ContratoMetadata | null;
-  confidence?: number;
-  extractionMethod?: string;
-  processingTime?: number;
-  tokensUsed?: number;
+  contratoData: ExtractedContrato;
+  metadata?: ContratoMetadata;
+  confidence: number;
+  extractionMethod: string;
+  processingTime: number;
+  tokensUsed: number;
 }
 
 export function ContratoDetailView({
@@ -101,472 +142,228 @@ export function ContratoDetailView({
   processingTime,
   tokensUsed
 }: ContratoDetailViewProps) {
-  // Formatear importe
-  const formatAmount = (amount: number | null) => {
-    if (!amount) return 'No especificado';
-    return new Intl.NumberFormat('es-ES', {
-      style: 'currency',
-      currency: metadata?.moneda || 'EUR'
-    }).format(amount);
-  };
-
-  // Formatear fecha
-  const formatDate = (dateStr: string | null) => {
-    if (!dateStr) return 'No especificada';
-    try {
-      return new Date(dateStr).toLocaleDateString('es-ES');
-    } catch {
-      return dateStr;
-    }
-  };
-
-  // Si no hay datos específicos, mostrar mensaje
-  if (!contratoData) {
-    return (
-      <div className="space-y-6">
-        <T.H3 className="mb-0">📝 Análisis de CONTRATO</T.H3>
-        <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 text-center">
-          <T.H4 className="text-orange-800 mb-2">Sin Datos Específicos de Contrato</T.H4>
-          <T.P className="text-sm text-orange-700 mb-4">
-            No se encontraron datos específicos extraídos para este contrato en la tabla `extracted_contracts`.
-          </T.P>
-          {metadata && (
-            <div className="bg-white rounded-lg p-4 text-left">
-              <T.Small className="font-medium block mb-2">Metadatos genéricos disponibles:</T.Small>
-              <pre className="text-xs overflow-auto max-h-40 bg-gray-100 p-2 rounded">
-                {JSON.stringify(metadata, null, 2)}
-              </pre>
-            </div>
-          )}
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="space-y-6">
-      {/* Encabezado */}
+      {/* Header con metadatos de extracción */}
       <div className="flex items-center justify-between">
-        <T.H3 className="mb-0">📝 Análisis de CONTRATO</T.H3>
         <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-chart-3 rounded-full"></div>
-          <T.Small className="text-chart-3 font-medium">
-            Datos procesados
-          </T.Small>
+          <span className="text-2xl">📃</span>
+          <T.H3>Contrato Legal</T.H3>
+        </div>
+        <div className="flex gap-2">
+          <Badge variant="outline">Confianza: {(confidence * 100).toFixed(1)}%</Badge>
+          <Badge variant="secondary">{extractionMethod}</Badge>
         </div>
       </div>
 
-      {/* Información técnica de procesamiento - Solo desarrollo */}
-      {process.env.NODE_ENV === 'development' && (tokensUsed || processingTime) && (
-        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
-          <div className="flex items-center gap-2 mb-2">
-            <div className="bg-gray-600 text-white text-xs px-2 py-1 rounded">DEV ONLY</div>
-            <T.Small className="text-gray-600 font-medium">
-              {processingTime && `Tiempo: ${processingTime}ms`}
-              {tokensUsed && ` • Tokens: ${tokensUsed}`}
-              {extractionMethod && ` • Método: ${extractionMethod}`}
-              {confidence && ` • Confianza: ${Math.round(confidence * 100)}%`}
-            </T.Small>
-          </div>
-        </div>
-      )}
+      <Separator />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Columna Izquierda - Identificación y Términos */}
-        <div className="space-y-4">
-          {/* Información Principal del Contrato */}
+          {/* 📃 Información Principal */}
           <Card>
             <CardHeader className="pb-3">
               <div className="flex items-center gap-2">
-                <FileText className="h-5 w-5 text-chart-3" />
-                <T.H4 className="mb-0">📄 Información Principal</T.H4>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Título:</span>
-                  <span className={contratoData.titulo_contrato ? 'text-chart-3 font-medium' : 'text-destructive'}>
-                    {contratoData.titulo_contrato || '❌ No especificado'}
-                  </span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Tipo contrato:</span>
-                  <span className={metadata?.tipo_contrato ? 'text-chart-3 font-medium' : 'text-muted-foreground'}>
-                    {metadata?.tipo_contrato || 'No especificado'}
-                  </span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Categoría:</span>
-                  <span className={contratoData.category ? 'text-primary font-medium' : 'text-muted-foreground'}>
-                    {contratoData.category || 'Sin categorizar'}
-                  </span>
-                </div>
-                {contratoData.objeto_contrato && (
-                  <div>
-                    <span className="text-muted-foreground block mb-1 text-sm">Objeto del contrato:</span>
-                    <span className="text-gray-800 bg-muted/50 rounded p-2 block text-sm">
-                      {contratoData.objeto_contrato}
-                    </span>
-                  </div>
-                )}
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Identificación de las Partes */}
-          <Card>
-            <CardHeader className="pb-3">
-              <div className="flex items-center gap-2">
-                <Users className="h-5 w-5 text-blue-600" />
-                <T.H4 className="mb-0">👥 Partes Contratantes</T.H4>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {/* Parte A */}
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="text-muted-foreground font-medium">Parte A:</span>
-                  <span className={contratoData.parte_a ? 'text-blue-600 font-medium' : 'text-destructive'}>
-                    {contratoData.parte_a || '❌ No especificada'}
-                  </span>
-                </div>
-                {metadata?.parte_a_direccion && (
-                  <div className="text-xs text-muted-foreground bg-muted/50 rounded p-2 mb-1">
-                    {metadata.parte_a_direccion}
-                  </div>
-                )}
-                {metadata?.parte_a_identificacion_fiscal && (
-                  <div className="text-xs">
-                    <span className="text-muted-foreground">CIF/NIF: </span>
-                    <span className="text-blue-600 font-medium">{metadata.parte_a_identificacion_fiscal}</span>
-                  </div>
-                )}
-                {metadata?.parte_a_representante && (
-                  <div className="text-xs">
-                    <span className="text-muted-foreground">Representante: </span>
-                    <span className="text-blue-600">{metadata.parte_a_representante}</span>
-                  </div>
-                )}
-              </div>
-
-              <Separator />
-
-              {/* Parte B */}
-              <div>
-                <div className="flex justify-between text-sm mb-2">
-                  <span className="text-muted-foreground font-medium">Parte B:</span>
-                  <span className={contratoData.parte_b ? 'text-blue-600 font-medium' : 'text-destructive'}>
-                    {contratoData.parte_b || '❌ No especificada'}
-                  </span>
-                </div>
-                {metadata?.parte_b_direccion && (
-                  <div className="text-xs text-muted-foreground bg-muted/50 rounded p-2 mb-1">
-                    {metadata.parte_b_direccion}
-                  </div>
-                )}
-                {metadata?.parte_b_identificacion_fiscal && (
-                  <div className="text-xs">
-                    <span className="text-muted-foreground">CIF/NIF: </span>
-                    <span className="text-blue-600 font-medium">{metadata.parte_b_identificacion_fiscal}</span>
-                  </div>
-                )}
-                {metadata?.parte_b_representante && (
-                  <div className="text-xs">
-                    <span className="text-muted-foreground">Representante: </span>
-                    <span className="text-blue-600">{metadata.parte_b_representante}</span>
-                  </div>
-                )}
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Términos Temporales y Económicos */}
-          <Card>
-            <CardHeader className="pb-3">
-              <div className="flex items-center gap-2">
-                <Calendar className="h-5 w-5 text-chart-2" />
-                <T.H4 className="mb-0">⏰ Términos y Condiciones</T.H4>
+                <FileText className="h-5 w-5 text-gray-600" />
+                <T.H4 className="mb-0">📃 Información Principal</T.H4>
               </div>
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Fecha inicio:</span>
-                  <span className={contratoData.fecha_inicio ? 'text-chart-2 font-medium' : 'text-destructive'}>
+                  <span className="text-muted-foreground">Titulo Contrato:</span>
+                  <span className={contratoData.titulo_contrato ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.titulo_contrato || '❌ No especificado'}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Tipo Contrato:</span>
+                  <span className={contratoData.tipo_contrato ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.tipo_contrato || '❌ No especificado'}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Objeto Contrato:</span>
+                  <span className={contratoData.objeto_contrato ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.objeto_contrato || '❌ No especificado'}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Category:</span>
+                  <span className={contratoData.category ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.category || '❌ No especificado'}
+                  </span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* 👥 Partes del Contrato */}
+          <Card>
+            <CardHeader className="pb-3">
+              <div className="flex items-center gap-2">
+                <Users className="h-5 w-5 text-gray-600" />
+                <T.H4 className="mb-0">👥 Partes del Contrato</T.H4>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Parte A:</span>
+                  <span className={contratoData.parte_a ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.parte_a || '❌ No especificado'}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Parte A Identificacion Fiscal:</span>
+                  <span className={contratoData.parte_a_identificacion_fiscal ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.parte_a_identificacion_fiscal || '❌ No especificado'}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Parte B:</span>
+                  <span className={contratoData.parte_b ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.parte_b || '❌ No especificado'}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Parte B Identificacion Fiscal:</span>
+                  <span className={contratoData.parte_b_identificacion_fiscal ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.parte_b_identificacion_fiscal || '❌ No especificado'}
+                  </span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* ⏰ Duración e Importe */}
+          <Card>
+            <CardHeader className="pb-3">
+              <div className="flex items-center gap-2">
+                <Clock className="h-5 w-5 text-gray-600" />
+                <T.H4 className="mb-0">⏰ Duración e Importe</T.H4>
+              </div>
+            </CardHeader>
+            <CardContent className="space-y-3">
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Fecha Inicio:</span>
+                  <span className={contratoData.fecha_inicio ? 'text-primary font-medium' : 'text-destructive'}>
                     {formatDate(contratoData.fecha_inicio)}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Fecha fin:</span>
-                  <span className={contratoData.fecha_fin ? 'text-chart-2 font-medium' : 'text-destructive'}>
+                  <span className="text-muted-foreground">Fecha Fin:</span>
+                  <span className={contratoData.fecha_fin ? 'text-primary font-medium' : 'text-destructive'}>
                     {formatDate(contratoData.fecha_fin)}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Duración:</span>
-                  <span className={contratoData.duracion ? 'text-chart-2 font-medium' : 'text-muted-foreground'}>
-                    {contratoData.duracion || 'No especificada'}
+                  <span className="text-muted-foreground">Duracion:</span>
+                  <span className={contratoData.duracion ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.duracion || '❌ No especificado'}
                   </span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Importe total:</span>
-                  <span className={contratoData.importe_total ? 'text-chart-4 font-bold text-lg' : 'text-destructive'}>
-                    {formatAmount(contratoData.importe_total)}
+                  <span className="text-muted-foreground">Importe Total:</span>
+                  <span className={contratoData.importe_total ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.importe_total || '❌ No especificado'}
                   </span>
                 </div>
-                {metadata?.forma_pago && (
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Forma de pago:</span>
-                    <span className="text-chart-2 font-medium">
-                      {metadata.forma_pago}
-                    </span>
-                  </div>
-                )}
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Moneda:</span>
+                  <span className={contratoData.moneda ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.moneda || '❌ No especificado'}
+                  </span>
+                </div>
               </div>
             </CardContent>
           </Card>
-        </div>
 
-        {/* Columna Derecha - Objeto, Obligaciones y Legales */}
-        <div className="space-y-4">
-          {/* Objeto y Alcance */}
-          {metadata && (metadata.descripcion_detallada || metadata.alcance_servicios) && (
-            <Card>
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-2">
-                  <Building2 className="h-5 w-5 text-chart-1" />
-                  <T.H4 className="mb-0">🎯 Objeto y Alcance</T.H4>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="space-y-2 text-sm">
-                  {metadata.descripcion_detallada && (
-                    <div>
-                      <span className="text-muted-foreground block mb-1">Descripción detallada:</span>
-                      <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                        {metadata.descripcion_detallada}
-                      </span>
-                    </div>
-                  )}
-                  {metadata.alcance_servicios && Array.isArray(metadata.alcance_servicios) && (
-                    <div>
-                      <span className="text-muted-foreground block mb-1">Alcance de servicios:</span>
-                      <div className="space-y-1">
-                        {metadata.alcance_servicios.map((servicio: string, index: number) => (
-                          <div key={index} className="text-gray-800 bg-muted/50 rounded p-2 text-xs">
-                            • {servicio}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          )}
-
-          {/* Obligaciones de las Partes */}
-          {metadata && (metadata.obligaciones_parte_a || metadata.obligaciones_parte_b) && (
-            <Card>
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-2">
-                  <Scale className="h-5 w-5 text-chart-5" />
-                  <T.H4 className="mb-0">⚖️ Obligaciones</T.H4>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {metadata.obligaciones_parte_a && Array.isArray(metadata.obligaciones_parte_a) && (
-                  <div>
-                    <span className="text-muted-foreground block mb-1 font-medium">Obligaciones Parte A:</span>
-                    <div className="space-y-1">
-                      {metadata.obligaciones_parte_a.map((obligacion: string, index: number) => (
-                        <div key={index} className="text-gray-800 bg-blue-50 rounded p-2 text-xs">
-                          {index + 1}. {obligacion}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-                {metadata.obligaciones_parte_b && Array.isArray(metadata.obligaciones_parte_b) && (
-                  <div>
-                    <span className="text-muted-foreground block mb-1 font-medium">Obligaciones Parte B:</span>
-                    <div className="space-y-1">
-                      {metadata.obligaciones_parte_b.map((obligacion: string, index: number) => (
-                        <div key={index} className="text-gray-800 bg-chart-3/10 rounded p-2 text-xs">
-                          {index + 1}. {obligacion}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          )}
-
-          {/* Aspectos Legales y Firma */}
+          {/* ⚖️ Obligaciones */}
           <Card>
             <CardHeader className="pb-3">
               <div className="flex items-center gap-2">
-                <PenTool className="h-5 w-5 text-chart-3" />
-                <T.H4 className="mb-0">⚖️ Aspectos Legales</T.H4>
+                <Scale className="h-5 w-5 text-gray-600" />
+                <T.H4 className="mb-0">⚖️ Obligaciones</T.H4>
               </div>
             </CardHeader>
             <CardContent className="space-y-3">
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Confidencialidad:</span>
-                  <span className={metadata?.confidencialidad ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
-                    {metadata?.confidencialidad ? '✅ Incluida' : '❌ No especificada'}
+                  <span className="text-muted-foreground">Alcance Servicios:</span>
+                  <span className="text-primary">
+                    {formatArray(contratoData.alcance_servicios)}
                   </span>
                 </div>
-                {metadata?.legislacion_aplicable && (
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Legislación:</span>
-                    <span className="text-chart-3 font-medium">
-                      {metadata.legislacion_aplicable}
-                    </span>
-                  </div>
-                )}
-                {metadata?.jurisdiccion && (
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Jurisdicción:</span>
-                    <span className="text-chart-3 font-medium">
-                      {metadata.jurisdiccion}
-                    </span>
-                  </div>
-                )}
-                {metadata?.fecha_firma && (
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Fecha firma:</span>
-                    <span className="text-chart-4 font-medium">
-                      {formatDate(metadata.fecha_firma)}
-                    </span>
-                  </div>
-                )}
-                {metadata?.lugar_firma && (
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Lugar firma:</span>
-                    <span className="text-chart-3 font-medium">
-                      {metadata.lugar_firma}
-                    </span>
-                  </div>
-                )}
                 <div className="flex justify-between">
-                  <span className="text-muted-foreground">Firmas presentes:</span>
-                  <span className={metadata?.firmas_presentes ? 'text-chart-4 font-medium' : 'text-muted-foreground'}>
-                    {metadata?.firmas_presentes ? '✅ Sí' : '❌ No detectadas'}
+                  <span className="text-muted-foreground">Obligaciones Parte A:</span>
+                  <span className="text-primary">
+                    {formatArray(contratoData.obligaciones_parte_a)}
                   </span>
                 </div>
-                {metadata?.condiciones_terminacion && (
-                  <div>
-                    <span className="text-muted-foreground block mb-1">Condiciones de terminación:</span>
-                    <span className="text-gray-800 bg-muted/50 rounded p-2 block text-xs">
-                      {metadata.condiciones_terminacion}
-                    </span>
-                  </div>
-                )}
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Obligaciones Parte B:</span>
+                  <span className="text-primary">
+                    {formatArray(contratoData.obligaciones_parte_b)}
+                  </span>
+                </div>
               </div>
             </CardContent>
           </Card>
 
-          {/* Keywords y Categorización */}
+          {/* 💳 Aspectos Legales y Pago */}
           <Card>
             <CardHeader className="pb-3">
               <div className="flex items-center gap-2">
-                <Tag className="h-5 w-5 text-blue-600" />
-                <T.H4 className="mb-0">🏷️ Keywords y Categorización</T.H4>
+                <CreditCard className="h-5 w-5 text-gray-600" />
+                <T.H4 className="mb-0">💳 Aspectos Legales y Pago</T.H4>
               </div>
             </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {/* Categoría principal */}
-                <div>
-                  <T.Small className="text-muted-foreground font-medium mb-2 block">
-                    📂 Categoría Detectada
-                  </T.Small>
-                  <Badge 
-                    variant="default" 
-                    className="bg-primary/10 text-primary border-primary/20"
-                  >
-                    {contratoData.category || 'Sin categorizar'}
-                  </Badge>
+            <CardContent className="space-y-3">
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Forma Pago:</span>
+                  <span className={contratoData.forma_pago ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.forma_pago || '❌ No especificado'}
+                  </span>
                 </div>
-
-                <Separator />
-
-                {/* Keywords principales extraídas */}
-                {metadata?.topic_keywords && Array.isArray(metadata.topic_keywords) && (
-                  <div>
-                    <T.Small className="text-muted-foreground font-medium mb-2 block">
-                      🔍 Keywords Detectadas
-                    </T.Small>
-                    <div className="flex flex-wrap gap-2">
-                      {metadata.topic_keywords.map((keyword: string, index: number) => (
-                        <Badge key={`main-${index}`} variant="outline" className="text-xs">
-                          {keyword}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {/* Keywords de tópicos específicos (topic-xxx) */}
-                {metadata && Object.entries(metadata)
-                  .filter(([key, value]) => key.startsWith('topic-'))
-                  .length > 0 && (
-                  <>
-                    <Separator />
-                    <div>
-                      <T.Small className="text-muted-foreground font-medium mb-2 block">
-                        🎯 Temas Específicos
-                      </T.Small>
-                      <div className="flex flex-wrap gap-2">
-                        {Object.entries(metadata)
-                          .filter(([key, value]) => key.startsWith('topic-'))
-                          .map(([key, value]) => {
-                            const topicName = key.replace('topic-', '');
-                            const isActive = value === true || value === 'true';
-                            return (
-                              <Badge 
-                                key={key} 
-                                variant={isActive ? "default" : "secondary"}
-                                className={isActive 
-                                  ? "bg-chart-4/10 text-chart-4 border-chart-4/20" 
-                                  : "bg-muted text-muted-foreground border-border"
-                                }
-                              >
-                                {topicName}
-                              </Badge>
-                            );
-                          })}
-                      </div>
-                    </div>
-                  </>
-                )}
-
-                {/* Si no hay keywords */}
-                {(!metadata?.topic_keywords || metadata.topic_keywords.length === 0) &&
-                 !metadata || !Object.keys(metadata).some(key => key.startsWith('topic-')) && (
-                  <div className="text-center py-4">
-                    <Badge variant="outline" className="text-muted-foreground">
-                      Sin keywords detectadas
-                    </Badge>
-                  </div>
-                )}
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Plazos Pago:</span>
+                  <span className="text-primary">
+                    {formatArray(contratoData.plazos_pago)}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Legislacion Aplicable:</span>
+                  <span className={contratoData.legislacion_aplicable ? 'text-primary font-medium' : 'text-destructive'}>
+                    {contratoData.legislacion_aplicable || '❌ No especificado'}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-muted-foreground">Confidencialidad:</span>
+                  <span className={contratoData.confidencialidad ? 'text-green-600' : 'text-gray-500'}>
+                    {contratoData.confidencialidad ? '✅ Sí' : '❌ No'}
+                  </span>
+                </div>
               </div>
             </CardContent>
           </Card>
-        </div>
-      </div>
 
-      {/* Información de procesamiento */}
-      <div className="text-center">
-        <T.Small className="text-muted-foreground">
-          Datos extraídos el {new Date(contratoData.created_at).toLocaleDateString('es-ES')} • 
-          Documento ID: {contratoData.document_id}
-        </T.Small>
-      </div>
+      {/* Estadísticas de procesamiento */}
+      <Card className="bg-muted/20">
+        <CardContent className="pt-4">
+          <div className="flex justify-between text-sm text-muted-foreground">
+            <div className="flex items-center gap-1">
+              <Clock className="h-4 w-4" />
+              <span>Tiempo: {processingTime}ms</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <span>Tokens: {tokensUsed}</span>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 }
+
+export default ContratoDetailView;

@@ -1,0 +1,11 @@
+{
+  "original_file": "Contrato OLAQUA Piscinas.pdf",
+  "base_filename": "Contrato_OLAQUA_Piscinas",
+  "document_type": "contrato",
+  "error": "Failed to save extracted contrato data to database",
+  "extractor_used": "ContratoExtractor",
+  "processing_time": 11877,
+  "text_length": 26516,
+  "generated_at": "2025-09-22T09:30:08.006Z",
+  "tool": "test-metadata-real.ts"
+}

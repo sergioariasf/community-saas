@@ -1,0 +1,90 @@
+[METADATA]
+Original: presupuesto.pdf
+Method: google-vision-ocr
+Length: 1780 characters
+Pages: 1
+Generated: 2025-09-22T10:05:37.051Z
+Processing: 1363ms
+
+[CONTENT]
+--- Página 1 ---
+CONTROL Y TENSION
+Presupuesto
+control de procesos industriales
+sistemas automáticoas
+autómatas programables
+TRINIDAD ARBOIRO LINARES
+C/ ESPINO 26
+28660 BOADILLA DEL MONTE
+MADRID
+N.I.F. 33841582A
+instalaciones eléctricas
+estudios energéticos:
+domótica
+NÚMERO
+1 180006
+FECHA
+03/02/2020
+COD. CLIENTE
+PÁGINA
+DESCRIPCIÓN DEL PRESUPUESTO
+INSTALACIOPNES IVE
+0
+1
+CÓDIGO
+DESCRIPCIÓN
+CANTIDAD
+PRECIO UND.
+DTO.
+TOTAL
+PRESUPUESTO PARA LA INSTALACIÓN Y LEGALIZACIÓN DE ACOMETIDA Y
+PROYECTO PARA UNA INSTALACIÓN PARA CARGADOR DE VEHÍCULO
+ELÉCTRICO EN CALLE ESPINO 26 DE BOADILLA DEL MONTE, MADRID
+CUADRO GENERAL DE DISTRIBUCIÓN
+Cuadro general de distribución de superficie ESTANCO IP65 instalado en
+trasera de fachada por el interior de la parcela junto a armario de contadores
+existente.
+Con automático general para una potencia máxima de 27,6Kw
+Protector de sobretensiones transitorias
+Protección magnetotérmica y diferencial para las salidas a Vivienda y a
+Cargador de Vehículo eléctrico
+1
+953,00
+953,00
+Importe de mano de obra instalación de cuadro, desvío de acometidas,
+conexionado y pruebas
+1
+350,00
+350,00
+LEGALIZACIÓN
+Realización de proyecto eléctrico para instalación de IVE (infraestructuras para
+Vehículos eléctricos.
+Certificado Final de obra, pago de tasas en Colegio Oficial.
+Realización de Boletin de instalación: Presentación en industria y pago de tasas
+e inspección por Organismo de Control.
+1
+1.330,00
+1.330,00
+TIPO
+IMPORTE
+DESCUENTO
+PRONTO PAGO
+PORTES
+FINANCIACIÓN
+BASE
+I.V.A.
+R.E.
+21,00
+2.633,00
+2.633,00
+552,93
+10,00
+4,00
+OBSERVACIONES:
+LA CAIXA
+2100 2980 06 0200047252
+TOTAL:
+FORMA DE PAGO
+TRANSFERENCIA
+3.185,93
+CONTROL Y TENSIÓN S.L. c/ Cabo Rufino Lázaro 5, Las Rozas 20230 Madrid. CIF.: B83802850 Tel. 911 924 026 - FAX: 918 004 713 Mov. 609 273 707

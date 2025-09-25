@@ -1,0 +1,660 @@
+{
+  "timestamp": "2025-09-24T18:40:54.068Z",
+  "config": {
+    "target_file": "ACTA 19 MAYO 2022",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 0,
+    "failed": 1,
+    "success_rate": 0,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "acta": {
+        "count": 1,
+        "successful": 0,
+        "success_rate": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "ACTA 19 MAYO 2022",
+      "success": false,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "C.P. Amara Homes \nC/ Acanto 2 Bis \n28231 Las Rozas, Madrid \n \nLas Rozas, 19 de mayo de 2022 \n \n \nACTA JUNTA GENERAL EXTRAORDINARIA \n \nDa comienzo la junta el día 19 de mayo de 2022, a las 19.10 horas en segunda \nconvocatoria, en el hotel Attica 2 (Calle Chile, 2 en las Rozas), con la asistencia \ny representaciones siguientes: \n \nBloque Propiedad Nombre Coeficiente \nPresente/ \nRepresentado \nA \nPortal 1, Bajo B Flavia Ozores Henriquez de Luna 0,258747 Representado \nPortal 1, Bajo C Cecilia María García Mesuro 0,230923 Representado \nPortal 1, 2A Ramon Caballer Revenga 0,254175 Presente \nPortal 1, 2C Roberto Vaquero Via 0,258076 Presente \nPortal 2, Bajo B Dimas García Olgueras 0,218055 Representado \nPortal 3, Bajo A Carlos Poggio Moro 0,256346 Presente \nPortal 3, 2 A Agustín Vegas Barriuso  0,241420 Presente \nPortal 4, Bajo A Jorge Lopez Lopez 0,218208 Presente \nPortal 5, 1 A Marta Romero Dominguez 0,230809 Representado \nPortal 5, 1B Manuel Valdez 0,199751 Presente \nPortal 5, 2A Cristina Lopez Marcos 0,230809 Presente \nPortal 6, Bajo B Ignacio Villalba Ranz 0,220721 Representado \nPortal 6, 1B Juan Carlos Carrasco Garate 0,242768 Presente \nPortal 6, 2A Francisco Martinez Perez 0,230978 Presente \nPortal 6, 2B Diego Ruben Vilarño Butta 0,231346 Presente \nPortal 7, Bajo A Instituto Tecnológico Montealto 0,340092 Presente \nPortal 7, Bajo B Enrique Garcia Fernandez 0,232050 Presente \nPortal 7, 1B José Ramón Olivera Aneiros 0,220898 Presente \nPortal 7, 2A Instituto Tecnológico Montealto 0,310292 Presente \nPortal 8, 1A Juan Royano Esguevillas 0,254030 Presente \nPortal 9, Bajo B Raquel Reñones García 0,266476 Presente \nPortal 9, 2A Rafael Rodríguez Guzman 0,298765 Presente \nPortal 9, 2B Carolina Hernandez Muñoz 0,240365 Presente \nPortal 10, Bajo B Diego Cesar Fernández Castro 0,267210 Presente \nPortal 10, 1A Jorge Gonzalez Gomez 0,253292 Presente \nPortal 10, 2B Instituto Tecnológico Montealto 0,253672 Presente \nPortal 11, 1A Instituto Tecnológico Montealto 0,253353 Presente \nPortal 11, 2A Instituto Tecnológico Montealto 0,240721 Presente \nPortal 11, 2B Concepción Soria Torralba 0,240414 Presente \nPortal 12, Bajo C Paula de la Peña Díez 0,276585 Presente \nPortal 12, 1A Nuria Fernández Martinez 0,202953 Presente \n\nPortal 12, 1C Instituto Tecnológico Montealto 0,291672 Presente \nPortal 12, 2A Marco Laurenti 0,203088 Presente \nPortal 12, 2C Instituto Tecnológico Montealto 0,278991 Presente \n \nBloque Propiedad Nombre Coeficiente \nPresente/ \nRepresentado \nB \nPortal 1, Bajo A Olga Azcue Gamallo 0,227353 Presente \nPortal 1, Bajo B Elena Diaz Cano Martinez 0,263293 Presente \nPortal 2, Bajo B Carmela Garbajosa de la Fuente 0,262970 Presente \nPortal 2, 2A Ana Mª Silva García Olgueras 0,241322 Presente \nPortal 2, 2B Marcos Alvarez Pascual 0,240639 Presente \nPortal 4, 3A Daniel Carrasco Lopez-Villanueva 0,379001 Representado \nPortal 5, 1A Vega Sanchez Hernandez 0,294862 Representado \nPortal 5, 2B María Eugenia Manrique Carreño 0,255170 Representado \nPortal 5, 3A José Ignacio Rojo Lopez 0,344340 Representado \nPortal 7, Bajo A Esther Samper Pinilla 0,246125 Presente \nPortal 7, 2B Felipe del Baño Giraldez 0,242216 Presente \nPortal 8, Bajo B José Megía García de la Beldad 0,206744 Presente \nPortal 8, 1B Miguel Bellido Lopez 0,251097 Presente \nPortal 8, 2A Francisco Javier Sanz Ramirez 0,223529 Presente \nPortal 9, Bajo B Jose Sanchez Gonzalez 0,279323 Presente \nPortal 9, 1B Isabel Ana Ortiz Villareal 0,253550 Presente \nPortal 9,2B Henar Cuñado Manso 0,267766 Presente \nPortal 10, 1A Maria Sol Berenguer Delia 0,267741 Presente \nPortal 11, 2A Ismael Perez Zabaleta 0,301534 Presente \nPortal 11, 2B Jorge Leon Martin 0,279574 Presente \nPortal 12, Bajo B Maria Blanca Ariño Palao 0,277158 Presente \nPortal 12, 1A Carlos Andres-Gayon Gil 0,253084 Presente \n \nBloque Propiedad Nombre Coeficiente \nPresente/ \nRepresentado \nC \nPortal 1, Bajo A Dennis Pragasam San Martin 0,257644 Presente \nPortal 1, Bajo B Evaristo Jose Abril Domingo 0,263298 Representado \nPortal 1, Bajo C Jorge del Pozo Mazo 0,233621 Representado \nPortal 1, 2B Paloma Alvaro Fernandez de Simon 0,248570 Presente \nPortal 2, Bajo B Luis Fariñas Garcia 0,218322 Representado \nPortal 3, 1A Francisco Borja Lopez Villar 0,254421 Presente \nPortal 3, 1B Elena Martin Moreno 0,253562 Presente \nPortal 3, 2A Angel Luis Muñoz Cánovas 0,254151 Presente \nPortal 3, 2B Monica Arévalo 0,253685 Representado \nPortal 4, Bajo A Diego Bravo Lozano 0,279346 Representado \nPortal 4, 1A Maria Candelaria Leon Alvarez 0,253942 Presente \nPortal 5, Bajo A Cesar Portillo Olivas 0,219958 Presente \nPortal 5, 1A Rocio Stelzer Bercovich 0,229707 Presente \nPortal 6, 1A David Arribas Mendez 0,245566 Presente \nPortal 6, 1B Maribel Jimenez Ramirez 0,212729 Representado \nPortal 6, 2A Akthar Ahsan Sabera 0,242940 Representado \n\nBloque Propiedad Nombre Coeficiente \nPresente/ \nRepresentado \nPortal 7, Bajo A Macarena Saenz Garcia 0,318725 Presente \nPortal 7, 2B Juan Jose Sanchez Esteban 0,202204 Presente \nPortal 7, 2C Emilio Manzanares Cabezuelo 0,225241 Presente \nPortal 8, 1B Antonio Madeira Bettencourt 0,254506 Presente \nPortal 9, Bajo A Elia Maria Molina Cabrera 0,257839 Presente \nPortal 9, Bajo B Rocio Carazo Carmona 0,218885 Presente \nPortal 9, 1A Sandra Pilar Burgos Parra 0,254456 Representado \nPortal 9,2B Jesus Miralles de Imperial Roda 0,307202 Representado \nPortal 10, Bajo B Javier Ruiz Monge 0,219766 Presente \nPortal 11, Bajo A Maria Cristina Terres Sanchez 0,257747 Representado \nPortal 11, Bajo C Esmeralda Salinas Rodriguez 0,209872 Presente \nPortal 11, 1A Carlos Sánchez Pérez 0,254053 Presente \nPortal 11, 2C Gonzalo Giner Simón 0,240474 Presente \nPortal 1, Bajo A Francisco Ros Peran 0,282364 Presente \n \nBloqu\ne Propiedad Nombre Coeficiente \nPresente/ \nRepresentado \nD \nPortal 2, Bajo A Maria de la Cruz Melendi Platero 0,273817 Presente \nPortal 2, 2B Camilo Jose Fernandez Hernandez 0,254543 Presente \nPortal 3, 3A Luis Carlos Gutiérrrez Martin 0,253464 Presente \nPortal 4, 1B Guillermo Ranz Gomez 0,254421 Presente \nPortal 4, 2B Clara Ramos Martin 0,254543 Presente \nPortal 6, 2A Javier Rodriguez Izquierdo 0,230855 Presente \nPortal 6, 2B Jose Ignacio Becerril Sanchez 0,262081 Representado \nPortal 7, Bajo A Nuria Calo Casanova 0,210030 Representado \nPortal 7, 2A Almudena de Esteban Maurer 0,309372 Presente \nPortal 8, 1B Fernando Garcia Gonzalez 0,216089 Presente \nPortal 8, 2A Maria Eugenia Ortiz Franco 0,253721 Representado \nPortal 8, 2B Ismael Garcia Palomero 0,254556 Presente \nPortal 8, 3A Eva Mendez 0,220120 Presente \nPortal 9, Bajo A Diego Alberto del Baño 0,283695 Presente \nPortal 9, 1A Lourdes Jimenez Boza 0,254580 Representado \nPortal 9, 1B Ignacio Fernandez Galera 0,215538 Presente \nPortal 10, 1B Aida de Miguel Sabate 0,253881 Presente \nPortal 10, 2B Sergio Arias Fernandez 0,240761 Representado \nPortal 11, 2A Noelia Sanchez Perez 0,253194 Representado \nPortal 11, 2B Juan Antonio Jimenez Brito 0,258419 Presente \n \nEmpieza hablando el señor presidente, Camilo J. Hernández, dando las gracias \na  los  vecinos por  su  asistencia, y  comentando que  se analizará la  solicitud de \nalgún vecino, de poder celebrar las juntas otro día que no sean los jueves. \nComenta la forma en la que se va a realizar la reunión y cómo se va a tratar el \ntema de la presentación de los distintos administradores candidatos. Para que \nla elección de la nueva administración sea lo más transparente posible, cada \ncandidato expondrá durante 5 minutos su propuesta y seguidamente habrá un \n\nturno  de  preguntas  por  parte  de  los  propietarios  de 5 minutos para  aclarar \ndudas.  \nAl  haberse  enviado  los  presupuestos  de  cada  administrador  con  tiempo \nsuficiente  se  espera  que  el  proceso  de  elección  sea  lo  más  fluido  y  rápido \nposible.  \nEl orden del día es largo, y se pretende acabar la reunión sobre las 22:00 horas \npor lo que se pide a todos agilidad y concreción con los temas a tratar sin entrar \nen debates improductivos. A continuación se lee el orden del día. \n \n1. PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE. \nToma la palabra señor presidente, Camilo José Fernández Hernández (D2, 2B) e \ninforma a los presentes que necesita dejar el cargo de presidente por motivos \npersonales y por la falta del tiempo que se requiere para poder sacar todos los \ntemas que hay. Comenta que seguirá en la junta de gobierno como vocal. \nDos  vecinos,  se  quejan  de  que  no  es la  forma  de  hacerlo,  a  lo  que INMHO \nresponde que el proceso legal, tal cuál se va a proceder es admitir y aprobar \npor  parte  de  los propietarios  la  dimisión  del  actual  presidente,  Camilo,  tras  lo \ncual se presentarían voluntarios o se seguiría el proceso de elección acordado \nen la primera junta general. Se postula como voluntario a presidente el actual \nvocal  de  la  junta  de  gobierno,  Carlos  Sánchez  Pérez  (C11,  1A),  sin  que  nadie \nmás se presente. \nSe procede a votar si se acepta o no la dimisión del actual presidente, Camilo \nJosé Fernández Hernández. Por mayoría se aprueba aceptar la dimisión.  \nPosteriormente se nombra a Carlos Sánchez Pérez como nuevo presidente al ser \nel único que se presenta al cargo. \nSunflower \nAntes de continuar con el segundo punto del orden del día se pasa a informar \na  los  propietarios  de  la  reunión  que  la  junta  de  gobierno  mantuvo  el  pasado \nmartes 17 de mayo con Sunflower encargados del suministro de calefacción y \nACS. El motivo de dicha reunión son los reiterados problemas que están sufriendo \nlos propietarios todos los meses con los consumos elevados, períodos de lectura \ny facturación incoherentes y cargos de facturas en fechas aleatorias. \nEn dicha reunión se consigue nos den por escrito los siguientes compromisos: \n• Facturaciones mensuales (12 por año). \n• Las facturas se harán con lecturas realizadas en los primeros días del mes. \n• Las facturas se enviarán al cobro el día 5 de cada mes. \n• Las facturas se colgarán en la aplicación de Sunflower disponible en IOS \ny Android y así poder consultarlas y conocer de antemano los importes y \nfechas de cargo. \n• El sistema será auditado por la entidad OCA GLOBAL externa a Sunflower, \ncon  el  fin  de comprobar  el  grado  de  eficiencia  de  la  instalación  y  su \ncorrecto   funcionamiento. OCA   GLOBLA   emitirá el   correspondiente \n\ninforme.  Se  solicita  que  en  dicha  revisión  de  las  instalaciones  esté \npresente el perito que tiene contratado la comunidad.  \n \nUna   vecina pregunta si es   posible   que   hagan   fotos   de   las   lecturas \ncorrespondientes. Otro   vecino responde que   las   lecturas se   hacen por \nradiofrecuencia, por lo que no es posible. La junta en cualquier caso toma nota \nde la sugerencia. \n  \n \n2. PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR. \nSe  vuelve  a  recordar  que  cada  administración  candidata  dispondrá  de  5 \nminutos de exposición y 5 minutos de preguntas de los propietarios. Se solicita a \nlos  actuales  y  salientes  administradores  que salgan de  la  sala  mientras  cada \nadministración presenta sus proyectos.  \n \nACTIVA \nLos primeros en exponer son Activa. Juan Manuel Morfino presenta y explica su \npropuesta. \nSu  propuesta está  basada en  una aplicación a  medida  desarrollada por  ellos \nen la que estaría toda la documentación de la comunidad a disposición de los \npropietarios. Las juntas serán siempre físicas. \nSe podrán hacer las reservas de las zonas comunes a través de la aplicación. Y \nlos propietarios tendrían la posibilidad de generar incidencias de zonas comunes \nen la aplicación, por ejemplo, una cerradura rota. \nAcaba  comentando que  en  comunidades  tan  grandes  es interesante una \naplicación tan colaborativa de este tipo.  \n \nTurno de Preguntas: \n \n- Pregunta: Un vecino, que ¿cuántas comunidades tienen? \n \nRespuesta: Ellos  no  son  una  administración  muy  grande,  que  llevan 12 \ncomunidades y la más grande tiene 150 viviendas.  \n \n- Pregunta: El mismo vecino quiere saber con qué equipo cuentan.              \n \nRespuesta: En el equipo son 3 personas, 2 administradores y 1 persona que \nhace las gestiones. El despacho profesional lo tienen en Madrid.  \n \n\n- Pregunta: El  mismo  vecino,  menciona  que  si  todo  está  en  la  aplicación \n¿Qué  si  no  es  una  locura?  Porque  así  todos  los  vecinos podrán marear \ntanto a la administración como a la Junta de Gobierno. \n \nRespuesta: Juan  Manuel responde,  que  aporta,  que  la  filosofía  y  el \nobjetivo  es  tener  transparencia y  con  la  aplicación está  dando  todo.  Y \nen muchas ocasiones, pasa que se solicita a las administraciones dicha \ninformación y no se facilita.  \n \n- Pregunta: Otro  vecino,  pregunta  que la  presentación ha  sido muy \ncentrada en  la  aplicación.  Dice  que  hay  más  cosas,  como el tema \njurídico...Y que ayuda que en la  administración  haya  algún abogado \nexperto en la Ley de Propiedad Horizontal. Pregunta si tienen algún jurista, \ncon experiencia. \n \nRespuesta: Contesta que, en la administración, la parte de jurídica, salvo \nque sea un despacho de abogados, no disponen de ella. Siempre que \nnecesitan, un arquitecto o abogado tienen despachos colaboradores a \nquien acudir.  \n \n- Presunta: Otro vecino pregunta si tienen experiencia en el entorno de las \nRozas,  para  conocer  las normativas locales  y  también  si  conocen  a  los \nproveedores de la zona. \n \nRespuesta: Juan Manuel contesta que una de las comunidades con las \nque trabajan está en Majadahonda, que en las Rozas no tienen. Y que \nestán abiertos a trabajar con proveedores de la zona. \n \n- Pregunta: Otro vecino pregunta ¿Qué experiencia tienen en pegarse con \nconstructoras y demás? \n \nRespuesta: Ellos tienen experiencia en el arranque de dos comunidades. \nY es un trabajo, que, aunque sea un poco pesado, ya que se alargan en \nexceso los plazos y tienen experiencia y que a día de hoy lo han sacado \nadelante.  \n \n \nZARATE \nRafael Zárate explica que lleva metido en el mundo de la administración 23 años \ny que son 5 personas en la administración. Que se dedica a llevar pocas fincas, \npero  grandes  o  muy  grandes.  Su  experiencia  son  fincas  grandes. Tras  estas \nbreves palabras dice que lo mejor es empezar con las preguntas. \n \n \nTurno de Preguntas: \n\n \n- Pregunta: Un vecino pregunta ¿Por qué pide dos años de contrato? \n \nRespuesta: Zarate  contesta que  es  un  agujero  negro, que él  lo  ha \nvalorado en 1.750 + IVA, y los costes directos ya son 1.300€, por lo que por \n300-400€ solo le puede dedicar a la comunidad 10 ó 12 horas al mes. Por \nlo que eso no le interesa. Quiere ser franco y dice el trabajo que lleva una \nfinca  nueva,  y que  tenemos  muchos  problemas. Expone  que  nuestro \nprincipal problema es el  tema  económico y  que  tenemos  unos costes \nentre un 20-30% por encima de lo que debería ser. \n \n- Pregunta: Otro vecino le dice que quiere cobrar 53.000€ más los 60.000€, \nen total 110.000€. \n \nRespuesta: Zarate dice que eso no es correcto.   \n \n- Pregunta: Otro vecino pregunta ¿En qué se diferenciaría del resto? \n  \nRespuesta: Contesta que él no se mide con los demás y que por lo tanto \nno va a contestar. \n \n- Pregunta: Otro vecino como abogado dice que lo único que entienden \nlas multinacionales son los pleitos. ¿Qué se puede esperar de él? \n \nRespuesta: Zarate contesta que, si nos metemos en un problema civil, esto \nva a ser como el Señor de los Anillos, que sales mal, y no sabes cómo salir. \nDice que es lo que quiere el abogado de la constructora, pero que no \ndebemos  hacerlo.  También  dice  que  el  problema,  es  que  no  hay \ndefectos de construcción, sino que es una obra inacabada. \n \nOtra vecina menciona los presupuestos. \n \n- Pregunta: Un  vecino  pregunta, que  si  por  tener  a  una  persona  8  horas \ndedicadas a la urbanización nos puede asegurar que se resuelvan todas \nlas incidencias. \n \nRespuesta: Contesta que no se puede comprometer a eso. \n \n \n \n \n \n \nASEGRAMAR \n \n\nSe   presentan,   Nuria (abogada   y   administradora) y Javier (Abogado). \nAsegramar dispone  de  despachos en  las  Rozas  y  en  Madrid.  Cuentan  con \nexperiencia  en  comunidades  similares a  la  nuestra,  y  por  eso  creen  que  lo \npueden hacer bastante bien.  \nLo componen 6 abogados, 5 administradores de fincas, contables economistas \ny personal administrativo. Creen que su estructura se puede ajustar muy bien a \nlo que necesitamos. Cada abogado está especializado en un área, por lo que \npodríamos tener cubiertos la mayoría de los frentes.  \nNuria, especifica que todos,  tanto  abogados  como  administradores están \ncolegiados, y que disponen de un seguro de responsabilidad de 650.000€. Otra \nde las ventajas que tienen es que están muy cercanos a nosotros, que tienen la \noficina y  viven  en Las  Rozas,  por  lo  tanto  conocen  el  municipio,  saben  las \nnecesidades del entorno y tienen relación directa con el ayuntamiento por lo \nque están informados continuamente.  \nDisponen de una persona que hace revisiones de la urbanización y que su labor \ncomo administración es  constante  y  periódica. Esto  es  así porque  tienen \npersonal con experiencia para hacerlo.  \nLos  contables  son  economistas  o  licenciados. Confeccionan presupuestos \nreales, proponen  los  que  es  o no  necesario y junto con  un  agente  de  seguros \nrealizan comparativos de  los  distintos  servicios  y  proveedores cada  año para \najustar y ahorrar costes. \n  \nTurno de Preguntas: \n \n- Pregunta: Un vecino comienza preguntando, qué pasa si se llega a juicio, \nsi está incluido en el presupuesto o va a parte. \nRespuesta: Contestan que todo el asesoramiento jurídico está incluido y \nque en caso de tener que emprender acciones judiciales sería a parte. \nEn   ese   caso la   comunidad   tendría un   descuento. Puntualizan   la \nimportancia de una administración que cuenta con abogados frente a \notras que no lo tienen. \n \n- Pregunta: Otro vecino pregunta si son conscientes del esfuerzo adicional \nque conlleva apoyarnos en los muchos frentes que tenemos abiertos con \nNeinor teniendo en cuenta que nos presentan unos honorarios normales \nde administración y si están dispuestos a ello.  \nRespuesta: Responden afirmativamente, a parte de que siempre hacen \nel  esfuerzo,  saben  de  las  complicaciones  del  primer  año de  toda \ncomunidad.  \n- Pregunta: Otro  vecino pregunta  que  si  a  los  3-5  meses hubieran  que \nbuscar   otra   administración, si   supondría   alguna   pega   o   pondrían \nproblemas. \n \n\nRespuesta: Contestan que no, que no lo tendrían.  \n \n- Pregunta: Se  pregunta si  alguna  de  las comunidades con  las  que  han \ntrabajado ha sido de Neinor. \n \nRespuesta: No. \n  \n- Pregunta: Otro  vecino comenta que  Neinor  nos  ha  dejado  una  obra \ninacabada y que si tienen experiencia de reclamaciones en este tipo de \ncasos.  \n \nRespuesta: Responden que estos procesos y procedimientos son siempre \nlentos y tediosos pero que lo más importante para sacarlos adelante es \nrecabar el mayor número de pruebas posibles. \n \n \nTU ABOGADO VECINO \n  \nAhora  le  tocaría  el  turno  de  exposición  a Tu Abogado Vecino pero  no han \nvenido a presentar su proyecto, por lo que simplemente se dispone del dossier \ninformativo  y  presupuesto  que enviaron  y  se  hizo  llegar  a  los  propietarios  con \nanterioridad a la presente junta. \n \nINMHO \nLlegados a este punto INMHO, actual y saliente administración, solicitan poder \ndirigirse a los propietarios. Por parte de Inmho  toma la palabra Carmen Ureta, \nque comenta que nos quieren hacer una propuesta para ver si es posible revertir \nla decisión de no seguir contando con ellos como administradores, decisión que \nse tomó en la anterior junta general. Comenta que dicha junta fue un poco rara, \ny que para ellos los motivos que han llevado a los propietarios a decidir cambiar \nde administración no se ajustan a la realidad.  \nCarmen Ureta reitera que no tienen nada que ver con Neinor, que concurrieron \na un concurso abierto por Neinor junto con otros muchos administradores, y que \nfueron elegidos por ser los más baratos, 3,32€ por vecino.  \nExplican  que INMHO  tiene  muchos  recursos,  más  que  otros  administradores. \nDisponen de personal, conserjes y demás.  \nDice  que  lo  normal en  otras  administraciones es  que  tengan  una  gestoría o \nalguien  que les  hace las  nóminas. Explica  que  ellos  tienen  un departamento \njurídico para saber si está los temas a tratar están o no dentro de normativa.  \nDe  nuevo  recalca que  ellos  no  tienen  nada  que  ver  con  Neinor  y  quieren \npuntualizar que efectivamente nos encontramos en una situación complicada \ny que un cambio de administrador en estos momentos no es lo más conveniente \n\npara  esta  comunidad.  Ella  nos  quiere  dejar  claro,  que  defenderá  nuestros \nderechos hasta la última consecuencia. \nDice que siempre se ha trabajado en exclusiva para nosotros.  \nMenciona  que NEINOR  nos  ha  entregado  unas calidades  que no  son las \ncorrectas y que seguro que terminamos en los tribunales.  \nPara concluir dice que están en la lucha contra Neinor y a nuestro favor, y que \nestarían encantados de defendernos en los tribunales.  \nCarmen Ureta  propone  que  pueden poner  una  persona  en la  comunidad, \nrevisando las reparaciones que Neinor hace. Poner a esa persona externa 3 días \na la semana tendría un coste adicional a lo que cobran actualmente de 300€ \nal mes.  \n \nTurno de Preguntas: \n \n- Pregunta: Una vecina, pregunta cuales son sus condiciones económicas. \nRespuesta: Carmen Ureta dice que serían 3,32€ por vecino, 1.200€ al mes. \nY la persona externa, 300€. Por tanto 1.500€ al mes + IVA. \n \nAcabadas  las  exposiciones  se  pasa  a realizar  las  votaciones.  La  intención  es \nvotar de forma nominativa pero ante la claridad en los votos de los vecinos se \nacuerda hacerlo a mano alzada. \nLa mayoría   de   los   propietarios vota   la   opción   de   ASEGRAMAR   como \nadministración,  seguido  de  Zarate  con 6 votos. El  resto  de  administraciones \npresentadas no reciben ningún voto. \nPor  lo  tanto, por  mayoría cualificada sin  abstenciones se  decide  que el \nadministrador de la comunidad de Amara Homes sea ASEGRAMAR. \n \nDatos contacto ASEGRAMAR nueva administración: \nDirección:  C/ San Vicente, 3 Majadahonda \nTel. 916381285  -   Correo: administracion@asegramar.com \nA las 20.50 INMHO se ausenta de la junta dejando solos a la Junta de Gobierno. \nSe explica a los propietarios que la Junta de Gobierno puede continuar con la \nreunión ya  que  pueden  hacer  de  secretarios de  la  misma. Se continúa con el \norden del día establecido. \n \n3. SEGUIMIENTO  INCIDENCIAS  CON  NEINOR;  EXPOSICIÓN  DE  SITUACIÓN  Y \nAVANCES. \n \n\nSe explica a los propietarios todos los avances que ha habido con NEINOR. Se \nmantuvo  una  reunión con  ellos el  pasado  18  de  mayo,  en  la que  se trató  el \nlistado de incidencias. Se cuenta que se va a abrir una única incidencia general \npor portal para algunas de ellas como los imanes de las puertas de madera, las \narquetas de los garajes o la limpiezas, ya que se repiten y son generales.  \nNEINOR comenta que se va a dar un gran empujón a las incidencias a partir de \njunio. Se nos irán entregando los partes de las cosas que se vayan arreglando. \nEstos partes hay  la  intención  de  enviarlos  a  todos  los  vecinos  con  una \nperiodicidad  a  establecer mediante una  relación  creada  por  la  Junta  de \nGobierno. \nSobre las humedades tienen previsto terminarlas a finales de este mes de mayo, \ny sólo les quedaría pintar y terminar de colocar.  \nSobre la preocupación de los vecinos por la zona de toboganes, Neinor nos dice \nque vana acortar los travesaños para que haya el espacio suficiente y se lijarán \nlos cantos para evitar más accidentes.  \nLa vicepresidenta Paula de la Peña, comenta que Neinor no nos ha dado una \nplanificación  exacta sobre  las  actuaciones  a  realizar,  más  allá  de  las  fechas \nreferentes a las humedades y las piscinas.  \nSe informa que se está creando un único Excel con Neinor, en el que se recogen \ntodas las incidencias detectadas y al ser un documento vivo se incluirán las que \nse vayan viendo posteriormente. Este documento se enviará a los vecinos para \nque sepan qué ocurre y cuál es la situación de la urbanización. \nSe comenta que el Perito ha preguntado por una serie de temas a la Dirección \nFacultativa, para poder dar una respuesta entre otros al problema de la rampa \ndel garaje del C/D por el que rozan los vehículos.  \nSe indica que al perito le falta documentación para continuar trabajando, que \nesta  documentación  se  ha  solicitado en  innumerables  ocasiones  a  Neinor,  así \ncomo en lo que le compete al Ayuntamiento.  \nSe  informa  que  Neinor sigue  estudiando el  tema  del suelo  de  la  urbanización, \nque  aún  no  nos  pueden  dar  una  respuesta  porque  están  viendo  las  posibles \nopciones viables que podrían plantearnos. Se les ha instado seriamente a que \nagilicen esta decisión.  \nEn este punto la Junta de Gobierno pide a los propietarios que voten si permiten \na  la  Junta  de  Gobierno  incluir problemas  o  defectos particulares  como \ncomunitarios por ver que se generaliza a la mayoría de los vecinos. Se acepta \npor mayoría absoluta. \nPor último, se comenta que se ha trasladado a Neinor nuestras quejas sobre los \nescombros que hay continuamente en la salida de bomberos del D, la suciedad \nque  provocan los  obreros con orines en los  cuartos  y  zonas comunitarias,  las \nbasuras y molestias que ocasionan sin respetar que no están en una obra sino \nen una propiedad privada y residencial. \n\nSobre  los  escombros  en  la  salida  de  bomberos  del  D,  Neinor  con  dice  que lo \ndenunciemos  directamente  a  la  policía  y  ayuntamiento,  ya  que  Sacyr  no  les \nestá haciendo caso. \nSobre los orines y suciedad, la Junta de Gobierno traslada a Neinor que de seguir \nasí se tomarán medidas drásticas entre las que se encuentran no permitir a Sacyr \ndisponer de   cuartos   comunitarios   para   almacenar   materiales   y que   se \nestablezcan fuera del recinto comunitario. \nUna vecina, da las gracias a la junta, y menciona que se ha llegado al punto de \nque no puede seguir así. \nSe vuelve a sacar el tema de la garita del B, por una vecina.  \nSale el tema de la seguridad de nuevo.  \nSe comenta que la Junta de Gobierno va a estar más pendiente del tema de la \nseguridad y de los obreros, siendo muy insistentes con los conserjes en tener un \ncontrol de acceso únicamente por la entrada principal. \nUna vecina dice que no está de acuerdo con la Junta de Gobierno por alguno \nde los resultados de votaciones reflejado en el acta de la anterior junta general \ny enseña el burofax que envió a la administración. Se le explica que la Junta de \nGobierno no es quien tomó las notas de lo que iba ocurriendo en dicha junta, \nya  que  el  secretario  de  la  misma  era  INMHO  en  calidad  de administrador-\nsecretario. Que si  hubo  algún  error  en  dicha  acta disponía  de  medios  legales \npara  que  se  subsanara,  pero  que  en ningún  caso  la  Junta  de  Gobierno tomó \nnota de los resultados de las votaciones. \nUn  vecino  llama  al  razonamiento  colectivo, dice  que  habrá  cosas  que  se \nrepercutirán a  la  constructora y otras  que  tendremos  que  asumir como \ncomunidad  y  que  es  importante  contar  con dinero  para  arreglos y  hacer \nmejoras en la urbanización. \n \n \nPUNTO 4. APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE. \n \nEl primer tema en salir es el de las barbacoas. Se comenta que indica que serán \nde gas.  \nUn vecino pregunta que si se ha tenido en cuenta hablar con el Ayuntamiento \nde  las  Rozas para decidir  esto. Se  le  dice  que  sí  que  se  ha  consultado  al \nAyuntamiento y  que  a  la  ordenanza  municipal  relativa  a  barbacoas,  la  Junta \nGeneral  de  Propietarios  de  una  comunidad  por  mayoría  puede  aprobar  las \nrestricciones que considere oportunas.  \nEl mismo propietario dice que se debería definir y poner también el tema de la \nplancha. Que no se define en la normativa interna lo que es la barbacoa.  \nLa  Junta  de  Gobierno modificará  el  artículo  de  la  normativa  interna de la \nbarbacoa dejando  como contenido  del  mismo  la Normativa  Municipal del \n\nAyuntamiento  de  Las  Rozas y  que  por  lo  tanto  si  esta  ordenanza  municipal  lo \npermite se podrían utilizar tanto barbacoas de carbón como de gas.  \nUna  vecina comenta  que  no  quiere  que se  puedan  utilizar  pelotas  en  las \npiscinas.  \nLa  misma  vecina  menciona también que  no  le  parece  bien  que  se puedan \nhacer cursos de natación de piscinas, dice que no quiere eso.  \nCarlos Sánchez explica que estos cursos de natación en caso de aprobarse o \npermitirse  en  normativa serían siempre fuera  del horario  oficial  de  piscina,  por \nejemplo  una  hora  antes  de  la  hora  de  apertura,  que  nunca en  horarios  que \nimpidan  o  dificulten  a  los  vecinos  el  disfrute  de  las  piscinas. Este  punto en  la \nnormativa siempre se incluiría si lo aprobara la junta general de propietarios.  \nOtro  vecino  habla  del  cuarto  de  las  bicicletas,  mencionan  que es bastante \nmolesto  y  complicado  dada  la  lejanía  tener  que  estar  yendo  a  conserjería  a \nsolicitar que abran y cierren el cuarto. \nSe informa que se están estudiando varias posibilidades, entre ellas dotar a los \ncuartos  de anclajes para  que  cada  vecino  pueda  dejar  su  bicicleta con  su \ncadena de seguridad y así que todos los vecinos dispongan de llave para poder \nacceder en cualquier momento. \nSale el tema de las basuras, se comenta que se está en gestiones con INMHO \nMultiservicios para encontrar la mejor solución para poder poner en marcha este \nservicio. Se informará a los propietarios cuando se tenga en claro cómo actuar. \nOtro vecino saca el tema de tender la ropa en las terrazas. Dice que porqué se \nprohíbe. Se le aclara que ya hay una Ordenanza Municipal del Ayuntamiento \nde Las Rozas que así lo establece y que únicamente se traslada a la normativa \ninterna de la comunidad.  \nEl  mismo  vecino que  no lo convence  que  la  Junta  de  Gobierno decida  sobre \nquién puede o no acceder a la piscina. Se le explica que de lo que se trata es \nde facultar a la Junta de Gobierno a tomar medidas de acceso a las piscinas \npermitiendo que sólo puedan acceder a ellas los propietarios en el caso de que \nse descontrole por que venga mucha gente de fuera de la comunidad.  \nSe apela al buen criterio de todos los propietarios haciendo un uso racional de \nlas piscinas.  \nOtro vecino dice que la normativa interna es muy importante y lo debería revisar \nla administración entrante.  \nSe acuerda dejar para más adelante la aprobación de la normativa interna de \nla  comunidad y  se pide  a  todos  los  propietarios  que  mientras  no  tengamos \naprobadas unas normas de convivencia, se aplique la lógica y se recuerda que \nhay  Ordenanzas  y  Normativas  Municipales en  muchas  materias  que  deben \ncumplirse. \n \n\n4. TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE \nPÉRGOLAS/CERRAMIENTOS  TRAS  REUNIÓN  CON  LA  TÉCNICO  MUNICIPAL, \nVOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN. \n \nAntes de empezar con este punto se indica que quedan 15 minutos del tiempo \nestablecido  para  la  realización  de  la junta.  Se  decide  por  mayoría  continuar \nmás tiempo con la reunión.  \nTómala   palabra Javier Rodríguez como miembro   de   la   comisión de \ncerramientos para exponer y explicar los tipos de cerramientos para terrazas y \ntendederos que pueden instalarse tras las consultas realizadas al Ayuntamiento \nde Las Rozas y su respuesta por escrito. \n \nCERRAMIENTOS DE TENDEDEROS Y TERRAZAS \nPor votación de la mayoría se aprueban los siguientes puntos:  \n• Cierre de tendederos: \n \no Se tiene que realizar por el interior del tendedero/lamas \no Los  cristales  serán  transparentes  o  translucido  blanco  de  tipo \nLumon (cortinas de cristal) sin perfilería intermedia. \no Los  perfiles  serán del RAL7022,  mismo  color  que  la  carpintería  de \naluminio de la urbanización. \no Se podrá poner puerta, siempre que se mantenga la estructura de \nlamas en el exterior de la misma, y manteniendo la estética previa \ninalterada. \no En ningún caso se podrá eliminar total o parcialmente la estructura \nexistente de lamas del tendedero. \n \n• Cerramiento para bajos en jardines sin techo: \n  \no Se  permite  la  instalación  de  pérgolas  con  lonas  retráctiles  para \njardines sin zona techada.  \no La  perfilería  de  la  pérgola  será del  RAL  7022,  mismo  color  que  la \ncarpintería de aluminio de la urbanización. \no La  altura  de  la  pérgola  no  podrá  superar  el  borde  inferior  de  la \nfachada de la terraza del piso que está encima. \no La colocación de la pérgola tendrá que dejar una distancia con \nla valla exterior de al menos 1,5 metros. \no Por  normativa  municipal,  no  está  permitida  la  instalación  de \nelementos fijos, tampoco de lamas oscilantes o bioclimáticas. \no No   está   permitido perforar   la   fachada   para   el   anclaje   de \nestructuras. \no Los   propietarios   están obligados   a   hacer   un   mantenimiento \nperiódico  de  los  techos de  las  pérgolas para  su  limpieza  y \nconservación. \n \n\n• Cerramiento para pisos intermedios con techo: \n \no El  cerramiento  frontal  deberá  ser  tipo Lumon (cortinas  de  cristal) \ntransparentes sin perfilería intermedia. \no La perfilería será del RAL  7022, mismo color que la carpintería de \naluminio de la urbanización. \no No   está   permitido perforar   la   fachada   para   el   anclaje   de \nestructuras. \n \n \n• Cerramiento  para  pisos  intermedios  con  estructuras  de  hormigón  (sin \ntechar): \n \no Se permite el cerramiento del techo con cristal fijo o retráctil. \no La perfilería será del RAL 7022, para la sustentación de los techos \nde  cristal del  mismo  color  que  la  carpintería  de  aluminio  de  la \nurbanización. \no El  cerramiento  frontal  deberá  ser tipo Lumon (cortinas  de  cristal) \ntransparente sin perfilería intermedia. \no No   está   permitido perforar   la   fachada   para   el   anclaje   de \nestructuras. \no Los   propietarios   están   obligados   a   hacer   un   mantenimiento \nperiódico de los techos para su limpieza y conservación. \n \n• Cerramiento para áticos: \n \no Se permite la instalación de pérgolas. \no Se permite el cerramiento de techo con cristal, fijo o retráctil. \no La perfilería de la pérgola y de los perfiles para la sustentación del \ntecho de cristal será del RAL 7022, mismo color que la carpintería \nde aluminio de la urbanización. \no El  cerramiento  frontal  deberá  tipo Lumon (cortinas  de  cristal) \ntransparentes sin perfilería. \no La perfilería de la pérgola sería del RAL 7022,  mismo color que la \ncarpintería de aluminio de la urbanización. \no Plano de sección en el que se represente que la pérgola no podrá \nrebasar el plano trazado desde el borde superior del forjado de la \núltima planta en fachadas y patios con una inclinación máxima de \n45 grados. (artículo 5.6.5 del PGOU)  \no No se podrá perforar la fachada para el anclaje de estructuras.  \no Los   propietarios   están   obligados   a   hacer   un   mantenimiento \nperiódico de los techos para su limpieza y conservación. \n \n \nTOLDOS \nSe  comentan los  problemas  que  ha  habido  con  el  color  elegido  en  la  junta \nanterior. Se habla de que puede haber problemas de suministros y se somete a \n\nvotación entre gris perla (R-114) o gris 2821 Silver de Sauleda y color marfil liso. Se \nhace un inciso para comentar en que los colores claros, tanto gris como marfil \nactualmente hay problemas de suministros, y que los fabricantes sólo garantizan \ncolores oscuros.  \nPor votación de la gran mayoría sale aprobado el color gris. Por lo los toldos para \nlas diferentes terrazas quedan definidos de la siguiente forma: \n• Toldos para las diferentes terrazas: \n \no Todos los toldos o velas serán del mismo color y material. \no El color elegido es el R-114 de la gama “Recacril de Recasens” y \nsu  equivalente  Sauleda  2821  Silver:  Colección  Solar  Pro.  Lona \nacrílica normal, sin impermeabilizar.  \no Todos los brazos, cofres y perfiles serán del color RAL 7022. \no En los dormitorios los toldos podrán ser de tipo:  \n▪ De brazo de punto recto sin faldón con cofre o  \n▪ Toldos verticales. \no En las terrazas de bajos, intermedios y áticos podrán ser de tipo: \n▪ De brazo extensible sin faldón con cofre o \n▪ Toldos verticales. \no En los bajos, pisos intermedios con terrazas con techo descubierto \ny  áticos,  se  permitirán  los  toldos retráctiles y/o  velas,  del  mismo \ncolor  y  material  que  los  aprobados  para  el  conjunto  de  la \nurbanización. \no En los dormitorios tanto el cofre como los brazos deberán anclarse \na  las  jambas  o  al  dintel  interior  de  la  ventana  de  los  dormitorios, \nprohibiendo su anclaje en la fachada. \no En terrazas se podrán anclar al techo o paredes internas de las de \ndichas terrazas, sin  afectar  en  ningún  caso  a  los  parámetros \nverticales de la fachada. \nUna vecina pregunta sobre la pérgola en el ático, que como se puede hacer, \na lo que se le responde que el ayuntamiento ha indicado que tienen que poder \nquitarse  en  cualquier  momento. Las  opciones  para  poder  hacerlo  debe \nhablarse con los instaladores correspondientes.  \nPregunta  también  sobre  el  cierre  de  los  tendederos y pregunta  por  qué  se \nconsultó esto al Ayuntamiento de Las Rozas, se le explica que eso se hizo para \nsaber la legalidad aplicada en este caso.  \nOtro vecino dice que si esto lo dice la normativa municipal y si está por escrito \nen algún lado. Carlos Sánchez comenta que es la Normativa del Ayuntamiento \nde Las Rozas que nos han facilitado por escrito y que se ha copiado y pegado \ntal cuál. Se enseña un de los emails recibidos del Ayuntamiento con este tema.  \nUna vecina dice que la comisión de cerramientos no se ha leído la normativa \ndel  ayuntamiento, otro  vecino  le  responde  que  sí, que  se  ha  leído y, además \nCarlos  Sánchez  informa  que se  han tenido  tres  reuniones con la  Arquitecto \nTécnico y la Adjunta a la Dirección General de Urbanismo del Ayuntamiento de \nLas Rozas.  \n\nOtro  vecino pregunta  que  pasa  con  los  bajos  que  tienen  terraza  techada y, \nademás,  jardín. Se  le  indica  que  deberá  hacerlo según la normativa  de  piso \nintermedio para la zona techada y de bajo sin jardín para la zona no techada.  \nPUNTO 6. GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE. \nToma la palabra Rocío Seltzer miembro del comité de gimnasios. \nSe comenta que se hizo un estudio de ruido con dos propietarios colindantes a \nla sala D y que se oía muy poquito.  Se explica mediante presentación y plano \ncómo quedaría el nuevo gimnasio con la ubicación de las diferentes máquinas. \nLos vecinos, mencionan que he han en falta más alternativas para ejercicios de \ncardio.  \nOtra  vecina,  menciona  que  los 12.500€ que  tenemos  aprobados,  se  puede \ndedicar a otra partida más necesaria, que es un dinero que se puede necesitar \nal final. Se le explica que esa partida ya estaba aprobada en los presupuestos \npara uso de gimnasio. \nOtro vecino dice que está muy bien equipado el gimnasio y que le ha gustado \nla propuesta. \nOtro miembro de la comisión aclara que es posible ajustar algo el presupuesto, \npero   que realmente   el   coste   por   vecino   sería el equivalente   a dos \nmensualidades de un gimnasio de fuera y se tendría para siempre. \nAl  pasar  a  votarse y  ver  que  hay  mucha  igualdad la  votación  tiene  que  ser \nnominativa. Se  explica  que  al  no  tener las  hojas  de  asistentes  y  su  relación al \nhabérselas llevado INMHO, no se puede proceder a realizar la votación nominal. \nEn  vista  de  que tanto  este  punto  como  los  restantes  del  orden  del  día  vana \nrequerir de votaciones nominativas y al no disponer del listado de asistente, se \nacuerda    por    unanimidad dejarlos    para    una    próxima    junta    general \nextraordinaria, dando por concluida la presente junta. \nVºBº Camilo J. Fernández Hernández      \nPresidente Saliente  \nVºBº Paula de la Peña Díez \nSecretaria",
+          "metrics": {
+            "duration": 287,
+            "size": 40077,
+            "method": "pdf-parse-external"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "acta",
+            "confidence": 0.95,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for acta"
+          },
+          "metrics": {
+            "duration": 1,
+            "confidence": 0.95
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "document_date": "2022-05-19",
+            "tipo_reunion": "extraordinaria",
+            "lugar": "hotel Attica 2 (Calle Chile, 2 en las Rozas)",
+            "comunidad_nombre": "C.P. Amara Homes",
+            "president_in": "Carlos Sánchez Pérez",
+            "president_out": "Camilo J. Fernández Hernández",
+            "administrator": "ASEGRAMAR",
+            "summary": "Junta Extraordinaria para la elección de nuevo administrador. Se aprueba la dimisión del presidente Camilo J. Fernández Hernández y se nombra a Carlos Sánchez Pérez como nuevo presidente. Tras la presentación de varias administradoras (Activa, Zarate, Asegramar, Tu Abogado Vecino e Inmho), se elige a Asegramar como nueva administradora. Se tratan temas como incidencias con Neinor, normativa interna, toldos y cerramientos, y gimnasio, algunos de los cuales se dejan para una próxima junta.",
+            "decisions": "1. Aprobación de la dimisión del presidente Camilo J. Fernández Hernández. 2. Nombramiento de Carlos Sánchez Pérez como nuevo presidente. 3. Elección de ASEGRAMAR como nueva administradora de la comunidad. 4. Aprobación de los puntos referentes a los cerramientos de tendederos y terrazas. 5. Aprobación del color gris (R-114 o Sauleda 2821 Silver) para los toldos. 6. Aplazamiento de la aprobación de la normativa interna y del tema del gimnasio para una próxima junta.",
+            "orden_del_dia": [
+              "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+              "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+              "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+              "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+              "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+              "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE."
+            ],
+            "acuerdos": [
+              "Se acepta la dimisión de Camilo José Fernández Hernández como presidente y se nombra a Carlos Sánchez Pérez como nuevo presidente.",
+              "Se elige a Asegramar como nueva administradora de la comunidad.",
+              "Se aprueban las especificaciones para los cerramientos de tendederos y terrazas.",
+              "Se aprueba el color gris (R-114 o Sauleda 2821 Silver) para los toldos.",
+              "Se acuerda aplazar la aprobación de la normativa interna y la votación sobre el gimnasio para una próxima junta."
+            ],
+            "topic_keywords": [
+              "administrador",
+              "Neinor",
+              "normativa interna",
+              "toldos",
+              "cerramientos",
+              "gimnasio",
+              "presupuesto",
+              "humedades",
+              "seguridad",
+              "barbacoas"
+            ],
+            "topic_presupuesto": true,
+            "topic_mantenimiento": true,
+            "topic_administracion": true,
+            "topic_piscina": true,
+            "topic_jardin": true,
+            "topic_limpieza": true,
+            "topic_balance": false,
+            "topic_paqueteria": false,
+            "topic_energia": true,
+            "topic_normativa": true,
+            "topic_proveedor": true,
+            "topic_dinero": true,
+            "topic_ascensor": false,
+            "topic_incendios": false,
+            "topic_porteria": false,
+            "estructura_detectada": {
+              "quorum_alcanzado": true,
+              "propietarios_totales": null,
+              "capitulos": [
+                {
+                  "numero": 1,
+                  "titulo": "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 2,
+                  "titulo": "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+                  "pagina": 2,
+                  "subsecciones": [
+                    {
+                      "titulo": "ACTIVA",
+                      "pagina": 2
+                    },
+                    {
+                      "titulo": "ZARATE",
+                      "pagina": 3
+                    },
+                    {
+                      "titulo": "ASEGRAMAR",
+                      "pagina": 4
+                    },
+                    {
+                      "titulo": "TU ABOGADO VECINO",
+                      "pagina": 5
+                    },
+                    {
+                      "titulo": "INMHO",
+                      "pagina": 5
+                    }
+                  ]
+                },
+                {
+                  "numero": 3,
+                  "titulo": "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+                  "pagina": 6,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 4,
+                  "titulo": "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+                  "pagina": 7,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 5,
+                  "titulo": "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+                  "pagina": 8,
+                  "subsecciones": [
+                    {
+                      "titulo": "CERRAMIENTOS DE TENDEDEROS Y TERRAZAS",
+                      "pagina": 8
+                    },
+                    {
+                      "titulo": "TOLDOS",
+                      "pagina": 9
+                    }
+                  ]
+                },
+                {
+                  "numero": 6,
+                  "titulo": "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE.",
+                  "pagina": 10,
+                  "subsecciones": []
+                }
+              ],
+              "total_paginas": 10,
+              "votaciones": [
+                {
+                  "tema": "Dimisión del presidente Camilo J. Fernández Hernández",
+                  "resultado": "aprobado",
+                  "votos": "mayoría",
+                  "pagina": 2
+                },
+                {
+                  "tema": "Nombramiento de Carlos Sánchez Pérez como nuevo presidente",
+                  "resultado": "aprobado",
+                  "votos": "mayoría",
+                  "pagina": 2
+                },
+                {
+                  "tema": "Elección de ASEGRAMAR como nueva administradora",
+                  "resultado": "aprobado",
+                  "votos": "mayoría cualificada",
+                  "pagina": 6
+                },
+                {
+                  "tema": "Incluir problemas o defectos particulares como comunitarios",
+                  "resultado": "aprobado",
+                  "votos": "mayoría absoluta",
+                  "pagina": 7
+                },
+                {
+                  "tema": "Especificaciones para los cerramientos de tendederos y terrazas",
+                  "resultado": "aprobado",
+                  "votos": "mayoría",
+                  "pagina": 9
+                },
+                {
+                  "tema": "Color gris (R-114 o Sauleda 2821 Silver) para los toldos",
+                  "resultado": "aprobado",
+                  "votos": "mayoría",
+                  "pagina": 9
+                },
+                {
+                  "tema": "Aprobación de la normativa interna",
+                  "resultado": "aplazado",
+                  "votos": "unanimidad",
+                  "pagina": 10
+                },
+                {
+                  "tema": "Votación sobre el gimnasio",
+                  "resultado": "aplazado",
+                  "votos": "unanimidad",
+                  "pagina": 10
+                }
+              ]
+            }
+          },
+          "metrics": {
+            "duration": 14442,
+            "fields_count": 28
+          }
+        },
+        "step4_validation": {
+          "success": false,
+          "data": {
+            "validationErrors": [
+              "Campo requerido faltante: meeting_date",
+              "Campo requerido faltante: attendees",
+              "Campo requerido faltante: topics"
+            ],
+            "validatedData": {
+              "document_date": "2022-05-19",
+              "tipo_reunion": "extraordinaria",
+              "lugar": "hotel Attica 2 (Calle Chile, 2 en las Rozas)",
+              "comunidad_nombre": "C.P. Amara Homes",
+              "president_in": "Carlos Sánchez Pérez",
+              "president_out": "Camilo J. Fernández Hernández",
+              "administrator": "ASEGRAMAR",
+              "summary": "Junta Extraordinaria para la elección de nuevo administrador. Se aprueba la dimisión del presidente Camilo J. Fernández Hernández y se nombra a Carlos Sánchez Pérez como nuevo presidente. Tras la presentación de varias administradoras (Activa, Zarate, Asegramar, Tu Abogado Vecino e Inmho), se elige a Asegramar como nueva administradora. Se tratan temas como incidencias con Neinor, normativa interna, toldos y cerramientos, y gimnasio, algunos de los cuales se dejan para una próxima junta.",
+              "decisions": "1. Aprobación de la dimisión del presidente Camilo J. Fernández Hernández. 2. Nombramiento de Carlos Sánchez Pérez como nuevo presidente. 3. Elección de ASEGRAMAR como nueva administradora de la comunidad. 4. Aprobación de los puntos referentes a los cerramientos de tendederos y terrazas. 5. Aprobación del color gris (R-114 o Sauleda 2821 Silver) para los toldos. 6. Aplazamiento de la aprobación de la normativa interna y del tema del gimnasio para una próxima junta.",
+              "orden_del_dia": [
+                "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+                "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+                "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+                "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+                "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+                "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE."
+              ],
+              "acuerdos": [
+                "Se acepta la dimisión de Camilo José Fernández Hernández como presidente y se nombra a Carlos Sánchez Pérez como nuevo presidente.",
+                "Se elige a Asegramar como nueva administradora de la comunidad.",
+                "Se aprueban las especificaciones para los cerramientos de tendederos y terrazas.",
+                "Se aprueba el color gris (R-114 o Sauleda 2821 Silver) para los toldos.",
+                "Se acuerda aplazar la aprobación de la normativa interna y la votación sobre el gimnasio para una próxima junta."
+              ],
+              "topic_keywords": [
+                "administrador",
+                "Neinor",
+                "normativa interna",
+                "toldos",
+                "cerramientos",
+                "gimnasio",
+                "presupuesto",
+                "humedades",
+                "seguridad",
+                "barbacoas"
+              ],
+              "topic_presupuesto": true,
+              "topic_mantenimiento": true,
+              "topic_administracion": true,
+              "topic_piscina": true,
+              "topic_jardin": true,
+              "topic_limpieza": true,
+              "topic_balance": false,
+              "topic_paqueteria": false,
+              "topic_energia": true,
+              "topic_normativa": true,
+              "topic_proveedor": true,
+              "topic_dinero": true,
+              "topic_ascensor": false,
+              "topic_incendios": false,
+              "topic_porteria": false,
+              "estructura_detectada": {
+                "quorum_alcanzado": true,
+                "propietarios_totales": null,
+                "capitulos": [
+                  {
+                    "numero": 1,
+                    "titulo": "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 2,
+                    "titulo": "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+                    "pagina": 2,
+                    "subsecciones": [
+                      {
+                        "titulo": "ACTIVA",
+                        "pagina": 2
+                      },
+                      {
+                        "titulo": "ZARATE",
+                        "pagina": 3
+                      },
+                      {
+                        "titulo": "ASEGRAMAR",
+                        "pagina": 4
+                      },
+                      {
+                        "titulo": "TU ABOGADO VECINO",
+                        "pagina": 5
+                      },
+                      {
+                        "titulo": "INMHO",
+                        "pagina": 5
+                      }
+                    ]
+                  },
+                  {
+                    "numero": 3,
+                    "titulo": "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+                    "pagina": 6,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 4,
+                    "titulo": "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+                    "pagina": 7,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 5,
+                    "titulo": "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+                    "pagina": 8,
+                    "subsecciones": [
+                      {
+                        "titulo": "CERRAMIENTOS DE TENDEDEROS Y TERRAZAS",
+                        "pagina": 8
+                      },
+                      {
+                        "titulo": "TOLDOS",
+                        "pagina": 9
+                      }
+                    ]
+                  },
+                  {
+                    "numero": 6,
+                    "titulo": "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE.",
+                    "pagina": 10,
+                    "subsecciones": []
+                  }
+                ],
+                "total_paginas": 10,
+                "votaciones": [
+                  {
+                    "tema": "Dimisión del presidente Camilo J. Fernández Hernández",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 2
+                  },
+                  {
+                    "tema": "Nombramiento de Carlos Sánchez Pérez como nuevo presidente",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 2
+                  },
+                  {
+                    "tema": "Elección de ASEGRAMAR como nueva administradora",
+                    "resultado": "aprobado",
+                    "votos": "mayoría cualificada",
+                    "pagina": 6
+                  },
+                  {
+                    "tema": "Incluir problemas o defectos particulares como comunitarios",
+                    "resultado": "aprobado",
+                    "votos": "mayoría absoluta",
+                    "pagina": 7
+                  },
+                  {
+                    "tema": "Especificaciones para los cerramientos de tendederos y terrazas",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 9
+                  },
+                  {
+                    "tema": "Color gris (R-114 o Sauleda 2821 Silver) para los toldos",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 9
+                  },
+                  {
+                    "tema": "Aprobación de la normativa interna",
+                    "resultado": "aplazado",
+                    "votos": "unanimidad",
+                    "pagina": 10
+                  },
+                  {
+                    "tema": "Votación sobre el gimnasio",
+                    "resultado": "aplazado",
+                    "votos": "unanimidad",
+                    "pagina": 10
+                  }
+                ]
+              }
+            }
+          },
+          "metrics": {
+            "duration": 0
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 100,
+            "missingFields": [],
+            "extraFields": [
+              "topic_jardin",
+              "topic_limpieza",
+              "topic_balance",
+              "topic_paqueteria",
+              "topic_energia",
+              "topic_normativa",
+              "topic_proveedor",
+              "topic_dinero",
+              "topic_ascensor",
+              "topic_incendios",
+              "topic_porteria"
+            ]
+          },
+          "metrics": {
+            "duration": 2,
+            "compatibility_score": 100
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 32
+          },
+          "metrics": {
+            "duration": 2
+          }
+        }
+      },
+      "total_time": 14734,
+      "document_type": "acta",
+      "extracted_data": {
+        "document_date": "2022-05-19",
+        "tipo_reunion": "extraordinaria",
+        "lugar": "hotel Attica 2 (Calle Chile, 2 en las Rozas)",
+        "comunidad_nombre": "C.P. Amara Homes",
+        "president_in": "Carlos Sánchez Pérez",
+        "president_out": "Camilo J. Fernández Hernández",
+        "administrator": "ASEGRAMAR",
+        "summary": "Junta Extraordinaria para la elección de nuevo administrador. Se aprueba la dimisión del presidente Camilo J. Fernández Hernández y se nombra a Carlos Sánchez Pérez como nuevo presidente. Tras la presentación de varias administradoras (Activa, Zarate, Asegramar, Tu Abogado Vecino e Inmho), se elige a Asegramar como nueva administradora. Se tratan temas como incidencias con Neinor, normativa interna, toldos y cerramientos, y gimnasio, algunos de los cuales se dejan para una próxima junta.",
+        "decisions": "1. Aprobación de la dimisión del presidente Camilo J. Fernández Hernández. 2. Nombramiento de Carlos Sánchez Pérez como nuevo presidente. 3. Elección de ASEGRAMAR como nueva administradora de la comunidad. 4. Aprobación de los puntos referentes a los cerramientos de tendederos y terrazas. 5. Aprobación del color gris (R-114 o Sauleda 2821 Silver) para los toldos. 6. Aplazamiento de la aprobación de la normativa interna y del tema del gimnasio para una próxima junta.",
+        "orden_del_dia": [
+          "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+          "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+          "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+          "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+          "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+          "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE."
+        ],
+        "acuerdos": [
+          "Se acepta la dimisión de Camilo José Fernández Hernández como presidente y se nombra a Carlos Sánchez Pérez como nuevo presidente.",
+          "Se elige a Asegramar como nueva administradora de la comunidad.",
+          "Se aprueban las especificaciones para los cerramientos de tendederos y terrazas.",
+          "Se aprueba el color gris (R-114 o Sauleda 2821 Silver) para los toldos.",
+          "Se acuerda aplazar la aprobación de la normativa interna y la votación sobre el gimnasio para una próxima junta."
+        ],
+        "topic_keywords": [
+          "administrador",
+          "Neinor",
+          "normativa interna",
+          "toldos",
+          "cerramientos",
+          "gimnasio",
+          "presupuesto",
+          "humedades",
+          "seguridad",
+          "barbacoas"
+        ],
+        "topic_presupuesto": true,
+        "topic_mantenimiento": true,
+        "topic_administracion": true,
+        "topic_piscina": true,
+        "topic_jardin": true,
+        "topic_limpieza": true,
+        "topic_balance": false,
+        "topic_paqueteria": false,
+        "topic_energia": true,
+        "topic_normativa": true,
+        "topic_proveedor": true,
+        "topic_dinero": true,
+        "topic_ascensor": false,
+        "topic_incendios": false,
+        "topic_porteria": false,
+        "estructura_detectada": {
+          "quorum_alcanzado": true,
+          "propietarios_totales": null,
+          "capitulos": [
+            {
+              "numero": 1,
+              "titulo": "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 2,
+              "titulo": "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+              "pagina": 2,
+              "subsecciones": [
+                {
+                  "titulo": "ACTIVA",
+                  "pagina": 2
+                },
+                {
+                  "titulo": "ZARATE",
+                  "pagina": 3
+                },
+                {
+                  "titulo": "ASEGRAMAR",
+                  "pagina": 4
+                },
+                {
+                  "titulo": "TU ABOGADO VECINO",
+                  "pagina": 5
+                },
+                {
+                  "titulo": "INMHO",
+                  "pagina": 5
+                }
+              ]
+            },
+            {
+              "numero": 3,
+              "titulo": "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+              "pagina": 6,
+              "subsecciones": []
+            },
+            {
+              "numero": 4,
+              "titulo": "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+              "pagina": 7,
+              "subsecciones": []
+            },
+            {
+              "numero": 5,
+              "titulo": "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+              "pagina": 8,
+              "subsecciones": [
+                {
+                  "titulo": "CERRAMIENTOS DE TENDEDEROS Y TERRAZAS",
+                  "pagina": 8
+                },
+                {
+                  "titulo": "TOLDOS",
+                  "pagina": 9
+                }
+              ]
+            },
+            {
+              "numero": 6,
+              "titulo": "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE.",
+              "pagina": 10,
+              "subsecciones": []
+            }
+          ],
+          "total_paginas": 10,
+          "votaciones": [
+            {
+              "tema": "Dimisión del presidente Camilo J. Fernández Hernández",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 2
+            },
+            {
+              "tema": "Nombramiento de Carlos Sánchez Pérez como nuevo presidente",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 2
+            },
+            {
+              "tema": "Elección de ASEGRAMAR como nueva administradora",
+              "resultado": "aprobado",
+              "votos": "mayoría cualificada",
+              "pagina": 6
+            },
+            {
+              "tema": "Incluir problemas o defectos particulares como comunitarios",
+              "resultado": "aprobado",
+              "votos": "mayoría absoluta",
+              "pagina": 7
+            },
+            {
+              "tema": "Especificaciones para los cerramientos de tendederos y terrazas",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 9
+            },
+            {
+              "tema": "Color gris (R-114 o Sauleda 2821 Silver) para los toldos",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 9
+            },
+            {
+              "tema": "Aprobación de la normativa interna",
+              "resultado": "aplazado",
+              "votos": "unanimidad",
+              "pagina": 10
+            },
+            {
+              "tema": "Votación sobre el gimnasio",
+              "resultado": "aplazado",
+              "votos": "unanimidad",
+              "pagina": 10
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

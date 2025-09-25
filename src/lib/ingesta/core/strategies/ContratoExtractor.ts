@@ -1,74 +1,83 @@
 /**
  * ARCHIVO: ContratoExtractor.ts
- * PROPÓSITO: Estrategia de extracción específica para documentos de tipo Contrato
+ * PROPÓSITO: Extractor específico para documentos tipo Contrato Legal
  * ESTADO: development
- * DEPENDENCIAS: BaseDocumentExtractor, saasAgents
- * OUTPUTS: Procesamiento de metadatos para Contratos
- * ACTUALIZADO: 2025-09-21
+ * DEPENDENCIAS: BaseDocumentExtractor, AgentOrchestrator
+ * OUTPUTS: Datos estructurados de contrato
+ * ACTUALIZADO: 2025-09-24
  */
 
-import { BaseDocumentExtractor, DocumentMetadata } from './BaseDocumentExtractor';
+import { BaseDocumentExtractor, ExtractionResult } from './BaseDocumentExtractor';
+import { callSaaSAgent } from '@/lib/agents/AgentOrchestrator';
 
 export class ContratoExtractor extends BaseDocumentExtractor {
-  constructor() {
-    super({
-      agentName: 'contrato_extractor_v1',
-      saveFunctionName: 'saveExtractedContract',
-      documentType: 'contrato'
-    });
+  getDocumentType(): string {
+    return 'contrato';
   }
 
-  async processMetadata(documentId: string, extractedText: string): Promise<DocumentMetadata> {
-    this.logStart('contrato');
-    
+  getAgentName(): string {
+    return 'contrato_extractor_v1';
+  }
+
+  async extractData(content: string): Promise<ExtractionResult> {
     try {
-      // Import our validated agent system
-      console.log('📦 [DEBUG] Importing saasAgents functions...');
-      const { callSaaSAgent, saveExtractedContract } = await import('@/lib/gemini/saasAgents');
-      console.log('✅ [DEBUG] saasAgents imported successfully');
+      console.log(`[ContratoExtractor] Extrayendo datos de ${this.getDocumentType()}...`);
       
-      this.logTextAnalysis(extractedText);
-      
-      const startTime = Date.now();
-      this.logAgentCall(this.config.agentName);
-      
-      const agentResult = await callSaaSAgent(this.config.agentName, {
-        document_text: extractedText
-      });
-      
-      const processingTime = Date.now() - startTime;
-      this.logAgentResult(agentResult, processingTime);
+      const inputs = {
+        document_content: content,
+        document_type: 'contrato',
+        extraction_mode: 'complete'
+      };
 
-      if (agentResult.success && agentResult.data) {
-        this.logSuccess(this.config.agentName, agentResult.data);
-
-        // Save extracted data to extracted_contracts table
-        this.logSaveAttempt('extracted_contracts');
-        
-        const saveSuccess = await saveExtractedContract(documentId, agentResult.data);
-        
-        if (saveSuccess) {
-          console.log('✅ [DEBUG] Data saved successfully to extracted_contracts table');
-          console.log('🎯 [DEBUG] === CONTRATO PROCESSING COMPLETED SUCCESSFULLY ===\n');
-          
-          return {
-            success: true,
-            data: agentResult.data
-          };
-        } else {
-          throw new Error('Failed to save extracted contrato data to database');
-        }
-      } else {
-        throw new Error(`${this.config.agentName} agent failed: ${agentResult.error || 'Unknown error'}`);
+      const agentResponse = await callSaaSAgent(this.getAgentName(), inputs);
+      
+      if (!agentResponse.success) {
+        console.error(`[ContratoExtractor] Error del agente:`, agentResponse.error);
+        return {
+          success: false,
+          error: agentResponse.error || 'Error desconocido del agente',
+          data: null,
+          processingTime: agentResponse.processingTime || 0
+        };
       }
-    } catch (agentError) {
-      const errorMsg = `❌ ${this.config.agentName.toUpperCase()} ERROR: ${agentError instanceof Error ? agentError.message : 'Error desconocido'}`;
-      console.error(errorMsg);
+
+      // Validar estructura de datos esperada
+      const extractedData = agentResponse.data;
+      if (!this.validateExtractedData(extractedData)) {
+        return {
+          success: false,
+          error: 'Datos extraídos no cumplen estructura esperada',
+          data: null,
+          processingTime: agentResponse.processingTime || 0
+        };
+      }
+
+      console.log(`[ContratoExtractor] Extracción exitosa en ${agentResponse.processingTime}ms`);
       
       return {
+        success: true,
+        data: extractedData,
+        processingTime: agentResponse.processingTime || 0,
+        tokensUsed: agentResponse.tokensUsed || 0
+      };
+
+    } catch (error) {
+      console.error(`[ContratoExtractor] Error durante extracción:`, error);
+      return {
         success: false,
-        error: agentError instanceof Error ? agentError.message : 'Unknown error'
+        error: error instanceof Error ? error.message : 'Error desconocido',
+        data: null,
+        processingTime: 0
       };
     }
+  }
+
+  private validateExtractedData(data: any): boolean {
+    if (!data || typeof data !== 'object') return false;
+    
+    // Validar campos obligatorios según schema
+    const requiredFields = ['titulo_contrato', 'parte_a', 'parte_b', 'objeto_contrato'];
+    
+    return requiredFields.every(field => data.hasOwnProperty(field));
   }
 }

@@ -1,0 +1,214 @@
+{
+  "timestamp": "2025-09-24T18:45:28.973Z",
+  "config": {
+    "target_file": "factura",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "factura": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "factura",
+      "success": true,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "--- Página 1 ---\nem\nelectromercantil\nDistribución Activa Multisectorial\nELECTRO MERCANTIL LEGANÉS D.A.M.,\nRAMON Y CAJAL, N° 15\n28914 LEGANÉS\nMADRID\nN.I.F.: B-87621306\nTEL.: 916 879 106\nEMAIL: leganes@electromercantil.es\nFECHA\n20/05/2019\nPágina 1 de 1\nFACTURA\n850162\nDatos fiscales\nCONTROL Y TENSION SL\nC/ Javier Vicente Montero 2\n28280\nMADRID\nEl Escorial\nC.I.F.:\nB83802850\nCÓDIGO\nAlbarán:\nFecha:\nCliente:\n100\nDESCRIPCIÓN\nS.L.\nMiembro de:\nAUNA\ndistribución\nIMELCO\nInternational Marketing Electrical Corp.\nCONTROL Y TENSIÓN SL\nC/ Cabo Rufino Lázaro 5 Pol. Indust. Európolis\n28230 Las Rozas de Madrid\nMADRID\nREF.PROV.\nCANTIDAD PRECIO UV DTO IMPORTE\nRef. pedido:\nObra:\n1,00\n193,00\n193,00\nGASTOS APLAZAMIENTO Y TIMBRADO ENDOSO\nVENCIMIENTO 05/05/2019\nC Precio x 100 Unidades M Precio x 1000 Unidades\nImporte Bruto\n193,00\nDATOS BANCARIOS\nForma de pago:\nEntidad:\nSucursal:\nCuenta:\nTRANSFERENCIA\nBase Imponible\n193,00\nVENCIMIENTOS\nTOTAL FACTURA\n20/08/2019\n193,00\n193,00€\nES57 2100 8661 09 0200037221\nELECTRO MERCANTIL LEGANES D.A.M., S.L. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306",
+          "metrics": {
+            "duration": 2396,
+            "size": 1113,
+            "method": "google-vision-ocr"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "factura",
+            "confidence": 0.95,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for factura"
+          },
+          "metrics": {
+            "duration": 1,
+            "confidence": 0.95
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "provider_name": "ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+            "client_name": "CONTROL Y TENSION SL",
+            "amount": 193,
+            "invoice_date": "2019-05-20",
+            "category": "comercial",
+            "invoice_number": "850162",
+            "issue_date": "2019-05-20",
+            "due_date": "2019-08-20",
+            "subtotal": 193,
+            "tax_amount": null,
+            "total_amount": 193,
+            "currency": "€",
+            "payment_method": "TRANSFERENCIA",
+            "vendor_address": "RAMON Y CAJAL, N° 15\n28914 LEGANÉS\nMADRID",
+            "vendor_tax_id": "B-87621306",
+            "vendor_phone": "916 879 106",
+            "vendor_email": "leganes@electromercantil.es",
+            "client_address": "C/ Cabo Rufino Lázaro 5 Pol. Indust. Európolis\n28230 Las Rozas de Madrid\nMADRID",
+            "client_tax_id": "B83802850",
+            "client_phone": null,
+            "client_email": null,
+            "products_summary": "GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO",
+            "products_count": 1,
+            "products": [
+              "GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO"
+            ],
+            "payment_terms": null,
+            "notes": null,
+            "bank_details": "ES57 2100 8661 09 0200037221"
+          },
+          "metrics": {
+            "duration": 8716,
+            "fields_count": 27
+          }
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "provider_name": "ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+              "client_name": "CONTROL Y TENSION SL",
+              "amount": 193,
+              "invoice_date": "2019-05-20",
+              "category": "comercial",
+              "invoice_number": "850162",
+              "issue_date": "2019-05-20",
+              "due_date": "2019-08-20",
+              "subtotal": 193,
+              "tax_amount": null,
+              "total_amount": 193,
+              "currency": "€",
+              "payment_method": "TRANSFERENCIA",
+              "vendor_address": "RAMON Y CAJAL, N° 15\n28914 LEGANÉS\nMADRID",
+              "vendor_tax_id": "B-87621306",
+              "vendor_phone": "916 879 106",
+              "vendor_email": "leganes@electromercantil.es",
+              "client_address": "C/ Cabo Rufino Lázaro 5 Pol. Indust. Európolis\n28230 Las Rozas de Madrid\nMADRID",
+              "client_tax_id": "B83802850",
+              "client_phone": null,
+              "client_email": null,
+              "products_summary": "GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO",
+              "products_count": 1,
+              "products": [
+                "GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO"
+              ],
+              "payment_terms": null,
+              "notes": null,
+              "bank_details": "ES57 2100 8661 09 0200037221"
+            }
+          },
+          "metrics": {
+            "duration": 3
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 100,
+            "missingFields": [],
+            "extraFields": [
+              "amount",
+              "category",
+              "issue_date",
+              "products"
+            ]
+          },
+          "metrics": {
+            "duration": 1,
+            "compatibility_score": 100
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 31
+          },
+          "metrics": {
+            "duration": 1
+          }
+        }
+      },
+      "total_time": 11120,
+      "document_type": "factura",
+      "extracted_data": {
+        "provider_name": "ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+        "client_name": "CONTROL Y TENSION SL",
+        "amount": 193,
+        "invoice_date": "2019-05-20",
+        "category": "comercial",
+        "invoice_number": "850162",
+        "issue_date": "2019-05-20",
+        "due_date": "2019-08-20",
+        "subtotal": 193,
+        "tax_amount": null,
+        "total_amount": 193,
+        "currency": "€",
+        "payment_method": "TRANSFERENCIA",
+        "vendor_address": "RAMON Y CAJAL, N° 15\n28914 LEGANÉS\nMADRID",
+        "vendor_tax_id": "B-87621306",
+        "vendor_phone": "916 879 106",
+        "vendor_email": "leganes@electromercantil.es",
+        "client_address": "C/ Cabo Rufino Lázaro 5 Pol. Indust. Európolis\n28230 Las Rozas de Madrid\nMADRID",
+        "client_tax_id": "B83802850",
+        "client_phone": null,
+        "client_email": null,
+        "products_summary": "GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO",
+        "products_count": 1,
+        "products": [
+          "GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO"
+        ],
+        "payment_terms": null,
+        "notes": null,
+        "bank_details": "ES57 2100 8661 09 0200037221"
+      }
+    }
+  ]
+}

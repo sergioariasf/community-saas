@@ -1,0 +1,403 @@
+{
+  "timestamp": "2025-09-24T18:46:35.983Z",
+  "config": {
+    "target_file": "ACTA 19 MAYO 2022",
+    "steps_executed": [
+      4
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "acta": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "ACTA 19 MAYO 2022",
+      "success": true,
+      "steps_executed": [
+        4
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": false
+        },
+        "step2_classification": {
+          "success": false
+        },
+        "step3_metadata": {
+          "success": false
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "document_date": "2022-05-19",
+              "tipo_reunion": "extraordinaria",
+              "lugar": "hotel Attica 2 (Calle Chile, 2 en las Rozas)",
+              "comunidad_nombre": "C.P. Amara Homes",
+              "president_in": "Carlos Sánchez Pérez",
+              "president_out": "Camilo J. Fernández Hernández",
+              "administrator": "ASEGRAMAR",
+              "summary": "Junta Extraordinaria para la elección de nuevo administrador. Se aprueba la dimisión del presidente Camilo J. Fernández Hernández y se nombra a Carlos Sánchez Pérez como nuevo presidente. Tras las presentaciones de Activa, Zarate, Asegramar y Tu Abogado Vecino (ausente), se elige a Asegramar como nuevo administrador. Se tratan incidencias con Neinor, normativa interna (aplazando su aprobación), toldos y cerramientos, y presupuesto para gimnasio (aplazando la votación).",
+              "decisions": "1. Aprobación de la dimisión del presidente Camilo J. Fernández Hernández. 2. Nombramiento de Carlos Sánchez Pérez como nuevo presidente. 3. Elección de ASEGRAMAR como nuevo administrador de la comunidad. 4. Aprobación de los puntos sobre cerramientos de tendederos y terrazas. 5. Aprobación del color gris (R-114 o Sauleda 2821 Silver) para los toldos. 6. Aplazamiento de la votación sobre el presupuesto del gimnasio y otros puntos del orden del día que requerían votación nominativa.",
+              "orden_del_dia": [
+                "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+                "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+                "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+                "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+                "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+                "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE."
+              ],
+              "acuerdos": [
+                "Se acepta la dimisión de Camilo José Fernández Hernández como presidente. Se nombra a Carlos Sánchez Pérez como nuevo presidente. Se elige a Asegramar como nuevo administrador. Se aprueban las especificaciones para los cerramientos de tendederos y terrazas. Se aprueba el color gris para los toldos. Se aplaza la votación sobre el presupuesto del gimnasio y otros puntos del orden del día."
+              ],
+              "topic_keywords": [
+                "administrador",
+                "Neinor",
+                "toldos",
+                "cerramientos",
+                "normativa interna",
+                "gimnasio",
+                "incidencias",
+                "presupuesto",
+                "votación",
+                "humedades",
+                "seguridad"
+              ],
+              "topic_presupuesto": true,
+              "topic_mantenimiento": true,
+              "topic_administracion": true,
+              "topic_piscina": true,
+              "topic_jardin": true,
+              "topic_limpieza": true,
+              "topic_balance": false,
+              "topic_paqueteria": false,
+              "topic_energia": true,
+              "topic_normativa": true,
+              "topic_proveedor": true,
+              "topic_dinero": true,
+              "topic_ascensor": false,
+              "topic_incendios": false,
+              "topic_porteria": false,
+              "estructura_detectada": {
+                "quorum_alcanzado": true,
+                "propietarios_totales": null,
+                "capitulos": [
+                  {
+                    "numero": 1,
+                    "titulo": "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 2,
+                    "titulo": "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+                    "pagina": 2,
+                    "subsecciones": [
+                      {
+                        "titulo": "ACTIVA",
+                        "pagina": 2
+                      },
+                      {
+                        "titulo": "ZARATE",
+                        "pagina": 3
+                      },
+                      {
+                        "titulo": "ASEGRAMAR",
+                        "pagina": 4
+                      },
+                      {
+                        "titulo": "TU ABOGADO VECINO",
+                        "pagina": 5
+                      },
+                      {
+                        "titulo": "INMHO",
+                        "pagina": 5
+                      }
+                    ]
+                  },
+                  {
+                    "numero": 3,
+                    "titulo": "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+                    "pagina": 6,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 4,
+                    "titulo": "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+                    "pagina": 7,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 5,
+                    "titulo": "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+                    "pagina": 8,
+                    "subsecciones": [
+                      {
+                        "titulo": "CERRAMIENTOS DE TENDEDEROS Y TERRAZAS",
+                        "pagina": 8
+                      },
+                      {
+                        "titulo": "TOLDOS",
+                        "pagina": 9
+                      }
+                    ]
+                  },
+                  {
+                    "numero": 6,
+                    "titulo": "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE.",
+                    "pagina": 10,
+                    "subsecciones": []
+                  }
+                ],
+                "total_paginas": 10,
+                "votaciones": [
+                  {
+                    "tema": "Dimisión del presidente Camilo J. Fernández Hernández",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 2
+                  },
+                  {
+                    "tema": "Nombramiento de Carlos Sánchez Pérez como nuevo presidente",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 2
+                  },
+                  {
+                    "tema": "Elección de ASEGRAMAR como nuevo administrador",
+                    "resultado": "aprobado",
+                    "votos": "mayoría cualificada",
+                    "pagina": 6
+                  },
+                  {
+                    "tema": "Incluir problemas o defectos particulares como comunitarios",
+                    "resultado": "aprobado",
+                    "votos": "mayoría absoluta",
+                    "pagina": 7
+                  },
+                  {
+                    "tema": "Especificaciones para cerramientos de tendederos y terrazas",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 9
+                  },
+                  {
+                    "tema": "Color gris (R-114 o Sauleda 2821 Silver) para los toldos",
+                    "resultado": "aprobado",
+                    "votos": "mayoría",
+                    "pagina": 9
+                  },
+                  {
+                    "tema": "Presupuesto del gimnasio",
+                    "resultado": "aplazado",
+                    "votos": "unanimidad",
+                    "pagina": 10
+                  }
+                ]
+              }
+            }
+          },
+          "metrics": {
+            "duration": 3
+          }
+        },
+        "step5_template_compatibility": {
+          "success": false
+        },
+        "step6_schema_validation": {
+          "success": false
+        }
+      },
+      "total_time": 14646,
+      "document_type": "acta",
+      "extracted_data": {
+        "document_date": "2022-05-19",
+        "tipo_reunion": "extraordinaria",
+        "lugar": "hotel Attica 2 (Calle Chile, 2 en las Rozas)",
+        "comunidad_nombre": "C.P. Amara Homes",
+        "president_in": "Carlos Sánchez Pérez",
+        "president_out": "Camilo J. Fernández Hernández",
+        "administrator": "ASEGRAMAR",
+        "summary": "Junta Extraordinaria para la elección de nuevo administrador. Se aprueba la dimisión del presidente Camilo J. Fernández Hernández y se nombra a Carlos Sánchez Pérez como nuevo presidente. Tras las presentaciones de Activa, Zarate, Asegramar y Tu Abogado Vecino (ausente), se elige a Asegramar como nuevo administrador. Se tratan incidencias con Neinor, normativa interna (aplazando su aprobación), toldos y cerramientos, y presupuesto para gimnasio (aplazando la votación).",
+        "decisions": "1. Aprobación de la dimisión del presidente Camilo J. Fernández Hernández. 2. Nombramiento de Carlos Sánchez Pérez como nuevo presidente. 3. Elección de ASEGRAMAR como nuevo administrador de la comunidad. 4. Aprobación de los puntos sobre cerramientos de tendederos y terrazas. 5. Aprobación del color gris (R-114 o Sauleda 2821 Silver) para los toldos. 6. Aplazamiento de la votación sobre el presupuesto del gimnasio y otros puntos del orden del día que requerían votación nominativa.",
+        "orden_del_dia": [
+          "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+          "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+          "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+          "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+          "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+          "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE."
+        ],
+        "acuerdos": [
+          "Se acepta la dimisión de Camilo José Fernández Hernández como presidente. Se nombra a Carlos Sánchez Pérez como nuevo presidente. Se elige a Asegramar como nuevo administrador. Se aprueban las especificaciones para los cerramientos de tendederos y terrazas. Se aprueba el color gris para los toldos. Se aplaza la votación sobre el presupuesto del gimnasio y otros puntos del orden del día."
+        ],
+        "topic_keywords": [
+          "administrador",
+          "Neinor",
+          "toldos",
+          "cerramientos",
+          "normativa interna",
+          "gimnasio",
+          "incidencias",
+          "presupuesto",
+          "votación",
+          "humedades",
+          "seguridad"
+        ],
+        "topic_presupuesto": true,
+        "topic_mantenimiento": true,
+        "topic_administracion": true,
+        "topic_piscina": true,
+        "topic_jardin": true,
+        "topic_limpieza": true,
+        "topic_balance": false,
+        "topic_paqueteria": false,
+        "topic_energia": true,
+        "topic_normativa": true,
+        "topic_proveedor": true,
+        "topic_dinero": true,
+        "topic_ascensor": false,
+        "topic_incendios": false,
+        "topic_porteria": false,
+        "estructura_detectada": {
+          "quorum_alcanzado": true,
+          "propietarios_totales": null,
+          "capitulos": [
+            {
+              "numero": 1,
+              "titulo": "PROPUESTA CAMBIO DE PRESIDENTE. APROBACIÓN SI PROCEDE.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 2,
+              "titulo": "PRESENTACIÓN DE OPCIONES Y VOTACIÓN DE NUEVO ADMINISTRADOR.",
+              "pagina": 2,
+              "subsecciones": [
+                {
+                  "titulo": "ACTIVA",
+                  "pagina": 2
+                },
+                {
+                  "titulo": "ZARATE",
+                  "pagina": 3
+                },
+                {
+                  "titulo": "ASEGRAMAR",
+                  "pagina": 4
+                },
+                {
+                  "titulo": "TU ABOGADO VECINO",
+                  "pagina": 5
+                },
+                {
+                  "titulo": "INMHO",
+                  "pagina": 5
+                }
+              ]
+            },
+            {
+              "numero": 3,
+              "titulo": "SEGUIMIENTO INCIDENCIAS CON NEINOR; EXPOSICIÓN DE SITUACIÓN Y AVANCES.",
+              "pagina": 6,
+              "subsecciones": []
+            },
+            {
+              "numero": 4,
+              "titulo": "APROBACIÓN DE NORMATIVA INTERNA. VOTACIÓN SI PROCEDE.",
+              "pagina": 7,
+              "subsecciones": []
+            },
+            {
+              "numero": 5,
+              "titulo": "TOLDOS Y CERRAMIENTOS; PRESENTACIÓN DE OPCIONES DE PÉRGOLAS/CERRAMIENTOS TRAS REUNIÓN CON LA TÉCNICO MUNICIPAL, VOTACIÓN SOBRE COLOR DE TOLDOS TRAS NUEVA GESTIÓN DE COMISIÓN",
+              "pagina": 8,
+              "subsecciones": [
+                {
+                  "titulo": "CERRAMIENTOS DE TENDEDEROS Y TERRAZAS",
+                  "pagina": 8
+                },
+                {
+                  "titulo": "TOLDOS",
+                  "pagina": 9
+                }
+              ]
+            },
+            {
+              "numero": 6,
+              "titulo": "GIMNASIO: PRESENTACIÓN DE PRESUPUESTOS. VOTACIÓN SI PROCEDE.",
+              "pagina": 10,
+              "subsecciones": []
+            }
+          ],
+          "total_paginas": 10,
+          "votaciones": [
+            {
+              "tema": "Dimisión del presidente Camilo J. Fernández Hernández",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 2
+            },
+            {
+              "tema": "Nombramiento de Carlos Sánchez Pérez como nuevo presidente",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 2
+            },
+            {
+              "tema": "Elección de ASEGRAMAR como nuevo administrador",
+              "resultado": "aprobado",
+              "votos": "mayoría cualificada",
+              "pagina": 6
+            },
+            {
+              "tema": "Incluir problemas o defectos particulares como comunitarios",
+              "resultado": "aprobado",
+              "votos": "mayoría absoluta",
+              "pagina": 7
+            },
+            {
+              "tema": "Especificaciones para cerramientos de tendederos y terrazas",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 9
+            },
+            {
+              "tema": "Color gris (R-114 o Sauleda 2821 Silver) para los toldos",
+              "resultado": "aprobado",
+              "votos": "mayoría",
+              "pagina": 9
+            },
+            {
+              "tema": "Presupuesto del gimnasio",
+              "resultado": "aplazado",
+              "votos": "unanimidad",
+              "pagina": 10
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

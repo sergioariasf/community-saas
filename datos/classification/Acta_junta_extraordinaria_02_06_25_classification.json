@@ -1,0 +1,18 @@
+{
+  "original_file": "Acta junta extraordinaria 02.06.25.pdf",
+  "base_filename": "Acta_junta_extraordinaria_02_06_25",
+  "extraction_method": "google-vision-ocr",
+  "classification": {
+    "document_type": "acta",
+    "confidence": 0.95,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for acta",
+    "processing_time": 0
+  },
+  "text_info": {
+    "length": 49803,
+    "pages": 20
+  },
+  "generated_at": "2025-09-22T10:09:35.131Z",
+  "tool": "test-classification-real.ts"
+}

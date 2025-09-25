@@ -12,6 +12,9 @@ import { getDocumentTemplate, getTemplateMetadata, type DocumentType } from './t
 import { Badge } from '@/components/ui/badge';
 import { T } from '@/components/ui/Typography';
 
+// ELIMINADO HARDCODING: Import auto-discovery configuration
+import { getDocumentTypeConfig } from '@/lib/ingesta/core/schemaBasedConfig';
+
 // Tipos de datos específicos por documento (importados de la fuente principal)
 import type { ExtractedMinutes, ExtractedInvoice } from '@/data/anon/documents';
 
@@ -31,6 +34,65 @@ interface DocumentDetailRendererProps {
   processingTime?: number;
   tokensUsed?: number;
   showTemplateInfo?: boolean; // Para mostrar info de debug de la plantilla
+}
+
+// ELIMINADO HARDCODING: Helper functions for dynamic rendering
+function generateDefaultExtractorName(documentType: string): string {
+  const config = getDocumentTypeConfig(documentType);
+  return config?.agentName || `${documentType}_extractor_v1`;
+}
+
+function generateDynamicProps(documentType: string, specificData: any): any {
+  if (!specificData) return {};
+  
+  // Generate dynamic props based on document type conventions
+  const propName = `${documentType}Data`;
+  return { [propName]: specificData };
+}
+
+function generateDynamicMetadata(documentType: string, specificData: any, originalMetadata: any): any {
+  const baseMetadata = { ...(originalMetadata || {}) };
+  
+  if (!specificData) return baseMetadata;
+
+  // For acta type, handle special topic field mapping
+  if (documentType === 'acta' && specificData) {
+    const actaData = specificData as ExtractedMinutes;
+    return {
+      ...baseMetadata,
+      // Basic fields
+      document_date: actaData.document_date,
+      tipo_reunion: actaData.tipo_reunion,
+      lugar: actaData.lugar,
+      comunidad_nombre: actaData.comunidad_nombre,
+      orden_del_dia: actaData.orden_del_dia || [],
+      acuerdos: actaData.acuerdos || [],
+      topic_keywords: actaData.topic_keywords || [],
+      estructura_detectada: actaData.estructura_detectada || {},
+      // Topic fields with dash format for UI compatibility
+      'topic-presupuesto': actaData.topic_presupuesto,
+      'topic-mantenimiento': actaData.topic_mantenimiento,
+      'topic-administracion': actaData.topic_administracion,
+      'topic-piscina': actaData.topic_piscina,
+      'topic-jardin': actaData.topic_jardin,
+      'topic-limpieza': actaData.topic_limpieza,
+      'topic-balance': actaData.topic_balance,
+      'topic-paqueteria': actaData.topic_paqueteria,
+      'topic-energia': actaData.topic_energia,
+      'topic-normativa': actaData.topic_normativa,
+      'topic-proveedor': actaData.topic_proveedor,
+      'topic-dinero': actaData.topic_dinero,
+      'topic-ascensor': actaData.topic_ascensor,
+      'topic-incendios': actaData.topic_incendios,
+      'topic-porteria': actaData.topic_porteria,
+    };
+  }
+
+  // For other document types, return base metadata + specific data
+  return {
+    ...baseMetadata,
+    ...specificData
+  };
 }
 
 export function DocumentDetailRenderer({
@@ -80,72 +142,17 @@ export function DocumentDetailRenderer({
         </div>
       )}
 
-      {/* Renderizar plantilla seleccionada */}
-      {documentType === 'acta' && specificData ? (
-        // Para actas con datos reales, usar los datos de extracted_minutes
-        <TemplateComponent
-          documentType={documentType}
-          specificData={specificData}
-          actaData={specificData as ExtractedMinutes}
-          metadata={{
-            ...(metadata || {}),
-            // Campos básicos
-            document_date: (specificData as ExtractedMinutes).document_date,
-            tipo_reunion: (specificData as ExtractedMinutes).tipo_reunion,
-            lugar: (specificData as ExtractedMinutes).lugar,
-            comunidad_nombre: (specificData as ExtractedMinutes).comunidad_nombre,
-            orden_del_dia: (specificData as ExtractedMinutes).orden_del_dia || [],
-            acuerdos: (specificData as ExtractedMinutes).acuerdos || [],
-            topic_keywords: (specificData as ExtractedMinutes).topic_keywords || [],
-            estructura_detectada: (specificData as ExtractedMinutes).estructura_detectada || {},
-            // Temas con guiones
-            'topic-presupuesto': (specificData as ExtractedMinutes).topic_presupuesto,
-            'topic-mantenimiento': (specificData as ExtractedMinutes).topic_mantenimiento,
-            'topic-administracion': (specificData as ExtractedMinutes).topic_administracion,
-            'topic-piscina': (specificData as ExtractedMinutes).topic_piscina,
-            'topic-jardin': (specificData as ExtractedMinutes).topic_jardin,
-            'topic-limpieza': (specificData as ExtractedMinutes).topic_limpieza,
-            'topic-balance': (specificData as ExtractedMinutes).topic_balance,
-            'topic-paqueteria': (specificData as ExtractedMinutes).topic_paqueteria,
-            'topic-energia': (specificData as ExtractedMinutes).topic_energia,
-            'topic-normativa': (specificData as ExtractedMinutes).topic_normativa,
-            'topic-proveedor': (specificData as ExtractedMinutes).topic_proveedor,
-            'topic-dinero': (specificData as ExtractedMinutes).topic_dinero,
-            'topic-ascensor': (specificData as ExtractedMinutes).topic_ascensor,
-            'topic-incendios': (specificData as ExtractedMinutes).topic_incendios,
-            'topic-porteria': (specificData as ExtractedMinutes).topic_porteria,
-          }}
-          confidence={confidence}
-          extractionMethod={extractionMethod || 'acta_extractor_v2'}
-          processingTime={processingTime}
-          tokensUsed={tokensUsed}
-        />
-      ) : documentType === 'comunicado' && specificData ? (
-        // Para comunicados con datos reales, usar los datos de extracted_communications
-        <TemplateComponent
-          documentType={documentType}
-          specificData={specificData}
-          comunicadoData={specificData}
-          confidence={confidence}
-          extractionMethod={extractionMethod || 'comunicado_extractor_v1'}
-          processingTime={processingTime}
-          tokensUsed={tokensUsed}
-        />
-      ) : (
-        // Para otros tipos o sin datos específicos, usar el método original
-        <TemplateComponent
-          documentType={documentType}
-          specificData={specificData}
-          metadata={metadata}
-          confidence={confidence}
-          extractionMethod={extractionMethod}
-          processingTime={processingTime}
-          tokensUsed={tokensUsed}
-          {...(documentType === 'factura' && specificData ? {
-            facturaData: specificData as ExtractedInvoice
-          } : {})}
-        />
-      )}
+      {/* ELIMINADO HARDCODING: Renderizado dinámico basado en schema */}
+      <TemplateComponent
+        documentType={documentType}
+        specificData={specificData}
+        metadata={generateDynamicMetadata(documentType, specificData, metadata)}
+        confidence={confidence}
+        extractionMethod={extractionMethod || generateDefaultExtractorName(documentType)}
+        processingTime={processingTime}
+        tokensUsed={tokensUsed}
+        {...generateDynamicProps(documentType, specificData)}
+      />
     </div>
   );
 }

@@ -14,3 +14,5 @@ export { ComunicadoExtractor } from './ComunicadoExtractor';
 export { FacturaExtractor } from './FacturaExtractor';
 export { ContratoExtractor } from './ContratoExtractor';
 export { DocumentExtractorFactory } from './DocumentExtractorFactory';
+export { DocumentClassifier } from './DocumentClassifier';
+export type { ClassificationResult } from './DocumentClassifier';

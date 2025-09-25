@@ -1,0 +1,40 @@
+{
+  "filename": "Comunicado- INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. _AMARA HOMES_.pdf",
+  "document_type": "comunicado",
+  "success": true,
+  "extracted_data": {
+    "fecha": "2025-04-07",
+    "comunidad": "AMARA HOMES",
+    "remitente": "Beltrán y Romera, S.L. U.",
+    "resumen": "Los contadores de lectura de SunFlower se están rompiendo.  Se adjunta un documento sobre los contadores de energía realizado por un vecino.  Se pide a los vecinos que estén pendientes del email y la aplicación de SF para cambios de contador.",
+    "category": "mantenimiento",
+    "asunto": "INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. \"AMARA HOMES\"",
+    "tipo_comunicado": "aviso",
+    "urgencia": "media",
+    "comunidad_direccion": null,
+    "remitente_cargo": null,
+    "destinatarios": [
+      "rebeca@beltranyromera.com"
+    ],
+    "fecha_limite": null,
+    "categoria_comunicado": "avería contadores",
+    "requiere_respuesta": false,
+    "accion_requerida": [
+      "Estar pendientes del email y la aplicación de SF",
+      "Cambiar el contador lo antes posible si se indica"
+    ],
+    "anexos": [
+      "CONTADORES DE ENERGIěA.pdf"
+    ],
+    "contacto_info": {
+      "telefono": "91-815.22.56",
+      "email": "amarahomes.cp@gmail.com",
+      "horario_atencion": "de lunes a jueves de 9-14h y de 17-20h y los viernes de 8-15h. LOS PRÓXIMOS DÍAS 14, 15 Y 16 DE ABRIL EL HORARIO DE OFICINA SERÁ DE 8 A 15H."
+    }
+  },
+  "processing_time": 1224,
+  "error": null,
+  "extractor_used": "ComunicadoExtractor",
+  "generated_at": "2025-09-22T18:59:16.814Z",
+  "tool": "test-metadata-extraction-only.ts"
+}

@@ -1,0 +1,11 @@
+{
+  "filename": "presupuesto.pdf",
+  "document_type": "presupuesto",
+  "success": false,
+  "extracted_data": null,
+  "processing_time": 0,
+  "error": "Unsupported document type: presupuesto",
+  "extractor_used": "error",
+  "generated_at": "2025-09-22T18:59:58.515Z",
+  "tool": "test-metadata-extraction-only.ts"
+}

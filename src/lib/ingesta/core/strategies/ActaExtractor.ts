@@ -18,7 +18,7 @@ export class ActaExtractor extends BaseDocumentExtractor {
     });
   }
 
-  async processMetadata(documentId: string, extractedText: string): Promise<DocumentMetadata> {
+  async processMetadata(documentId: string, extractedText: string, testMode: boolean = false): Promise<DocumentMetadata> {
     this.logStart('acta');
     
     try {
@@ -34,7 +34,7 @@ export class ActaExtractor extends BaseDocumentExtractor {
       
       const agentResult = await callSaaSAgent(this.config.agentName, {
         document_text: extractedText
-      });
+      }, true); // Use service client for tests
       
       const processingTime = Date.now() - startTime;
       this.logAgentResult(agentResult, processingTime);
@@ -42,10 +42,21 @@ export class ActaExtractor extends BaseDocumentExtractor {
       if (agentResult.success && agentResult.data) {
         this.logSuccess(this.config.agentName, agentResult.data);
 
-        // Save extracted data to extracted_minutes table
+        // En modo test, no guardamos en BD
+        if (testMode) {
+          console.log('🧪 [DEBUG] Test mode - skipping database save');
+          console.log('🎯 [DEBUG] === ACTA PROCESSING COMPLETED (TEST MODE) ===\n');
+          
+          return {
+            success: true,
+            data: agentResult.data
+          };
+        }
+
+        // Save extracted data to extracted_minutes table (solo en producción)
         this.logSaveAttempt('extracted_minutes');
         
-        const saveSuccess = await saveExtractedMinutes(documentId, agentResult.data);
+        const saveSuccess = await saveExtractedMinutes(documentId, agentResult.data, true); // Use service client for tests
         
         if (saveSuccess) {
           console.log('✅ [DEBUG] Data saved successfully to extracted_minutes table');

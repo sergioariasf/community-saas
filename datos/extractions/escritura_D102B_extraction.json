@@ -1,0 +1,11 @@
+{
+  "filename": "escritura_D102B.pdf",
+  "document_type": "escritura",
+  "success": false,
+  "extracted_data": null,
+  "processing_time": 24135,
+  "error": "Agent returned no data",
+  "extractor_used": "error",
+  "generated_at": "2025-09-22T18:59:58.514Z",
+  "tool": "test-metadata-extraction-only.ts"
+}

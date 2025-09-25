@@ -1,8 +1,23 @@
-'use server';
+/**
+ * ARCHIVO: saasAgents.ts  
+ * PROPÓSITO: Funciones legacy y re-exports para compatibilidad
+ * ESTADO: refactored
+ * DEPENDENCIAS: AgentOrchestrator, persistence modules
+ * OUTPUTS: Funciones compatibles con extractors existentes
+ * ACTUALIZADO: 2025-09-23
+ */
 
+// === NUEVA ARQUITECTURA MODULAR ===
+// Funciones principales migradas a src/lib/agents/
+export { callSaaSAgent } from '../agents/AgentOrchestrator';
+export { saveExtractedMinutes, saveCompleteActaMetadata } from '../agents/persistence/ActaPersistence';
+export { saveExtractedEscritura, saveExtractedPropertyDeed } from '../agents/persistence/EscrituraPersistence';
+
+// === FUNCIONES LEGACY (mantener temporalmente) ===
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { createSupabaseClient, createSupabaseServiceClient } from '@/supabase-clients/server';
 import { getGeminiConfigForAgent, TIMEOUT_CONFIG } from '../ingesta/config/agentConfig';
+import { validateDate, validateNumber } from '../agents/validation/BaseValidator';
 
 /**
  * Integración con agentes SaaS usando Gemini Flash 1.5
@@ -45,7 +60,9 @@ function getGeminiClient(): GoogleGenerativeAI {
 /**
  * Llama a un agente SaaS específico con texto de documento
  */
-export async function callSaaSAgent(
+// MIGRADO: Esta función se movió a AgentOrchestrator.ts
+// export async function callSaaSAgent(
+async function callSaaSAgentLegacy(
   agentName: string, 
   inputs: Record<string, any>,
   useServiceClient = false
@@ -355,7 +372,7 @@ function validateMinutesData(data: any): any {
     decisions: typeof data.decisions === 'string' ? data.decisions.trim() || null : null,
     
     // Campos nuevos para plantilla UI
-    document_date: validateDate(data.document_date),
+    document_date: validateDateLegacy(data.document_date),
     tipo_reunion: validateTipoReunion(data.tipo_reunion),
     lugar: typeof data.lugar === 'string' ? data.lugar.trim() || null : null,
     comunidad_nombre: typeof data.comunidad_nombre === 'string' ? data.comunidad_nombre.trim() || null : null,
@@ -430,16 +447,16 @@ function validateInvoiceData(data: any): any {
     provider_name: typeof data.provider_name === 'string' ? data.provider_name.trim() || null : null,
     client_name: typeof data.client_name === 'string' ? data.client_name.trim() || null : null,
     amount: typeof data.amount === 'number' ? data.amount : parseFloat(data.amount) || null,
-    invoice_date: validateDate(data.invoice_date),
+    invoice_date: validateDateLegacy(data.invoice_date),
     category: typeof data.category === 'string' ? data.category.trim() || null : null,
     
     // Campos adicionales para plantilla rica
     invoice_number: typeof data.invoice_number === 'string' ? data.invoice_number.trim() || null : null,
-    issue_date: validateDate(data.issue_date),
-    due_date: validateDate(data.due_date),
-    subtotal: validateNumber(data.subtotal),
-    tax_amount: validateNumber(data.tax_amount),
-    total_amount: validateNumber(data.total_amount),
+    issue_date: validateDateLegacy(data.issue_date),
+    due_date: validateDateLegacy(data.due_date),
+    subtotal: validateNumberLegacy(data.subtotal),
+    tax_amount: validateNumberLegacy(data.tax_amount),
+    total_amount: validateNumberLegacy(data.total_amount),
     currency: typeof data.currency === 'string' ? data.currency.trim() || null : null,
     payment_method: typeof data.payment_method === 'string' ? data.payment_method.trim() || null : null,
     
@@ -466,9 +483,9 @@ function validateInvoiceData(data: any): any {
 }
 
 /**
- * Valida y convierte fechas
+ * Valida y convierte fechas (función legacy local)
  */
-function validateDate(dateStr: any): string | null {
+function validateDateLegacy(dateStr: any): string | null {
   if (typeof dateStr !== 'string') return null;
   
   try {
@@ -487,7 +504,8 @@ function validateDate(dateStr: any): string | null {
 /**
  * Guarda metadatos completos de actas en document_metadata (para nueva estructura)
  */
-export async function saveCompleteActaMetadata(documentId: string, data: any): Promise<boolean> {
+// MIGRADO: saveCompleteActaMetadata -> ActaPersistence.ts
+async function saveCompleteActaMetadataLegacy(documentId: string, data: any): Promise<boolean> {
   try {
     const supabase = await createSupabaseClient();
     
@@ -534,7 +552,8 @@ export async function saveCompleteActaMetadata(documentId: string, data: any): P
 /**
  * Guarda datos extraídos de actas en la base de datos (versión simple para compatibilidad)
  */
-export async function saveExtractedMinutes(documentId: string, data: any, useServiceClient = false): Promise<boolean> {
+// MIGRADO: saveExtractedMinutes -> ActaPersistence.ts  
+async function saveExtractedMinutesLegacy(documentId: string, data: any, useServiceClient = false): Promise<boolean> {
   try {
     const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
     
@@ -576,7 +595,7 @@ export async function saveExtractedMinutes(documentId: string, data: any, useSer
  */
 function validateComunicadoData(data: any): any {
   return {
-    fecha: validateDate(data.fecha),
+    fecha: validateDateLegacy(data.fecha),
     comunidad: typeof data.comunidad === 'string' ? data.comunidad.trim() || null : null,
     remitente: typeof data.remitente === 'string' ? data.remitente.trim() || null : null,
     resumen: typeof data.resumen === 'string' ? data.resumen.trim() || null : null,
@@ -587,7 +606,7 @@ function validateComunicadoData(data: any): any {
     comunidad_direccion: typeof data.comunidad_direccion === 'string' ? data.comunidad_direccion.trim() || null : null,
     remitente_cargo: typeof data.remitente_cargo === 'string' ? data.remitente_cargo.trim() || null : null,
     destinatarios: Array.isArray(data.destinatarios) ? data.destinatarios : [],
-    fecha_limite: validateDate(data.fecha_limite),
+    fecha_limite: validateDateLegacy(data.fecha_limite),
     categoria_comunicado: typeof data.categoria_comunicado === 'string' ? data.categoria_comunicado.trim() || null : null,
     requiere_respuesta: typeof data.requiere_respuesta === 'boolean' ? data.requiere_respuesta : false,
     accion_requerida: Array.isArray(data.accion_requerida) ? data.accion_requerida : [],
@@ -604,7 +623,7 @@ function validateAlbaranData(data: any): any {
     emisor_name: typeof data.emisor_name === 'string' ? data.emisor_name.trim() || null : null,
     receptor_name: typeof data.receptor_name === 'string' ? data.receptor_name.trim() || null : null,
     numero_albaran: typeof data.numero_albaran === 'string' ? data.numero_albaran.trim() || null : null,
-    fecha_emision: validateDate(data.fecha_emision),
+    fecha_emision: validateDateLegacy(data.fecha_emision),
     numero_pedido: typeof data.numero_pedido === 'string' ? data.numero_pedido.trim() || null : null,
     category: typeof data.category === 'string' ? data.category.trim() || null : null,
     emisor_direccion: typeof data.emisor_direccion === 'string' ? data.emisor_direccion.trim() || null : null,
@@ -613,8 +632,8 @@ function validateAlbaranData(data: any): any {
     receptor_direccion: typeof data.receptor_direccion === 'string' ? data.receptor_direccion.trim() || null : null,
     receptor_telefono: typeof data.receptor_telefono === 'string' ? data.receptor_telefono.trim() || null : null,
     mercancia: Array.isArray(data.mercancia) ? data.mercancia : [],
-    cantidad_total: validateNumber(data.cantidad_total),
-    peso_total: validateNumber(data.peso_total),
+    cantidad_total: validateNumberLegacy(data.cantidad_total),
+    peso_total: validateNumberLegacy(data.peso_total),
     observaciones: typeof data.observaciones === 'string' ? data.observaciones.trim() || null : null,
     estado_entrega: typeof data.estado_entrega === 'string' ? data.estado_entrega.trim() || null : null,
     firma_receptor: typeof data.firma_receptor === 'boolean' ? data.firma_receptor : false,
@@ -633,9 +652,9 @@ function validateContratoData(data: any): any {
     parte_b: typeof data.parte_b === 'string' ? data.parte_b.trim() || null : null,
     objeto_contrato: typeof data.objeto_contrato === 'string' ? data.objeto_contrato.trim() || null : null,
     duracion: typeof data.duracion === 'string' ? data.duracion.trim() || null : null,
-    importe_total: validateNumber(data.importe_total),
-    fecha_inicio: validateDate(data.fecha_inicio),
-    fecha_fin: validateDate(data.fecha_fin),
+    importe_total: validateNumberLegacy(data.importe_total),
+    fecha_inicio: validateDateLegacy(data.fecha_inicio),
+    fecha_fin: validateDateLegacy(data.fecha_fin),
     category: typeof data.category === 'string' ? data.category.trim() || null : null,
     tipo_contrato: typeof data.tipo_contrato === 'string' ? data.tipo_contrato.trim() || null : null,
     parte_a_direccion: typeof data.parte_a_direccion === 'string' ? data.parte_a_direccion.trim() || null : null,
@@ -656,7 +675,7 @@ function validateContratoData(data: any): any {
     condiciones_terminacion: typeof data.condiciones_terminacion === 'string' ? data.condiciones_terminacion.trim() || null : null,
     legislacion_aplicable: typeof data.legislacion_aplicable === 'string' ? data.legislacion_aplicable.trim() || null : null,
     jurisdiccion: typeof data.jurisdiccion === 'string' ? data.jurisdiccion.trim() || null : null,
-    fecha_firma: validateDate(data.fecha_firma),
+    fecha_firma: validateDateLegacy(data.fecha_firma),
     lugar_firma: typeof data.lugar_firma === 'string' ? data.lugar_firma.trim() || null : null,
     firmas_presentes: typeof data.firmas_presentes === 'boolean' ? data.firmas_presentes : false
   };
@@ -670,11 +689,11 @@ function validatePresupuestoData(data: any): any {
     numero_presupuesto: typeof data.numero_presupuesto === 'string' ? data.numero_presupuesto.trim() || null : null,
     emisor_name: typeof data.emisor_name === 'string' ? data.emisor_name.trim() || null : null,
     cliente_name: typeof data.cliente_name === 'string' ? data.cliente_name.trim() || null : null,
-    fecha_emision: validateDate(data.fecha_emision),
-    fecha_validez: validateDate(data.fecha_validez),
-    subtotal: validateNumber(data.subtotal),
-    impuestos: validateNumber(data.impuestos),
-    total: validateNumber(data.total),
+    fecha_emision: validateDateLegacy(data.fecha_emision),
+    fecha_validez: validateDateLegacy(data.fecha_validez),
+    subtotal: validateNumberLegacy(data.subtotal),
+    impuestos: validateNumberLegacy(data.impuestos),
+    total: validateNumberLegacy(data.total),
     category: typeof data.category === 'string' ? data.category.trim() || null : null,
     titulo: typeof data.titulo === 'string' ? data.titulo.trim() || null : null,
     tipo_documento: typeof data.tipo_documento === 'string' ? data.tipo_documento.trim() || null : null,
@@ -689,8 +708,8 @@ function validatePresupuestoData(data: any): any {
     precios_unitarios: Array.isArray(data.precios_unitarios) ? data.precios_unitarios : [],
     importes_totales: Array.isArray(data.importes_totales) ? data.importes_totales : [],
     descripciones_detalladas: Array.isArray(data.descripciones_detalladas) ? data.descripciones_detalladas : [],
-    porcentaje_impuestos: validateNumber(data.porcentaje_impuestos),
-    importe_impuestos: validateNumber(data.importe_impuestos),
+    porcentaje_impuestos: validateNumberLegacy(data.porcentaje_impuestos),
+    importe_impuestos: validateNumberLegacy(data.importe_impuestos),
     moneda: typeof data.moneda === 'string' ? data.moneda.trim() || 'EUR' : 'EUR',
     condiciones_pago: typeof data.condiciones_pago === 'string' ? data.condiciones_pago.trim() || null : null,
     plazos_entrega: typeof data.plazos_entrega === 'string' ? data.plazos_entrega.trim() || null : null,
@@ -708,11 +727,11 @@ function validateEscrituraData(data: any): any {
     vendedor_nombre: typeof data.vendedor_nombre === 'string' ? data.vendedor_nombre.trim() || null : null,
     comprador_nombre: typeof data.comprador_nombre === 'string' ? data.comprador_nombre.trim() || null : null,
     direccion_inmueble: typeof data.direccion_inmueble === 'string' ? data.direccion_inmueble.trim() || null : null,
-    precio_venta: validateNumber(data.precio_venta),
-    fecha_escritura: validateDate(data.fecha_escritura),
+    precio_venta: validateNumberLegacy(data.precio_venta),
+    fecha_escritura: validateDateLegacy(data.fecha_escritura),
     notario_nombre: typeof data.notario_nombre === 'string' ? data.notario_nombre.trim() || null : null,
     referencia_catastral: typeof data.referencia_catastral === 'string' ? data.referencia_catastral.trim() || null : null,
-    superficie_m2: validateNumber(data.superficie_m2),
+    superficie_m2: validateNumberLegacy(data.superficie_m2),
     category: typeof data.category === 'string' ? data.category.trim() || null : null,
     vendedor_dni: typeof data.vendedor_dni === 'string' ? data.vendedor_dni.trim() || null : null,
     vendedor_direccion: typeof data.vendedor_direccion === 'string' ? data.vendedor_direccion.trim() || null : null,
@@ -725,9 +744,9 @@ function validateEscrituraData(data: any): any {
     comprador_nacionalidad: typeof data.comprador_nacionalidad === 'string' ? data.comprador_nacionalidad.trim() || null : null,
     comprador_profesion: typeof data.comprador_profesion === 'string' ? data.comprador_profesion.trim() || null : null,
     tipo_inmueble: typeof data.tipo_inmueble === 'string' ? data.tipo_inmueble.trim() || null : null,
-    superficie_util: validateNumber(data.superficie_util),
-    numero_habitaciones: validateNumber(data.numero_habitaciones, true),
-    numero_banos: validateNumber(data.numero_banos, true),
+    superficie_util: validateNumberLegacy(data.superficie_util),
+    numero_habitaciones: validateNumberLegacy(data.numero_habitaciones, true),
+    numero_banos: validateNumberLegacy(data.numero_banos, true),
     planta: typeof data.planta === 'string' ? data.planta.trim() || null : null,
     orientacion: typeof data.orientacion === 'string' ? data.orientacion.trim() || null : null,
     descripcion_inmueble: typeof data.descripcion_inmueble === 'string' ? data.descripcion_inmueble.trim() || null : null,
@@ -750,7 +769,7 @@ function validateEscrituraData(data: any): any {
     condicion_suspensiva: typeof data.condicion_suspensiva === 'boolean' ? data.condicion_suspensiva : false,
     condiciones_especiales: Array.isArray(data.condiciones_especiales) ? data.condiciones_especiales : [],
     clausulas_particulares: Array.isArray(data.clausulas_particulares) ? data.clausulas_particulares : [],
-    fecha_entrega: validateDate(data.fecha_entrega),
+    fecha_entrega: validateDateLegacy(data.fecha_entrega),
     entrega_inmediata: typeof data.entrega_inmediata === 'boolean' ? data.entrega_inmediata : false,
     estado_conservacion: typeof data.estado_conservacion === 'string' ? data.estado_conservacion.trim() || null : null,
     inventario_incluido: typeof data.inventario_incluido === 'string' ? data.inventario_incluido.trim() || null : null,
@@ -758,10 +777,10 @@ function validateEscrituraData(data: any): any {
     notaria_direccion: typeof data.notaria_direccion === 'string' ? data.notaria_direccion.trim() || null : null,
     protocolo_numero: typeof data.protocolo_numero === 'string' ? data.protocolo_numero.trim() || null : null,
     autorizacion_notarial: typeof data.autorizacion_notarial === 'boolean' ? data.autorizacion_notarial : false,
-    valor_catastral: validateNumber(data.valor_catastral),
+    valor_catastral: validateNumberLegacy(data.valor_catastral),
     coeficiente_participacion: typeof data.coeficiente_participacion === 'string' ? data.coeficiente_participacion.trim() || null : null,
-    itp_aplicable: validateNumber(data.itp_aplicable),
-    base_imponible_itp: validateNumber(data.base_imponible_itp),
+    itp_aplicable: validateNumberLegacy(data.itp_aplicable),
+    base_imponible_itp: validateNumberLegacy(data.base_imponible_itp),
     inscripcion_registro: typeof data.inscripcion_registro === 'string' ? data.inscripcion_registro.trim() || null : null
   };
 }
@@ -798,9 +817,9 @@ function validateContactoInfo(contacto: any): any {
 }
 
 /**
- * Valida números (enteros o decimales)
+ * Valida números (enteros o decimales) - función legacy local
  */
-function validateNumber(value: any, isInteger: boolean = false): number | null {
+function validateNumberLegacy(value: any, isInteger: boolean = false): number | null {
   if (typeof value === 'number') {
     return isInteger ? Math.round(value) : value;
   }
@@ -815,6 +834,7 @@ function validateNumber(value: any, isInteger: boolean = false): number | null {
  * Guarda datos extraídos de facturas en la base de datos
  */
 export async function saveExtractedInvoice(documentId: string, data: any): Promise<boolean> {
+  'use server';
   try {
     // Use Service Role client for pipeline operations to bypass RLS
     const { createSupabaseServiceClient } = await import('@/supabase-clients/server');
@@ -889,6 +909,7 @@ export async function saveExtractedInvoice(documentId: string, data: any): Promi
  * Guarda datos extraídos de comunicados en la base de datos
  */
 export async function saveExtractedComunicado(documentId: string, data: any): Promise<boolean> {
+  'use server';
   try {
     const supabase = await createSupabaseClient();
     
@@ -928,6 +949,7 @@ export async function saveExtractedComunicado(documentId: string, data: any): Pr
  * Guarda datos extraídos de albaranes en la base de datos
  */
 export async function saveExtractedAlbaran(documentId: string, data: any): Promise<boolean> {
+  'use server';
   try {
     const supabase = await createSupabaseClient();
     
@@ -967,6 +989,7 @@ export async function saveExtractedAlbaran(documentId: string, data: any): Promi
  * Guarda datos extraídos de contratos en la base de datos
  */
 export async function saveExtractedContrato(documentId: string, data: any): Promise<boolean> {
+  'use server';
   try {
     const supabase = await createSupabaseClient();
     
@@ -1006,6 +1029,7 @@ export async function saveExtractedContrato(documentId: string, data: any): Prom
  * Guarda datos extraídos de presupuestos en la base de datos
  */
 export async function saveExtractedPresupuesto(documentId: string, data: any): Promise<boolean> {
+  'use server';
   try {
     const supabase = await createSupabaseClient();
     
@@ -1044,7 +1068,8 @@ export async function saveExtractedPresupuesto(documentId: string, data: any): P
 /**
  * Guarda datos extraídos de escrituras de compraventa en la base de datos
  */
-export async function saveExtractedEscritura(documentId: string, data: any): Promise<boolean> {
+// MIGRADO: saveExtractedEscritura -> EscrituraPersistence.ts
+async function saveExtractedEscrituraLegacy(documentId: string, data: any): Promise<boolean> {
   try {
     const supabase = await createSupabaseClient();
     
@@ -1083,12 +1108,14 @@ export async function saveExtractedEscritura(documentId: string, data: any): Pro
 /**
  * Alias para saveExtractedEscritura - mantiene compatibilidad con EscrituraExtractor
  */
-export const saveExtractedPropertyDeed = saveExtractedEscritura;
+// MIGRADO: saveExtractedPropertyDeed -> EscrituraPersistence.ts
+// export const saveExtractedPropertyDeed = saveExtractedEscritura;
 
 /**
  * Guarda datos extraídos de contratos en la base de datos
  */
 export async function saveExtractedContract(documentId: string, data: any): Promise<boolean> {
+  'use server';
   try {
     // Use Service Role client for pipeline operations to bypass RLS
     const { createSupabaseServiceClient } = await import('@/supabase-clients/server');
@@ -1136,6 +1163,7 @@ export async function callGeminiFlashOCRIA(
   agentName: string,
   agentPrompt: string
 ): Promise<AgentResponse> {
+  'use server';
   const startTime = Date.now();
   
   try {

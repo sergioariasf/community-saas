@@ -1,0 +1,11 @@
+{
+  "original_file": "presupuesto.pdf",
+  "base_filename": "presupuesto",
+  "document_type": "presupuesto",
+  "error": "Unsupported document type: presupuesto",
+  "extractor_used": "unknown",
+  "processing_time": 0,
+  "text_length": 1780,
+  "generated_at": "2025-09-22T09:30:47.469Z",
+  "tool": "test-metadata-real.ts"
+}

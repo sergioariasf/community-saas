@@ -1,0 +1,140 @@
+{
+  "generated_at": "2025-09-22T10:09:35.146Z",
+  "tool": "test-classification-real.ts",
+  "total_files": 13,
+  "successful_classifications": 13,
+  "failed_classifications": 0,
+  "document_types": {
+    "acta": 6,
+    "comunicado": 1,
+    "contrato": 1,
+    "factura": 2,
+    "albaran": 1,
+    "escritura": 1,
+    "presupuesto": 1
+  },
+  "methods_used": {
+    "filename": 12,
+    "text-analysis": 1
+  },
+  "average_confidence": 0.9384615384615386,
+  "files": {
+    "ACTA_18_NOVIEMBRE_2022": {
+      "document_type": "acta",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 1,
+      "text_length": 64859,
+      "error": null
+    },
+    "ACTA_19_MAYO_2022": {
+      "document_type": "acta",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 1,
+      "text_length": 40077,
+      "error": null
+    },
+    "Acta_junta_extraordinaria_02_06_25": {
+      "document_type": "acta",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 0,
+      "text_length": 49803,
+      "error": null
+    },
+    "Comunicado-_INFORMACI_N_RELACIONADA_CONTADORES_LECTURA_DE_SUNFLOWER_C_P___AMARA_HOMES_": {
+      "document_type": "comunicado",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 0,
+      "text_length": 2724,
+      "error": null
+    },
+    "Contrato_OLAQUA_Piscinas": {
+      "document_type": "contrato",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 1,
+      "text_length": 26516,
+      "error": null
+    },
+    "GIMNASIO_2023-1-230230": {
+      "document_type": "factura",
+      "confidence": 0.95,
+      "method": "text-analysis",
+      "success": true,
+      "processing_time": 1,
+      "text_length": 5037,
+      "error": null
+    },
+    "acta_prueba": {
+      "document_type": "acta",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 1,
+      "text_length": 3347,
+      "error": null
+    },
+    "acta_prueba_v2": {
+      "document_type": "acta",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 0,
+      "text_length": 3347,
+      "error": null
+    },
+    "acta_test": {
+      "document_type": "acta",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 0,
+      "text_length": 3347,
+      "error": null
+    },
+    "albaran": {
+      "document_type": "albaran",
+      "confidence": 0.9,
+      "method": "filename",
+      "success": true,
+      "processing_time": 0,
+      "text_length": 2217,
+      "error": null
+    },
+    "escritura_D102B": {
+      "document_type": "escritura",
+      "confidence": 0.9,
+      "method": "filename",
+      "success": true,
+      "processing_time": 1,
+      "text_length": 51609,
+      "error": null
+    },
+    "factura": {
+      "document_type": "factura",
+      "confidence": 0.95,
+      "method": "filename",
+      "success": true,
+      "processing_time": 0,
+      "text_length": 1113,
+      "error": null
+    },
+    "presupuesto": {
+      "document_type": "presupuesto",
+      "confidence": 0.9,
+      "method": "filename",
+      "success": true,
+      "processing_time": 0,
+      "text_length": 1780,
+      "error": null
+    }
+  }
+}

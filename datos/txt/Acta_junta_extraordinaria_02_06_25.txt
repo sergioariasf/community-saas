@@ -1,0 +1,2379 @@
+[METADATA]
+Original: Acta junta extraordinaria 02.06.25.pdf
+Method: google-vision-ocr
+Length: 49803 characters
+Pages: 20
+Generated: 2025-09-22T10:05:29.917Z
+Processing: 7784ms
+
+[CONTENT]
+--- Página 1 ---
+C. P. "AMARA HOMES”.
+CALLE ACANTOS Nº 2 BIS.
+LAS ROZA.
+ACTA DE LA JUNTA GENERAL EXTRAORDINARIA CELEBRADA EL DÍA 2
+DE JUNIO DE 2025.
+Las Rozas, 2 de junio de 2025.
+En el día de hoy, previa convocatoria realizada por la Sra. Presidente de la Comunidad
+Da. Stefanía Nitto, conforme a lo dispuesto en la vigente Ley de Propiedad Horizontal, Ley 49/1960
+de 21 de julio y sus sucesivas modificaciones, se celebra la Junta General Extraordinaria de la
+Comunidad de Propietarios arriba enunciada a las 18.00 h. en segunda convocatoria, por falta de
+"quorum" en la primera. La reunión tendrá lugar en la sala Gourmet de la comunidad.
+detallan:
+Asisten, entre presentes y representados, los propietarios que a continuación se
+Propietarios presentes:
+PORTAL
+PISO
+GARAJE
+A3
+B° A
+1-6; 1-34
+TRASTERO
+A1-08
+A3
+2º A
+1-7; 1-33
+A1-05
+NOMBRE Y APELLIDOS
+Carlos Poggio Moro
+Agustín Vegas Barriuso
+COEF (%)
+0,322029
+0,306613
+A5
+2º B
+1-45; 1-50
+A1-17
+Daniel Lancho Lancho
+0,258731
+A6
+B° B
+1-44; 1-53
+A1-20
+Ignacio Villalba Ranz
+0,284936
+A6
+2º A
+1-57; 2-76
+A1-24
+Francisco Martínez Pérez
+0,298833
+A10
+2º A
+2-89; 2-149
+A2-64
+Juan Antonio Colmenero Navarro
+0,299417
+A12
+B° B
+1-38; 1-43
+A2-58
+Javier Herráiz Garvin
+0,295609
+A12
+B° C
+2-100; 2-164
+A2-82
+Paula de la Peña Díez
+0,33942
+B1
+1° C
+3-1; 3-16
+A3-01
+Catia Prieto Somohano
+0,315116
+B2
+B° A
+3-65; 3-87
+B2-41
+José Ricardo Baca Ponce
+0,278415
+B2
+B° B
+3-12; 3-13
+B3-25
+Carmela Gaarbajosa de la Fuente
+0,333395
+B4
+2º A
+3-41; 3-42
+B3-22
+Juan Abad Lázaro
+0,334431
+B4
+3º A
+3-14; 3-15
+B3-26
+Daniel Carrasco López-Villanueva
+0,452097
+B5
+1º A
+3-32; 3-49
+B3-13
+Vega Sánchez Hernández
+0,369494
+B6
+B° A
+3-70; 3-81
+B3-46
+Wanda Maureen Mucchiut Giménez
+0,313999
+B7
+2° B
+3-30; 3-68
+B3-11
+B8
+B° B
+2-105; 2-136
+B2-53
+Felipe del Baño Giraldez
+José Megías García de la Beldad
+0,306743
+0,267776
+B8
+2º A
+3-66; 3-86
+B3-42
+Francisco Javier Sanz Ramírez
+0,3281734
+B9
+B° B
+2-109; 2-132
+B2-57
+B10
+B° B
+2-126; 1-147
+B2-63
+José Sánchez González
+Ana María de Frutos Torrejón
+0,344762
+0,314537
+B10
+1º A
+2-110; 2-125
+B2-64
+María Sol Berenguer Delia
+0,321517
+B11
+B° B
+1-141; 1-159
+B1-73
+Aintzane Alai Pérez Pérez
+0,362101
+B12
+1º A
+1-149; 1-152
+B1-T80
+C3
+2º A
+3-12; 3-13
+C3-11
+Carlos Andrés-Gayón Gil
+Ángel Luis Muñoz Cánovas
+0,313894
+0,316184
+C3
+2º B
+2-50; 2-74
+C2-30
+C4
+1º A
+3-17; 3-27
+C3-22
+Mónica Arévalo
+Ma Candelaria León Álvarez
+0,314473
+0,325969
+3-16; 3-32; 2-
+C4
+2º A
+C3-15
+Javier Rosado Izquierdo
+0,343847
+60
+C4
+3º A
+2-56; 2-57
+C2-33
+Ma Yolanda López-Casero
+0,284934
+C5
+Bº A
+2-51; 2-75
+C2-31
+Blanca Gabernet
+0,284084
+C5
+B° B
+3-23; 3-24
+C3-18
+Raquel Fernández Vila
+0,363626
+C5
+3º A
+2-79; 2-80
+C2-41
+Pedro Luis Ariño Rubiato
+0,416661
+C6
+1º A
+2-89; 1-145
+C2-40
+C9
+B° B
+1-132; 1-150
+C1-76
+David Arribas Méndez
+Rocío Carazo Carmona
+0,313498
+0,282788
+1
+
+--- Página 2 ---
+C10
+B° B
+2-101; 2-119
+C2-52
+Javier Ruiz Monge
+0,278216
+2-53; 2-123;
+C11
+1º A
+C2-57
+Carlos Sánchez Pérez
+0,345266
+2-124
+D1
+1° C
+3-15; 3-36
+D3-03
+Eva Mínguez Ariza
+0,274383
+D2
+3º A
+3-20; 3-37
+D3-4
+D3
+2º A
+3-14; 3-43
+D3-11
+Stefanía Nitto
+Rocío Gimena Muñoz
+0,393905
+0,31448
+D4
+B° A
+3-55; 3-58
+D3-25
+David Lorenzo Martínez
+0,357829
+D4
+2º A
+3-54; 3-56
+D3-23
+D5
+1º A
+2-67; 2-109
+D2-31
+D5
+2º B
+3-32; 3-33
+D2-34
+Luis Fernando Peña Pérez
+Bárbara Alexia Llanos Jiménez
+Felipe Pérez Tiedra
+0,326939
+0,273109
+0,264546
+D5
+3º B
+2-63; 2-64
+D2-28
+Luis Alberto Ruiz Corredor
+0,300098
+D6
+B° B
+2-69; 2-107
+D2-36
+Alejandra Grandal Miaja
+0,286588
+D6
+1º A
+1-117; 1-139
+D1-61
+Juan Bruguera Monedero
+0,313889
+D6
+2º A
+1-116; 1-138
+D1-60
+Javier Rodríguez Izquierdo
+0,302393
+D6
+2° B
+1-113; 1-114
+D2-58
+José Ignacio Becerril Sánchez
+0,329546
+D7
+3º A
+2-70; 2-106
+D2-37
+Jurgen-Peter Baseler
+0,438417
+D9
+1º B
+1-128, 1-146
+D2-44
+Ignacio Fernández Galera
+0,275056
+D9
+2º B
+2-77; 2-78
+D2-50
+Ana Viejo González
+0,319883
+TOTAL ASISTENTES: 50 PROPIETARIOS.
+Propietarios representados:
+TOTAL COEFICIENTES: 16,0026454 %
+PORTAL
+PISO
+GARAJE
+TRASTERO
+NOMBRE Y APELLIDOS
+RPTADO
+POR:
+COEF (%)
+A1
+1º B
+2-63; 2-68;
+A1
+1° C
+A2-30; A2-
+2.69; 2-104;
+33; A2-38;
+Manuel Amadeo Colomo Povedano
+76
+1,27634
+A1
+2º B
+2-110; 2-111;
+A2-39
+A2
+1º B
+2-119; 2-120
+A1
+2° C
+2-106; 2-107
+A2-31
+A2
+1º A
+2-117;2-118
+A1-10
+Roberto Vaquero Vela
+Ignacio Campoamor Sánchez
+277
+0,320488
+76
+0,313539
+A7
+B° A
+1-13; 1-54; 2-
+A7
+2º A
+78; 2-85; 2-
+A1-21; A2-
+A10
+2º B
+90; 2-93; 2-
+45; A2-65;
+A11
+1º A
+96; 2-99; 2-
+A2-69; A2-
+Instituto Tecnológico Montealto,
+S.L.
+76
+2,412467
+A11
+2º A
+131; 2-150;
+2-153; 2-155;
+71; A2-72;
+A2-80.
+A12
+1º C
+2-157; 2-162
+A12
+2° C
+A8
+B° A
+1-20; 1-58; 2-
+A9
+Bº A
+81; 2-88; 2-
+A10
+B° A
+92; 2-142; 2-
+A1-25; A2-
+57; A2-63;
+A2-68
+Negintela, S.L.
+76
+1,178189
+A11
+B° A
+148; 2-152
+A8
+1° A
+1-17; 1-55
+A1-22
+Juan Royano Esguevillas
+76
+0,322203
+A11
+2º B
+2-94; 2-154
+A2-70
+Concepción Soria Torralba
+76
+0,300578
+B1
+2° A
+3-4; 3-19
+B3-4
+María del Sol Prados Ruiz
+276
+0,327765
+B3
+2º A
+3-54; 3-90
+B3-38
+B5
+B° A
+3-47; 3-82
+B3-45
+B5
+1º B
+3-59; 3-93
+B3-35
+Ana Isabel Reyes López
+Carmen Corral Rico
+Fernando Álvarez Rodriguez
+254
+0,303715
+117
+0,381231
+111
+0,26273
+B5
+2º B
+3-58; 3-94
+B3-34
+Manuel Pechorromán Miguel
+111
+0,262229
+B5
+2° C
+3-34
+B3-15
+Mª Eugenia Manrique Carreño
+117
+0,25835
+B6
+1º A
+3-63; 2-133
+B2-56
+Alberto Hueso Iglesias
+117
+0,309645
+B6
+2º B
+3-43; 3-103
+B3-23
+Tomás Díaz Mediavilla
+117
+0,303399
+B9
+2° B
+3-71; 3-80
+B3-47
+Henar Cunado Manso
+158
+0,324325
+B12
+C4
+B° B
+1-139; 1-160
+B1-72
+1º B
+2-54; 2-55
+C2-49
+M° Blanca Ariño Palao
+Verónica Mercedes Soto Mago
+158
+0,341673
+190
+0,316184
+C5
+1º A
+2-44; 2-45
+C2-28
+Rocío Seltzer Bercovich
+Raúl Seltzer
+0,288046
+2
+
+--- Página 3 ---
+33888
+C5
+1° C
+3-14; 3-31
+C3-16
+Mª Luisa Iglesias
+261
+0,369098
+C5
+2° B
+2-58; 2-77
+C1-66
+Margarita Alonso López
+76
+0,261019
+C6
+1º B
+2-90, 2-113
+C2-42
+C6
+2° A
+2-66;
+C2-34
+C6
+3º A
+2-64; 2-65
+C2-38
+Maribel Jiménez Ramirez
+Sabera Akthar Ahsan
+José Antonio Crespo Martínez
+76
+0,269487
+76
+0,280356
+76
+0,383441
+C7
+B° A
+2-86; 1-142
+C1-63
+Sergio Gómez de la Cruz
+José Antonio Suárez-Llanos
+76
+0,39082
+C7
+B° B
+2-88; 1-141
+C1-62
+76
+0,394391
+Chamochín
+C8
+2° A
+2-83; 1-139
+C1-60
+Sara Zumaquero
+254
+0,311904
+C9
+1º A
+2-95; 2-96
+C2-41
+Francisco Javier Bachiller
+76
+0,316388
+C9
+2º B
+1-112; 1-127
+C1-71
+Jesús Miralles de Imperial Roda
+220
+0,374132
+C11
+B° B
+2-103; 2-120
+C2-53
+Leyre Azcoitia Martín
+188
+0,340824
+D1
+1º A
+3-4; 3-34
+D3-01
+Álvaro José Granado Justo
+76
+0,313522
+D1
+1° B
+3-10; 3-41
+D3-08
+Marta Ortega Moreno
+243
+0,321849
+D1
+3º A
+3-9; 3-40
+D3-07
+Antonio Torralba Villaverde
+254
+0,398147
+D2
+1º B
+3-18; 3-47
+D3-15
+Luis Álvarez Sánchez-Gómez
+76
+0,274797
+D3
+2º B
+3-23; 3-24
+D2-33
+Álvaro Delgado Latorre
+254
+0,314767
+D3
+3º A
+3-22; 3-50
+D3-19
+Luis Carlos Gutierrez Martín
+254
+0,318457
+D4
+1º A
+3-26; 3-53
+D3-22
+Jerónimo Rodríguez del Saz
+261
+0,316579
+D4
+2º B
+3-27; 3-28
+D3-26
+Clara Ramos Martín
+277
+0,331223
+D4
+3º A
+3-31; 3-44
+D3-12
+Elsa Ma Granda Zarabozo
+264
+0,287444
+D5
+3º A
+2-65; 2-111
+D2-29
+Virginia Solans Blanco
+261
+0,332645
+D5
+2º C
+2-59; 2-60
+D2-38
+Alejandro Galeano García
+276
+0,331086
+D6
+B° A
+1-112; 1-115
+D1-59
+Cristina González Rico
+279
+0,317195
+D7
+1º A
+2-90; 2-91
+D2-56
+Ana Nogal Coloma
+76
+0,378107
+D7
+2º A
+2-87; 2-94
+D2-53
+Almudena de Esteban Maurer
+76
+0,374056
+D8
+2º A
+1-127; 1-145
+D1-68
+José Ramón López Oroza
+279
+0,302393
+D8
+2º B
+2-72; 2-104
+D2-40
+Ismael García Palomero
+279
+0,317412
+D8
+3º A
+2-73; 2-103
+D2-41
+Eva Méndez
+190
+0,282868
+D10
+2º B
+1-132; 1-150
+D1-70
+Sergio Arias Fernández
+193
+0,302616
+D11
+3º A
+1-135; 1-136
+D1-73
+Luis Alegría Ortuzar
+76
+0,305755
+TOTAL REPRESENTADOS: 48 PROPIETARIOS.
+TOTAL COEFICIENTES: 19,293671%.
+N° propiet.
+76
+111
+117
+158
+190
+193
+220
+254
+261
+264
+276
+277
+Nombre y apellidos.
+Paula de la Peña Díez
+Vega Sánchez Hernández / Fernando Esteban
+Wanda Maureen Mucchiut Giménez
+Carlos Andrés Gayón Gil
+Yolanda López-Casero
+Raúl Seltzer
+Rocío Carazo Carmona
+Stefanía Nitto
+David Lorenzo
+Luis Fernando Peña
+Alejandra Grandal Miaja
+Juan Bruguera Monedero
+Asisten por lo tanto 98 propietarios, entre presentes y representados, que suman un total de
+35,2963164 % del total del coeficiente.
+Asisten también a la reunión, D. Ángel Romera Martín y Dª. Helena Romera Martín,
+Administradores de Fincas colegiados, representantes de la empresa Beltrán y Romera S.L.U.
+3
+
+--- Página 4 ---
+ORDEN DEL DÍA.
+1. INFORMACIÓN DEL BALANCE CONTABLE DE LA COMUNIDAD CERRADO A 31 DE
+MAYO DE 2025.
+Toma la palabra la Sra. Administradora informar de los principales puntos del balance de la
+comunidad cerrado a 31 de mayo de 2025.
+A) INGRESOS ORDINARIOS: Los ingresos ordinarios de la Comunidad hasta el día 31 de mayo
+se generan por:
+-
+Emisión de recibos mensuales. Se han ingresado 313.060,19€.
+-
+-
+Alquiler de salas comunes. Se han facturado 1.000 €.
+Ingreso derrama extraordinaria para la reposición del fondo de reserva: 31.386,62€.
+En el mes de enero se produjo un error en el cobo de las cuotas por importe de -1.280,35€
+Por ello, el importe total ingresado por la comunidad ha sido de 350.166,46 €.
+B) GASTOS: En cuanto a los gastos del ejercicio, han sido de 235.675,75.
+Con respecto a los gastos, hay que destacar:
+Gastos procesales: uno de los apuntes aparece en negativo por importe de 3.872€ el cual
+corresponde a un ingreso recibido por parte de un vecino que fue denunciado, tras un acuerdo de
+junta general, por el retranqueo de su plaza de garaje. Ya que los pagos a abogados y procuradores
+fueron asumidos por otro vecino, ese importe le fue devuelto el 27 de mayo.
+Reparaciones varias (Gastos viviendas): con fecha 21/05 se pagó la factura del sellado de las
+juntas de las tapas del portal A. Las del garaje D ya se están sellando.
+Con respecto a las desviaciones de presupuesto y gasto, actualmente en todas las partidas
+tenemos un superávit destacando aquellas partidas sin un coste fijo. Al respecto, uno de los
+asistentes indica que en la partida del grupo 1 “Varios Mancomunidad" se presupuestaron 3.500€ y
+actualmente se han gastado 2.456,69€. La Sra. Administradora informa que es correcto pero que en
+otras partidas del mismo grupo, por ejemplo en la de "Reparaciones Mancomunidad" se
+presupuestaron 10.000€ y se llevan gastados 457,14€ por lo que ambas partidas se compensan.
+Gasto de luz, se están viendo opciones para el cambio de comercializadora.
+Gasto de agua, semanalmente se envían fotos de los contadores para poder comprobar el
+gasto. Una de las vocales añade que en la foto de esta semana se ha tenido constancia que el
+contador del bloque B hay más gasto que en el resto por lo que es necesario controlar qué ocurre en
+ese edificio. Se han hecho las actuaciones necesarias y se ha podido confirmar que actualmente las
+praderas no se están regando con agua de la comunidad.
+Finalmente, por lo que respecta a los vecinos morosos, se informa que se va a iniciar a
+reclamación judicial contra uno de ellos y uno de los asistentes solicita que se pregunte al Colegio de
+Administradores de Fincas de Madrid por el servicio gratuito de reclamación de deudas.
+2. PROPUESTA DE CAMBIO DE JUNTA RECTORA. ACUERDOS AL RESPECTO.
+4
+
+--- Página 5 ---
+Toma la palabra la Sra. Presidenta de la comunidad y pide a los vecinos que se le permitan 5
+minutos para leer una pequeña carta que ha escrito para que puedan entender la inclusión de este
+punto en el orden del día.
+La decisión de presentar mi renuncia se fundamenta en las siguientes circunstancias, que
+considero suficientemente graves y objetivas para justificar la imposibilidad de continuar
+desempeñando el cargo en condiciones adecuadas y en beneficio de la comunidad:
+1. Desde el principio me he enfrentado con una actitud muy poco inclusiva y general falta
+de apoyo por la Junta de Gobierno
+a) Mis propuestas de gestión, tales como la definición de prioridades y la organización por áreas
+de competencia, han sido sistemáticamente desatendidas, lo que ha repercutido negativamente en la
+eficacia de la gestión de la comunidad.
+b) He percibido una actitud de crítica constante y desmotivación hacia mis sugerencias, en
+ocasiones con formas poco profesionales, lo cual ha generado un mal estar en mí que ha ido
+creciendo desde el principio y para tutelar mi estado de salud física y mental he tenido que alejarme
+de las discusiones cotidianas que se conducían en varios grupos de whatsapp, de los cuales yo era
+parte, y mantenidos por la junta para desempeñar una gestión eficaz de la comunidad, bajo su punto
+de vista.
+c) Se ha ejercido un control excesivo sobre aspectos que exceden las competencias de una
+Junta, como la monitorización de accesos y de trabajos rutinarios de mantenimiento, existiendo ya
+mecanismos adecuados para su control (libro de actividades del conserje), y esto perjudicando el
+trabajo hacia las prioridades que intentaba marcar desde el principio, como la gestión de incidencias
+(sigue).
+2. Gestión de incidencias derivadas de las lluvias de marzo y abril
+a) La gestión de un elevado número de incidencias ha sido dificultosa, especialmente por la falta
+de concreción en los criterios de habitabilidad aprobados en la Junta del 7 de febrero, que considero
+deben ser revisados por falta de claridad y alcance (por ejemplo incidencias comunitarias).
+b) La junta ha mostrado una postura cerrada y resistencia hacia mis sugerencias de valoración
+de las incidencias para agilizar la toma de decisiones en junta de propietarios, dificultando la gestión
+de estas incidencias. Tras varios intentos por mi parte de cambiar la postura de la junta frente a este
+tema sin éxito, no fue hasta una reciente reunión con el abogado de la comunidad para la demanda
+en la que su postura se comenzó a abrir un poco. En esta reunión, el abogado confirmó que la
+comunidad es responsable de estas incidencias y que puede perfectamente subsanarlas lo antes
+posible en casos urgentes para evitar grandes daños y posibles denuncias contra la comunidad por
+parte de vecinos afectados.
+c) La comunidad ha recibido requerimientos formales (burofaxes) de abogados de vecinos,
+solicitando la reparación urgente de incidencias, ante los cuales la respuesta ha sido insuficiente,
+generando una situación de riesgo jurídico y patrimonial para la comunidad.
+Sobre la gestión de las incidencias, el artículo 9.1 de la LPH impone a los propietarios y a la
+comunidad la obligación de mantener en buen estado de conservación el inmueble y de atender las
+reparaciones necesarias, siendo responsable la comunidad de los daños que se deriven de su
+inacción.
+3. Imposibilidad de ejercer el cargo en condiciones adecuadas
+La acumulación de las circunstancias anteriores ha generado una situación de desamparo, falta de
+confianza y ausencia de los apoyos mínimos necesarios para el correcto desempeño de las
+funciones inherentes al cargo de Presidenta, lo que me obliga, en cumplimiento de mi deber de
+diligencia y responsabilidad, a presentar mi renuncia.
+Todas estas circunstancias, sobrevenidas y ajenas a mi voluntad, imposibilitan el normal y adecuado
+ejercicio de las funciones inherentes al cargo de Presidenta, en perjuicio del interés general de la
+Comunidad y de la debida gestión de sus asuntos.
+5
+
+--- Página 6 ---
+Por todo lo anterior pido a la junta de propietarios aceptar mi renuncia al cargo de presidenta, y elegir
+una nueva junta rectora formada por un bloque de presidente y junta de gobierno que puedan actuar
+de forma conjunta y trabajar de manera eficiente entre ambos por el bien de esta comunidad.
+Una vez explicadas las causas que motivan su dimisión, un vecino que fue miembro de una junta
+rectora anterior corrobora que lo que dice la Sra. Nitto le ocurrió a él también cuando fue presidente
+con los vocales actuales. A esto añade otro vecino que en el reglamento de la comunidad se indica
+que los vocales se deben elegir de forma alternativa entre los bloques y que la permanencia de los
+miembros de la junta no garantiza la alternancia.
+Por otra parte, varios asistentes preguntan si su intención entonces es dimitir o cambiar a los
+vocales a lo que la Sra. Nitto contesta que si los vecinos no aceptan su dimisión entonces se tendría
+que elegir nuevos vocales ya que actualmente no cree que haya buena sintonía con ellos.
+Un asistente pidió a la presidenta que pusiera algún ejemplo de tales acusaciones, pero la
+presidenta no ofreció ningún ejemplo.
+Otra asistente menciona que no hay falta de apoyo, y le pregunta a la presidenta que cuente por
+qué no la han apoyado cuando los vocales han ido a reuniones que ella no había podido asistir,
+ayudan a gestionar proveedores, conserjería, Sala Gourmet...La presidenta menciona que ya lo ha
+leído en su carta.
+Los vocales expresan que lamentan el malestar de la presidenta. Explican que el problema ha
+sido que para ella eran importantes las filtraciones del garaje del D, cuando lo son, pero había que
+centrarse en otros temas también importantes: cumplir con los acuerdos de junta de propietarios,
+gestión de incidencias, gestión de proveedores, búsqueda de nuevos proveedores, los fuegos que
+hay que apagar continuamente cada día... Pero que en ningún momento buscaban su malestar si no
+siempre lo mejor para la Comunidad de propietarios.
+Manifiestan también lo importante que es que Conserjería esté en continua colaboración con la
+Junta de Gobierno, ya que hace 1 semana intentaron entrar para revisar los contadores eléctricos,
+pudiendo dar problemas en la demanda colectiva que tiene interpuesta la Comunidad.
+Varios de los asistentes manifiestan que, si bien entienden que la Sra. Nitto presente su dimisión,
+no se podría aceptar ya que esta situación podría crear un precedente y el cargo de presidente es
+obligatorio por ley.
+Dado que no parece que vaya a haber un entendimiento en este punto se procede a votar de
+forma nominal si se acepta o no la dimisión de la actual presidenta de la comunidad. Una vez que se
+haya llevado a cabo esa votación se votará, de la misma manera, la elección de los vocales.
+¿Se acepta la dimisión de la presidenta?
+NO
+ABST.
+NO VOTA.
+✗
+X
+PORTAL
+PISO
+GARAJE
+A3
+B° A
+1-6; 1-34
+TRASTERO
+A1-08
+sí
+A3
+2° A
+1-7; 1-33
+A1-05
+A5
+2º B
+1-45; 1-50
+A1-17
+A6
+B° B
+1-44; 1-53
+A1-20
+A6
+2º A
+1-57; 2-76
+A1-24
+A10
+2° A
+2-89; 2-149
+A2-64
+X
+A12
+B° B
+1-38; 1-43
+A2-58
+✗
+A12
+B° C
+2-100; 2-164
+A2-82
+X
+B1
+1° C
+3-1; 3-16
+A3-01
+B2
+B° A
+3-65; 3-87
+B2-41
+✗
+B2
+B° B
+3-12; 3-13
+B3-25
+B4
+2º A
+3-41; 3-42
+B3-22
+✗
+B4
+3º A
+3-14; 3-15
+B3-26
+X
+B5
+1º A
+3-32; 3-49
+B3-13
+X
+B6
+B° A
+3-70; 3-81
+B3-46
+X
+6
+
+--- Página 7 ---
+B7
+2º B
+3-30; 3-68
+B3-11
+B8
+B° B
+2-105; 2-136
+B2-53
+B8
+2º A
+3-66; 3-86
+B3-42
+B9
+B° B
+2-109; 2-132
+B2-57
+B10
+B° B
+2-126; 1-147
+B2-63
+B10
+1º A
+2-110; 2-125
+B2-64
+B11
+B° B
+1-141; 1-159
+B1-73
+B12
+1° A
+1-149; 1-152
+B1-T80
+C3
+2º A
+3-12; 3-13
+C3-11
+C3
+2º B
+2-50; 2-74
+C2-30
+✗
+C4
+1º A
+3-17; 3-27
+C3-22
+✗
+33333
+3-16; 3-32; 2-
+C4
+2º A
+C3-15
+X
+60
+C4
+3º A
+2-56; 2-57
+C2-33
+X
+C5
+B° A
+2-51; 2-75
+C2-31
+C5
+Bº B
+3-23; 3-24
+C3-18
+X
+C5
+3º A
+2-79; 2-80
+C2-41
+✗
+C6
+1º A
+2-89; 1-145
+C2-40
+X
+C9
+B° B
+1-132; 1-150
+C1-76
+X
+C10
+Bº B
+2-101; 2-119
+C2-52
+✗
+2-53; 2-123;
+C11
+1º A
+C2-57
+2-124
+D1
+1° C
+3-15; 3-36
+D3-03
+D2
+3º A
+3-20; 3-37
+D3-4
+✗
+D3
+2º A
+3-14; 3-43
+D3-11
+D4
+B° A
+3-55; 3-58
+D3-25
+D4
+2º A
+3-54; 3-56
+D3-23
+D5
+1º A
+2-67; 2-109
+D2-31
+D5
+2º B
+3-32; 3-33
+D2-34
+✗
+D5
+3º B
+2-63; 2-64
+D2-28
+D6
+B° B
+2-69; 2-107
+D2-36
+D6
+1° A
+1-117; 1-139
+D1-61
+X
+D6
+2º A
+1-116; 1-138
+D1-60
+✗
+D6
+2° B
+1-113; 1-114
+D2-58
+D7
+3º A
+2-70; 2-106
+D2-37
+✗
+D9
+1º B
+1-128, 1-146
+D2-44
+✗
+D9
+2° B
+2-77; 2-78
+D2-50
+A1
+1º B
+2-63; 2-68;
+A1
+1° C
+A2-30; A2-
+2.69; 2-104;
+33; A2-38;
+A1
+2º B
+2-110; 2-111;
+A2-39
+2-119; 2-120
+A2
+1º B
+A1
+2º C
+2-106; 2-107
+A2-31
+X
+A2
+1º A
+2-117;2-118
+A1-10
+X
+A7
+B° A
+A7
+2° A
+1-13; 1-54; 2-
+78; 2-85; 2-
+A1-21; A2-
+A10
+2º B
+90; 2-93; 2-
+A11
+1º A
+96; 2-99; 2-
+A11
+131; 2-150;
+2° A
+2-153; 2-155;
+45; A2-65;
+A2-69; A2-
+71; A2-72;
+A2-80.
+A12
+1° C
+2-157; 2-162
+A12
+2º C
+X
+✗
+X
+7
+
+--- Página 8 ---
+A8
+B° A
+1-20; 1-58; 2-
+A9
+B° A
+81; 2-88; 2-
+A1-25; A2-
+57; A2-63;
+×
+A10
+B° A
+92; 2-142; 2-
+A2-68
+148; 2-152
+A11
+B° A
+A8
+1º A
+1-17; 1-55
+A1-22
+✗
+A11
+2° B
+2-94; 2-154
+A2-70
+✗
+B1
+2º A
+3-4; 3-19
+B3-4
+✗
+B3
+2º A
+3-54; 3-90
+B3-38
+B5
+B° A
+3-47; 3-82
+B3-45
+✗
+B5
+1º B
+3-59; 3-93
+B3-35
+B5
+2º B
+3-58; 3-94
+B3-34
+B5
+2° C
+3-34
+B3-15
+✗
+B6
+1º A
+3-63; 2-133
+B2-56
+✗
+B6
+2º B
+3-43; 3-103
+B3-23
+✗
+B9
+2º B
+3-71; 3-80
+B3-47
+✗
+B12
+B° B
+1-139; 1-160
+B1-72
+X
+C4
+1º B
+2-54; 2-55
+C2-49
+C5
+1º A
+2-44; 2-45
+C2-28
+C5
+1° C
+3-14; 3-31
+C3-16
+✗
+C5
+2° B
+2-58; 2-77
+C1-66
+✗
+C6
+1º B
+2-90, 2-113
+C2-42
+✗
+C6
+2° A
+2-66;
+C2-34
+X
+C6
+3º A
+2-64; 2-65
+C2-38
+✗
+C7
+B° A
+2-86; 1-142
+C1-63
+X
+C7
+B° B
+2-88; 1-141
+C1-62
+✗
+C8
+2º A
+2-83; 1-139
+C1-60
+X
+C9
+1º A
+2-95; 2-96
+C2-41
+X
+C9
+2º B
+1-112; 1-127
+C1-71
+✗
+C11
+B° B
+2-103; 2-120
+C2-53
+✗
+D1
+1º A
+3-4; 3-34
+D3-01
+✗
+D1
+1º B
+3-10; 3-41
+D3-08
+✗
+D1
+3º A
+3-9; 3-40
+D3-07
+X
+D2
+1° B
+3-18; 3-47
+D3-15
+X
+D3
+2º B
+3-23; 3-24
+D2-33
+✗
+D3
+3º A
+3-22; 3-50
+D3-19
+X
+D4
+1º A
+3-26; 3-53
+D3-22
+D4
+2º B
+3-27; 3-28
+D3-26
+✗
+D4
+3º A
+3-31; 3-44
+D3-12
+✗
+D5
+3º A
+2-65; 2-111
+D2-29
+D5
+2° C
+2-59; 2-60
+D2-38
+✗
+D6
+B° A
+1-112; 1-115
+D1-59
+✗
+D7
+1º A
+2-90; 2-91
+D2-56
+✗
+D7
+2º A
+2-87; 2-94
+D2-53
+✗
+D8
+2º A
+1-127; 1-145
+D1-68
+✗
+D8
+2º B
+2-72; 2-104
+D2-40
+D8
+3º A
+2-73; 2-103
+D2-41
+✗
+D10
+2° B
+1-132; 1-150
+D1-70
+D11
+3º A
+1-135; 1-136
+D1-73
+8
+
+--- Página 9 ---
+-
+¿Estás de acuerdo con la continuidad de los vocales?
+PORTAL
+PISO
+GARAJE
+TRASTERO
+Sí
+NO
+ABST.
+NO VOTA.
+A3
+B° A
+1-6; 1-34
+A1-08
+✗
+A3
+2º A
+1-7; 1-33
+A1-05
+A5
+2º B
+1-45; 1-50
+A1-17
+A6
+B° B
+1-44; 1-53
+A1-20
+✗
+✗
+X
+A6
+2° A
+1-57; 2-76
+A1-24
+X
+A10
+2º A
+2-89; 2-149
+A2-64
+X
+A12
+B° B
+1-38; 1-43
+A2-58
+A12
+B° C
+2-100; 2-164
+A2-82
+B1
+1º C
+3-1; 3-16
+A3-01
+B2
+B° A
+3-65; 3-87
+B2-41
+B2
+B° B
+3-12; 3-13
+B3-25
+B4
+2º A
+3-41; 3-42
+B3-22
+✗
+B4
+3º A
+3-14; 3-15
+B3-26
+✗
+B5
+1° A
+3-32; 3-49
+B3-13
+✗
+B6
+B° A
+3-70; 3-81
+B3-46
+B7
+2º B
+3-30; 3-68
+B3-11
+X
+B8
+B° B
+2-105; 2-136
+B2-53
+✗
+B8
+2° A
+3-66; 3-86
+B3-42
+B9
+Bº B
+2-109; 2-132
+B2-57
+✗
+B10
+B° B
+2-126; 1-147
+B2-63
+✗
+B10
+1º A
+2-110; 2-125
+B2-64
+✗
+B11
+B° B
+1-141; 1-159
+B1-73
+✗
+B12
+1° A
+1-149; 1-152
+B1-T80
+X
+C3
+2º A
+3-12; 3-13
+C3-11
+X
+C3
+2º B
+2-50; 2-74
+C2-30
+X
+|ठ
+C4
+1° A
+3-17; 3-27
+C3-22
+3-16; 3-32; 2-
+C4
+2° A
+C3-15
+60
+C4
+3º A
+2-56; 2-57
+C2-33
+X
+X
+C5
+B° A
+2-51; 2-75
+C2-31
+C5
+B° B
+3-23; 3-24
+C3-18
+X
+C5
+3º A
+2-79; 2-80
+C2-41
+X
+C6
+1º A
+2-89; 1-145
+C2-40
+✗
+C9
+B° B
+1-132; 1-150
+C1-76
+X
+C10
+B° B
+2-101; 2-119
+C2-52
+✗
+2-53; 2-123;
+C11
+1º A
+C2-57
+2-124
+D1
+1° C
+3-15; 3-36
+D3-03
+D2
+3° A
+3-20; 3-37
+D3-4
+D3
+2º A
+3-14; 3-43
+D3-11
+✗
+D4
+B° A
+3-55; 3-58
+D3-25
+✗
+D4
+2° A
+3-54; 3-56
+D3-23
+D5
+1º A
+2-67; 2-109
+D2-31
+✗
+D5
+2º B
+3-32; 3-33
+D2-34
+✗
+D5
+3º B
+2-63; 2-64
+D2-28
+✗
+D6
+B° B
+2-69; 2-107
+D2-36
+D6
+1º A
+1-117; 1-139
+D1-61
+D6
+2º A
+1-116; 1-138
+D1-60
+9
+
+--- Página 10 ---
+D6
+2º B
+1-113; 1-114
+D2-58
+D7
+3º A
+2-70; 2-106
+D2-37
+D9
+1º B
+1-128, 1-146
+D2-44
+✗
+D9
+2º B
+2-77; 2-78
+D2-50
+X
+A1
+1° B
+2-63; 2-68;
+A1
+1° C
+A2-30; A2-
+2.69; 2-104;
+33; A2-38;
+X
+A1
+2º B
+2-110; 2-111;
+A2-39
+2-119; 2-120
+A2
+1º B
+A1
+2º C
+2-106; 2-107
+A2-31
+✗
+A2
+1° A
+2-117;2-118
+A1-10
+✗
+A7
+B° A
+A7
+2° A
+1-13; 1-54; 2-
+78; 2-85; 2-
+A1-21; A2-
+A10
+2º B
+90; 2-93; 2-
+45; A2-65;
+A11
+1º A
+96; 2-99; 2-
+A2-69; A2-
+A11
+2º A
+131; 2-150;
+71; A2-72;
+2-153; 2-155;
+A2-80.
+A12
+1° C
+2-157; 2-162
+A12
+2º C
+A8
+B° A
+1-20; 1-58; 2-
+A9
+B° A
+A1-25; A2-
+81; 2-88; 2-
+57; A2-63;
+A10
+B° A
+92; 2-142; 2-
+A2-68
+148; 2-152
+A11
+B° A
+A8
+1º A
+1-17; 1-55
+A1-22
+X
+A11
+2º B
+2-94; 2-154
+A2-70
+X
+B1
+2º A
+3-4; 3-19
+B3-4
+X
+B3
+2º A
+3-54; 3-90
+B3-38
+X
+B5
+B° A
+3-47; 3-82
+B3-45
+✗
+B5
+1º B
+3-59; 3-93
+B3-35
+X
+B5
+2º B
+3-58; 3-94
+B3-34
+B5
+2° C
+3-34
+B3-15
+X
+B6
+1º A
+3-63; 2-133
+B2-56
+✗
+B6
+2º B
+3-43; 3-103
+B3-23
+X
+B9
+2º B
+3-71; 3-80
+B3-47
+✗
+B12
+B° B
+1-139; 1-160
+B1-72
+X
+C4
+1º B
+2-54; 2-55
+C2-49
+✗
+C5
+1º A
+2-44; 2-45
+C2-28
+X
+C5
+1° C
+3-14; 3-31
+C3-16
+X
+C5
+2º B
+2-58; 2-77
+C1-66
+✗
+C6
+1º B
+2-90, 2-113
+C2-42
+✗
+C6
+2º A
+2-66;
+C2-34
+X
+C6
+3º A
+2-64; 2-65
+C2-38
+✗
+C7
+B° A
+2-86; 1-142
+C1-63
+✗
+C7
+B° B
+2-88; 1-141
+C1-62
+✗
+C8
+2º A
+2-83; 1-139
+C1-60
+X
+C9
+1º A
+2-95; 2-96
+C2-41
+C9
+2º B
+1-112; 1-127
+C1-71
+C11
+B° B
+2-103; 2-120
+C2-53
+D1
+1º A
+3-4; 3-34
+D3-01
+D1
+1º B
+3-10; 3-41
+D3-08
+✗
+D1
+3º A
+3-9; 3-40
+D3-07
+X
+D2
+1º B
+3-18; 3-47
+D3-15
+✗
+10
+
+--- Página 11 ---
+D3
+2º B
+3-23; 3-24
+D2-33
+D3
+3º A
+3-22; 3-50
+D3-19
+D4
+1° A
+3-26; 3-53
+D3-22
+✗
+D4
+2º B
+3-27; 3-28
+D3-26
+X
+D4
+3º A
+3-31; 3-44
+D3-12
+✗
+D5
+3º A
+2-65; 2-111
+D2-29
+✗
+D5
+2º C
+2-59; 2-60
+D2-38
+✗
+D6
+B° A
+1-112; 1-115
+D1-59
+D7
+1º A
+2-90; 2-91
+D2-56
+✗
+D7
+2º A
+2-87; 2-94
+D2-53
+X
+D8
+2º A
+1-127; 1-145
+D1-68
+✗
+D8
+2º B
+2-72; 2-104
+D2-40
+D8
+3º A
+2-73; 2-103
+D2-41
+✗
+D10
+2º B
+1-132; 1-150
+D1-70
+D11
+3º A
+1-135; 1-136
+D1-73
+Con estos resultados, tanto el presidente como los vocales continúan siendo los mismos, y para
+el cargo de vicepresidente se elije al propietario del piso 2º B del portal D11 (D. Juan Antonio
+Jiménez Brito).
+Uno de los asistentes pregunta si sería posible que el cargo de presidente recayera en el marido
+de la Sra. Nitto ya que también es propietario de la vivienda. Desde la administración se le informa
+que no hay problema ya que este cargo no recae sobre una persona sino sobre la vivienda por lo
+que cualquiera de los propietarios puede ser nombrado presidente. Los vecinos asistentes aceptan
+por unanimidad que el presidente de la comunidad sea, por lo tanto, D. Alejandro Peñalver por
+lo que los cargos quedan repartidos de la siguiente manera.
+Presidente: D. Alejandro Peñalver Santorio (Piso 3º A del portal D2).
+Vicepresidente: D. Juan Antonio Jiménez Brito (Piso 2º B del portal D11).
+Vocales: Da Paula Díaz de la Peña (Piso Bajo C del portal A12).
+Da Wanda Maureen Mucchiut Giménez (Piso Bajo A del portal B6)
+D. José Suárez-Llanos Chamochín (Piso Bajo B del portal C7).
+3.INFORMACIÓN DE LAS INCIDENCIAS COMUNITARIAS Y ESTABLECIMIENTO DEL
+ORDEN DE PRIORIDADES PARA LA SUBSANACIÓN DE LAS MISMAS. ACUERDOS AL
+RESPECTO.
+La Sra. Administradora informa que debido a las lluvias de los últimos meses es necesario
+estableces un orden prioritario de actuación que quede claro para todos los vecinos.
+Tras una reunión con el abogado que está gestionando la demanda contra Neinor, la junta
+estableció el siguiente cuadro:
+Prioridad alta: Serán las incidencias que se repararán de forma inmediata por la
+comunidad y que afecten gravemente a la habitabilidad del interior de la vivienda. Quedan
+excluidas aquellas que se den en trasteros, terrazas, etc. y, a modo de ejemplo, se indica
+que son incidencias que provocan que los vecinos tengan que poner un cubo para
+recoger el agua que cae en cualquiera de las habitaciones de su casa.
+11
+
+--- Página 12 ---
+Prioridad media: Serán aquellas incidencias de las que se solicitará presupuesto para su
+reparación y se presentará a la junta general para su aprobación antes que otros
+presupuestos. Estas incidencias son aquellas que no afectan a la habitabilidad de las
+viviendas y que se dan en el interior de las mismas (por ejemplo, una mancha de
+humedad en una de las habitaciones). Además, estas incidencias podrían llegar a tener
+una prioridad alta con el tiempo.
+Prioridad baja: son aquellas que se dan en propiedades que no se encuentren en el
+interior de la vivienda, por ejemplo, una plaza de garaje o un trastero.
+Con respecto a las incidencias que se den en salas comunitarias o en otras zonas comunes,
+se presentarán a la junta general presupuestos para su reparación y serán los vecinos los que
+decidan.
+Con respecto a las incidencias privadas que hay pendientes en el día de hoy, se está
+intentando contactar con tres empresas para que puedan valorarlas y enviar presupuesto pero
+está resultando muy complicado el poder gestionar la visita a las viviendas.
+Dado que la resolución de estas incidencias cuyo presupuesto debe aprobarse por la junta
+general puede demorarse, el abogado que gestiona la demanda contra Neinor, en una llamada
+solicitada por la presidenta de la comunidad, indicó que cualquier vecino que tenga un problema
+de este tipo en su vivienda puede repararlo por su cuenta, asumiendo él el coste de esta
+reparación, siempre que se sigan las siguientes pautas:
+1.- Se debe informar de la incidencia a reparar a la administración y esta lo
+comunicará a la junta rectora.
+2.- La administración le indicará cómo debe reparar la incidencia según lo
+establecido por el perito en su informe.
+3.- El vecino debe documentar el estado de la incidencia antes y después de la
+reparación mediante un informe y fotografías.
+4.- La factura se enviará al abogado para adjuntarla a la demanda.
+Si estos cuatro pasos no se cumplen el vecino no podrá reparar por su cuenta ninguna
+incidencia de su vivienda.
+Por lo que respecta a las incidencias comunitarias, la Sra. Administradora informa que una de
+las empresas que ha hecho trabajos en la comunidad ha estado viendo varias de ellas y ha enviado
+los siguientes presupuestos:
+Rehabilitación del sumidero D04: el sumidero está roto y no permite desaguar
+correctamente por lo que el agua cae en el garaje. El coste de estos trabajos es de 891€
+(IVA incluido). Los asistentes no aprueban este presupuesto al entender que este
+problema se da en las edificios y, de momento, no se va a reparar.
+Pruebas previas para la localización de la filtración en el garaje A05, planta -2: se
+comprobará el sumidero y la rejilla para ver por dónde se está filtrando el agua. El coste
+de estas pruebas es de 198€ (IVA incluido) y no es aprobado por los asistentes.
+Pruebas previas para la localización de la filtración en la rampa de garaje del portal B11:
+se realizarían pruebas en los aseos comunitarios de la piscina del bloque B. El coste de
+esta prueba es de 242€ (IVA incluido) y no es aprobado por los vecinos.
+Pruebas previas en la jardinera lateral de acceso al portal A07 que genera filtración en el
+garaje del portal, en la planta -2: el coste de los trabajos es de 264€ (IVA incluido) y no es
+aprobado por los vecinos.
+12
+
+--- Página 13 ---
+Pruebas previas en las zonas adyacentes del gimnasio del bloque C para localizar el
+origen de las filtraciones: la pared del gimnasio está en malas condiciones debido a las
+filtraciones que, parece, vienen de uno de los muros. El coste de estos trabajos es de
+517€. Este trabajo sí se aprueba pero se acuerda solicitar tres presupuestos para poder
+comparar y se autoriza a la junta rectora a elegir el que sea más beneficioso para la
+comunidad con el coste máximo de los 517€.
+Estos presupuestos fueron impulsados por la Sra. Presidenta de la comunidad con el objetivo de
+dar más transparencia a la gestión de incidencias comunitarias que no tenían salida con el criterio de
+habitabilidad establecido en la junta general del día 7 de febrero, pero que resultan igual de
+importantes que el resto.
+Se informa a los asistentes que la demanda todavía no está aceptada a trámite. Se presentó en
+octubre.
+4- PISCINAS
+COMUNITARIAS. POSIBILIDAD DE ABRIR TRES O CUATRO
+PISCINAS. INICIO Y FIN DE TEMPORADA Y HORARIO DE BAÑOS. ACUERDOS
+AL RESPECTO.
+La Sra. Administradora informa que en la junta general celebrada el pasado 7 de febrero se
+comentó con los vecinos la posibilidad de abrir tres de las cuatro piscinas para poder ahorrar el
+coste que supondría uno de los socorristas ya que, aunque se abran sólo tres, se deben
+mantener todas para poder ir rotando.
+El coste de abrir tres piscinas, IVA incluido, es de 51.667€ y abrir todas supone 61.105€. En
+los presupuestos anuales se tuvo en cuenta la apertura de las cuatro piscinas.
+Los vecinos opinan sobre esta cuestión y finalmente se decide por mayoría la apertura de
+las cuatro piscinas (con el voto en contra de los pisos 1º B del portal A1, Bajo A del portal
+A8, 2º A del portal D7 y 3º A del portal D11).
+Toma la palabra la vocal, Paula de la Peña, y procede a dar respuesta a varias preguntas que
+han tenido los vecinos durante el año. La primera de ellas es que no se tapan las duchas ya que
+OCIOPISCINAS vacía todo el circuito para evitar problemas de congelación. Además, debido al
+grosor de las duchas, el plástico se pegaría al acero y hace que este no respire.
+Otra de las preocupaciones que mantienen los vecinos durante la temporada de invierno es
+por qué no ponen bidones. OCIOPISCINAS dice que no es necesario ya que, al mantener la
+depuración, el agua no se congela más allá de una fina capa que nunca es peligroso para la
+estructural del vaso.
+Por último, menciona que han hablado con la empresa para evitar los problemas que se
+dieron durante la temporada de verano, que era básicamente, que estaban con el móvil sin mirar.
+La empresa ha informado que se perseguirá más el tema del móvil pero que, por favor, si hubiera
+cualquier incidencia se informará en el día a la Administración/Junta de Gobierno para que se
+trasladé lo antes posible el mensaje.
+Igualmente se decide por unanimidad que la temporada de baño comience el 7 de junio y
+termine el 7 de septiembre.
+Con respecto a los horarios, igual que el año pasado, se irán cambiando por quincenas de
+modo que siempre haya una piscina abierta a medio día y poder abarcar más tiempo de baño ya
+que la primera se abrirá a las 11.00 horas y la última se cerrará a las 21.30 horas. Respecto al
+cierre de las piscinas, los vecinos solicitan que a partir de la mita de agosto se cierren antes.
+Por último, se informa que la valla perimetral de la piscina del edificio A se ha soltado y se
+están buscando presupuestos para su reparación. Hasta que esta valla no se haya reparado no
+se podrá abrir esta piscina por temas de seguridad.
+13
+
+--- Página 14 ---
+Respecto a la reparación, los vecinos aprueban por mayoría simple que se soliciten
+presupuestos y se autorice a la junta rectora a aprobar el más beneficioso para la comunidad si
+no excede de 3.000€. Varios vecinos no están de acuerdo con esta medida ya que ese
+presupuesto no estaría aprobado por la junta general como el resto de presupuestos.
+El tiempo que esta piscina esté cerrada se ampliará la temporada de baño en septiembre.
+5- PRESENTACIÓN DE PROPUESTAS PARA LA REPROGRAMACIÓN INTEGRAL
+DE LA INSTALACIÓN DEL SISTEMA DE INCENDIOS DE LA COMUNIDAD.
+ACUERDOS AL RESPECTO.
+Toma la palabra la vocal de la junta, Da Paula Díez de la Peña e informa a los vecinos que se
+celebró una reunión entre ella, la Sra. Administradora y el responsable y el técnico de Palma
+Peña, empresa mantenedora del sistema anti incendios de la comunidad para tratar el tema de
+este sistema.
+Uno de los problemas principales del sistema anti incendios es que cuando salta la alarma por
+alguna causa y se desconecta una a una, no vuelve a funcionar hasta que no se enciende
+manualmente una a una. Si esto ocurriera en fin de semana, la comunidad estaría sin sistema
+anti incendios hasta el lunes. Además, alguna de las centralitas se encuentra en trasteros
+privados de algunos vecinos por lo que sería necesario reubicarla haciendo una reprogramación.
+Así cada central comanda una a cada garaje.
+Por ello, Palma Peña ha propuesto una reprogramación integral del sistema. Preguntados por
+el coste de este trabajo, no han podido dar un precio exacto ya que no saben cuántas horas les
+llevará terminarlo pero creen que no será más de una semana por lo que el precio sería de unos
+3.000€. Añade también la Sra. De la Peña que este importe no seria reclamable a Neinor ya que
+no es una deficiencia de la instalación si no una mejora.
+Los vecinos están de acuerdo en realizar este trabajo pero consideran necesario solicitar a
+Palma Peña un precio cerrado, además de preguntar a otras empresas por el coste.
+6- PRESENTACIÓN DE PRESUPUESTOS PARA LA INSTALACIÓN DE UN SISTEMA
+DE APERTURA DE LAS LLAVES MEDIANTE LLAVES DE APROXIMACIÓN.
+FORMA DE PAGO. ACUERDOS AL RESPECTO.
+Toma la palabra, la vocal Paula de la Peña, tal y como se acordó en la última junta general, se
+han solicitado presupuestos para la instalación de lectores de llaves de aproximación en las
+puertas de acceso a la comunidad como en las salas de uso común.
+Los 3 presupuestos solicitados son los siguientes:
+Videosat: Cada lector en las puertas de acceso a la comunidad tiene un importe de 290€
++ IVA.
+Para los cuartos de bicicletas presupuestan 2 lectores (480€ + IVA).
+Para las puertas de portales (aquellas que ya cuentan con sistema de placa de
+portero automático el coste el lector sería de 220€ + IVA.
+Para la puerta de bomberos donde la empresa realizaría los trabajos de
+cableado hasta un cuarto cercano pero no los trabajos de cerrajería, el coste sería
+de 490€ (+ IVA).
+El coste de cada llave es de 3€ + IVA.
+14
+
+--- Página 15 ---
+Castuera: pasa un presupuesto global de 8.580,70€ (IVA incluido). Cada lector (en total
+presupuesta 7) tiene un coste de 410€(+ IVA), cada llavero, en total incluye 640, cuesta
+2,44€ (+ IVA), la puesta en marcha de estos llaveros 2.396,69€ (+IVA) y la canalización
+de la puerta de bomberos 264,46€ + IVA.
+DDI: la empresa mantenedora de los videoporteros indica que ya dejó hecha su
+preinstalación para las placas y la puesta en marcha tiene un coste de 65€ + IVA cada
+una.
+El coste de los llaveros sería de 6€ + IVA.
+Para la puerta de bomberos habría que colocar una placa nueva cuyo coste
+sería de 516,26€ + IVA a lo que habría que sumar el precio de los trabajos de
+cerrajería para la instalación de una cerradura eléctrica.
+Una vez explicados los 3 presupuestos, los vecinos deciden por mayoría (con el voto en
+contra de las viviendas que se relacionan más abajo y la abstención del piso D11, Bajo B, aprobar la
+instalación del sistema de apertura de llaves de aproximación y el presupuesto de la empresa DDI y
+colocar estos lectores en los dos accesos a la comunidad y en la puerta de bomberos, aunque esta
+última queda condicionada a la decisión que se tome respecto a esta puerta en el punto 8 del orden
+del día.
+** Votos en contra de la instalación del sistema de apertura mediante llaves de
+aproximación:
+Portal
+Piso
+B04
+3º A
+B09
+B° B
+A03
+B° A
+A01
+1º B
+A07
+B° A
+A08
+B° A
+A08
+1º A
+A09
+1º A
+A11
+2º B
+A12
+B° C
+C05
+2º B
+C07
+B° A
+C08
+1º B
+C09
+B° A
+D02
+1º B
+D07
+2º A
+D11
+3º A
+D06
+B° B
+B01
+2º A
+D05
+2º C
+15
+
+--- Página 16 ---
+La comunidad asumirá el pago de las placas mientras que cada vecino abonará las llaves que
+soliciten. Cundo se vayan a instalar, se informará a los vecinos para que puedan solicitar el nº de
+llaves que necesiten y unos días antes se les pasará al cobro el recibo por el importe de las mismas
+y se repartirán.
+Con respecto a los portales, queda autorizada la instalación de este sistema si todos los
+vecinos del mismo se ponen de acuerdo. En ese caso, se lo tendrán que comunicar a la
+administración y hablará con la empresa elegida para que lo instale, siendo pagada únicamente por
+los vecinos del portal. El precio es de 516.26€ + IVA por cada portal, pudiendo llegar a hacerse un
+10% de descuento si lo hacemos los 46 portales.
+Se aclara, ante las dudas de los vecinos que si en un portal se instala este sistema de
+apertura, sólo los vecinos de ese portal podrán acceder al mismo. Y la llave a utilizar será la misma
+que para el resto de puertas de la comunidad.
+Los vecinos solicitan también que se pida presupuesto para la instalación de este sistema de
+llaves de aproximación en los ascensores.
+7. POSIBILIDAD DE HABILITAR MÁS ESPACIO PARA APARCAMIENTO DE
+BICICLETAS EN ZONAS "MUERTAS" DE LA URBANIZACIÓN MEDIANTE LA COMPRA
+E INSTALACIÓN DE RACKS O BARRAS O POSIBILITAR SALAS DE CUARTO DE
+BASURAS PARA EL APARCAMIENTO. ACUERDOS AL RESPECTO.
+Nuevamente se trae este punto en el orden del día y la vecina interesada en tratar este tema
+explica que su intención es que se apruebe el uso de un cuarto comunitario para poder colocar unas
+barras donde poder dejar las bicicletas de los vecinos.
+La Sra. Administradora explica que, dado que hay un gran número de cuartos vacíos en la
+comunidad se podría dar ese uso a uno de ellos y no a los cuartos específicamente destinados a las
+basuras.
+Tras un pequeño debate entre los asistentes se decide buscar en cada uno de los edificios los
+cuartos más adecuados para poder dejar las bicicletas y comunicarlo en una próxima reunión.
+8. A PETICIÓN DE LOS PROPIETARIOS DEL PISO BAJO B DEL PORTAL C05 SE
+INCLUYE EL SIGUIENTE PUNTO DEL ORDEN DEL DÍA:
+ACCESO RESTRINGIDO DE LA PUERTA DE BOMBEROS. INFORMACIÓN SOBRE
+EL USO INDEBIDO QUE ACTUALMENTE SE DA A ESTA PUERTA. ACUERDOS AL
+RESPECTO.
+Los propietarios que han solicitado la inclusión de este punto en el orden del día toman la
+palabra y aclaran a los asistentes que en ningún momento han querido cerrar esa puerta o que se
+prohíba su uso si no que su intención es la de regular el mismo y que todos estén enterados de la
+situación en la que se encuentra actualmente.
+Informan que han hecho varias consultas en el ayuntamiento y pudieron comprobar que en el
+proyecto original esa puerta no estaba aunque debido a los problemas que hubo en su momento con
+la Confederación Hidrográfica para poder hacer el acceso por el edificio D, finalmente se dejó esa
+puerta como acceso de bomberos.
+16
+
+--- Página 17 ---
+Uno de los asistentes añade que la Confederación Hidrográfica había dado si consentimiento
+para hacer la puerta en el edificio D pero con la condición de que fuera a través de un puente, cosa
+que Neinor no contempló debido al precio y complejidad del mismo y por eso cambió de ubicación el
+citado acceso.
+El actual problema es que esa puerta no cumple con las condiciones necesarias, en
+numerosas ocasiones está bloqueada por camiones de reparto y muchas personas ajenas a la
+urbanización tienen llaves.
+-
+Por ello, tras un amplio debate entre los asistentes se toman los siguientes acuerdos:
+Hacer un análisis de riesgos.
+Es necesario cambiar la cerradura de esa puerta de modo que sólo la conserjería y
+administración tengan copia de la llave.
+Se va a instalar el lector de llaves de aproximación.
+Queda prohibido bloquear el acceso con camiones de reparto de cualquier otra manera
+así como dejar sacos, contenedores de obra, etc.
+Colocar un cartel identificativo en este puerta.
+Se decide igualmente solicitar un presupuesto para una rampa de accesibilidad universal en
+esta puerta. Aunque la puerta cumple a nivel de barreras arquitectónicas. Un asistente manifiesta
+que la rampa será problemática ya que nos meteríamos en el suelo del ayuntamiento y no lo
+permitirá.
+9. A PETICIÓN DE LA PROPIETARIA DEL PISO BAJO B DEL PORTAL C09, SE
+INCLUYE EL SIGUIENTE PUNTO DEL ORDEN DEL DÍA:
+C9.
+-
+INFORME DETALLADO SOBRE LAS AVERÍAS DEL ASCENSOR DEL PORTAL
+ENTREGA DE COPIAS DE LOS INFORMES TÉCNICOS CORRESPONDIENTES A
+LAS SIGUIENTES FECHAS: ABRIL (DÍAS 11, 15 Y 30), MAYO (DÍAS 5 Y 24).
+INFORME TÉCNICO ACTUALIZADO DE LA AVERÍA QUE CONTINUABA EL
+DOMINGO 25 DE MAYO.
+EXPLICACIÓN SOBRE EL SERVICIO DE MANTENIMIENTO 24 HORAS.
+Debido a los problemas que últimamente presenta el ascensor del portal C9 se ha solicitado a
+la empresa que mande la información acerca de las averías del mismo pero aún no lo ha enviado.
+Cuando se reciba esta información se comunicará a los vecinos.
+Una vez terminada la reunión se comprueba que Inapelsa había enviado el email con las
+siguientes explicaciones:
+1.Informe detallado sobre las averías del ascensor del portal C9:
+Queremos conocer qué problemas está presentando, por qué se repiten y qué soluciones se
+están planteando o deberían adoptarse.
+El problema es el mismo que se os dijo en el momento de la entrada en Mtto (en el informe de
+entrada) y del que se pasó presupuesto de reforma N°: 003921-01/2023 con fecha 28/02/2023, los
+RBI
+17
+
+--- Página 18 ---
+2.Entrega de copias de los informes técnicos correspondientes a las siguientes fechas:
+⚫ABRIL días: 11,15 y 30 (la avería se produjo por la noche, alrededor de las 22:00 h, y se nos
+informó que no habría asistencia hasta el día siguiente). Tal y como indica el contrato, la asistencia
+queda reflejada en el punto 1.2
+1.2 ASISTENCIA TÉCNICA
+1.2.1. Atender todos los avisos por averia o mal funcionamiento efectuadas por el Cliente en un plazo máximo de 24 horas, enviando personal
+técnico cualificado con formación y titulación específica.
+1.2.2. El horario del servicio de asistencia técnica por aviso es de lunes a viernes de 9:00h a 19:00 h.
+1.2.3. Horarios de los servicios de mantenimiento y conservación:
+•
+Días laborables de lunes a viernes, de 9:00h a 19:00 h.
+Sábados, domingos y festivos, de 9:00h a 13:00 h.
+.
+Rescate de personas y emergencias, las 24 horas, 365 días del año.
+1.2.4. En caso de no tener contratado el servicio extra de asistencia técnica en sábados, domingos y festivos, y ante la petición del cliente,
+éste servicio se prestará y facturarán las horas del técnico en tarifa y el desplazamiento. Como mínimo en cada intervención se
+facturará 1 hora del técnico y 1 desplazamiento. Hora de técnico a 65. € + I.V.A., y desplazamiento a 42.€ +I.V.A.
+1.2.5. En caso de no tener contratado el servicio extra de Rescate y emergencias 24 horas, y ante la petición del cliente, éste servicio se
+prestará y facturarán las horas del técnico en tarifa y el desplazamiento. Como minimo en cada intervención se facturará 1 hora del
+técnico y 1 desplazamiento. Hora de técnico a 95. € + 1.V.A., y desplazamiento a 42. € + 1.V.A.
+Firma CLIENTE
+•MAYO días: 5, Sábado 24 (se avisó a las 8:00 h, acudieron a las 11:00 h sin la herramienta
+adecuada -la “consola”—. Era fin de semana y no podemos disponer, en el momento, de todas las
+consolas de los diferentes fabricantes en los coches. Se acude y si hace falta, se solicita y se vuelve
+y no pudieron repararlo. Regresaron a las 16:30 h con otro técnico, pero tampoco lograron
+solucionarlo. Según sus palabras, el problema es que no se quieren cambiar las piezas que están
+fallando. Además, indicaron que no conocen bien este modelo porque no son los técnicos asignados
+a esta zona. No creemos que fuera exactamente así. Todos los técnicos están en constante
+formación. Aún así, no pudieron dejarlo en marcha hasta el día siguiente
+3.Informe técnico actualizado de la avería que continuaba de este domingo 25 mayo y ha
+aparecido INAPELSA para arreglar el ascensor del C6 y me han dicho personalmente que el C9 no
+podía arreglarse hasta el lunes porque tienen que ir al almacén a por una pieza de la plaza que no
+funcionaba. Casualmente después de pasarse por el C6 y pasarse de nuevo por mi portal C9, el
+ascensor ha empezado a funcionar. Explicaciones e informe porque está claro que la pieza no se ha
+cambiado. Efectivamente, no se ha cambiado ninguna pieza. Lo que tenían que coger del almacén,
+el lunes, era la consola. No obstante, como un compañero estaba en Majadahonda y se acercó con
+la consola.
+Solicitamos un informe que detalle exactamente qué le ocurre al ascensor, la causa de las fallas
+repetidas y si es necesario sustituir alguna pieza. En caso afirmativo, solicitamos que se presente el
+presupuesto correspondiente. Son fallos del RBI
+18
+
+--- Página 19 ---
+4.Explicación sobre el servicio de mantenimiento 24 horas: Queremos saber por qué figura
+en el ascensor una pegatina que indica “servicio 24h" cuando en la práctica no se cumple. Además,
+se nos cobran intervenciones fuera de horario, y en muchas ocasiones, los técnicos que acuden no
+están capacitados para reparar el ascensor. No es cierto, nos remitimos al contrato firmado, las
+horas están claras y reflejadas en el mismo. Es más, se han atendido fuera de los horarios
+acordados y no se han facturado.
+Aprovechamos la ocasión para recordarles la deuda que mantienen con nosotros, salvo error,
+que a fecha 02/06/2025 asciende a la cantidad de 37.861,09€. Rogamos den solución o nos
+veremos obligados a reclamarla por crédito moroso.
+Además, preguntado a Otis por las explicaciones de Inapelsa, contestan los siguiente:
+Respecto a lo que indicas del sistema de seguridad y control de cintas de tracción RBI, esto No
+debe estar puenteado bajo ningún concepto ya que es el sistema de seguridad del control de las
+cintas de tracción.
+Esto debe funcionar correctamente 24h ya que verifica que las cintas de tracción estén en buen
+estado. En Otis los técnicos tienen completamente prohibido puentear el contacto de cintas RBI.
+Si no funciona correctamente puede ser por deterioro de las cintas y que haya que sustituirlas o
+por avería del sistema RBI.
+En caso de sustitución del sistema RBI, el importe sería de unos 585,00€ + IVA. Pero es
+necesario verificar previamente que las cintas no estén deterioradas.
+10. A PETICIÓN DE LA PROPIETARIA DEL PISO 2º B DEL PORTAL C03, SE
+INCLUYE EL SIGUIENTE PUNTO DEL ORDEN DEL DÍA:
+GRABACIONES DE INFLUENCERS EN ZONAS COMUNES Y RESTRINGIDAS.
+ACUERDOS AL RESPECTO.
+La vecina que ha solicitado la inclusión de este punto en el orden del día explica que en una
+de las viviendas hay unos inquilinos con un gran número de seguidores en redes sociales que se
+dedican a grabar videos en la comunidad y subirlos a sus perfiles, quedando expuesta la comunidad.
+El problema está en que varios de esos videos los han grabado en la piscina, aunque aún no se
+hayan abierto, y en las azoteas donde el acceso está prohibido.
+Por eso se decide por mayoría (con la abstención de los pisos 1º B del portal A01, B° A del portal
+A07, B° A del portal A08, 2° B del portal A11, B° C del portal A12, 2° B del portal C05 y B° A del
+portal C07) prohibir la grabación de videos en las zonas donde los vecinos no pueden acceder así
+como aquellos videos que no sean para un uso meramente doméstico.
+Igualmente se informará al propietario de la vivienda donde residen los instragramers del
+comportamiento de éstos en la comunidad.
+-
+11. RUEGOS Y PREGUNTAS.
+En este punto se plantean las siguientes cuestiones:
+Se solicita a los vecinos que identifiquen correctamente su nombre, portal y piso en el
+buzón ya que se han recibido quejas desde Conserjería.
+Es necesario revisar las filtraciones de los trasteros del bloque A, sobre todo del trastero
+del A7 2ª y del A11 2B. Se llevarán presupuestos para la siguiente junta.
+19
+
+--- Página 20 ---
+Los cuartos de baño del bloque C están siempre abiertos y son usados por personas
+ajenas a la comunidad. Los vecinos solicitan que estos aseos, al igual que los del resto de
+bloques se cierren y se intentará poner llave magnética para que todos los vecinos
+puedan acceder.
+Y no habiendo más asuntos que tratar la Sra. Presidente levanta la sesión a las 22.30
+horas del día y lugar al principio indicados.
+LA PRESIDENTE
+Stefania Nitto
+Fdo. Da. Stefanía Nitto.
+ANY ROMERALA SECRETARIO-ADMINISTRADORA
+ADMINISTRACIÓN DE FINCAS
+CLF B-81752552
+TABLO TEJERA, 14
+2822 EL PARDILLO (MADRID)
+TELEF: 91 815 22 56
+MAIL: bvr@beltranyromera.com
+Fdo. Da Helena Romera Martín.
+Colegiado: 10.876
+20

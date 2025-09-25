@@ -1,0 +1,18 @@
+{
+  "original_file": "presupuesto.pdf",
+  "base_filename": "presupuesto",
+  "extraction_method": "google-vision-ocr",
+  "classification": {
+    "document_type": "presupuesto",
+    "confidence": 0.9,
+    "method": "filename",
+    "reasoning": "Filename contains pattern for presupuesto",
+    "processing_time": 0
+  },
+  "text_info": {
+    "length": 1780,
+    "pages": 1
+  },
+  "generated_at": "2025-09-22T10:09:35.145Z",
+  "tool": "test-classification-real.ts"
+}

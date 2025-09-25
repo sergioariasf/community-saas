@@ -17,7 +17,9 @@ import { z } from 'zod';
 // Import our new libraries
 import { uploadDocumentToStorage, downloadDocumentFromStorage, deleteDocumentFromStorage } from '@/lib/storage/supabaseStorage';
 import { extractTextFromPDF, cleanExtractedText } from '@/lib/pdf/textExtraction';
-import { callSaaSAgent, saveExtractedMinutes, saveExtractedInvoice } from '@/lib/gemini/saasAgents';
+import { callSaaSAgent } from '@/lib/agents/AgentOrchestrator';
+import { saveExtractedMinutes } from '@/lib/agents/persistence/ActaPersistence';
+import { saveExtractedInvoice } from '@/lib/gemini/saasAgents';
 
 // Import progressive pipeline system (using simplified version)
 import { SimplePipeline } from '@/lib/ingesta/core/progressivePipelineSimple';

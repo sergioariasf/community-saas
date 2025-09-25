@@ -1,0 +1,11 @@
+{
+  "original_file": "ACTA 19 MAYO 2022.pdf",
+  "base_filename": "ACTA_19_MAYO_2022",
+  "document_type": "acta",
+  "error": "Failed to save extracted acta data to database",
+  "extractor_used": "ActaExtractor",
+  "processing_time": 10407,
+  "text_length": 40077,
+  "generated_at": "2025-09-22T09:29:31.427Z",
+  "tool": "test-metadata-real.ts"
+}

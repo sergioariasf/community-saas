@@ -1,0 +1,521 @@
+{
+  "timestamp": "2025-09-23T04:49:20.649Z",
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "phase_stats": {
+      "extraction": 1,
+      "classification": 1,
+      "metadata": 1,
+      "template_validation": 1
+    },
+    "by_type": {
+      "escritura": {
+        "count": 1,
+        "valid_templates": 1,
+        "avg_compatibility": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "escritura_D102B",
+      "success": true,
+      "phases": {
+        "extraction": {
+          "success": true,
+          "text_length": 51609,
+          "method": "pdf-parse-external"
+        },
+        "classification": {
+          "success": true,
+          "type": "escritura",
+          "confidence": 0.9
+        },
+        "metadata": {
+          "success": true,
+          "fields_count": 58,
+          "fields": [
+            "vendedor_nombre",
+            "comprador_nombre",
+            "direccion_inmueble",
+            "precio_venta",
+            "fecha_escritura",
+            "notario_nombre",
+            "referencia_catastral",
+            "superficie_m2",
+            "category",
+            "vendedor_dni",
+            "vendedor_direccion",
+            "vendedor_estado_civil",
+            "vendedor_nacionalidad",
+            "vendedor_profesion",
+            "comprador_dni",
+            "comprador_direccion",
+            "comprador_estado_civil",
+            "comprador_nacionalidad",
+            "comprador_profesion",
+            "tipo_inmueble",
+            "superficie_util",
+            "numero_habitaciones",
+            "numero_banos",
+            "planta",
+            "orientacion",
+            "descripcion_inmueble",
+            "registro_propiedad",
+            "tomo",
+            "libro",
+            "folio",
+            "finca",
+            "inscripcion",
+            "moneda",
+            "forma_pago",
+            "precio_en_letras",
+            "impuestos_incluidos",
+            "gastos_a_cargo_comprador",
+            "gastos_a_cargo_vendedor",
+            "cargas_existentes",
+            "condiciones_especiales",
+            "clausulas_particulares",
+            "hipotecas_pendientes",
+            "servidumbres",
+            "estado_conservacion",
+            "inventario_incluido",
+            "libre_cargas",
+            "condicion_suspensiva",
+            "entrega_inmediata",
+            "autorizacion_notarial",
+            "fecha_entrega",
+            "notario_numero_colegiado",
+            "notaria_direccion",
+            "protocolo_numero",
+            "valor_catastral",
+            "coeficiente_participacion",
+            "itp_aplicable",
+            "base_imponible_itp",
+            "inscripcion_registro"
+          ]
+        },
+        "template_validation": {
+          "success": true,
+          "compatibility_score": 100,
+          "missing_fields": []
+        },
+        "db_schema_validation": {
+          "success": true,
+          "incompatible_fields": [],
+          "unknown_fields": []
+        }
+      },
+      "total_time": 8915,
+      "extracted_data": {
+        "vendedor_nombre": "NEINOR SUR S.A.U.",
+        "comprador_nombre": "SERGIO ARIAS FERNANDEZ y ROCIO SELTZER BERCOVICH",
+        "direccion_inmueble": "Las Rozas de Madrid (Madrid), calle Acanto 2 bis",
+        "precio_venta": 523600,
+        "fecha_escritura": "2022-01-05",
+        "notario_nombre": "FERNANDO SANCHEZ-ARJONA BONILLA",
+        "referencia_catastral": "7335102VK2873N0001DZ",
+        "superficie_m2": null,
+        "category": "vivienda",
+        "vendedor_dni": "A-14646350",
+        "vendedor_direccion": "Madrid, Paseo de la Castellana 20, 5ª planta 28046 Madrid",
+        "vendedor_estado_civil": null,
+        "vendedor_nacionalidad": "española",
+        "vendedor_profesion": null,
+        "comprador_dni": "51.086.274-P y 54.479.188-P",
+        "comprador_direccion": "Las Rozas de Madrid, calle Acanto 2 bis",
+        "comprador_estado_civil": "casados en régimen de separación de bienes",
+        "comprador_nacionalidad": null,
+        "comprador_profesion": "ingenieros",
+        "tipo_inmueble": "vivienda, plaza_garaje, trastero",
+        "superficie_util": 95.85,
+        "numero_habitaciones": null,
+        "numero_banos": null,
+        "planta": "SEGUNDA",
+        "orientacion": null,
+        "descripcion_inmueble": "• Vivienda 95m² + terraza 15m²\n• Plaza garaje y trastero\n• Bloque D, portal 10, 2ª planta\n• Conjunto residencial Amara Homes",
+        "registro_propiedad": "Registro de la Propiedad número 1 de Las Rozas de Madrid",
+        "tomo": "3322",
+        "libro": "1329",
+        "folio": "159",
+        "finca": "65816",
+        "inscripcion": "1ª",
+        "moneda": "EUR",
+        "forma_pago": "104.720,00€ anticipados; 418.880,00€ cheque bancario 2022-01-05",
+        "precio_en_letras": "QUINIENTOS VEINTITRÉS MIL SEISCIENTOS EUROS",
+        "impuestos_incluidos": true,
+        "gastos_a_cargo_comprador": [
+          "registro",
+          "gestoría",
+          "ITP",
+          "impuestos"
+        ],
+        "gastos_a_cargo_vendedor": [
+          "notaría",
+          "plusvalía",
+          "cancelación hipoteca"
+        ],
+        "cargas_existentes": [],
+        "condiciones_especiales": [],
+        "clausulas_particulares": [],
+        "hipotecas_pendientes": "No, saldo cero",
+        "servidumbres": null,
+        "estado_conservacion": "obra_nueva",
+        "inventario_incluido": null,
+        "libre_cargas": true,
+        "condicion_suspensiva": false,
+        "entrega_inmediata": true,
+        "autorizacion_notarial": true,
+        "fecha_entrega": "2022-01-05",
+        "notario_numero_colegiado": null,
+        "notaria_direccion": "C/Padre Damián, nº40-1º 28036 - MADRID",
+        "protocolo_numero": "17",
+        "valor_catastral": null,
+        "coeficiente_participacion": null,
+        "itp_aplicable": null,
+        "base_imponible_itp": null,
+        "inscripcion_registro": null
+      },
+      "template_compatibility": {
+        "valid": true,
+        "score": 100,
+        "present_fields": [
+          "vendedor_nombre",
+          "comprador_nombre",
+          "direccion_inmueble",
+          "precio_venta",
+          "fecha_escritura",
+          "notario_nombre",
+          "referencia_catastral",
+          "superficie_util",
+          "tipo_inmueble",
+          "category",
+          "vendedor_dni",
+          "vendedor_direccion",
+          "vendedor_nacionalidad",
+          "comprador_dni",
+          "comprador_direccion",
+          "comprador_estado_civil",
+          "comprador_profesion",
+          "planta",
+          "descripcion_inmueble",
+          "registro_propiedad",
+          "tomo",
+          "libro",
+          "folio",
+          "finca",
+          "inscripcion",
+          "moneda",
+          "forma_pago",
+          "precio_en_letras",
+          "impuestos_incluidos",
+          "gastos_a_cargo_comprador",
+          "gastos_a_cargo_vendedor",
+          "cargas_existentes",
+          "condiciones_especiales",
+          "clausulas_particulares",
+          "hipotecas_pendientes",
+          "estado_conservacion",
+          "libre_cargas",
+          "condicion_suspensiva",
+          "entrega_inmediata",
+          "autorizacion_notarial",
+          "fecha_entrega",
+          "notaria_direccion",
+          "protocolo_numero"
+        ],
+        "missing_fields": [],
+        "invalid_fields": [],
+        "field_validations": {
+          "vendedor_nombre": {
+            "present": true,
+            "valid": true,
+            "value": "NEINOR SUR S.A.U."
+          },
+          "comprador_nombre": {
+            "present": true,
+            "valid": true,
+            "value": "SERGIO ARIAS FERNANDEZ y ROCIO SELTZER BERCOVICH"
+          },
+          "direccion_inmueble": {
+            "present": true,
+            "valid": true,
+            "value": "Las Rozas de Madrid (Madrid), calle Acanto 2 bis"
+          },
+          "precio_venta": {
+            "present": true,
+            "valid": true,
+            "value": 523600
+          },
+          "fecha_escritura": {
+            "present": true,
+            "valid": true,
+            "value": "2022-01-05"
+          },
+          "notario_nombre": {
+            "present": true,
+            "valid": true,
+            "value": "FERNANDO SANCHEZ-ARJONA BONILLA"
+          },
+          "referencia_catastral": {
+            "present": true,
+            "valid": true,
+            "value": "7335102VK2873N0001DZ"
+          },
+          "superficie_util": {
+            "present": true,
+            "valid": true,
+            "value": 95.85
+          },
+          "tipo_inmueble": {
+            "present": true,
+            "valid": true,
+            "value": "vivienda, plaza_garaje, trastero"
+          },
+          "category": {
+            "present": true,
+            "valid": true,
+            "value": "vivienda"
+          },
+          "vendedor_dni": {
+            "present": true,
+            "valid": true,
+            "value": "A-14646350"
+          },
+          "vendedor_direccion": {
+            "present": true,
+            "valid": true,
+            "value": "Madrid, Paseo de la Castellana 20, 5ª planta 28046 Madrid"
+          },
+          "vendedor_estado_civil": {
+            "present": false,
+            "valid": true
+          },
+          "vendedor_nacionalidad": {
+            "present": true,
+            "valid": true,
+            "value": "española"
+          },
+          "vendedor_profesion": {
+            "present": false,
+            "valid": true
+          },
+          "comprador_dni": {
+            "present": true,
+            "valid": true,
+            "value": "51.086.274-P y 54.479.188-P"
+          },
+          "comprador_direccion": {
+            "present": true,
+            "valid": true,
+            "value": "Las Rozas de Madrid, calle Acanto 2 bis"
+          },
+          "comprador_estado_civil": {
+            "present": true,
+            "valid": true,
+            "value": "casados en régimen de separación de bienes"
+          },
+          "comprador_nacionalidad": {
+            "present": false,
+            "valid": true
+          },
+          "comprador_profesion": {
+            "present": true,
+            "valid": true,
+            "value": "ingenieros"
+          },
+          "superficie_m2": {
+            "present": false,
+            "valid": true
+          },
+          "numero_habitaciones": {
+            "present": false,
+            "valid": true
+          },
+          "numero_banos": {
+            "present": false,
+            "valid": true
+          },
+          "planta": {
+            "present": true,
+            "valid": true,
+            "value": "SEGUNDA"
+          },
+          "orientacion": {
+            "present": false,
+            "valid": true
+          },
+          "descripcion_inmueble": {
+            "present": true,
+            "valid": true,
+            "value": "• Vivienda 95m² + terraza 15m²\n• Plaza garaje y trastero\n• Bloque D, portal 10, 2ª planta\n• Conjunto residencial Amara Homes"
+          },
+          "registro_propiedad": {
+            "present": true,
+            "valid": true,
+            "value": "Registro de la Propiedad número 1 de Las Rozas de Madrid"
+          },
+          "tomo": {
+            "present": true,
+            "valid": true,
+            "value": "3322"
+          },
+          "libro": {
+            "present": true,
+            "valid": true,
+            "value": "1329"
+          },
+          "folio": {
+            "present": true,
+            "valid": true,
+            "value": "159"
+          },
+          "finca": {
+            "present": true,
+            "valid": true,
+            "value": "65816"
+          },
+          "inscripcion": {
+            "present": true,
+            "valid": true,
+            "value": "1ª"
+          },
+          "moneda": {
+            "present": true,
+            "valid": true,
+            "value": "EUR"
+          },
+          "forma_pago": {
+            "present": true,
+            "valid": true,
+            "value": "104.720,00€ anticipados; 418.880,00€ cheque bancario 2022-01-05"
+          },
+          "precio_en_letras": {
+            "present": true,
+            "valid": true,
+            "value": "QUINIENTOS VEINTITRÉS MIL SEISCIENTOS EUROS"
+          },
+          "impuestos_incluidos": {
+            "present": true,
+            "valid": true,
+            "value": true
+          },
+          "gastos_a_cargo_comprador": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "registro",
+              "gestoría",
+              "ITP",
+              "impuestos"
+            ]
+          },
+          "gastos_a_cargo_vendedor": {
+            "present": true,
+            "valid": true,
+            "value": [
+              "notaría",
+              "plusvalía",
+              "cancelación hipoteca"
+            ]
+          },
+          "cargas_existentes": {
+            "present": true,
+            "valid": true,
+            "value": []
+          },
+          "condiciones_especiales": {
+            "present": true,
+            "valid": true,
+            "value": []
+          },
+          "clausulas_particulares": {
+            "present": true,
+            "valid": true,
+            "value": []
+          },
+          "hipotecas_pendientes": {
+            "present": true,
+            "valid": true,
+            "value": "No, saldo cero"
+          },
+          "servidumbres": {
+            "present": false,
+            "valid": true
+          },
+          "estado_conservacion": {
+            "present": true,
+            "valid": true,
+            "value": "obra_nueva"
+          },
+          "inventario_incluido": {
+            "present": false,
+            "valid": true
+          },
+          "libre_cargas": {
+            "present": true,
+            "valid": true,
+            "value": true
+          },
+          "condicion_suspensiva": {
+            "present": true,
+            "valid": true,
+            "value": false
+          },
+          "entrega_inmediata": {
+            "present": true,
+            "valid": true,
+            "value": true
+          },
+          "autorizacion_notarial": {
+            "present": true,
+            "valid": true,
+            "value": true
+          },
+          "fecha_entrega": {
+            "present": true,
+            "valid": true,
+            "value": "2022-01-05"
+          },
+          "notario_numero_colegiado": {
+            "present": false,
+            "valid": true
+          },
+          "notaria_direccion": {
+            "present": true,
+            "valid": true,
+            "value": "C/Padre Damián, nº40-1º 28036 - MADRID"
+          },
+          "protocolo_numero": {
+            "present": true,
+            "valid": true,
+            "value": "17"
+          },
+          "valor_catastral": {
+            "present": false,
+            "valid": true
+          },
+          "coeficiente_participacion": {
+            "present": false,
+            "valid": true
+          },
+          "itp_aplicable": {
+            "present": false,
+            "valid": true
+          },
+          "base_imponible_itp": {
+            "present": false,
+            "valid": true
+          },
+          "inscripcion_registro": {
+            "present": false,
+            "valid": true
+          }
+        }
+      }
+    }
+  ]
+}

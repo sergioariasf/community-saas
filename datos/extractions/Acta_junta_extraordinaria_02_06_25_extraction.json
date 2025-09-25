@@ -1,0 +1,11 @@
+{
+  "filename": "Acta junta extraordinaria 02.06.25.pdf",
+  "document_type": "acta",
+  "success": false,
+  "extracted_data": null,
+  "processing_time": 21783,
+  "error": "Agent failed without error message",
+  "extractor_used": "error",
+  "generated_at": "2025-09-22T09:40:31.447Z",
+  "tool": "test-metadata-extraction-only.ts"
+}

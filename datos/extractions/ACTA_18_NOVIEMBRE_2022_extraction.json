@@ -1,0 +1,215 @@
+{
+  "filename": "ACTA 18 NOVIEMBRE 2022.pdf",
+  "document_type": "acta",
+  "success": true,
+  "extracted_data": {
+    "president_in": "Carlos Sanchez",
+    "president_out": null,
+    "administrator": "Nuria Grau",
+    "summary": "Junta Extraordinaria para tratar temas como obras no autorizadas, uso de la sala de niños, revisión de contratos, construcción de un pozo, aclaración de cuentas y presupuestos.",
+    "decisions": "1. Autorización a la denuncia administrativa por infracción urbanística en la vivienda C5 3º A y decisión en junta posterior sobre acciones legales; 2. Se pospone la adquisición de mobiliario para la sala de niños hasta obtener más información y presupuestos; 3. Se aprueba la renegociación del contrato con SUNFLOWER con suspensión de 12 meses; 4. Se aprueba la resolución anticipada del contrato con la actual mantenedora de ascensores y contratación de INAPELSA; 5. Se delega en la Junta Directiva la decisión sobre la contratación de DDI; 6. Se decide no prorrogar el contrato de limpieza y buscar alternativas; 7. Se acuerda resolver el contrato con la empresa actual de piscinas y delegar en la junta de gobierno la contratación de una nueva empresa; 8. Se aprueba la contratación de la empresa Montoya para la prevención contraincendios; 9. Se aprueba el estudio para la construcción de un pozo para autoconsumo comunitario; 10. Se pospone la aprobación de nuevos presupuestos para las salas gourmet, b, c e infantil.",
+    "document_date": "2022-11-18",
+    "tipo_reunion": "extraordinaria",
+    "lugar": "HOTEL MAJADAHONDA Ctra. Boadilla del Monte - Majadahonda, Km. 7,300",
+    "comunidad_nombre": "C.P. AMARA HOMES",
+    "orden_del_dia": [
+      "De conformidad con lo dispuesto en el art 16.2 LPH, inclusión del siguiente punto del orden del día “consecuencia de las obras no autorizadas en la vivienda C 5 3º A, solicitud de autorización del presidente de la comunidad para el inicio de acciones, civiles, administrativas, contratación de abogado y procurador, y peritos necesarios”, exposición y explicación afectados, decisiones a tomar",
+      "Definir el uso de la sala de niños, antiguo gimnasio, decisiones a tomar",
+      "Revisión contratos: Sunflower, Ascensores, DDI, Limpieza, Piscina, Seguro, Incendios",
+      "Autorización para estudio de construcción de pozo para autoconsumo comunitario",
+      "aprobación de nuevos presupuestos obtenidos: Sala gourmet, Sala b, Sala c, Sala infantil",
+      "Aclaración cuentas, morosos, titulares, autorización a la junta para solicitar notas simples de propietarios. Decisiones a tomar"
+    ],
+    "acuerdos": [
+      "Autorización a la denuncia administrativa por infracción urbanística en la vivienda C5 3º A",
+      "Posponer la adquisición de mobiliario para la sala de niños",
+      "Renegociación del contrato con SUNFLOWER con suspensión de 12 meses",
+      "Resolución anticipada del contrato de ascensores y contratación de INAPELSA",
+      "Delegar en la Junta Directiva la decisión sobre la contratación de DDI",
+      "No prorrogar el contrato de limpieza y buscar alternativas",
+      "Resolver el contrato de piscinas y delegar en la junta de gobierno la contratación de una nueva empresa",
+      "Contratación de la empresa Montoya para la prevención contraincendios",
+      "Aprobar el estudio para la construcción de un pozo",
+      "Posponer la aprobación de nuevos presupuestos para las salas"
+    ],
+    "topic_keywords": [
+      "obras no autorizadas",
+      "revisión contratos",
+      "pozo autoconsumo",
+      "cuentas morosos",
+      "presupuestos"
+    ],
+    "estructura_detectada": {
+      "quorum_alcanzado": true,
+      "propietarios_totales": null,
+      "capitulos": [
+        {
+          "numero": 1,
+          "titulo": "Acta de la Junta General Extraordinaria",
+          "pagina": 1,
+          "subsecciones": []
+        },
+        {
+          "numero": 2,
+          "titulo": "Orden del Día",
+          "pagina": 1,
+          "subsecciones": []
+        },
+        {
+          "numero": 3,
+          "titulo": "Asistentes",
+          "pagina": 2,
+          "subsecciones": []
+        },
+        {
+          "numero": 4,
+          "titulo": "Representados",
+          "pagina": 10,
+          "subsecciones": []
+        },
+        {
+          "numero": 5,
+          "titulo": "Informe de Actuaciones",
+          "pagina": 15,
+          "subsecciones": []
+        },
+        {
+          "numero": 6,
+          "titulo": "Punto 1 del Orden del Día",
+          "pagina": 21,
+          "subsecciones": []
+        },
+        {
+          "numero": 7,
+          "titulo": "Punto 6 del Orden del Día",
+          "pagina": 28,
+          "subsecciones": []
+        },
+        {
+          "numero": 8,
+          "titulo": "Punto 2 del Orden del Día",
+          "pagina": 32,
+          "subsecciones": []
+        },
+        {
+          "numero": 9,
+          "titulo": "Punto 3 del Orden del Día",
+          "pagina": 33,
+          "subsecciones": [
+            {
+              "titulo": "SUNFLOWER",
+              "pagina": 33
+            },
+            {
+              "titulo": "ASCENSORES",
+              "pagina": 34
+            },
+            {
+              "titulo": "DDI",
+              "pagina": 36
+            },
+            {
+              "titulo": "LIMPIEZA",
+              "pagina": 36
+            },
+            {
+              "titulo": "PISCINA",
+              "pagina": 37
+            },
+            {
+              "titulo": "SEGURO",
+              "pagina": 37
+            },
+            {
+              "titulo": "INCENDIOS",
+              "pagina": 37
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "titulo": "Punto 4 del Orden del Día",
+          "pagina": 38,
+          "subsecciones": []
+        },
+        {
+          "numero": 11,
+          "titulo": "Punto 5 del Orden del Día",
+          "pagina": 39,
+          "subsecciones": []
+        }
+      ],
+      "total_paginas": 1,
+      "votaciones": [
+        {
+          "tema": "Obras no autorizadas en vivienda C5 3º A",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 27
+        },
+        {
+          "tema": "Uso de la sala de niños",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 32
+        },
+        {
+          "tema": "Renegociación contrato SUNFLOWER",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 34
+        },
+        {
+          "tema": "Resolución anticipada contrato ascensores y contratación de INAPELSA",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 36
+        },
+        {
+          "tema": "No prorrogar contrato de limpieza",
+          "resultado": "aprobado",
+          "votos": "unanimidad",
+          "pagina": 37
+        },
+        {
+          "tema": "Resolver contrato de piscinas",
+          "resultado": "aprobado",
+          "votos": "unanimidad",
+          "pagina": 37
+        },
+        {
+          "tema": "Contratación de Montoya para prevención contraincendios",
+          "resultado": "aprobado",
+          "votos": "unanimidad",
+          "pagina": 38
+        },
+        {
+          "tema": "Estudio de construcción de pozo",
+          "resultado": "aprobado",
+          "votos": "mayoría",
+          "pagina": 39
+        }
+      ]
+    },
+    "topic_presupuesto": true,
+    "topic_mantenimiento": true,
+    "topic_administracion": true,
+    "topic_piscina": true,
+    "topic_jardin": true,
+    "topic_limpieza": true,
+    "topic_balance": true,
+    "topic_paqueteria": true,
+    "topic_energia": true,
+    "topic_normativa": true,
+    "topic_proveedor": true,
+    "topic_dinero": true,
+    "topic_ascensor": true,
+    "topic_incendios": true,
+    "topic_porteria": true
+  },
+  "processing_time": 17569,
+  "error": null,
+  "extractor_used": "ActaExtractor",
+  "generated_at": "2025-09-22T18:59:15.585Z",
+  "tool": "test-metadata-extraction-only.ts"
+}

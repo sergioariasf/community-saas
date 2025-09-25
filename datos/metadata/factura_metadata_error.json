@@ -1,0 +1,11 @@
+{
+  "original_file": "factura.pdf",
+  "base_filename": "factura",
+  "document_type": "factura",
+  "error": "Failed to save extracted factura data to database",
+  "extractor_used": "FacturaExtractor",
+  "processing_time": 4479,
+  "text_length": 1113,
+  "generated_at": "2025-09-22T09:30:47.468Z",
+  "tool": "test-metadata-real.ts"
+}

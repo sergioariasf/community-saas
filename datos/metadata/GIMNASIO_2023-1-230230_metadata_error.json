@@ -1,0 +1,11 @@
+{
+  "original_file": "GIMNASIO_2023-1-230230.pdf",
+  "base_filename": "GIMNASIO_2023-1-230230",
+  "document_type": "factura",
+  "error": "factura_extractor_v2 agent failed: Unknown error",
+  "extractor_used": "FacturaExtractor",
+  "processing_time": 7732,
+  "text_length": 5037,
+  "generated_at": "2025-09-22T09:30:15.739Z",
+  "tool": "test-metadata-real.ts"
+}
