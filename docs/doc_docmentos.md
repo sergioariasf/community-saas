@@ -282,20 +282,24 @@ src/
 │   │   │   ├── documentsStore.ts             # 💾 BD - CRUD documentos + metadata
 │   │   │   └── types.ts                      # 📋 TIPOS - Tipos del storage
 │   │   └── test/
-│   │       ├── check-document-status.js      # 🧪 TEST - Revisar estado documentos
-│   │       ├── clean-all-documents.js        # 🧪 TEST - Limpiar documentos
-│   │       ├── extract-document.js           # 🧪 TEST - Extraer datos documento
-│   │       ├── fix-stuck-document.js         # 🧪 TEST - Reparar documentos
-│   │       ├── reprocess-document.js         # 🧪 TEST - Reprocesar documentos
-│   │       └── test-database-real-schema.js  # 🧪 TEST - Test esquema BD
+│   │       ├── test-complete-e2e-validation_1.ts  # 🧪 TEST - E2E modernizado PRINCIPAL
+│   │       ├── README-E2E-TEST.md                 # 📚 DOC - Guía completa test E2E
+│   │       ├── check-document-status.js           # 🧪 TEST - Revisar estado documentos
+│   │       ├── clean-all-documents.js             # 🧪 TEST - Limpiar documentos
+│   │       ├── extract-document.js                # 🧪 TEST - Extraer datos documento
+│   │       ├── fix-stuck-document.js              # 🧪 TEST - Reparar documentos
+│   │       ├── reprocess-document.js              # 🧪 TEST - Reprocesar documentos
+│   │       ├── test-database-real-schema.js       # 🧪 TEST - Test esquema BD producción
+│   │       ├── test-metadata-extraction-only.ts   # 🧪 TEST - Solo metadata específica
+│   │       ├── test-simple-extraction.js          # 🧪 TEST - Extracción texto simple
+│   │       ├── coherence-validator.js             # 🧪 TEST - Validador coherencia
+│   │       └── verify-templates-compatibility.ts  # 🧪 TEST - Compatibilidad plantillas
 │   ├── storage/
 │   │   └── supabaseStorage.ts                # 💾 BD - Interacción Supabase Storage
 │   ├── auth/
 │   │   └── permissions.ts                    # 🔐 AUTH - Permisos usuario
 │   ├── pdf/
-│   │   ├── googleVision.ts                   # 🔧 PROCESO - Google Vision OCR
-│   │   ├── googleVisionWorking.ts            # 🔧 PROCESO - Versión funcional
-│   │   ├── googleVisionFixed.ts              # 🔧 PROCESO - Versión corregida
+│   │   ├── googleVision.ts                   # 🔧 PROCESO - Google Vision OCR (EN USO)
 │   │   └── textExtraction.ts                 # 🔧 PROCESO - Extracción texto PDFs
 │   ├── gemini/
 │   │   └── saasAgents.ts                     # 🤖 IA - Agentes SaaS Gemini
