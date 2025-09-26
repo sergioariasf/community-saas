@@ -642,7 +642,7 @@ export function MultiDocumentUploader() {
                     value={processingConfig.processingLevel}
                     onChange={(e) => setProcessingConfig(prev => ({
                       ...prev,
-                      processingLevel: e.target.value as any
+                      processingLevel: e.target.value as 'extract' | 'classify' | 'metadata' | 'chunks'
                     }))}
                     className="w-full p-2 border rounded-lg text-sm"
                   >

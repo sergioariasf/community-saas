@@ -12,6 +12,12 @@ import { T } from '@/components/ui/Typography';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { ActaDetailView } from '@/components/documents/templates/ActaDetailView';
+import { ComunicadoDetailView } from '@/components/documents/templates/ComunicadoDetailView';
+import { FacturaDetailView } from '@/components/documents/templates/FacturaDetailView';
+import { ContratoDetailView } from '@/components/documents/templates/ContratoDetailView';
+import { EscrituraCompraventaDetailView } from '@/components/documents/templates/EscrituraCompraventaDetailView';
+import { AlbaranDetailView } from '@/components/documents/templates/AlbaranDetailView';
 
 export default async function DocumentPageSimple({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -364,7 +370,6 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                     <T.H3 className="mb-4">📋 Vista Completa del Acta</T.H3>
                     {(() => {
                       try {
-                        const { ActaDetailView } = require('@/components/documents/templates/ActaDetailView');
                         
                         const actaData = {
                           ...extractedData  // Pasar todos los campos automáticamente
@@ -407,7 +412,6 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                     <T.H3 className="mb-4">📢 Vista Completa del Comunicado</T.H3>
                     {(() => {
                       try {
-                        const { ComunicadoDetailView } = require('@/components/documents/templates/ComunicadoDetailView');
                         
                         const comunicadoData = {
                           ...extractedData  // Pasar todos los campos automáticamente
@@ -445,7 +449,6 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                     <T.H3 className="mb-4">💰 Vista Completa de la Factura</T.H3>
                     {(() => {
                       try {
-                        const { FacturaDetailView } = require('@/components/documents/templates/FacturaDetailView');
                         
                         const facturaData = {
                           ...extractedData  // Pasar todos los campos automáticamente
@@ -488,7 +491,6 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                     <T.H3 className="mb-4">📝 Vista Completa del Contrato</T.H3>
                     {(() => {
                       try {
-                        const { ContratoDetailView } = require('@/components/documents/templates/ContratoDetailView');
                         
                         const contratoData = {
                           ...extractedData  // Pasar todos los campos automáticamente
@@ -531,7 +533,6 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                     <T.H3 className="mb-4">🏠 Vista Completa de la Escritura</T.H3>
                     {(() => {
                       try {
-                        const { EscrituraCompraventaDetailView } = require('@/components/documents/templates/EscrituraCompraventaDetailView');
                         
                         // Pasar TODOS los campos de la tabla directamente en escrituraData
                         const escrituraData = {
@@ -574,7 +575,6 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                     <T.H3 className="mb-4">📦 Vista Completa del Albarán</T.H3>
                     {(() => {
                       try {
-                        const { AlbaranDetailView } = require('@/components/documents/templates/AlbaranDetailView');
                         
                         const albaranData = {
                           ...extractedData  // Pasar todos los campos automáticamente
@@ -621,7 +621,7 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
       </div>
     );
 
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('DocumentPageSimple - Error:', error);
     
     return (

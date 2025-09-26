@@ -1,0 +1,2 @@
+3587bba25f692b7311e9cf574c069cdd155c37b2 2393 mi-saas-comunidades-ocr.json
+e520b738db611d5b04e7f7840c78de9c6d119e82 2371 mi-saas-comunidades-vision-api.json

@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-import { getDocumentTemplate, getTemplateMetadata, type DocumentType } from './templates';
+import { getDocumentTemplate, getTemplateMetadata, getTemplateStats, type DocumentType } from './templates';
 import { Badge } from '@/components/ui/badge';
 import { T } from '@/components/ui/Typography';
 
@@ -159,7 +159,6 @@ export function DocumentDetailRenderer({
 
 // Hook para obtener estadísticas de plantillas
 export function useTemplateStats() {
-  const { getTemplateStats } = require('./templates');
   return getTemplateStats();
 }
 

@@ -1,5 +1,7 @@
 import { ImageAnnotatorClient } from '@google-cloud/vision';
 import { TextExtractionResult } from './textExtraction';
+import fs from 'fs';
+import path from 'path';
 
 /**
  * Google Vision OCR para PDFs escaneados usando múltiples llamadas a batchAnnotateFiles
@@ -327,8 +329,6 @@ function getGoogleVisionStatus() {
  * Función de test para probar Google Vision OCR de forma aislada
  */
 async function testGoogleVisionWithFile(filePath: string): Promise<void> {
-  const fs = require('fs');
-  const path = require('path');
   
   console.log('=== TEST GOOGLE VISION OCR AISLADO ===');
   console.log('');

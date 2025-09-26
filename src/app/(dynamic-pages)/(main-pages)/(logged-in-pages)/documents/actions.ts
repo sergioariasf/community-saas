@@ -299,7 +299,7 @@ async function updateDocumentStatus(
   try {
     const supabase = await createSupabaseClient();
     
-    const updateData: any = { status };
+    const updateData: { status: string; processed_at?: string } = { status };
     if (status === 'completed') {
       updateData.processed_at = new Date().toISOString();
     }
