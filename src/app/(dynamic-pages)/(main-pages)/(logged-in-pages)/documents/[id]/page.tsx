@@ -61,7 +61,7 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
     }
 
     // 2. Obtener datos específicos según el tipo
-    let extractedData = null;
+    let extractedData: any = null;
     if (document.document_type === 'acta') {
       console.log('DocumentPageSimple - Document is acta, fetching extracted_minutes...');
       const { data: minutes, error: minutesError } = await supabase
