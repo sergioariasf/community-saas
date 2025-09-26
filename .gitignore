@@ -22,3 +22,4 @@ yarn-error.log*
 
 *.tsbuildinfo
 .vercel
+credenciales/
