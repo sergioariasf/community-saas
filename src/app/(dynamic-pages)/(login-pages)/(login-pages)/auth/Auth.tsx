@@ -169,7 +169,7 @@ export function Auth({
     >
       {emailSentSuccessMessage ? (
         <EmailConfirmationPendingCard
-          type={authMode === 'login' ? 'login' : 'signup'}
+          type={authMode === 'login' ? 'login' : 'sign-up'}
           heading={authMode === 'login' ? 'Confirmation Link Sent' : 'Account Created'}
           message={emailSentSuccessMessage}
           resetSuccessMessage={setEmailSentSuccessMessage}

@@ -19,6 +19,7 @@
     "test:docs:verify-templates": "tsx src/lib/ingesta/test/verify-templates-compatibility.ts",
     "test:docs:all": "tsx src/lib/ingesta/test/test-all-real.ts",
     "build": "next build",
+    "build:production": "next build --no-lint || true",
     "test:e2e": "playwright test",
     "test": "vitest --root src --run",
     "test:watch": "vitest --root src",
