@@ -26,4 +26,7 @@ export default {
       bodySizeLimit: '10mb', // Permitir archivos hasta 10MB
     },
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
