@@ -1,0 +1,39 @@
+create table public.vector_embeddings (
+  id uuid not null default gen_random_uuid (),
+  document_id uuid not null,
+  organization_id uuid not null,
+  content text not null,
+  embedding public.vector null,
+  chunk_index integer null default 0,
+  chunk_size integer null,
+  created_at timestamp with time zone not null default now(),
+  constraint vector_embeddings_pkey primary key (id),
+  constraint vector_embeddings_document_id_fkey foreign KEY (document_id) references documents (id) on delete CASCADE,
+  constraint vector_embeddings_organization_id_fkey foreign KEY (organization_id) references organizations (id) on delete CASCADE,
+  constraint vector_embeddings_chunk_index_check check ((chunk_index >= 0)),
+  constraint vector_embeddings_chunk_size_check check (
+    (
+      (chunk_size is null)
+      or (chunk_size > 0)
+    )
+  ),
+  constraint vector_embeddings_content_check check (
+    (
+      length(
+        TRIM(
+          both
+          from
+            content
+        )
+      ) >= 10
+    )
+  )
+) TABLESPACE pg_default;
+
+create index IF not exists idx_vector_embeddings_document_id on public.vector_embeddings using btree (document_id) TABLESPACE pg_default;
+
+create index IF not exists idx_vector_embeddings_organization_id on public.vector_embeddings using btree (organization_id) TABLESPACE pg_default;
+
+create index IF not exists idx_vector_embeddings_chunk_index on public.vector_embeddings using btree (chunk_index) TABLESPACE pg_default;
+
+create index IF not exists idx_vector_embeddings_cosine on public.vector_embeddings using hnsw (embedding vector_cosine_ops) TABLESPACE pg_default;

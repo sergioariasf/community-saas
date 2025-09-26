@@ -1,0 +1,146 @@
+{
+  "originalFile": "follon.pdf",
+  "analysisDate": "2025-09-25T08:44:22.473Z",
+  "totalLinesProcessed": 1730,
+  "documentsFound": 6,
+  "supportedDocuments": 0,
+  "unsupportedDocuments": 6,
+  "detectedDocuments": [
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (1/2)",
+      "lines": "1-107",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "enfermedad común",
+        "antonio lara gutierrez",
+        "control y tension",
+        "12/09/2020",
+        "21/09/2020"
+      ]
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (2/2)",
+      "lines": "108-213",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "enfermedad común",
+        "antonio lara gutierrez",
+        "control y tension",
+        "12/09/2020",
+        "21/09/2020"
+      ]
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (1/2)",
+      "lines": "214-387",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "antonio lara gutierrez",
+        "control y tension",
+        "12/09/2020",
+        "21/09/2020",
+        "Z20.828"
+      ]
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (2/2)",
+      "lines": "388-490",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "antonio lara gutierrez",
+        "control y tension",
+        "12/09/2020",
+        "21/09/2020",
+        "Z20.828"
+      ]
+    },
+    {
+      "type": "multa de circulación",
+      "title": "Notificación de Multa de Circulación - Antonio Lara Gutierrez",
+      "lines": "491-663",
+      "confidence": 0.99,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "antonio lara gutierrez",
+        "5581FTH",
+        "100,00 EUROS",
+        "7110762300",
+        "28992.9"
+      ]
+    },
+    {
+      "type": "albarán",
+      "title": "Albarán - Control y Tensión S.L.",
+      "lines": "665-690",
+      "confidence": 0.9,
+      "supported": false,
+      "keywords": [
+        "albarán",
+        "control y tensión s.l.",
+        "2002337934",
+        "01.10.2020",
+        "ESB83802850"
+      ]
+    }
+  ],
+  "outputFiles": [
+    {
+      "filename": "1_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (1/2)",
+      "lines": "1-107"
+    },
+    {
+      "filename": "2_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (2/2)",
+      "lines": "108-213"
+    },
+    {
+      "filename": "3_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal-12.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (1/2)",
+      "lines": "214-387"
+    },
+    {
+      "filename": "4_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal-22.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (2/2)",
+      "lines": "388-490"
+    },
+    {
+      "filename": "5_multa de circulación_Notificacin-de-Multa-de-Circulacin---Antonio-Lara-.txt",
+      "type": "multa de circulación",
+      "title": "Notificación de Multa de Circulación - Antonio Lara Gutierrez",
+      "lines": "491-663"
+    },
+    {
+      "filename": "6_albarán_Albarn---Control-y-Tensin-SL.txt",
+      "type": "albarán",
+      "title": "Albarán - Control y Tensión S.L.",
+      "lines": "665-690"
+    }
+  ]
+}

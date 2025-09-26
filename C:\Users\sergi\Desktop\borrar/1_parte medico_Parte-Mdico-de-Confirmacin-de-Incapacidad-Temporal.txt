@@ -1,0 +1,121 @@
+
+=== DOCUMENTO SEPARADO ===
+Archivo original: follon.pdf
+Tipo detectado: parte medico
+Título sugerido: Parte Médico de Confirmación de Incapacidad Temporal (Trabajador)
+Líneas: 1-108
+Confianza: 98%
+Soportado por pipeline: NO
+Descripción: Medical certificate confirming temporary incapacity for work, issued to the worker. Contains details about the illness, dates, and medical professional information.
+Palabras clave: parte medico, incapacidad temporal, enfermedad comun, antonio lara gutierrez, control y tension, 21/09/2020
+Fecha separación: 2025-09-25T08:49:59.871Z
+=========================
+
+--- Página 1 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) |
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+"
+FECHA DE LA BAJA
+12/09/2020
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+N° DEL PARTE DE CONFIRMACIÓN
+1
+TIPO DE PROCESO
+Muy corto
+Medio
+DURACIÓN ESTIMADA
+Corto ☑
+Largo
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020
+(Todas las contingencias)
+Código CIE-9
+Código CIE-10
+(Sólo en EP)
+Z20.828
+DIAGNÓSTICO CON DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL
+DIAGNÓSTICO DE CONFIRMACIÓN Contacto y (sospecha de) exposición a otras
+enfermedades víricas transmisibles
+DESCRIPCIÓN DE LA LIMITACIÓN FUNCIONAL EN ESTA FECHA Limitación movilidad/Inmovilización
+SÓLO EN CASO DEL TRASLADO DEL TRABAJADOR A OTRO SPS
+ÚLTIMO PARTE DE CONFIRMACIÓN POR TRASLADO
+PASA A CONTROL DEL INSS
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+☐
+11/09/2021
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a un reconocimiento médico tiene la obligación de acudir. En caso de no comparecer
+sin haber justificado su ausencia, el pago de su prestación será suspendido cautelarmente, en virtud de lo previsto en el
+art.132.3 de la Ley General de la Seguridad Social.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ANTONIO
+VILCH Z,
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para el TRABAJADOR
+
+--- Página 2 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL)
+Enfermedad profesional (EP)
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+FECHA DE LA BAJA
+12/09/2020
+;
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+TIPO DE PROCESO
+Muy corto
+Corto
+Medio
+☑
+Largo
+ㅁㅁ
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO
+N° DEL PARTE DE CONFIRMACIÓN

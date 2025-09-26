@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
 import { T } from '@/components/ui/Typography';
 import { getAllDocuments } from '@/data/anon/documents';
-import { PlusCircle, Settings, Trash2, Layers } from 'lucide-react';
+import { PlusCircle, Settings, Trash2, Layers, Scissors } from 'lucide-react';
 import Link from 'next/link';
 import { Suspense } from 'react';
 import { DocumentsList } from './DocumentsList';
@@ -64,6 +64,11 @@ export default function DocumentsPage() {
           <Link href="/documents/templates">
             <Button variant="outline" className="flex items-center gap-2">
               <Layers className="h-4 w-4" /> Plantillas
+            </Button>
+          </Link>
+          <Link href="/documents/multi-analyzer">
+            <Button variant="outline" className="flex items-center gap-2 border-blue-200 text-blue-700 hover:bg-blue-50">
+              <Scissors className="h-4 w-4" /> Multi-Documento
             </Button>
           </Link>
           <CleanAllButton />

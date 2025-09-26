@@ -1,0 +1,139 @@
+{
+  "originalFile": "follon.pdf",
+  "analysisDate": "2025-09-25T08:49:59.875Z",
+  "totalLinesProcessed": 1731,
+  "documentsFound": 6,
+  "supportedDocuments": 1,
+  "unsupportedDocuments": 5,
+  "detectedDocuments": [
+    {
+      "type": "parte medico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Trabajador)",
+      "lines": "1-108",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte medico",
+        "incapacidad temporal",
+        "enfermedad comun",
+        "antonio lara gutierrez",
+        "control y tension",
+        "21/09/2020"
+      ]
+    },
+    {
+      "type": "parte medico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Empresa)",
+      "lines": "109-217",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte medico",
+        "incapacidad temporal",
+        "enfermedad comun",
+        "antonio lara gutierrez",
+        "control y tension",
+        "21/09/2020"
+      ]
+    },
+    {
+      "type": "parte medico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Trabajador)",
+      "lines": "218-407",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte medico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "antonio lara gutierrez",
+        "control y tension",
+        "21/09/2020"
+      ]
+    },
+    {
+      "type": "parte medico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Empresa)",
+      "lines": "408-512",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte medico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "antonio lara gutierrez",
+        "control y tension",
+        "21/09/2020"
+      ]
+    },
+    {
+      "type": "multa de circulación",
+      "title": "Notificación de Multa de Circulación - Antonio Lara Gutiérrez",
+      "lines": "513-660",
+      "confidence": 0.99,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "antonio lara gutierrez",
+        "madrid",
+        "5581FTH",
+        "100,00 EUROS"
+      ]
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán - Control y Tensión S.L.",
+      "lines": "667-700",
+      "confidence": 0.8,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "control y tension",
+        "01.10.2020",
+        "594182",
+        "2002337934"
+      ]
+    }
+  ],
+  "outputFiles": [
+    {
+      "filename": "1_parte medico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte medico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Trabajador)",
+      "lines": "1-108"
+    },
+    {
+      "filename": "2_parte medico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte medico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Empresa)",
+      "lines": "109-217"
+    },
+    {
+      "filename": "3_parte medico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal-Tr.txt",
+      "type": "parte medico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Trabajador)",
+      "lines": "218-407"
+    },
+    {
+      "filename": "4_parte medico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal-Em.txt",
+      "type": "parte medico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Empresa)",
+      "lines": "408-512"
+    },
+    {
+      "filename": "5_multa de circulación_Notificacin-de-Multa-de-Circulacin---Antonio-Lara-.txt",
+      "type": "multa de circulación",
+      "title": "Notificación de Multa de Circulación - Antonio Lara Gutiérrez",
+      "lines": "513-660"
+    },
+    {
+      "filename": "6_albaran_Albarn---Control-y-Tensin-SL.txt",
+      "type": "albaran",
+      "title": "Albarán - Control y Tensión S.L.",
+      "lines": "667-700"
+    }
+  ]
+}

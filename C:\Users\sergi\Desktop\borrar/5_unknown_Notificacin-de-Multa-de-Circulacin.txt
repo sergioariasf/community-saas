@@ -1,0 +1,182 @@
+
+=== DOCUMENTO SEPARADO ===
+Archivo original: follon.pdf
+Tipo detectado: unknown
+Título sugerido: Notificación de Multa de Circulación
+Líneas: 515-683
+Confianza: 95%
+Soportado por pipeline: NO
+Descripción: Notification of a traffic violation issued to Antonio Lara Gutierrez. Includes details of the infraction, payment information, and appeal instructions.
+Palabras clave: multa, circulación, notificación, infracción, antonio lara gutierrez, madrid
+Fecha separación: 2025-09-25T08:47:39.814Z
+=========================
+
+10
+GTIN: 4006209457078
+0060 543633
+Broca SDS short Pointer M 16/200/260
+GTIN: 4048962308747
+10,41
+1
+1
+0070 534616 MS LIQUIDO 1 KG MARRON
+11,55
+1
+1
+GTIN: 4048962234077
+Suma:
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.
+En caso de alguna incidencia en el pedido, no se admitirán devoluciones de material
+ni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.
+Telef.
+Fax
+: 0034 977 838 711
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE
+: ESA08150666
+207
+Fischer Ibérica, S.A.U.
+CI. Klaus Fischer, 1/43300 Mont-roig del Camp (Tarragona)
+R.M.T. Hoja 20.251 Folio 184 - Tomo 1.565 1 Inscripción N.I.F. A08150666
+Deutsche Bank cta. nr. 0019 0020 99 4010032435, IBAN: ES9800190020994010032435, SWIFT: DEUTESBR
+La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX
+
+--- Página 8 ---
+ÁREA DE GOBIERNO DE MEDIO AMBIENTE
+Y MOVILIDAD
+Dirección General de Gestión y Vigilancia
+de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Departamento de Recursos de Multas de Circulación
+MADRID
+C/ Albarracín, 33 28037 MADRID
+TITULAR
+NOTIFICACIÓN DE RESOLUCIÓN DE
+DESESTIMACIÓN DE RECURSO DE
+REPOSICIÓN
+EMISOR 28992.9
+Modelo
+9-5.1
+HORARIO DE ATENCIÓN AL PÚBLICO: Dias laborables de lunes a viernes, de 8:30 a 14 horas. Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+CONTROL Y TENSION SL
+MATRICULA 5581FTH
+MARCA
+MODELO
+LUGAR DE LA INFRACCIÓN
+REFERENCIA DEL EXPEDIENTE
+951/711023522.0
+N° DE NOTIFICACIÓN
+NOTIFI.951/201460155
+M-30 XC K 19,06 CR4
+FECHA DE INCOACIÓN
+DEL EXPEDIENTE
+FECHA DE EMISIÓN DE
+ESTA NOTIFICACIÓN
+10:50 16/09/2019 03/09/2020
+PÉRDIDA DE PUNTOS
+NO
+FECHA DE LA INFRACCIÓN HORA DE LA
+INFRACCIÓN
+21/06/2019
+CLAVE Y CALIFICACIÓN DE LA INFRACCIÓN
+10/002 GRAVE
+IMPORTE DE LA MULTA
+100,00
+PRECEPTO INFRINGIDO (ver dorso) *
+FECHA DE ESTA RESOLUCION
+27/08/2020
+INFRACCIÓN IMPUTADA
+SOBREPASAR LA VELOCIDAD
+MÁXIMA EN VÍAS LIMITADAS EN 60
+KM/H O MÁS.
+CIRCULAR A 74 km/h LIMITE 70 km/h
+RELACION: 880/2020
+76.A LSV
+REFERENCIA DEL DESTINATARIO:
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ 10
+GALAPAGAR
+MADRID
+CP: 28260
+SC:00
+NT81150160009701460155D
+M-30 TUNEL XC: M-30 Túnel Calzada 2ª entre Km. 19 y Km. 8
+ANTECEDENTES DE HECHO
+Primero: El expediente sancionador con número de referencia indicado en el encabezamiento de la presente notificación fue
+incoado como consecuencia de la comisión de la infracción señalada.
+Segundo: El procedimiento finalizó con la imposición de la correspondiente sanción mediante resolución de la Directora
+General de Gestión y Vigilancia de la Circulación.
+Tercero: La persona sancionada ha presentado recurso de reposición contra dicha resolución. Su recurso ha sido estudiado en
+el Departamento de Recursos de Multas de Circulación.
+FUNDAMENTOS DE DERECHO
+PRIMERO: La captación de la velocidad de un vehículo se realiza mediante un
+cinemómetro que ha sido homologado y verificado por el órgano competente. La
+medición realizada responde a la velocidad con la que el vehículo circulaba
+en el momento de cometerse la infracción. No obstante, a dicha medición le
+han sido aplicados los márgenes de error previstos en la normativa de metro-
+logía vigente, habiendo sido utilizada para la graduación de la infracción
+la velocidad corregida según dichos márgenes de error, Y, por tanto, mino-
+rada en relación a la velocidad captada.
+En función de lo expuesto se puede afirmar que el vehículo circulaba, al me-
+nos, a la velocidad por la que fue sancionado, resultando carentes de funda-
+mento las alegaciones formuladas que dudan de la exactitud del elemento me-
+didor de la velocidad al cumplir éste con las exigencias que le marcan las
+normas que le son de aplicación. Queda, por tanto, demostrada la comisión
+de la infracción.
+SEGUNDO: No se aprecia ausencia de responsabilidad en la comisión de la in-
+fracción, ni vulneración de ninguno de los aspectos formales del procedi-
+miento, pues se ha tramitado cumpliendo los requisitos exigidos en la
+L.S.V., y demás normativa de general aplicación.
+......
+N.° BOLETÍN
+CONTROL
+IMPORTE
+MATRÍCULA
+7110235220
+21-10-2020
+52
+100,00
+5581FTH
+000003108
+
+--- Página 9 ---
+Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general
+aplicación, la Directora General de Gestión y Vigilancia de la Circulación, en uso de las facultades que le han sido
+delegadas por Acuerdo de la Junta de Gobierno de 4 de julio de 2019, en relación con lo establecido en los artículos 17.1.k) y
+40 f) de la Ley 22/2006, de 4 de julio, de Capitalidad y de Régimen Especial de Madrid, ha RESUELTO:
+PRIMERO: DESESTIMAR el recurso de reposición interpuesto
+SEGUNDO: Notificar al interesado la presente resolución, informándole de que, si así lo desea, podrá interponer recurso
+contencioso administrativo ante los Juzgados de lo Contencioso Administrativo en el plazo de dos meses, a contar desde el día
+siguiente al de la práctica de esta notificación, de conformidad con lo dispuesto en el artículo 46.1 de la Ley 29/1998, de 13 de
+julio, Reguladora de la Jurisdicción Contencioso-Administrativa, sin perjuicio de que pueda ejercitar cualquier otro recurso que
+estime oportuno, a tenor de lo establecido en el artículo 88.3 de la LPACAP.
+TERCERO: Informarle de que, al haber adquirido firmeza la sanción, deberá hacer efectivo el pago de la multa por cualquiera
+de los medios que a continuación se especifican. Finalizado el plazo de pago en vía voluntaria sin que se haya abonado el
+importe de la multa, se iniciará el procedimiento de apremio (art. 110 LSV):
+1.- En cualquier oficina de las entidades financieras que a continuación se relacionan, presentando siempre esta notificación:
+- BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)
+- BANCO SABADELL
+· BANCO SANTANDER
+-
+- CAIXABANK
+- IBERCAJA BANCO
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección General de
+Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta notificación y la matrícula del
+vehículo, datos imprescindibles para su debida identificación.
+3.- Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se llama desde
+fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista en
+www.madrid.es/Lineamadrid).
+4.- Mediante certificado digital o banca electrónica en www.madrid.es/multas.
+Asimismo se le comunica lo siguiente:
+Las sanciones graves o muy graves y la detracción de puntos, en su caso, serán comunicadas al Registro de Conductores e
+Infractores de la Jefatura Central de Tráfico (art. 113 de la LSV).
+El impago de las multas por infracciones graves o muy graves puede derivar en limitaciones en los trámites relativos a los
+vehículos (artículo 107 de la LSV).

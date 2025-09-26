@@ -1,0 +1,187 @@
+
+=== DOCUMENTO SEPARADO ===
+Archivo original: follon.pdf
+Tipo detectado: parte médico
+Título sugerido: Parte Médico de Baja/Alta de Incapacidad Temporal (1/2)
+Líneas: 214-387
+Confianza: 95%
+Soportado por pipeline: NO
+Descripción: Medical report for temporary disability discharge/reinstatement, first part.
+Palabras clave: parte médico, baja, alta, incapacidad temporal, antonio lara gutierrez, control y tension, 12/09/2020, 21/09/2020, Z20.828
+Fecha separación: 2025-09-25T08:44:22.471Z
+=========================
+
+Recaída:
+sí ☐ NO ☑
+Fecha de la baja del proceso inicial del que es
+PARTE DE ALTA ☑
+recaída
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+Código CIE-9
+(Todas las contingencias)
+Código CIE-10
+(Solo en EP)
+Z20.828
+Fecha de la siguiente revisión médica
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/ DATOS DEL MÉDICO INSPECTOR
+Curación/Mejoría que permite realizar trabajo habitual ☑
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHE.
+21/09/2020
+Firma, fecha y sello
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐ ☐ ☐ ☑
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a reconocimiento médico tiene la obligación de acudir. En caso de no comparecer, sin haber justificado su ausencia, el pago de su prestación será suspendido
+cautelarmente, en virtud de lo previsto en el art. 132.3 de la Ley General de la Seguridad social.
+Contra este acto podrá interponer una reclamación previa a la vía judicial social, en el plazo de once dias siguientes al de su notificación, de conformidad con lo establecido en el artículo 71 de la Ley 36/2011, 10 de octubre,
+reguladora de la Jurisdicción social.
+En los casos de alta médica por contingencia prefesional emitida por una mutua, podrá interponer reclamación previa a la via judicial social, en el plazo de once días siguientes al de su notificación, de conformidad con lo
+establecido en el artículo 71 de la Ley 36/2011, de 10 de octubre, reguladora de la Jurisdicción social o podrá iniciar el procedimiento administrativo especial de revisión del alta ante la entidad gestora (INSS/ISM) competente en
+el plazo de diez días siguientes al de su notificación, con efecto suspensivo del alta, de conformidad con lo establecido en el artículo 4 del RD 1430/2009, de 11 de septiembre.
+Ejemplar para el TRABAJADOR
+
+--- Página 4 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+ENTIDAD EMISORA
+Periodo de observación por enfermedad profesional
+SPS ☑ INSS/ISM ☐ MUTUA |
+DATOS DE/LA TRABAJADOR/A
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Primer apellido
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+LARA
+GUTIERREZ
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+CL JAVIER VICENTE MONTERO, 2
+Localidad
+Provincia
+ESCORIAL, EL
+Nombre de la empresa
+Control y Tension
+MADRID
+Puesto de trabajo
+Directores generales, empresa privada
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Código postal Teléfono móvil
+Teléfono fijo
+28280
+918964063
+609273707
+Código nacional de ocupación (CNO)
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐
+Ejemplar para la EMPRESA
+
+--- Página 5 ---
+medio ambiente y MADRID
+movilidad
+Dirección General de Gestión y Vigilancia de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Órgano Instructor:
+Departamento de Instrucción de Multas de Circulación
+C/ Albarracín, 33 - 28037
+MADRID
+Horario de atención al público: Laborables de lunes a viernes (8:30 a 14 horas)
+Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+MODELO
+935
+INFORMACIÓN SOBRE PUBLICACIÓN DE EDICTO.
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ NUM 10
+28250 GALAPAGAR MADRID
+MULTA DE CIRCULACIÓN
+EMISOR 28992.9
+Con fecha 7 de Septiembre de 2020 se ha publicado en el Tablón Edictal Único (BOE) / Tablón Edictal de
+Sanciones de Tráfico la notificación relativa a la resolución sancionadora de la siguiente infracción de circulación:
+REFERENCIA DEL EXPEDIENTE: 935/711076230.0
+Matricula del
+vehiculo
+DNICIF
+Fecha de la
+infracción
+Hora de la
+infracción
+5581FTH
+Lugar de la infracción
+1827563 31/07/2019 11/26 M-30 Xc K 19,06 Cr4
+Clave de la infracción
+10/2
+Precepto
+infringido
+Fecha de inconción
+76.A LSV
+del expediente
+16/10/2019
+Fecha de la
+Resolución
+13/02/2020
+Sobrepasar la velocidad máxima en vías limitadas en 60 km/h o más. circular a79 km/h limitada a70 km/h
+CALIFICACIÓN DE LA INFRACCIÓN: (GRAVE)

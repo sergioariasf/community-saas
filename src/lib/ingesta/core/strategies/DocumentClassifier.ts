@@ -39,9 +39,10 @@ export class DocumentClassifier {
     }
 
     // Estrategia 2: Análisis de texto (si está disponible)
+    let textResult: ClassificationResult | null = null;
     if (options.extractedText && options.extractedText.length > 100) {
       console.log('🔍 [DEBUG] Attempting text-based classification...');
-      const textResult = await this.classifyByTextAnalysis(options.extractedText, options.filename);
+      textResult = await this.classifyByTextAnalysis(options.extractedText, options.filename);
       if (textResult.confidence >= 0.8) {
         console.log('✅ [DEBUG] High confidence text analysis - using text classification');
         return textResult;
@@ -49,9 +50,10 @@ export class DocumentClassifier {
     }
 
     // Estrategia 3: Agente IA (más preciso pero más lento)
+    let aiResult: ClassificationResult | null = null;
     if (options.useAI !== false) {
       console.log('🤖 [DEBUG] Attempting AI agent classification...');
-      const aiResult = await this.classifyWithAIAgent(options.extractedText || '', options.filename);
+      aiResult = await this.classifyWithAIAgent(options.extractedText || '', options.filename);
       if (aiResult.confidence >= 0.7) {
         console.log('✅ [DEBUG] AI agent classification successful');
         return aiResult;
@@ -60,9 +62,8 @@ export class DocumentClassifier {
 
     // Fallback: Mejor resultado disponible
     console.log('⚠️ [DEBUG] Using best available classification result');
-    const bestResult = [filenameResult, textResult, aiResult]
-      .filter(r => r)
-      .sort((a, b) => (b?.confidence || 0) - (a?.confidence || 0))[0];
+    const allResults = [filenameResult, textResult, aiResult].filter(r => r !== null);
+    const bestResult = allResults.sort((a, b) => (b?.confidence || 0) - (a?.confidence || 0))[0];
 
     return {
       ...bestResult,

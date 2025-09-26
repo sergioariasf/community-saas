@@ -19,7 +19,7 @@ import { uploadDocumentToStorage, downloadDocumentFromStorage, deleteDocumentFro
 import { extractTextFromPDF, cleanExtractedText } from '@/lib/pdf/textExtraction';
 import { callSaaSAgent } from '@/lib/agents/AgentOrchestrator';
 import { saveExtractedMinutes } from '@/lib/agents/persistence/ActaPersistence';
-import { saveExtractedInvoice } from '@/lib/gemini/saasAgents';
+import { saveExtractedFactura } from '@/lib/agents/persistence/FacturaPersistence';
 
 // Import progressive pipeline system (using simplified version)
 import { SimplePipeline } from '@/lib/ingesta/core/progressivePipelineSimple';
@@ -392,7 +392,7 @@ export const reprocessDocument = authActionClient
           
           const result = await callSaaSAgent('invoice_extractor', { document_text: cleanText });
           if (result.success) {
-            await saveExtractedInvoice(document.id, result.data);
+            await saveExtractedFactura(document.id, result.data, document.organization_id);
           }
         }
       }

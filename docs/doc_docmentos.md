@@ -232,6 +232,14 @@ flowchart TD
 ```
 src/
 ├── app/
+│   ├── api/
+│   │   └── documents/                        # 📁 APIS DOCUMENTOS
+│   │       ├── [id]/
+│   │       │   └── route.ts                  # 🌐 API - CRUD documento individual
+│   │       ├── clean-all/
+│   │       │   └── route.ts                  # 🌐 API - Limpiar todos los documentos
+│   │       └── multi-analyze/                # 📁 API MULTI-DOCUMENTO
+│   │           └── route.ts                  # 🌐 API - Análisis y separación multi-documento (120 líneas)
 │   └── (dynamic-pages)/(main-pages)/(logged-in-pages)/documents/
 │       ├── actions.ts                        # 🔧 PROCESO - Server Actions para upload
 │       ├── page.tsx                          # 🎨 UI - Lista de documentos
@@ -239,6 +247,9 @@ src/
 │       │   └── page.tsx                      # 🎨 UI - Página de subida de documentos
 │       ├── templates/
 │       │   └── page.tsx                      # 🎨 UI - Página de plantillas
+│       ├── multi-analyzer/                   # 📁 PROTOTIPO MULTI-DOCUMENTO
+│       │   ├── page.tsx                      # 🎨 UI - Página analizador multi-documento
+│       │   └── MultiDocumentUploader.tsx     # 🎨 UI - Uploader con análisis IA (450 líneas)
 │       └── [id]/
 │           └── page.tsx                      # 🎨 UI - Página detalle de documento
 ├── components/
@@ -261,6 +272,8 @@ src/
 │   │   ├── doc_documentos.md                 # 📚 DOC - Documentación del sistema
 │   │   ├── core/
 │   │   │   ├── progressivePipelineSimple.ts  # 🔧 PROCESO - Pipeline principal (1272 líneas)
+│   │   │   ├── multi-document/               # 📁 MÓDULO MULTI-DOCUMENTO
+│   │   │   │   └── MultiDocumentAnalyzer.ts  # 🤖 IA - Separador multi-documento (350 líneas)
 │   │   │   ├── strategies/                   # 📁 MÓDULO ESTRATEGIAS DOCUMENTO
 │   │   │   │   ├── BaseDocumentExtractor.ts  # 🔧 PROCESO - Interfaz base (65 líneas)
 │   │   │   │   ├── ActaExtractor.ts          # 🔧 PROCESO - Estrategia actas (70 líneas)
@@ -307,6 +320,26 @@ src/
 │   ├── database.types.ts                     # 📋 TIPOS - Tipos BD Supabase
 │   └── safe-action.ts                        # 🔐 AUTH - Acciones seguras
 ```
+
+### ORGANIZACIÓN ARCHIVOS - Funcionalidad Multidocumento
+
+📁 ARCHIVOS NUEVOS CREADOS:
+
+API Endpoints:
+
+- /src/app/api/documents/multi-analyze/route.ts - API para análisis y separación de PDFs multidocumento
+- /src/app/api/documents/[id]/view/route.ts - API para servir documentos (PDFs desde Storage, texto desde BD)
+
+UI Components:
+
+- /src/app/(dynamic-pages)/(main-pages)/(logged-in-pages)/documents/multi-analyzer/page.tsx - Página principal del analizador multidocumento
+- /src/app/(dynamic-pages)/(main-pages)/(logged-in-pages)/documents/multi-analyzer/MultiDocumentUploader.tsx - Componente de carga y análisis
+
+Core Logic:
+
+- /src/lib/ingesta/core/multi-document/MultiDocumentAnalyzer.ts - Analizador principal con Gemini Flash
+- /src/lib/ingesta/core/multi-document/DocumentTypeMapper.ts - Mapeo de tipos de documentos
+- /src/lib/ingesta/core/multi-document/SchemaConfig.ts - Configuración automática de esquemas
 
 ## TABLAS
 
@@ -592,14 +625,16 @@ node src/lib/generators/master-generator.js albaran
 **Propósito:** Validar el pipeline completo usando el mismo código de producción
 
 **Pipeline de 6 Pasos:**
+
 1. 📄 **Extracción** - PDF → Texto (Google Vision OCR + PDF-parse)
-2. 🏷️ **Clasificación** - Identificar tipo documento (95% confianza) 
+2. 🏷️ **Clasificación** - Identificar tipo documento (95% confianza)
 3. 📊 **Metadata** - IA extrae campos estructurados (27 campos)
-4. 🔍 **Validación** - Verificar integridad datos 
+4. 🔍 **Validación** - Verificar integridad datos
 5. 🎨 **Templates** - Compatibilidad con UI (100%)
 6. 🔧 **Schema BD** - Validación contra document-types-schema.json
 
 **Comandos principales:**
+
 ```bash
 # Test completo con logs
 GEMINI_API_KEY=xxx npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts factura --verbose
@@ -614,8 +649,9 @@ done
 ```
 
 **Características:**
+
 - ✅ **Single Source of Truth** - Usa document-types-schema.json
-- ✅ **Auto-dependency resolution** - Ejecuta pasos prerequisitos automáticamente  
+- ✅ **Auto-dependency resolution** - Ejecuta pasos prerequisitos automáticamente
 - ✅ **Pasos selectivos** - `--steps=1`, `--steps=2-4`, `--steps=1,3,5`
 - ✅ **7 tipos soportados** - acta, factura, comunicado, contrato, escritura, albaran, presupuesto
 - ✅ **Reportes JSON** - Guardados en `datos/e2e-reports/`

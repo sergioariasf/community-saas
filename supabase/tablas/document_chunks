@@ -1,0 +1,89 @@
+create table public.document_chunks (
+  id uuid not null default gen_random_uuid (),
+  created_at timestamp with time zone not null default now(),
+  document_id uuid not null,
+  organization_id uuid not null,
+  chunk_number integer not null,
+  chunk_type text not null,
+  content text not null,
+  content_length integer not null default 0,
+  start_position integer null,
+  end_position integer null,
+  page_numbers integer[] null,
+  chunk_metadata jsonb null default '{}'::jsonb,
+  embedding public.vector null,
+  embedding_model text null default 'text-embedding-ada-002'::text,
+  embedding_created_at timestamp with time zone null,
+  chunking_method text not null,
+  confidence real null,
+  quality_score real null,
+  processing_time_ms integer null,
+  tokens_used integer null default 0,
+  input_sample_length integer null,
+  chunking_config jsonb null default '{}'::jsonb,
+  chunked_by uuid null,
+  constraint document_chunks_pkey primary key (id),
+  constraint document_chunks_chunked_by_fkey foreign KEY (chunked_by) references auth.users (id),
+  constraint document_chunks_document_id_fkey foreign KEY (document_id) references documents (id) on delete CASCADE,
+  constraint document_chunks_organization_id_fkey foreign KEY (organization_id) references organizations (id) on delete CASCADE,
+  constraint document_chunks_confidence_check check (
+    (
+      (confidence >= (0.0)::double precision)
+      and (confidence <= (1.0)::double precision)
+    )
+  ),
+  constraint document_chunks_content_check check ((length(content) > 0)),
+  constraint document_chunks_processing_time_ms_check check ((processing_time_ms >= 0)),
+  constraint document_chunks_quality_score_check check (
+    (
+      (quality_score >= (0.0)::double precision)
+      and (quality_score <= (1.0)::double precision)
+    )
+  ),
+  constraint document_chunks_start_position_check check ((start_position >= 0)),
+  constraint document_chunks_check check ((end_position >= start_position)),
+  constraint positive_content_length check ((content_length = length(content))),
+  constraint document_chunks_chunk_number_check check ((chunk_number >= 1)),
+  constraint document_chunks_chunk_type_check check (
+    (
+      chunk_type = any (
+        array[
+          'content'::text,
+          'header'::text,
+          'table'::text,
+          'list'::text,
+          'conclusion'::text,
+          'summary'::text
+        ]
+      )
+    )
+  ),
+  constraint document_chunks_chunking_method_check check (
+    (
+      chunking_method = any (
+        array[
+          'semantic'::text,
+          'fixed-size'::text,
+          'paragraph'::text,
+          'section'::text
+        ]
+      )
+    )
+  )
+) TABLESPACE pg_default;
+
+create unique INDEX IF not exists idx_document_chunks_doc_number on public.document_chunks using btree (document_id, chunk_number) TABLESPACE pg_default;
+
+create index IF not exists idx_document_chunks_org on public.document_chunks using btree (organization_id, created_at desc) TABLESPACE pg_default;
+
+create index IF not exists idx_document_chunks_embedding_hnsw on public.document_chunks using hnsw (embedding vector_cosine_ops) TABLESPACE pg_default;
+
+create trigger calculate_chunk_length_trigger BEFORE INSERT
+or
+update on document_chunks for EACH row
+execute FUNCTION calculate_chunk_length ();
+
+create trigger update_document_chunks_count_trigger
+after INSERT
+or DELETE on document_chunks for EACH row
+execute FUNCTION update_document_chunks_count ();

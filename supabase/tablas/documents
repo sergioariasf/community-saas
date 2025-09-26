@@ -1,0 +1,211 @@
+create table public.documents (
+  id uuid not null default gen_random_uuid (),
+  organization_id uuid not null,
+  community_id uuid null,
+  filename text not null,
+  file_path text not null,
+  file_size bigint not null,
+  file_hash text not null,
+  document_type text null,
+  legacy_status text not null default 'processing'::text,
+  created_at timestamp with time zone not null default now(),
+  processed_at timestamp with time zone null,
+  extracted_text text null,
+  text_length integer null default 0,
+  page_count integer null default 0,
+  processing_level integer null default 1,
+  processing_config jsonb null default '{}'::jsonb,
+  extraction_status text null default 'pending'::text,
+  extraction_error text null,
+  extraction_method text null,
+  extraction_completed_at timestamp with time zone null,
+  classification_status text null,
+  classification_error text null,
+  classification_completed_at timestamp with time zone null,
+  metadata_status text null,
+  metadata_error text null,
+  metadata_completed_at timestamp with time zone null,
+  chunking_status text null,
+  chunking_error text null,
+  chunking_completed_at timestamp with time zone null,
+  chunks_count integer null default 0,
+  total_processing_time_ms integer null default 0,
+  total_tokens_used integer null default 0,
+  estimated_cost_usd numeric(10, 6) null default 0.000000,
+  processing_started_at timestamp with time zone null,
+  processing_completed_at timestamp with time zone null,
+  last_processed_by uuid null,
+  uploaded_by uuid null,
+  mime_type text null,
+  original_filename text null,
+  constraint documents_pkey primary key (id),
+  constraint unique_organization_file_hash unique (organization_id, file_hash),
+  constraint documents_organization_id_fkey foreign KEY (organization_id) references organizations (id) on delete CASCADE,
+  constraint documents_last_processed_by_fkey foreign KEY (last_processed_by) references auth.users (id),
+  constraint documents_community_id_fkey foreign KEY (community_id) references communities (id) on delete CASCADE,
+  constraint documents_uploaded_by_fkey foreign KEY (uploaded_by) references auth.users (id),
+  constraint documents_file_path_check check (
+    (
+      length(
+        TRIM(
+          both
+          from
+            file_path
+        )
+      ) >= 1
+    )
+  ),
+  constraint documents_file_size_check check ((file_size > 0)),
+  constraint documents_chunking_status_check check (
+    (
+      chunking_status = any (
+        array[
+          'pending'::text,
+          'processing'::text,
+          'completed'::text,
+          'failed'::text,
+          'skipped'::text
+        ]
+      )
+    )
+  ),
+  constraint documents_metadata_status_check check (
+    (
+      metadata_status = any (
+        array[
+          'pending'::text,
+          'processing'::text,
+          'completed'::text,
+          'failed'::text,
+          'skipped'::text
+        ]
+      )
+    )
+  ),
+  constraint documents_processing_level_check check ((processing_level = any (array[1, 2, 3, 4]))),
+  constraint documents_status_check check (
+    (
+      legacy_status = any (
+        array[
+          'processing'::text,
+          'completed'::text,
+          'error'::text
+        ]
+      )
+    )
+  ),
+  constraint documents_filename_check check (
+    (
+      (
+        length(
+          TRIM(
+            both
+            from
+              filename
+          )
+        ) >= 1
+      )
+      and (
+        length(
+          TRIM(
+            both
+            from
+              filename
+          )
+        ) <= 255
+      )
+    )
+  ),
+  constraint documents_classification_status_check check (
+    (
+      classification_status = any (
+        array[
+          'pending'::text,
+          'processing'::text,
+          'completed'::text,
+          'failed'::text,
+          'skipped'::text
+        ]
+      )
+    )
+  ),
+  constraint documents_document_type_check check (
+    (
+      document_type = any (
+        array[
+          'acta'::text,
+          'factura'::text,
+          'comunicado'::text,
+          'albaran'::text,
+          'contrato'::text,
+          'presupuesto'::text,
+          'escritura'::text
+        ]
+      )
+    )
+  ),
+  constraint documents_extraction_method_check check (
+    (
+      extraction_method = any (
+        array[
+          'pdf-parse'::text,
+          'pdf-parse-external'::text,
+          'google-vision-ocr'::text,
+          'gemini-flash-ocr-ia'::text,
+          'pdf-parse + google-vision-ocr'::text,
+          'google-vision-ocr-only'::text
+        ]
+      )
+    )
+  ),
+  constraint documents_extraction_status_check check (
+    (
+      extraction_status = any (
+        array[
+          'pending'::text,
+          'processing'::text,
+          'completed'::text,
+          'failed'::text
+        ]
+      )
+    )
+  ),
+  constraint documents_file_hash_check check (
+    (
+      length(
+        TRIM(
+          both
+          from
+            file_hash
+        )
+      ) >= 32
+    )
+  )
+) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_organization_id on public.documents using btree (organization_id) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_community_id on public.documents using btree (community_id) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_status on public.documents using btree (legacy_status) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_document_type on public.documents using btree (document_type) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_created_at on public.documents using btree (created_at desc) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_file_hash on public.documents using btree (file_hash) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_processing_status on public.documents using btree (
+  organization_id,
+  processing_level,
+  extraction_status,
+  classification_status,
+  metadata_status,
+  chunking_status
+) TABLESPACE pg_default;
+
+create index IF not exists idx_documents_pending_processing on public.documents using btree (processing_level, extraction_status) TABLESPACE pg_default
+where
+  (
+    extraction_status = any (array['pending'::text, 'processing'::text])
+  );

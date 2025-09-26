@@ -1,0 +1,153 @@
+create table public.extracted_minutes (
+  id uuid not null default gen_random_uuid (),
+  document_id uuid not null,
+  organization_id uuid not null,
+  president_in text null,
+  president_out text null,
+  administrator text null,
+  summary text null,
+  decisions text null,
+  created_at timestamp with time zone not null default now(),
+  document_date date null,
+  tipo_reunion text null,
+  lugar text null,
+  comunidad_nombre text null,
+  orden_del_dia jsonb null default '[]'::jsonb,
+  acuerdos jsonb null default '[]'::jsonb,
+  topic_keywords text[] null default array[]::text[],
+  topic_presupuesto boolean null default false,
+  topic_mantenimiento boolean null default false,
+  topic_administracion boolean null default false,
+  topic_piscina boolean null default false,
+  topic_jardin boolean null default false,
+  topic_limpieza boolean null default false,
+  topic_balance boolean null default false,
+  topic_paqueteria boolean null default false,
+  topic_energia boolean null default false,
+  topic_normativa boolean null default false,
+  topic_proveedor boolean null default false,
+  topic_dinero boolean null default false,
+  topic_ascensor boolean null default false,
+  topic_incendios boolean null default false,
+  topic_porteria boolean null default false,
+  estructura_detectada jsonb null default '{}'::jsonb,
+  constraint extracted_minutes_pkey primary key (id),
+  constraint unique_minutes_per_document unique (document_id),
+  constraint extracted_minutes_organization_id_fkey foreign KEY (organization_id) references organizations (id) on delete CASCADE,
+  constraint extracted_minutes_document_id_fkey foreign KEY (document_id) references documents (id) on delete CASCADE,
+  constraint extracted_minutes_summary_check check (
+    (
+      (summary is null)
+      or (
+        length(
+          TRIM(
+            both
+            from
+              summary
+          )
+        ) <= 2000
+      )
+    )
+  ),
+  constraint extracted_minutes_tipo_reunion_check check (
+    (
+      tipo_reunion = any (array['ordinaria'::text, 'extraordinaria'::text])
+    )
+  ),
+  constraint extracted_minutes_president_in_check check (
+    (
+      (president_in is null)
+      or (
+        length(
+          TRIM(
+            both
+            from
+              president_in
+          )
+        ) <= 255
+      )
+    )
+  ),
+  constraint extracted_minutes_decisions_check check (
+    (
+      (decisions is null)
+      or (
+        length(
+          TRIM(
+            both
+            from
+              decisions
+          )
+        ) <= 2000
+      )
+    )
+  ),
+  constraint extracted_minutes_administrator_check check (
+    (
+      (administrator is null)
+      or (
+        length(
+          TRIM(
+            both
+            from
+              administrator
+          )
+        ) <= 255
+      )
+    )
+  ),
+  constraint extracted_minutes_president_out_check check (
+    (
+      (president_out is null)
+      or (
+        length(
+          TRIM(
+            both
+            from
+              president_out
+          )
+        ) <= 255
+      )
+    )
+  )
+) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_minutes_document_id on public.extracted_minutes using btree (document_id) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_minutes_organization_id on public.extracted_minutes using btree (organization_id) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_minutes_created_at on public.extracted_minutes using btree (created_at desc) TABLESPACE pg_default;
+
+create index IF not exists idx_minutes_administrator on public.extracted_minutes using btree (administrator) TABLESPACE pg_default
+where
+  (administrator is not null);
+
+create index IF not exists idx_minutes_tipo_reunion on public.extracted_minutes using btree (tipo_reunion) TABLESPACE pg_default
+where
+  (tipo_reunion is not null);
+
+create index IF not exists idx_minutes_document_date on public.extracted_minutes using btree (document_date) TABLESPACE pg_default
+where
+  (document_date is not null);
+
+create index IF not exists idx_minutes_comunidad_nombre on public.extracted_minutes using btree (comunidad_nombre) TABLESPACE pg_default
+where
+  (comunidad_nombre is not null);
+
+create index IF not exists idx_minutes_topic_presupuesto on public.extracted_minutes using btree (topic_presupuesto) TABLESPACE pg_default
+where
+  (topic_presupuesto = true);
+
+create index IF not exists idx_minutes_topic_administracion on public.extracted_minutes using btree (topic_administracion) TABLESPACE pg_default
+where
+  (topic_administracion = true);
+
+create index IF not exists idx_minutes_topic_piscina on public.extracted_minutes using btree (topic_piscina) TABLESPACE pg_default
+where
+  (topic_piscina = true);
+
+create index IF not exists idx_minutes_org_date on public.extracted_minutes using btree (organization_id, document_date desc) TABLESPACE pg_default;
+
+create index IF not exists idx_minutes_topic_keywords on public.extracted_minutes using gin (topic_keywords) TABLESPACE pg_default;
+
+create index IF not exists idx_minutes_estructura_detectada on public.extracted_minutes using gin (estructura_detectada) TABLESPACE pg_default;

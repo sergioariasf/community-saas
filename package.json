@@ -115,6 +115,7 @@
     "next-themes": "^0.2.1",
     "npm-check-updates": "^16.14.20",
     "path-to-regexp": "^8.2.0",
+    "pdf-lib": "^1.17.1",
     "pdf-parse": "^1.1.1",
     "pdf2pic": "^3.2.0",
     "pg": "^8.16.3",

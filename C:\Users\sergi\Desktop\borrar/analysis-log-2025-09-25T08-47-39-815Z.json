@@ -1,0 +1,133 @@
+{
+  "originalFile": "follon.pdf",
+  "analysisDate": "2025-09-25T08:47:39.815Z",
+  "totalLinesProcessed": 1730,
+  "documentsFound": 6,
+  "supportedDocuments": 1,
+  "unsupportedDocuments": 5,
+  "detectedDocuments": [
+    {
+      "type": "unknown",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Page 1)",
+      "lines": "1-112",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "enfermedad común",
+        "diagnostico",
+        "limitación funcional",
+        "antonio lara gutierrez"
+      ]
+    },
+    {
+      "type": "unknown",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Page 2)",
+      "lines": "113-223",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "datos obligatorios",
+        "antonio lara gutierrez"
+      ]
+    },
+    {
+      "type": "unknown",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Page 3)",
+      "lines": "224-415",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "curación",
+        "antonio lara gutierrez"
+      ]
+    },
+    {
+      "type": "unknown",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Page 4)",
+      "lines": "416-514",
+      "confidence": 0.98,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "curación",
+        "antonio lara gutierrez"
+      ]
+    },
+    {
+      "type": "unknown",
+      "title": "Notificación de Multa de Circulación",
+      "lines": "515-683",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "notificación",
+        "infracción",
+        "antonio lara gutierrez",
+        "madrid"
+      ]
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de Entrega",
+      "lines": "684-700",
+      "confidence": 0.85,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "control y tension",
+        "las rozas"
+      ]
+    }
+  ],
+  "outputFiles": [
+    {
+      "filename": "1_unknown_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "unknown",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Page 1)",
+      "lines": "1-112"
+    },
+    {
+      "filename": "2_unknown_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "unknown",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Page 2)",
+      "lines": "113-223"
+    },
+    {
+      "filename": "3_unknown_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal-Pa.txt",
+      "type": "unknown",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Page 3)",
+      "lines": "224-415"
+    },
+    {
+      "filename": "4_unknown_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal-Pa.txt",
+      "type": "unknown",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Page 4)",
+      "lines": "416-514"
+    },
+    {
+      "filename": "5_unknown_Notificacin-de-Multa-de-Circulacin.txt",
+      "type": "unknown",
+      "title": "Notificación de Multa de Circulación",
+      "lines": "515-683"
+    },
+    {
+      "filename": "6_albaran_Albarn-de-Entrega.txt",
+      "type": "albaran",
+      "title": "Albarán de Entrega",
+      "lines": "684-700"
+    }
+  ]
+}

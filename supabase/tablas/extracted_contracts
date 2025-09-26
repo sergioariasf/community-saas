@@ -1,0 +1,109 @@
+create table public.extracted_contracts (
+  id uuid not null default gen_random_uuid (),
+  document_id uuid not null,
+  organization_id uuid not null,
+  titulo_contrato text null,
+  parte_a text null,
+  parte_b text null,
+  objeto_contrato text null,
+  duracion text null,
+  importe_total numeric(12, 2) null,
+  fecha_inicio date null,
+  fecha_fin date null,
+  category text null,
+  tipo_contrato text null,
+  parte_a_direccion text null,
+  parte_a_identificacion_fiscal text null,
+  parte_a_representante text null,
+  parte_b_direccion text null,
+  parte_b_identificacion_fiscal text null,
+  parte_b_representante text null,
+  descripcion_detallada text null,
+  alcance_servicios jsonb null default '[]'::jsonb,
+  obligaciones_parte_a jsonb null default '[]'::jsonb,
+  obligaciones_parte_b jsonb null default '[]'::jsonb,
+  moneda text null default 'EUR'::text,
+  forma_pago text null,
+  plazos_pago jsonb null default '[]'::jsonb,
+  penalizaciones text null,
+  confidencialidad boolean null default false,
+  condiciones_terminacion text null,
+  legislacion_aplicable text null,
+  jurisdiccion text null,
+  fecha_firma date null,
+  lugar_firma text null,
+  firmas_presentes boolean null default false,
+  created_at timestamp with time zone not null default now(),
+  topic_keywords text[] null,
+  topic_mantenimiento boolean null default false,
+  topic_jardines boolean null default false,
+  topic_ascensores boolean null default false,
+  topic_limpieza boolean null default false,
+  topic_emergencias boolean null default false,
+  topic_instalaciones boolean null default false,
+  topic_electricidad boolean null default false,
+  topic_seguridad boolean null default false,
+  topic_agua boolean null default false,
+  topic_gas boolean null default false,
+  topic_climatizacion boolean null default false,
+  topic_parking boolean null default false,
+  constraint extracted_contracts_pkey primary key (id),
+  constraint extracted_contracts_document_id_fkey foreign KEY (document_id) references documents (id) on delete CASCADE,
+  constraint extracted_contracts_organization_id_fkey foreign KEY (organization_id) references organizations (id) on delete CASCADE
+) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_contracts_document_id on public.extracted_contracts using btree (document_id) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_contracts_organization_id on public.extracted_contracts using btree (organization_id) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_contracts_fecha_inicio on public.extracted_contracts using btree (fecha_inicio) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_contracts_topic_keywords on public.extracted_contracts using gin (topic_keywords) TABLESPACE pg_default;
+
+create index IF not exists idx_extracted_contracts_topic_mantenimiento on public.extracted_contracts using btree (topic_mantenimiento) TABLESPACE pg_default
+where
+  (topic_mantenimiento = true);
+
+create index IF not exists idx_extracted_contracts_topic_jardines on public.extracted_contracts using btree (topic_jardines) TABLESPACE pg_default
+where
+  (topic_jardines = true);
+
+create index IF not exists idx_extracted_contracts_topic_ascensores on public.extracted_contracts using btree (topic_ascensores) TABLESPACE pg_default
+where
+  (topic_ascensores = true);
+
+create index IF not exists idx_extracted_contracts_topic_limpieza on public.extracted_contracts using btree (topic_limpieza) TABLESPACE pg_default
+where
+  (topic_limpieza = true);
+
+create index IF not exists idx_extracted_contracts_topic_emergencias on public.extracted_contracts using btree (topic_emergencias) TABLESPACE pg_default
+where
+  (topic_emergencias = true);
+
+create index IF not exists idx_extracted_contracts_topic_instalaciones on public.extracted_contracts using btree (topic_instalaciones) TABLESPACE pg_default
+where
+  (topic_instalaciones = true);
+
+create index IF not exists idx_extracted_contracts_topic_electricidad on public.extracted_contracts using btree (topic_electricidad) TABLESPACE pg_default
+where
+  (topic_electricidad = true);
+
+create index IF not exists idx_extracted_contracts_topic_seguridad on public.extracted_contracts using btree (topic_seguridad) TABLESPACE pg_default
+where
+  (topic_seguridad = true);
+
+create index IF not exists idx_extracted_contracts_topic_agua on public.extracted_contracts using btree (topic_agua) TABLESPACE pg_default
+where
+  (topic_agua = true);
+
+create index IF not exists idx_extracted_contracts_topic_gas on public.extracted_contracts using btree (topic_gas) TABLESPACE pg_default
+where
+  (topic_gas = true);
+
+create index IF not exists idx_extracted_contracts_topic_climatizacion on public.extracted_contracts using btree (topic_climatizacion) TABLESPACE pg_default
+where
+  (topic_climatizacion = true);
+
+create index IF not exists idx_extracted_contracts_topic_parking on public.extracted_contracts using btree (topic_parking) TABLESPACE pg_default
+where
+  (topic_parking = true);

@@ -7,7 +7,7 @@
  * ACTUALIZADO: 2025-09-22
  */
 
-import { callSaaSAgent } from '../../gemini/saasAgents';
+import { callSaaSAgent } from '../../agents/AgentOrchestrator';
 import { RETRY_CONFIG } from '../config/agentConfig';
 
 export interface RetryOptions {

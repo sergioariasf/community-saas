@@ -11,6 +11,15 @@
 import { T } from '@/components/ui/Typography';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import {
   Card,
   CardContent,
@@ -26,9 +35,10 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { Clock, FileText, Eye, Upload, AlertCircle, CheckCircle2, Trash2 } from 'lucide-react';
+import { Clock, FileText, Eye, Upload, AlertCircle, CheckCircle2, Trash2, Filter, X, Info, FileIcon } from 'lucide-react';
 import Link from 'next/link';
 import { Document } from '@/data/anon/documents';
+import { useState, useMemo } from 'react';
 
 interface DocumentsListProps {
   documents: Document[];
@@ -36,6 +46,53 @@ interface DocumentsListProps {
 }
 
 export const DocumentsList = ({ documents, showActions = true }: DocumentsListProps) => {
+  // Estados para filtros
+  const [filters, setFilters] = useState({
+    search: '',
+    type: 'all',
+    status: 'all',
+    dateFrom: '',
+    dateTo: '',
+    sizeMin: '',
+    sizeMax: ''
+  });
+
+  // Función para borrar documentos filtrados
+  const deleteFilteredDocuments = async () => {
+    if (filteredDocuments.length === 0) {
+      alert('No hay documentos filtrados para eliminar');
+      return;
+    }
+
+    if (!confirm(`¿Estás seguro de que deseas eliminar ${filteredDocuments.length} documentos filtrados?`)) {
+      return;
+    }
+
+    try {
+      const promises = filteredDocuments.map(doc => 
+        fetch(`/api/documents/${doc.id}`, { method: 'DELETE' })
+      );
+      
+      await Promise.all(promises);
+      window.location.reload();
+    } catch (error) {
+      alert('Error al eliminar algunos documentos');
+    }
+  };
+
+  // Limpiar filtros
+  const clearFilters = () => {
+    setFilters({
+      search: '',
+      type: 'all', 
+      status: 'all',
+      dateFrom: '',
+      dateTo: '',
+      sizeMin: '',
+      sizeMax: ''
+    });
+  };
+
   // Calcular estado general del pipeline progresivo
   const getPipelineStatus = (document: Document) => {
     const { processing_level, extraction_status, classification_status, metadata_status, chunking_status } = document;
@@ -102,6 +159,64 @@ export const DocumentsList = ({ documents, showActions = true }: DocumentsListPr
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
   };
 
+  // Documentos filtrados
+  const filteredDocuments = useMemo(() => {
+    return documents.filter(document => {
+      // Filtro de búsqueda por nombre
+      if (filters.search && !document.filename.toLowerCase().includes(filters.search.toLowerCase())) {
+        return false;
+      }
+
+      // Filtro por tipo
+      if (filters.type !== 'all' && document.document_type !== filters.type) {
+        return false;
+      }
+
+      // Filtro por estado
+      if (filters.status !== 'all') {
+        const pipelineStatus = getPipelineStatus(document);
+        if (pipelineStatus.status !== filters.status) {
+          return false;
+        }
+      }
+
+      // Filtro por fecha
+      if (filters.dateFrom && document.created_at) {
+        const docDate = new Date(document.created_at);
+        const fromDate = new Date(filters.dateFrom);
+        if (docDate < fromDate) {
+          return false;
+        }
+      }
+
+      if (filters.dateTo && document.created_at) {
+        const docDate = new Date(document.created_at);
+        const toDate = new Date(filters.dateTo);
+        toDate.setHours(23, 59, 59); // Incluir todo el día
+        if (docDate > toDate) {
+          return false;
+        }
+      }
+
+      // Filtro por tamaño
+      if (filters.sizeMin) {
+        const minBytes = parseFloat(filters.sizeMin) * 1024 * 1024; // MB a bytes
+        if (document.file_size < minBytes) {
+          return false;
+        }
+      }
+
+      if (filters.sizeMax) {
+        const maxBytes = parseFloat(filters.sizeMax) * 1024 * 1024; // MB a bytes
+        if (document.file_size > maxBytes) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }, [documents, filters]);
+
   return (
     <div className="space-y-8">
       {showActions && (
@@ -120,7 +235,137 @@ export const DocumentsList = ({ documents, showActions = true }: DocumentsListPr
         </div>
       )}
 
-      {documents.length ? (
+      {/* Panel de filtros */}
+      {documents.length > 0 && (
+        <Card className="border-muted/40 bg-muted/20">
+          <CardHeader className="pb-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Filter className="h-4 w-4" />
+                <T.H3 className="text-base">Filtros ({filteredDocuments.length} de {documents.length})</T.H3>
+              </div>
+              <div className="flex gap-2">
+                {filteredDocuments.length > 0 && (
+                  <Button 
+                    variant="destructive" 
+                    size="sm"
+                    onClick={deleteFilteredDocuments}
+                    className="flex items-center gap-1"
+                  >
+                    <Trash2 className="h-3.5 w-3.5" />
+                    Borrar Filtrados ({filteredDocuments.length})
+                  </Button>
+                )}
+                <Button variant="outline" size="sm" onClick={clearFilters}>
+                  <X className="h-3.5 w-3.5 mr-1" />
+                  Limpiar
+                </Button>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {/* Búsqueda por nombre */}
+              <div className="col-span-2">
+                <Label htmlFor="search" className="text-xs">Buscar por nombre</Label>
+                <Input
+                  id="search"
+                  placeholder="Buscar documento..."
+                  value={filters.search}
+                  onChange={(e) => setFilters(prev => ({ ...prev, search: e.target.value }))}
+                />
+              </div>
+
+              {/* Filtro por tipo */}
+              <div>
+                <Label className="text-xs">Tipo</Label>
+                <Select value={filters.type} onValueChange={(value) => setFilters(prev => ({ ...prev, type: value }))}>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">Todos</SelectItem>
+                    <SelectItem value="acta">📋 Actas</SelectItem>
+                    <SelectItem value="factura">🧾 Facturas</SelectItem>
+                    <SelectItem value="comunicado">📢 Comunicados</SelectItem>
+                    <SelectItem value="contrato">📄 Contratos</SelectItem>
+                    <SelectItem value="presupuesto">💰 Presupuestos</SelectItem>
+                    <SelectItem value="albaran">📦 Albaranes</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Filtro por estado */}
+              <div>
+                <Label className="text-xs">Estado</Label>
+                <Select value={filters.status} onValueChange={(value) => setFilters(prev => ({ ...prev, status: value }))}>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">Todos</SelectItem>
+                    <SelectItem value="completed">✅ Completado</SelectItem>
+                    <SelectItem value="processing">⏳ Procesando</SelectItem>
+                    <SelectItem value="error">❌ Error</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {/* Fecha desde */}
+              <div>
+                <Label htmlFor="dateFrom" className="text-xs">Desde</Label>
+                <Input
+                  id="dateFrom"
+                  type="date"
+                  value={filters.dateFrom}
+                  onChange={(e) => setFilters(prev => ({ ...prev, dateFrom: e.target.value }))}
+                />
+              </div>
+
+              {/* Fecha hasta */}
+              <div>
+                <Label htmlFor="dateTo" className="text-xs">Hasta</Label>
+                <Input
+                  id="dateTo"
+                  type="date"
+                  value={filters.dateTo}
+                  onChange={(e) => setFilters(prev => ({ ...prev, dateTo: e.target.value }))}
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {/* Tamaño mínimo */}
+              <div>
+                <Label htmlFor="sizeMin" className="text-xs">Tamaño mín (MB)</Label>
+                <Input
+                  id="sizeMin"
+                  type="number"
+                  step="0.1"
+                  placeholder="0.0"
+                  value={filters.sizeMin}
+                  onChange={(e) => setFilters(prev => ({ ...prev, sizeMin: e.target.value }))}
+                />
+              </div>
+
+              {/* Tamaño máximo */}
+              <div>
+                <Label htmlFor="sizeMax" className="text-xs">Tamaño máx (MB)</Label>
+                <Input
+                  id="sizeMax"
+                  type="number"
+                  step="0.1"
+                  placeholder="100.0"
+                  value={filters.sizeMax}
+                  onChange={(e) => setFilters(prev => ({ ...prev, sizeMax: e.target.value }))}
+                />
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
+      {filteredDocuments.length ? (
         <Card className="shadow-sm border-muted/40">
           <Table>
             <TableHeader>
@@ -134,7 +379,7 @@ export const DocumentsList = ({ documents, showActions = true }: DocumentsListPr
               </TableRow>
             </TableHeader>
             <TableBody>
-              {documents.map((document) => (
+              {filteredDocuments.map((document) => (
                 <TableRow key={document.id}>
                   <TableCell className="font-medium">
                     <div className="flex items-center gap-2">
@@ -239,10 +484,23 @@ export const DocumentsList = ({ documents, showActions = true }: DocumentsListPr
                           size="sm"
                           variant="outline"
                           className="flex items-center gap-1"
+                          title="Ver detalles y metadatos"
                         >
-                          <Eye className="h-3.5 w-3.5" /> Ver
+                          <Info className="h-3.5 w-3.5" /> Detalles
                         </Button>
                       </Link>
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex items-center gap-1"
+                        title="Ver contenido del documento"
+                        onClick={() => {
+                          // Abrir el documento en una nueva pestaña
+                          window.open(`/api/documents/${document.id}/view`, '_blank');
+                        }}
+                      >
+                        <FileIcon className="h-3.5 w-3.5" /> Abrir
+                      </Button>
                       <Button
                         size="sm"
                         variant="destructive"
@@ -272,6 +530,20 @@ export const DocumentsList = ({ documents, showActions = true }: DocumentsListPr
               ))}
             </TableBody>
           </Table>
+        </Card>
+      ) : documents.length > 0 ? (
+        <Card className="border-dashed">
+          <CardHeader>
+            <CardTitle>No hay documentos que coincidan con los filtros</CardTitle>
+            <CardDescription>
+              Ajusta los filtros para ver más documentos o limpia todos los filtros.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button onClick={clearFilters} className="flex items-center gap-2">
+              <X className="h-4 w-4" /> Limpiar Filtros
+            </Button>
+          </CardContent>
         </Card>
       ) : (
         <Card className="border-dashed">

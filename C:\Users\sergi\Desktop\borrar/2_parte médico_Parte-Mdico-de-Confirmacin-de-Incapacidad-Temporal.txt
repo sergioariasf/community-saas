@@ -1,0 +1,119 @@
+
+=== DOCUMENTO SEPARADO ===
+Archivo original: follon.pdf
+Tipo detectado: parte médico
+Título sugerido: Parte Médico de Confirmación de Incapacidad Temporal (2/2)
+Líneas: 108-213
+Confianza: 98%
+Soportado por pipeline: NO
+Descripción: Medical report confirming temporary disability, second part.
+Palabras clave: parte médico, incapacidad temporal, enfermedad común, antonio lara gutierrez, control y tension, 12/09/2020, 21/09/2020
+Fecha separación: 2025-09-25T08:44:22.470Z
+=========================
+
+N° DEL PARTE DE CONFIRMACIÓN
+1
+DURACIÓN ESTIMADA
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020
+DATOS OBLIGATORIOS
+CÓDIGO DE LA PROVINCIA DEL CENTRO DE SALUD DEL FACULTATIVO/MÉDICO INSPECTOR QUE EMITE EL PARTE DE CONFIRMACIÓN (1)
+28
+(1)
+Dato obligatorio con el fin de identificar la provincia de la entidad emisora de la baja médica, a efectos de coordinación y control de la IT del trabajador.
+SÓLO EN CASO DEL TRASLADO DEL TRABAJADOR A OTRO SPS
+ÚLTIMO PARTE DE CONFIRMACIÓN POR TRASLADO
+(2) ☐
+(2)
+En el caso de traslado, el próximo parte de confirmación se emitirá por otro SPS diferente al que emitió este parte de confirmación.
+PASA A CONTROL DEL INSS
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+(3)
+11/09/2021
+(3)
+A partir de esta fecha no se emitirán partes de confirmación. El INSS le remitirá comunicación sobre el proceso de IT del trabajador.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHEZ,
+21/09/2020
+. Firma, fecha y sello
+Nº de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para la EMPRESA
+
+--- Página 3 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑ INSS/ISM ☐ MUTUA|
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+Localidad
+CL JAVIER VICENTE MONTERO, 2
+Provincia
+ESCORIAL, EL
+MADRID
+Nombre de la empresa
+Puesto de trabajo
+Código postal
+Teléfono móvil
+28280
+Teléfono fijo
+918964063 609273707
+Código nacional de ocupación (CNO)
+Directores generales, empresa privada
+Control y Tension
+ly'
+1120
+DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL (en el parte de baja) / RESULTADO DEL RECONOCIMIENTO MÉDICO (en el parte de alta)
+Curación/Mejoría que permite realizar trabajo habitual
+DIAGNÓSTICO
+Contacto y (sospecha de) exposición a otras enfermedades víricas transmisibles
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Fecha de AT o EP
+Código de enfermedad profesional
+Parte del cuerpo dañado
+(1)
+(1)
+Leve
+Grave
+Tipo de asistencia:
+Ambulatoria
+Muy grave
+Hospitalaria
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020

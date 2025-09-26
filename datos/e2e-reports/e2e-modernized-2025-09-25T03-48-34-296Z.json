@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-09-25T03:48:34.297Z",
+  "config": {
+    "target_file": "acta",
+    "steps_executed": [
+      1,
+      2,
+      3
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 0,
+    "failed": 1,
+    "success_rate": 0,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "desconocido": {
+        "count": 1,
+        "successful": 0,
+        "success_rate": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "acta",
+      "success": false,
+      "steps_executed": [
+        1,
+        2,
+        3
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": false,
+          "error": "Archivo no encontrado: acta.pdf"
+        },
+        "step2_classification": {
+          "success": false
+        },
+        "step3_metadata": {
+          "success": false
+        },
+        "step4_validation": {
+          "success": false
+        },
+        "step5_template_compatibility": {
+          "success": false
+        },
+        "step6_schema_validation": {
+          "success": false
+        }
+      },
+      "total_time": 1
+    }
+  ]
+}
