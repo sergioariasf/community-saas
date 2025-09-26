@@ -13,7 +13,7 @@ import { ChatIAContent } from './ChatIAContent';
 
 export default async function ChatIAPage() {
   try {
-    const user = await getCachedLoggedInVerifiedSupabaseUser();
+    const { user } = await getCachedLoggedInVerifiedSupabaseUser();
     return <ChatIAContent user={user} />;
   } catch (error) {
     redirect('/auth?mode=login');
