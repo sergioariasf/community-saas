@@ -1,0 +1,49 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/22
+Tipo: factura
+Título: Factura (COPIA) - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 821-854 (total: 34 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 25 ---
+Marcador final: --- Página 26 ---
+Caracteres: 842
+Descripción: Copy of invoice from Electro Mercantil Leganés to Control y Tension SL, with payment details.
+Keywords: factura, ELECTRO MERCANTIL LEGANES, CONTROL Y TENSION SL, 850162
+=====================================
+
+ENVIO
+28230
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+LAS ROZAS DE MADRID
+Tel. 609273707
+Ruta:
+CÓDIGO
+DESCRIPCIÓN
+SAG04000210 EMERGENCIA SAGELUX EVO-110ST
+C Precio x 100 Unidades M = Precio x 1000 Unidades
+REF.PROV.
+CANTIDAD
+EVO-110ST
+25,00
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 12 ---
+ⓇSabadell
+NOTIFICACIÓN DE PAGO DE BS CONFIRMING
+Les comunicamos que Banco de Sabadell, S.A. ha sido contratado por MORFUS EQUIPAMIENTO COMERCIAL S.L. para gestionar
+el pago de las órdenes referenciadas, por un total de 8.226,96 EUR, que detallamos a continuación:
+Datos del proveedor
+CONTROL Y TENSION SL
+C/ JAVIER VICENTE MONTERO,
+2
+28282 EL ESCORIAL (MADRID)
+Orden de pago
+Núm. de orden
+1000037
+NIF: B83802850
+12677652
+Núm de referencia:

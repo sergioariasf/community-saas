@@ -1,0 +1,56 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/22
+Tipo: albaran
+Título: Albarán - SALTOKI COLLADO VILLALBA
+Líneas originales: 714-754 (total: 41 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 21 ---
+Marcador final: --- Página 22 ---
+Caracteres: 523
+Descripción: Delivery note from Saltoki Collado Villalba to Control y Tension S.L., listing electrical components.
+Keywords: albaran, SALTOKI, CONTROL Y TENSION S.L, 132.127
+=====================================
+
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Página 1 de 1
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna: 33350
+CERRADA
+Hora: 13:40
+Tel.:
+918964063
+Ref. Oferta: 25467
+C.I.F.:
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Ruta:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL

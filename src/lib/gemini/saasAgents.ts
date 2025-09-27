@@ -526,7 +526,7 @@ async function saveCompleteActaMetadataLegacy(documentId: string, data: any): Pr
       .from('document_metadata')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         metadata: data, // Todos los metadatos como JSON
         confidence: 0.9, // Alta confianza para el nuevo extractor
         extraction_method: 'gemini',
@@ -573,7 +573,7 @@ async function saveExtractedMinutesLegacy(documentId: string, data: any, useServ
       .from('extracted_minutes')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...data
       });
 
@@ -888,7 +888,7 @@ export async function saveExtractedInvoice(documentId: string, data: any): Promi
       .from('extracted_invoices')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...processedData
       });
 
@@ -928,7 +928,7 @@ export async function saveExtractedComunicado(documentId: string, data: any): Pr
       .from('extracted_communications')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...data
       });
 
@@ -968,7 +968,7 @@ export async function saveExtractedAlbaran(documentId: string, data: any): Promi
       .from('extracted_delivery_notes')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...data
       });
 
@@ -1008,7 +1008,7 @@ export async function saveExtractedContrato(documentId: string, data: any): Prom
       .from('extracted_contracts')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...data
       });
 
@@ -1048,7 +1048,7 @@ export async function saveExtractedPresupuesto(documentId: string, data: any): P
       .from('extracted_budgets')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...data
       });
 
@@ -1088,7 +1088,7 @@ async function saveExtractedEscrituraLegacy(documentId: string, data: any): Prom
       .from('extracted_property_deeds')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...data
       });
 
@@ -1137,7 +1137,7 @@ export async function saveExtractedContract(documentId: string, data: any): Prom
       .from('extracted_contracts')
       .insert({
         document_id: documentId,
-        organization_id: document.organization_id,
+        organization_id: (document as any).organization_id,
         ...data
       });
 
@@ -1251,7 +1251,7 @@ IMPORTANTE:
         metadata: {
           agent: agentName,
           processingTime,
-          method: 'gemini-flash-ocr-ia'
+          // method: 'gemini-flash-ocr-ia'
         }
       };
       
@@ -1265,8 +1265,8 @@ IMPORTANTE:
         metadata: {
           agent: agentName,
           processingTime,
-          method: 'gemini-flash-ocr-ia',
-          note: 'Non-JSON response'
+          // method: 'gemini-flash-ocr-ia',
+          // note: 'Non-JSON response'
         }
       };
     }
@@ -1279,7 +1279,7 @@ IMPORTANTE:
       metadata: { 
         agent: agentName,
         processingTime: Date.now() - startTime,
-        method: 'gemini-flash-ocr-ia'
+        // method: 'gemini-flash-ocr-ia'
       }
     };
   }

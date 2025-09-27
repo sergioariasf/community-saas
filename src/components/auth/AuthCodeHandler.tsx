@@ -9,7 +9,7 @@ export function AuthCodeHandler() {
 
   useEffect(() => {
     const handleAuthCode = () => {
-      const code = searchParams.get('code');
+      const code = searchParams?.get('code');
       
       if (code) {
         console.log('Auth code detected, redirecting to callback handler:', code);
@@ -37,7 +37,7 @@ export function AuthCodeHandler() {
   }, [searchParams, router]);
 
   // Show loading state while processing
-  const code = searchParams.get('code');
+  const code = searchParams?.get('code');
   
   if (code) {
     return (

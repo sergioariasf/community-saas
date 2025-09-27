@@ -1,0 +1,20 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/22
+Tipo: unknown
+Título: Fechas y importes
+Líneas originales: 755-759 (total: 5 líneas)
+Confianza: 30%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 73
+Descripción: Fechas e importes sin contexto claro.
+Keywords: fechas, importes
+=====================================
+
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 609273707
+Bultos
+4

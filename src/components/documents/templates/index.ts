@@ -43,7 +43,7 @@ function generateDocumentTemplates() {
     
     Object.keys(documentConfigs).forEach(docType => {
       const config = documentConfigs[docType];
-      const componentName = config.metadata?.component_name;
+      const componentName = (config as any)?.metadata?.component_name;
       
       // Buscar el componente en el mapeo
       const component = COMPONENT_MAP[docType as keyof typeof COMPONENT_MAP];
@@ -83,8 +83,8 @@ function generateTemplateMetadata() {
     
     Object.keys(documentConfigs).forEach(docType => {
       const config = documentConfigs[docType];
-      const meta = config.metadata;
-      const dbSchema = config.database_schema;
+      const meta = (config as any).metadata;
+      const dbSchema = (config as any).database_schema;
       
       // Extraer campos de todas las secciones del schema
       const fields: string[] = [];

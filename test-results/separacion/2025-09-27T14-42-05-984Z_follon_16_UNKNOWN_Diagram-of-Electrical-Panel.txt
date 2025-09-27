@@ -1,0 +1,26 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 16/23
+Tipo: unknown
+Título: Diagram of Electrical Panel
+Líneas originales: 688-696 (total: 9 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+O
+GS-Hydro
+Marcador final: Cabo Rufino Lázaro, 5. P. Európolis - 28230 Las Rozas (Madrid) - Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es
+Caracteres: 108
+Descripción: Visual diagram of electrical panel associated with the budget.
+Keywords: diagram, electrical panel, esquema
+=====================================
+
+DE GESTION DE MULTAS DE CIRC
+GENERAL
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA
+VIGILANCIA
+GESTIÓN!
+*

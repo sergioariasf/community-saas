@@ -1,0 +1,31 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 16/22
+Tipo: unknown
+Título: Diagrama - GS-Hydro
+Líneas originales: 687-702 (total: 16 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+Marcador final: --- Página 20 ---
+Caracteres: 388
+Descripción: Diagram related to electric installations. Requires further analysis to identify content.
+Keywords: diagrama, eléctrico, instalaciones
+=====================================
+
+Lo que se le notifica para su conocimiento y efectos.
+DE GESTION DE MULTAS DE CIRC
+GENERAL
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA
+VIGILANCIA
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).

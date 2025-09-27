@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
     });
 
     // If it's a multi-document, perform text separation
-    let separationResult = null;
+    let separationResult: any = null;
     if (analysisResult.isMultiDocument && analysisResult.detectedDocuments.length > 1) {
       console.log('✂️ [MULTI-DOC API] Performing text separation...');
       
@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Upload to database if requested
-    let uploadResult = null;
+    let uploadResult: any = null;
     if (uploadToDatabase && analysisResult.isMultiDocument) {
       if (!communityId) {
         return NextResponse.json(
@@ -143,9 +143,9 @@ export async function POST(request: NextRequest) {
           document_type: 'multidocumento',
           extracted_text: analysisResult.extractedText,
           text_length: analysisResult.extractedText?.length || 0,
-          page_count: analysisResult.totalPages || 1,
+          page_count: (analysisResult as any).totalPages || 1,
           extraction_status: 'completed',
-          extraction_method: analysisResult.extractionMethod,
+          extraction_method: (analysisResult as any).extractionMethod || 'multi-document-analyzer',
           extraction_completed_at: new Date().toISOString(),
           processing_level: 1,
           original_filename: file.name
@@ -164,7 +164,7 @@ export async function POST(request: NextRequest) {
         console.log(`✅ [MULTI-DOC API] Parent document created: ${parentDoc.id}`);
 
         // Create child documents for supported types
-        const childDocuments = [];
+        const childDocuments: any[] = [];
         let childIndex = 1;
 
         for (const doc of analysisResult.detectedDocuments) {
@@ -176,19 +176,19 @@ export async function POST(request: NextRequest) {
               .replace(/\s+/g, '_') // Espacios a guiones bajos
               .substring(0, 30); // Limitar longitud
             const childFilename = `${baseFilename}_${geminiTitle}.txt`;
-            const childHash = crypto.createHash('md5').update(doc.textFragment + childIndex).digest('hex');
+            const childHash = crypto.createHash('md5').update((doc.textFragment || '') + childIndex).digest('hex');
             
             const childDocumentData = {
               filename: childFilename,
               file_path: `multi-documents/children/${childFilename}`, // Separar en subcarpeta
-              file_size: Math.max(1, Buffer.from(doc.textFragment).length), // Asegurar mínimo 1 byte
+              file_size: Math.max(1, Buffer.from(doc.textFragment || '').length), // Asegurar mínimo 1 byte
               file_hash: childHash,
               mime_type: 'text/plain',
               organization_id: communityData.organization_id,
               community_id: communityId,
               document_type: doc.type,
-              extracted_text: doc.textFragment,
-              text_length: doc.textFragment.length,
+              extracted_text: doc.textFragment || '',
+              text_length: (doc.textFragment || '').length,
               page_count: 1,
               extraction_status: 'completed',
               extraction_method: 'multi-document-analyzer',
@@ -257,11 +257,11 @@ export async function POST(request: NextRequest) {
 
             // Procesar metadatos
             console.log(`📊 [MULTI-DOC API] Extracting metadata for ${childDoc.id}...`);
-            await pipeline.extractMetadata(fullDoc);
+            await (pipeline as any).extractMetadata(fullDoc);
             
             // Procesar chunking
             console.log(`🧩 [MULTI-DOC API] Creating chunks for ${childDoc.id}...`);
-            await pipeline.chunkDocument(fullDoc);
+            await (pipeline as any).chunkDocument(fullDoc);
             
             // Actualizar estados finales
             await supabase

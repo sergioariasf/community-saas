@@ -314,6 +314,10 @@ src/
 │   ├── pdf/
 │   │   ├── googleVision.ts                   # 🔧 PROCESO - Google Vision OCR (EN USO)
 │   │   └── textExtraction.ts                 # 🔧 PROCESO - Extracción texto PDFs
+│   ├── agents/
+│   │   ├── gemini/
+│   │   │   └── GeminiClient.ts               # 🤖 IA - Cliente puro Gemini API (110 líneas)
+│   │   └── AgentOrchestrator.ts              # 🤖 IA - Orquestador central agentes (240 líneas)
 │   ├── gemini/
 │   │   └── saasAgents.ts                     # 🤖 IA - Agentes SaaS Gemini
 │   ├── utils.ts                              # 🛠️ UTIL - Utilidades generales
@@ -328,6 +332,7 @@ src/
 API Endpoints:
 
 - /src/app/api/documents/multi-analyze/route.ts - API para análisis y separación de PDFs multidocumento
+- /src/app/api/documents/process-separated/route.ts - API para procesar documentos ya separados (classify → metadata → chunks)
 - /src/app/api/documents/[id]/view/route.ts - API para servir documentos (PDFs desde Storage, texto desde BD)
 
 UI Components:
@@ -657,3 +662,57 @@ done
 - ✅ **Reportes JSON** - Guardados en `datos/e2e-reports/`
 
 **Documentación completa:** `src/lib/ingesta/test/README-E2E-TEST.md`
+
+## ARCHIVOS CRÍTICOS IA
+
+### 🧠 GeminiClient.ts - Cliente Central Gemini API
+
+**Ubicación:** `/src/lib/agents/gemini/GeminiClient.ts`
+
+**PROPÓSITO:** Cliente puro para comunicación con Google Gemini API, sin lógica de negocio
+
+**QUÉ HACE:**
+- 🔐 **Gestión singleton** - Un cliente reutilizable para toda la app
+- ⚙️ **Configuración por agente** - Modelos y parámetros específicos por tipo documento
+- ⏱️ **Timeout y manejo errores** - Previene cuelgues y gestiona fallos
+- 📊 **Métricas procesamiento** - Tiempo respuesta y metadata
+
+**USADO POR:**
+- AgentOrchestrator.ts (clasificación y metadata)  
+- DocumentClassifier.ts (detectar tipo documento)
+- GeminiFlashExtractor.ts (extracción TODO-EN-UNO)
+
+**FUNCIONES CLAVE:**
+```typescript
+callGeminiAPI(prompt: string, agentName: string): Promise<GeminiResponse>
+```
+
+### 🎭 AgentOrchestrator.ts - Cerebro de IA
+
+**Ubicación:** `/src/lib/agents/AgentOrchestrator.ts`
+
+**PROPÓSITO:** Orquestador central que coordina todos los agentes de IA
+
+**QUÉ HACE:**
+- 🤖 **Selección inteligente** - Elige el agente correcto según tipo documento
+- 📝 **Construcción prompts** - Genera prompts específicos desde templates
+- 🔄 **Gestión respuestas** - Procesa y valida respuestas JSON de Gemini
+- 📋 **Configuración centralizada** - Un punto control para todos los agentes
+
+**USADO POR:**
+- progressivePipelineSimple.ts (extracción metadata)
+- DocumentExtractorFactory.ts (estrategias específicas)
+- Multi-document analyzer (separación documentos)
+
+**FLUJO:**
+1. Recibe texto + tipo documento
+2. Selecciona agente apropiado (factura-extractor, acta-extractor, etc.)
+3. Construye prompt desde template
+4. Llama GeminiClient.ts
+5. Procesa respuesta JSON
+6. Retorna metadata estructurada
+
+**INTEGRACIÓN CRÍTICA:**
+- Sin AgentOrchestrator → No hay metadata
+- Sin GeminiClient → No hay comunicación IA  
+- Sin ambos → Pipeline falla en fase 3

@@ -71,7 +71,7 @@ export function getGeminiConfigForAgent(agentName: string) {
   const model = getGeminiModel(); // Desde ENV
   
   // Verificar si es un agente complejo
-  if (GEMINI_CONFIG.COMPLEX_AGENTS.agents.includes(agentName)) {
+  if (GEMINI_CONFIG.COMPLEX_AGENTS.agents.includes(agentName as any)) {
     return {
       model,
       temperature: GEMINI_CONFIG.COMPLEX_AGENTS.temperature,
@@ -109,7 +109,7 @@ export function getGeminiConfigForAgent(agentName: string) {
  * Verifica si un agente necesita configuración de tokens alta
  */
 export function isComplexAgent(agentName: string): boolean {
-  return GEMINI_CONFIG.COMPLEX_AGENTS.agents.includes(agentName);
+  return GEMINI_CONFIG.COMPLEX_AGENTS.agents.includes(agentName as any);
 }
 
 /**

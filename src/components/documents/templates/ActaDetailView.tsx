@@ -200,13 +200,13 @@ export function ActaDetailView({
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Total páginas:</span>
                     <span className="text-blue-600 font-medium">
-                      📄 {metadata.estructura_detectada.total_paginas || 'No detectado'}
+                      📄 {(metadata.estructura_detectada as any)?.total_paginas || 'No detectado'}
                     </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Capítulos:</span>
                     <span className="text-green-600 font-medium">
-                      📚 {metadata.estructura_detectada.capitulos?.length || 0} capítulos
+                      📚 {(metadata.estructura_detectada as any)?.capitulos?.length || 0} capítulos
                     </span>
                   </div>
                   {typeof metadata.estructura_detectada.quorum_alcanzado === 'boolean' && (
@@ -228,13 +228,13 @@ export function ActaDetailView({
                 </div>
 
                 {/* Estructura de capítulos */}
-                {metadata.estructura_detectada.capitulos && metadata.estructura_detectada.capitulos.length > 0 && (
+                {(metadata.estructura_detectada as any)?.capitulos && (metadata.estructura_detectada as any)?.capitulos?.length > 0 && (
                   <>
                     <Separator />
                     <div>
                       <T.Small className="text-muted-foreground font-medium mb-3 block">📑 Estructura por Capítulos</T.Small>
                       <div className="space-y-3">
-                        {metadata.estructura_detectada.capitulos.map((capitulo: any, index: number) => (
+                        {(metadata.estructura_detectada as any)?.capitulos?.map((capitulo: any, index: number) => (
                           <div key={index} className="border rounded-lg p-3 bg-gray-50">
                             <div className="flex items-center justify-between mb-2">
                               <div className="flex items-center gap-2">

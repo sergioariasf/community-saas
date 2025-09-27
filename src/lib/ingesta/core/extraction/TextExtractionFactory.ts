@@ -7,10 +7,10 @@
  * ACTUALIZADO: 2025-09-21
  */
 
-import { BaseTextExtractor, ExtractionResult, ExtractionContext } from './BaseTextExtractor.ts';
-import { PdfParseExtractor } from './PdfParseExtractor.ts';
-import { GoogleVisionExtractor } from './GoogleVisionExtractor.ts';
-import { GeminiFlashExtractor, GeminiAllInOneResult } from './GeminiFlashExtractor.ts';
+import { BaseTextExtractor, ExtractionResult, ExtractionContext } from './BaseTextExtractor';
+import { PdfParseExtractor } from './PdfParseExtractor';
+import { GoogleVisionExtractor } from './GoogleVisionExtractor';
+import { GeminiFlashExtractor, GeminiAllInOneResult } from './GeminiFlashExtractor';
 
 export class TextExtractionFactory {
   private extractors: BaseTextExtractor[];

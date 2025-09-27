@@ -13,6 +13,14 @@ export interface DocumentMetadata {
   error?: string;
 }
 
+export interface ExtractionResult {
+  success: boolean;
+  data?: any;
+  error?: string;
+  processingTime?: number;
+  tokensUsed?: number;
+}
+
 export interface DocumentExtractionConfig {
   agentName: string;
   saveFunctionName: string;

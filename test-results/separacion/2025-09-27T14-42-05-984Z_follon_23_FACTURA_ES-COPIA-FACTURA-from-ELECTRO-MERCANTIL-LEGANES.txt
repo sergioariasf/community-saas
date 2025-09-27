@@ -1,0 +1,44 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/23
+Tipo: factura
+Título: ES COPIA FACTURA from ELECTRO MERCANTIL LEGANES
+Líneas originales: 812-838 (total: 27 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 25 ---
+em
+electromercantil
+Marcador final: ES57 2100 8661 09 0200037221
+Caracteres: 468
+Descripción: Copy of Invoice from ELECTRO MERCANTIL LEGANES to CONTROL Y TENSION SL.
+Keywords: factura, electromercantil, invoice, 850162, CONTROL Y TENSION SL, gastos aplazamiento
+=====================================
+
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Área:
+ALMACEN LEGANES
+1
+ENVIO
+28230
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+LAS ROZAS DE MADRID
+Tel. 609273707
+Ruta:
+CÓDIGO
+DESCRIPCIÓN
+SAG04000210 EMERGENCIA SAGELUX EVO-110ST
+C Precio x 100 Unidades M = Precio x 1000 Unidades
+REF.PROV.
+CANTIDAD
+EVO-110ST
+25,00
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+

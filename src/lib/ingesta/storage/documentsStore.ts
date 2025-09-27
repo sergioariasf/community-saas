@@ -163,14 +163,16 @@ class DocumentsStore {
       }
 
       if (input.processing_time_ms) {
-        updates.total_processing_time_ms = supabase.raw(
+        // @ts-ignore - Temporary fix for Supabase raw method typing
+        updates.total_processing_time_ms = (supabase as any).raw(
           `COALESCE(total_processing_time_ms, 0) + ${input.processing_time_ms}`
         );
         updated_fields.push('total_processing_time_ms');
       }
 
       if (input.tokens_used) {
-        updates.total_tokens_used = supabase.raw(
+        // @ts-ignore - Temporary fix for Supabase raw method typing
+        updates.total_tokens_used = (supabase as any).raw(
           `COALESCE(total_tokens_used, 0) + ${input.tokens_used}`
         );
         updated_fields.push('total_tokens_used');

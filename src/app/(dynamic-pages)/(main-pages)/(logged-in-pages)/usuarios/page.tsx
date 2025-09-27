@@ -13,7 +13,7 @@ import { UsuariosContent } from './UsuariosContent';
 
 export default async function UsuariosPage() {
   try {
-    const user = await getCachedLoggedInVerifiedSupabaseUser();
+    const { user } = await getCachedLoggedInVerifiedSupabaseUser();
     return <UsuariosContent user={user} />;
   } catch (error) {
     redirect('/auth?mode=login');

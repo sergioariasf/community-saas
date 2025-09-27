@@ -120,7 +120,7 @@ function extractTypeFieldsFromTemplate(templateContent: string): string[] {
   const fields: string[] = [];
   
   // Buscar tipos TypeScript en el template
-  const typeMatches = templateContent.match(/export type \w+.*?=.*?{(.*?)}/gs);
+  const typeMatches = templateContent.match(/export type \w+.*?=.*?{(.*?)}/g);
   
   if (typeMatches) {
     typeMatches.forEach(typeMatch => {
@@ -148,7 +148,7 @@ function extractTypeFieldsFromTemplate(templateContent: string): string[] {
     });
   }
   
-  return [...new Set(fields)].filter(field => 
+  return Array.from(new Set(fields)).filter(field => 
     !['string', 'number', 'boolean', 'null', 'undefined', 'any', 'Date'].includes(field)
   );
 }

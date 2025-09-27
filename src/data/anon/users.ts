@@ -8,7 +8,7 @@ import { requirePermission } from '@/lib/auth/permissions';
 import type { UserRole } from '@/lib/auth/permissions';
 
 // 🔐 PROTEGIDO: Solo ADMIN puede ver todos los usuarios
-export const getAllUsers = async () => {
+export const getAllUsers = async (): Promise<any[]> => {
   await requirePermission('admin');
 
   const supabase = await createSupabaseClient();
@@ -33,7 +33,7 @@ export const getAllUsers = async () => {
 
 
     // 2. Obtener IDs únicos de usuarios
-    const userIds = [...new Set(userRoles?.map(role => role.user_id) || [])];
+    const userIds = Array.from(new Set(userRoles?.map(role => role.user_id) || []));
     
     // Si no hay usuarios con roles, devolver array vacío
     if (userIds.length === 0) {
@@ -41,7 +41,7 @@ export const getAllUsers = async () => {
     }
 
     // 3. Para cada usuario, crear el objeto con sus roles
-    const users = [];
+    const users: any[] = [];
     
     for (const userId of userIds) {
       const userRolesList = userRoles?.filter(role => role.user_id === userId) || [];
@@ -54,8 +54,8 @@ export const getAllUsers = async () => {
         if (currentUser && currentUser.id === userId) {
           userInfo = {
             email: currentUser.email || 'Sin email',
-            created_at: currentUser.created_at,
-            last_sign_in_at: currentUser.last_sign_in_at
+            created_at: currentUser.created_at as any,
+            last_sign_in_at: currentUser.last_sign_in_at as any
           };
         }
       }

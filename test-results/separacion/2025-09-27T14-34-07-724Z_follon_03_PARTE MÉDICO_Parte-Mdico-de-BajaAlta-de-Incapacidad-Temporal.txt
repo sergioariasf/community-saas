@@ -1,0 +1,69 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 3/22
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal
+Líneas originales: 63-116 (total: 54 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 3 ---
+Marcador final: --- Página 4 ---
+Caracteres: 1042
+Descripción: Medical certificate issuing a discharge for Antonio Lara Gutierrez, with diagnosis and reasons for discharge.
+Keywords: baja, alta, incapacidad temporal, enfermedad común, LRGT650802916019, Z20.828
+=====================================
+
+VILCH Z,
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para el TRABAJADOR
+
+--- Página 2 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL)
+Enfermedad profesional (EP)
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+FECHA DE LA BAJA
+12/09/2020
+;
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+TIPO DE PROCESO
+Muy corto
+Corto
+Medio
+☑
+Largo
+ㅁㅁ
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO
+N° DEL PARTE DE CONFIRMACIÓN
+1
+DURACIÓN ESTIMADA
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020
+DATOS OBLIGATORIOS
+CÓDIGO DE LA PROVINCIA DEL CENTRO DE SALUD DEL FACULTATIVO/MÉDICO INSPECTOR QUE EMITE EL PARTE DE CONFIRMACIÓN (1)
+28

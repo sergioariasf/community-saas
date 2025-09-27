@@ -7,7 +7,7 @@
  * ACTUALIZADO: 2025-09-21
  */
 
-import { BaseTextExtractor, ExtractionResult, ExtractionContext } from './BaseTextExtractor.ts';
+import { BaseTextExtractor, ExtractionResult, ExtractionContext } from './BaseTextExtractor';
 
 export class GoogleVisionExtractor extends BaseTextExtractor {
   constructor() {

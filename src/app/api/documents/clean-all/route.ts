@@ -77,8 +77,8 @@ export async function DELETE() {
         
         if (!orgListError && orgFiles && orgFiles.length > 0) {
           // Conseguir TODOS los archivos en la organización
-          const getAllFilesRecursively = async (basePath = orgPath) => {
-            const allFiles = [];
+          const getAllFilesRecursively = async (basePath = orgPath): Promise<string[]> => {
+            const allFiles: string[] = [];
             const { data: items, error } = await supabase.storage
               .from('documents')
               .list(basePath, { limit: 1000 });

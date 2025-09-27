@@ -49,8 +49,8 @@ export async function POST(request: NextRequest) {
     console.log(`🏠 [PROCESS-SEPARATED API] Community: ${communityId}`);
     console.log(`⚙️ [PROCESS-SEPARATED API] Level: ${processingLevel}`);
 
-    const processedDocuments = [];
-    const errors = [];
+    const processedDocuments: any[] = [];
+    const errors: string[] = [];
     
     // Inicializar pipeline
     const pipeline = new SimplePipeline();
@@ -151,7 +151,7 @@ export async function POST(request: NextRequest) {
             
             // Ejecutar clasificación real solo si es necesario
             try {
-              await pipeline.classifyDocument(mockDocument);
+              await (pipeline as any).classifyDocument(mockDocument);
               console.log(`✅ [PROCESS-SEPARATED API] Classification completed for document ${documentData.id}`);
               processingResult.stages.push('classify');
             } catch (classifyError) {
@@ -166,7 +166,7 @@ export async function POST(request: NextRequest) {
           
           // Ejecutar extracción de metadatos real
           try {
-            await pipeline.extractMetadata(mockDocument);
+            await (pipeline as any).extractMetadata(mockDocument);
             console.log(`✅ [PROCESS-SEPARATED API] Metadata extraction completed for document ${documentData.id}`);
             processingResult.stages.push('metadata');
           } catch (metadataError) {
@@ -180,7 +180,7 @@ export async function POST(request: NextRequest) {
           
           // Ejecutar chunking real
           try {
-            await pipeline.chunkDocument(mockDocument);
+            await (pipeline as any).chunkDocument(mockDocument);
             console.log(`✅ [PROCESS-SEPARATED API] Chunking completed for document ${documentData.id}`);
             processingResult.stages.push('chunks');
           } catch (chunkError) {

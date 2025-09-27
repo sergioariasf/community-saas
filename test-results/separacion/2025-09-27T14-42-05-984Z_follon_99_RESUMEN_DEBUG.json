@@ -1,0 +1,922 @@
+{
+  "originalFile": "follon.pdf",
+  "analysisDate": "2025-09-27T14:42:06.008Z",
+  "totalLinesProcessed": 1730,
+  "documentsFound": 23,
+  "supportedDocuments": 12,
+  "unsupportedDocuments": 11,
+  "detectedDocuments": [
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 1",
+      "lines": "1-32",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 1 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 2",
+      "lines": "33-67",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 2 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 3",
+      "lines": "68-123",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 3 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 4",
+      "lines": "124-162",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 4 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA"
+    },
+    {
+      "type": "multa",
+      "title": "Información sobre Publicación de Edicto - Multa de Circulación",
+      "lines": "163-210",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "edicto",
+        "expediente sancionador",
+        "935/711076230.0",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 5 ---\nmedio ambiente y MADRID\nmovilidad",
+      "endMarker": "LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "211-255",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "fischer",
+        "delivery note",
+        "2002337934",
+        "Control y Tension",
+        "594182"
+      ],
+      "startMarker": "--- Página 7 ---\n0\nAlbarán\nFecha:",
+      "endMarker": "La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX"
+    },
+    {
+      "type": "multa",
+      "title": "Notificación de Resolución de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "256-339",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "recurso de reposición",
+        "951/711023522.0",
+        "Control y Tension SL"
+      ],
+      "startMarker": "--- Página 8 ---\nÁREA DE GOBIERNO DE MEDIO AMBIENTE\nY MOVILIDAD",
+      "endMarker": "000003108"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - Page 1",
+      "lines": "340-368",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1088220",
+        "Control y Tension",
+        "LEGANES"
+      ],
+      "startMarker": "--- Página 10 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - Page 1",
+      "lines": "369-395",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1088169",
+        "Control y Tension",
+        "LEGANES"
+      ],
+      "startMarker": "--- Página 11 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306"
+    },
+    {
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming - Banco Sabadell",
+      "lines": "396-461",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "bs confirming",
+        "banco sabadell",
+        "pago",
+        "12677652",
+        "Control y Tension SL",
+        "MORFUS EQUIPAMIENTO COMERCIAL S.L."
+      ],
+      "startMarker": "--- Página 12 ---\nⓇSabadell\nNOTIFICACIÓN DE PAGO DE BS CONFIRMING",
+      "endMarker": "Página 1 de 2\nKF232E-200720-E-EMA-GBSE 1200-00-001620-000511-IAENMA 14"
+    },
+    {
+      "type": "comunicado",
+      "title": "BS Confirming - Condiciones Generales - Banco Sabadell",
+      "lines": "462-519",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "bs confirming",
+        "banco sabadell",
+        "condiciones generales",
+        "pago",
+        "12677652",
+        "Control y Tension SL"
+      ],
+      "startMarker": "--- Página 13 ---\nⓇSabadell\nBS Confirming",
+      "endMarker": "www.bancsabadell.com\nKF333E-200720-E-EMA-GBSE 1200-00-001621-000511-1AENMA14"
+    },
+    {
+      "type": "albaran",
+      "title": "Albaran from MICROCOM SISTEMAS MODULARES, S. L.",
+      "lines": "520-553",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "microcom",
+        "delivery note",
+        "18633",
+        "CONTROL Y TENSION, S.L.",
+        "REMOTE GSM I/O MODULE"
+      ],
+      "startMarker": "--- Página 14 ---\nMICROCOM\nSISTEMAS MODULARES, S. L.",
+      "endMarker": "TOTAL €\n419,75"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "554-604",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1084627",
+        "Control y Tension",
+        "PHI01000740"
+      ],
+      "startMarker": "--- Página 15 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán (PRV) de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "605-642",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1084697",
+        "Control y Tension",
+        "HF-P 258 TL-D III"
+      ],
+      "startMarker": "--- Página 16 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge"
+    },
+    {
+      "type": "presupuesto",
+      "title": "Presupuesto para Instalación y Legalización de Acometida - Trinidad Arboiro Linares",
+      "lines": "643-687",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "presupuesto",
+        "instalación eléctrica",
+        "trinidad arboiro linares",
+        "1 180006",
+        "CONTROL Y TENSIÓN S.L."
+      ],
+      "startMarker": "--- Página 17 ---\nCONTROL Y TENSION",
+      "endMarker": "Mov. 609 273 707"
+    },
+    {
+      "type": "unknown",
+      "title": "Diagram of Electrical Panel",
+      "lines": "688-696",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [
+        "diagram",
+        "electrical panel",
+        "esquema"
+      ],
+      "startMarker": "--- Página 18 ---\nO\nGS-Hydro",
+      "endMarker": "Cabo Rufino Lázaro, 5. P. Európolis - 28230 Las Rozas (Madrid) - Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es"
+    },
+    {
+      "type": "unknown",
+      "title": "Blank Page",
+      "lines": "697-704",
+      "confidence": 0.1,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 19 ---\n. (13/13)",
+      "endMarker": "279"
+    },
+    {
+      "type": "unknown",
+      "title": "Diagram of Electrical Panel and Pricing",
+      "lines": "705-712",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [
+        "diagram",
+        "electrical panel",
+        "pricing"
+      ],
+      "startMarker": "--- Página 20 ---\nO\nGS-HYDRO S.A.",
+      "endMarker": "Cabo Rufino Lázaro, 5. P. Európolis 28230 Las Rozas (Madrid) Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es"
+    },
+    {
+      "type": "albaran",
+      "title": "ALBARAN from SALTOKI COLLADO VILLALBA",
+      "lines": "713-755",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "saltoki",
+        "delivery note",
+        "132.127",
+        "CONTROL Y TENSION S.L",
+        "TEE CABEZA SELECTOR"
+      ],
+      "startMarker": "--- Página 21 ---\nSSALTOKI\nSALTOKI COLLADO VILLALBA",
+      "endMarker": "Consulta detalles de la promoción con tu comercial o en tu centro Saltoki"
+    },
+    {
+      "type": "unknown",
+      "title": "Balance due",
+      "lines": "756-761",
+      "confidence": 0.3,
+      "supported": false,
+      "keywords": [
+        "balance",
+        "due",
+        "debt"
+      ],
+      "startMarker": "--- Página 22 ---\n03/12/19",
+      "endMarker": "17/02/20301,25"
+    },
+    {
+      "type": "unknown",
+      "title": "CONSULTA A LA CARTERA",
+      "lines": "762-784",
+      "confidence": 0.4,
+      "supported": false,
+      "keywords": [
+        "cartera",
+        "balance",
+        "finance"
+      ],
+      "startMarker": "--- Página 23 ---\nELECTRO MERCANTIL LEGANES DAM",
+      "endMarker": "吃"
+    },
+    {
+      "type": "factura",
+      "title": "FACTURA from ELECTRO MERCANTIL LEGANES",
+      "lines": "785-811",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "electromercantil",
+        "invoice",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "gastos aplazamiento"
+      ],
+      "startMarker": "--- Página 24 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221"
+    },
+    {
+      "type": "factura",
+      "title": "ES COPIA FACTURA from ELECTRO MERCANTIL LEGANES",
+      "lines": "812-838",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "electromercantil",
+        "invoice",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "gastos aplazamiento"
+      ],
+      "startMarker": "--- Página 25 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221"
+    }
+  ],
+  "outputFiles": [
+    {
+      "filename": "1_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 1",
+      "lines": "1-32"
+    },
+    {
+      "filename": "2_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 2",
+      "lines": "33-67"
+    },
+    {
+      "filename": "3_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal---.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 3",
+      "lines": "68-123"
+    },
+    {
+      "filename": "4_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal---.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 4",
+      "lines": "124-162"
+    },
+    {
+      "filename": "5_multa_Informacin-sobre-Publicacin-de-Edicto---Multa-de-C.txt",
+      "type": "multa",
+      "title": "Información sobre Publicación de Edicto - Multa de Circulación",
+      "lines": "163-210"
+    },
+    {
+      "filename": "6_albaran_Albarn-de-Fischer-Ibrica-SAU.txt",
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "211-255"
+    },
+    {
+      "filename": "7_multa_Notificacin-de-Resolucin-de-Desestimacin-de-Recurs.txt",
+      "type": "multa",
+      "title": "Notificación de Resolución de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "256-339"
+    },
+    {
+      "filename": "8_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU---Page-.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - Page 1",
+      "lines": "340-368"
+    },
+    {
+      "filename": "9_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU---Page-.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - Page 1",
+      "lines": "369-395"
+    },
+    {
+      "filename": "10_comunicado_Notificacin-de-Pago-de-BS-Confirming---Banco-Sabad.txt",
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming - Banco Sabadell",
+      "lines": "396-461"
+    },
+    {
+      "filename": "11_comunicado_BS-Confirming---Condiciones-Generales---Banco-Saba.txt",
+      "type": "comunicado",
+      "title": "BS Confirming - Condiciones Generales - Banco Sabadell",
+      "lines": "462-519"
+    },
+    {
+      "filename": "12_albaran_Albaran-from-MICROCOM-SISTEMAS-MODULARES-S-L.txt",
+      "type": "albaran",
+      "title": "Albaran from MICROCOM SISTEMAS MODULARES, S. L.",
+      "lines": "520-553"
+    },
+    {
+      "filename": "13_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "554-604"
+    },
+    {
+      "filename": "14_albaran_Albarn-PRV-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU.txt",
+      "type": "albaran",
+      "title": "Albarán (PRV) de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "605-642"
+    },
+    {
+      "filename": "15_presupuesto_Presupuesto-para-Instalacin-y-Legalizacin-de-Acome.txt",
+      "type": "presupuesto",
+      "title": "Presupuesto para Instalación y Legalización de Acometida - Trinidad Arboiro Linares",
+      "lines": "643-687"
+    },
+    {
+      "filename": "16_unknown_Diagram-of-Electrical-Panel.txt",
+      "type": "unknown",
+      "title": "Diagram of Electrical Panel",
+      "lines": "688-696"
+    },
+    {
+      "filename": "17_unknown_Blank-Page.txt",
+      "type": "unknown",
+      "title": "Blank Page",
+      "lines": "697-704"
+    },
+    {
+      "filename": "18_unknown_Diagram-of-Electrical-Panel-and-Pricing.txt",
+      "type": "unknown",
+      "title": "Diagram of Electrical Panel and Pricing",
+      "lines": "705-712"
+    },
+    {
+      "filename": "19_albaran_ALBARAN-from-SALTOKI-COLLADO-VILLALBA.txt",
+      "type": "albaran",
+      "title": "ALBARAN from SALTOKI COLLADO VILLALBA",
+      "lines": "713-755"
+    },
+    {
+      "filename": "20_unknown_Balance-due.txt",
+      "type": "unknown",
+      "title": "Balance due",
+      "lines": "756-761"
+    },
+    {
+      "filename": "21_unknown_CONSULTA-A-LA-CARTERA.txt",
+      "type": "unknown",
+      "title": "CONSULTA A LA CARTERA",
+      "lines": "762-784"
+    },
+    {
+      "filename": "22_factura_FACTURA-from-ELECTRO-MERCANTIL-LEGANES.txt",
+      "type": "factura",
+      "title": "FACTURA from ELECTRO MERCANTIL LEGANES",
+      "lines": "785-811"
+    },
+    {
+      "filename": "23_factura_ES-COPIA-FACTURA-from-ELECTRO-MERCANTIL-LEGANES.txt",
+      "type": "factura",
+      "title": "ES COPIA FACTURA from ELECTRO MERCANTIL LEGANES",
+      "lines": "812-838"
+    }
+  ],
+  "debugInfo": {
+    "debugPrefix": "2025-09-27T14-42-05-984Z_follon",
+    "debugPath": "/home/sergi/proyectos/community-saas/test-results/separacion",
+    "totalCharacters": 43188,
+    "filesGenerated": 23,
+    "timestamp": "2025-09-27T14:42:06.009Z"
+  },
+  "detectedDocumentsEnhanced": [
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 1",
+      "lines": "1-32",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 1 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR",
+      "textLength": 1701
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 2",
+      "lines": "33-67",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 2 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA",
+      "textLength": 1639
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 3",
+      "lines": "68-123",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 3 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR",
+      "textLength": 3279
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 4",
+      "lines": "124-162",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 4 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA",
+      "textLength": 1618
+    },
+    {
+      "type": "multa",
+      "title": "Información sobre Publicación de Edicto - Multa de Circulación",
+      "lines": "163-210",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "edicto",
+        "expediente sancionador",
+        "935/711076230.0",
+        "Antonio Lara Gutierrez"
+      ],
+      "startMarker": "--- Página 5 ---\nmedio ambiente y MADRID\nmovilidad",
+      "endMarker": "LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO",
+      "textLength": 2951
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "211-255",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "fischer",
+        "delivery note",
+        "2002337934",
+        "Control y Tension",
+        "594182"
+      ],
+      "startMarker": "--- Página 7 ---\n0\nAlbarán\nFecha:",
+      "endMarker": "La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX",
+      "textLength": 2077
+    },
+    {
+      "type": "multa",
+      "title": "Notificación de Resolución de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "256-339",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "recurso de reposición",
+        "951/711023522.0",
+        "Control y Tension SL"
+      ],
+      "startMarker": "--- Página 8 ---\nÁREA DE GOBIERNO DE MEDIO AMBIENTE\nY MOVILIDAD",
+      "endMarker": "000003108",
+      "textLength": 3196
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - Page 1",
+      "lines": "340-368",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1088220",
+        "Control y Tension",
+        "LEGANES"
+      ],
+      "startMarker": "--- Página 10 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306",
+      "textLength": 930
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - Page 1",
+      "lines": "340-368",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1088220",
+        "Control y Tension",
+        "LEGANES"
+      ],
+      "startMarker": "--- Página 11 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306",
+      "textLength": 841
+    },
+    {
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming - Banco Sabadell",
+      "lines": "396-461",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "bs confirming",
+        "banco sabadell",
+        "pago",
+        "12677652",
+        "Control y Tension SL",
+        "MORFUS EQUIPAMIENTO COMERCIAL S.L."
+      ],
+      "startMarker": "--- Página 12 ---\nⓇSabadell\nNOTIFICACIÓN DE PAGO DE BS CONFIRMING",
+      "endMarker": "Página 1 de 2\nKF232E-200720-E-EMA-GBSE 1200-00-001620-000511-IAENMA 14",
+      "textLength": 2880
+    },
+    {
+      "type": "comunicado",
+      "title": "BS Confirming - Condiciones Generales - Banco Sabadell",
+      "lines": "462-519",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "bs confirming",
+        "banco sabadell",
+        "condiciones generales",
+        "pago",
+        "12677652",
+        "Control y Tension SL"
+      ],
+      "startMarker": "--- Página 13 ---\nⓇSabadell\nBS Confirming",
+      "endMarker": "www.bancsabadell.com\nKF333E-200720-E-EMA-GBSE 1200-00-001621-000511-1AENMA14",
+      "textLength": 4556
+    },
+    {
+      "type": "albaran",
+      "title": "Albaran from MICROCOM SISTEMAS MODULARES, S. L.",
+      "lines": "520-553",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "microcom",
+        "delivery note",
+        "18633",
+        "CONTROL Y TENSION, S.L.",
+        "REMOTE GSM I/O MODULE"
+      ],
+      "startMarker": "--- Página 14 ---\nMICROCOM\nSISTEMAS MODULARES, S. L.",
+      "endMarker": "TOTAL €\n419,75",
+      "textLength": 803
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "554-604",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1084627",
+        "Control y Tension",
+        "PHI01000740"
+      ],
+      "startMarker": "--- Página 15 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge",
+      "textLength": 1538
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán (PRV) de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "605-642",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "electromercantil",
+        "delivery note",
+        "1084697",
+        "Control y Tension",
+        "HF-P 258 TL-D III"
+      ],
+      "startMarker": "--- Página 16 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge",
+      "textLength": 1302
+    },
+    {
+      "type": "presupuesto",
+      "title": "Presupuesto para Instalación y Legalización de Acometida - Trinidad Arboiro Linares",
+      "lines": "643-687",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "presupuesto",
+        "instalación eléctrica",
+        "trinidad arboiro linares",
+        "1 180006",
+        "CONTROL Y TENSIÓN S.L."
+      ],
+      "startMarker": "--- Página 17 ---\nCONTROL Y TENSION",
+      "endMarker": "Mov. 609 273 707",
+      "textLength": 1729
+    },
+    {
+      "type": "unknown",
+      "title": "Diagram of Electrical Panel",
+      "lines": "688-696",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [
+        "diagram",
+        "electrical panel",
+        "esquema"
+      ],
+      "startMarker": "--- Página 18 ---\nO\nGS-Hydro",
+      "endMarker": "Cabo Rufino Lázaro, 5. P. Európolis - 28230 Las Rozas (Madrid) - Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es",
+      "textLength": 314
+    },
+    {
+      "type": "unknown",
+      "title": "Blank Page",
+      "lines": "697-704",
+      "confidence": 0.1,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 19 ---\n. (13/13)",
+      "endMarker": "279",
+      "textLength": 527
+    },
+    {
+      "type": "unknown",
+      "title": "Diagram of Electrical Panel and Pricing",
+      "lines": "705-712",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [
+        "diagram",
+        "electrical panel",
+        "pricing"
+      ],
+      "startMarker": "--- Página 20 ---\nO\nGS-HYDRO S.A.",
+      "endMarker": "Cabo Rufino Lázaro, 5. P. Európolis 28230 Las Rozas (Madrid) Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es",
+      "textLength": 306
+    },
+    {
+      "type": "albaran",
+      "title": "ALBARAN from SALTOKI COLLADO VILLALBA",
+      "lines": "713-755",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "saltoki",
+        "delivery note",
+        "132.127",
+        "CONTROL Y TENSION S.L",
+        "TEE CABEZA SELECTOR"
+      ],
+      "startMarker": "--- Página 21 ---\nSSALTOKI\nSALTOKI COLLADO VILLALBA",
+      "endMarker": "Consulta detalles de la promoción con tu comercial o en tu centro Saltoki",
+      "textLength": 1939
+    },
+    {
+      "type": "unknown",
+      "title": "Balance due",
+      "lines": "756-761",
+      "confidence": 0.3,
+      "supported": false,
+      "keywords": [
+        "balance",
+        "due",
+        "debt"
+      ],
+      "startMarker": "--- Página 22 ---\n03/12/19",
+      "endMarker": "17/02/20301,25",
+      "textLength": 52
+    },
+    {
+      "type": "unknown",
+      "title": "CONSULTA A LA CARTERA",
+      "lines": "762-784",
+      "confidence": 0.4,
+      "supported": false,
+      "keywords": [
+        "cartera",
+        "balance",
+        "finance"
+      ],
+      "startMarker": "--- Página 23 ---\nELECTRO MERCANTIL LEGANES DAM",
+      "endMarker": "吃",
+      "textLength": 1269
+    },
+    {
+      "type": "factura",
+      "title": "FACTURA from ELECTRO MERCANTIL LEGANES",
+      "lines": "785-811",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "electromercantil",
+        "invoice",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "gastos aplazamiento"
+      ],
+      "startMarker": "--- Página 24 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221",
+      "textLength": 932
+    },
+    {
+      "type": "factura",
+      "title": "ES COPIA FACTURA from ELECTRO MERCANTIL LEGANES",
+      "lines": "812-838",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "electromercantil",
+        "invoice",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "gastos aplazamiento"
+      ],
+      "startMarker": "--- Página 25 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221",
+      "textLength": 935
+    }
+  ]
+}

@@ -171,7 +171,7 @@ export class MultiDocumentAnalyzer {
         
         // Si tenemos marcadores, usarlos para corte preciso
         if (doc.startMarker && doc.endMarker) {
-          const fullText = extractionResult.text;
+          const fullText = extractionResult.text || '';
           const startIndex = fullText.indexOf(doc.startMarker);
           const endIndex = fullText.indexOf(doc.endMarker, startIndex);
           
@@ -471,7 +471,7 @@ DO NOT mix different document types in one detection - separate them clearly!
 
     const points: number[] = [];
     for (let i = 1; i < documents.length; i++) {
-      points.push(documents[i].startPage);
+      points.push(documents[i].startLine);
     }
 
     return points.sort((a, b) => a - b);
@@ -558,7 +558,7 @@ Líneas: ${doc.startLine}-${doc.endLine}
 Confianza: ${Math.round(doc.confidence * 100)}%
 Soportado por pipeline: ${doc.isSupportedByPipeline ? 'SÍ' : 'NO'}
 Descripción: ${doc.description}
-Palabras clave: ${doc.keywords.join(', ')}
+Palabras clave: ${doc.keywords?.join(', ') || 'No especificadas'}
 Fecha separación: ${new Date().toISOString()}
 =========================
 

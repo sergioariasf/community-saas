@@ -60,9 +60,9 @@ export async function callGeminiFlashOCRIA(
     };
 
     // Usar el mismo sistema modular pero con datos del PDF
-    const prompt = buildPrompt(agentName, agentPrompt, inputs);
+    const prompt = buildPrompt(agentName, inputs);
     const response = await callGeminiAPI(prompt, agentName);
-    const parsedResponse = parseAgentResponse(response, agentName);
+    const parsedResponse = parseAgentResponse(response.text || '', agentName);
 
     const processingTime = Date.now() - startTime;
     console.log(`[Gemini Flash OCR IA] Completed in ${processingTime}ms`);

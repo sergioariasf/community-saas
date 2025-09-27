@@ -91,7 +91,7 @@ export async function GET(
       disposition: headers.get('Content-Disposition')
     });
 
-    return new NextResponse(buffer, {
+    return new NextResponse(buffer as BodyInit, {
       status: 200,
       headers
     });

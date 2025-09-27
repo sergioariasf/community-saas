@@ -1,0 +1,48 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 1/23
+Tipo: parte médico
+Título: Parte Médico de Confirmación de Incapacidad Temporal - Page 1
+Líneas originales: 1-32 (total: 32 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 1 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Marcador final: Ejemplar para el TRABAJADOR
+Caracteres: 660
+Descripción: Medical certificate confirming temporary incapacity of Antonio Lara Gutierrez due to a common illness.
+Keywords: parte médico, incapacidad temporal, enfermedad común, LRGT650802916019, Antonio Lara Gutierrez
+=====================================
+
+--- Página 1 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) |
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+"
+FECHA DE LA BAJA
+12/09/2020
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+N° DEL PARTE DE CONFIRMACIÓN
+1
+TIPO DE PROCESO

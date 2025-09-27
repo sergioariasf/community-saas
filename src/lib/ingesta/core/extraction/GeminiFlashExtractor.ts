@@ -7,7 +7,7 @@
  * ACTUALIZADO: 2025-09-21
  */
 
-import { BaseTextExtractor, ExtractionResult, ExtractionContext } from './BaseTextExtractor.ts';
+import { BaseTextExtractor, ExtractionResult, ExtractionContext } from './BaseTextExtractor';
 
 export interface GeminiAllInOneResult extends ExtractionResult {
   allInOneComplete?: boolean;
@@ -113,7 +113,7 @@ export class GeminiFlashExtractor extends BaseTextExtractor {
 
       // Llamar al agente con el PDF buffer
       this.log('info', 'Calling Gemini Flash agent...');
-      const agentResult = await callSaaSAgent(classifier.name, agentInput, context.buffer);
+      const agentResult = await callSaaSAgent(classifier.name, agentInput);
 
       if (agentResult.success && agentResult.data) {
         // El agente debe retornar: text, documentType, metadata
@@ -210,16 +210,16 @@ export class GeminiFlashExtractor extends BaseTextExtractor {
       // Guardar según el tipo de documento
       switch (documentType) {
         case 'acta':
-          await DocumentsStore.saveExtractedMinutes(documentId, metadata);
+          await (DocumentsStore as any).saveExtractedMinutes(documentId, metadata);
           break;
         case 'comunicado':
-          await DocumentsStore.saveExtractedComunicado(documentId, metadata);
+          await (DocumentsStore as any).saveExtractedComunicado(documentId, metadata);
           break;
         case 'factura':
-          await DocumentsStore.saveExtractedInvoice(documentId, metadata);
+          await (DocumentsStore as any).saveExtractedInvoice(documentId, metadata);
           break;
         case 'contrato':
-          await DocumentsStore.saveExtractedContract(documentId, metadata);
+          await (DocumentsStore as any).saveExtractedContract(documentId, metadata);
           break;
         default:
           throw new Error(`Unsupported document type: ${documentType}`);

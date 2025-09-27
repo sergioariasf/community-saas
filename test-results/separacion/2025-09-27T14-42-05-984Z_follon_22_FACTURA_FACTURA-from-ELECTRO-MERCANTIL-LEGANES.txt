@@ -1,0 +1,44 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/23
+Tipo: factura
+Título: FACTURA from ELECTRO MERCANTIL LEGANES
+Líneas originales: 785-811 (total: 27 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+em
+electromercantil
+Marcador final: ES57 2100 8661 09 0200037221
+Caracteres: 378
+Descripción: Invoice from ELECTRO MERCANTIL LEGANES to CONTROL Y TENSION SL.
+Keywords: factura, electromercantil, invoice, 850162, CONTROL Y TENSION SL, gastos aplazamiento
+=====================================
+
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+ญ
+Miembro de:
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+ALBARÁN
+1088169
+COPIA CLIENTE
+Página 1 de 1
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna:
+Hora:
+10:18
+Ref. Oferta:
+Tel.:
+C.I.F.:
+918964063
+B83802850
+Fax:

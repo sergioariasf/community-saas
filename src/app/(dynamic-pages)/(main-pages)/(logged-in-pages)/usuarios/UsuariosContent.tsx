@@ -37,8 +37,20 @@ interface UsuariosContentProps {
   user: SupabaseUser;
 }
 
+// Tipo para usuario del sistema
+interface Usuario {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+  community: string;
+  status: string;
+  lastLogin: string | null;
+  created: string;
+}
+
 // Datos de ejemplo para demostración
-const usuariosEjemplo = [
+const usuariosEjemplo: Usuario[] = [
   {
     id: '1',
     name: 'Sergio Arias',
@@ -84,7 +96,7 @@ const usuariosEjemplo = [
 export function UsuariosContent({ user }: UsuariosContentProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterRole, setFilterRole] = useState('all');
-  const [selectedUser, setSelectedUser] = useState(null);
+  const [selectedUser, setSelectedUser] = useState<Usuario | null>(null);
   const [showUserDetail, setShowUserDetail] = useState(false);
 
   const getRoleBadge = (role: string) => {
@@ -113,7 +125,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
     }
   };
 
-  const openUserDetail = (usuario) => {
+  const openUserDetail = (usuario: Usuario) => {
     setSelectedUser(usuario);
     setShowUserDetail(true);
   };

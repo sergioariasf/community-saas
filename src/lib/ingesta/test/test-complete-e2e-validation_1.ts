@@ -807,7 +807,7 @@ async function executeStep4DataValidation(
     // No necesitamos parseAgentResponse aquí porque ya tenemos datos válidos del paso 3
 
     // Validaciones básicas de integridad de datos
-    const validationErrors = [];
+    const validationErrors: string[] = [];
 
     // 1. Verificar que hay datos
     if (!extractedData || typeof extractedData !== 'object') {
@@ -911,7 +911,7 @@ function getRequiredFieldsForType(documentType: string): string[] {
     }
 
     // Obtener campos requeridos del schema real
-    const requiredFields = [];
+    const requiredFields: string[] = [];
 
     // Primary fields marcados como required
     if (typeConfig.database_schema?.primary_fields) {

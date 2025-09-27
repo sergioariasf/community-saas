@@ -70,7 +70,7 @@ export async function callGeminiAPI(
     const geminiConfig = getGeminiConfigForAgent(agentName);
     
     // Configurar timeout
-    const timeout = geminiConfig.timeout || TIMEOUT_CONFIG.gemini.default;
+    const timeout = geminiConfig.timeout || 60000;
     
     const result = await Promise.race([
       model.generateContent(prompt),
