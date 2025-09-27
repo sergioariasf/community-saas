@@ -9,8 +9,15 @@ import { getGoogleVisionStatus } from '@/lib/pdf/googleVision';
 
 export const dynamic = 'force-dynamic';
 
+interface SystemCheckResult {
+  name: string;
+  status: string;
+  message: string;
+  details?: string[];
+}
+
 async function SystemCheck() {
-  const checks = [];
+  const checks: SystemCheckResult[] = [];
 
   try {
     // 1. Verificar conexión a Supabase
@@ -184,7 +191,7 @@ async function SystemCheck() {
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-1">
                       <T.P className="font-medium mb-0">{check.name}</T.P>
-                      <Badge variant={getStatusColor(check.status)} size="sm">
+                      <Badge variant={getStatusColor(check.status)}>
                         {check.status}
                       </Badge>
                     </div>

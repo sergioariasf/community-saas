@@ -1,0 +1,464 @@
+{
+  "timestamp": "2025-09-27T10:04:29.762Z",
+  "config": {
+    "target_file": "acta_test",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "acta": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "acta_test",
+      "success": true,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "Acta de la Junta General Extraordinaria DE LA COMUNIDAD DE PROPIETARIOS  \n \nEn Las Rozas, siendo las 19:00 horas del día 20 de septiembre de 2022, y en la SALA DALI \nHotal Attica 21 (C/ Chile nº2), debidamente convocados, se reúnen en segunda \nconvocatoria los copropietarios, presentes o representados, que posteriormente se \nrelacionan, bajo la presidencia de Don Carlos Sánchez , y actuando como \nSecretario-Administrador Doña Nuria Grau, en representación de la mercantil \nASEGRAMAR, ASESORES Y ABOGADOS, S.L., a fin de celebrar la Junta General \nExtraordinaria de la Comunidad de Propietarios de C.P. AMARA HOMES, y conforme al \nsiguiente :  \n \n \nORDEN DEL DÍA:  \n \n01 Exposición de actuaciones realizadas frente a Neinor y distintos proveedores. \nExplicación sobre plazos de prescripción respecto a incidencias y defectos de Neinor y \nacciones futuras. Exposición sobre Sunflower, auditoría sistema actual y exposición de \ndistintas opciones sobre estudio energético.  \n \n02 Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes \nintervinientes en el proceso de la edificación del conjunto residencial, por las deficiencias y \ndefectos constructivos, a los que se refiere la ley de ordenación de la edificación, así como \ncualquier otra ley que ampare dicha reclamación, así como por los posibles incumplimientos \ncontractuales, establecidos en el código civil de cada uno de ellos frente a la comunidad de \npropietarios, por los defectos que a la fecha existen a la comunidad de propietarios, \ndecisiones a tomar.  \n \n03 Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias \nencontradas en el edificio. Presentación de presupuestos, decisiones a tomar. \n \n04 Autorización al presidente para inicio de acciones judiciales, tanto civiles, como \nadministrativas, contra viviendas con cerramientos no autorizados así como la posible \ncontratación de arquitecto para realización de informe, decisiones a tomar.  \n \n05 Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D, autorización y \naprobación para ampliación de partida presupuestaria para la adquisición de material y \nmáquinas de gimnasio, decisiones a tomar.  \n \n06 Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y \nsala comunitaria del edificio D. Presupuesto, decisiones a tomar.  \n \n07 Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios, \ndecisiones a tomar.  \n \n08 Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva a \nefectos de resolución de incidencias en la comunidad, decisiones a tomar.  \n \n\n09 Propuesta de novación de contrato de conserjería, limpieza y mantenimiento, incremento \nde horas y duración de contrato. Presentación de presupuestos. Recepción de paquetería y \nopciones, decisiones a tomar.  \n \n10 Modificación normativa de cerramiento y toldos; o Eliminar limitación de cercanía con \nvalla exterior dada la imposibilidad de cumplirlo para algunas viviendas. La limitación de 1,5 \nmetros se incluyó como medida de seguridad para estructuras portantes, que no pueden \ninstalarse por normativa municipal, decisiones a tomar. o Propuesta de permitir anclajes en \nfachada en bajos sin techar dada la imposibilidad de poner toldos con las normas actuales, \ndecisiones a tomar.",
+          "metrics": {
+            "duration": 179,
+            "size": 3347,
+            "method": "pdf-parse-direct"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "acta",
+            "confidence": 0.95,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for acta"
+          },
+          "metrics": {
+            "duration": 0,
+            "confidence": 0.95
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "document_date": "2022-09-20",
+            "tipo_reunion": "extraordinaria",
+            "lugar": "SALA DALI Hotal Attica 21 (C/ Chile nº2), Las Rozas",
+            "comunidad_nombre": "C.P. AMARA HOMES",
+            "president_in": "Carlos Sánchez",
+            "president_out": null,
+            "administrator": "Nuria Grau",
+            "summary": "Junta General Extraordinaria de la Comunidad de Propietarios para tratar temas como actuaciones frente a Neinor, acciones judiciales por deficiencias constructivas, cambio de perito, cerramientos no autorizados, traslado del gimnasio, insonorización, normas de régimen interno, solicitud de Neinor y novación de contrato de conserjería.",
+            "decisions": "1. Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación. 2. Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio. 3. Autorización al presidente para inicio de acciones judiciales contra viviendas con cerramientos no autorizados. 4. Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D. 5. Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D. 6. Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios. 7. Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva. 8. Propuesta de novación de contrato de conserjería, limpieza y mantenimiento. 9. Modificación normativa de cerramiento y toldos.",
+            "orden_del_dia": [
+              "Exposición de actuaciones realizadas frente a Neinor y distintos proveedores.",
+              "Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación del conjunto residencial, por las deficiencias y defectos constructivos.",
+              "Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio.",
+              "Autorización al presidente para inicio de acciones judiciales, tanto civiles, como administrativas, contra viviendas con cerramientos no autorizados así como la posible contratación de arquitecto para realización de informe.",
+              "Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D, autorización y aprobación para ampliación de partida presupuestaria para la adquisición de material y máquinas de gimnasio.",
+              "Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D.",
+              "Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios.",
+              "Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva a efectos de resolución de incidencias en la comunidad.",
+              "Propuesta de novación de contrato de conserjería, limpieza y mantenimiento, incremento de horas y duración de contrato.",
+              "Modificación normativa de cerramiento y toldos; o Eliminar limitación de cercanía con valla exterior dada la imposibilidad de cumplirlo para algunas viviendas. La limitación de 1,5 metros se incluyó como medida de seguridad para estructuras portantes, que no pueden instalarse por normativa municipal, decisiones a tomar. o Propuesta de permitir anclajes en fachada en bajos sin techar dada la imposibilidad de poner toldos con las normas actuales, decisiones a tomar."
+            ],
+            "acuerdos": [],
+            "topic_keywords": [
+              "Neinor",
+              "deficiencias",
+              "cerramientos"
+            ],
+            "topic_presupuesto": true,
+            "topic_mantenimiento": true,
+            "topic_administracion": true,
+            "topic_piscina": false,
+            "topic_jardin": false,
+            "topic_limpieza": true,
+            "topic_balance": false,
+            "topic_paqueteria": true,
+            "topic_energia": true,
+            "topic_normativa": true,
+            "topic_proveedor": true,
+            "topic_dinero": true,
+            "topic_ascensor": false,
+            "topic_incendios": false,
+            "topic_porteria": true,
+            "estructura_detectada": {
+              "quorum_alcanzado": true,
+              "propietarios_totales": null,
+              "capitulos": [
+                {
+                  "numero": 1,
+                  "titulo": "Exposición de actuaciones realizadas frente a Neinor y distintos proveedores.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 2,
+                  "titulo": "Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación del conjunto residencial, por las deficiencias y defectos constructivos.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 3,
+                  "titulo": "Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 4,
+                  "titulo": "Autorización al presidente para inicio de acciones judiciales, tanto civiles, como administrativas, contra viviendas con cerramientos no autorizados así como la posible contratación de arquitecto para realización de informe.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 5,
+                  "titulo": "Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D, autorización y aprobación para ampliación de partida presupuestaria para la adquisición de material y máquinas de gimnasio.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 6,
+                  "titulo": "Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 7,
+                  "titulo": "Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 8,
+                  "titulo": "Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva a efectos de resolución de incidencias en la comunidad.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 9,
+                  "titulo": "Propuesta de novación de contrato de conserjería, limpieza y mantenimiento, incremento de horas y duración de contrato.",
+                  "pagina": 1,
+                  "subsecciones": []
+                },
+                {
+                  "numero": 10,
+                  "titulo": "Modificación normativa de cerramiento y toldos; o Eliminar limitación de cercanía con valla exterior dada la imposibilidad de cumplirlo para algunas viviendas. La limitación de 1,5 metros se incluyó como medida de seguridad para estructuras portantes, que no pueden instalarse por normativa municipal, decisiones a tomar. o Propuesta de permitir anclajes en fachada en bajos sin techar dada la imposibilidad de poner toldos con las normas actuales, decisiones a tomar.",
+                  "pagina": 1,
+                  "subsecciones": []
+                }
+              ],
+              "total_paginas": 1,
+              "votaciones": []
+            }
+          },
+          "metrics": {
+            "duration": 10364,
+            "fields_count": 28
+          }
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "document_date": "2022-09-20",
+              "tipo_reunion": "extraordinaria",
+              "lugar": "SALA DALI Hotal Attica 21 (C/ Chile nº2), Las Rozas",
+              "comunidad_nombre": "C.P. AMARA HOMES",
+              "president_in": "Carlos Sánchez",
+              "president_out": null,
+              "administrator": "Nuria Grau",
+              "summary": "Junta General Extraordinaria de la Comunidad de Propietarios para tratar temas como actuaciones frente a Neinor, acciones judiciales por deficiencias constructivas, cambio de perito, cerramientos no autorizados, traslado del gimnasio, insonorización, normas de régimen interno, solicitud de Neinor y novación de contrato de conserjería.",
+              "decisions": "1. Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación. 2. Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio. 3. Autorización al presidente para inicio de acciones judiciales contra viviendas con cerramientos no autorizados. 4. Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D. 5. Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D. 6. Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios. 7. Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva. 8. Propuesta de novación de contrato de conserjería, limpieza y mantenimiento. 9. Modificación normativa de cerramiento y toldos.",
+              "orden_del_dia": [
+                "Exposición de actuaciones realizadas frente a Neinor y distintos proveedores.",
+                "Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación del conjunto residencial, por las deficiencias y defectos constructivos.",
+                "Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio.",
+                "Autorización al presidente para inicio de acciones judiciales, tanto civiles, como administrativas, contra viviendas con cerramientos no autorizados así como la posible contratación de arquitecto para realización de informe.",
+                "Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D, autorización y aprobación para ampliación de partida presupuestaria para la adquisición de material y máquinas de gimnasio.",
+                "Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D.",
+                "Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios.",
+                "Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva a efectos de resolución de incidencias en la comunidad.",
+                "Propuesta de novación de contrato de conserjería, limpieza y mantenimiento, incremento de horas y duración de contrato.",
+                "Modificación normativa de cerramiento y toldos; o Eliminar limitación de cercanía con valla exterior dada la imposibilidad de cumplirlo para algunas viviendas. La limitación de 1,5 metros se incluyó como medida de seguridad para estructuras portantes, que no pueden instalarse por normativa municipal, decisiones a tomar. o Propuesta de permitir anclajes en fachada en bajos sin techar dada la imposibilidad de poner toldos con las normas actuales, decisiones a tomar."
+              ],
+              "acuerdos": [],
+              "topic_keywords": [
+                "Neinor",
+                "deficiencias",
+                "cerramientos"
+              ],
+              "topic_presupuesto": true,
+              "topic_mantenimiento": true,
+              "topic_administracion": true,
+              "topic_piscina": false,
+              "topic_jardin": false,
+              "topic_limpieza": true,
+              "topic_balance": false,
+              "topic_paqueteria": true,
+              "topic_energia": true,
+              "topic_normativa": true,
+              "topic_proveedor": true,
+              "topic_dinero": true,
+              "topic_ascensor": false,
+              "topic_incendios": false,
+              "topic_porteria": true,
+              "estructura_detectada": {
+                "quorum_alcanzado": true,
+                "propietarios_totales": null,
+                "capitulos": [
+                  {
+                    "numero": 1,
+                    "titulo": "Exposición de actuaciones realizadas frente a Neinor y distintos proveedores.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 2,
+                    "titulo": "Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación del conjunto residencial, por las deficiencias y defectos constructivos.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 3,
+                    "titulo": "Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 4,
+                    "titulo": "Autorización al presidente para inicio de acciones judiciales, tanto civiles, como administrativas, contra viviendas con cerramientos no autorizados así como la posible contratación de arquitecto para realización de informe.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 5,
+                    "titulo": "Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D, autorización y aprobación para ampliación de partida presupuestaria para la adquisición de material y máquinas de gimnasio.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 6,
+                    "titulo": "Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 7,
+                    "titulo": "Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 8,
+                    "titulo": "Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva a efectos de resolución de incidencias en la comunidad.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 9,
+                    "titulo": "Propuesta de novación de contrato de conserjería, limpieza y mantenimiento, incremento de horas y duración de contrato.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  },
+                  {
+                    "numero": 10,
+                    "titulo": "Modificación normativa de cerramiento y toldos; o Eliminar limitación de cercanía con valla exterior dada la imposibilidad de cumplirlo para algunas viviendas. La limitación de 1,5 metros se incluyó como medida de seguridad para estructuras portantes, que no pueden instalarse por normativa municipal, decisiones a tomar. o Propuesta de permitir anclajes en fachada en bajos sin techar dada la imposibilidad de poner toldos con las normas actuales, decisiones a tomar.",
+                    "pagina": 1,
+                    "subsecciones": []
+                  }
+                ],
+                "total_paginas": 1,
+                "votaciones": []
+              }
+            }
+          },
+          "metrics": {
+            "duration": 4
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 100,
+            "missingFields": [],
+            "extraFields": [
+              "topic_jardin",
+              "topic_limpieza",
+              "topic_balance",
+              "topic_paqueteria",
+              "topic_energia",
+              "topic_normativa",
+              "topic_proveedor",
+              "topic_dinero",
+              "topic_ascensor",
+              "topic_incendios",
+              "topic_porteria"
+            ]
+          },
+          "metrics": {
+            "duration": 1,
+            "compatibility_score": 100
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 32
+          },
+          "metrics": {
+            "duration": 1
+          }
+        }
+      },
+      "total_time": 10551,
+      "document_type": "acta",
+      "extracted_data": {
+        "document_date": "2022-09-20",
+        "tipo_reunion": "extraordinaria",
+        "lugar": "SALA DALI Hotal Attica 21 (C/ Chile nº2), Las Rozas",
+        "comunidad_nombre": "C.P. AMARA HOMES",
+        "president_in": "Carlos Sánchez",
+        "president_out": null,
+        "administrator": "Nuria Grau",
+        "summary": "Junta General Extraordinaria de la Comunidad de Propietarios para tratar temas como actuaciones frente a Neinor, acciones judiciales por deficiencias constructivas, cambio de perito, cerramientos no autorizados, traslado del gimnasio, insonorización, normas de régimen interno, solicitud de Neinor y novación de contrato de conserjería.",
+        "decisions": "1. Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación. 2. Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio. 3. Autorización al presidente para inicio de acciones judiciales contra viviendas con cerramientos no autorizados. 4. Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D. 5. Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D. 6. Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios. 7. Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva. 8. Propuesta de novación de contrato de conserjería, limpieza y mantenimiento. 9. Modificación normativa de cerramiento y toldos.",
+        "orden_del_dia": [
+          "Exposición de actuaciones realizadas frente a Neinor y distintos proveedores.",
+          "Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación del conjunto residencial, por las deficiencias y defectos constructivos.",
+          "Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio.",
+          "Autorización al presidente para inicio de acciones judiciales, tanto civiles, como administrativas, contra viviendas con cerramientos no autorizados así como la posible contratación de arquitecto para realización de informe.",
+          "Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D, autorización y aprobación para ampliación de partida presupuestaria para la adquisición de material y máquinas de gimnasio.",
+          "Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D.",
+          "Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios.",
+          "Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva a efectos de resolución de incidencias en la comunidad.",
+          "Propuesta de novación de contrato de conserjería, limpieza y mantenimiento, incremento de horas y duración de contrato.",
+          "Modificación normativa de cerramiento y toldos; o Eliminar limitación de cercanía con valla exterior dada la imposibilidad de cumplirlo para algunas viviendas. La limitación de 1,5 metros se incluyó como medida de seguridad para estructuras portantes, que no pueden instalarse por normativa municipal, decisiones a tomar. o Propuesta de permitir anclajes en fachada en bajos sin techar dada la imposibilidad de poner toldos con las normas actuales, decisiones a tomar."
+        ],
+        "acuerdos": [],
+        "topic_keywords": [
+          "Neinor",
+          "deficiencias",
+          "cerramientos"
+        ],
+        "topic_presupuesto": true,
+        "topic_mantenimiento": true,
+        "topic_administracion": true,
+        "topic_piscina": false,
+        "topic_jardin": false,
+        "topic_limpieza": true,
+        "topic_balance": false,
+        "topic_paqueteria": true,
+        "topic_energia": true,
+        "topic_normativa": true,
+        "topic_proveedor": true,
+        "topic_dinero": true,
+        "topic_ascensor": false,
+        "topic_incendios": false,
+        "topic_porteria": true,
+        "estructura_detectada": {
+          "quorum_alcanzado": true,
+          "propietarios_totales": null,
+          "capitulos": [
+            {
+              "numero": 1,
+              "titulo": "Exposición de actuaciones realizadas frente a Neinor y distintos proveedores.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 2,
+              "titulo": "Autorizar al Presidente para el inicio de acciones judiciales frente a todos los agentes intervinientes en el proceso de la edificación del conjunto residencial, por las deficiencias y defectos constructivos.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 3,
+              "titulo": "Propuesta de cambio y contratación de nuevo perito para el estudio de las deficiencias encontradas en el edificio.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 4,
+              "titulo": "Autorización al presidente para inicio de acciones judiciales, tanto civiles, como administrativas, contra viviendas con cerramientos no autorizados así como la posible contratación de arquitecto para realización de informe.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 5,
+              "titulo": "Acuerdo para traslado del gimnasio a la sala comunitaria del edificio D, autorización y aprobación para ampliación de partida presupuestaria para la adquisición de material y máquinas de gimnasio.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 6,
+              "titulo": "Autorización y aprobación de gasto de insonorización del cuarto grupo de presión C05 y sala comunitaria del edificio D.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 7,
+              "titulo": "Propuesta y aprobación de normas de régimen interno de la Comunidad de propietarios.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 8,
+              "titulo": "Solicitud por parte de Neinor para el uso de una sala comunitaria de forma exclusiva a efectos de resolución de incidencias en la comunidad.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 9,
+              "titulo": "Propuesta de novación de contrato de conserjería, limpieza y mantenimiento, incremento de horas y duración de contrato.",
+              "pagina": 1,
+              "subsecciones": []
+            },
+            {
+              "numero": 10,
+              "titulo": "Modificación normativa de cerramiento y toldos; o Eliminar limitación de cercanía con valla exterior dada la imposibilidad de cumplirlo para algunas viviendas. La limitación de 1,5 metros se incluyó como medida de seguridad para estructuras portantes, que no pueden instalarse por normativa municipal, decisiones a tomar. o Propuesta de permitir anclajes en fachada en bajos sin techar dada la imposibilidad de poner toldos con las normas actuales, decisiones a tomar.",
+              "pagina": 1,
+              "subsecciones": []
+            }
+          ],
+          "total_paginas": 1,
+          "votaciones": []
+        }
+      }
+    }
+  ]
+}

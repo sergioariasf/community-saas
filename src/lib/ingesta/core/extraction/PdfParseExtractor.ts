@@ -37,7 +37,7 @@ export class PdfParseExtractor extends BaseTextExtractor {
     const startTime = Date.now();
 
     try {
-      const result = await this.extractWithExternalProcess(context.buffer);
+      const result = await this.extractDirectly(context.buffer);
       const processingTime = `${Date.now() - startTime}ms`;
 
       if (result.success && result.text) {
@@ -47,22 +47,55 @@ export class PdfParseExtractor extends BaseTextExtractor {
           confidence: 0.9,
           pages: result.pages,
           processingTime,
-          method: 'pdf-parse-external'
+          method: 'pdf-parse-direct'
         });
       } else {
         return this.createErrorResult(
           result.error || 'PDF-parse extraction failed - no text extracted',
-          'pdf-parse-external'
+          'pdf-parse-direct'
         );
       }
 
     } catch (error) {
-      return this.createErrorResult(error, 'pdf-parse-external');
+      return this.createErrorResult(error, 'pdf-parse-direct');
     }
   }
 
   /**
-   * Ejecuta pdf-parse usando proceso externo para compatibilidad con Next.js
+   * Extrae texto usando pdf-parse directamente
+   */
+  private async extractDirectly(buffer: Buffer): Promise<any> {
+    try {
+      this.log('info', 'Starting direct PDF-parse extraction...');
+      
+      // Import pdf-parse (works better with require in Node context)
+      const pdfParse = require('pdf-parse');
+      
+      const data = await pdfParse(buffer, {
+        max: 0 // Parse all pages
+      });
+
+      return {
+        success: true,
+        text: data.text.trim(),
+        pages: data.numpages,
+        method: 'pdf-parse-direct'
+      };
+
+    } catch (error) {
+      this.log('error', `Direct PDF-parse failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      
+      return {
+        success: false,
+        error: error instanceof Error ? error.message : 'PDF-parse extraction failed',
+        text: null,
+        pages: 0
+      };
+    }
+  }
+
+  /**
+   * DEPRECATED: Ejecuta pdf-parse usando proceso externo para compatibilidad con Next.js
    */
   private async extractWithExternalProcess(buffer: Buffer): Promise<any> {
     const fs = await import('fs/promises');

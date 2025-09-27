@@ -37,12 +37,23 @@ interface AnalysisResult {
     type: string;
     startPage: number;
     endPage: number;
+    startLine?: number;
+    endLine?: number;
     confidence: number;
     isSupportedByPipeline: boolean;
+    suggestedTitle?: string;
+    startMarker?: string;
+    endMarker?: string;
+    textFragment?: string;
   }>;
   totalPages: number;
   analysisDetails: string;
   separationPoints: number[];
+  textTruncated?: boolean;
+  textLength?: number;
+  maxSupportedLength?: number;
+  supportedDocuments?: number;
+  unsupportedDocuments?: number;
 }
 
 interface AnalysisStage {
@@ -544,7 +555,7 @@ export function MultiDocumentUploader() {
               <Scissors className="h-4 w-4 mr-2" />
               Separar Documentos
             </Button>
-            {analysisResult.supportedDocuments > 0 && (
+            {(analysisResult.supportedDocuments ?? 0) > 0 && (
               <Button 
                 className="flex-1 bg-green-600 hover:bg-green-700" 
                 size="lg"

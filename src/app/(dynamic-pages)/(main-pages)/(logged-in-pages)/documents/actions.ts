@@ -274,8 +274,11 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
       steps,
       pipelineResult: {
         processing_level: processingLevel,
-        success: pipelineResult?.success || false,
-        documentId: pipelineResult?.documentId || document.id
+        completed_steps: [],
+        failed_steps: [],
+        total_processing_time_ms: 0,
+        total_tokens_used: 0,
+        estimated_total_cost_usd: 0
       }
     };
 
@@ -392,7 +395,7 @@ export const reprocessDocument = authActionClient
           
           const result = await callSaaSAgent('invoice_extractor', { document_text: cleanText });
           if (result.success) {
-            await saveExtractedFactura(document.id, result.data, document.organization_id);
+            await saveExtractedFactura(document.id, result.data);
           }
         }
       }

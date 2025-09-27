@@ -1,0 +1,349 @@
+{
+  "timestamp": "2025-09-27T11:56:20.074Z",
+  "config": {
+    "target_file": "Contrato OLAQUA Piscinas",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": false
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "contrato": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "Contrato OLAQUA Piscinas",
+      "success": true,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "--- Página 1 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\nASOCIACIÓN ESPAÑOLA\nDE PROFESIONALEX\nDELSTORPSCBRAS JASOTAPI\nCOMUNIDAD DE PROPIETARIOS\nC/ ACANTO Nº 2 BIS (LA MARAZUELA)\nFASE I - II - III – IV (PISCINAS A-B-C-D)\n-\nLAS ROZAS - MADRID\nLas Rozas, 01 de Mayo del 2023\nPRESUPUESTO Nº 8661/22\nMANTENIMIENTO TEMPORADA DE\nVERANO\nLa conservación y mantenimiento de la piscina de referencia, comprende las siguientes\nprestaciones.\nNORMATIVA VIGENTE.-\nLa Comunidad de Propietarios, tendrá que mantener la instalación al día, en forma legal\ny correcta, para poder realizar los trabajos con las mejores garantías. Deberá contar con\ntodos los elementos de obligado cumplimiento, es decir, elementos de Seguridad,\nequipos de cloración y esterilización, equipos de otros aditivos, protección de los\ndesagües de piscina, así como las condiciones a las que se refiere el decreto 80/1998 de\n14 de Mayo por el que se regulan las condiciones higiénico-sanitarias de las piscinas y\nresto de Ordenanzas Municipales, así como demás legislación aplicable subsidiariamente\na cualquier materia relacionada con las instalaciones.\nOBTENCION DE PERMISOS.-\nTramitación de la reapertura de la piscina por la Concejalía de Sanidad en coordinación\ncon la Comunidad de Madrid, será necesario presentar: Cif de la Comunidad, Nombre,\nDirección y DNI del presidente, Contrato de Teléfono de la Comunidad (de no tener\nteléfono, se presentara el teléfono del Presidente de la Comunidad de Propietarios)\nsegún modelo de comunicación de reapertura de piscinas, Contrato DDD, Justificante de\nla Tasas Municipales de reapertura de la Piscina, Certificado de reconocimiento de\nInstalaciones Eléctricas de baja tensión expedido por Técnico Autorizado.\nEl importe de la presentación de la tramitación de la reapertura de la piscina será de\n50,00 € + 21% IVA (Por cada vaso que tenga la instalación). Que se facturaran\naparte con el primer pago del presupuesto. Que incluye los siguientes trabajos:\nParque Industrial y Tecnológico Európolis - C/ Milán, 14-28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 Fax: 91 636 1991 - E-mail: info@olaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro ◊ de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1ª - C.LF, B-87253811\nPágina 1\n\n--- Página 2 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25\naniversario\n1990 2015\nSO\nfab\nASOCIACIÓN ESPAÑOLA\nDE\nPROFESIONALES\nDEL SECTOR FISLIÑAS (ABOFAR\n•\nCumplimentación, impresión y presentación del formulario de la reapertura\nde la piscina, en el Ayuntamiento de Las Rozas.\nImpresión y tramitación de las tasas de apertura. (Que dicho importe se\nfacturará aparte si es que hubiese que pagar Tasas Municipales).\nCumplimentación e impresión del Libro de Registro de Control de la piscina.\nGestión de la recogida y entrega del agua del vaso de la piscina en laboratorio\nhomologado para realización del análisis correspondiente. (Dicho importe se\nfacturará aparte).\n(1) NOTA.- Cualquier permiso ó documentación que haya que presentarse\npara la tramitación de la reapertura de la piscina (Ejemplo: Certificado\nde Instalaciones Eléctricas de Baja Tensión, Análisis Físico/Químicos y\nMicrobiológicos, Justificante de las Tasas Municipales), no se\nencuentra incluido dentro de este presupuesto, serán facilitados por la\nComunidad de Propietarios, o se les enviará un presupuesto que se\nfacturará aparte.\n.\nRECORDATORIO Es obligatorio la realización de ANALISIS FISICO-\nQUIMICO-MICROBIOLOGICO MENSUALMENTE POR LABORATORIO\nHOMOLOGADO. Exigido por Sanidad, tanto para la apertura, como durante\nla duración de la temporada de verano (Junio-Julio-Agosto-Septiembre).\nSiempre y cuando lo exijan en la reapertura de la piscina.\nTRATAMIENTO DEL AGUA.-\nApertura de válvulas y lectura inicial del contador. Llenado hasta el nivel necesario para\nproceder a la depuración, cierre de válvulas y lectura del contador.\nSuministro de todos los productos de mantenimiento necesario para una buena\ncloración, esterilización y clarificación del agua, y su posterior tratamiento base de sal,\ncálcicos, algicidas, floculantes y reguladores de Ph., así como su adecuada adicción.\nCENTRAL DEPURADORA.-\nPuesta a punto de la depuradora y puesta en marcha pre-temporada, consistiendo en la\nrevisión y limpieza de válvulas, grupos, prefiltros, dosificadores, cuadros eléctricos y\naccesorios en general.\nLimpieza de los filtros a contracorriente y vigilancia de estos a diario y cuantas veces\nmás sean necesarias.\nParque Industrial y Tecnológico Európolis - C/ Milán, 14-28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 - Fax: 91 636 1991 - E-mail: info@olaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro o de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1\"- C.L.F. B-87253811\nZeulled\n\n--- Página 3 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\nfa\nASOCIACIÓN ESPAÑOLA\nDE PROFESIONALES\nDEL SECTOR PISCINAS TASOIAF{\nPERSONAL.-\nSERVICIO DE MAQUINISTA, Periódicamente como medida de control y\nsiempre que las instalaciones lo requieran, UN TECNICO TITULADO,\ndebidamente uniformado, será el encargado de la vigilancia, mantenimiento e\ninstalación de la maquinaría de filtrado, teniendo el manejo exclusivo de las\ndepuradoras, adicción de productos químicos, supervisión del trabajo realizado\npor el socorrista, hacer las correspondientes anotaciones en el libro oficial de\nControl Sanitario, (cloro libre, residual total, Ph., rebosaderos, etc.)., Revisión\nde todo lo relacionado con la piscina y figurando en la plantilla del personal\nespecializado, según dispone la Legislación Vigente Actual.\nSERVICIO DE LIMPIEZA DEL VASO DE LA PISCINA, El paso de\nlimpiafondos y pediluvios re realizara antes de la apertura al público de las\ninstalaciones, limpieza de superficie con material adecuado y cuando lo requieran\nlas instalaciones.\nSERVICIO DE SOCORRISTAS PARA LAS CUATRO INSTALACIONES,\nTitulados según la Orden 1239/2021 de la Consejería de Sanidad de la\nComunidad de Madrid, debidamente uniformado, (camiseta identificativa), con\nel siguiente horario para los usuarios:\n•\nDe 11.00 horas a 15.00 horas y de 16.30 horas a 20.30 horas desde\nel día 10 de Junio de 2023 hasta el día 10 de Septiembre de 2023.\nNota.- Queda pendiente, que en la semana del 15 de Mayo del 2023, nos tienen\nque enviar la comunidad de propietarios, los horarios de las piscinas (4), siempre\ny cuando se mantengan las 8 horas diarias partidas del servicio de socorrista\nLas instalaciones de la piscina permanecerán cerradas fuera de las horas\nexpresamente establecidas en el presupuesto, quedando exonerada\nexpresamente la entidad OLAQUA PISCINAS, S.L. de cualquier daño o\naccidente que pudiera acaecer fuera de dicho horario.\nSIENDO SUS FUNCIONES LAS SIGUIENTES:\n1. No podrá realizar durante las horas de baño otra labor que no sea la de sus\nfunciones de técnico en salvamento.\n2. Vigilar, controlar y atender a todo bañista que requiera algún servicio (dentro de\nsu competencia).\n3. Controlar a los usuarios fuera de las zonas cercanas al vaso de la piscina para\nque no se produzcan juegos peligrosos ó molestos para los demás usuarios.\nParque Industrial y Tecnológico Európolis - C/ Milán, 14 - 28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 - Fax: 91 636 19 91 E-mail: info@olaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro 0 de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción I* - C.I.F. B-87253811\nPágina 3\n\n--- Página 4 ---\nOLAQUA\nOLAQUA PISCINAS, 5.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\nfal\nASOCIACIÓN ESPAÑOLA\nDE PROFESIONALES\nO SECTOR FISCINAS JASOFAFT\n4. Llevará a cabo el cumplimiento de las normas de uso de la instalación que han\nde figurar un lugar visible para los usuarios y serán las acordadas por la\nComunidad de Propietarios.\n5. Colocación diaria de los correspondientes salvavidas y percha salvavidas y\ntenerlos en buen uso, para cuando sea necesaria su utilización.\n6. Al objeto de dar el mejor servicio de primeros auxilios siempre y cuando sea\nnecesario, tener un buen control y mantenimiento del botiquín. (Propiedad de la\nComunidad de Propietarios).\n7. La limpieza de papeleras, ceniceros, baños, botiquín, sacado, recogida y\ncolocación de sombrillas, hamacas y sillas, etc, no son tareas del Socorrista.\nCualquiera de los servicios enumerados precisará de un presupuesto\naparte, al objeto de abonarle dicho trabajo extra a la persona\nencargada de realizarlos.\nNOTAS ADICIONALES. -\nLos socorristas asignados por esta empresa y que prestan sus servicios en las\ninstalaciones de su propiedad, estarán contratados por OLAQUA PISCINAS, S.L., y por\nlo tanto está entidad es la que tiene la potestad de sustituirlo. En caso de existir quejas\npor parte de la Comunidad de Propietarios, sobre el socorrista, deberán ser debidamente\njustificadas y comunicadas por escrito para tomar las medidas oportunas, no se tendrán\nen cuenta después de 7 días siguientes a la incidencia, quedando exonerada OLAQUA\nPISCINAS, SL de cualquier responsabilidad legal o económica fuera de plazo. Para\nefectuar el cambio de socorrista tendrán que concedernos un periodo prudencial de\ntiempo para efectuar el cambio, siempre que exista motivo para efectuar el mismo.\nLa ausencia del socorrista por enfermedad u otro motivo se cubrirán en un plazo de 3\nhoras desde el momento del aviso. Se exceptúan las ausencias ocasionadas por\ntumultos, accidentes de tráfico, huelgas ó inclemencias meteorológicas en las que\nOLAQUA PISCINAS SL no tiene ninguna responsabilidad.\nLas instrucciones a los Socorristas acerca de aumentos o disminuciones de jornada u\notros asuntos sobre su cometido, les serán exclusivamente transmitidas por OLAQUA\nPISCINAS SL, si la entidad contratante desea realizar alguna modificación, deberá\nponerse de acuerdo antes con OLAQUA PISCINAS SL.\nOLAQUA PISCINAS SL no se responsabiliza de cantidades de dinero entregadas al\nsocorrista por ningún concepto, tales como clases de natación, préstamos, etc. Ni objetos\nprestados al mismo, tales como discman, mp3, consolas de video juegos, bicicletas, etc.\nParque Industrial y Tecnológico Európolis - C/ Milán, 14-28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 - Fax: 91 636 19 91 E-mail: info@olaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro o de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1ª- C.L.F. B-87253811\nPágina 4\n\n--- Página 5 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\nfa\nASOCIACIÓN ESPAÑOLA\nGE PROFESIONALES\nDEL SECTOR PISHINAS PASKOFF}\nPara la debida seguridad de los bañistas y especialmente de los menores, la Comunidad\nde Propietarios se obliga a comunicar a los usuarios y a colocar en lugar visible para los\nmismos las normas de uso de la instalación, así como a establecer la prohibición de\nacceso al recinto de la piscina de los menores de doce años si no se encuentran\nacompañados de un adulto que se responsabilice del niño y que en todo caso deberá\nvigilar y acompañar su baño.\nEn el supuesto de incumplimiento por los usuarios de dicha obligación, la Comunidad de\nPropietarios expresamente exonera a la entidad OLAQUA PISCINAS S.L. de cualquier\nresponsabilidad que pudiera surgir por accidente de cualquier menor.\nGARANTIAS. -\nPóliza de Seguro de Responsabilidad Civil, con garantía total que se derive de daños que\nla Empresa ó sus empleados, vehículos ó maquinarías que pudieran ocasionar a terceros,\nhasta un riesgo de 600,000 €.\n•\nQueda cubierta la responsabilidad civil extracontractual que en base a la normativa legal\nvigente y de acuerdo con los límites y garantías estipulados le pueda ser exigida a OLAQUA\nPISCINAS S.L., por el desarrollo de su actividad, además de la imputable a OLAQUA PISCINAS\nS.L., derivada de:\n•\n•\n•\n•\nActuaciones del personal en nómina en el desempeño de su trabajo al servicio de la\nmisma.\nAlmacenaje y tratamiento de las materias objeto de los procesos industriales realizados\npor la sociedad OLAQUA PISCINAS S.L.\nMantenimiento y reparación de edificios, instalaciones, maquinaria utilizados por la\nempresa OLAQUA PISCINAS S.L.\nCualesquiera otras acciones ó situaciones derivadas de la actividad realizada por la\nsociedad OLAQUA PISCINAS, S.L., declarada en el contrato de aseguramiento.\nEl incendio, explosión y daños por el agua, siempre que tengan su origen en las\ninstalaciones ó en el desarrollo de la actividad asegurada.\nLa responsabilidad civil post-trabajos, productos é intoxicación que pueda ser imputable\nal ejercicio de su actividad y que deba ser exigida a OLAQUA PISCINAS S.L., por los\nproductos, obras ó trabajos efectuados por OLAQUA PISCINAS S.L., después de la\nentrega, ejecución ó prestación de estos.\nEl límite por víctima en daños personales es de 150.000 Euros.\nSin prejuicio de lo dispuesto en la estipulación anterior, la entidad OLAQUA PISCINAS,\nS.L. no responderá de los daños a personas o cosas que pudieran originarse por causas\najenas al personal, material, vehículos y maquinarias de la misma, o por la injerencia o\nmanipulación por persona extraña a la entidad contratista de la depuradora, productos\nquímicos o de cualquier objeto o maquinaria cuyo uso pueda afectar a los servicios\ncontratados sobre las instalaciones de la piscina.\nParque Industrial y Tecnológico Európolis -C/ Milán, 14-28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 - Fax: 91 636 19 91 E-mail: info@a olaqua.com\nInscrita on el Registro Mercantil Tomo 33333 General, libro 0 de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1º-C.I.F. B-87253811\nPágina 5\n\n--- Página 6 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\n脂粉\nASOCIACIÓN ESPAÑOLA\nDE PROFESIONALES\nSECTOR PISCINAS JASQA\nDURACION DE LA TEMPORADA DE VERANO. -\nLa duración del presente presupuesto será de UN AÑO (1 Año), siendo la apertura de\nla piscina para la temporada del 2023, desde el día 10 de Junio de 2023 hasta el\ndía 10 de Septiembre de 2023, ambos días inclusive.\nEn el caso de que la Comunidad de Propietarios deseará prorrogar la prestación de los\nservicios contratados para la temporada de verano por un tiempo superior al establecido\nen el presente presupuesto, vendrá obligada a solicitarlo a la empresa con al menos\nquince días de antelación, pactándose un nuevo precio de común acuerdo entre las\npartes que la Comunidad de Propietarios vendrá obligada a abonar en el acto de la firma\nde la prórroga. Dicho plazo podrá prorrogarse por un periodo de 7 en 7 días más,\nmediando acuerdo de las partes contratantes. En caso de cancelación de la\nampliación por inclemencias meteorológicas, se procederá a facturar el coste\níntegro del servicio de socorrista.\nEn el supuesto de cierre de la instalación por causas ajenas a la empresa OLAQUA\nPISCINAS S.L, se facturará a la Comunidad de Propietarios la parte correspondiente al\nmantenimiento de 30 días.\nSERVICIO ESPECIAL DE ATENCION AL CLIENTE. -\nLos sábados, domingos y festivos en horario de 9.00 horas a 14.00 horas, nuestras oficinas\npermanecerán abiertas a su entera disposición para cualquier tipo de consulta.\nCualquier queja ó reclamación será dirigida directamente a las oficinas de OLAQUA PISCINAS S.L.,\npor el presidente, Administrador ó Vocal de piscina.\nSiendo necesario que los usuarios estén informados debidamente de los términos y condiciones\ndel servicio suscrito. En ningún caso las quejas se dirigirán al personal que presta los servicios en\nestas instalaciones, ya que los mismos no tienen la responsabilidad de tomar decisiones para\nsolucionarlas.\nMANTENIMIENTO TEMPORADA DE\nINVIERNO\nTRABAJOS PREPARACION PISCINA DURANTE LA TEMPORADA DE INVIERNO CON\nCONSERVACION DEL AGUA Y SIN COBERTOR DE PROTECCION\nTRATAMIENTO DEL AGUA. -\nSuministro de todos los productos químicos necesarios según la normativa vigente de la\nComunidad de Madrid para su conservación, manteniéndose en perfectas condiciones.\nParque Industrial y Tecnológico Európolis - C/ Milán, 14 - 28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 Fax: 91 636 1991 E-mail: infodolaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro 0 de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1ª - C.L.F. B-87253811\nPágina 6\n\n--- Página 7 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\nfak\nASOCIACIÓN ESPAÑOLA\nBE PROFESIONALES\nFISCINAS JASOFAPI\nSERVICIO DE MAQUINISTA. -\nVisitas de Técnicos especialistas QUINCENALMENTE, para la comprobación del estado\nde la piscina, realizando las siguientes funciones:\n-\nLimpieza del fondo de la piscina a través de robot automático.\nLimpieza del prefiltro del motor-bomba.\nLimpieza de filtros contracorriente.\nAportación de producto químico en bidón de suministro a dosificadora\nautomática.\nAnálisis del agua para comprobar el estado de cloro libre, cloro total y pH.\nReposición de niveles de agua siempre y cuando sea necesario.\nComprobación de regulación de reloj automático arranque-pare de motor-bomba\nde la instalación.\nREVISIÓN TÉCNICA. -\n1.- Vaciado de los circuitos de duchas, para evitar roturas por heladas en inviemo. (Siempre que\nexista circuito independiente).\n2.- Protección de las duchas con vendaje plástico para evitar las inclemencias producidas durante\nel invierno.\n3.- Aplicación de decapante en prefiltros de los motores bombas y pintado de los mismos, para\nevitar su oxidación durante el invierno.\n4.- Revisión de cuadro eléctrico, comprobación del estado de contador, relé térmico, diferencial y\nfusibles adecuados a potencia motor y reloj si existiera, si en algún mecanismo anteriormente\nmencionado se observará defecto, se comunicaría al Cliente.\n5.- Limpieza y revisión del cuarto de depuración y accesos.\n6.- Desmontaje de escaleras de los vasos de las piscinas, depositándolas en un lugar sin humedad.\n(Siempre y cuando se puedan desmontar y guardar en lugar seco).\n7.- Si las escaleras de los vasos de las piscinas, no se pudieran desmontar de los vasos de las\npiscinas, se procedería al vendaje plástico igual que con las duchas.\n8.- Aplicación de decapante en escaleras y tapa de acceso a cuarto de depuración y pintado de\neste, para evitar su oxidación. (Se pintará solamente la tapa de acceso siempre y cuando exista\ntapa, las puertas de acceso a la depuradora no se pueden pintar, tiene que ser realizado por\npersonal cualificado/pintores).\n•\nNOTA. - TODAS LAS VISITAS QUE SE REALICEN EN LA TEMPORADA DE INVIERNO, SERAN\nNOTIFICADAS POR ESCRITO AL PRESIDENTE DE LA COMUNIDAD DE PROPIETARIOS Y/O AL\nADMINISTRADOR DE LA FINCA.\nParque Industrial y Tecnológico Európolis - C/ Milán, 14-28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 - Fax: 91 636 1991 E-mail: info@olaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro 0 de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1ª - C.LF. B-87253811\nPágina\n\n--- Página 8 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\n•\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\nASOCIACIÓN ESPAÑOLA\nDE PROFESIONALES\nGEL SECTOR PISCINAS FASCAP)\nDURACION DE LA TEMPORADA DE INVIERNO. -\nLa duración del mantenimiento de invierno será desde el día 20 de Septiembre\nde 2.023 hasta el día 01 de Mayo de 2.024.\nExcepto desde el día 22 de Diciembre de 2.023 hasta el día 09 de\nEnero de 2.024, que la empresa OLAQUA PISCINAS, S.L. cierra por\nvacaciones.\nCONDICIONES ECONOMICAS POR EL MANTENIMIENTO ANUAL DE LA\nPISCINA.-\nTEMPORADA DE VERANO\nEl precio de presente presupuesto de los servicios a realizar por la Empresa se elevarán\na la cantidad de: 45.600,00 € + 21% IVA. (CUARENTA Y CINCO MIL\nSEISCIENTOS EUROS + 21% IVA).\nFORMA DE PAGO: Recibo domiciliado-\n➤ 5.700,00 € + 21% IVA. Factura de fecha 05-05-2023 con vto. 25/05/23.\n➤ 5.700,00 € + 21% IVA. Factura de fecha 05-06-2023 con vto. 25/06/23.\n➤ 5.700,00 € + 21% IVA. Factura de fecha 05-07-2023 con vto. 25/07/23.\n➤ 5.700,00 € + 21% IVA. Factura de fecha 05-08-2023 con vto. 25/08/23.\n➤ 5.700,00 € + 21% IVA. Factura de fecha 05-09-2023 con vto. 25/09/23.\n➤ 5.700,00 € + 21% IVA. Factura de fecha 05-10-2023 con vto. 25/10/23.\n➤ 5.700,00 € + 21% IVA. Factura de fecha 05-11-2023 con vto. 25/11/23.\n> 5.700,00 € + 21% IVA. Factura de fecha 05-12-2023 con vto. 25/12/23.\nNOTA.- En el importe de este presupuesto de mantenimiento para la temporada de\nverano, está incluido el IPC previsto para el año 2023.\nTEMPORADA DE INVIERNO\nEl precio de presente presupuesto de los servicios a realizar por la Empresa, en las cuatro\ninstalaciones, se elevarán a la cantidad de: 400,00 € + 21% IVA/MENSUALES.\n(QUINIENTOS EUROS MENSUALES + IVA).\nParque Industrial y Tecnológico Európolis -C/ Milán, 14 - 28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 Fax: 91 636 1991 E-mail: infoolaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro 0 de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1-C.I.F. B-87253811\nPágina 8\n\n--- Página 9 ---\nOLAQUA\nOLAQUA PISCINAS, S.L.\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\nISSO 2015\nSO\nfab\nASOCIACIÓN ESPAÑOLA\nDF PROFESIONALES\nGEL SECTOR PISCINAS (ASCH\nFORMA DE PAGO.-\n-\n-\n-\n-\nM\n400,00 € + 21% IVA.\n400,00 € + 21% IVA.\n· 400,00 € + 21% IVA.\n400,00 € + 21% IVA.\n- 400,00 € + 21% IVA.\n400,00 € + 21% IVA.\n400,00 € + 21% IVA.\n400,00 € + 21% IVA.\nFactura de fecha 05-10-2023 con vto. 25/10/23.\nFactura de fecha 05-11-2023 con vto. 25/11/23.\nFactura de fecha 05-12-2023 con vto. 25/12/23.\nFactura de fecha 05-01-2024 con vto. 25/01/24.\nFactura de fecha 05-02-2024 con vto. 25/02/24.\nFactura de fecha 05-03-2024 con vto. 25/03/24.\nFactura de fecha 05-04-2024 con vto. 25/04/24.\nFactura de fecha 05-05-2024 con vto. 25/05/24.\nEn caso de devolución de recibos por los servicios prestados, reparaciones y/o\nsuministros, OLAQUA PISCINAS SL, cobrará los gastos de devolución, así como el\n0,5% correspondientes como penalización y por los perjuicios ocasionados.\nEn caso de impago, por parte de la Comunidad de Propietarios, de cualesquiera de las\ncantidades aplazadas, en la fecha de su vencimiento, la entidad OLAQUA PISCINAS S.L.\npodrá resolver el presente presupuesto, cesando, en la prestación de los servicios, con\nun preaviso de tres días.\nRENOVACIÓN Y/O AMPLIACIÓN DE ESTE PRESUPUESTO. -\nA la finalización de los servicios contratados de mantenimiento y apertura de piscina con\nfecha 31 de diciembre de 2023, se entenderán los mismos prorrogados y/o renovados\nautomáticamente año a año, salvo que medie decisión de no renovación y notificada\nfehacientemente al menos con dos meses de antelación.\nPara las renovaciones automáticas, el presupuesto se actualizará anualmente atendiendo\na las variaciones que experimente, según el Índice de Precios al Consumo del conjunto\nNacional, elaborado por el Instituto Nacional de Estadística u Organismo e Índice que,\nen su caso, lo/s sustituya/n, tomando como base a actualizar, el ultimo importe\nconvenido, antes de impuestos, y en el momento de otorgamiento del presente contrato.\nRESPONSABILIDADES. -\nTodo el personal contratado por OLAQUA PISCINAS S.L., al que se ha hecho\nreferencia, (SERVICIO DE MAQUINISTA, SERVICIO DE LIMPIEZA DEL VASO DE\nLA PISCINA, SERVICIO DE SOCORRISTA) y que prestan sus servicios en las\npiscinas mencionadas en este presupuesto, mantiene una relación laboral únicamente\ncon dicha parte contratante, siendo de la exclusiva responsabilidad del mismo, todos los\nderechos y obligaciones derivadas en su actuación profesional en la piscina, cualquier\ncuestión que al respecto pudiera suscitarse.\nParque Industrial y Tecnológico Európolis -C/ Milán, 14-28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 - Fax: 91 636 1991 E-mail: info@otaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro 0 de Sociedades, Folio 41, Sección 8, Hoja nº M599909, Inscripción Iº - C.I.F. B-87253811\nPágina 9\n\n--- Página 10 ---\nOLAQUA\nOLAQUA PISCINAS, S.L\nOLAQUA\nCONSERVACIÓN\nY MANTENIMIENTO\nDE PISCINAS\n25%\naniversario\n1990 2015\nASOCIACION ESPAÑOLA\nDE PROFESIONALES\nD ACTOR ASLINAS JAS/QRAFI\nAmbas partes contratantes se comprometen a respetar todas y cada una de las\ncondiciones establecidas en el presente contrato, sometiéndose para las cuestiones que\nno están expresamente reguladas en el mismo, a las disposiciones que al respecto vienen\ncontempladas en la legislación Vigente.\nCualquier modificación de la Normativa que afectase a los servicios ofrecidos en el\npresente presupuesto o introdujese la obligatoriedad de la realización de nuevos\nservicios, quedará excluida del presente presupuesto y será motivo de valoración y\nfacturación por parte de la empresa.\nTodos aquellos servicios y trabajos que no se encuentren expresamente descritos en el\npresupuesto y que durante la vigencia del mismo fueran encargados a la empresa, se\nfacturan aparte, obligándose la Comunidad de Propietarios al pago puntual de los\nmismos.\nAsí mismo, y en la representación que ostentan se someten expresamente a la\nJurisdicción de los Tribunales de Madrid, para solventar cualquier cuestión que pudiera\nderivarse del cumplimiento del presente acuerdo, renunciando a cualquier otro fuero que\npudiera corresponderles.\nAmbos contratantes conforme con el contenido del presente presupuesto lo firman por\nduplicado en el lugar y la fecha reflejada en el encabezamiento de este.\nCONFORME:\nManche\n25/04/23\nCOMUNIDAD DE PROPIETARIOS\nC/ ACANTO Nº 2 BIS (LA MARAZUELA)\nFASE I - II - III – IV (PISCINAS A-B-C-D)\nLAS ROZAS – MADRID\nOLAQUA\nPISCINAS\n\"EUROPOLIS\"\nGHASILAN N14\n28232 LAS RO\n(en)\nLos datos recabados en el presente documento son necesarios para la tramitación de documentación a nombre de la comunidad de vecinos y su representante legal. De conformidad con lo\ndispuesto por la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de carácter personal, consiento que mis datos sean incorporados a un\nfichero responsabilidad de OLAQUA PISCINAS S.L. y que sean tratados con la finalidad de mantener, desarrollar y controlar la relación\ncontractual. Asimismo, declaro haber sido informado sobre la posibilidad de ejercitar los derechos de acceso, rectificación, cancelación y\noposición remitlendo un mensaje a la dirección de correo electrónico info@olaqua.com\nParque Industrial y Tecnológico Európolis C/ Milán, 14-28232 LAS ROZAS (Madrid) - Tels.: 91 636 19 43 - Fax: 91 636 19 91 E-mail: info@olaqua.com\nInscrita en el Registro Mercantil Tomo 33333 General, libro 0 de Sociedados, Folio 41, Sección 8, Hoja nº M599909, Inscripción 1º - C.I.F. B-87253811\nPágina 10",
+          "metrics": {
+            "duration": 3608,
+            "size": 26516,
+            "method": "google-vision-ocr"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "contrato",
+            "confidence": 0.95,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for contrato"
+          },
+          "metrics": {
+            "duration": 1,
+            "confidence": 0.95
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "titulo_contrato": "CONSERVACIÓN Y MANTENIMIENTO DE PISCINAS",
+            "parte_a": "OLAQUA PISCINAS, S.L.",
+            "parte_b": "COMUNIDAD DE PROPIETARIOS C/ ACANTO Nº 2 BIS (LA MARAZUELA) FASE I - II - III – IV (PISCINAS A-B-C-D) LAS ROZAS - MADRID",
+            "objeto_contrato": "conservación y mantenimiento de la piscina de referencia",
+            "duracion": "UN AÑO (1 Año)",
+            "importe_total": 46000,
+            "fecha_inicio": "2023-06-10",
+            "fecha_fin": "2023-09-10",
+            "category": "comercial",
+            "tipo_contrato": "Mantenimiento",
+            "parte_a_direccion": "Parque Industrial y Tecnológico Európolis - C/ Milán, 14-28232 LAS ROZAS (Madrid)",
+            "parte_a_identificacion_fiscal": "B-87253811",
+            "parte_a_representante": null,
+            "parte_b_direccion": "C/ ACANTO Nº 2 BIS (LA MARAZUELA) FASE I - II - III – IV (PISCINAS A-B-C-D) LAS ROZAS - MADRID",
+            "parte_b_identificacion_fiscal": null,
+            "parte_b_representante": null,
+            "alcance_servicios": [
+              "Mantenimiento Temporada de Verano",
+              "Mantenimiento Temporada de Invierno",
+              "Servicio de Maquinista",
+              "Servicio de Limpieza del Vaso de la Piscina",
+              "Servicio de Socorristas"
+            ],
+            "obligaciones_parte_a": [
+              "OLAQUA PISCINAS S.L. se responsabiliza de la contratación del personal (MAQUINISTA, LIMPIEZA, SOCORRISTA)",
+              "Cumplir con las garantías estipuladas en la póliza de seguro de responsabilidad civil."
+            ],
+            "obligaciones_parte_b": [
+              "Mantener la instalación al día en forma legal y correcta.",
+              "Comunicar a los usuarios las normas de uso de la instalación.",
+              "Establecer la prohibición de acceso al recinto de la piscina de los menores de doce años si no se encuentran acompañados de un adulto."
+            ],
+            "moneda": "€",
+            "forma_pago": "Recibo domiciliado",
+            "plazos_pago": [
+              "5.700,00 € + 21% IVA. Factura de fecha 05-05-2023 con vto. 25/05/23.",
+              "5.700,00 € + 21% IVA. Factura de fecha 05-06-2023 con vto. 25/06/23.",
+              "5.700,00 € + 21% IVA. Factura de fecha 05-07-2023 con vto. 25/07/23.",
+              "5.700,00 € + 21% IVA. Factura de fecha 05-08-2023 con vto. 25/08/23.",
+              "5.700,00 € + 21% IVA. Factura de fecha 05-09-2023 con vto. 25/09/23.",
+              "5.700,00 € + 21% IVA. Factura de fecha 05-10-2023 con vto. 25/10/23.",
+              "5.700,00 € + 21% IVA. Factura de fecha 05-11-2023 con vto. 25/11/23.",
+              "5.700,00 € + 21% IVA. Factura de fecha 05-12-2023 con vto. 25/12/23.",
+              "400,00 € + 21% IVA. Factura de fecha 05-10-2023 con vto. 25/10/23.",
+              "400,00 € + 21% IVA. Factura de fecha 05-11-2023 con vto. 25/11/23.",
+              "400,00 € + 21% IVA. Factura de fecha 05-12-2023 con vto. 25/12/23.",
+              "400,00 € + 21% IVA. Factura de fecha 05-01-2024 con vto. 25/01/24.",
+              "400,00 € + 21% IVA. Factura de fecha 05-02-2024 con vto. 25/02/24.",
+              "400,00 € + 21% IVA. Factura de fecha 05-03-2024 con vto. 25/03/24.",
+              "400,00 € + 21% IVA. Factura de fecha 05-04-2024 con vto. 25/04/24.",
+              "400,00 € + 21% IVA. Factura de fecha 05-05-2024 con vto. 25/05/24."
+            ],
+            "confidencialidad": false,
+            "legislacion_aplicable": "disposiciones que al respecto vienen contempladas en la legislación Vigente",
+            "fecha_firma": "2023-04-25",
+            "lugar_firma": "LAS ROZAS – MADRID",
+            "topic_keywords": "piscinas, mantenimiento, socorristas, agua, limpieza",
+            "topic_mantenimiento": true,
+            "topic_jardines": false,
+            "topic_ascensores": false,
+            "topic_limpieza": true,
+            "topic_emergencias": true,
+            "topic_instalaciones": true,
+            "topic_electricidad": true,
+            "topic_seguridad": true,
+            "topic_agua": true,
+            "topic_gas": false,
+            "topic_climatizacion": false,
+            "topic_parking": false
+          },
+          "metrics": {
+            "duration": 9448,
+            "fields_count": 39
+          }
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "titulo_contrato": "CONSERVACIÓN Y MANTENIMIENTO DE PISCINAS",
+              "parte_a": "OLAQUA PISCINAS, S.L.",
+              "parte_b": "COMUNIDAD DE PROPIETARIOS C/ ACANTO Nº 2 BIS (LA MARAZUELA) FASE I - II - III – IV (PISCINAS A-B-C-D) LAS ROZAS - MADRID",
+              "objeto_contrato": "conservación y mantenimiento de la piscina de referencia",
+              "duracion": "UN AÑO (1 Año)",
+              "importe_total": 46000,
+              "fecha_inicio": "2023-06-10",
+              "fecha_fin": "2023-09-10",
+              "category": "comercial",
+              "tipo_contrato": "Mantenimiento",
+              "parte_a_direccion": "Parque Industrial y Tecnológico Európolis - C/ Milán, 14-28232 LAS ROZAS (Madrid)",
+              "parte_a_identificacion_fiscal": "B-87253811",
+              "parte_a_representante": null,
+              "parte_b_direccion": "C/ ACANTO Nº 2 BIS (LA MARAZUELA) FASE I - II - III – IV (PISCINAS A-B-C-D) LAS ROZAS - MADRID",
+              "parte_b_identificacion_fiscal": null,
+              "parte_b_representante": null,
+              "alcance_servicios": [
+                "Mantenimiento Temporada de Verano",
+                "Mantenimiento Temporada de Invierno",
+                "Servicio de Maquinista",
+                "Servicio de Limpieza del Vaso de la Piscina",
+                "Servicio de Socorristas"
+              ],
+              "obligaciones_parte_a": [
+                "OLAQUA PISCINAS S.L. se responsabiliza de la contratación del personal (MAQUINISTA, LIMPIEZA, SOCORRISTA)",
+                "Cumplir con las garantías estipuladas en la póliza de seguro de responsabilidad civil."
+              ],
+              "obligaciones_parte_b": [
+                "Mantener la instalación al día en forma legal y correcta.",
+                "Comunicar a los usuarios las normas de uso de la instalación.",
+                "Establecer la prohibición de acceso al recinto de la piscina de los menores de doce años si no se encuentran acompañados de un adulto."
+              ],
+              "moneda": "€",
+              "forma_pago": "Recibo domiciliado",
+              "plazos_pago": [
+                "5.700,00 € + 21% IVA. Factura de fecha 05-05-2023 con vto. 25/05/23.",
+                "5.700,00 € + 21% IVA. Factura de fecha 05-06-2023 con vto. 25/06/23.",
+                "5.700,00 € + 21% IVA. Factura de fecha 05-07-2023 con vto. 25/07/23.",
+                "5.700,00 € + 21% IVA. Factura de fecha 05-08-2023 con vto. 25/08/23.",
+                "5.700,00 € + 21% IVA. Factura de fecha 05-09-2023 con vto. 25/09/23.",
+                "5.700,00 € + 21% IVA. Factura de fecha 05-10-2023 con vto. 25/10/23.",
+                "5.700,00 € + 21% IVA. Factura de fecha 05-11-2023 con vto. 25/11/23.",
+                "5.700,00 € + 21% IVA. Factura de fecha 05-12-2023 con vto. 25/12/23.",
+                "400,00 € + 21% IVA. Factura de fecha 05-10-2023 con vto. 25/10/23.",
+                "400,00 € + 21% IVA. Factura de fecha 05-11-2023 con vto. 25/11/23.",
+                "400,00 € + 21% IVA. Factura de fecha 05-12-2023 con vto. 25/12/23.",
+                "400,00 € + 21% IVA. Factura de fecha 05-01-2024 con vto. 25/01/24.",
+                "400,00 € + 21% IVA. Factura de fecha 05-02-2024 con vto. 25/02/24.",
+                "400,00 € + 21% IVA. Factura de fecha 05-03-2024 con vto. 25/03/24.",
+                "400,00 € + 21% IVA. Factura de fecha 05-04-2024 con vto. 25/04/24.",
+                "400,00 € + 21% IVA. Factura de fecha 05-05-2024 con vto. 25/05/24."
+              ],
+              "confidencialidad": false,
+              "legislacion_aplicable": "disposiciones que al respecto vienen contempladas en la legislación Vigente",
+              "fecha_firma": "2023-04-25",
+              "lugar_firma": "LAS ROZAS – MADRID",
+              "topic_keywords": "piscinas, mantenimiento, socorristas, agua, limpieza",
+              "topic_mantenimiento": true,
+              "topic_jardines": false,
+              "topic_ascensores": false,
+              "topic_limpieza": true,
+              "topic_emergencias": true,
+              "topic_instalaciones": true,
+              "topic_electricidad": true,
+              "topic_seguridad": true,
+              "topic_agua": true,
+              "topic_gas": false,
+              "topic_climatizacion": false,
+              "topic_parking": false
+            }
+          },
+          "metrics": {
+            "duration": 3
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 100,
+            "missingFields": [],
+            "extraFields": [
+              "parte_a_direccion",
+              "parte_a_representante",
+              "parte_b_direccion",
+              "parte_b_representante",
+              "fecha_firma",
+              "lugar_firma",
+              "topic_keywords",
+              "topic_mantenimiento",
+              "topic_jardines",
+              "topic_ascensores",
+              "topic_limpieza",
+              "topic_emergencias",
+              "topic_instalaciones",
+              "topic_electricidad",
+              "topic_seguridad",
+              "topic_agua",
+              "topic_gas",
+              "topic_climatizacion",
+              "topic_parking"
+            ]
+          },
+          "metrics": {
+            "duration": 1,
+            "compatibility_score": 100
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 43
+          },
+          "metrics": {
+            "duration": 2
+          }
+        }
+      },
+      "total_time": 13063,
+      "document_type": "contrato",
+      "extracted_data": {
+        "titulo_contrato": "CONSERVACIÓN Y MANTENIMIENTO DE PISCINAS",
+        "parte_a": "OLAQUA PISCINAS, S.L.",
+        "parte_b": "COMUNIDAD DE PROPIETARIOS C/ ACANTO Nº 2 BIS (LA MARAZUELA) FASE I - II - III – IV (PISCINAS A-B-C-D) LAS ROZAS - MADRID",
+        "objeto_contrato": "conservación y mantenimiento de la piscina de referencia",
+        "duracion": "UN AÑO (1 Año)",
+        "importe_total": 46000,
+        "fecha_inicio": "2023-06-10",
+        "fecha_fin": "2023-09-10",
+        "category": "comercial",
+        "tipo_contrato": "Mantenimiento",
+        "parte_a_direccion": "Parque Industrial y Tecnológico Európolis - C/ Milán, 14-28232 LAS ROZAS (Madrid)",
+        "parte_a_identificacion_fiscal": "B-87253811",
+        "parte_a_representante": null,
+        "parte_b_direccion": "C/ ACANTO Nº 2 BIS (LA MARAZUELA) FASE I - II - III – IV (PISCINAS A-B-C-D) LAS ROZAS - MADRID",
+        "parte_b_identificacion_fiscal": null,
+        "parte_b_representante": null,
+        "alcance_servicios": [
+          "Mantenimiento Temporada de Verano",
+          "Mantenimiento Temporada de Invierno",
+          "Servicio de Maquinista",
+          "Servicio de Limpieza del Vaso de la Piscina",
+          "Servicio de Socorristas"
+        ],
+        "obligaciones_parte_a": [
+          "OLAQUA PISCINAS S.L. se responsabiliza de la contratación del personal (MAQUINISTA, LIMPIEZA, SOCORRISTA)",
+          "Cumplir con las garantías estipuladas en la póliza de seguro de responsabilidad civil."
+        ],
+        "obligaciones_parte_b": [
+          "Mantener la instalación al día en forma legal y correcta.",
+          "Comunicar a los usuarios las normas de uso de la instalación.",
+          "Establecer la prohibición de acceso al recinto de la piscina de los menores de doce años si no se encuentran acompañados de un adulto."
+        ],
+        "moneda": "€",
+        "forma_pago": "Recibo domiciliado",
+        "plazos_pago": [
+          "5.700,00 € + 21% IVA. Factura de fecha 05-05-2023 con vto. 25/05/23.",
+          "5.700,00 € + 21% IVA. Factura de fecha 05-06-2023 con vto. 25/06/23.",
+          "5.700,00 € + 21% IVA. Factura de fecha 05-07-2023 con vto. 25/07/23.",
+          "5.700,00 € + 21% IVA. Factura de fecha 05-08-2023 con vto. 25/08/23.",
+          "5.700,00 € + 21% IVA. Factura de fecha 05-09-2023 con vto. 25/09/23.",
+          "5.700,00 € + 21% IVA. Factura de fecha 05-10-2023 con vto. 25/10/23.",
+          "5.700,00 € + 21% IVA. Factura de fecha 05-11-2023 con vto. 25/11/23.",
+          "5.700,00 € + 21% IVA. Factura de fecha 05-12-2023 con vto. 25/12/23.",
+          "400,00 € + 21% IVA. Factura de fecha 05-10-2023 con vto. 25/10/23.",
+          "400,00 € + 21% IVA. Factura de fecha 05-11-2023 con vto. 25/11/23.",
+          "400,00 € + 21% IVA. Factura de fecha 05-12-2023 con vto. 25/12/23.",
+          "400,00 € + 21% IVA. Factura de fecha 05-01-2024 con vto. 25/01/24.",
+          "400,00 € + 21% IVA. Factura de fecha 05-02-2024 con vto. 25/02/24.",
+          "400,00 € + 21% IVA. Factura de fecha 05-03-2024 con vto. 25/03/24.",
+          "400,00 € + 21% IVA. Factura de fecha 05-04-2024 con vto. 25/04/24.",
+          "400,00 € + 21% IVA. Factura de fecha 05-05-2024 con vto. 25/05/24."
+        ],
+        "confidencialidad": false,
+        "legislacion_aplicable": "disposiciones que al respecto vienen contempladas en la legislación Vigente",
+        "fecha_firma": "2023-04-25",
+        "lugar_firma": "LAS ROZAS – MADRID",
+        "topic_keywords": "piscinas, mantenimiento, socorristas, agua, limpieza",
+        "topic_mantenimiento": true,
+        "topic_jardines": false,
+        "topic_ascensores": false,
+        "topic_limpieza": true,
+        "topic_emergencias": true,
+        "topic_instalaciones": true,
+        "topic_electricidad": true,
+        "topic_seguridad": true,
+        "topic_agua": true,
+        "topic_gas": false,
+        "topic_climatizacion": false,
+        "topic_parking": false
+      }
+    }
+  ]
+}

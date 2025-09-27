@@ -259,3 +259,28 @@ Mirar como ejemplo src\lib\ingesta\Ingesta_doc.md
 | `next.config.js`     | Configuración Next.js                     | ⚡ Upload files, optimizaciones        |
 | `tailwind.config.js` | Estilos UI                                | 🎨 Templates documentos                |
 | **`agentConfig.ts`** | **Configuración centralizada agentes IA** | **🤖 Modelo Gemini, tokens, timeouts** |
+
+## deploys
+
+FLUJO DE TRABAJO SISTEMÁTICO
+
+1. IDENTIFICAR Qué ARCHIVO TOCAMOS:
+
+- Si es general → test con acta_test.pdf
+- Si es específico de contratos → test con Contrato OLAQUA Piscinas.pdf
+- Si es específico de facturas → test con factura.pdf
+- etc.
+
+2. PROCESO:
+   Build → Cambio → Test → ¿OK? → Seguir
+   ↓ NO
+   Revertir → Fix → Test
+
+3. TEST SELECTIVO:
+   Usamos el test-complete-e2e-validation_1 que ya tienes para validar:
+
+- Upload ✓
+- PDF extraction ✓
+- Clasificación ✓
+- Metadatos ✓
+- Chunks ✓

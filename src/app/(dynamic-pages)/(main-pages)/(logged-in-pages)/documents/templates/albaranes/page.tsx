@@ -34,7 +34,23 @@ const DEMO_ALBARAN_DATA = {
   fecha_emision: "2024-03-15",
   numero_pedido: "PED-2024-0156",
   category: "suministros_mantenimiento",
-  created_at: "2024-03-15T14:30:00Z"
+  created_at: "2024-03-15T14:30:00Z",
+  emisor_direccion: "Polígono Industrial Los Frailes, Nave 15, 28850 Torrejón de Ardoz, Madrid",
+  emisor_telefono: "916-789-0123",
+  emisor_email: "pedidos@suministrosmadrid.com",
+  receptor_direccion: "Calle de la Esperanza 45, 28033 Madrid",
+  receptor_telefono: "915-432-1098",
+  mercancia: [
+    { descripcion: "Bombillas LED 12W", cantidad: 24, unidad: "uds" },
+    { descripcion: "Cable eléctrico 2.5mm", cantidad: 50, unidad: "m" }
+  ],
+  cantidad_total: 74,
+  peso_total: 15.5,
+  observaciones: "Entrega urgente según pedido",
+  estado_entrega: "entregado",
+  firma_receptor: true,
+  transportista: "Juan García",
+  vehiculo_matricula: "1234-ABC"
 };
 
 const DEMO_ALBARAN_METADATA = {
@@ -211,7 +227,7 @@ export default function AlbaranesTemplatePage() {
         <Card className="overflow-hidden">
           <CardContent className="p-6">
             <AlbaranDetailView
-              albaranData={DEMO_ALBARAN_DATA}
+              albaranData={DEMO_ALBARAN_DATA as any}
               metadata={DEMO_ALBARAN_METADATA}
               confidence={0.91}
               extractionMethod="gemini + ocr"

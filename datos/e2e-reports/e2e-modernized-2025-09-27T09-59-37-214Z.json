@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-09-27T09:59:37.215Z",
+  "config": {
+    "target_file": "step2",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": true
+  },
+  "summary": {
+    "total": 1,
+    "successful": 0,
+    "failed": 1,
+    "success_rate": 0,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "desconocido": {
+        "count": 1,
+        "successful": 0,
+        "success_rate": 0
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "step2",
+      "success": false,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": false,
+          "error": "Archivo no encontrado: step2.pdf"
+        },
+        "step2_classification": {
+          "success": false
+        },
+        "step3_metadata": {
+          "success": false
+        },
+        "step4_validation": {
+          "success": false
+        },
+        "step5_template_compatibility": {
+          "success": false
+        },
+        "step6_schema_validation": {
+          "success": false
+        }
+      },
+      "total_time": 1
+    }
+  ]
+}

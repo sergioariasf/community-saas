@@ -9,8 +9,6 @@
 
 // ===== CONFIGURACIÓN DE TOKENS =====
 export const GEMINI_CONFIG = {
-  // Modelo por defecto
-  MODEL: 'gemini-1.5-flash',
   
   // Configuración base
   BASE: {
@@ -60,13 +58,22 @@ export const TIMEOUT_CONFIG = {
 // ===== HELPERS =====
 
 /**
+ * Obtiene el modelo Gemini desde variable de entorno con fallback
+ */
+export function getGeminiModel(): string {
+  return process.env.GEMINI_MODEL || 'gemini-2.0-flash-exp';
+}
+
+/**
  * Obtiene la configuración de Gemini para un agente específico
  */
 export function getGeminiConfigForAgent(agentName: string) {
+  const model = getGeminiModel(); // Desde ENV
+  
   // Verificar si es un agente complejo
   if (GEMINI_CONFIG.COMPLEX_AGENTS.agents.includes(agentName)) {
     return {
-      model: GEMINI_CONFIG.MODEL,
+      model,
       temperature: GEMINI_CONFIG.COMPLEX_AGENTS.temperature,
       maxOutputTokens: GEMINI_CONFIG.COMPLEX_AGENTS.maxOutputTokens,
       topK: 40,
@@ -78,7 +85,7 @@ export function getGeminiConfigForAgent(agentName: string) {
   // Verificar si es el clasificador
   if (agentName.includes('classifier') || agentName.includes('classification')) {
     return {
-      model: GEMINI_CONFIG.MODEL,
+      model,
       temperature: GEMINI_CONFIG.CLASSIFIER.temperature,
       maxOutputTokens: GEMINI_CONFIG.CLASSIFIER.maxOutputTokens,
       topK: 40,
@@ -89,7 +96,7 @@ export function getGeminiConfigForAgent(agentName: string) {
   
   // Configuración base para agentes simples
   return {
-    model: GEMINI_CONFIG.MODEL,
+    model,
     temperature: GEMINI_CONFIG.BASE.temperature,
     maxOutputTokens: GEMINI_CONFIG.BASE.maxOutputTokens,
     topK: 40,
@@ -110,4 +117,17 @@ export function isComplexAgent(agentName: string): boolean {
  */
 export function getComplexAgents(): readonly string[] {
   return GEMINI_CONFIG.COMPLEX_AGENTS.agents;
+}
+
+/**
+ * Información completa de configuración actual (para debugging)
+ */
+export function getConfigInfo() {
+  return {
+    environment: process.env.NODE_ENV || 'development',
+    model: getGeminiModel(),
+    modelSource: process.env.GEMINI_MODEL ? 'environment' : 'fallback',
+    hasApiKey: !!process.env.GEMINI_API_KEY,
+    timestamp: new Date().toISOString()
+  };
 }

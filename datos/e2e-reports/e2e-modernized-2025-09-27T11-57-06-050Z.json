@@ -1,0 +1,274 @@
+{
+  "timestamp": "2025-09-27T11:57:06.050Z",
+  "config": {
+    "target_file": "presupuesto",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": false
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "presupuesto": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "presupuesto",
+      "success": true,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "--- Página 1 ---\nCONTROL Y TENSION\nPresupuesto\ncontrol de procesos industriales\nsistemas automáticoas\nautómatas programables\nTRINIDAD ARBOIRO LINARES\nC/ ESPINO 26\n28660 BOADILLA DEL MONTE\nMADRID\nN.I.F. 33841582A\ninstalaciones eléctricas\nestudios energéticos:\ndomótica\nNÚMERO\n1 180006\nFECHA\n03/02/2020\nCOD. CLIENTE\nPÁGINA\nDESCRIPCIÓN DEL PRESUPUESTO\nINSTALACIOPNES IVE\n0\n1\nCÓDIGO\nDESCRIPCIÓN\nCANTIDAD\nPRECIO UND.\nDTO.\nTOTAL\nPRESUPUESTO PARA LA INSTALACIÓN Y LEGALIZACIÓN DE ACOMETIDA Y\nPROYECTO PARA UNA INSTALACIÓN PARA CARGADOR DE VEHÍCULO\nELÉCTRICO EN CALLE ESPINO 26 DE BOADILLA DEL MONTE, MADRID\nCUADRO GENERAL DE DISTRIBUCIÓN\nCuadro general de distribución de superficie ESTANCO IP65 instalado en\ntrasera de fachada por el interior de la parcela junto a armario de contadores\nexistente.\nCon automático general para una potencia máxima de 27,6Kw\nProtector de sobretensiones transitorias\nProtección magnetotérmica y diferencial para las salidas a Vivienda y a\nCargador de Vehículo eléctrico\n1\n953,00\n953,00\nImporte de mano de obra instalación de cuadro, desvío de acometidas,\nconexionado y pruebas\n1\n350,00\n350,00\nLEGALIZACIÓN\nRealización de proyecto eléctrico para instalación de IVE (infraestructuras para\nVehículos eléctricos.\nCertificado Final de obra, pago de tasas en Colegio Oficial.\nRealización de Boletin de instalación: Presentación en industria y pago de tasas\ne inspección por Organismo de Control.\n1\n1.330,00\n1.330,00\nTIPO\nIMPORTE\nDESCUENTO\nPRONTO PAGO\nPORTES\nFINANCIACIÓN\nBASE\nI.V.A.\nR.E.\n21,00\n2.633,00\n2.633,00\n552,93\n10,00\n4,00\nOBSERVACIONES:\nLA CAIXA\n2100 2980 06 0200047252\nTOTAL:\nFORMA DE PAGO\nTRANSFERENCIA\n3.185,93\nCONTROL Y TENSIÓN S.L. c/ Cabo Rufino Lázaro 5, Las Rozas 20230 Madrid. CIF.: B83802850 Tel. 911 924 026 - FAX: 918 004 713 Mov. 609 273 707",
+          "metrics": {
+            "duration": 2475,
+            "size": 1780,
+            "method": "google-vision-ocr"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "presupuesto",
+            "confidence": 0.9,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for presupuesto"
+          },
+          "metrics": {
+            "duration": 0,
+            "confidence": 0.9
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "numero_presupuesto": "1 180006",
+            "emisor_name": "CONTROL Y TENSION S.L.",
+            "cliente_name": "TRINIDAD ARBOIRO LINARES",
+            "fecha_emision": "2020-02-03",
+            "fecha_validez": null,
+            "total": 3185.93,
+            "category": "comercial",
+            "titulo": "PRESUPUESTO PARA LA INSTALACIÓN Y LEGALIZACIÓN DE ACOMETIDA Y\nPROYECTO PARA UNA INSTALACIÓN PARA CARGADOR DE VEHÍCULO\nELÉCTRICO EN CALLE ESPINO 26 DE BOADILLA DEL MONTE, MADRID",
+            "tipo_documento": "Presupuesto",
+            "emisor_direccion": "c/ Cabo Rufino Lázaro 5, Las Rozas 20230 Madrid",
+            "emisor_telefono": "911 924 026",
+            "emisor_email": null,
+            "emisor_identificacion_fiscal": "B83802850",
+            "cliente_direccion": "C/ ESPINO 26\n28660 BOADILLA DEL MONTE\nMADRID",
+            "cliente_identificacion_fiscal": "33841582A",
+            "subtotal": 2633,
+            "impuestos": 552.93,
+            "porcentaje_impuestos": 21,
+            "moneda": null,
+            "descripcion_servicios": [
+              "CUADRO GENERAL DE DISTRIBUCIÓN",
+              "Importe de mano de obra instalación de cuadro, desvío de acometidas,\nconexionado y pruebas",
+              "LEGALIZACIÓN"
+            ],
+            "cantidades": [
+              1,
+              1,
+              1
+            ],
+            "precios_unitarios": [
+              953,
+              350,
+              1330
+            ],
+            "importes_totales": [
+              953,
+              350,
+              1330
+            ],
+            "descripciones_detalladas": [
+              "Cuadro general de distribución de superficie ESTANCO IP65 instalado en\ntrasera de fachada por el interior de la parcela junto a armario de contadores\nexistente.\nCon automático general para una potencia máxima de 27,6Kw\nProtector de sobretensiones transitorias\nProtección magnetotérmica y diferencial para las salidas a Vivienda y a\nCargador de Vehículo eléctrico",
+              null,
+              "Realización de proyecto eléctrico para instalación de IVE (infraestructuras para\nVehículos eléctricos.\nCertificado Final de obra, pago de tasas en Colegio Oficial.\nRealización de Boletin de instalación: Presentación en industria y pago de tasas\ne inspección por Organismo de Control."
+            ],
+            "condiciones_pago": "TRANSFERENCIA",
+            "plazos_entrega": null,
+            "pago_inicial_requerido": false,
+            "notas_adicionales": null,
+            "garantia": null
+          },
+          "metrics": {
+            "duration": 6128,
+            "fields_count": 29
+          }
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "numero_presupuesto": "1 180006",
+              "emisor_name": "CONTROL Y TENSION S.L.",
+              "cliente_name": "TRINIDAD ARBOIRO LINARES",
+              "fecha_emision": "2020-02-03",
+              "fecha_validez": null,
+              "total": 3185.93,
+              "category": "comercial",
+              "titulo": "PRESUPUESTO PARA LA INSTALACIÓN Y LEGALIZACIÓN DE ACOMETIDA Y\nPROYECTO PARA UNA INSTALACIÓN PARA CARGADOR DE VEHÍCULO\nELÉCTRICO EN CALLE ESPINO 26 DE BOADILLA DEL MONTE, MADRID",
+              "tipo_documento": "Presupuesto",
+              "emisor_direccion": "c/ Cabo Rufino Lázaro 5, Las Rozas 20230 Madrid",
+              "emisor_telefono": "911 924 026",
+              "emisor_email": null,
+              "emisor_identificacion_fiscal": "B83802850",
+              "cliente_direccion": "C/ ESPINO 26\n28660 BOADILLA DEL MONTE\nMADRID",
+              "cliente_identificacion_fiscal": "33841582A",
+              "subtotal": 2633,
+              "impuestos": 552.93,
+              "porcentaje_impuestos": 21,
+              "moneda": null,
+              "descripcion_servicios": [
+                "CUADRO GENERAL DE DISTRIBUCIÓN",
+                "Importe de mano de obra instalación de cuadro, desvío de acometidas,\nconexionado y pruebas",
+                "LEGALIZACIÓN"
+              ],
+              "cantidades": [
+                1,
+                1,
+                1
+              ],
+              "precios_unitarios": [
+                953,
+                350,
+                1330
+              ],
+              "importes_totales": [
+                953,
+                350,
+                1330
+              ],
+              "descripciones_detalladas": [
+                "Cuadro general de distribución de superficie ESTANCO IP65 instalado en\ntrasera de fachada por el interior de la parcela junto a armario de contadores\nexistente.\nCon automático general para una potencia máxima de 27,6Kw\nProtector de sobretensiones transitorias\nProtección magnetotérmica y diferencial para las salidas a Vivienda y a\nCargador de Vehículo eléctrico",
+                null,
+                "Realización de proyecto eléctrico para instalación de IVE (infraestructuras para\nVehículos eléctricos.\nCertificado Final de obra, pago de tasas en Colegio Oficial.\nRealización de Boletin de instalación: Presentación en industria y pago de tasas\ne inspección por Organismo de Control."
+              ],
+              "condiciones_pago": "TRANSFERENCIA",
+              "plazos_entrega": null,
+              "pago_inicial_requerido": false,
+              "notas_adicionales": null,
+              "garantia": null
+            }
+          },
+          "metrics": {
+            "duration": 3
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 96.42857142857143,
+            "missingFields": [
+              "categoria"
+            ],
+            "extraFields": [
+              "category",
+              "tipo_documento"
+            ]
+          },
+          "metrics": {
+            "duration": 1,
+            "compatibility_score": 96.42857142857143
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 33
+          },
+          "metrics": {
+            "duration": 1
+          }
+        }
+      },
+      "total_time": 8610,
+      "document_type": "presupuesto",
+      "extracted_data": {
+        "numero_presupuesto": "1 180006",
+        "emisor_name": "CONTROL Y TENSION S.L.",
+        "cliente_name": "TRINIDAD ARBOIRO LINARES",
+        "fecha_emision": "2020-02-03",
+        "fecha_validez": null,
+        "total": 3185.93,
+        "category": "comercial",
+        "titulo": "PRESUPUESTO PARA LA INSTALACIÓN Y LEGALIZACIÓN DE ACOMETIDA Y\nPROYECTO PARA UNA INSTALACIÓN PARA CARGADOR DE VEHÍCULO\nELÉCTRICO EN CALLE ESPINO 26 DE BOADILLA DEL MONTE, MADRID",
+        "tipo_documento": "Presupuesto",
+        "emisor_direccion": "c/ Cabo Rufino Lázaro 5, Las Rozas 20230 Madrid",
+        "emisor_telefono": "911 924 026",
+        "emisor_email": null,
+        "emisor_identificacion_fiscal": "B83802850",
+        "cliente_direccion": "C/ ESPINO 26\n28660 BOADILLA DEL MONTE\nMADRID",
+        "cliente_identificacion_fiscal": "33841582A",
+        "subtotal": 2633,
+        "impuestos": 552.93,
+        "porcentaje_impuestos": 21,
+        "moneda": null,
+        "descripcion_servicios": [
+          "CUADRO GENERAL DE DISTRIBUCIÓN",
+          "Importe de mano de obra instalación de cuadro, desvío de acometidas,\nconexionado y pruebas",
+          "LEGALIZACIÓN"
+        ],
+        "cantidades": [
+          1,
+          1,
+          1
+        ],
+        "precios_unitarios": [
+          953,
+          350,
+          1330
+        ],
+        "importes_totales": [
+          953,
+          350,
+          1330
+        ],
+        "descripciones_detalladas": [
+          "Cuadro general de distribución de superficie ESTANCO IP65 instalado en\ntrasera de fachada por el interior de la parcela junto a armario de contadores\nexistente.\nCon automático general para una potencia máxima de 27,6Kw\nProtector de sobretensiones transitorias\nProtección magnetotérmica y diferencial para las salidas a Vivienda y a\nCargador de Vehículo eléctrico",
+          null,
+          "Realización de proyecto eléctrico para instalación de IVE (infraestructuras para\nVehículos eléctricos.\nCertificado Final de obra, pago de tasas en Colegio Oficial.\nRealización de Boletin de instalación: Presentación en industria y pago de tasas\ne inspección por Organismo de Control."
+        ],
+        "condiciones_pago": "TRANSFERENCIA",
+        "plazos_entrega": null,
+        "pago_inicial_requerido": false,
+        "notas_adicionales": null,
+        "garantia": null
+      }
+    }
+  ]
+}

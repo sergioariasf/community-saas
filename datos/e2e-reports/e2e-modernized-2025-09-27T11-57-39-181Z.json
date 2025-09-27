@@ -1,0 +1,308 @@
+{
+  "timestamp": "2025-09-27T11:57:39.181Z",
+  "config": {
+    "target_file": "albaran",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": false
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "albaran": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "albaran",
+      "success": true,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "--- Página 1 ---\nfischer\nFischer\ninnovative solutions\nAlbarán\nFecha:\nHoja\n01.10.2020\n1\nCliente número:\n594182\nde\nFischer ibérica, S.A.U. CI. Klaus Fischer, 1/43300 Mont-roig del Camp\nAlbarán número:\nSu NIF:\n2002337934\nESB83802850\n1\nCONTROL Y TENSION S.L.\nPOL. EUROPOLIS\nCABO RUFINO LAZARO 5\n28230 LAS ROZAS\nComprador\nCONTROL Y TENSION S.L.\nPOL. EUROPOLIS\nCABO RUFINO LAZARO 5\n28230 LAS ROZAS\nSu Persona de contacto\nSu Pedido:\nPedido número:\nPeso Bruto:\nEnviado por:\nCondiciones de entrega:\nTeléfono / Fax\nSu representante\n/\nreposicion\n215591934\n9,238 KG\nBultos:\n251251 MRW (URGENTE-10)\nZFH - Portes pagados\n01\nPos. Art-Nr\nDescripción\nPedido número: 215591934 Su pedido: reposicion\n0010 538880 PMCU UNIVERSAL CENTRAL CLAMP\nReferencia\ncliente\nValor\nneto\nCant.\nCant. unid.\npac\nentregadas\n41,92\n2\n20\nGTIN: 8001132059913\n0020\n71202\nSTSR M10X200 A2 TORNILLO DOBLE ROSCA\nGTIN: 8001132712023\n52,64\n1\n25\n0030 71207\nRHS 8×20 A2 TORNILLO CABEZA DE MARTILLO\nGTIN: 8001132712078\n24,57\n1\n50\n0040 71952\nTUERCA ARANDELA MU F A2 M10\n14,02\n1\n100\nGTIN: 8001132719527\n0050\n45707\nFIS H 18X130/200 K\n14,88\n1\n10\nGTIN: 4006209457078\n0060\n543633\nBroca SDS short Pointer M 16/200/260\nGTIN: 4048962308747\n10,41\n1\n1\n0070 534616 MS LIQUIDO 1 KG MARRON\nGTIN: 4048962234077\n11,55\n1\n1\nSuma:\n169,99\n8\nCualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega\ny remitido, junto con imagen de la incidencia, al correo electrónico de Atención al\nCliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.\nEn caso de alguna incidencia en el pedido, no se admitirán devoluciones de material\nni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.\nNO 14001\n207\nTelef.\n: 0034 977 838 711\nFax\nE-mail\nInternet\nNIF UE\n: 0034 977 838 770\n: servicio.cliente@fischer.es\n: www.fischer.es\n: ESA08150666\nFischer Ibérica, S.A.U.\nCI. Klaus Fischer, 1/43300 Mont-roig del Camp (Tarragona)\nR.M.T. Hoja 20.251 - Folio 184 - Tomo 1.565- 1* Inscripción - N.I.F. A08150666\nDeutsche Bank cta. nr. 0019 0020 99 4010032435, IBAN: ES9800190020994010032435, SWIFT: DEUTESBR\nLa Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX",
+          "metrics": {
+            "duration": 1889,
+            "size": 2217,
+            "method": "google-vision-ocr"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "albaran",
+            "confidence": 0.9,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for albaran"
+          },
+          "metrics": {
+            "duration": 1,
+            "confidence": 0.9
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "emisor_name": "Fischer Ibérica, S.A.U.",
+            "receptor_name": "CONTROL Y TENSION S.L.",
+            "numero_albaran": "2002337934",
+            "fecha_emision": "2020-10-01",
+            "numero_pedido": "215591934",
+            "category": null,
+            "emisor_direccion": "CI. Klaus Fischer, 1/43300 Mont-roig del Camp",
+            "emisor_telefono": "0034 977 838 711",
+            "emisor_email": "servicio.cliente@fischer.es",
+            "receptor_direccion": "POL. EUROPOLIS\nCABO RUFINO LAZARO 5\n28230 LAS ROZAS",
+            "receptor_telefono": null,
+            "mercancia": [
+              {
+                "descripcion": "PMCU UNIVERSAL CENTRAL CLAMP",
+                "cantidad": 2,
+                "unidad": "pac",
+                "peso": null
+              },
+              {
+                "descripcion": "STSR M10X200 A2 TORNILLO DOBLE ROSCA",
+                "cantidad": 1,
+                "unidad": null,
+                "peso": null
+              },
+              {
+                "descripcion": "RHS 8×20 A2 TORNILLO CABEZA DE MARTILLO",
+                "cantidad": 1,
+                "unidad": null,
+                "peso": null
+              },
+              {
+                "descripcion": "TUERCA ARANDELA MU F A2 M10",
+                "cantidad": 1,
+                "unidad": null,
+                "peso": null
+              },
+              {
+                "descripcion": "FIS H 18X130/200 K",
+                "cantidad": 1,
+                "unidad": null,
+                "peso": null
+              },
+              {
+                "descripcion": "Broca SDS short Pointer M 16/200/260",
+                "cantidad": 1,
+                "unidad": null,
+                "peso": null
+              },
+              {
+                "descripcion": "MS LIQUIDO 1 KG MARRON",
+                "cantidad": 1,
+                "unidad": null,
+                "peso": null
+              }
+            ],
+            "cantidad_total": 8,
+            "peso_total": 9.238,
+            "observaciones": "Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega\ny remitido, junto con imagen de la incidencia, al correo electrónico de Atención al\nCliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.\nEn caso de alguna incidencia en el pedido, no se admitirán devoluciones de material\nni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.",
+            "estado_entrega": null,
+            "firma_receptor": null,
+            "transportista": "MRW (URGENTE-10)",
+            "vehiculo_matricula": null
+          },
+          "metrics": {
+            "duration": 5560,
+            "fields_count": 19
+          }
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "emisor_name": "Fischer Ibérica, S.A.U.",
+              "receptor_name": "CONTROL Y TENSION S.L.",
+              "numero_albaran": "2002337934",
+              "fecha_emision": "2020-10-01",
+              "numero_pedido": "215591934",
+              "category": null,
+              "emisor_direccion": "CI. Klaus Fischer, 1/43300 Mont-roig del Camp",
+              "emisor_telefono": "0034 977 838 711",
+              "emisor_email": "servicio.cliente@fischer.es",
+              "receptor_direccion": "POL. EUROPOLIS\nCABO RUFINO LAZARO 5\n28230 LAS ROZAS",
+              "receptor_telefono": null,
+              "mercancia": [
+                {
+                  "descripcion": "PMCU UNIVERSAL CENTRAL CLAMP",
+                  "cantidad": 2,
+                  "unidad": "pac",
+                  "peso": null
+                },
+                {
+                  "descripcion": "STSR M10X200 A2 TORNILLO DOBLE ROSCA",
+                  "cantidad": 1,
+                  "unidad": null,
+                  "peso": null
+                },
+                {
+                  "descripcion": "RHS 8×20 A2 TORNILLO CABEZA DE MARTILLO",
+                  "cantidad": 1,
+                  "unidad": null,
+                  "peso": null
+                },
+                {
+                  "descripcion": "TUERCA ARANDELA MU F A2 M10",
+                  "cantidad": 1,
+                  "unidad": null,
+                  "peso": null
+                },
+                {
+                  "descripcion": "FIS H 18X130/200 K",
+                  "cantidad": 1,
+                  "unidad": null,
+                  "peso": null
+                },
+                {
+                  "descripcion": "Broca SDS short Pointer M 16/200/260",
+                  "cantidad": 1,
+                  "unidad": null,
+                  "peso": null
+                },
+                {
+                  "descripcion": "MS LIQUIDO 1 KG MARRON",
+                  "cantidad": 1,
+                  "unidad": null,
+                  "peso": null
+                }
+              ],
+              "cantidad_total": 8,
+              "peso_total": 9.238,
+              "observaciones": "Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega\ny remitido, junto con imagen de la incidencia, al correo electrónico de Atención al\nCliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.\nEn caso de alguna incidencia en el pedido, no se admitirán devoluciones de material\nni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.",
+              "estado_entrega": null,
+              "firma_receptor": null,
+              "transportista": "MRW (URGENTE-10)",
+              "vehiculo_matricula": null
+            }
+          },
+          "metrics": {
+            "duration": 3
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 100,
+            "missingFields": [],
+            "extraFields": []
+          },
+          "metrics": {
+            "duration": 1,
+            "compatibility_score": 100
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 23
+          },
+          "metrics": {
+            "duration": 1
+          }
+        }
+      },
+      "total_time": 7457,
+      "document_type": "albaran",
+      "extracted_data": {
+        "emisor_name": "Fischer Ibérica, S.A.U.",
+        "receptor_name": "CONTROL Y TENSION S.L.",
+        "numero_albaran": "2002337934",
+        "fecha_emision": "2020-10-01",
+        "numero_pedido": "215591934",
+        "category": null,
+        "emisor_direccion": "CI. Klaus Fischer, 1/43300 Mont-roig del Camp",
+        "emisor_telefono": "0034 977 838 711",
+        "emisor_email": "servicio.cliente@fischer.es",
+        "receptor_direccion": "POL. EUROPOLIS\nCABO RUFINO LAZARO 5\n28230 LAS ROZAS",
+        "receptor_telefono": null,
+        "mercancia": [
+          {
+            "descripcion": "PMCU UNIVERSAL CENTRAL CLAMP",
+            "cantidad": 2,
+            "unidad": "pac",
+            "peso": null
+          },
+          {
+            "descripcion": "STSR M10X200 A2 TORNILLO DOBLE ROSCA",
+            "cantidad": 1,
+            "unidad": null,
+            "peso": null
+          },
+          {
+            "descripcion": "RHS 8×20 A2 TORNILLO CABEZA DE MARTILLO",
+            "cantidad": 1,
+            "unidad": null,
+            "peso": null
+          },
+          {
+            "descripcion": "TUERCA ARANDELA MU F A2 M10",
+            "cantidad": 1,
+            "unidad": null,
+            "peso": null
+          },
+          {
+            "descripcion": "FIS H 18X130/200 K",
+            "cantidad": 1,
+            "unidad": null,
+            "peso": null
+          },
+          {
+            "descripcion": "Broca SDS short Pointer M 16/200/260",
+            "cantidad": 1,
+            "unidad": null,
+            "peso": null
+          },
+          {
+            "descripcion": "MS LIQUIDO 1 KG MARRON",
+            "cantidad": 1,
+            "unidad": null,
+            "peso": null
+          }
+        ],
+        "cantidad_total": 8,
+        "peso_total": 9.238,
+        "observaciones": "Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega\ny remitido, junto con imagen de la incidencia, al correo electrónico de Atención al\nCliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.\nEn caso de alguna incidencia en el pedido, no se admitirán devoluciones de material\nni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.",
+        "estado_entrega": null,
+        "firma_receptor": null,
+        "transportista": "MRW (URGENTE-10)",
+        "vehiculo_matricula": null
+      }
+    }
+  ]
+}

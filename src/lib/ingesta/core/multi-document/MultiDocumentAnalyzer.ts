@@ -10,6 +10,7 @@
 import { getSupportedDocumentTypes } from '../schemaBasedConfig';
 import { TextExtractionFactory } from '../extraction/TextExtractionFactory';
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { getGeminiModel } from '../../config/agentConfig';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -360,7 +361,7 @@ DO NOT mix different document types in one detection - separate them clearly!
 
     try {
       // Use Gemini Flash directly for text analysis (much cheaper than OCR)
-      const model = this.gemini.getGenerativeModel({ model: 'gemini-1.5-flash' });
+      const model = this.gemini.getGenerativeModel({ model: getGeminiModel() });
       
       const result = await model.generateContent(prompt);
       const response = result.response.text();
