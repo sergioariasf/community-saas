@@ -4,7 +4,7 @@
  * ESTADO: development
  * DEPENDENCIAS: BaseDocumentExtractor, AgentOrchestrator
  * OUTPUTS: Datos estructurados de presupuesto
- * ACTUALIZADO: 2025-09-24
+ * ACTUALIZADO: 2025-09-27
  */
 
 import { BaseDocumentExtractor, ExtractionResult } from './BaseDocumentExtractor';

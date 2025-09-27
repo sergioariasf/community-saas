@@ -23,11 +23,12 @@ import {
 import Link from 'next/link';
 import { ContratoDetailView } from '@/components/documents/templates/ContratoDetailView';
 
-// Datos de ejemplo realistas para demostración
+// Datos de ejemplo realistas para demostración - compatibles con ExtractedContrato
 const DEMO_CONTRATO_DATA = {
   id: "demo-contrato-1",
   document_id: "demo-doc-contrato",
   organization_id: "demo-org",
+  created_at: "2024-03-20T09:00:00Z",
   titulo_contrato: "Contrato de Prestación de Servicios de Mantenimiento Integral",
   parte_a: "Comunidad de Propietarios Los Olivos",
   parte_b: "Mantenimientos Integrales ABC S.L.",
@@ -37,7 +38,52 @@ const DEMO_CONTRATO_DATA = {
   fecha_inicio: "2024-04-01",
   fecha_fin: "2026-03-31",
   category: "servicios_mantenimiento",
-  created_at: "2024-03-20T09:00:00Z"
+  // Campos requeridos por ExtractedContrato
+  tipo_contrato: "Prestación de servicios",
+  parte_a_direccion: "Avenida de los Olivos 123, 28015 Madrid",
+  parte_a_identificacion_fiscal: "G12345678",
+  parte_a_representante: "María González Rodríguez - Presidenta",
+  parte_b_direccion: "Calle Industria 45, 28047 Madrid",
+  parte_b_identificacion_fiscal: "B87654321",
+  parte_b_representante: "Juan Carlos Pérez - Director Comercial",
+  alcance_servicios: [
+    "Limpieza y mantenimiento de zonas comunes",
+    "Mantenimiento de jardines y áreas verdes",
+    "Revisión y mantenimiento instalaciones eléctricas",
+    "Mantenimiento de sistemas de seguridad y videovigilancia"
+  ],
+  obligaciones_parte_a: [
+    "Facilitar acceso a todas las instalaciones",
+    "Proporcionar llaves y códigos necesarios",
+    "Comunicar incidencias con 24h anticipación"
+  ],
+  obligaciones_parte_b: [
+    "Realizar servicios con personal cualificado",
+    "Cumplir normativa de seguridad laboral",
+    "Aportar seguros de responsabilidad civil"
+  ],
+  moneda: "EUR",
+  forma_pago: "Transferencia bancaria mensual",
+  plazos_pago: [
+    { descripcion: "Pago mensual", dia: "5", importe: 1025.00 }
+  ],
+  confidencialidad: true,
+  legislacion_aplicable: "Legislación española",
+  fecha_firma: "2024-03-20",
+  lugar_firma: "Madrid",
+  topic_keywords: ["mantenimiento", "servicios", "comunidad", "jardines", "seguridad"],
+  topic_mantenimiento: true,
+  topic_jardines: true,
+  topic_ascensores: false,
+  topic_limpieza: true,
+  topic_emergencias: false,
+  topic_instalaciones: true,
+  topic_electricidad: true,
+  topic_seguridad: true,
+  topic_agua: false,
+  topic_gas: false,
+  topic_climatizacion: false,
+  topic_parking: false
 };
 
 const DEMO_CONTRATO_METADATA = {

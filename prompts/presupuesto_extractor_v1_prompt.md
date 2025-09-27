@@ -19,14 +19,14 @@ CAMPOS A EXTRAIR:
 REGLAS CRÍTICAS:
 - Devuelve SOLO el JSON, sin texto adicional
 - Mantén exactamente los nombres de campos especificados
-- Para campo "mercancia": usar array de objetos con estructura detallada
 - Para campos booleanos: usar true/false (no strings)
 - Para campos numéricos: usar números (no strings con comillas)
+- Para campos topic_*: analizar el contenido y marcar true solo si el tema está presente en el documento
 
 CONTEXTO TÉCNICO:
 - Agente: presupuesto_extractor_v1
 - Tabla destino: extracted_budgets  
 - Campos obligatorios: numero_presupuesto, emisor_name, cliente_name, fecha_emision, total
-- Generado automáticamente: 2025-09-24
+- Generado automáticamente: 2025-09-27
 
 IMPORTANTE: Devuelve SOLO el JSON, sin texto adicional.

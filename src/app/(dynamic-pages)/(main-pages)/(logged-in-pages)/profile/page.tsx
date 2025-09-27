@@ -13,7 +13,7 @@ import { ProfileContent } from './ProfileContent';
 
 export default async function ProfilePage() {
   try {
-    const user = await getCachedLoggedInVerifiedSupabaseUser();
+    const { user } = await getCachedLoggedInVerifiedSupabaseUser();
     return <ProfileContent user={user} />;
   } catch (error) {
     redirect('/auth?mode=login');

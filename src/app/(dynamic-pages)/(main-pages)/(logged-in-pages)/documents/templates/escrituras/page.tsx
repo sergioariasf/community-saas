@@ -23,11 +23,12 @@ import {
 import Link from 'next/link';
 import { EscrituraCompraventaDetailView } from '@/components/documents/templates/EscrituraCompraventaDetailView';
 
-// Datos de ejemplo realistas para demostración
+// Datos de ejemplo realistas para demostración - compatibles con ExtractedEscritura
 const DEMO_ESCRITURA_DATA = {
   id: "demo-escritura-1",
   document_id: "demo-doc-escritura",
   organization_id: "demo-org",
+  created_at: "2024-03-15T10:30:00Z",
   vendedor_nombre: "José María González Fernández",
   comprador_nombre: "Ana Isabel Martín Rodríguez",
   direccion_inmueble: "Calle Gran Vía 125, 3º Izquierda, 28013 Madrid",
@@ -37,7 +38,91 @@ const DEMO_ESCRITURA_DATA = {
   referencia_catastral: "9872023VH4897S0001WX",
   superficie_m2: 95.00,
   category: "vivienda_urbana",
-  created_at: "2024-03-15T10:30:00Z"
+  // Datos del vendedor
+  vendedor_dni: "12345678-A",
+  vendedor_direccion: "Avenida de América 45, 4º B, 28028 Madrid",
+  vendedor_estado_civil: "Casado en régimen de gananciales",
+  vendedor_nacionalidad: "Española",
+  vendedor_profesion: "Ingeniero Industrial",
+  // Datos del comprador
+  comprador_dni: "87654321-B",
+  comprador_direccion: "Calle Alcalá 200, 2º D, 28028 Madrid",
+  comprador_estado_civil: "Soltera",
+  comprador_nacionalidad: "Española",
+  comprador_profesion: "Médico",
+  // Descripción del inmueble
+  tipo_inmueble: "Vivienda",
+  superficie_util: 85.50,
+  numero_habitaciones: 3,
+  numero_banos: 2,
+  planta: "3ª",
+  orientacion: "Sur-Este",
+  descripcion_inmueble: "Vivienda de tres dormitorios con dos baños completos, cocina independiente, salón-comedor y terraza",
+  // Registro de la propiedad
+  registro_propiedad: "Registro de la Propiedad nº 4 de Madrid",
+  tomo: "1245",
+  libro: "890",
+  folio: "125",
+  finca: "45678",
+  inscripcion: "3ª",
+  // Datos económicos
+  moneda: "EUR",
+  forma_pago: "Transferencia bancaria",
+  impuestos_incluidos: true,
+  gastos_notariales: 2500.00,
+  gastos_registro: 850.00,
+  // Ubicación y características
+  codigo_postal: "28013",
+  municipio: "Madrid",
+  provincia: "Madrid",
+  comunidad_autonoma: "Comunidad de Madrid",
+  plantas_edificio: 8,
+  ano_construccion: 1995,
+  ascensor: true,
+  garaje: false,
+  trastero: false,
+  terraza: true,
+  jardin: false,
+  piscina: false,
+  calefaccion: "Central",
+  // Cargas y limitaciones originales
+  cargas: null,
+  limitaciones_dominio: null,
+  // Documentación
+  cedula_habitabilidad: "CHM-2024-001234",
+  certificado_energetico: "B",
+  ibi_anual: 1250.00,
+  gastos_comunidad: 85.00,
+  // Precio y pagos
+  precio_en_letras: "TRESCIENTOS OCHENTA Y CINCO MIL EUROS",
+  gastos_a_cargo_comprador: ["Impuesto de Transmisiones Patrimoniales", "Gastos de registro"],
+  gastos_a_cargo_vendedor: ["Plusvalía municipal", "Comisión inmobiliaria"],
+  // Cargas y limitaciones
+  cargas_existentes: null,
+  hipotecas_pendientes: null,
+  servidumbres: null,
+  libre_cargas: true,
+  condicion_suspensiva: false,
+  condiciones_especiales: ["Entrega inmediata tras firma"],
+  clausulas_particulares: ["El inmueble se entrega libre de inquilinos"],
+  // Entrega
+  fecha_entrega: "2024-03-15",
+  entrega_inmediata: true,
+  estado_conservacion: "Bueno",
+  inventario_incluido: null,
+  // Notaría
+  notario_numero_colegiado: "2045",
+  notaria_direccion: "Calle Serrano 85, 28006 Madrid",
+  protocolo_numero: "1234/2024",
+  autorizacion_notarial: true,
+  // Registro
+  valor_catastral: 320000.00,
+  coeficiente_participacion: "1,25%",
+  itp_aplicable: 6.00,
+  base_imponible_itp: 385000.00,
+  inscripcion_registro: "Pendiente",
+  // Topics
+  topic_keywords: ["compraventa", "vivienda", "madrid", "escritura", "notario"]
 };
 
 const DEMO_ESCRITURA_METADATA = {

@@ -27,6 +27,6 @@ CONTEXTO TÉCNICO:
 - Agente: contrato_extractor_v1
 - Tabla destino: extracted_contracts  
 - Campos obligatorios: titulo_contrato, parte_a, parte_b, objeto_contrato
-- Generado automáticamente: 2025-09-24
+- Generado automáticamente: 2025-09-27
 
 IMPORTANTE: Devuelve SOLO el JSON, sin texto adicional.

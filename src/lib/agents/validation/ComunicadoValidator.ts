@@ -4,7 +4,7 @@
  * ESTADO: development
  * DEPENDENCIAS: BaseValidator
  * OUTPUTS: Función validateComunicadoData completa y robusta
- * ACTUALIZADO: 2025-09-24
+ * ACTUALIZADO: 2025-09-27
  */
 
 import { 

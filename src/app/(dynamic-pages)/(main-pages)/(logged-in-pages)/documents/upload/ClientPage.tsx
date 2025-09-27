@@ -195,8 +195,7 @@ export default function ClientPage() {
       file: data.file?.[0]?.name,
       fileSize: data.file?.[0]?.size,
       community_id: data.community_id,
-      processing_level: data.processing_level,
-      description: data.description
+      processing_level: data.processing_level
     });
     
     setIsSubmitting(true);

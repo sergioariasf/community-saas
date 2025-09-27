@@ -23,21 +23,55 @@ import {
 import Link from 'next/link';
 import { PresupuestoDetailView } from '@/components/documents/templates/PresupuestoDetailView';
 
-// Datos de ejemplo realistas para demostración
+// Datos de ejemplo realistas para demostración - compatibles con ExtractedPresupuesto
 const DEMO_PRESUPUESTO_DATA = {
   id: "demo-presupuesto-1",
   document_id: "demo-doc-presupuesto",
   organization_id: "demo-org",
+  created_at: "2024-03-10T08:30:00Z",
   numero_presupuesto: "PRES-2024-0087",
   emisor_name: "Reformas y Construcciones Delta S.L.",
   cliente_name: "Comunidad de Propietarios Los Olivos",
   fecha_emision: "2024-03-10",
   fecha_validez: "2024-05-10",
-  subtotal: 10350.00,
-  impuestos: 2173.50,
   total: 12523.50,
   category: "obras_reformas",
-  created_at: "2024-03-10T08:30:00Z"
+  // Campos requeridos por ExtractedPresupuesto
+  titulo: "Presupuesto Reforma Zonas Comunes",
+  tipo_documento: "Presupuesto",
+  emisor_direccion: "Polígono Industrial Norte, Nave 12, 28823 Coslada, Madrid",
+  emisor_telefono: "+34 91 345 67 89",
+  emisor_email: "presupuestos@deltaconstructora.es",
+  emisor_identificacion_fiscal: "B-67891234",
+  cliente_direccion: "Avenida de los Olivos 123, 28015 Madrid",
+  cliente_identificacion_fiscal: "G-12345678",
+  subtotal: 10350.00,
+  impuestos: 2173.50,
+  porcentaje_impuestos: 21.0,
+  moneda: "EUR",
+  descripcion_servicios: [
+    "Pintura exterior del edificio",
+    "Impermeabilización de cubiertas",
+    "Reparación de grietas en fachada"
+  ],
+  cantidades: [1, 1, 1],
+  precios_unitarios: [4500.00, 3200.00, 2650.00],
+  importes_totales: [4500.00, 3200.00, 2650.00],
+  condiciones_pago: "50% al inicio, 50% al finalizar",
+  plazo_ejecucion: "15 días laborables",
+  garantia: "2 años en materiales y mano de obra",
+  observaciones: "Presupuesto válido durante 60 días. No incluye tasas municipales.",
+  descuentos_aplicados: 0.00,
+  recargos_aplicados: 0.00,
+  // Campos adicionales requeridos
+  descripciones_detalladas: [
+    "Preparación de superficie, lijado y aplicación de 2 manos de pintura",
+    "Aplicación de membrana impermeabilizante multicapa",
+    "Sellado de grietas con mortero especial antihumedad"
+  ],
+  plazos_entrega: "5 días para pintura, 8 días para impermeabilización, 2 días para grietas",
+  pago_inicial_requerido: true,
+  notas_adicionales: "Materiales incluidos. Seguro de obra incluido."
 };
 
 const DEMO_PRESUPUESTO_METADATA = {

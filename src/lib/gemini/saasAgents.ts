@@ -11,7 +11,7 @@
 // Funciones principales migradas a src/lib/agents/
 export { callSaaSAgent } from '../agents/AgentOrchestrator';
 export { saveExtractedMinutes, saveCompleteActaMetadata } from '../agents/persistence/ActaPersistence';
-export { saveExtractedEscritura, saveExtractedPropertyDeed } from '../agents/persistence/EscrituraPersistence';
+export { saveExtractedEscritura } from '../agents/persistence/EscrituraPersistence';
 
 // === FUNCIONES LEGACY (mantener temporalmente) ===
 import { GoogleGenerativeAI } from '@google/generative-ai';

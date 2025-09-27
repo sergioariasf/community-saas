@@ -13,7 +13,7 @@ import { SettingsContent } from './SettingsContent';
 
 export default async function SettingsPage() {
   try {
-    const user = await getCachedLoggedInVerifiedSupabaseUser();
+    const { user } = await getCachedLoggedInVerifiedSupabaseUser();
     return <SettingsContent user={user} />;
   } catch (error) {
     redirect('/auth?mode=login');

@@ -4,7 +4,7 @@
  * ESTADO: development
  * DEPENDENCIAS: BasePersistence
  * OUTPUTS: Funciones saveExtractedFactura migradas
- * ACTUALIZADO: 2025-09-24
+ * ACTUALIZADO: 2025-09-27
  */
 
 import { insertWithOrganization, PersistenceResult } from './BasePersistence';

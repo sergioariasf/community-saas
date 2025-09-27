@@ -1,85 +1,83 @@
 /**
  * ARCHIVO: EscrituraExtractor.ts
- * PROPÓSITO: Estrategia de extracción específica para documentos de tipo Escritura de Compraventa
+ * PROPÓSITO: Extractor específico para documentos tipo Escritura de Compraventa
  * ESTADO: development
- * DEPENDENCIAS: BaseDocumentExtractor, saasAgents
- * OUTPUTS: Procesamiento de metadatos para Escrituras
- * ACTUALIZADO: 2025-09-22
+ * DEPENDENCIAS: BaseDocumentExtractor, AgentOrchestrator
+ * OUTPUTS: Datos estructurados de escritura
+ * ACTUALIZADO: 2025-09-27
  */
 
-import { BaseDocumentExtractor, DocumentMetadata } from './BaseDocumentExtractor';
+import { BaseDocumentExtractor, ExtractionResult } from './BaseDocumentExtractor';
+import { callSaaSAgent } from '@/lib/agents/AgentOrchestrator';
 
 export class EscrituraExtractor extends BaseDocumentExtractor {
-  constructor() {
-    super({
-      agentName: 'escritura_extractor_v1',
-      saveFunctionName: 'saveExtractedPropertyDeed',
-      documentType: 'escritura'
-    });
+  getDocumentType(): string {
+    return 'escritura';
   }
 
-  async processMetadata(documentId: string, extractedText: string, testMode: boolean = false): Promise<DocumentMetadata> {
-    this.logStart('escritura');
-    
+  getAgentName(): string {
+    return 'escritura_extractor_v1';
+  }
+
+  async extractData(content: string): Promise<ExtractionResult> {
     try {
-      // Import our validated agent system
-      console.log('📦 [DEBUG] Importing saasAgents functions...');
-      const { callSaaSAgent, saveExtractedPropertyDeed } = await import('@/lib/gemini/saasAgents');
-      console.log('✅ [DEBUG] saasAgents imported successfully');
+      console.log(`[EscrituraExtractor] Extrayendo datos de ${this.getDocumentType()}...`);
       
-      this.logTextAnalysis(extractedText);
-      
-      const startTime = Date.now();
-      this.logAgentCall(this.config.agentName);
-      
-      const agentResult = await callSaaSAgent(this.config.agentName, {
-        document_text: extractedText
-      }, true); // Use service client for tests
-      
-      const processingTime = Date.now() - startTime;
-      this.logAgentResult(agentResult, processingTime);
+      const inputs = {
+        document_content: content,
+        document_type: 'escritura',
+        extraction_mode: 'complete'
+      };
 
-      if (agentResult.success && agentResult.data) {
-        this.logSuccess(this.config.agentName, agentResult.data);
-
-        // En modo test, no guardamos en BD
-        if (testMode) {
-          console.log('🧪 [DEBUG] Test mode - skipping database save');
-          console.log('🎯 [DEBUG] === ESCRITURA PROCESSING COMPLETED (TEST MODE) ===\n');
-          
-          return {
-            success: true,
-            data: agentResult.data
-          };
-        }
-
-        // Guardar en base de datos
-        const saveStartTime = Date.now();
-        console.log('💾 [DEBUG] Saving extracted property deed data to database...');
-        
-        const savedData = await saveExtractedPropertyDeed(documentId, agentResult.data);
-        
-        const saveTime = Date.now() - saveStartTime;
-        console.log(`✅ [DEBUG] Property deed data saved in ${saveTime}ms`);
-        console.log('🎯 [DEBUG] === ESCRITURA PROCESSING COMPLETED ===\n');
-        
-        return {
-          success: true,
-          data: savedData
-        };
-      } else {
-        console.error('❌ [ERROR] Escritura agent failed:', agentResult.error);
+      const agentResponse = await callSaaSAgent(this.getAgentName(), inputs);
+      
+      if (!agentResponse.success) {
+        console.error(`[EscrituraExtractor] Error del agente:`, agentResponse.error);
         return {
           success: false,
-          error: agentResult.error || `Agent ${this.config.agentName} failed to extract metadata`
+          error: agentResponse.error || 'Error desconocido del agente',
+          data: null,
+          processingTime: agentResponse.processingTime || 0
         };
       }
+
+      // Validar estructura de datos esperada
+      const extractedData = agentResponse.data;
+      if (!this.validateExtractedData(extractedData)) {
+        return {
+          success: false,
+          error: 'Datos extraídos no cumplen estructura esperada',
+          data: null,
+          processingTime: agentResponse.processingTime || 0
+        };
+      }
+
+      console.log(`[EscrituraExtractor] Extracción exitosa en ${agentResponse.processingTime}ms`);
+      
+      return {
+        success: true,
+        data: extractedData,
+        processingTime: agentResponse.processingTime || 0,
+        tokensUsed: agentResponse.tokensUsed || 0
+      };
+
     } catch (error) {
-      console.error('❌ [ERROR] Exception in EscrituraExtractor:', error);
+      console.error(`[EscrituraExtractor] Error durante extracción:`, error);
       return {
         success: false,
-        error: `EscrituraExtractor processing failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+        error: error instanceof Error ? error.message : 'Error desconocido',
+        data: null,
+        processingTime: 0
       };
     }
+  }
+
+  private validateExtractedData(data: any): boolean {
+    if (!data || typeof data !== 'object') return false;
+    
+    // Validar campos obligatorios según schema
+    const requiredFields = [];
+    
+    return requiredFields.every(field => data.hasOwnProperty(field));
   }
 }

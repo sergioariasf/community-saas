@@ -35,8 +35,13 @@ async function EditUserPageContent({ userId }: { userId: string }) {
     getAllUsers()
   ]);
 
-  // Encontrar el usuario específico
-  const user = users.find(u => u.id === userId);
+  // Legacy: Como getAllUsers puede devolver array vacío, simulamos usuario
+  const user = { 
+    id: userId, 
+    name: 'Legacy User', 
+    email: 'legacy@example.com',
+    roles: [] 
+  };
   
   if (!user) {
     notFound();

@@ -1,0 +1,353 @@
+{
+  "timestamp": "2025-09-27T13:49:31.983Z",
+  "config": {
+    "target_file": "escritura_D102B",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": false
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "escritura": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "escritura_D102B",
+      "success": true,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "- Folio 1 - \n \n \n \nESCRITURA DE COMPRAVENTA OBRA NUEVA \nPROMOCIÓN  \"AMARA  HOMES\"  EN  LAS  ROZAS  DE  MADRID \n(MADRID). -----------------------------------------------------------------------------  \nNÚMERO DIECISIETE. -----------------------------------------------------  \nEn Madrid,  mi  residencia,  a cinco  de  enero  de  dos  mil \nveintidós. ------------------------------------------------------------------------------  \nAnte mí, FERNANDO SANCHEZ-ARJONA BONILLA, Notario, \nactuando  como  sustituto  por imposibilidad  accidental  y  para  el \nprotocolo  de  mi  compañero  de  residencia, JUAN  PEREZ  HEREZA, \nambos del Ilustre Colegio de Madrid. ------------------------------------------  \n=== COMPARECEN === \nDe una parte: -----------------------------------------------------------------  \nDOÑA CLARA FABIOLA RAMON RAMIREZ, mayor de edad, \ncasada,  empleada  de  gestoría,  con  domicilio  a  estos  efectos  en \nMadrid,  Avenida  de  Burgos,  número  16  D  2ª  planta  (28036)  y  con \nD.N.I. y N.I.F. número 21.431.074-L.-------------------------------------------  \nDe la otra: ----------------------------------------------------------------------  \nLOS   CÓNYUGES   DON   SERGIO   ARIAS   FERNANDEZ   y \nDOÑA ROCIO SELTZER BERCOVICH, mayores de edad, casados \nen régimen de separacion de bienes, ambos ingenieros, vecinos de \nJUAN PÉREZ HEREZA \nNOTARIO \nC/Padre Damián, nº40-1º \n28036 - MADRID \n\n\n: 91 91 216 08 10 \u0001\n\u0001\u0001\n\u0001: 91 353 05 89 \n\n\n: jperezh@notariado.org  \nES COPIA SIMPLE \n\n \n \n \n \nLas  Rozas  de  Madrid,  calle  Acanto  2  bisy  con  D.N.I,  y  N.I.F. \nnúmeros 51.086.274-P y 54.479.188-P, respectivamente. ---------------  \nSu  régimen  matrimonial  de  separación  de  bienes  resulta  de  la \nescritura  autorizada  por  la  Notario  de  Madrid  Doña Pilar  López-\nContreras Conde, el día 19 de febrero de 2015, con el número 69 de \norden de su protocolo, debidamente indicadas en el Registro Civil de \nMadrid,  al  Tomo  666,  Pagina  245  en  fecha  17  de  marzo  de  2015, \ncuya copia autorizada me exhibe y devuelvo. --------------------------------  \n=== INTERVIENEN === \nA)  El  primer  compareciente,  en  nombre  y  representación  de \nNEINOR  SUR  S.A.U.,  de  nacionalidad  española,  con  domicilio  en \nMadrid,  Paseo  de  la  Castellana  20,  5ª  planta  28046 Madrid  y  con \nC.I.F.    número    A-14646350.    Entidad    constituida    por    tiempo \nindefinido  bajo  la  denominación  de  CAJA  SUR  INMOBILIARIA, \nS.A.U., mediante escritura otorgada en Córdoba, ante el Notario Don \nManuel Castilla Torres el día veintiuno de marzo de dos mil uno, bajo \nel  número  928  de  su  protocolo.  Modificada  su  denominación  social \npor  la  actual  en  escritura  de  modificación  de  la  denominación,  del \nobjeto, del domicilio social, modificación de Estatutos sociales, Cese \nde   Consejo   de   Administración,   Modificación   del   Régimen   de \nAdministración y nombramiento de dos administradores \nmancomunados  otorgada  ante  el  Notario  de  Bilbao,  Don  Vicente \nMaría  del  Arenal  Otero  el  día  catorce  de  mayo  de  dos  mil  quince, \ninscrita en el Registro Mercantil de Madrid al Tomo 40122, Folio 216, \n\n \n \n \n \n \n- Folio 2 - \n \n \n \nHoja  M-713029,  inscripción  2ª).  Tiene  por  objeto  social  “Promoción, \ngestión  y  desarrollo  de  todo  tipo  de  operaciones  inmobiliarias  y \nurbanísticas”.--------------------------------------------------------------------------  \nLo hace como apoderado según consta en: -------------------------  \n1º.- Poder especial que fue conferido por NEINOR SUR, S.A. a \ntravés  de  su  administrador  único  don  Francisco  de  Borja  García-\nEgocheaga  Vergara,  cuyo  cargo  consta  debidamente  inscrito  en  el \nRegistro    Mercantil,    a    favor    de CENTRO    DE    ASESORÍA \nHIPOTECARIA,     S.L.     (hoy     GRUPO     BC     DE     ASESORÍA \nHIPOTECARIA,  S.L,  con  C.I.F.  número  B-81207078,  domiciliada \nen Madrid, Glorieta de Cuatro Caminos número 6-7, 5º, izquierda, e \ninscrita en el Registro Mercantil de Madrid, al Tomo 9.649, folio 102, \nhoja número M-155.130, inscripción 1ª) en escritura autorizada por la \nNotario  de  Madrid  doña  Raquel  Ruiz  Torres,  el  día  9  de  noviembre \nde  2021,  con  el  número  2.272  de  orden  de  su  protocolo,  no \nprecisando inscripción por su carácter especial para que, a través de \nsus  apoderados,  en  nombre  y  representación  de  NEINOR  SUR, \nS.A.,   por   cuanto   está   facultado   para   vender   y   transmitir   a \ncualesquiera  personas  por  el  precio  mínimo  que  se  determina  para \ncada  tipología  de  inmueble  los  inmuebles  correspondientes  a  las \n\n \n \n \n \nfincas  resultantes  de  la  Promoción  sita  en  Las  Rozas  de  Madrid \n(Madrid) DENOMINADA COMERCIALMENTE \"AMARA HOMES\". ---  \n2º.-  Poder  especial  que  le  fue  conferido  a  la  primera  parte \ncompareciente    para    que    pueda    ejercitar    las    facultades    de \ncompraventa   que   se   contemplan   en   el   presente   otorgamiento \nmediante  escritura  autorizada  por  la  Notario  de  Barcelona,  Doña \nBerta García Prieto, el día 25 de abril de 2016, con el número 2435 \nde  protocolo,  en  virtud  de  la  cual  resulta  que  la  Sociedad otorgante \nsustituye  a  favor  del  compareciente  todas  las  facultades  que,  a  su \nvez, terceras entidades otorguen a favor de la sociedad, a fin de que \npueda ejercitar todas y cada una de las facultades que a la sociedad \nse hayan otorgado por terceras entidades, para que la misma realiza \nla   gestión   de   actividades   y   negocios   financieros   y crediticios \nrelacionados con bienes inmuebles. El ejercicio de dichas facultades \nse ejercitarán en los términos, límites y condiciones que los terceros \nhayan  establecido  en  los  distintos  poderes  a  favor de  la  sociedad, \nactuando   en   todo   momento   como   las   personas   físicas que \nrepresentan  a  la  sociedad  en  el  ejercicio  de  tales poderes.  Este \npoder   fue   inscrito   en   el   Registro   Mercantil   de   Madrid   por   la \ninscripción 638ª, de la hoja M-155130 de la entidad “GRUPO BC DE \nASESORIA HIPOTECARIAS.L.”. ------------------------------------------------  \nManifiesta   el   primer   compareciente   la   vigencia   de   los \nrespectivos  poderes  reseñados,  de  las  que  me  han  sido  exhibidas \ncopias autorizadas, y de las personas jurídicas que representa, y no \n\n \n \n \n \n \n- Folio 3 - \n \n \n \nhallarse  incurso  en  conflicto  de  interés  alguno  para  el  presente \notorgamiento,  entendiendo  por  todo  ello,  yo,  el  Notario,  que  el \ncompareciente tiene,    a    mi    juicio,    suficientes    facultades \nrepresentativas  para  otorgar  esta  escritura  de  compraventa  y \ndemás   pactos   contenidos   en   la   misma,   por   cuanto   está \nexpresamente facultado para “enajenar” los bienes objeto de la \npresente escritura. -----------------------------------------------------------------  \nManifiesta    el    primer    compareciente    que    los    datos    de \nidentificación de la sociedad que representa, especialmente el objeto \nsocial y domicilio, no han variado respecto de los consignados en el \ndocumento fehaciente presentado. ---------------------------------------------  \nEn  la  presente  escritura  se  hará  referencia  a  esta sociedad \ncomo la \"Vendedora\". ------------------------------------------------------------  \nDECLARACIÓN   DE   TITULAR   REAL: En   cuanto   a   la \nobligación de identificación del titular real establecida en la Ley 10/2 \n010,   de   28   de   abril,   los   representantes   de   la   VENDEDORA \nmanifiestan  que  la  sociedad  no  se  encuentra  sujeta a  tal  obligación \npor tratarse de filial de sociedad cotizada. ------------------------------------  \nDECLARACIÓN  A  LOS  EFECTOS  DEL  ARTICULO  160  DE \nLA  LEY  DE  SOCIEDADES  DE  CAPITAL:  A los  efectos  de  lo \n\n \n \n \n \ndispuesto  en  el  articulo  160  de  la  Ley  de  Sociedades  de  Capital, \nmanifiesta  la  representación  de  la  Vendedora  que  los  inmuebles \nobjeto  de  la  presente  Escritura  no  tienen  la  consideración  de  activo \nesencial. --------------------------------------------------------------------------------  \nYo,  el  Notario,  he  efectuado  la  correspondiente  consulta  cuyo \njustificante  dejo  unido  a  la  presente,  de  la  cual  resulta  que  no  está \nrevocado el NIF de la entidad. ----------------------------------------------------  \nHe   efectuado   consulta   en   el   Registro   Concursal   cuyos \nresultados  dejo  unidos  a  la  presente  en  los  cuales resulta  que  la \nvendedora no figura en situación concursal. ---------------------------------  \nB) Los   cónyuges   DON   SERGIO   ARIAS   FERNANDEZ   y \nDOÑA  ROCIO  SELTZER  BERCOVICH  en  su  propio  nombre  y \nderecho, por cuenta propia. -------------------------------------------------------  \nEn la presente escritura se hará referencia a esta parte como el \n\"Comprador\". -------------------------------------------------------------------------  \nLes  identifico  por  sus  documentos  de  identidad  anteriormente \nreseñados. -----------------------------------------------------------------------------  \nTienen  a  mi  juicio  capacidad  y  discernimiento  necesario  para \notorgar esta escritura de COMPRAVENTA y en consecuencia: --------  \n=== EXPONEN === \n I.- Que “NEINOR  SUR  S.A.U.”,  es  propietaria,  en  la  forma  y \npor   el   título   que   luego   se   dirá,   de   la   promoción   denominada \ncomercialmente   \"AMARA   HOMES\"   consistente   en   CONJUNTO \nRESIDENCIAL  ubicado  en  la  parcela  3-Al  de  uso  Residencial,  en \n\n \n \n \n \n \n- Folio 4 - \n \n \n \ntérmino  de  Las  Rozas  de  Madrid  (Madrid),  en  el  S.U.N.P.  IV-3  LA \nMARAZUELA del Plan General de Ordenación Urbana señalada hoy \ncon el número 2 bis de la calle Acanto. ----------------------------------------   \nDicho  Conjunto  Residencial  consta  de  trescientas  dieciséis \n(316)  viviendas,  trescientos  dieciséis  (316)  trasteros,  seiscientas \ntreinta  y  dos  (632)  plazas  de  garaje,  y  ocho  (8)  piscinas  -cuatro  de \nadultos y cuatro de niños-, así como cuatro (4) cuartos comunitarios, \nun  (1)  gimnasio  y  urbanización  interior,  todo  ello se  realiza  en  una \nparcela con forma de \"L\" formando cuatro (4) bloques (bloques A, B, \nC   y   D),   cada   uno   de   ellos   en   forma   de   \"U\",   completamente \nindependientes entre sí, realizándose el acceso principal por la calle \nAcanto donde se sitúa una garita de control para la vigilancia de los \naccesos  peatonales  al  Conjunto  Residencial,  disponiéndose  otras \ntres  entradas  secundarias  al  Conjunto,  otra  en  la  calle  Acanto,  otra \nen la calle Escalonia y una peatonal en la calle Camino del Pardo. ---   \nForman parte de dicha promoción las siguientes fincas: ----------  \n1. DESCRIPCIÓN.- ELEMENTO  NÚMERO  864.- VIVIENDA \nLETRA  B  situada  en  planta  SEGUNDA  del  portal  10  del  bloque  D, \ndel conjunto residencial sito en Las Rozas de Madrid (Madrid), en el \nnúmero  2  bis  de  la  calle  Acanto.  El  acceso  principal  al  conjunto  se \n\n \n \n \n \nrealizada desde la calle Acanto donde se sitúa una garita de control \npara la vigilancia de los accesos peatonales al Conjunto Residencial, \ndisponiéndose  otras  tres  entradas  secundarias  al  Conjunto,  otra  en \nla calle Acanto, otra en la calle Escalonia y una peatonal en la calle \nCamino del Pardo. Para el acceso al propio bloque al cual pertenece \nla vivienda hay otra garita de control independiente para la vigilancia \nde los accesos peatonales al mismo.-------------------------------------------   \nConsta de diversas dependencias y servicios. -----------------------   \nTiene  una  superficie  útil  interior  aproximada, incluido tendedero, \nde 95,85 metros cuadrados.. --------------------------------------------------------------  \nLinda:   derecha   entrando   e   izquierda,   zonas   comunes del \nconjunto; fondo, vivienda letra A del portal 11 de la planta tercera; y \nfrente,  vestíbulo,  hueco  de  ascensor  y  escaleras  de  su  portal  y \nvivienda letra A de su mismo portal y planta. ---------------------------------   \nSe  atribuye  a  este  elemento  de  la  propiedad  horizontal  el  uso \nexclusivo  de  la  terraza  descubierta  de  superficie  útil  aproximada  de \n15,28  metros  cuadrados,  a  la  cual  se  accede  exclusivamente  a \ntravés de la propia vivienda. ------------------------------------------------------  \nCUOTA.- 0,240761 %. -------------------------------------------------------  \nINSCRIPCIÓN.- Inscrita en el Registro de la Propiedad número \n1 de Las Rozas de Madrid, al tomo 3322, libro 1329, folio 159, finca \n65816, inscripción 1ª. ---------------------------------------------------------------  \nVALOR.-  CUATROCIENTOS  TREINTA  Y  SIETE  MIL  EUROS \n(437.000,00 €). -----------------------------------------------------------------------  \n\n \n \n \n \n \n- Folio 5 - \n \n \n \n2. DESCRIPCIÓN.- ELEMENTO  NÚMERO  1.023.- Plaza  de \ngaraje señalada con el número 150, situada en la planta sótano \n1  del  bloque  D,  del  conjunto  residencial  sito  en  Las  Rozas  de \nMadrid (Madrid), en el número 2 bis de la calle Acanto. El acceso y la \nsalida  rodada  se  realiza  a  través  de  rampa  de  doble  sentido  que \narrancan  en  el  exterior  por  la  calle  Acanto,  y  los accesos  peatonales \ninteriores se realizan por ascensor y escaleras en cada portal. ---------------   \nTiene   una   superficie   útil   aproximada   de   11,40   metros \ncuadrados. -----------------------------------------------------------------------------   \nLinda:   derecha   entrando,   plaza   de   garaje   número   149; \nizquierda,  zonas  comunes;  fondo,  cuarto  trastero  número  71;  y \nfrente, zona de rodadura. ----------------------------------------------------------   \nCUOTA.- 0,02537400 %. ---------------------------------------------------  \nINSCRIPCIÓN.- Inscrita en el Registro de la Propiedad número \n1  de  Las  Rozas  de  Madrid,  al  tomo  3324,  libro  1331,  folio  29  finca \n65975, inscripción 1ª. ---------------------------------------------------------------  \nVALOR.- DIECISIETE MIL EUROS (17.000,00 €). -----------------  \n3. DESCRIPCIÓN.- ELEMENTO  NÚMERO  1.005.- Plaza  de \ngaraje señalada con el número 132, situada en la planta sótano \n1  del  bloque  D,  del  conjunto  residencial  sito  en  Las  Rozas  de \n\n \n \n \n \nMadrid (Madrid), en el número 2 bis de la calle Acanto. El acceso y la \nsalida  rodada  se  realiza  a  través  de  rampa  de  doble  sentido  que \narrancan  en  el  exterior  por  la  calle  Acanto,  y  los accesos  peatonales \ninteriores se realizan por ascensor y escaleras en cada portal. ---------------  \nTiene una superficie útil aproximada de 9,90 metros cuadrados.   \nLinda:   derecha   entrando,   plaza   de   garaje   número   133; \nizquierda,  plaza  de  garaje  número  131;  fondo,  muro del  edificio;  y \nfrente, zona de rodadura. ----------------------------------------------------------   \nCUOTA.- 0,02203600 %. ---------------------------------------------------  \nINSCRIPCIÓN.- Inscrita en el Registro de la Propiedad número \n1 de Las Rozas de Madrid, al tomo 3323, libro 1330, folio 217, finca \n65957, inscripción 1ª. ---------------------------------------------------------------  \nVALOR.- DIECISÉIS MIL EUROS (16.000,00 €). -------------------  \n4. DESCRIPCIÓN.- ELEMENTO  NÚMERO  1.058.- Trastero \nseñalado  con  el  número  70,  situado  en  la  planta  sótano  1  del \nbloque  D,  del  conjunto  residencial  sito  en  Las  Rozas  de  Madrid \n(Madrid), en el número 2 bis de la calle Acanto. El acceso y la salida \nrodada se realiza a través de rampa de doble sentido que arrancan en \nel  exterior  por  la  calle  Acanto,  y  los  accesos  peatonales  interiores  se \nrealizan por ascensor y escaleras en cada portal. ---------------------------------  \nTiene una superficie útil aproximada de 6,49 metros cuadrados.   \nLinda:   derecha   entrando,   trastero   número   69;   izquierda, \ntrastero número 71; fondo, muro del edificio; y frente, pasillo común \nde acceso. -----------------------------------------------------------------------------   \n\n \n \n \n \n \n- Folio 6 - \n \n \n \nCUOTA.- 0,014445 %. ------------------------------------------------------   \nINSCRIPCIÓN.- Inscrita en el Registro de la Propiedad número \n1  de  Las  Rozas  de  Madrid,  al  tomo  3324,  libro  1331,  folio  99,  finca \n66010, inscripción 1ª. ---------------------------------------------------------------  \nVALOR.- SEIS MIL EUROS (6.000,00 €). -----------------------------  \nEn  adelante,  las  anteriores  fincas  registrales  con todos  sus \nanejos inseparables se definirán conjuntamente como el “Inmueble”.   \nTÍTULO: Le pertenecen a la VENDEDORA: --------------------------  \n-  en  cuanto  al  terreno,  le  pertenece  por  compra  en escritura \nautorizada  por  el  notario  de  Majadahonda  don  José  María  Suárez \nSánchez-Ventura el día 28 de junio de 2017, con el número 1.206 de \nprotocolo. ------------------------------------------------------------------------------   \nEn  escritura  autorizada  por  el  notario  de  Madrid,  don  Jorge \nSáez-Santurtún  Prieto,  el  día  tres  de  junio  de  dos mil  diecinueve, \nbajo el número 1.857 de protocolo. ---------------------------------------------   \nLa  obra  nueva  en  construcción  ha  sido  declarada  en escritura \nautorizada  por  el  notario  de  Madrid,  don  Jorge  Sáez-Santurtún \nPrieto,  el  día  veintinueve  de  julio  de  dos  mil  diecinueve,  bajo  el \nnúmero 2.656 de protocolo y rectificada por otra otorgada ante mí, el \ndía  9  de  agosto  de  2021,  con  el  número  4264  de  orden  de  mi \n\n \n \n \n \nprotocolo, en la que además se procedió a dividir horizontalmente el \nconjunto residencial. ----------------------------------------------------------------  \nLa VENDEDORA  manifiesta  que  las  obras  de  esta  promoción \nse han ejecutado conforme al proyecto realizado por los Arquitectos \nDON  DIEGO  ESCARIO  TRAVESEDO y DON  BENJAMIN  CANO \nDOMINGUEZ,  habiendo  obtenido  las  correspondientes  licencias y \nautorizaciones administrativas. ---------------------------------------------------   \nLa promoción en la que se haya enclavado el Inmueble cuenta \ncon Certificado Final de Obra en Acta de fecha 10 de noviembre de \n2021 autorizada por el Notario de Madrid, Don Gregorio Javier Sierra \nMartínez  con  el  número  5829  de  protocolo  de  su  protocolo  y \nhabiéndose  realizado  la  correspondiente  declaración  responsable \nurbanística  debidamente presentada  ante  el Ayuntamiento  de  Las \nRozas de Madrid, en fecha 8 de noviembre de 2021. Dicho Acta, se \nencuentra  debidamente  inscrito  en  el  Registro  de  la  Propiedad \ncorrespondiente. ---------------------------------------------------------------------  \nCARGAS y GRAVAMENES.- Prescindiendo de servidumbres y \nafecciones  fiscales,  los  Inmuebles  objeto  del  presente  contrato  se \nencuentran libres de cargas y gravámenes. ----------------------------------   \nLa  parcela  de  terreno  queda  afecta  al  pago  del  saldo  de  la \nliquidación definitiva de la cuenta del proyecto. -----------------------------   \nRespecto  a  la  hipoteca  que  grava  las  fincas  descritas  a  favor \nde  Bankia,  S.A.,  hoy Caixabank  S.A,  manifiesta  LA  VENDEDORA \nque se ha liquidado económicamente y que se tramitara la obtención \n\n \n \n \n \n \n- Folio 7 - \n \n \n \nde  su  escritura  de  cancelación,  todo  ello  bajo  su  más  estricta \nresponsabilidad.  Me  exhiben  certificaciones  acreditativas  de  saldo \ncero,  de  los  que  deduzco  fotocopias  que  dejo  incorporadas  a  la \npresente. ----------------------------------------------------------------------------------  \nINFORMACION  REGISTRAL.-  Respecto  a  la  información  a \nque se refiere el artículo 175 del Reglamento Notarial, hago constar \nque,  Esta  información  se  ha  solicitado  y  obtenido  por  telefax.  No \nobstante  lo  anterior,  informo  a  las  partes  de la  imposibilidad técnica \nde   acceder   telemáticamente   a   los   Libros   del   Registro   de   la \nPropiedad para comprobar la titularidad y el estado de cargas de los \ninmuebles  con  carácter  previo  a  la  firma  de  la  presente  escritura, \nsituación con la que los comparecientes se muestran conformes y se \ndeclaran satisfechos con la información resultante del título y de las \nnotas informativas remitidas por el Registro. ---------------------------------   \nHago,  además,  la  advertencia  de  la  posible  existencia  de \ndiscordancia entre la información registral y los Libros del Registro y \nque el estado de las cargas será el que resulte de éstos conforme al \nprincipio de prioridad. ---------------------------------------------------------------   \nAsimismo advierto yo, el Notario, que en todo caso prevalecerá \nla  situación  registral  existente  con  anterioridad  a  la  presentación  en \n\n \n \n \n \nel   Registro   de   la   copia  autorizada   de  esta  escritura.   Hago   la \nadvertencia del artículo 175 del Reglamento Notarial, y que el estado \nde las cargas será el que resulte de los Libros del Registro conforme \nal principio de prioridad. Dejo unidas a esta matriz copia de las Notas \nSimples  por  mí  obtenidas  del  Registro  de  la  Propiedad,  formando \nparte integrante de la misma a todos los efectos. ---------------------------   \nARRENDATARIOS  Y  OCUPANTES.-  Libre  de  arrendatarios  y \nocupantes. -----------------------------------------------------------------------------   \nREFERENCIA  CATASTRAL:  Manifiesta  la  parte  vendedora \nque  las  fincas  objeto  de  la  presente  escritura,  dada  su  reciente \nconstrucción, carecen todavía de referencia catastral independiente.   \nLa  referencia  catastral  de  la  finca  matriz  es  Inmueble  es \n7335102VK2873N0001DZ  según  consta  en  la  certificación  catastral \ndescriptiva  y  gráfica  que por  los procedimientos  seguros habilitados \ny de conformidad con el artículo 6.6 de la Resolución de la Dirección \nGeneral  del  Catastro  de  28  de  abril  de  2003  he  obtenido  de  la \nOficina  Virtual  del  Catastro  de  conformidad  con  el Real  Decreto \n45/2.007,  en  relación  con  el  artículo  171  del  Reglamento  Notarial  y \nque  yo,  el  Notario,  incorporo  a  esta  matriz  para  que  forme  parte \nintegrante de la misma y sea reproducida en sus traslados. -------------   \nYo,  el  Notario,  advierto  a  la parte  compradora  de  la obligación \nde realizar la correspondiente declaración ante la Gerencia Catastral \na efectos del cambio de titular catastral, conforme a lo dispuesto en \nel   artículo   13.2   del   Texto   refundido   de   la   Ley   del Catastro \n\n \n \n \n \n \n- Folio 8 - \n \n \n \nInmobiliario  (RDLeg.  1/2004,  de  5  de  marzo),  en  el plazo  de  dos \nmeses desde la fecha de otorgamiento de la presente escritura. ------  \nNORMAS DE COMUNIDAD: La Comunidad de Propietarios de \nlos edificios declarados, se regirá por las disposiciones de la Ley de \nPropiedad Horizontal -Ley 49 de 21 de Julio de 1.960- (en adelante \nL.P.H.)  y  las  Leyes  que  la  modifican,  por  las  disposiciones  del \nCódigo  Civil  y  la  Ley  Hipotecaria  que  le  sean  de  aplicación  y,  en \ncuanto    no    se    opongan    a    las    mismas,    por    las    NORMAS \nESTATUTARIAS   que   aparecen   en   la   reseñada   escritura de \ndeclaración  de  obra  nueva  y  constitución  en  régimen  de  propiedad \nhorizontal,  las  cuales  conoce  y  acepta  la  parte  compradora,  por \nhaber  estado  a  su  disposición  en  las  oficinas  de  la  sociedad \nVendedora. ----------------------------------------------------------------------------   \nGASTOS  DE  COMUNIDAD:  La  parte  vendedora  declara  estar \nal  corriente  en  el  pago  de  los  gastos  generales  de la  comunidad, \npara   lo   que   me   aporta   certificado   correspondiente   que   dejo \nincorporado,  manifestando  la  parte  compradora  estar  informada  de \ntal circunstancia, exonerando expresamente a la parte vendedora de \nla obligación de aportar la certificación preceptuada en el artículo 9º \ne)  de  la  Ley  8/1999  de  6  de  Abril  de  Propiedad  Horizontal,  que \n\n \n \n \n \nReforma  la  Ley  49/1960  de  21  de  Julio.  No  obstante lo  anterior,  la \nvendedora  responderá,  si  las  hubiere,  de  las  cantidades  que  se \nadeuden    a    la    Comunidad    de    Propietarios    que    estuviesen \ndevengadas  y  puestas  al  cobro  con  anterioridad  a  la  fecha  de \notorgamiento  de  esta  escritura,  siempre  que  su  pago  corresponda \nlegalmente a la VENDEDORA. ---------------------------------------------------  \n DECLARACIÓN RELATIVA A TANTEOS Y RETRACTOS.- El \nInmueble objeto de la presente Escritura no se halla incluido en área \nde  tanteo  o  retracto  en  los  términos  previstos  por la  legislación \nurbanística. ----------------------------------------------------------------------------   \nII.-   La   VENDEDORA   está   interesada   en   vender,   y   el \nCOMPRADOR  en  comprar,  el  Inmueble  descrito  en  el  expositivo \nanterior,  lo  que  llevan  a  efecto  mediante  el  otorgamiento  de  la \npresente Escritura, conforme a las siguientes, -------------------------------   \nESTIPULACIONES. ---------------------------------------------------------  \nPRIMERA.- COMPRAVENTA. --------------------------------------------  \nLa VENDEDORA  por  medio  de  su  representante  vende  y \ntransmite   el   Inmueble   descrito   en   la   parte   expositiva   de   ésta \nescritura, al  COMPRADOR,  que  lo  compra  y  adquiere,  en  pleno \ndominio, por   mitad   y   proindiviso   y   para   sus   respectivos \npatrimonios  privativos  como  cuerpo  cierto  y  por  precio  alzado \nresultando  jurídicamente  irrelevante  la  cabida  efectiva  a  los  efectos \nde fijación del precio, con cuantos derechos, anejos, usos, servicios \ny servidumbres sean inherentes al Inmueble y resulten del proyecto \n\n \n \n \n \n \n- Folio 9 - \n \n \n \nde  edificación  y  de  las  normas  urbanísticas  de  la  zona,  incluida  la \nparte proporcional que le corresponda en los elementos comunes del \nedificio y, en su caso, en las zonas comunes de la urbanización, en \nel estado físico, de conservación, calidades y cargas (inscritas en el \nRegistro  de  la  Propiedad)  y  en  la  situación  jurídica,  administrativa, \ngeotécnica,    medioambiental,    de    contaminación,    arqueológica, \nurbanística   y   de   licencias   en   la   que   se   encuentra, libre   de \narrendatarios y ocupantes. --------------------------------------------------------   \nEl COMPRADOR   declara   que   adquiere   el   Inmueble   en \nconcepto de vivienda habitual. ---------------------------------------------------   \nSEGUNDA.-  PRECIO  Y  FORMA  DE  PAGO El  precio  de  la \npresente  compraventa  asciende  a CUATROCIENTOS  SETENTA  Y \nSEIS  MIL  EUROS  (476.000,00  €), y  se  paga  por  el  COMPRADOR, \nde los que (i) CIENTO TREINTA Y SIETE MIL EUROS (137.000,00 \n€)   corresponden   a   la   vivienda;   (ii) DIECISIETE   MIL   EUROS \n(17.000,00 €) corresponden a la plaza de aparcamiento descrita bajo \nel   número   dos;   (iii) DIECISÉIS   MIL   EUROS   (16.000,00   €) \ncorresponden  a  la  plaza  de  aparcamiento  descrita  bajo  el  número \ntres  y SEIS  MIL  EUROS  (6.000,00  €)  corresponden  al  trastero \ndescrito. --------------------------------------------------------------------------------  \n\n \n \n \n \nA   ello   le   añadimos   la   cuota   total   de   IVA   devengado de \nCUARENTA  Y  SIETE  MIL  SEISCIENTOS  EUROS  (47.600,00  €) al \ntipo correspondiente. ----------------------------------------------------------------  \nTodo ello arroja una suma total y global por valor de compra e \nIVA  de QUINIENTOS  VEINTITRÉS  MIL  SEISCIENTOS  EUROS \n(523.600,00 €). -----------------------------------------------------------------------  \nDe conformidad con lo dispuesto en la Ley de Medidas para la \nPrevención  del  Fraude  Fiscal  y,  efectuadas  por  mí, el  Notario,  las \nadvertencias   legales   pertinentes,   los   otorgantes   manifiestan   y \nacreditan,   bajo   su   responsabilidad,   que   los   medios de   pago \nempleados son los siguientes: ---------------------------------------------------   \nI)   la   cantidad   de CIENTO   CUATRO   MIL   SETECIENTOS \nVEINTE   EUROS   (104.720,00   €)   se   confiesan   recibidos   con \nanterioridad  a  este  acto,  en  la  forma  y  fechas  indicadas  en  el \ndocumento unido a esta matriz en el apartado rubricado “desglose”, \ndonde   figuran   las   cuentas   de   origen   (titularidad   de   la   parte \ncompradora)   y   las   cuenta   de   destino   (titularidad   de   la   parte \nvendedora),  y  al  que  me  remito  en  cuanto  a  los  restantes  datos \nidentificativos para evitar repeticiones innecesarias. -----------------------   \n (II)  el  resto,  la  cantidad  de CUATROCIENTOS  DIECIOCHO \nMIL  OCHOCIENTOS  OCHENTA  EUROS  (418.880,00  €)  va  a  ser \nsatisfecha  en  el  día  de  hoy  por  la  compradora  a  la vendedora  y  se \npagan por   el   COMPRADOR   por   medio   de   cheque   bancario \nnominativo, a favor de la VENDEDORA, fotocopia del cual incorporo \n\n \n \n \n \n \n- Folio 10 - \n \n \n \na esta matriz.--------------------------------------------------------------------------   \nLa presente Escritura sirve como fiel carta de pago y eficaz \njustificante  de  la  recepción  por  la  VENDEDORA  del  referido \nimporte del precio, salvo buen fin del mencionado cheque. -------  \nTERCERA.- IMPUESTO SOBRE EL VALOR AÑADIDO. --------   \nLa VENDEDORA   manifiesta   que   la   transmisión   de   los \nInmuebles   por   medio   de   la   presente   escritura   constituye   una \n“primera  transmisión”  de  acuerdo  con  lo  establecido  en  el  artículo \n20.1.22º  de  la Ley  37/1992,  de  28  diciembre,  del  Impuesto  sobre el \nValor  Añadido.  En  consecuencia,  la  presente  compraventa  se  haya \nsujeta  y  no  exenta  al  Impuesto  sobre  el  Valor  Añadido  al  tipo  del \n10%. -------------------------------------------------------------------------------------   \nA  estos  efectos,  la VENDEDORA,  reconoce  haber  recibido  de \nla COMPRADORA el  importe  correspondiente  al  citado  impuesto, \nque  asciende  a CUARENTA  Y  SIETE  MIL  SEISCIENTOS  EUROS \n(47.600,00  €)  por  cuya  suma  la VENDEDORA  otorga  la  más  eficaz \ncarta de pago salvo buen fin. En cumplimiento de lo dispuesto en el \nReglamento de facturación (RD 1619/2012, de 30 de noviembre), la \nVENDEDORA  emitirá  la  correspondiente  factura  en  el día  de  hoy, \nmomento  en  que  se  produce  la  entrega  del  inmueble, remitiendo  la \n\n \n \n \n \nfactura al cliente por correo electrónico.         \nCUARTA.- GASTOS E IMPUESTOS. ----------------------------------   \nTodos  los  gastos  notariales  serán  satisfechos  por  la  parte \nVENDEDORA, si bien los aranceles registrales y gastos de gestoría \ne  impuestos  derivados  del  otorgamiento  de  la  presente  Escritura  y \ntransmisión  del  Inmueble  serán  satisfechos  por  el COMPRADOR, \nasí  como todos  los  que  se deriven  de  la  contratación de  servicios  y \nsuministros   propios   del   Inmueble,   salvo   el   Impuesto   sobre   el \nIncremento  del  Valor  de  los  Terrenos  de  Naturaleza Urbana,  que \nserá de cuenta de la VENDEDORA, si se devengare. --------------------  \nSerán por cuenta y cargo de la VENDEDORA, todos los gastos \ne  impuestos  que  origine  la  cancelación  de  la/s  hipoteca/s  que \ngrava/n el inmueble hipotecado. -------------------------------------------------  \nQUINTA.- IMPUESTO SOBRE BIENES INMUEBLES: -----------  \nAl  corriente  en  el  pago  de  todos  los  tributos  y  gastos  que  le \ncorresponden a la Vendedora. ---------------------------------------------------   \nEn  cuanto  al  Impuesto  sobre  Bienes  Inmuebles  del  año  en \ncurso yo, el Notario, advierto que la fecha de devengo del mismo es \nel   día   1   de   enero   del   presente   año,   independientemente   del \nmomento de pago, y que el sujeto pasivo del impuesto es el titular de \nlos inmuebles en dicha fecha. ----------------------------------------------------   \nAsimismo,  yo,  el  Notario,  hago  a  los  compa-recientes  las \nadvertencias  relativas  a  la  afección  de  los  inmuebles  al  pago  de  la \ntotalidad  de  la  cuota  tributaria  derivada  del  Impuesto  de  Bienes \n\n \n \n \n \n \n- Folio 11 - \n \n \n \nInmuebles,   a   las   responsabilidades   derivadas   de   la falta   de \npresentación,  o  a  la  presentación  irregular  de  las declaraciones  por \nel Impuesto. ---------------------------------------------------------------------------   \nLo  anterior  no  obstante,  la VENDEDORA  responderá,  si  los \nhubiere,  de  las  cantidades  que  legalmente  le  corresponde  y  se \nadeuden correspondientes a IBIS pendientes. ------------------------------   \nSEXTA.- En cumplimiento de lo dispuesto en la Ley 38/1999 de \nOrdenación  de  la  Edificación,  la VENDEDORA  tiene  suscrito  un \nseguro  decenal,  que  cubre  las  garantías  exigidas  por  el  artículo \n19.1.c)  de  la  Ley  38/1999  de  5  de  Noviembre  de  Ordenación  de  la \nEdificación. ----------------------------------------------------------------------------   \nSEPTIMA.- Las Partes acuerdan expresamente que la entrega \ny la transmisión de la propiedad del Inmueble por la VENDEDORA al \nCOMPRADOR  se produce  mediante  el  otorgamiento de  la presente \nEscritura, de conformidad con el artículo 1.462, párrafo segundo, del \nCódigo  Civil,  tomando  posesión  de  la  misma  la  parte  compradora, \nque declara conocer su situación y estado, y da su conformidad por \nhaberla examinado con anterioridad.-------------------------------------------   \nAsimismo el COMPRADOR manifiesta que con carácter previo \nal otorgamiento de la presente escritura, la VENDEDORA ha puesto \n\n \n \n \n \na  su  disposición  el  resto  de  la  documentación  a  la que  se  hace \nreferencia  Real  Decreto  515/1989  de  21  de  Abril,  sobre  protección \nde  los  consumidores  en  cuanto  a  la  información  a  suministrar  en  la \ncompraventa,  así  como  el  resto  de  información  exigida  por  la \nnormativa autonómica o sectorial de aplicación. ----------------------------   \nAsimismo  la  COMPRADORA  manifiesta  que  ha  recibido  de  la \nVENDEDORA un ejemplar del “Manual de la vivienda”. ------------------   \nOCTAVA.-  CERTIFICADO  DE  EFICIENCIA  ENERGETICA.- \nLos  comparecientes,  en  los  conceptos  en  que  intervienen,  dejan \nconstancia  a  los  efectos  del  Real  Decreto  390/2021,  de  1  de  junio, \npor  el  que  se  aprueba el  procedimiento  básico  para la  certificación \nde la eficiencia energética de los edificios, del establecimiento de las \ncondiciones técnicas y administrativas que deben regir la realización \nde  las  certificaciones  de  eficiencia  energéticas  de  los  edificios  y  la \ncorrecta transmisión de los resultados obtenidos en este proceso de \ncertificación   energéticas   a   los   usuarios   y   propietarios   de   los \nmismos. Los señores comparecientes, según actúan, me exhiben el \ncorrespondiente  Certificado  de  Eficiencia  Energética,  del  cual,  hago \ncopia,  con  efectos  de  testimonio  de  la  hoja  en  donde  aparece  sur \ncorrespondiente registro.-----------------------------------------------------------  \nNOVENA.-    El    COMPRADOR    se    obliga    a    permitir    al \ndepartamento  de  urbanismo  del  Ayuntamiento  de  Las  Rozas  de \nMadrid, o al organismo correspondiente que lo sustituya, el acceso a \nsu vivienda (incluidos anejos como trasteros y garajes), para que, en \n\n \n \n \n \n \n- Folio 12 - \n \n \n \nsu  caso,  puedan  comprobar  la  veracidad  de  lo  acreditado  por  la \nVENDEDORA   en   la   Declaración   Responsable   para   la   Primera \nOcupación  de  la  edificación  mediante  una  visita  de inspección,  en \ncumplimiento de  las  ordenanzas  reguladoras  y  demás normativa de \naplicación.   Asimismo,   el   Comprador   deberá   advertir de   esta \nobligación a los futuros ocupantes y/o adquirentes de los inmuebles \nobjeto de esta compraventa, de lo cual deberán dejar constancia en \nlos contratos de arrendamiento o escrituras de compraventa o similar \ndocumento,  salvo  que  el  Ayuntamiento  de  Las  Rozas  de  Madrid \nhubiera  resuelto  y  archivado  el  procedimiento  de  comprobación,  y/o \nhubiese transcurrido el plazo máximo establecido para la finalización \ndel mismo. -----------------------------------------------------------------------------  \nDECIMA.- Se deja constancia en este acto, y consiente la parte \ncompradora,   que   la   comunidad   de   propietarios   del   conjunto \ninmobiliario del cual forman parte las fincas objeto de esta escritura, \ny  estas  últimas  según  sus  respectivas  cuotas  de  participación  en  la \nindicada  comunidad,  queda  obligada  al  pago  canon  que  sea  de \naplicación  de  conformidad  con  lo  dispuesto  en  el  artículo  112  del \ntexto refundido de la Ley de Aguas, y en Resolución de 8 de julio de \n2.011  de  la  Confederación  Hidrográfica  del  Tajo,  sobre  revisión  de \n\n \n \n \n \ncánones  de  utilización  de  los  bienes  de  dominio  público  hidráulico, \nsiendo  la  imposición  de  esta  exacción  actualizada  anualmente. \nDicho  canon  deriva  de  la  concesión  realizada  por  la  Confederación \nHidrográfica  del Tajo, de  la  cual  era beneficiaria la  parte  vendedora \ncomo  titular  de  la  finca  matriz  de  la  propiedad  horizontal,  por  razón \nde  la  ocupación  de  los  terrenos  de  dominio  público hidráulico,  17 \nmetros  cuadrados  en  zona  de  dominio  público  hidráulico  de  Arroyo \ndel Pardo. ------------------------------------------------------------------------------  \nEllo  resulta  de  Resolución  dictada  por  el  Comisario  de  Aguas \nde la delegación del Presidente, don Javier Diaz Regañón Jiménez, \nel  día  28  de  septiembre  de  2.021.  Hace  constar  la  parte  vendedora \nque  las  actuaciones  indicadas  en  la  citada  resolución  han  sido \ncompletamente ejecutadas. -------------------------------------------------------  \nDECIMO  PRIMERA.  Con  la  firma  de  la  presente  escritura \nopera la tradición instrumental de entrega de la finca por parte de la \nSociedad Vendedora a la Parte Compradora, lo que conlleva adquirir \nsu propiedad por ésta última. -----------------------------------------------------  \nCancelación  de  aval.- Como  consecuencia  de  lo  anterior,  se \ndan  por  cumplidas  todas  las  obligaciones  que  garantizaba/n  el/los \naval/es  entregado/s  en  su  día  a  la  Parte  Compradora,  en  concreto, \nlas cantidades abonadas a cuenta del precio de la compraventa que \nse  formaliza  en  este  acto,  y  por  tal  motivo,  la  parte  compradora \nconsiente   que   dicho/s   avales   sean   cancelado/s   por   la   entidad \ngarante  que  los  emitió,  renunciando  dicha  parte  compradora  a \n\n \n \n \n \n \n- Folio 13 - \n \n \n \ncualquier  acción  a  su  favor  que  traiga  causa  de  el/los  mismo/s  y \ndeclarando  haber  devuelto  a  la  entidad  vendedora  dichos  avales \noriginales,  de  los que yo, el  Notario,  deduzco  fotocopias  idénticas a \nsu   original   e   incorporo   a   la   presente   escritura.   Asimismo   la \nCompradora  autoriza  en  este  acto  a  la  Vendedora  para  poder \npresentar  una  copia  de  la  presente  escritura  a  “BANKIA,  S.A.---” \npara acreditar dicha renuncia y proceder a la cancelación del aval. ---  \nDECIMO    SEGUNDA.-    REQUERIMIENTO    AL    NOTARIO \nRESPECTO   DEL   IMPUESTO   SOBRE   EL   INCREMENTO   DE \nVALOR DE LOS TERRENOS DE NATURALEZA URBANA. ----------   \nA  los  efectos  de  levantar  el  cierre  registral  previsto  en  el  art. \n254-5  de  la  Ley  Hipotecaria  mientras  no  se  acredite  el  pago  o \npresentación  del  Impuesto  sobre  el  Incremento  de  Valor  de  los \nTerrenos  de  Naturaleza  Urbana,  la  parte  adquirente me  requiere \npara  que  remita  al  Ayuntamiento  correspondiente  copia  simple  de \nesta escritura, con el valor de la comunicación a que se refiere el art. \n110-6-b de la Ley reguladora de las Haciendas Locales. -----------------   \nDaré cumplimiento a este requerimiento mediante correo postal \ncertificado con acuse de recibo, o mediante la entrega por ventanilla \nen  dicho  Ayuntamiento  o  mediante  remisión  por  correo  corporativo \n\n \n \n \n \ncon  firma  digital  al  Ayuntamiento  en  caso  de  tener suscrito  el \nconvenio de colaboración telemática con dicho Ayuntamiento. ---------   \nAdjuntaré a la presente escritura, mediante diligencia posterior, \nel justificante de la referida comunicación a efectos de lo previsto en \nel art. 254-5 de la Ley Hipotecaria. ----------------------------------------------   \nDECIMO  TERCERA.-  COMUNICACIÓN  A  LA  COMUNIDAD \nDE PROPIETARIOS.- La VENDEDORA pondrá en conocimiento del \nSecretario  de  la  Comunidad  de  Propietarios  del  edificio  donde  se \nubica  el  Inmueble  el  cambio  de  titularidad  del  mismo  a  favor  del \nCOMPRADOR. -----------------------------------------------------------------------   \nDECIMO     CUARTA.-     PROTECCIÓN     DE     DATOS     DE \nCARÁCTER  PERSONAL  Y  PREVENCIÓN  DEL  BLANQUEO  DE \nCAPITALES Y FINANCIACIÓN DEL TERRORISMO \nLa  VENDEDORA  informa  al COMPRADOR que  los  datos  de \ncarácter  personal  que  se  soliciten  y  proporcionen  en  el  presente \ndocumento, así como aquellos datos que se hayan obtenido durante \nla   relación   nacida   entre   las   partes,   serán   gestionados   por   la \nsociedad   Neinor   Homes,   S.L.U.   (en   adelante,   “Neinor”)   como \nresponsable  de  los  mismos,  con  CIF  B-95786562  y  domicilio  social \nen  la  calle  Ercilla  24,  48011  Bilbao  para  (i)  el  correcto  desarrollo  y \nejecución  de  la  relación  que  haya  nacido  o  pudiera nacer  entre  las \npartes,   y   (ii)   el   cumplimiento   de   las   exigencias   y finalidades \nestablecidas  por  las  leyes,  a  título  enunciativo  pero  no  limitativo, \nobligaciones  establecidas  por  las normas  en  materia  de  Prevención \n\n \n \n \n \n \n- Folio 14 - \n \n \n \ndel   Blanqueo   de   Capitales   y   Financiación   del   Terrorismo,   y/o \ncomunicación  y  consulta  de  datos  a  la  Central  de  Información  de \nRiesgos   de   Banco   de   España,   en   los   supuestos   legalmente \nestablecidos.  Para  poder  prestarle  estos  servicios,  es  posible  que \nnecesitemos  compartir  sus  datos  personales  con  otras  empresas \ncon algunos de nuestros colaboradores externos. -------------------------   \nEl   COMPRADOR   podrá   ejercer   sus   derechos   de   acceso, \nrectificación,   supresión,   oposición,   limitación   del   tratamiento   y \nportabilidad  sobre  sus  datos  personales  mediante  el  envío  de  una \ncomunicación  escrita  a  Neinor  en  la  que  adjunte  una  copia  de  su \nDNI/pasaporte.  Podrá  hacer  llegar  tal  comunicación (a)  mediante \ncorreo postal a la atención del Delegado de Protección de Datos y a \nla  dirección  antes  indicada,  o  b)  mediante  el  envío  de  un  correo \nelectrónico a la siguiente dirección: lopd@neinorhomes.com  \nDÉCIMO QUINTA. COMUNICACIONES. -----------------------------  \nTodas  las  comunicaciones  que  las  Partes  deban  efectuarse \nsobre  cualquier  cuestión  relacionada  con  la  presente  Escritura,  se \nrealizarán por escrito y se enviarán por correo certificado con acuse \nde  recibo  o  burofax.  Las  Partes  acuerdan  expresamente  que  no \nserán  válidas  ni  se  darán  por  realizadas  aquellas  notificaciones \n\n \n \n \n \nremitidas  por  fax  o  correo  electrónico.  Las  Partes designan  las \nsiguientes  direcciones  y  personas  de  contacto  para la  recepción  de \nnotificaciones: -------------------------------------------------------------------------   \n-Para la VENDEDORA: -----------------------------------------------------  \nContacto: Departamento Legal. -------------------------------------------  \nDomicilio  a  efectos  de  notificaciones:  “NEINOR  SUR,  S.A.”, \nMadrid, Paseo de la Castellana 20, 5ª planta 28046. ----------------------  \nPara el COMPRADOR: -----------------------------------------------------  \nPersona de contacto: la parte compradora. ---------------------------  \nDomicilio    a    efectos    de    notificaciones:    el    fijado    en    la \ncomparecencia de esta escritura. -----------------------------------------------  \nSe   entenderán   bien   hechas   y   surtirán   efectos   plenos   las \nnotificaciones  practicadas  en  los  domicilios  anteriores.  Las  Partes \npodrán  cambiar  sus  direcciones,  notificándolo  con  antelación  a  la \notra   por   escrito,   en   la   forma   y   a   las   direcciones   indicadas \nanteriormente. ------------------------------------------------------------------------   \nDECIMO    SEXTA.    JURISDICCIÓN    LEY    APLICABLE    Y \nSOMETIMIENTO AL FUERO. ---------------------------------------------------   \nLa  presente  Escritura  se  regirá  por  la  legislación española \ncomún,  con  renuncia  expresa  a  cualquier  otro  fuero que  pudiera \ncorresponderles.  Al  amparo  de  su  autonomía  de  la  voluntad,  las \nPartes  excluyen  expresamente  la  aplicación  de  las  normas  forales \n(de naturaleza dispositiva) en materia de obligaciones y contratos. ---  \nPara  la  resolución  de  cualquier  conflicto  que  pudiera  surgir  en \n\n \n \n \n \n \n- Folio 15 - \n \n \n \nel  ámbito  de  la  interpretación  y/o  ejecución  de  los  términos  de  esta \nEscritura,  los  contratantes,  renunciando  expresamente  al  fuero  que \npudiera   serles   propio,   se   someten,  de  forma   expresa,   clara  y \nterminante  a  la  jurisdicción  de  los  Juzgados  y  Tribunales  del  lugar \ndonde se ubica el inmueble objeto de esta Escritura. ---------------------  \n=== OTORGAMIENTO Y AUTORIZACIÓN === \nAsí lo dicen y otorgan los señores comparecientes. ----------------  \nLes hice de palabra las demás reservas y advertencias legales.  \nProtección  de  datos  de  carácter  personal: De  conformidad \ncon  lo  previsto  en  el  Reglamento  General  de  Protección  de  Datos \n(RGPD), se informa de que los datos personales de los intervinientes \nserán  tratados  por  el  Notario  autorizante,  cuyos  datos  de  contacto \nfiguran  en el presente  documento.  Si  se facilitan datos de  personas \ndistintas de los intervinientes, dichos intervinientes son responsables \nde haberles informado previamente de todo lo previsto en el artículo \n14 del RGPD. -------------------------------------------------------------------------  \nLa  finalidad  del  tratamiento  es  realizar  las  actividades  propias \nde   la   función   pública   notarial   de   las   que   puede   derivarse   la \nexistencia  de  decisiones  automatizadas,  autorizadas  por  la  Ley, \nllevadas  a  cabo  por  las  Administraciones  Públicas  competentes, \n\n \n \n \n \nincluida la elaboración de perfiles para la prevención e investigación \nen   materia   de   prevención   del   blanqueo   de   capitales y   de   la \nfinanciación del terrorismo. Asimismo, los datos serán tratados por la \nNotaría para la facturación y gestión de clientes. ---------------------------  \nA  los  efectos  indicados,  se  realizarán  las  comunicaciones  de \ndatos   previstas   en   la   Ley   a   las   Administraciones   Públicas \ncompetente incluyendo el acceso común desde las Notarías, con los \nfines    antes    descritos,    a    documentos    identificativos    de    los \nintervinientes. -------------------------------------------------------------------------  \nLos  datos  se  conservarán  durante  los  plazos  previstos  en  la \nnormativa  aplicable  y,  en  cualquier  caso,  mientras se  mantenga  la \nrelación  con  el  interesado.  Los  intervinientes  tienen  derecho  a \nsolicitar  el  acceso  a  sus  datos  personales,  su  rectificación,  su \nsupresión, su portabilidad y la limitación de su tratamiento, así como \noponerse   a   este.   Frente   a   cualquier   eventual   vulneración   de \nderechos,  puede   presentarse   una   reclamación   ante   la  Agencia \nEspañola  de  Protección  de  Datos,  cuyos  datos  de  contacto  son \naccesibles en www.aepd.es. ------------------------------------------------------  \nLes  advertí  del  derecho  que  tienen  a  leer  esta  escritura  por  sí \nmismos, del que no usaron, haciéndolo yo, el Notario, íntegramente \ny en alta voz, prestando su consentimiento los comparecientes, que \nfirman conmigo. ----------------------------------------------------------------------  \nY  yo,  el  Notario,  de  que  el  consentimiento  ha  sido libremente \nprestado  y  de  que  el  otorgamiento  se  adecúa  a  la  legalidad  y  a  la \n\n \n \n \n \n \n- Folio 16 - \n \n \n \nvoluntad  debidamente  informada  de  los  otorgantes  y de  todo  lo \ndemás   contenido   en   este   instrumento   público   extendido   sobre \ndieciséis folios de papel de uso exclusivamente notarial, el presente \ny los quince anteriores en orden correlativo, de la misma serie, DOY \nFE. ---------------------------------------------------------------------------------------  \nEstán  las  firmas  de  los  señores  comparecientes.  Firmado, \nsignado,   rubricado,   FERNANDO   SANCHEZ-ARJONA   BONILLA. \nEstá el sello oficial de su Notaría. -----------------------------------------------  \nAPLICACIÓN.ARANCEL. Disposición Adicional 3º - Ley 8/1989- de 13-04-89. ------------------------------   \nBase de Cálculo:0,00 €. Arancel Aplicable, números: ---------------------------------------------------------------  \nDERECHOS ARANCELARIOS:                                                                 (I.V.A. excluído). ----------------------   \nSIGUEN DOCUMENTOS UNIDOS \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n. ------------------------------------------------------------------------------------------- . \n\n \n \n \n \n. ------------------------------------------------------------------------------------------ .\n\n \n \n \n \n \n- Folio 17 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 18 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 19 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 20 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 21 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 22 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 23 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 24 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 25 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 26 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 27 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 28 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 29 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 30 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 31 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 32 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 33 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 34 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 35 - \n \n \n \n\n \n \n \n \n\n \n \n \n \n \n- Folio 36 -",
+          "metrics": {
+            "duration": 241,
+            "size": 51609,
+            "method": "pdf-parse-direct"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "escritura",
+            "confidence": 0.9,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for escritura"
+          },
+          "metrics": {
+            "duration": 0,
+            "confidence": 0.9
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "vendedor_nombre": "NEINOR SUR S.A.U.",
+            "comprador_nombre": "SERGIO ARIAS FERNANDEZ y ROCIO SELTZER BERCOVICH",
+            "direccion_inmueble": "Las Rozas de Madrid (Madrid), en el número 2 bis de la calle Acanto",
+            "precio_venta": 523600,
+            "fecha_escritura": "2022-01-05",
+            "notario_nombre": "FERNANDO SANCHEZ-ARJONA BONILLA",
+            "referencia_catastral": "7335102VK2873N0001DZ",
+            "superficie_m2": null,
+            "category": "vivienda",
+            "vendedor_dni": "A-14646350",
+            "vendedor_direccion": "Madrid, Paseo de la Castellana 20, 5ª planta 28046 Madrid",
+            "vendedor_estado_civil": null,
+            "vendedor_nacionalidad": "española",
+            "vendedor_profesion": null,
+            "comprador_dni": "51.086.274-P y 54.479.188-P",
+            "comprador_direccion": "Las Rozas de Madrid, calle Acanto 2 bis",
+            "comprador_estado_civil": "casados",
+            "comprador_nacionalidad": null,
+            "comprador_profesion": "ingenieros",
+            "tipo_inmueble": "vivienda",
+            "superficie_util": 95.85,
+            "numero_habitaciones": null,
+            "numero_banos": null,
+            "planta": "SEGUNDA",
+            "orientacion": null,
+            "descripcion_inmueble": "VIVIENDA LETRA B situada en planta SEGUNDA del portal 10 del bloque D, del conjunto residencial sito en Las Rozas de Madrid (Madrid), en el número 2 bis de la calle Acanto.",
+            "registro_propiedad": "Registro de la Propiedad número 1 de Las Rozas de Madrid",
+            "tomo": "3322",
+            "libro": "1329",
+            "folio": "159",
+            "finca": "65816",
+            "inscripcion": "1ª",
+            "moneda": "EUR",
+            "forma_pago": "CIENTO CUATRO MIL SETECIENTOS VEINTE EUROS (104.720,00 €) se confiesan recibidos con anterioridad a este acto, en la forma y fechas indicadas en el documento unido a esta matriz en el apartado rubricado “desglose”. CUATROCIENTOS DIECIOCHO MIL OCHOCIENTOS OCHENTA EUROS (418.880,00 €) va a ser satisfecha en el día de hoy por la compradora a la vendedora y se pagan por el COMPRADOR por medio de cheque bancario nominativo, a favor de la VENDEDORA",
+            "precio_en_letras": "QUINIENTOS VEINTITRÉS MIL SEISCIENTOS EUROS",
+            "impuestos_incluidos": true,
+            "gastos_a_cargo_comprador": [
+              "aranceles registrales",
+              "gastos de gestoría",
+              "impuestos derivados del otorgamiento de la presente Escritura y transmisión del Inmueble",
+              "todos los que se deriven de la contratación de servicios y suministros propios del Inmueble"
+            ],
+            "gastos_a_cargo_vendedor": [
+              "gastos notariales",
+              "Impuesto sobre el Incremento del Valor de los Terrenos de Naturaleza Urbana, si se devengare",
+              "todos los gastos e impuestos que origine la cancelación de la/s hipoteca/s que grava/n el inmueble hipotecado"
+            ],
+            "cargas_existentes": [
+              "afección al pago del saldo de la liquidación definitiva de la cuenta del proyecto"
+            ],
+            "hipotecas_pendientes": "Respecto a la hipoteca que grava las fincas descritas a favor de Bankia, S.A., hoy Caixabank S.A, manifiesta LA VENDEDORA que se ha liquidado económicamente y que se tramitara la obtención de su escritura de cancelación",
+            "servidumbres": "Prescindiendo de servidumbres",
+            "libre_cargas": false,
+            "condicion_suspensiva": false,
+            "condiciones_especiales": [],
+            "clausulas_particulares": [],
+            "fecha_entrega": null,
+            "entrega_inmediata": false,
+            "estado_conservacion": null,
+            "inventario_incluido": null,
+            "notario_numero_colegiado": null,
+            "notaria_direccion": "C/Padre Damián, nº40-1º 28036 - MADRID",
+            "protocolo_numero": null,
+            "autorizacion_notarial": false,
+            "valor_catastral": null,
+            "coeficiente_participacion": "0,240761 %",
+            "itp_aplicable": null,
+            "base_imponible_itp": null,
+            "inscripcion_registro": null
+          },
+          "metrics": {
+            "duration": 9136,
+            "fields_count": 58
+          }
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "vendedor_nombre": "NEINOR SUR S.A.U.",
+              "comprador_nombre": "SERGIO ARIAS FERNANDEZ y ROCIO SELTZER BERCOVICH",
+              "direccion_inmueble": "Las Rozas de Madrid (Madrid), en el número 2 bis de la calle Acanto",
+              "precio_venta": 523600,
+              "fecha_escritura": "2022-01-05",
+              "notario_nombre": "FERNANDO SANCHEZ-ARJONA BONILLA",
+              "referencia_catastral": "7335102VK2873N0001DZ",
+              "superficie_m2": null,
+              "category": "vivienda",
+              "vendedor_dni": "A-14646350",
+              "vendedor_direccion": "Madrid, Paseo de la Castellana 20, 5ª planta 28046 Madrid",
+              "vendedor_estado_civil": null,
+              "vendedor_nacionalidad": "española",
+              "vendedor_profesion": null,
+              "comprador_dni": "51.086.274-P y 54.479.188-P",
+              "comprador_direccion": "Las Rozas de Madrid, calle Acanto 2 bis",
+              "comprador_estado_civil": "casados",
+              "comprador_nacionalidad": null,
+              "comprador_profesion": "ingenieros",
+              "tipo_inmueble": "vivienda",
+              "superficie_util": 95.85,
+              "numero_habitaciones": null,
+              "numero_banos": null,
+              "planta": "SEGUNDA",
+              "orientacion": null,
+              "descripcion_inmueble": "VIVIENDA LETRA B situada en planta SEGUNDA del portal 10 del bloque D, del conjunto residencial sito en Las Rozas de Madrid (Madrid), en el número 2 bis de la calle Acanto.",
+              "registro_propiedad": "Registro de la Propiedad número 1 de Las Rozas de Madrid",
+              "tomo": "3322",
+              "libro": "1329",
+              "folio": "159",
+              "finca": "65816",
+              "inscripcion": "1ª",
+              "moneda": "EUR",
+              "forma_pago": "CIENTO CUATRO MIL SETECIENTOS VEINTE EUROS (104.720,00 €) se confiesan recibidos con anterioridad a este acto, en la forma y fechas indicadas en el documento unido a esta matriz en el apartado rubricado “desglose”. CUATROCIENTOS DIECIOCHO MIL OCHOCIENTOS OCHENTA EUROS (418.880,00 €) va a ser satisfecha en el día de hoy por la compradora a la vendedora y se pagan por el COMPRADOR por medio de cheque bancario nominativo, a favor de la VENDEDORA",
+              "precio_en_letras": "QUINIENTOS VEINTITRÉS MIL SEISCIENTOS EUROS",
+              "impuestos_incluidos": true,
+              "gastos_a_cargo_comprador": [
+                "aranceles registrales",
+                "gastos de gestoría",
+                "impuestos derivados del otorgamiento de la presente Escritura y transmisión del Inmueble",
+                "todos los que se deriven de la contratación de servicios y suministros propios del Inmueble"
+              ],
+              "gastos_a_cargo_vendedor": [
+                "gastos notariales",
+                "Impuesto sobre el Incremento del Valor de los Terrenos de Naturaleza Urbana, si se devengare",
+                "todos los gastos e impuestos que origine la cancelación de la/s hipoteca/s que grava/n el inmueble hipotecado"
+              ],
+              "cargas_existentes": [
+                "afección al pago del saldo de la liquidación definitiva de la cuenta del proyecto"
+              ],
+              "hipotecas_pendientes": "Respecto a la hipoteca que grava las fincas descritas a favor de Bankia, S.A., hoy Caixabank S.A, manifiesta LA VENDEDORA que se ha liquidado económicamente y que se tramitara la obtención de su escritura de cancelación",
+              "servidumbres": "Prescindiendo de servidumbres",
+              "libre_cargas": false,
+              "condicion_suspensiva": false,
+              "condiciones_especiales": [],
+              "clausulas_particulares": [],
+              "fecha_entrega": null,
+              "entrega_inmediata": false,
+              "estado_conservacion": null,
+              "inventario_incluido": null,
+              "notario_numero_colegiado": null,
+              "notaria_direccion": "C/Padre Damián, nº40-1º 28036 - MADRID",
+              "protocolo_numero": null,
+              "autorizacion_notarial": false,
+              "valor_catastral": null,
+              "coeficiente_participacion": "0,240761 %",
+              "itp_aplicable": null,
+              "base_imponible_itp": null,
+              "inscripcion_registro": null
+            }
+          },
+          "metrics": {
+            "duration": 3
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 100,
+            "missingFields": [],
+            "extraFields": [
+              "vendedor_profesion",
+              "comprador_profesion",
+              "planta",
+              "orientacion",
+              "descripcion_inmueble",
+              "precio_en_letras",
+              "impuestos_incluidos",
+              "gastos_a_cargo_comprador",
+              "gastos_a_cargo_vendedor",
+              "cargas_existentes",
+              "condiciones_especiales",
+              "clausulas_particulares",
+              "fecha_entrega",
+              "entrega_inmediata",
+              "estado_conservacion",
+              "inventario_incluido",
+              "notario_numero_colegiado",
+              "notaria_direccion",
+              "protocolo_numero",
+              "autorizacion_notarial",
+              "coeficiente_participacion",
+              "base_imponible_itp",
+              "inscripcion_registro"
+            ]
+          },
+          "metrics": {
+            "duration": 2,
+            "compatibility_score": 100
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 62
+          },
+          "metrics": {
+            "duration": 1
+          }
+        }
+      },
+      "total_time": 9384,
+      "document_type": "escritura",
+      "extracted_data": {
+        "vendedor_nombre": "NEINOR SUR S.A.U.",
+        "comprador_nombre": "SERGIO ARIAS FERNANDEZ y ROCIO SELTZER BERCOVICH",
+        "direccion_inmueble": "Las Rozas de Madrid (Madrid), en el número 2 bis de la calle Acanto",
+        "precio_venta": 523600,
+        "fecha_escritura": "2022-01-05",
+        "notario_nombre": "FERNANDO SANCHEZ-ARJONA BONILLA",
+        "referencia_catastral": "7335102VK2873N0001DZ",
+        "superficie_m2": null,
+        "category": "vivienda",
+        "vendedor_dni": "A-14646350",
+        "vendedor_direccion": "Madrid, Paseo de la Castellana 20, 5ª planta 28046 Madrid",
+        "vendedor_estado_civil": null,
+        "vendedor_nacionalidad": "española",
+        "vendedor_profesion": null,
+        "comprador_dni": "51.086.274-P y 54.479.188-P",
+        "comprador_direccion": "Las Rozas de Madrid, calle Acanto 2 bis",
+        "comprador_estado_civil": "casados",
+        "comprador_nacionalidad": null,
+        "comprador_profesion": "ingenieros",
+        "tipo_inmueble": "vivienda",
+        "superficie_util": 95.85,
+        "numero_habitaciones": null,
+        "numero_banos": null,
+        "planta": "SEGUNDA",
+        "orientacion": null,
+        "descripcion_inmueble": "VIVIENDA LETRA B situada en planta SEGUNDA del portal 10 del bloque D, del conjunto residencial sito en Las Rozas de Madrid (Madrid), en el número 2 bis de la calle Acanto.",
+        "registro_propiedad": "Registro de la Propiedad número 1 de Las Rozas de Madrid",
+        "tomo": "3322",
+        "libro": "1329",
+        "folio": "159",
+        "finca": "65816",
+        "inscripcion": "1ª",
+        "moneda": "EUR",
+        "forma_pago": "CIENTO CUATRO MIL SETECIENTOS VEINTE EUROS (104.720,00 €) se confiesan recibidos con anterioridad a este acto, en la forma y fechas indicadas en el documento unido a esta matriz en el apartado rubricado “desglose”. CUATROCIENTOS DIECIOCHO MIL OCHOCIENTOS OCHENTA EUROS (418.880,00 €) va a ser satisfecha en el día de hoy por la compradora a la vendedora y se pagan por el COMPRADOR por medio de cheque bancario nominativo, a favor de la VENDEDORA",
+        "precio_en_letras": "QUINIENTOS VEINTITRÉS MIL SEISCIENTOS EUROS",
+        "impuestos_incluidos": true,
+        "gastos_a_cargo_comprador": [
+          "aranceles registrales",
+          "gastos de gestoría",
+          "impuestos derivados del otorgamiento de la presente Escritura y transmisión del Inmueble",
+          "todos los que se deriven de la contratación de servicios y suministros propios del Inmueble"
+        ],
+        "gastos_a_cargo_vendedor": [
+          "gastos notariales",
+          "Impuesto sobre el Incremento del Valor de los Terrenos de Naturaleza Urbana, si se devengare",
+          "todos los gastos e impuestos que origine la cancelación de la/s hipoteca/s que grava/n el inmueble hipotecado"
+        ],
+        "cargas_existentes": [
+          "afección al pago del saldo de la liquidación definitiva de la cuenta del proyecto"
+        ],
+        "hipotecas_pendientes": "Respecto a la hipoteca que grava las fincas descritas a favor de Bankia, S.A., hoy Caixabank S.A, manifiesta LA VENDEDORA que se ha liquidado económicamente y que se tramitara la obtención de su escritura de cancelación",
+        "servidumbres": "Prescindiendo de servidumbres",
+        "libre_cargas": false,
+        "condicion_suspensiva": false,
+        "condiciones_especiales": [],
+        "clausulas_particulares": [],
+        "fecha_entrega": null,
+        "entrega_inmediata": false,
+        "estado_conservacion": null,
+        "inventario_incluido": null,
+        "notario_numero_colegiado": null,
+        "notaria_direccion": "C/Padre Damián, nº40-1º 28036 - MADRID",
+        "protocolo_numero": null,
+        "autorizacion_notarial": false,
+        "valor_catastral": null,
+        "coeficiente_participacion": "0,240761 %",
+        "itp_aplicable": null,
+        "base_imponible_itp": null,
+        "inscripcion_registro": null
+      }
+    }
+  ]
+}

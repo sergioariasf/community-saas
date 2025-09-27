@@ -13,7 +13,7 @@ import { ForoContent } from './ForoContent';
 
 export default async function ForoPage() {
   try {
-    const user = await getCachedLoggedInVerifiedSupabaseUser();
+    const { user } = await getCachedLoggedInVerifiedSupabaseUser();
     return <ForoContent user={user} />;
   } catch (error) {
     redirect('/auth?mode=login');

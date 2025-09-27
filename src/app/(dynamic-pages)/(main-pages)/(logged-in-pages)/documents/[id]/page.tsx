@@ -540,7 +540,7 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
                         };
 
                         // Ya no necesitamos metadata, la plantilla usa directamente escrituraData
-                        const escrituraMetadata = null;
+                        const escrituraMetadata = undefined;
                         
                         return (
                           <EscrituraCompraventaDetailView

@@ -27,6 +27,6 @@ CONTEXTO TÉCNICO:
 - Agente: factura_extractor_v2
 - Tabla destino: extracted_invoices  
 - Campos obligatorios: provider_name, client_name, amount, invoice_date
-- Generado automáticamente: 2025-09-24
+- Generado automáticamente: 2025-09-27
 
 IMPORTANTE: Devuelve SOLO el JSON, sin texto adicional.

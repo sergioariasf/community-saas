@@ -13,37 +13,7 @@ INSTRUCCIONES:
 
 CAMPOS A EXTRAIR:
 {
-    "fecha": "2025-01-15", // Fecha del comunicado
-    "comunidad": "texto específico", // Nombre de la comunidad
-    "remitente": "texto específico", // Remitente
-    "resumen": "texto específico", // Resumen del contenido
-    "category": "comercial", // Categoría
-    "asunto": "texto específico", // Asunto del comunicado
-    "tipo_comunicado": "texto específico", // Tipo de comunicado
-    "urgencia": "texto específico", // Nivel de urgencia
-    "comunidad_direccion": "Calle Ejemplo 123, 28001 Madrid", // Dirección de la comunidad
-    "remitente_cargo": "texto específico", // Cargo del remitente
-    "destinatarios": ["item1", "item2"], // Lista de destinatarios
-    "fecha_limite": "2025-01-15", // Fecha límite
-    "requiere_respuesta": false, // Si requiere respuesta
-    "accion_requerida": ["item1", "item2"], // Acciones requeridas
-    "anexos": ["item1", "item2"], // Documentos anexos
-    "contacto_info": ["item1", "item2"], // Información de contacto
-    "topic_presupuesto": false, // Tema sobre presupuesto
-    "topic_mantenimiento": false, // Tema sobre mantenimiento
-    "topic_administracion": false, // Tema sobre administración
-    "topic_piscina": false, // Tema sobre piscina
-    "topic_jardin": false, // Tema sobre jardín
-    "topic_limpieza": false, // Tema sobre limpieza
-    "topic_balance": false, // Tema sobre balance
-    "topic_paqueteria": false, // Tema sobre paquetería
-    "topic_energia": false, // Tema sobre energía
-    "topic_normativa": false, // Tema sobre normativa
-    "topic_proveedor": false, // Tema sobre proveedor
-    "topic_dinero": false, // Tema sobre dinero
-    "topic_ascensor": false, // Tema sobre ascensor
-    "topic_incendios": false, // Tema sobre incendios
-    "topic_porteria": false // Tema sobre portería
+    "fecha": "2025-01-15", // Fecha del comunicado\n    "comunidad": "texto específico", // Nombre de la comunidad\n    "remitente": "texto específico", // Remitente\n    "resumen": "texto específico", // Resumen del contenido\n    "category": "comercial", // Categoría\n    "asunto": "texto específico", // Asunto del comunicado\n    "tipo_comunicado": "texto específico", // Tipo de comunicado\n    "urgencia": "texto específico", // Nivel de urgencia\n    "comunidad_direccion": "Calle Ejemplo 123, 28001 Madrid", // Dirección de la comunidad\n    "remitente_cargo": "texto específico", // Cargo del remitente\n    "destinatarios": ["item1", "item2"], // Lista de destinatarios\n    "fecha_limite": "2025-01-15", // Fecha límite\n    "requiere_respuesta": false, // Si requiere respuesta\n    "accion_requerida": ["item1", "item2"], // Acciones requeridas\n    "anexos": ["item1", "item2"], // Documentos anexos\n    "contacto_info": ["item1", "item2"], // Información de contacto\n    "topic_presupuesto": false, // Tema sobre presupuesto\n    "topic_mantenimiento": false, // Tema sobre mantenimiento\n    "topic_administracion": false, // Tema sobre administración\n    "topic_piscina": false, // Tema sobre piscina\n    "topic_jardin": false, // Tema sobre jardín\n    "topic_limpieza": false, // Tema sobre limpieza\n    "topic_balance": false, // Tema sobre balance\n    "topic_paqueteria": false, // Tema sobre paquetería\n    "topic_energia": false, // Tema sobre energía\n    "topic_normativa": false, // Tema sobre normativa\n    "topic_proveedor": false, // Tema sobre proveedor\n    "topic_dinero": false, // Tema sobre dinero\n    "topic_ascensor": false, // Tema sobre ascensor\n    "topic_incendios": false, // Tema sobre incendios\n    "topic_porteria": false, // Tema sobre portería
 }
 
 REGLAS CRÍTICAS:
@@ -57,6 +27,6 @@ CONTEXTO TÉCNICO:
 - Agente: comunicado_extractor_v1
 - Tabla destino: extracted_communications  
 - Campos obligatorios: fecha, comunidad, remitente, resumen
-- Generado automáticamente: 2025-09-24
+- Generado automáticamente: 2025-09-27
 
 IMPORTANTE: Devuelve SOLO el JSON, sin texto adicional.

@@ -4,7 +4,7 @@
  * ESTADO: development
  * DEPENDENCIAS: @/components/ui/badge, @/components/ui/card, @/components/ui/separator, @/components/ui/Typography, lucide-react
  * OUTPUTS: Vista detallada optimizada para Comunicado Vecinal
- * ACTUALIZADO: 2025-09-24
+ * ACTUALIZADO: 2025-09-27
  */
 
 import { Badge } from '@/components/ui/badge';

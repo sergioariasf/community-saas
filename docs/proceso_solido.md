@@ -188,3 +188,15 @@ npx tsc --noEmit "src/app/(dynamic-pages)/(main-pages)/(logged-in-pages)/documen
 
   `npm run build`                     # TypeScript + dependencias completas
 ```
+
+```bash test-complete-e2e-validation_1
+npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts "ACTA 19 MAYO 2022" --steps=1,2,3,4,5,6
+npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts factura --steps=1,2,3,4,5,6
+npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts "Contrato OLAQUA Piscinas" --steps=1,2,3,4,5,6
+npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts presupuesto --steps=1,2,3,4,5,6
+npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts albaran --steps=1,2,3,4,5,6
+npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts "Comunicado- INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. _AMARA HOMES_" --steps=1,2,3,4,5,6
+npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts escritura_D102B --steps=1,2,3,4,5,6
+
+
+```

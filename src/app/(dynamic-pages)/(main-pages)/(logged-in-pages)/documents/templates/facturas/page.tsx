@@ -23,17 +23,47 @@ import {
 import Link from 'next/link';
 import { FacturaDetailView } from '@/components/documents/templates/FacturaDetailView';
 
-// Datos de ejemplo realistas para demostración
+// Datos de ejemplo realistas para demostración - compatibles con ExtractedFactura
 const DEMO_FACTURA_DATA = {
   id: "demo-factura-1",
   document_id: "demo-doc-factura",
   organization_id: "demo-org",
+  created_at: "2024-03-15T10:30:00Z",
   provider_name: "Electricidad y Servicios S.L.",
   client_name: "Comunidad de Propietarios Los Olivos",
   amount: 3885.31,
   invoice_date: "2024-03-01",
   category: "suministros_electricidad",
-  created_at: "2024-03-15T10:30:00Z"
+  // Campos requeridos por ExtractedFactura
+  invoice_number: "F-2024-001234",
+  issue_date: "2024-03-01",
+  due_date: "2024-04-01",
+  subtotal: 3207.69,
+  tax_amount: 677.62,
+  total_amount: 3885.31,
+  currency: "EUR",
+  payment_method: "Transferencia bancaria",
+  vendor_address: "Calle Industrial 45, 28220 Majadahonda, Madrid",
+  vendor_tax_id: "B-85426789",
+  vendor_phone: "+34 91 234 56 78",
+  vendor_email: "facturacion@electricidadyservicios.es",
+  client_address: "Avenida de los Olivos 123, 28015 Madrid",
+  client_tax_id: "G-12345678",
+  client_phone: "+34 91 567 89 12",
+  client_email: "administracion@olivos-cp.es",
+  products_summary: "Suministro eléctrico marzo 2024 - Zonas comunes",
+  products_count: 1,
+  products: [
+    {
+      descripcion: "Suministro eléctrico zonas comunes",
+      cantidad: 1,
+      precio_unitario: 3207.69,
+      importe: 3207.69
+    }
+  ],
+  payment_terms: "30 días desde fecha factura",
+  notes: "Factura correspondiente al suministro eléctrico de zonas comunes del mes de marzo 2024",
+  bank_details: "ES21 1234 5678 9012 3456 7890"
 };
 
 const DEMO_FACTURA_METADATA = {

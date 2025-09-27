@@ -23,17 +23,48 @@ import {
 import Link from 'next/link';
 import { ComunicadoDetailView } from '@/components/documents/templates/ComunicadoDetailView';
 
-// Datos de ejemplo realistas para demostración
+// Datos de ejemplo realistas para demostración - compatibles con ExtractedComunicado
 const DEMO_COMUNICADO_DATA = {
   id: "demo-comunicado-1",
   document_id: "demo-doc-comunicado",
   organization_id: "demo-org",
+  created_at: "2024-03-12T09:15:00Z",
   fecha: "2024-03-12",
   comunidad: "Comunidad de Propietarios Los Olivos",
   remitente: "María González Rodríguez - Presidenta",
   resumen: "Comunicado urgente sobre la suspensión temporal del servicio de ascensores debido a trabajos de mantenimiento preventivo obligatorio y medidas de seguridad a adoptar durante el período de reparaciones.",
   category: "mantenimiento_urgente",
-  created_at: "2024-03-12T09:15:00Z"
+  // Campos requeridos por ExtractedComunicado
+  asunto: "Suspensión temporal de ascensores - Mantenimiento preventivo",
+  tipo_comunicado: "Aviso de mantenimiento",
+  urgencia: "alta",
+  comunidad_direccion: "Avenida de los Olivos 123, 28015 Madrid",
+  remitente_cargo: "Presidenta",
+  destinatarios: ["Todos los propietarios", "Inquilinos"],
+  fecha_limite: "2024-03-15",
+  requiere_respuesta: false,
+  accion_requerida: ["Usar escaleras durante mantenimiento", "Avisar a visitantes"],
+  anexos: ["plano_escaleras_emergencia.pdf"],
+  contacto_info: [
+    { tipo: "telefono", valor: "91-123-4567" },
+    { tipo: "email", valor: "presidencia@olivos-cp.es" }
+  ],
+  // Topics relacionados
+  topic_presupuesto: false,
+  topic_mantenimiento: true,
+  topic_administracion: false,
+  topic_piscina: false,
+  topic_jardin: false,
+  topic_limpieza: false,
+  topic_balance: false,
+  topic_paqueteria: false,
+  topic_energia: false,
+  topic_normativa: false,
+  topic_proveedor: true,
+  topic_dinero: false,
+  topic_ascensor: true,
+  topic_incendios: false,
+  topic_porteria: false
 };
 
 const DEMO_COMUNICADO_METADATA = {
@@ -71,11 +102,11 @@ const DEMO_COMUNICADO_METADATA = {
     "Cronograma detallado trabajos",
     "Protocolo emergencias sin ascensor"
   ],
-  contacto_info: {
-    telefono: "+34 91 234 56 78",
-    email: "administracion@losolivos-madrid.com",
-    horario_atencion: "Lunes a viernes de 9:00 a 14:00 y de 16:00 a 18:00"
-  },
+  contacto_info: [
+    { tipo: "telefono", valor: "+34 91 234 56 78" },
+    { tipo: "email", valor: "administracion@losolivos-madrid.com" },
+    { tipo: "horario", valor: "Lunes a viernes de 9:00 a 14:00 y de 16:00 a 18:00" }
+  ],
   
   // Keywords y temas (mismos que actas)
   topic_keywords: ["ascensor", "mantenimiento", "seguridad", "certificación", "emergencias", "accesibilidad"],

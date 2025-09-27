@@ -1,0 +1,253 @@
+{
+  "timestamp": "2025-09-27T13:39:08.000Z",
+  "config": {
+    "target_file": "Comunicado- INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. _AMARA HOMES_",
+    "steps_executed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verbose": false
+  },
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 100,
+    "supported_types": [
+      "acta",
+      "escritura",
+      "albaran",
+      "factura",
+      "comunicado",
+      "contrato",
+      "presupuesto"
+    ],
+    "by_type": {
+      "comunicado": {
+        "count": 1,
+        "successful": 1,
+        "success_rate": 100
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "filename": "Comunicado- INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. _AMARA HOMES_",
+      "success": true,
+      "steps_executed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "phases": {
+        "step1_extraction": {
+          "success": true,
+          "data": "Sergio Arias Fernandez <sergioariasf@gmail.com>\nINFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. \"AMARA\nHOMES\"\nrebeca@beltranyromera.com <rebeca@beltranyromera.com>7 April 2025 at 14:00\nTo: rebeca@beltranyromera.com\n \nBuenos días, vecinos.\n \nComo sabréis los contadores de lectura de SunFlower (SF) llevan rompiéndose unos meses; fueron\ncontadores que fueron instalados por Ecco Industrial en el año 2021. Hemos intentado hablar con Zenner\n(marca del contador actual) por si nos podían dar más información sobre la venta de los mismos o algo\nque nos pudiera servir para ir a consumo pero no hemos conseguido nada.\n \nPor otro lado, Víctor, un vecino de la comunidad, ha realizado un documento sobre los contadores de\nenergía, desde aquí queremos agradecerle el trabajo. Os lo enviamos por si os sirve de ayuda por si os\nencontráis con este \"problema\". \n  \nPara evitar disgustos con este tema, es importante que estéis pendientes del e-mail y de la aplicación\nde SF, ya que os comunicará que es una lectura estimada porque está roto el contador y debéis\ncambiarlo lo antes posible.\n \nPara cualquier duda podéis consultar con nosotros amarahomes.cp@gmail.com\n \nMuchas gracias, un saludo.\n \nBeltrán y Romera, S.L. U.\nC/ Pablo Tejera, nº 14 local izquierda\n28229 - Villanueva del Pardillo (Madrid)\nTeléfono: 91-815.22.56\nHorario de oficina de lunes a jueves de 9-14h y de 17-20h y los viernes de 8-15h.\n \nLOS PRÓXIMOS DÍAS 14, 15 Y 16 DE ABRIL EL HORARIO DE OFICINA SERÁ DE 8 A 15H.\n \nInformación Básica de Protección de Datos. Responsable: BELTRÁN Y ROMERA S.L.U.; Finalidad: prestarle los servicios que nos\nha solicitado, atender sus solicitudes de información y enviarle comunicaciones comerciales; Legitimación: Ejecución de contrato,\nInterés legítimo del responsable o Consentimiento del Interesado. Cesiones: No se cederán sus datos a terceros salvo obligación\nlegal.\nDerechos: Tiene derecho a acceder, rectificar y suprimir los datos, así como ejercer el derecho a la limitación del tratamiento, a la\nportabilidad de datos, derecho de oposición y a no ser objeto de decisiones individuales automatizadas, incluida la elaboración de\nperfiles, que puede ejercer en byr@beltranyromera.com.\n\nEste mensaje y sus archivos adjuntos van dirigidos exclusivamente a su destinatario, pudiendo contener información confidencial\nsometida a secreto profesional. No está permitida su reproducción o distribución sin nuestra autorización expresa. Si usted no es\nel destinatario final por favor elimínelo e infórmenos por esta vía.\nNo queremos para nada molestarle. Si no desea recibir más correos de este tipo      comuníquenoslo a la dirección de correo\nelectrónico byr@beltranyromera.com.\n \n \nCONTADORES DE ENERGIěA.pdf\n108K",
+          "metrics": {
+            "duration": 169,
+            "size": 2724,
+            "method": "pdf-parse-direct"
+          }
+        },
+        "step2_classification": {
+          "success": true,
+          "data": {
+            "documentType": "comunicado",
+            "confidence": 0.95,
+            "method": "filename",
+            "reasoning": "Filename contains pattern for comunicado"
+          },
+          "metrics": {
+            "duration": 1,
+            "confidence": 0.95
+          }
+        },
+        "step3_metadata": {
+          "success": true,
+          "data": {
+            "fecha": "2025-04-07",
+            "comunidad": "AMARA HOMES",
+            "remitente": "Beltrán y Romera, S.L. U.",
+            "resumen": "Información sobre los contadores de lectura de SunFlower que se están rompiendo y la importancia de estar pendiente del e-mail y la aplicación de SF para evitar disgustos.",
+            "category": null,
+            "asunto": "INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. \"AMARA HOMES\"",
+            "tipo_comunicado": "informativo",
+            "urgencia": "alta",
+            "comunidad_direccion": null,
+            "remitente_cargo": null,
+            "destinatarios": [
+              "rebeca@beltranyromera.com"
+            ],
+            "fecha_limite": null,
+            "requiere_respuesta": false,
+            "accion_requerida": [
+              "Estar pendientes del e-mail y de la aplicación de SF",
+              "Cambiar el contador lo antes posible si se indica que es una lectura estimada"
+            ],
+            "anexos": [
+              "CONTADORES DE ENERGIěA.pdf"
+            ],
+            "contacto_info": [
+              "amarahomes.cp@gmail.com",
+              "C/ Pablo Tejera, nº 14 local izquierda, 28229 - Villanueva del Pardillo (Madrid)",
+              "Teléfono: 91-815.22.56",
+              "byr@beltranyromera.com"
+            ],
+            "topic_presupuesto": false,
+            "topic_mantenimiento": true,
+            "topic_administracion": true,
+            "topic_piscina": false,
+            "topic_jardin": false,
+            "topic_limpieza": false,
+            "topic_balance": false,
+            "topic_paqueteria": false,
+            "topic_energia": true,
+            "topic_normativa": false,
+            "topic_proveedor": true,
+            "topic_dinero": false,
+            "topic_ascensor": false,
+            "topic_incendios": false,
+            "topic_porteria": false
+          },
+          "metrics": {
+            "duration": 4027,
+            "fields_count": 31
+          }
+        },
+        "step4_validation": {
+          "success": true,
+          "data": {
+            "validationErrors": [],
+            "validatedData": {
+              "fecha": "2025-04-07",
+              "comunidad": "AMARA HOMES",
+              "remitente": "Beltrán y Romera, S.L. U.",
+              "resumen": "Información sobre los contadores de lectura de SunFlower que se están rompiendo y la importancia de estar pendiente del e-mail y la aplicación de SF para evitar disgustos.",
+              "category": null,
+              "asunto": "INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. \"AMARA HOMES\"",
+              "tipo_comunicado": "informativo",
+              "urgencia": "alta",
+              "comunidad_direccion": null,
+              "remitente_cargo": null,
+              "destinatarios": [
+                "rebeca@beltranyromera.com"
+              ],
+              "fecha_limite": null,
+              "requiere_respuesta": false,
+              "accion_requerida": [
+                "Estar pendientes del e-mail y de la aplicación de SF",
+                "Cambiar el contador lo antes posible si se indica que es una lectura estimada"
+              ],
+              "anexos": [
+                "CONTADORES DE ENERGIěA.pdf"
+              ],
+              "contacto_info": [
+                "amarahomes.cp@gmail.com",
+                "C/ Pablo Tejera, nº 14 local izquierda, 28229 - Villanueva del Pardillo (Madrid)",
+                "Teléfono: 91-815.22.56",
+                "byr@beltranyromera.com"
+              ],
+              "topic_presupuesto": false,
+              "topic_mantenimiento": true,
+              "topic_administracion": true,
+              "topic_piscina": false,
+              "topic_jardin": false,
+              "topic_limpieza": false,
+              "topic_balance": false,
+              "topic_paqueteria": false,
+              "topic_energia": true,
+              "topic_normativa": false,
+              "topic_proveedor": true,
+              "topic_dinero": false,
+              "topic_ascensor": false,
+              "topic_incendios": false,
+              "topic_porteria": false
+            }
+          },
+          "metrics": {
+            "duration": 3
+          }
+        },
+        "step5_template_compatibility": {
+          "success": true,
+          "data": {
+            "compatibilityScore": 100,
+            "missingFields": [],
+            "extraFields": [
+              "category"
+            ]
+          },
+          "metrics": {
+            "duration": 1,
+            "compatibility_score": 100
+          }
+        },
+        "step6_schema_validation": {
+          "success": true,
+          "data": {
+            "unknownFields": [],
+            "missingRequired": [],
+            "totalExpected": 35
+          },
+          "metrics": {
+            "duration": 1
+          }
+        }
+      },
+      "total_time": 4204,
+      "document_type": "comunicado",
+      "extracted_data": {
+        "fecha": "2025-04-07",
+        "comunidad": "AMARA HOMES",
+        "remitente": "Beltrán y Romera, S.L. U.",
+        "resumen": "Información sobre los contadores de lectura de SunFlower que se están rompiendo y la importancia de estar pendiente del e-mail y la aplicación de SF para evitar disgustos.",
+        "category": null,
+        "asunto": "INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. \"AMARA HOMES\"",
+        "tipo_comunicado": "informativo",
+        "urgencia": "alta",
+        "comunidad_direccion": null,
+        "remitente_cargo": null,
+        "destinatarios": [
+          "rebeca@beltranyromera.com"
+        ],
+        "fecha_limite": null,
+        "requiere_respuesta": false,
+        "accion_requerida": [
+          "Estar pendientes del e-mail y de la aplicación de SF",
+          "Cambiar el contador lo antes posible si se indica que es una lectura estimada"
+        ],
+        "anexos": [
+          "CONTADORES DE ENERGIěA.pdf"
+        ],
+        "contacto_info": [
+          "amarahomes.cp@gmail.com",
+          "C/ Pablo Tejera, nº 14 local izquierda, 28229 - Villanueva del Pardillo (Madrid)",
+          "Teléfono: 91-815.22.56",
+          "byr@beltranyromera.com"
+        ],
+        "topic_presupuesto": false,
+        "topic_mantenimiento": true,
+        "topic_administracion": true,
+        "topic_piscina": false,
+        "topic_jardin": false,
+        "topic_limpieza": false,
+        "topic_balance": false,
+        "topic_paqueteria": false,
+        "topic_energia": true,
+        "topic_normativa": false,
+        "topic_proveedor": true,
+        "topic_dinero": false,
+        "topic_ascensor": false,
+        "topic_incendios": false,
+        "topic_porteria": false
+      }
+    }
+  ]
+}
