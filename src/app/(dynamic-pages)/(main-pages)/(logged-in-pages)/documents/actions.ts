@@ -237,7 +237,7 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
     console.log(`🎯 [Progressive Pipeline] Procesando hasta nivel ${processingLevel}`);
     
     const pipeline = new SimplePipeline();
-    const pipelineResult = await pipeline.processDocument(document.id, parseInt(processingLevel));
+    const pipelineResult = await pipeline.processDocument(document.id, processingLevel);
     
     console.log('📊 [Progressive Pipeline] Resultado del pipeline:', {
       success: pipelineResult.success,
@@ -249,14 +249,14 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
     
     if (pipelineResult.success) {
       // All levels completed successfully based on processingLevel
-      steps.extraction = true;
-      if (parseInt(processingLevel) >= 2) steps.classification = true;
-      if (parseInt(processingLevel) >= 3) steps.metadata = true;
-      if (parseInt(processingLevel) >= 4) steps.chunking = true;
+      steps.textExtraction = true;
+      if (processingLevel >= 2) steps.classification = true;
+      if (processingLevel >= 3) steps.dataExtraction = true;
+      // Note: chunking not in this steps object structure
     }
 
     if (!pipelineResult.success) {
-      console.warn('⚠️ [Progressive Pipeline] Pipeline parcialmente fallido:', pipelineResult.error);
+      console.warn('⚠️ [Progressive Pipeline] Pipeline parcialmente fallido:', pipelineResult);
       // Don't throw error - partial success is still valuable
     }
 

@@ -94,7 +94,7 @@ export default function DebugAuthPage() {
         <div>
           <h2 className="text-xl font-semibold mb-4">URL Parameters</h2>
           <div className="bg-blue-50 p-4 rounded-lg">
-            {Array.from(searchParams.entries()).map(([key, value]) => (
+            {searchParams && Array.from(searchParams.entries()).map(([key, value]) => (
               <div key={key} className="mb-2">
                 <strong>{key}:</strong> <span className="break-all">{value}</span>
               </div>

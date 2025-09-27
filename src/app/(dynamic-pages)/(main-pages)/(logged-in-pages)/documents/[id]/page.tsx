@@ -631,9 +631,9 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
             <T.H4 className="text-red-800 mb-2">💥 Error fatal</T.H4>
             <pre className="text-xs bg-white p-2 rounded overflow-auto">
               {JSON.stringify({
-                message: error.message,
-                stack: error.stack?.substring(0, 500),
-                name: error.name
+                message: error instanceof Error ? error.message : String(error),
+                stack: error instanceof Error ? error.stack?.substring(0, 500) : undefined,
+                name: error instanceof Error ? error.name : 'Unknown Error'
               }, null, 2)}
             </pre>
           </CardContent>
