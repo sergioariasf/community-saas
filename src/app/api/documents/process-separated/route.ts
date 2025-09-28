@@ -1,15 +1,13 @@
 /**
  * ARCHIVO: route.ts
  * PROPÓSITO: API para procesar documentos separados usando el pipeline existente
- * ESTADO: development
+ * ESTADO: TEMPORARILY DISABLED FOR VERCEL BUILD
  * DEPENDENCIAS: SimplePipeline, MultiDocumentAnalyzer, Supabase
  * OUTPUTS: Procesamiento completo de documentos soportados separados
- * ACTUALIZADO: 2025-09-25
+ * ACTUALIZADO: 2025-09-28
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { SimplePipeline } from '@/lib/ingesta/core/progressivePipelineSimple';
-import crypto from 'crypto';
 
 interface ProcessSeparatedRequest {
   documents: Array<{
@@ -29,9 +27,21 @@ interface ProcessSeparatedRequest {
 
 export async function POST(request: NextRequest) {
   try {
-    console.log('🚀 [PROCESS-SEPARATED API] Starting separated documents processing...');
+    console.log('🚀 [PROCESS-SEPARATED API] API temporarily disabled for Vercel build');
     
     const body: ProcessSeparatedRequest = await request.json();
+    const { documents } = body;
+
+    return NextResponse.json({
+      success: false,
+      message: 'API temporarily disabled for deployment. Will be re-enabled after successful build.',
+      documentsReceived: documents?.length || 0,
+      status: 'temporarily_disabled'
+    });
+    
+    /* TEMPORARILY COMMENTED OUT FOR VERCEL BUILD
+    // Original implementation will be restored after successful deployment
+    
     const { documents, communityId, processingLevel, originalFilename, extractedText } = body;
 
     // Filtrar solo documentos soportados
@@ -52,6 +62,7 @@ export async function POST(request: NextRequest) {
     const errors: string[] = [];
     
     // Inicializar pipeline
+    const { SimplePipeline } = await import('@/lib/ingesta/core/progressivePipelineSimple');
     const pipeline = new SimplePipeline();
     const { createSupabaseClient } = await import('@/supabase-clients/server');
     const supabase = await createSupabaseClient();
@@ -236,6 +247,7 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json(response);
+    */
 
   } catch (error) {
     console.error('💥 [PROCESS-SEPARATED API] Unexpected error:', error);
