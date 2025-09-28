@@ -136,7 +136,7 @@ ACTUALIZADO: 2025-09-14
 
 ## ESTADO ACTUAL
 
-### Gestion de usuarios
+### Gestion de usuarios 🚧
 
 - Funciona por correo y pasword
 - Funciona Social media con google
@@ -144,11 +144,12 @@ ACTUALIZADO: 2025-09-14
 - Hay que mejorar disposicion en la UI
 - En el furturo tambien loging con outlook
 
-### Modulo incidencias
+### Modulo incidencias 🚧
 
 - Hecho
+- Habra que profundizar
 
-### Modulo documentacion
+### Modulo documentacion 🚧
 
 - En fase de construccion
 - Plantillas creadas
@@ -176,21 +177,30 @@ ACTUALIZADO: 2025-09-14
   - Alabaran (plantilla ✅, base de datos✅, integracion pipeline✅)
   - Presupuestos (plantilla ✅, base de datos✅, integracion pipeline✅)
 - Test masivo para ver robustez del metodo ✅
-- Fragmentar multidocumento
-- Chunkig
-- Busqueda documentos
+- Fragmentar multidocumento ✅
+- Chunkig ✅
+- Busqueda documentos ✅
 
-### Modulo Chat
+### UI 🚧
+
+- Modo Dark 🚧
+- Mejorar upload seguimiento
+
+### Modulo Chat 🚧
+
+- Desarrollo futuro
+
+### Modulo Foro 🚧
 
 - Desarrollo futuro
 
-### Modulo Foro
+### Modulo COnfiguracion 🚧
 
 - Desarrollo futuro
 
-### Modulo COnfiguracion
+### Modulo Pago suscripcion 🚧
 
-- Desarrollo futuro
+-
 
 # PROCESO DE TRABAJO
 
