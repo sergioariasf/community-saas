@@ -9,7 +9,6 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { SimplePipeline } from '@/lib/ingesta/core/progressivePipelineSimple';
-import { createSupabaseClient } from '@/supabase-clients/server';
 import crypto from 'crypto';
 
 interface ProcessSeparatedRequest {
@@ -54,6 +53,7 @@ export async function POST(request: NextRequest) {
     
     // Inicializar pipeline
     const pipeline = new SimplePipeline();
+    const { createSupabaseClient } = await import('@/supabase-clients/server');
     const supabase = await createSupabaseClient();
 
     // Procesar cada documento soportado
