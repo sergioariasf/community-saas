@@ -1,0 +1,45 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/24
+Tipo: factura
+Título: Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 798-827 (total: 30 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 364
+Descripción: Invoice from Electro Mercantil Leganes for Control y Tension S.L.
+Keywords: factura, ELECTRO MERCANTIL, CONTROL Y TENSION SL, 850162, 193,00, TRANSFERENCIA
+=====================================
+
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna:
+Hora:
+10:18
+Ref. Oferta:
+Tel.:
+C.I.F.:
+918964063
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Área:
+ALMACEN LEGANES
+1
+ENVIO
+28230
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+LAS ROZAS DE MADRID
+Tel. 609273707
+Ruta:

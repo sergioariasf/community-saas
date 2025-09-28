@@ -1,0 +1,910 @@
+{
+  "originalFile": "follon.pdf",
+  "analysisDate": "2025-09-28T05:47:49.307Z",
+  "totalLinesProcessed": 1730,
+  "documentsFound": 23,
+  "supportedDocuments": 12,
+  "unsupportedDocuments": 11,
+  "detectedDocuments": [
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Antonio Lara Gutierrez",
+      "lines": "1-30",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 1 ---",
+      "endMarker": "--- Página 2 ---"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Empresa) - Antonio Lara Gutierrez",
+      "lines": "31-63",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 2 ---",
+      "endMarker": "--- Página 3 ---"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Antonio Lara Gutierrez",
+      "lines": "64-108",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 3 ---",
+      "endMarker": "--- Página 4 ---"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Empresa) - Antonio Lara Gutierrez",
+      "lines": "109-142",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 4 ---",
+      "endMarker": "--- Página 5 ---"
+    },
+    {
+      "type": "multa",
+      "title": "Información sobre Publicación de Edicto - Multa de Circulación",
+      "lines": "143-204",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "MULTA DE CIRCULACIÓN",
+        "EXPEDIENTE",
+        "935/711076230.0",
+        "5581FTH",
+        "1827563",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 5 ---",
+      "endMarker": "--- Página 6 ---"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "205-252",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Albarán",
+        "fischer",
+        "2002337934",
+        "CONTROL Y TENSION S.L."
+      ],
+      "startMarker": "--- Página 7 ---",
+      "endMarker": "--- Página 8 ---"
+    },
+    {
+      "type": "multa",
+      "title": "Notificación de Resolución de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "253-329",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "MULTA",
+        "INFRACCIÓN",
+        "RESOLUCIÓN",
+        "951/711023522.0",
+        "5581FTH",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 8 ---",
+      "endMarker": "--- Página 9 ---"
+    },
+    {
+      "type": "multa",
+      "title": "Resolución de Desestimación de Recurso (Continuación)",
+      "lines": "330-380",
+      "confidence": 0.85,
+      "supported": false,
+      "keywords": [
+        "recurso",
+        "desestimar",
+        "contencioso administrativo",
+        "MULTAS DE CIRCULACIÓN",
+        "VIGILANCIA DE LA CIRCULA"
+      ],
+      "startMarker": "--- Página 9 ---",
+      "endMarker": "--- Página 10 ---"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "381-412",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1088220",
+        "CONTROL Y TENSION SL"
+      ],
+      "startMarker": "--- Página 10 ---",
+      "endMarker": "--- Página 11 ---"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Emergency Lighting)",
+      "lines": "413-443",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1088169",
+        "CONTROL Y TENSION SL",
+        "SAGELUX"
+      ],
+      "startMarker": "--- Página 11 ---",
+      "endMarker": "--- Página 12 ---"
+    },
+    {
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming - Banco Sabadell",
+      "lines": "444-509",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Sabadell",
+        "BS Confirming",
+        "pago",
+        "MORFUS EQUIPAMIENTO COMERCIAL S.L.",
+        "CONTROL Y TENSION SL",
+        "12677652"
+      ],
+      "startMarker": "--- Página 12 ---",
+      "endMarker": "--- Página 13 ---"
+    },
+    {
+      "type": "comunicado",
+      "title": "BS Confirming - Condiciones Generales (Banco Sabadell)",
+      "lines": "510-570",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Sabadell",
+        "BS Confirming",
+        "pago",
+        "condiciones generales",
+        "CONTROL Y TENSION SL"
+      ],
+      "startMarker": "--- Página 13 ---",
+      "endMarker": "--- Página 14 ---"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de MICROCOM SISTEMAS MODULARES, S.L.",
+      "lines": "571-600",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARAN",
+        "MICROCOM",
+        "18633",
+        "CONTROL Y TENSION, S.L."
+      ],
+      "startMarker": "--- Página 14 ---",
+      "endMarker": "--- Página 15 ---"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Pending Material)",
+      "lines": "601-652",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1084627",
+        "CONTROL Y TENSION SL",
+        "PENDIENTE"
+      ],
+      "startMarker": "--- Página 15 ---",
+      "endMarker": "--- Página 16 ---"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Closed)",
+      "lines": "653-692",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1084697",
+        "CONTROL Y TENSION SL",
+        "CERRADA"
+      ],
+      "startMarker": "--- Página 16 ---",
+      "endMarker": "--- Página 17 ---"
+    },
+    {
+      "type": "presupuesto",
+      "title": "Presupuesto Instalación IVE - Control y Tension",
+      "lines": "693-741",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Presupuesto",
+        "1 180006",
+        "IVE",
+        "Vehículo eléctrico",
+        "CONTROL Y TENSIÓN S.L."
+      ],
+      "startMarker": "--- Página 17 ---",
+      "endMarker": "--- Página 18 ---"
+    },
+    {
+      "type": "unknown",
+      "title": "Diagrama Eléctrico (GS-Hydro)",
+      "lines": "742-761",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [
+        "CUADRO VIVIENA",
+        "CUADRO CARGADOR",
+        "IVE",
+        "GS-Hydro"
+      ],
+      "startMarker": "--- Página 18 ---",
+      "endMarker": "--- Página 20 ---"
+    },
+    {
+      "type": "unknown",
+      "title": "GS-Hydro Additional Information",
+      "lines": "762-772",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [
+        "gs-hydro",
+        "cabo rufino"
+      ],
+      "startMarker": "--- Página 20 ---",
+      "endMarker": "--- Página 21 ---"
+    },
+    {
+      "type": "albaran",
+      "title": "ALBARAN de SALTOKI COLLADO VILLALBA",
+      "lines": "773-810",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARAN",
+        "SALTOKI",
+        "132.127",
+        "CONTROL Y TENSION S.L"
+      ],
+      "startMarker": "--- Página 21 ---",
+      "endMarker": "--- Página 22 ---"
+    },
+    {
+      "type": "unknown",
+      "title": "Random Date Amounts",
+      "lines": "811-818",
+      "confidence": 0.4,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 22 ---",
+      "endMarker": "--- Página 23 ---"
+    },
+    {
+      "type": "unknown",
+      "title": "Consulta a la Cartera (Electro Mercantil Leganes)",
+      "lines": "819-852",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [
+        "ELECTRO MERCANTIL",
+        "CONTROL Y TENSION SL",
+        "Cartera"
+      ],
+      "startMarker": "--- Página 23 ---",
+      "endMarker": "--- Página 24 ---"
+    },
+    {
+      "type": "factura",
+      "title": "Factura 850162 - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "853-883",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "FACTURA",
+        "ELECTRO MERCANTIL",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "193,00€"
+      ],
+      "startMarker": "--- Página 24 ---",
+      "endMarker": "--- Página 25 ---"
+    },
+    {
+      "type": "factura",
+      "title": "Factura 850162 (COPIA) - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "884-914",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "FACTURA",
+        "ES COPIA",
+        "ELECTRO MERCANTIL",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "193,00€"
+      ],
+      "startMarker": "--- Página 25 ---",
+      "endMarker": "--- Página 1730"
+    }
+  ],
+  "outputFiles": [
+    {
+      "filename": "1_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Antonio Lara Gutierrez",
+      "lines": "1-30"
+    },
+    {
+      "filename": "2_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Empresa) - Antonio Lara Gutierrez",
+      "lines": "31-63"
+    },
+    {
+      "filename": "3_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal---.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Antonio Lara Gutierrez",
+      "lines": "64-108"
+    },
+    {
+      "filename": "4_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal-Em.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Empresa) - Antonio Lara Gutierrez",
+      "lines": "109-142"
+    },
+    {
+      "filename": "5_multa_Informacin-sobre-Publicacin-de-Edicto---Multa-de-C.txt",
+      "type": "multa",
+      "title": "Información sobre Publicación de Edicto - Multa de Circulación",
+      "lines": "143-204"
+    },
+    {
+      "filename": "6_albaran_Albarn-de-Fischer-Ibrica-SAU.txt",
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "205-252"
+    },
+    {
+      "filename": "7_multa_Notificacin-de-Resolucin-de-Desestimacin-de-Recurs.txt",
+      "type": "multa",
+      "title": "Notificación de Resolución de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "253-329"
+    },
+    {
+      "filename": "8_multa_Resolucin-de-Desestimacin-de-Recurso-Continuacin.txt",
+      "type": "multa",
+      "title": "Resolución de Desestimación de Recurso (Continuación)",
+      "lines": "330-380"
+    },
+    {
+      "filename": "9_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "381-412"
+    },
+    {
+      "filename": "10_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU-Emergen.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Emergency Lighting)",
+      "lines": "413-443"
+    },
+    {
+      "filename": "11_comunicado_Notificacin-de-Pago-de-BS-Confirming---Banco-Sabad.txt",
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming - Banco Sabadell",
+      "lines": "444-509"
+    },
+    {
+      "filename": "12_comunicado_BS-Confirming---Condiciones-Generales-Banco-Sabade.txt",
+      "type": "comunicado",
+      "title": "BS Confirming - Condiciones Generales (Banco Sabadell)",
+      "lines": "510-570"
+    },
+    {
+      "filename": "13_albaran_Albarn-de-MICROCOM-SISTEMAS-MODULARES-SL.txt",
+      "type": "albaran",
+      "title": "Albarán de MICROCOM SISTEMAS MODULARES, S.L.",
+      "lines": "571-600"
+    },
+    {
+      "filename": "14_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU-Pending.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Pending Material)",
+      "lines": "601-652"
+    },
+    {
+      "filename": "15_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU-Closed.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Closed)",
+      "lines": "653-692"
+    },
+    {
+      "filename": "16_presupuesto_Presupuesto-Instalacin-IVE---Control-y-Tension.txt",
+      "type": "presupuesto",
+      "title": "Presupuesto Instalación IVE - Control y Tension",
+      "lines": "693-741"
+    },
+    {
+      "filename": "17_unknown_Diagrama-Elctrico-GS-Hydro.txt",
+      "type": "unknown",
+      "title": "Diagrama Eléctrico (GS-Hydro)",
+      "lines": "742-761"
+    },
+    {
+      "filename": "18_unknown_GS-Hydro-Additional-Information.txt",
+      "type": "unknown",
+      "title": "GS-Hydro Additional Information",
+      "lines": "762-772"
+    },
+    {
+      "filename": "19_albaran_ALBARAN-de-SALTOKI-COLLADO-VILLALBA.txt",
+      "type": "albaran",
+      "title": "ALBARAN de SALTOKI COLLADO VILLALBA",
+      "lines": "773-810"
+    },
+    {
+      "filename": "20_unknown_Random-Date-Amounts.txt",
+      "type": "unknown",
+      "title": "Random Date Amounts",
+      "lines": "811-818"
+    },
+    {
+      "filename": "21_unknown_Consulta-a-la-Cartera-Electro-Mercantil-Leganes.txt",
+      "type": "unknown",
+      "title": "Consulta a la Cartera (Electro Mercantil Leganes)",
+      "lines": "819-852"
+    },
+    {
+      "filename": "22_factura_Factura-850162---ELECTRO-MERCANTIL-LEGANS-DAM-SL.txt",
+      "type": "factura",
+      "title": "Factura 850162 - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "853-883"
+    },
+    {
+      "filename": "23_factura_Factura-850162-COPIA---ELECTRO-MERCANTIL-LEGANS-DA.txt",
+      "type": "factura",
+      "title": "Factura 850162 (COPIA) - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "884-914"
+    }
+  ],
+  "debugInfo": {
+    "debugPrefix": "2025-09-28T05-47-49-274Z_follon",
+    "debugPath": "/home/sergi/proyectos/community-saas/test-results/separacion",
+    "totalCharacters": 43188,
+    "filesGenerated": 23,
+    "timestamp": "2025-09-28T05:47:49.308Z"
+  },
+  "detectedDocumentsEnhanced": [
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Antonio Lara Gutierrez",
+      "lines": "1-30",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 1 ---",
+      "endMarker": "--- Página 2 ---",
+      "textLength": 1783
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal (Empresa) - Antonio Lara Gutierrez",
+      "lines": "31-63",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 2 ---",
+      "endMarker": "--- Página 3 ---",
+      "textLength": 1718
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Antonio Lara Gutierrez",
+      "lines": "64-108",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 3 ---",
+      "endMarker": "--- Página 4 ---",
+      "textLength": 3358
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal (Empresa) - Antonio Lara Gutierrez",
+      "lines": "109-142",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "enfermedad común",
+        "LRGT650802916019",
+        "280373935701",
+        "01827563Y",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 4 ---",
+      "endMarker": "--- Página 5 ---",
+      "textLength": 1694
+    },
+    {
+      "type": "multa",
+      "title": "Información sobre Publicación de Edicto - Multa de Circulación",
+      "lines": "143-204",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "MULTA DE CIRCULACIÓN",
+        "EXPEDIENTE",
+        "935/711076230.0",
+        "5581FTH",
+        "1827563",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 5 ---",
+      "endMarker": "--- Página 6 ---",
+      "textLength": 3082
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "205-252",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Albarán",
+        "fischer",
+        "2002337934",
+        "CONTROL Y TENSION S.L."
+      ],
+      "startMarker": "--- Página 7 ---",
+      "endMarker": "--- Página 8 ---",
+      "textLength": 2189
+    },
+    {
+      "type": "multa",
+      "title": "Notificación de Resolución de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "253-329",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "MULTA",
+        "INFRACCIÓN",
+        "RESOLUCIÓN",
+        "951/711023522.0",
+        "5581FTH",
+        "ANTONIO LARA GUTIERREZ"
+      ],
+      "startMarker": "--- Página 8 ---",
+      "endMarker": "--- Página 9 ---",
+      "textLength": 3254
+    },
+    {
+      "type": "multa",
+      "title": "Resolución de Desestimación de Recurso (Continuación)",
+      "lines": "330-380",
+      "confidence": 0.85,
+      "supported": false,
+      "keywords": [
+        "recurso",
+        "desestimar",
+        "contencioso administrativo",
+        "MULTAS DE CIRCULACIÓN",
+        "VIGILANCIA DE LA CIRCULA"
+      ],
+      "startMarker": "--- Página 9 ---",
+      "endMarker": "--- Página 10 ---",
+      "textLength": 3920
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "381-412",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1088220",
+        "CONTROL Y TENSION SL"
+      ],
+      "startMarker": "--- Página 10 ---",
+      "endMarker": "--- Página 11 ---",
+      "textLength": 1076
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Emergency Lighting)",
+      "lines": "413-443",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1088169",
+        "CONTROL Y TENSION SL",
+        "SAGELUX"
+      ],
+      "startMarker": "--- Página 11 ---",
+      "endMarker": "--- Página 12 ---",
+      "textLength": 987
+    },
+    {
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming - Banco Sabadell",
+      "lines": "444-509",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Sabadell",
+        "BS Confirming",
+        "pago",
+        "MORFUS EQUIPAMIENTO COMERCIAL S.L.",
+        "CONTROL Y TENSION SL",
+        "12677652"
+      ],
+      "startMarker": "--- Página 12 ---",
+      "endMarker": "--- Página 13 ---",
+      "textLength": 3000
+    },
+    {
+      "type": "comunicado",
+      "title": "BS Confirming - Condiciones Generales (Banco Sabadell)",
+      "lines": "510-570",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Sabadell",
+        "BS Confirming",
+        "pago",
+        "condiciones generales",
+        "CONTROL Y TENSION SL"
+      ],
+      "startMarker": "--- Página 13 ---",
+      "endMarker": "--- Página 14 ---",
+      "textLength": 4658
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de MICROCOM SISTEMAS MODULARES, S.L.",
+      "lines": "571-600",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARAN",
+        "MICROCOM",
+        "18633",
+        "CONTROL Y TENSION, S.L."
+      ],
+      "startMarker": "--- Página 14 ---",
+      "endMarker": "--- Página 15 ---",
+      "textLength": 854
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Pending Material)",
+      "lines": "601-652",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1084627",
+        "CONTROL Y TENSION SL",
+        "PENDIENTE"
+      ],
+      "startMarker": "--- Página 15 ---",
+      "endMarker": "--- Página 16 ---",
+      "textLength": 1574
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Closed)",
+      "lines": "653-692",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARÁN",
+        "ELECTRO MERCANTIL",
+        "1084697",
+        "CONTROL Y TENSION SL",
+        "CERRADA"
+      ],
+      "startMarker": "--- Página 16 ---",
+      "endMarker": "--- Página 17 ---",
+      "textLength": 1338
+    },
+    {
+      "type": "presupuesto",
+      "title": "Presupuesto Instalación IVE - Control y Tension",
+      "lines": "693-741",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "Presupuesto",
+        "1 180006",
+        "IVE",
+        "Vehículo eléctrico",
+        "CONTROL Y TENSIÓN S.L."
+      ],
+      "startMarker": "--- Página 17 ---",
+      "endMarker": "--- Página 18 ---",
+      "textLength": 1765
+    },
+    {
+      "type": "unknown",
+      "title": "Diagrama Eléctrico (GS-Hydro)",
+      "lines": "742-761",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [
+        "CUADRO VIVIENA",
+        "CUADRO CARGADOR",
+        "IVE",
+        "GS-Hydro"
+      ],
+      "startMarker": "--- Página 18 ---",
+      "endMarker": "--- Página 20 ---",
+      "textLength": 452
+    },
+    {
+      "type": "unknown",
+      "title": "GS-Hydro Additional Information",
+      "lines": "762-772",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [
+        "gs-hydro",
+        "cabo rufino"
+      ],
+      "startMarker": "--- Página 20 ---",
+      "endMarker": "--- Página 21 ---",
+      "textLength": 445
+    },
+    {
+      "type": "albaran",
+      "title": "ALBARAN de SALTOKI COLLADO VILLALBA",
+      "lines": "773-810",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "ALBARAN",
+        "SALTOKI",
+        "132.127",
+        "CONTROL Y TENSION S.L"
+      ],
+      "startMarker": "--- Página 21 ---",
+      "endMarker": "--- Página 22 ---",
+      "textLength": 2048
+    },
+    {
+      "type": "unknown",
+      "title": "Random Date Amounts",
+      "lines": "811-818",
+      "confidence": 0.4,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 22 ---",
+      "endMarker": "--- Página 23 ---",
+      "textLength": 77
+    },
+    {
+      "type": "unknown",
+      "title": "Consulta a la Cartera (Electro Mercantil Leganes)",
+      "lines": "819-852",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [
+        "ELECTRO MERCANTIL",
+        "CONTROL Y TENSION SL",
+        "Cartera"
+      ],
+      "startMarker": "--- Página 23 ---",
+      "endMarker": "--- Página 24 ---",
+      "textLength": 1302
+    },
+    {
+      "type": "factura",
+      "title": "Factura 850162 - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "853-883",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "FACTURA",
+        "ELECTRO MERCANTIL",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "193,00€"
+      ],
+      "startMarker": "--- Página 24 ---",
+      "endMarker": "--- Página 25 ---",
+      "textLength": 1105
+    },
+    {
+      "type": "factura",
+      "title": "Factura 850162 (COPIA) - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "884-914",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "FACTURA",
+        "ES COPIA",
+        "ELECTRO MERCANTIL",
+        "850162",
+        "CONTROL Y TENSION SL",
+        "193,00€"
+      ],
+      "startMarker": "--- Página 25 ---",
+      "endMarker": "--- Página 1730",
+      "textLength": 1944
+    }
+  ]
+}

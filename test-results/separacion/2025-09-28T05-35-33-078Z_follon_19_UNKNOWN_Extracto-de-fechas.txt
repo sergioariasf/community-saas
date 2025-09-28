@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/22
+Tipo: unknown
+Título: Extracto de fechas
+Líneas originales: 674-679 (total: 6 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 437
+Descripción: An extract of dates and values.
+Keywords: fechas
+=====================================
+
+vehículo, datos imprescindibles para su debida identificación.
+3.- Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se llama desde
+fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista en
+www.madrid.es/Lineamadrid).
+4.- Mediante certificado digital o banca electrónica en www.madrid.es/multas.
+Asimismo se le comunica lo siguiente:

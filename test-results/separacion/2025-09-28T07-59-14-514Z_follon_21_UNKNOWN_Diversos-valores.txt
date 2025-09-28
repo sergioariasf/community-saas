@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/24
+Tipo: unknown
+Título: Diversos valores
+Líneas originales: 725-730 (total: 6 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: 03/12/19
+Marcador final: 17/02/20301,25
+Caracteres: 106
+Descripción: Valores diversos
+Keywords: varios, valores
+=====================================
+
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial

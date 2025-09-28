@@ -1,0 +1,36 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/24
+Tipo: factura
+Título: Factura - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 606-624 (total: 19 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: em
+electromercantil
+Distribución Activa Multisectorial
+Marcador final: ES57 2100 8661 09 0200037221
+Caracteres: 1018
+Descripción: Invoice from ELECTRO MERCANTIL to CONTROL Y TENSION SL.
+Keywords: factura, ELECTRO MERCANTIL, CONTROL Y TENSION SL, 850162, B83802850, 193,00
+=====================================
+
+CALLE BADAJOZ 10
+GALAPAGAR
+MADRID
+CP: 28260
+SC:00
+NT81150160009701460155D
+M-30 TUNEL XC: M-30 Túnel Calzada 2ª entre Km. 19 y Km. 8
+ANTECEDENTES DE HECHO
+Primero: El expediente sancionador con número de referencia indicado en el encabezamiento de la presente notificación fue
+incoado como consecuencia de la comisión de la infracción señalada.
+Segundo: El procedimiento finalizó con la imposición de la correspondiente sanción mediante resolución de la Directora
+General de Gestión y Vigilancia de la Circulación.
+Tercero: La persona sancionada ha presentado recurso de reposición contra dicha resolución. Su recurso ha sido estudiado en
+el Departamento de Recursos de Multas de Circulación.
+FUNDAMENTOS DE DERECHO
+PRIMERO: La captación de la velocidad de un vehículo se realiza mediante un
+cinemómetro que ha sido homologado y verificado por el órgano competente. La
+medición realizada responde a la velocidad con la que el vehículo circulaba
+en el momento de cometerse la infracción. No obstante, a dicha medición le

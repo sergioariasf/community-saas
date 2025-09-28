@@ -1,0 +1,38 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/23
+Tipo: factura
+Título: FACTURA - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 683-705 (total: 23 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 1076
+Descripción: Invoice from Electro Mercantil Leganés D.A.M., S.L. to CONTROL Y TENSIÓN SL.
+Keywords: FACTURA, ELECTRO MERCANTIL, 850162, 193,00, B83802850
+=====================================
+
+vehículos (artículo 107 de la LSV).
+La cuantía de las multas puede incrementarse en un 30% en atención a la gravedad del hecho, los antecedentes del infractor y
+a su condición de reincidente; por lo que los hechos por los que ha sido sancionado en este expediente podrían ser tenidos en
+cuenta en futuros expedientes sancionadores (artículo 81 de la LSV)
+Lo que se le notifica para su conocimiento y efectos.
+DE GESTION DE MULTAS DE CIRC
+GENERAL
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA
+VIGILANCIA
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).

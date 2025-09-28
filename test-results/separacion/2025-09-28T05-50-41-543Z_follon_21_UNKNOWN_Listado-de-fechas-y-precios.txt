@@ -1,0 +1,22 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/24
+Tipo: unknown
+Título: Listado de fechas y precios
+Líneas originales: 758-763 (total: 6 líneas)
+Confianza: 30%
+Soportado: NO
+Marcador inicio: 03/12/19
+90,75
+Marcador final: 17/02/20301,25
+Caracteres: 58
+Descripción: Parece un listado de fechas y precios.
+Keywords: 03/12/19, 04/12/19, 11/12/19, 17/02/20, 90,75, 259,10, -98,31
+=====================================
+
+Bultos
+4
+CÓDIGO
+DESCRIPCIÓN
+REF.PROV. CANTIDAD
+DIS02001040

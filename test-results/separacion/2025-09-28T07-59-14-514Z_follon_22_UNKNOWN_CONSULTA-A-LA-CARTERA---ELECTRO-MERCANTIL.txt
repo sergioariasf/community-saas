@@ -1,0 +1,49 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/24
+Tipo: unknown
+Título: CONSULTA A LA CARTERA - ELECTRO MERCANTIL
+Líneas originales: 731-764 (total: 34 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 23 ---
+Marcador final: 吃
+Caracteres: 400
+Descripción: Consulta a la cartera de ELECTRO MERCANTIL
+Keywords: consulta, cartera, ELECTRO MERCANTIL, tension
+=====================================
+
+Página 1 de 1
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna: 33350
+CERRADA
+Hora: 13:40
+Tel.:
+918964063
+Ref. Oferta: 25467
+C.I.F.:
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Ruta:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 609273707
+Bultos
+4
+CÓDIGO
+DESCRIPCIÓN
+REF.PROV. CANTIDAD
+DIS02001040
+ZZZZZRAEE

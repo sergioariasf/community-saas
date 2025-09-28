@@ -1,0 +1,26 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/23
+Tipo: unknown
+Título: Quotation details GS-Hydro
+Líneas originales: 602-610 (total: 9 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 20 ---
+O
+GS-HYDRO S.A.
+Marcador final: Cabo Rufino Lázaro, 5. P. Európolis 28230 Las Rozas (Madrid) Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es
+Caracteres: 129
+Descripción: Quotation GS-Hydro for electrical installation
+Keywords: quotation, electrical, installation, GS-Hydro
+=====================================
+
+RELACION: 880/2020
+76.A LSV
+REFERENCIA DEL DESTINATARIO:
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ 10
+GALAPAGAR
+MADRID
+CP: 28260
+SC:00

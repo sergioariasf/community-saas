@@ -1,0 +1,32 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/24
+Tipo: unknown
+Título: Datos de Cartera
+Líneas originales: 589-605 (total: 17 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: ELECTRO MERCANTIL LEGANES DAM
+Marcador final: 吃
+Caracteres: 359
+Descripción: Documento con datos de cartera de clientes
+Keywords: cartera, clientes
+=====================================
+
+21/06/2019
+CLAVE Y CALIFICACIÓN DE LA INFRACCIÓN
+10/002 GRAVE
+IMPORTE DE LA MULTA
+100,00
+PRECEPTO INFRINGIDO (ver dorso) *
+FECHA DE ESTA RESOLUCION
+27/08/2020
+INFRACCIÓN IMPUTADA
+SOBREPASAR LA VELOCIDAD
+MÁXIMA EN VÍAS LIMITADAS EN 60
+KM/H O MÁS.
+CIRCULAR A 74 km/h LIMITE 70 km/h
+RELACION: 880/2020
+76.A LSV
+REFERENCIA DEL DESTINATARIO:
+ANTONIO LARA GUTIERREZ

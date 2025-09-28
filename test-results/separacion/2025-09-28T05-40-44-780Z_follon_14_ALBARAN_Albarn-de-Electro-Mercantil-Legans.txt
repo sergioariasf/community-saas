@@ -1,0 +1,60 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 14/23
+Tipo: albaran
+Título: Albarán de Electro Mercantil Leganés
+Líneas originales: 529-573 (total: 45 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 15 ---
+Marcador final: --- Página 16 ---
+Caracteres: 1513
+Descripción: Delivery note from Electro Mercantil Leganés for Control y Tension S.L.
+Keywords: albarán, ELECTRO MERCANTIL, CONTROL Y TENSION SL, PHI01000740, PHI01000800, SAG04000200, EVO-60ST
+=====================================
+
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.
+En caso de alguna incidencia en el pedido, no se admitirán devoluciones de material
+ni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.
+Telef.
+Fax
+: 0034 977 838 711
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE
+: ESA08150666
+207
+Fischer Ibérica, S.A.U.
+CI. Klaus Fischer, 1/43300 Mont-roig del Camp (Tarragona)
+R.M.T. Hoja 20.251 Folio 184 - Tomo 1.565 1 Inscripción N.I.F. A08150666
+Deutsche Bank cta. nr. 0019 0020 99 4010032435, IBAN: ES9800190020994010032435, SWIFT: DEUTESBR
+La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX
+
+--- Página 8 ---
+ÁREA DE GOBIERNO DE MEDIO AMBIENTE
+Y MOVILIDAD
+Dirección General de Gestión y Vigilancia
+de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Departamento de Recursos de Multas de Circulación
+MADRID
+C/ Albarracín, 33 28037 MADRID
+TITULAR
+NOTIFICACIÓN DE RESOLUCIÓN DE
+DESESTIMACIÓN DE RECURSO DE
+REPOSICIÓN
+EMISOR 28992.9
+Modelo
+9-5.1
+HORARIO DE ATENCIÓN AL PÚBLICO: Dias laborables de lunes a viernes, de 8:30 a 14 horas. Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+CONTROL Y TENSION SL
+MATRICULA 5581FTH
+MARCA
+MODELO

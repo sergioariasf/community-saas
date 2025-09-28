@@ -1,0 +1,62 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 11/23
+Tipo: comunicado
+Título: Notificación de Pago de BS Confirming (Banco Sabadell)
+Líneas originales: 397-443 (total: 47 líneas)
+Confianza: 90%
+Soportado: SÍ
+Marcador inicio: --- Página 12 ---
+Marcador final: --- Página 13 ---
+Caracteres: 1529
+Descripción: Notification from Banco Sabadell regarding a payment confirming service for MORFUS EQUIPAMIENTO COMERCIAL S.L. to CONTROL Y TENSION SL
+Keywords: confirming, Banco Sabadell, MORFUS EQUIPAMIENTO COMERCIAL S.L., CONTROL Y TENSION SL, 1000037, 8.226,96 EUR
+=====================================
+
+mencionada.
+Si desea pagar la multa podrá hacerlo durante el plazo de UN MES contado a partir del día siguiente a la práctica de
+la notificación.
+Podrá efectuar el pago de la multa por cualquiera de los siguientes medios:
+1.- En cualquier oficina de las entidades financieras que a continuación se relacionan, PRESENTANDO SIEMPRE
+ESTA COMUNICACIÓN:
+-
+BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)
+-
+CAIXABANK
+- BANCO SABADELL
+- IBERCAJA BANCO
+- BANCO SANTANDER
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección
+General de Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta
+notificación y la matrícula del vehículo, datos imprescindibles para su debida identificación.
+3. Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se
+llama desde fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista
+en www.madrid.es/Lineamadrid).
+4. Mediante Certificado digital o banca electrónica en www.madrid.es/multas.
+PODRÁ CONSULTAR LA NOTIFICACIÓN REALIZADA EN LAS SIGUIENTES DIRECCIONES:
+(BOE) http://www.boe.es/tablon edictal unico/o (TESTRA) https://sede.dgt.gob.es/sede/
+N°. BOLETÍN
+7110762300
+CONTROL
+IMPORTE
+10-11-2020
+49
+100,00
+MATRÍCULA
+5581FTH
+LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO
+007961-007962
+
+--- Página 6 ---
+1
+
+--- Página 7 ---
+0
+Albarán
+Fecha:
+Hoja
+01.10.2020
+1
+Cliente número:
+594182
+de

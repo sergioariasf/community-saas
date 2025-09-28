@@ -1,0 +1,61 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 6/23
+Tipo: albaran
+Título: Albarán Fischer Ibérica, S.A.U.
+Líneas originales: 180-225 (total: 46 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 7 ---
+Marcador final: --- Página 8 ---
+Caracteres: 1031
+Descripción: Delivery note from Fischer Ibérica, S.A.U. to CONTROL Y TENSION S.L. for various items, dated 01.10.2020. Albarán number: 2002337934
+Keywords: albarán, fischer, 2002337934, 538880, 71202, CONTROL Y TENSION S.L.
+=====================================
+
+Teléfono fijo
+918964063 609273707
+Código nacional de ocupación (CNO)
+Directores generales, empresa privada
+Control y Tension
+ly'
+1120
+DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL (en el parte de baja) / RESULTADO DEL RECONOCIMIENTO MÉDICO (en el parte de alta)
+Curación/Mejoría que permite realizar trabajo habitual
+DIAGNÓSTICO
+Contacto y (sospecha de) exposición a otras enfermedades víricas transmisibles
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Fecha de AT o EP
+Código de enfermedad profesional
+Parte del cuerpo dañado
+(1)
+(1)
+Leve
+Grave
+Tipo de asistencia:
+Ambulatoria
+Muy grave
+Hospitalaria
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+Recaída:
+sí ☐ NO ☑
+Fecha de la baja del proceso inicial del que es
+PARTE DE ALTA ☑
+recaída
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+Código CIE-9
+(Todas las contingencias)
+Código CIE-10
+(Solo en EP)
+Z20.828

@@ -1,0 +1,47 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 6/27
+Tipo: albaran
+Título: Albarán de Fischer Ibérica, S.A.U.
+Líneas originales: 181-212 (total: 32 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 7 ---
+Marcador final: --- Página 8 ---
+Caracteres: 749
+Descripción: Delivery note from Fischer Ibérica, S.A.U. to CONTROL Y TENSION S.L. listing delivered items and quantities.
+Keywords: albarán, fischer, 594182, 2002337934, CONTROL Y TENSION S.L., 215591934, 538880, 71202
+=====================================
+
+918964063 609273707
+Código nacional de ocupación (CNO)
+Directores generales, empresa privada
+Control y Tension
+ly'
+1120
+DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL (en el parte de baja) / RESULTADO DEL RECONOCIMIENTO MÉDICO (en el parte de alta)
+Curación/Mejoría que permite realizar trabajo habitual
+DIAGNÓSTICO
+Contacto y (sospecha de) exposición a otras enfermedades víricas transmisibles
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Fecha de AT o EP
+Código de enfermedad profesional
+Parte del cuerpo dañado
+(1)
+(1)
+Leve
+Grave
+Tipo de asistencia:
+Ambulatoria
+Muy grave
+Hospitalaria
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja

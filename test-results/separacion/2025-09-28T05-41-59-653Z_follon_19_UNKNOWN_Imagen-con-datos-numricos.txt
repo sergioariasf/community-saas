@@ -1,0 +1,22 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/27
+Tipo: unknown
+Título: Imagen con datos numéricos
+Líneas originales: 618-624 (total: 7 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: O
+Marcador final: GS-Hydro Asunto:
+Caracteres: 504
+Descripción: Imagen con datos numéricos.
+Keywords: esquema, eléctrico, GS-Hydro
+=====================================
+
+Tercero: La persona sancionada ha presentado recurso de reposición contra dicha resolución. Su recurso ha sido estudiado en
+el Departamento de Recursos de Multas de Circulación.
+FUNDAMENTOS DE DERECHO
+PRIMERO: La captación de la velocidad de un vehículo se realiza mediante un
+cinemómetro que ha sido homologado y verificado por el órgano competente. La
+medición realizada responde a la velocidad con la que el vehículo circulaba
+en el momento de cometerse la infracción. No obstante, a dicha medición le

@@ -1,0 +1,57 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 3/24
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal
+Líneas originales: 70-110 (total: 41 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 3 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Marcador final: Ejemplar para el TRABAJADOR
+Caracteres: 734
+Descripción: Medical certificate for sick leave/return to work for Antonio Lara Gutierrez.
+Keywords: parte médico, baja, alta, LRGT650802916019, 280373935701, 01827563Y, ANTONIO LARA GUTIERREZ
+=====================================
+
+Ejemplar para el TRABAJADOR
+
+--- Página 2 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL)
+Enfermedad profesional (EP)
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+FECHA DE LA BAJA
+12/09/2020
+;
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+TIPO DE PROCESO
+Muy corto
+Corto
+Medio
+☑
+Largo
+ㅁㅁ
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO
+N° DEL PARTE DE CONFIRMACIÓN
+1
+DURACIÓN ESTIMADA

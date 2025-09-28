@@ -1,0 +1,19 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/23
+Tipo: unknown
+Título: Accounting Numbers
+Líneas originales: 585-588 (total: 4 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 65
+Descripción: List of dates and numbers. Possibly related to accounts.
+Keywords: 03/12/19, 04/12/19, 11/12/19, 17/02/20
+=====================================
+
+PÉRDIDA DE PUNTOS
+NO
+FECHA DE LA INFRACCIÓN HORA DE LA
+INFRACCIÓN

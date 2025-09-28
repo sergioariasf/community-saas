@@ -1,0 +1,23 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/24
+Tipo: unknown
+Título: Diagrama Eléctrico/Cálculos de Presupuesto
+Líneas originales: 553-559 (total: 7 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: O
+GS-HYDRO S.A.
+Marcador final: e-mail: info@gshydro.es
+Caracteres: 230
+Descripción: Possible electrical schematic/calculations related to the prior budget.
+Keywords: eléctrico, IVE, diagrama, esquema
+=====================================
+
+--- Página 8 ---
+ÁREA DE GOBIERNO DE MEDIO AMBIENTE
+Y MOVILIDAD
+Dirección General de Gestión y Vigilancia
+de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Departamento de Recursos de Multas de Circulación

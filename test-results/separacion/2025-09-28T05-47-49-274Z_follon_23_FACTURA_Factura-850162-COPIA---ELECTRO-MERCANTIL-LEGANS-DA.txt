@@ -1,0 +1,46 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/23
+Tipo: factura
+Título: Factura 850162 (COPIA) - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 884-914 (total: 31 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 25 ---
+Marcador final: --- Página 1730
+Caracteres: 1944
+Descripción: Copy of an Invoice from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L. to CONTROL Y TENSION SL.
+Keywords: FACTURA, ES COPIA, ELECTRO MERCANTIL, 850162, CONTROL Y TENSION SL, 193,00€
+=====================================
+
+CONTROL Y TENSION S
+CONTROL
+TENSION,
+ENSION, S.L
+P.P.
+Por Internet desde www.confirmiline.com
+Por teléfono llamando al 902 120 495.
+Por SMS al 215675 (incluir el código CONF1, el nº de referencia de esta propuesta, su NIF y la letra P o G, según sea un anticipo Puntual o
+General). Coste del mensaje e impuestos a cargo del emisor.
+En cualquier oficina de Banc Sabadell.
+Por fax remitiendo todas las páginas firmadas al 937 451 991.
+ESTA SOLICITUD NO SERÁ VÁLIDA SI NO ADJUNTAN TODAS LAS PÁGINAS DEBIDAMENTE RELLENADAS Y FIRMADAS.
+La validez de la presente solicitud de anticipo queda sujeta a la disponibilidad de la línea de gestión de órdenes de pago concedida por Banco de
+Sabadell, S.A. al cliente ordenante.
+Banco de Sabadell, S.A. - Av. Óscar Esplá, 37 (Alicante) Ins. R. M. Alicante, Tomo 4070, Folio 1. Hoja A-156980 CIF A08000143
+Página 1 de 2
+KF232E-200720-E-EMA-GBSE 1200-00-001620-000511-IAENMA 14
+
+--- Página 13 ---
+ⓇSabadell
+BS Confirming
+Núm.de referencia:
+12677652
+CONDICIONES GENERALES
+Primera.Banco de Sabadell, S.A., a partir de ahora el Banco, anticipará el importe de las órdenes referenciadas en este documento en la
+fecha que ustedes escojan anterior a su vencimiento, en el caso de anticipo puntual, o en la fecha en que se reciban las órdenes de su
+cliente, en caso de solicitud de anticipo general. En todo caso, la aceptación de la solicitud de financiación por parte del Banco queda
+condicionada a la disponibilidad de la línea de gestión de órdenes de pago concedida por el Banco al cliente ordenante, siendo válida
+dicha solicitud de recibirse por el Banco dentro de los 15 días naturales a contar desde la fecha de emisión de la comunicación. El
+anticipo se efectuará deduciendo el descuento financiero resultante de aplicar al importe íntegro de las órdenes el tipo de interés que
+corresponda, devengado día a día, basándose en un año de 360 días desde el día en que se hace el anticipo hasta el día anterior al

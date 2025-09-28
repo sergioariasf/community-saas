@@ -1,0 +1,23 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 16/23
+Tipo: unknown
+Título: Diagram Fragment - Electrical Panel
+Líneas originales: 579-584 (total: 6 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+O
+GS-Hydro
+Marcador final: Cabo Rufino Lázaro, 5. P. Európolis - 28230 Las Rozas (Madrid) - Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es
+Caracteres: 119
+Descripción: Fragment depicting an electrical panel diagram.
+Keywords: diagram, electrical, panel, GS-Hydro
+=====================================
+
+M-30 XC K 19,06 CR4
+FECHA DE INCOACIÓN
+DEL EXPEDIENTE
+FECHA DE EMISIÓN DE
+ESTA NOTIFICACIÓN
+10:50 16/09/2019 03/09/2020

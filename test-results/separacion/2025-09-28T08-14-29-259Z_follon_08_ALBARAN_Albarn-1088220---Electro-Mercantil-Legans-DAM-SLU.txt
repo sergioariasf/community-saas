@@ -1,0 +1,38 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 8/23
+Tipo: albaran
+Título: Albarán 1088220 - Electro Mercantil Leganés D.A.M., S.L.U.
+Líneas originales: 317-337 (total: 21 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 10 ---
+em
+electromercantil
+Marcador final: ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+Caracteres: 448
+Descripción: Delivery note from Electro Mercantil Leganés D.A.M., S.L.U. to CONTROL Y TENSION SL, dated 01/09/2020.
+Keywords: albarán, 1088220, Electro Mercantil, CONTROL Y TENSION SL, 01/09/2020, DIS02001040, LEG43000200
+=====================================
+
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑
+Fallecimiento
+Propuesta de incapacidad permanente

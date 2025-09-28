@@ -1,0 +1,83 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 7/24
+Tipo: multa
+Título: Notificación de Resolución de Desestimación de Recurso de Reposición - Multa de Circulación
+Líneas originales: 247-314 (total: 68 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 8 ---
+Marcador final: --- Página 9 ---
+Caracteres: 1815
+Descripción: Notification of rejection of appeal regarding a traffic fine, detailing the infraction, vehicle information, and payment instructions.
+Keywords: multa, infracción, expediente, 951/711023522.0, 5581FTH, CONTROL Y TENSION SL, M-30
+=====================================
+
+reguladora de la Jurisdicción social.
+En los casos de alta médica por contingencia prefesional emitida por una mutua, podrá interponer reclamación previa a la via judicial social, en el plazo de once días siguientes al de su notificación, de conformidad con lo
+establecido en el artículo 71 de la Ley 36/2011, de 10 de octubre, reguladora de la Jurisdicción social o podrá iniciar el procedimiento administrativo especial de revisión del alta ante la entidad gestora (INSS/ISM) competente en
+el plazo de diez días siguientes al de su notificación, con efecto suspensivo del alta, de conformidad con lo establecido en el artículo 4 del RD 1430/2009, de 11 de septiembre.
+Ejemplar para el TRABAJADOR
+
+--- Página 4 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+ENTIDAD EMISORA
+Periodo de observación por enfermedad profesional
+SPS ☑ INSS/ISM ☐ MUTUA |
+DATOS DE/LA TRABAJADOR/A
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Primer apellido
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+LARA
+GUTIERREZ
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+CL JAVIER VICENTE MONTERO, 2
+Localidad
+Provincia
+ESCORIAL, EL
+Nombre de la empresa
+Control y Tension
+MADRID
+Puesto de trabajo
+Directores generales, empresa privada
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Código postal Teléfono móvil
+Teléfono fijo
+28280
+918964063
+609273707
+Código nacional de ocupación (CNO)
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja

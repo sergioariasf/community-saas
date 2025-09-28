@@ -1,0 +1,23 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/24
+Tipo: unknown
+Título: Diagrama Eléctrico
+Líneas originales: 539-544 (total: 6 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+O
+GS-Hydro
+Marcador final: Cabo Rufino Lázaro, 5. P. Európolis - 28230 Las Rozas (Madrid) - Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es
+Caracteres: 87
+Descripción: Possible electrical schematic related to the prior budget.
+Keywords: eléctrico, IVE, diagrama, esquema
+=====================================
+
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE

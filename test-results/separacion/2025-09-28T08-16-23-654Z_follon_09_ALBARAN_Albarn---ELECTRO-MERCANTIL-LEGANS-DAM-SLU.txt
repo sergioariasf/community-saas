@@ -1,0 +1,33 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 9/23
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+Líneas originales: 297-314 (total: 18 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 10 ---
+Marcador final: --- Página 11 ---
+Caracteres: 231
+Descripción: Delivery note from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. to Control y Tension SL, listing electrical components.
+Keywords: albarán, ELECTRO MERCANTIL, 1088220, B-87621306
+=====================================
+
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja

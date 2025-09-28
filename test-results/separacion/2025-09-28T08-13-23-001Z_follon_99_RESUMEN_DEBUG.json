@@ -1,0 +1,886 @@
+{
+  "originalFile": "follon.pdf",
+  "analysisDate": "2025-09-28T08:13:23.027Z",
+  "totalLinesProcessed": 1730,
+  "documentsFound": 24,
+  "supportedDocuments": 12,
+  "unsupportedDocuments": 12,
+  "detectedDocuments": [
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 1",
+      "lines": "1-31",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "Z20.828",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 1 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 2",
+      "lines": "32-64",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 2 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 3",
+      "lines": "65-107",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "Z20.828",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 3 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR"
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 4",
+      "lines": "108-139",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 4 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA"
+    },
+    {
+      "type": "multa",
+      "title": "Información sobre Publicación de Edictos - Multa de Circulación",
+      "lines": "140-186",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "expediente sancionador",
+        "BOE",
+        "TESTRA"
+      ],
+      "startMarker": "--- Página 5 ---\nmedio ambiente y MADRID\nmovilidad",
+      "endMarker": "LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "187-223",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "fischer",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 7 ---\n0\nAlbarán",
+      "endMarker": "La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX"
+    },
+    {
+      "type": "multa",
+      "title": "Notificación de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "224-279",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "recurso",
+        "desestimación",
+        "expediente sancionador"
+      ],
+      "startMarker": "--- Página 8 ---\nÁREA DE GOBIERNO DE MEDIO AMBIENTE",
+      "endMarker": "000003108"
+    },
+    {
+      "type": "multa",
+      "title": "Resolución sobre Multa de Circulación",
+      "lines": "280-322",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "recurso",
+        "pago",
+        "LSV",
+        "LPACAP"
+      ],
+      "startMarker": "Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general",
+      "endMarker": "LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas."
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "323-344",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 10 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "345-364",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 11 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306"
+    },
+    {
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming",
+      "lines": "365-416",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "confirming",
+        "banco sabadell",
+        "orden de pago",
+        "financiación"
+      ],
+      "startMarker": "--- Página 12 ---\nⓇSabadell",
+      "endMarker": "Página 1 de 2\nKF232E-200720-E-EMA-GBSE 1200-00-001620-000511-IAENMA 14"
+    },
+    {
+      "type": "contrato",
+      "title": "Condiciones Generales de BS Confirming",
+      "lines": "417-467",
+      "confidence": 0.85,
+      "supported": true,
+      "keywords": [
+        "confirming",
+        "banco sabadell",
+        "condiciones generales",
+        "cesión de créditos"
+      ],
+      "startMarker": "--- Página 13 ---\nⓇSabadell",
+      "endMarker": "Página 2 de 2\nwww.bancsabadell.com\nKF333E-200720-E-EMA-GBSE 1200-00-001621-000511-1AENMA14"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de MICROCOM SISTEMAS MODULARES, S.L.",
+      "lines": "468-492",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "microcom",
+        "entrega",
+        "cantidades",
+        "GSM",
+        "MODBUS"
+      ],
+      "startMarker": "--- Página 14 ---\nMICROCOM",
+      "endMarker": "TOTAL €\n419,75"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "493-531",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades",
+        "pendientes"
+      ],
+      "startMarker": "--- Página 15 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "532-560",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 16 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge"
+    },
+    {
+      "type": "presupuesto",
+      "title": "Presupuesto para Instalación de IVE y Legalización - Trinidad Arboiro Linares",
+      "lines": "561-599",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "presupuesto",
+        "instalación",
+        "IVE",
+        "vehículo eléctrico",
+        "legalización",
+        "28660 BOADILLA DEL MONTE"
+      ],
+      "startMarker": "--- Página 17 ---\nCONTROL Y TENSION",
+      "endMarker": "TRANSFERENCIA\n3.185,93"
+    },
+    {
+      "type": "unknown",
+      "title": "Diagrama de Instalación Eléctrica",
+      "lines": "600-612",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [
+        "diagrama",
+        "instalacion",
+        "electrica"
+      ],
+      "startMarker": "--- Página 18 ---\nO",
+      "endMarker": "Fax: 91 637 77 38 e-mail: info@gshydro.es"
+    },
+    {
+      "type": "unknown",
+      "title": "Pagina en blanco",
+      "lines": "613-623",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 19 ---",
+      "endMarker": "--- Página 20 ---"
+    },
+    {
+      "type": "unknown",
+      "title": "Detalles del Presupuesto",
+      "lines": "624-635",
+      "confidence": 0.7,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 20 ---\nO",
+      "endMarker": "Fax: 91 637 77 38 e-mail: info@gshydro.es"
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de SALTOKI COLLADO VILLALBA",
+      "lines": "636-668",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "SALTOKI",
+        "entrega",
+        "ZB5AD2",
+        "ZB5AZ101"
+      ],
+      "startMarker": "--- Página 21 ---\nSSALTOKI",
+      "endMarker": "Consulta detalles de la promoción con tu comercial o en tu centro Saltoki"
+    },
+    {
+      "type": "unknown",
+      "title": "Lista de fechas",
+      "lines": "669-674",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 22 ---\n03/12/19",
+      "endMarker": "17/02/20301,25"
+    },
+    {
+      "type": "unknown",
+      "title": "Consulta a la Cartera",
+      "lines": "675-703",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 23 ---\nELECTRO MERCANTIL LEGANES DAM",
+      "endMarker": "吃"
+    },
+    {
+      "type": "factura",
+      "title": "Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "704-726",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "ELECTRO MERCANTIL",
+        "B83802850"
+      ],
+      "startMarker": "--- Página 24 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221"
+    },
+    {
+      "type": "factura",
+      "title": "Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "727-749",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "ELECTRO MERCANTIL",
+        "B83802850"
+      ],
+      "startMarker": "--- Página 25 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221"
+    }
+  ],
+  "outputFiles": [
+    {
+      "filename": "1_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 1",
+      "lines": "1-31"
+    },
+    {
+      "filename": "2_parte médico_Parte-Mdico-de-Confirmacin-de-Incapacidad-Temporal.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 2",
+      "lines": "32-64"
+    },
+    {
+      "filename": "3_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal---.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 3",
+      "lines": "65-107"
+    },
+    {
+      "filename": "4_parte médico_Parte-Mdico-de-BajaAlta-de-Incapacidad-Temporal---.txt",
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 4",
+      "lines": "108-139"
+    },
+    {
+      "filename": "5_multa_Informacin-sobre-Publicacin-de-Edictos---Multa-de-.txt",
+      "type": "multa",
+      "title": "Información sobre Publicación de Edictos - Multa de Circulación",
+      "lines": "140-186"
+    },
+    {
+      "filename": "6_albaran_Albarn-de-Fischer-Ibrica-SAU.txt",
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "187-223"
+    },
+    {
+      "filename": "7_multa_Notificacin-de-Desestimacin-de-Recurso-de-Reposici.txt",
+      "type": "multa",
+      "title": "Notificación de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "224-279"
+    },
+    {
+      "filename": "8_multa_Resolucin-sobre-Multa-de-Circulacin.txt",
+      "type": "multa",
+      "title": "Resolución sobre Multa de Circulación",
+      "lines": "280-322"
+    },
+    {
+      "filename": "9_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "323-344"
+    },
+    {
+      "filename": "10_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "345-364"
+    },
+    {
+      "filename": "11_comunicado_Notificacin-de-Pago-de-BS-Confirming.txt",
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming",
+      "lines": "365-416"
+    },
+    {
+      "filename": "12_contrato_Condiciones-Generales-de-BS-Confirming.txt",
+      "type": "contrato",
+      "title": "Condiciones Generales de BS Confirming",
+      "lines": "417-467"
+    },
+    {
+      "filename": "13_albaran_Albarn-de-MICROCOM-SISTEMAS-MODULARES-SL.txt",
+      "type": "albaran",
+      "title": "Albarán de MICROCOM SISTEMAS MODULARES, S.L.",
+      "lines": "468-492"
+    },
+    {
+      "filename": "14_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "493-531"
+    },
+    {
+      "filename": "15_albaran_Albarn-de-ELECTRO-MERCANTIL-LEGANS-DAM-SLU.txt",
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "532-560"
+    },
+    {
+      "filename": "16_presupuesto_Presupuesto-para-Instalacin-de-IVE-y-Legalizacin--.txt",
+      "type": "presupuesto",
+      "title": "Presupuesto para Instalación de IVE y Legalización - Trinidad Arboiro Linares",
+      "lines": "561-599"
+    },
+    {
+      "filename": "17_unknown_Diagrama-de-Instalacin-Elctrica.txt",
+      "type": "unknown",
+      "title": "Diagrama de Instalación Eléctrica",
+      "lines": "600-612"
+    },
+    {
+      "filename": "18_unknown_Pagina-en-blanco.txt",
+      "type": "unknown",
+      "title": "Pagina en blanco",
+      "lines": "613-623"
+    },
+    {
+      "filename": "19_unknown_Detalles-del-Presupuesto.txt",
+      "type": "unknown",
+      "title": "Detalles del Presupuesto",
+      "lines": "624-635"
+    },
+    {
+      "filename": "20_albaran_Albarn-de-SALTOKI-COLLADO-VILLALBA.txt",
+      "type": "albaran",
+      "title": "Albarán de SALTOKI COLLADO VILLALBA",
+      "lines": "636-668"
+    },
+    {
+      "filename": "21_unknown_Lista-de-fechas.txt",
+      "type": "unknown",
+      "title": "Lista de fechas",
+      "lines": "669-674"
+    },
+    {
+      "filename": "22_unknown_Consulta-a-la-Cartera.txt",
+      "type": "unknown",
+      "title": "Consulta a la Cartera",
+      "lines": "675-703"
+    },
+    {
+      "filename": "23_factura_Factura-de-ELECTRO-MERCANTIL-LEGANS-DAM-SL.txt",
+      "type": "factura",
+      "title": "Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "704-726"
+    },
+    {
+      "filename": "24_factura_Factura-de-ELECTRO-MERCANTIL-LEGANS-DAM-SL.txt",
+      "type": "factura",
+      "title": "Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "727-749"
+    }
+  ],
+  "debugInfo": {
+    "debugPrefix": "2025-09-28T08-13-23-001Z_follon",
+    "debugPath": "/home/sergi/proyectos/community-saas/test-results/separacion",
+    "totalCharacters": 43188,
+    "filesGenerated": 24,
+    "timestamp": "2025-09-28T08:13:23.028Z"
+  },
+  "detectedDocumentsEnhanced": [
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 1",
+      "lines": "1-31",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "Z20.828",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 1 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR",
+      "textLength": 1701
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Confirmación de Incapacidad Temporal - Page 2",
+      "lines": "32-64",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "incapacidad temporal",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 2 ---\nPARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA",
+      "textLength": 1639
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 3",
+      "lines": "65-107",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "Z20.828",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 3 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para el TRABAJADOR",
+      "textLength": 3279
+    },
+    {
+      "type": "parte médico",
+      "title": "Parte Médico de Baja/Alta de Incapacidad Temporal - Page 4",
+      "lines": "108-139",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "parte médico",
+        "baja",
+        "alta",
+        "incapacidad temporal",
+        "LRGT650802916019"
+      ],
+      "startMarker": "--- Página 4 ---\nPARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL",
+      "endMarker": "Ejemplar para la EMPRESA",
+      "textLength": 1618
+    },
+    {
+      "type": "multa",
+      "title": "Información sobre Publicación de Edictos - Multa de Circulación",
+      "lines": "140-186",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "expediente sancionador",
+        "BOE",
+        "TESTRA"
+      ],
+      "startMarker": "--- Página 5 ---\nmedio ambiente y MADRID\nmovilidad",
+      "endMarker": "LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO",
+      "textLength": 2951
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de Fischer Ibérica, S.A.U.",
+      "lines": "187-223",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "fischer",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 7 ---\n0\nAlbarán",
+      "endMarker": "La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX",
+      "textLength": 2084
+    },
+    {
+      "type": "multa",
+      "title": "Notificación de Desestimación de Recurso de Reposición - Multa de Circulación",
+      "lines": "224-279",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "recurso",
+        "desestimación",
+        "expediente sancionador"
+      ],
+      "startMarker": "--- Página 8 ---\nÁREA DE GOBIERNO DE MEDIO AMBIENTE",
+      "endMarker": "000003108",
+      "textLength": 3208
+    },
+    {
+      "type": "multa",
+      "title": "Resolución sobre Multa de Circulación",
+      "lines": "280-322",
+      "confidence": 0.95,
+      "supported": false,
+      "keywords": [
+        "multa",
+        "circulación",
+        "recurso",
+        "pago",
+        "LSV",
+        "LPACAP"
+      ],
+      "startMarker": "Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general",
+      "endMarker": "LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.",
+      "textLength": 3700
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "323-344",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 10 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306",
+      "textLength": 930
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "323-344",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 11 ---\nem\nelectromercantil",
+      "endMarker": "ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306",
+      "textLength": 841
+    },
+    {
+      "type": "comunicado",
+      "title": "Notificación de Pago de BS Confirming",
+      "lines": "365-416",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "confirming",
+        "banco sabadell",
+        "orden de pago",
+        "financiación"
+      ],
+      "startMarker": "--- Página 12 ---\nⓇSabadell",
+      "endMarker": "Página 1 de 2\nKF232E-200720-E-EMA-GBSE 1200-00-001620-000511-IAENMA 14",
+      "textLength": 2918
+    },
+    {
+      "type": "contrato",
+      "title": "Condiciones Generales de BS Confirming",
+      "lines": "417-467",
+      "confidence": 0.85,
+      "supported": true,
+      "keywords": [
+        "confirming",
+        "banco sabadell",
+        "condiciones generales",
+        "cesión de créditos"
+      ],
+      "startMarker": "--- Página 13 ---\nⓇSabadell",
+      "endMarker": "Página 2 de 2\nwww.bancsabadell.com\nKF333E-200720-E-EMA-GBSE 1200-00-001621-000511-1AENMA14",
+      "textLength": 4556
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de MICROCOM SISTEMAS MODULARES, S.L.",
+      "lines": "468-492",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albaran",
+        "microcom",
+        "entrega",
+        "cantidades",
+        "GSM",
+        "MODBUS"
+      ],
+      "startMarker": "--- Página 14 ---\nMICROCOM",
+      "endMarker": "TOTAL €\n419,75",
+      "textLength": 829
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "323-344",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 15 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge",
+      "textLength": 1538
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.",
+      "lines": "323-344",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "ELECTRO MERCANTIL",
+        "entrega",
+        "cantidades"
+      ],
+      "startMarker": "--- Página 16 ---\nem\nelectromercantil",
+      "endMarker": "Firma y recoge",
+      "textLength": 1302
+    },
+    {
+      "type": "presupuesto",
+      "title": "Presupuesto para Instalación de IVE y Legalización - Trinidad Arboiro Linares",
+      "lines": "561-599",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "presupuesto",
+        "instalación",
+        "IVE",
+        "vehículo eléctrico",
+        "legalización",
+        "28660 BOADILLA DEL MONTE"
+      ],
+      "startMarker": "--- Página 17 ---\nCONTROL Y TENSION",
+      "endMarker": "TRANSFERENCIA\n3.185,93",
+      "textLength": 1582
+    },
+    {
+      "type": "unknown",
+      "title": "Diagrama de Instalación Eléctrica",
+      "lines": "600-612",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [
+        "diagrama",
+        "instalacion",
+        "electrica"
+      ],
+      "startMarker": "--- Página 18 ---\nO",
+      "endMarker": "Fax: 91 637 77 38 e-mail: info@gshydro.es",
+      "textLength": 407
+    },
+    {
+      "type": "unknown",
+      "title": "Pagina en blanco",
+      "lines": "613-623",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 19 ---",
+      "endMarker": "--- Página 20 ---",
+      "textLength": 811
+    },
+    {
+      "type": "unknown",
+      "title": "Detalles del Presupuesto",
+      "lines": "624-635",
+      "confidence": 0.7,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 20 ---\nO",
+      "endMarker": "Fax: 91 637 77 38 e-mail: info@gshydro.es",
+      "textLength": 400
+    },
+    {
+      "type": "albaran",
+      "title": "Albarán de SALTOKI COLLADO VILLALBA",
+      "lines": "636-668",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "albarán",
+        "SALTOKI",
+        "entrega",
+        "ZB5AD2",
+        "ZB5AZ101"
+      ],
+      "startMarker": "--- Página 21 ---\nSSALTOKI",
+      "endMarker": "Consulta detalles de la promoción con tu comercial o en tu centro Saltoki",
+      "textLength": 1964
+    },
+    {
+      "type": "unknown",
+      "title": "Lista de fechas",
+      "lines": "669-674",
+      "confidence": 0.5,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 22 ---\n03/12/19",
+      "endMarker": "17/02/20301,25",
+      "textLength": 52
+    },
+    {
+      "type": "unknown",
+      "title": "Consulta a la Cartera",
+      "lines": "675-703",
+      "confidence": 0.6,
+      "supported": false,
+      "keywords": [],
+      "startMarker": "--- Página 23 ---\nELECTRO MERCANTIL LEGANES DAM",
+      "endMarker": "吃",
+      "textLength": 1269
+    },
+    {
+      "type": "factura",
+      "title": "Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "704-726",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "ELECTRO MERCANTIL",
+        "B83802850"
+      ],
+      "startMarker": "--- Página 24 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221",
+      "textLength": 932
+    },
+    {
+      "type": "factura",
+      "title": "Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.",
+      "lines": "704-726",
+      "confidence": 0.95,
+      "supported": true,
+      "keywords": [
+        "factura",
+        "ELECTRO MERCANTIL",
+        "B83802850"
+      ],
+      "startMarker": "--- Página 25 ---\nem\nelectromercantil",
+      "endMarker": "ES57 2100 8661 09 0200037221",
+      "textLength": 935
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 8/23
+Tipo: multa
+Título: Resolución de Desestimación de Recurso de Reposición (Cont.)
+Líneas originales: 280-318 (total: 39 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 9 ---
+Marcador final: --- Página 10 ---
+Caracteres: 660
+Descripción: Continuation of the notification rejecting appeal of the multa.
+Keywords: multa, recurso contencioso administrativo, pago de la multa, 7110235220
+=====================================
+
+CL JAVIER VICENTE MONTERO, 2
+Localidad
+Provincia
+ESCORIAL, EL
+Nombre de la empresa
+Control y Tension
+MADRID
+Puesto de trabajo
+Directores generales, empresa privada
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Código postal Teléfono móvil
+Teléfono fijo
+28280
+918964063
+609273707
+Código nacional de ocupación (CNO)
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:

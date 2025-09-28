@@ -1,0 +1,36 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/23
+Tipo: factura
+Título: FACTURA - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 621-641 (total: 21 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 1264
+Descripción: Invoice from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L. to CONTROL Y TENSION SL for electrical supplies.
+Keywords: FACTURA, ELECTRO MERCANTIL, 850162, B83802850, 193,00
+=====================================
+
+PRIMERO: La captación de la velocidad de un vehículo se realiza mediante un
+cinemómetro que ha sido homologado y verificado por el órgano competente. La
+medición realizada responde a la velocidad con la que el vehículo circulaba
+en el momento de cometerse la infracción. No obstante, a dicha medición le
+han sido aplicados los márgenes de error previstos en la normativa de metro-
+logía vigente, habiendo sido utilizada para la graduación de la infracción
+la velocidad corregida según dichos márgenes de error, Y, por tanto, mino-
+rada en relación a la velocidad captada.
+En función de lo expuesto se puede afirmar que el vehículo circulaba, al me-
+nos, a la velocidad por la que fue sancionado, resultando carentes de funda-
+mento las alegaciones formuladas que dudan de la exactitud del elemento me-
+didor de la velocidad al cumplir éste con las exigencias que le marcan las
+normas que le son de aplicación. Queda, por tanto, demostrada la comisión
+de la infracción.
+SEGUNDO: No se aprecia ausencia de responsabilidad en la comisión de la in-
+fracción, ni vulneración de ninguno de los aspectos formales del procedi-
+miento, pues se ha tramitado cumpliendo los requisitos exigidos en la
+L.S.V., y demás normativa de general aplicación.
+......
+N.° BOLETÍN
+CONTROL

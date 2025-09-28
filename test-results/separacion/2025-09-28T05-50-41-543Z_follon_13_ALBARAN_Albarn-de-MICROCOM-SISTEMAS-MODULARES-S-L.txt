@@ -1,0 +1,49 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 13/24
+Tipo: albaran
+Título: Albarán de MICROCOM SISTEMAS MODULARES, S. L.
+Líneas originales: 524-557 (total: 34 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 14 ---
+Marcador final: --- Página 15 ---
+Caracteres: 1103
+Descripción: Delivery note from Microcom Sistemas Modulares, detailing ordered items, quantities, and delivery information for Control y Tension S.L.
+Keywords: albarán, MICROCOM, CONTROL Y TENSION, S.L., 18633, MC0000015, REMOTE GSM I/O MODULE, 419,75
+=====================================
+
+11,55
+1
+1
+GTIN: 4048962234077
+Suma:
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.
+En caso de alguna incidencia en el pedido, no se admitirán devoluciones de material
+ni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.
+Telef.
+Fax
+: 0034 977 838 711
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE
+: ESA08150666
+207
+Fischer Ibérica, S.A.U.
+CI. Klaus Fischer, 1/43300 Mont-roig del Camp (Tarragona)
+R.M.T. Hoja 20.251 Folio 184 - Tomo 1.565 1 Inscripción N.I.F. A08150666
+Deutsche Bank cta. nr. 0019 0020 99 4010032435, IBAN: ES9800190020994010032435, SWIFT: DEUTESBR
+La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX
+
+--- Página 8 ---
+ÁREA DE GOBIERNO DE MEDIO AMBIENTE
+Y MOVILIDAD
+Dirección General de Gestión y Vigilancia
+de la Circulación

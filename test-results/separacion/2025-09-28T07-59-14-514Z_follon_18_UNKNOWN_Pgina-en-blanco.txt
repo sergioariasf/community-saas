@@ -1,0 +1,17 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/24
+Tipo: unknown
+Título: Página en blanco
+Líneas originales: 675-676 (total: 2 líneas)
+Confianza: 30%
+Soportado: NO
+Marcador inicio: --- Página 19 ---
+Marcador final: --- Página 20 ---
+Caracteres: 230
+Descripción: Página en blanco
+Keywords: 
+=====================================
+
+3.- Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se llama desde
+fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista en

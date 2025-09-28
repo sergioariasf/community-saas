@@ -1,0 +1,56 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 16/24
+Tipo: presupuesto
+Título: Presupuesto para Instalación de IVE y Legalización - Trinidad Arboiro Linares
+Líneas originales: 561-599 (total: 39 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 17 ---
+CONTROL Y TENSION
+Marcador final: TRANSFERENCIA
+3.185,93
+Caracteres: 856
+Descripción: Quotation for the installation and legalization of an EV charging point by Trinidad Arboiro Linares for Control y Tension.
+Keywords: presupuesto, instalación, IVE, vehículo eléctrico, legalización, 28660 BOADILLA DEL MONTE
+=====================================
+
+C/ Albarracín, 33 28037 MADRID
+TITULAR
+NOTIFICACIÓN DE RESOLUCIÓN DE
+DESESTIMACIÓN DE RECURSO DE
+REPOSICIÓN
+EMISOR 28992.9
+Modelo
+9-5.1
+HORARIO DE ATENCIÓN AL PÚBLICO: Dias laborables de lunes a viernes, de 8:30 a 14 horas. Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+CONTROL Y TENSION SL
+MATRICULA 5581FTH
+MARCA
+MODELO
+LUGAR DE LA INFRACCIÓN
+REFERENCIA DEL EXPEDIENTE
+951/711023522.0
+N° DE NOTIFICACIÓN
+NOTIFI.951/201460155
+M-30 XC K 19,06 CR4
+FECHA DE INCOACIÓN
+DEL EXPEDIENTE
+FECHA DE EMISIÓN DE
+ESTA NOTIFICACIÓN
+10:50 16/09/2019 03/09/2020
+PÉRDIDA DE PUNTOS
+NO
+FECHA DE LA INFRACCIÓN HORA DE LA
+INFRACCIÓN
+21/06/2019
+CLAVE Y CALIFICACIÓN DE LA INFRACCIÓN
+10/002 GRAVE
+IMPORTE DE LA MULTA
+100,00
+PRECEPTO INFRINGIDO (ver dorso) *
+FECHA DE ESTA RESOLUCION
+27/08/2020
+INFRACCIÓN IMPUTADA
+SOBREPASAR LA VELOCIDAD
+MÁXIMA EN VÍAS LIMITADAS EN 60

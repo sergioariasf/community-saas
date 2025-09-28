@@ -1,0 +1,56 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 14/23
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Fluorescentes)
+Líneas originales: 435-475 (total: 41 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 15 ---
+Marcador final: --- Página 16 ---
+Caracteres: 570
+Descripción: Delivery note from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. to Control y Tension SL, listing fluorescent tubes and emergency lights.
+Keywords: albarán, ELECTRO MERCANTIL, 1084627, B83802850, FLUORESCENTE, SAGELUX
+=====================================
+
+0
+Albarán
+Fecha:
+Hoja
+01.10.2020
+1
+Cliente número:
+594182
+de
+Albarán número:
+Su NIF:
+2002337934
+ESB83802850
+1
+Comprador
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Su Persona de contacto
+fischer
+Ⓡ
+Fischer
+innovative solutions
+Fischer ibérica, S.A.U. CI. Klaus Fischer, 1/43300 Mont-roig del Camp
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Teléfono / Fax
+Su representante
+Su Pedido:
+Pedido número:
+Peso Bruto:
+Enviado por:
+reposicion
+215591934
+9,238 KG
+Condiciones de entrega:
+Bultos:
+251251 MRW (URGENTE-10)

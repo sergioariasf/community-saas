@@ -1,0 +1,69 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 11/24
+Tipo: comunicado
+Título: Notificación de Pago de BS Confirming
+Líneas originales: 365-416 (total: 52 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 12 ---
+ⓇSabadell
+Marcador final: Página 1 de 2
+KF232E-200720-E-EMA-GBSE 1200-00-001620-000511-IAENMA 14
+Caracteres: 1935
+Descripción: Notification of payment managed through Banco Sabadell's BS Confirming service, detailing payment orders for Morfus Equipamiento Comercial S.L. to Control y Tension SL and offering early payment options.
+Keywords: confirming, banco sabadell, orden de pago, financiación
+=====================================
+
+Matricula del
+vehiculo
+DNICIF
+Fecha de la
+infracción
+Hora de la
+infracción
+5581FTH
+Lugar de la infracción
+1827563 31/07/2019 11/26 M-30 Xc K 19,06 Cr4
+Clave de la infracción
+10/2
+Precepto
+infringido
+Fecha de inconción
+76.A LSV
+del expediente
+16/10/2019
+Fecha de la
+Resolución
+13/02/2020
+Sobrepasar la velocidad máxima en vías limitadas en 60 km/h o más. circular a79 km/h limitada a70 km/h
+CALIFICACIÓN DE LA INFRACCIÓN: (GRAVE)
+PÉRDIDA DE PUNTOS: NO
+Importe de la
+N° Relacion
+sanción
+100,00 EUROS
+20/2020
+El motivo de que la notificación haya sido publicada ha sido la imposibilidad de entregársela personalmente.
+Para conocer los medios de defensa jurídica de los que dispone puede consultar el Tablón Edictal Único del BOE o
+el Tablón Edictal de Sanciones de Tráfico de la Dirección General de Tráfico correspondiente a la fecha antes
+mencionada.
+Si desea pagar la multa podrá hacerlo durante el plazo de UN MES contado a partir del día siguiente a la práctica de
+la notificación.
+Podrá efectuar el pago de la multa por cualquiera de los siguientes medios:
+1.- En cualquier oficina de las entidades financieras que a continuación se relacionan, PRESENTANDO SIEMPRE
+ESTA COMUNICACIÓN:
+-
+BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)
+-
+CAIXABANK
+- BANCO SABADELL
+- IBERCAJA BANCO
+- BANCO SANTANDER
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección
+General de Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta
+notificación y la matrícula del vehículo, datos imprescindibles para su debida identificación.
+3. Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se
+llama desde fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista
+en www.madrid.es/Lineamadrid).
+4. Mediante Certificado digital o banca electrónica en www.madrid.es/multas.

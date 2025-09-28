@@ -1,0 +1,64 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 16/23
+Tipo: presupuesto
+Título: Presupuesto Instalación IVE - Control y Tension
+Líneas originales: 693-741 (total: 49 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 17 ---
+Marcador final: --- Página 18 ---
+Caracteres: 1281
+Descripción: Budget for installation and legalization of electrical vehicle charging infrastructure.
+Keywords: Presupuesto, 1 180006, IVE, Vehículo eléctrico, CONTROL Y TENSIÓN S.L.
+=====================================
+
+VICIA DE LA CIRCULA
+VIGILANCIA
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Página 1 de 1
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna: 33350
+CERRADA
+Hora: 13:40
+Tel.:
+918964063
+Ref. Oferta: 25467
+C.I.F.:
+B83802850

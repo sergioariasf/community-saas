@@ -1,0 +1,37 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 9/24
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+Líneas originales: 296-314 (total: 19 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+Marcador final: ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+Caracteres: 236
+Descripción: Delivery note from ELECTRO MERCANTIL to CONTROL Y TENSION SL.
+Keywords: albarán, ELECTRO MERCANTIL, CONTROL Y TENSION SL, 1088220, B83802850, DIS02001040, LEG43000200
+=====================================
+
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja

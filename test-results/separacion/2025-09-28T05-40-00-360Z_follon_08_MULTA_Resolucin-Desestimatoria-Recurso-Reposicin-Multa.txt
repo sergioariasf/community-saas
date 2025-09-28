@@ -1,0 +1,50 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 8/24
+Tipo: multa
+Título: Resolución Desestimatoria Recurso Reposición Multa
+Líneas originales: 262-295 (total: 34 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 9 ---
+Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general
+Marcador final: LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+Caracteres: 613
+Descripción: Continued resolution regarding a traffic violation for CONTROL Y TENSION SL.
+Keywords: multa, LSV, Eva García Matas, 7110235220, 5581FTH
+=====================================
+
+SPS ☑ INSS/ISM ☐ MUTUA |
+DATOS DE/LA TRABAJADOR/A
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Primer apellido
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+LARA
+GUTIERREZ
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+CL JAVIER VICENTE MONTERO, 2
+Localidad
+Provincia
+ESCORIAL, EL
+Nombre de la empresa
+Control y Tension
+MADRID
+Puesto de trabajo
+Directores generales, empresa privada
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Código postal Teléfono móvil
+Teléfono fijo
+28280
+918964063
+609273707
+Código nacional de ocupación (CNO)

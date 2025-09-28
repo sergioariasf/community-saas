@@ -1,0 +1,92 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 7/22
+Tipo: multa
+Título: Notificación de Resolución de Desestimación de Recurso de Reposición
+Líneas originales: 241-317 (total: 77 líneas)
+Confianza: 90%
+Soportado: NO
+Marcador inicio: --- Página 8 ---
+Marcador final: --- Página 10 ---
+Caracteres: 2493
+Descripción: Notification of rejection of appeal against a traffic fine, issued to Control y Tension SL, for speeding on 21/06/2019, reference 951/711023522.0.
+Keywords: multa, desestimación, recurso, 951/711023522.0, 5581FTH, 100,00
+=====================================
+
+2828497644
+N° identificación del facultativo
+1606250106A
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a reconocimiento médico tiene la obligación de acudir. En caso de no comparecer, sin haber justificado su ausencia, el pago de su prestación será suspendido
+cautelarmente, en virtud de lo previsto en el art. 132.3 de la Ley General de la Seguridad social.
+Contra este acto podrá interponer una reclamación previa a la vía judicial social, en el plazo de once dias siguientes al de su notificación, de conformidad con lo establecido en el artículo 71 de la Ley 36/2011, 10 de octubre,
+reguladora de la Jurisdicción social.
+En los casos de alta médica por contingencia prefesional emitida por una mutua, podrá interponer reclamación previa a la via judicial social, en el plazo de once días siguientes al de su notificación, de conformidad con lo
+establecido en el artículo 71 de la Ley 36/2011, de 10 de octubre, reguladora de la Jurisdicción social o podrá iniciar el procedimiento administrativo especial de revisión del alta ante la entidad gestora (INSS/ISM) competente en
+el plazo de diez días siguientes al de su notificación, con efecto suspensivo del alta, de conformidad con lo establecido en el artículo 4 del RD 1430/2009, de 11 de septiembre.
+Ejemplar para el TRABAJADOR
+
+--- Página 4 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+ENTIDAD EMISORA
+Periodo de observación por enfermedad profesional
+SPS ☑ INSS/ISM ☐ MUTUA |
+DATOS DE/LA TRABAJADOR/A
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Primer apellido
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+LARA
+GUTIERREZ
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+CL JAVIER VICENTE MONTERO, 2
+Localidad
+Provincia
+ESCORIAL, EL
+Nombre de la empresa
+Control y Tension
+MADRID
+Puesto de trabajo
+Directores generales, empresa privada
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Código postal Teléfono móvil
+Teléfono fijo
+28280
+918964063
+609273707
+Código nacional de ocupación (CNO)
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR

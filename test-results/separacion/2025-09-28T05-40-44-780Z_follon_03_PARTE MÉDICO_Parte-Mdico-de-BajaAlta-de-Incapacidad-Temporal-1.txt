@@ -1,0 +1,69 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 3/23
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal (1)
+Líneas originales: 73-126 (total: 54 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 3 ---
+Marcador final: --- Página 4 ---
+Caracteres: 1353
+Descripción: Medical certificate indicating both the beginning and end of temporary incapacity for Antonio Lara Gutierrez, confirming recovery.
+Keywords: parte médico, baja, alta, incapacidad temporal, enfermedad común, LRGT650802916019, 280373935701, 01827563Y, ANTONIO LARA GUTIERREZ, Curación/Mejoría
+=====================================
+
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL)
+Enfermedad profesional (EP)
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+FECHA DE LA BAJA
+12/09/2020
+;
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+TIPO DE PROCESO
+Muy corto
+Corto
+Medio
+☑
+Largo
+ㅁㅁ
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO
+N° DEL PARTE DE CONFIRMACIÓN
+1
+DURACIÓN ESTIMADA
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020
+DATOS OBLIGATORIOS
+CÓDIGO DE LA PROVINCIA DEL CENTRO DE SALUD DEL FACULTATIVO/MÉDICO INSPECTOR QUE EMITE EL PARTE DE CONFIRMACIÓN (1)
+28
+(1)
+Dato obligatorio con el fin de identificar la provincia de la entidad emisora de la baja médica, a efectos de coordinación y control de la IT del trabajador.
+SÓLO EN CASO DEL TRASLADO DEL TRABAJADOR A OTRO SPS
+ÚLTIMO PARTE DE CONFIRMACIÓN POR TRASLADO
+(2) ☐
+(2)
+En el caso de traslado, el próximo parte de confirmación se emitirá por otro SPS diferente al que emitió este parte de confirmación.
+PASA A CONTROL DEL INSS
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+(3)

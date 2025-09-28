@@ -1,0 +1,39 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 9/24
+Tipo: albaran
+Título: Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+Líneas originales: 323-344 (total: 22 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 10 ---
+em
+electromercantil
+Marcador final: ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+Caracteres: 466
+Descripción: Delivery note from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U., detailing ordered items, quantities, and delivery information for Control y Tension S.L.
+Keywords: albarán, ELECTRO MERCANTIL, entrega, cantidades
+=====================================
+
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐
+Ejemplar para la EMPRESA
+
+--- Página 5 ---
+medio ambiente y MADRID

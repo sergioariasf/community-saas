@@ -1,0 +1,28 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/22
+Tipo: unknown
+Título: Diagram of Electrical Panel Installation 2
+Líneas originales: 689-701 (total: 13 líneas)
+Confianza: 70%
+Soportado: NO
+Marcador inicio: --- Página 20 ---
+Marcador final: --- Página 21 ---
+Caracteres: 199
+Descripción: Diagram illustrating an electrical panel installation, possibly related to the preceding budget.
+Keywords: diagram, electrical panel, GS-Hydro
+=====================================
+
+GENERAL
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA
+VIGILANCIA
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad

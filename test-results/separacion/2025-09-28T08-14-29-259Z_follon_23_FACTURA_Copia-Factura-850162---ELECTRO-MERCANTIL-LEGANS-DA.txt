@@ -1,0 +1,46 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/23
+Tipo: factura
+Título: Copia Factura 850162 - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 702-730 (total: 29 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 25 ---
+em
+electromercantil
+Marcador final: ES57 2100 8661 09 0200037221
+Caracteres: 974
+Descripción: Invoice from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L. to CONTROL Y TENSION SL, dated 20/05/2019.
+Keywords: factura, 850162, ELECTRO MERCANTIL, CONTROL Y TENSION SL, 20/05/2019, 193,00
+=====================================
+
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial

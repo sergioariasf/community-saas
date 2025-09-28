@@ -1,0 +1,45 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 14/23
+Tipo: albaran
+Título: Albarán 1084697 - Electro Mercantil Leganés D.A.M., S.L.U.
+Líneas originales: 519-546 (total: 28 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 16 ---
+em
+electromercantil
+Marcador final: Firma y recoge
+Caracteres: 698
+Descripción: Delivery note from Electro Mercantil Leganés D.A.M., S.L.U. to CONTROL Y TENSION SL, dated 23/07/2020.
+Keywords: albarán, 1084697, Electro Mercantil, CONTROL Y TENSION SL, 23/07/2020, PHI02{1011916, PHI02 1046314, PHI02{1004409, PHI02{1011135
+=====================================
+
+GTIN: 4048962308747
+10,41
+1
+1
+0070 534616 MS LIQUIDO 1 KG MARRON
+11,55
+1
+1
+GTIN: 4048962234077
+Suma:
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.
+En caso de alguna incidencia en el pedido, no se admitirán devoluciones de material
+ni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.
+Telef.
+Fax
+: 0034 977 838 711
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE
+: ESA08150666
+207

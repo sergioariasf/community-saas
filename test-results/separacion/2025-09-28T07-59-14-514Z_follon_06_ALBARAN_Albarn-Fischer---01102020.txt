@@ -1,0 +1,62 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 6/24
+Tipo: albaran
+Título: Albarán Fischer - 01.10.2020
+Líneas originales: 214-260 (total: 47 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 7 ---
+Marcador final: --- Página 8 ---
+Caracteres: 2115
+Descripción: Delivery note from Fischer Ibérica, S.A.U. to Control y Tension S.L., detailing ordered items.
+Keywords: albarán, fischer, 2002337934, CONTROL Y TENSION, 538880, 71202
+=====================================
+
+Recaída:
+sí ☐ NO ☑
+Fecha de la baja del proceso inicial del que es
+PARTE DE ALTA ☑
+recaída
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+Código CIE-9
+(Todas las contingencias)
+Código CIE-10
+(Solo en EP)
+Z20.828
+Fecha de la siguiente revisión médica
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/ DATOS DEL MÉDICO INSPECTOR
+Curación/Mejoría que permite realizar trabajo habitual ☑
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHE.
+21/09/2020
+Firma, fecha y sello
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐ ☐ ☐ ☑
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a reconocimiento médico tiene la obligación de acudir. En caso de no comparecer, sin haber justificado su ausencia, el pago de su prestación será suspendido
+cautelarmente, en virtud de lo previsto en el art. 132.3 de la Ley General de la Seguridad social.
+Contra este acto podrá interponer una reclamación previa a la vía judicial social, en el plazo de once dias siguientes al de su notificación, de conformidad con lo establecido en el artículo 71 de la Ley 36/2011, 10 de octubre,
+reguladora de la Jurisdicción social.
+En los casos de alta médica por contingencia prefesional emitida por una mutua, podrá interponer reclamación previa a la via judicial social, en el plazo de once días siguientes al de su notificación, de conformidad con lo
+establecido en el artículo 71 de la Ley 36/2011, de 10 de octubre, reguladora de la Jurisdicción social o podrá iniciar el procedimiento administrativo especial de revisión del alta ante la entidad gestora (INSS/ISM) competente en
+el plazo de diez días siguientes al de su notificación, con efecto suspensivo del alta, de conformidad con lo establecido en el artículo 4 del RD 1430/2009, de 11 de septiembre.
+Ejemplar para el TRABAJADOR
+
+--- Página 4 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+ENTIDAD EMISORA

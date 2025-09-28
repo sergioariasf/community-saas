@@ -1,0 +1,23 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/23
+Tipo: unknown
+Título: Electrical Components List
+Líneas originales: 547-554 (total: 8 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 20 ---
+Marcador final: --- Página 21 ---
+Caracteres: 397
+Descripción: Likely a continuation from the Budget, with an itemized list of the required electrical components and prices.
+Keywords: GS-Hydro, CUADRO DE 54, Protector Sobretensions, Praedo bezdizecon
+=====================================
+
+Fischer Ibérica, S.A.U.
+CI. Klaus Fischer, 1/43300 Mont-roig del Camp (Tarragona)
+R.M.T. Hoja 20.251 Folio 184 - Tomo 1.565 1 Inscripción N.I.F. A08150666
+Deutsche Bank cta. nr. 0019 0020 99 4010032435, IBAN: ES9800190020994010032435, SWIFT: DEUTESBR
+La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX
+
+--- Página 8 ---
+ÁREA DE GOBIERNO DE MEDIO AMBIENTE

@@ -1,0 +1,40 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/24
+Tipo: factura
+Título: Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 704-726 (total: 23 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+em
+electromercantil
+Marcador final: ES57 2100 8661 09 0200037221
+Caracteres: 636
+Descripción: Invoice from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L. detailing charges and billing information for Control y Tension SL.
+Keywords: factura, ELECTRO MERCANTIL, B83802850
+=====================================
+
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220

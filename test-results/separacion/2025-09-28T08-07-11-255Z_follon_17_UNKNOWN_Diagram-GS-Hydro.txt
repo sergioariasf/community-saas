@@ -1,0 +1,27 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/23
+Tipo: unknown
+Título: Diagram GS-Hydro
+Líneas originales: 592-603 (total: 12 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+Marcador final: --- Página 20 ---
+Caracteres: 245
+Descripción: Diagram of the electrical box
+Keywords: GS-Hydro, electrica, CUADRO, IVE
+=====================================
+
+IMPORTE DE LA MULTA
+100,00
+PRECEPTO INFRINGIDO (ver dorso) *
+FECHA DE ESTA RESOLUCION
+27/08/2020
+INFRACCIÓN IMPUTADA
+SOBREPASAR LA VELOCIDAD
+MÁXIMA EN VÍAS LIMITADAS EN 60
+KM/H O MÁS.
+CIRCULAR A 74 km/h LIMITE 70 km/h
+RELACION: 880/2020
+76.A LSV

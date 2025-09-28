@@ -1,0 +1,48 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 2/22
+Tipo: parte médico
+Título: Parte Médico de Confirmación de Incapacidad Temporal - Page 2
+Líneas originales: 33-65 (total: 33 líneas)
+Confianza: 90%
+Soportado: NO
+Marcador inicio: --- Página 2 ---
+Marcador final: --- Página 3 ---
+Caracteres: 1035
+Descripción: Medical certificate confirming temporary disability for Antonio Lara Gutierrez, issued on 19/09/2020, with data for the company and province.
+Keywords: incapacidad temporal, enfermedad común, LRGT650802916019, 28
+=====================================
+
+Muy corto
+Medio
+DURACIÓN ESTIMADA
+Corto ☑
+Largo
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020
+(Todas las contingencias)
+Código CIE-9
+Código CIE-10
+(Sólo en EP)
+Z20.828
+DIAGNÓSTICO CON DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL
+DIAGNÓSTICO DE CONFIRMACIÓN Contacto y (sospecha de) exposición a otras
+enfermedades víricas transmisibles
+DESCRIPCIÓN DE LA LIMITACIÓN FUNCIONAL EN ESTA FECHA Limitación movilidad/Inmovilización
+SÓLO EN CASO DEL TRASLADO DEL TRABAJADOR A OTRO SPS
+ÚLTIMO PARTE DE CONFIRMACIÓN POR TRASLADO
+PASA A CONTROL DEL INSS
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+☐
+11/09/2021
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a un reconocimiento médico tiene la obligación de acudir. En caso de no comparecer
+sin haber justificado su ausencia, el pago de su prestación será suspendido cautelarmente, en virtud de lo previsto en el
+art.132.3 de la Ley General de la Seguridad Social.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ANTONIO
+VILCH Z,
+21/09/2020
+Firma, fecha y sello

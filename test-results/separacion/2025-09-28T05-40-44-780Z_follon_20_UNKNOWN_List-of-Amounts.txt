@@ -1,0 +1,19 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/23
+Tipo: unknown
+Título: List of Amounts
+Líneas originales: 703-706 (total: 4 líneas)
+Confianza: 30%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 418
+Descripción: List of values, possibly related to previous documents or payments.
+Keywords: amounts, values
+=====================================
+
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).

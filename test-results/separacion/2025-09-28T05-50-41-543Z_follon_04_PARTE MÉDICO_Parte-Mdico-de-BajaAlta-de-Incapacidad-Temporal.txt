@@ -1,0 +1,46 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 4/24
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal
+Líneas originales: 120-150 (total: 31 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 4 ---
+Marcador final: --- Página 5 ---
+Caracteres: 869
+Descripción: Medical certificate for sick leave, detailing patient information, diagnosis, dates of absence and return to work.
+Keywords: parte médico, baja, alta, incapacidad temporal, enfermedad común, LRGT650802916019, ANTONIO LARA GUTIERREZ, Z20.828
+=====================================
+
+ÚLTIMO PARTE DE CONFIRMACIÓN POR TRASLADO
+(2) ☐
+(2)
+En el caso de traslado, el próximo parte de confirmación se emitirá por otro SPS diferente al que emitió este parte de confirmación.
+PASA A CONTROL DEL INSS
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+(3)
+11/09/2021
+(3)
+A partir de esta fecha no se emitirán partes de confirmación. El INSS le remitirá comunicación sobre el proceso de IT del trabajador.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHEZ,
+21/09/2020
+. Firma, fecha y sello
+Nº de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para la EMPRESA
+
+--- Página 3 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional

@@ -1,0 +1,72 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 7/24
+Tipo: multa
+Título: Notificación de Desestimación de Recurso de Reposición - Multa de Circulación
+Líneas originales: 224-279 (total: 56 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 8 ---
+ÁREA DE GOBIERNO DE MEDIO AMBIENTE
+Marcador final: 000003108
+Caracteres: 2220
+Descripción: Notification of rejection of an appeal against a traffic fine, including the original infraction details (speeding), vehicle information, and appeal outcome.
+Keywords: multa, circulación, recurso, desestimación, expediente sancionador
+=====================================
+
+(Solo en EP)
+Z20.828
+Fecha de la siguiente revisión médica
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/ DATOS DEL MÉDICO INSPECTOR
+Curación/Mejoría que permite realizar trabajo habitual ☑
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHE.
+21/09/2020
+Firma, fecha y sello
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐ ☐ ☐ ☑
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a reconocimiento médico tiene la obligación de acudir. En caso de no comparecer, sin haber justificado su ausencia, el pago de su prestación será suspendido
+cautelarmente, en virtud de lo previsto en el art. 132.3 de la Ley General de la Seguridad social.
+Contra este acto podrá interponer una reclamación previa a la vía judicial social, en el plazo de once dias siguientes al de su notificación, de conformidad con lo establecido en el artículo 71 de la Ley 36/2011, 10 de octubre,
+reguladora de la Jurisdicción social.
+En los casos de alta médica por contingencia prefesional emitida por una mutua, podrá interponer reclamación previa a la via judicial social, en el plazo de once días siguientes al de su notificación, de conformidad con lo
+establecido en el artículo 71 de la Ley 36/2011, de 10 de octubre, reguladora de la Jurisdicción social o podrá iniciar el procedimiento administrativo especial de revisión del alta ante la entidad gestora (INSS/ISM) competente en
+el plazo de diez días siguientes al de su notificación, con efecto suspensivo del alta, de conformidad con lo establecido en el artículo 4 del RD 1430/2009, de 11 de septiembre.
+Ejemplar para el TRABAJADOR
+
+--- Página 4 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+ENTIDAD EMISORA
+Periodo de observación por enfermedad profesional
+SPS ☑ INSS/ISM ☐ MUTUA |
+DATOS DE/LA TRABAJADOR/A
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Primer apellido
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+LARA
+GUTIERREZ
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701

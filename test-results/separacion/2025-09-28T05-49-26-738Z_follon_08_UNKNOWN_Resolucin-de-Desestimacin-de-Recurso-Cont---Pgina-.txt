@@ -1,0 +1,69 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 8/23
+Tipo: unknown
+Título: Resolución de Desestimación de Recurso (Cont. - Página 9)
+Líneas originales: 294-347 (total: 54 líneas)
+Confianza: 75%
+Soportado: NO
+Marcador inicio: Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general
+Marcador final: LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+Caracteres: 1042
+Descripción: Continuation of the resolution regarding the traffic fine, detailing payment methods and legal options.
+Keywords: multa, recurso, pago, LSV, ayuntamiento de madrid, 010
+=====================================
+
+609273707
+Código nacional de ocupación (CNO)
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐
+Ejemplar para la EMPRESA
+
+--- Página 5 ---
+medio ambiente y MADRID
+movilidad
+Dirección General de Gestión y Vigilancia de la Circulación
+Subdirección General de Gestión de Multas de Circulación

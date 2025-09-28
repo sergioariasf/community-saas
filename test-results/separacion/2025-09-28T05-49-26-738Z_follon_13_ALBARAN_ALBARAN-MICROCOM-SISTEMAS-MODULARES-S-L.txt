@@ -1,0 +1,43 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 13/23
+Tipo: albaran
+Título: ALBARAN MICROCOM SISTEMAS MODULARES, S. L.
+Líneas originales: 506-533 (total: 28 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 14 ---
+Marcador final: --- Página 15 ---
+Caracteres: 558
+Descripción: Delivery note from MICROCOM SISTEMAS MODULARES, S. L. to CONTROL Y TENSION, S.L. for REMOTE GSM I/O MODULE 8ED,4EA,MODBUS GSM/GPRS 2G.  Document number 18633
+Keywords: albaran, MICROCOM, 18633, MC0000015, REMOTE GSM, CONTROL Y TENSION, S.L.
+=====================================
+
+TUERCA ARANDELA MU F A2 M10
+14,02
+1
+100
+GTIN: 8001132719527
+0050 45707
+FIS H 18X130/200 K
+14,88
+1
+10
+GTIN: 4006209457078
+0060 543633
+Broca SDS short Pointer M 16/200/260
+GTIN: 4048962308747
+10,41
+1
+1
+0070 534616 MS LIQUIDO 1 KG MARRON
+11,55
+1
+1
+GTIN: 4048962234077
+Suma:
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.

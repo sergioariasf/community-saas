@@ -1,0 +1,20 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/24
+Tipo: unknown
+Título: Lista de numeros
+Líneas originales: 584-588 (total: 5 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: 03/12/19
+Marcador final: 17/02/20301,25
+Caracteres: 93
+Descripción: Lista de numeros, possiblemente de facturas
+Keywords: numeros, facturas
+=====================================
+
+10:50 16/09/2019 03/09/2020
+PÉRDIDA DE PUNTOS
+NO
+FECHA DE LA INFRACCIÓN HORA DE LA
+INFRACCIÓN

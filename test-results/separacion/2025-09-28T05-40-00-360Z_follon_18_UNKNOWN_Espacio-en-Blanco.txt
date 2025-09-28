@@ -1,0 +1,23 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/24
+Tipo: unknown
+Título: Espacio en Blanco
+Líneas originales: 545-552 (total: 8 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: O
+Marcador final: Cabo Rufino Lázaro, 5. P. Európolis - 28230 Las Rozas (Madrid) - Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es
+Caracteres: 363
+Descripción: Página en blanco
+Keywords: Espacio, en, blanco
+=====================================
+
+: ESA08150666
+207
+Fischer Ibérica, S.A.U.
+CI. Klaus Fischer, 1/43300 Mont-roig del Camp (Tarragona)
+R.M.T. Hoja 20.251 Folio 184 - Tomo 1.565 1 Inscripción N.I.F. A08150666
+Deutsche Bank cta. nr. 0019 0020 99 4010032435, IBAN: ES9800190020994010032435, SWIFT: DEUTESBR
+La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX
+

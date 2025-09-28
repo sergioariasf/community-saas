@@ -1,0 +1,55 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/22
+Tipo: unknown
+Título: Consulta a la Cartera
+Líneas originales: 750-789 (total: 40 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 23 ---
+Marcador final: --- Página 24 ---
+Caracteres: 780
+Descripción: Report detailing the financial status of CONTROL Y TENSION SL, potentially an invoice aging report.
+Keywords: CONSULTA A LA CARTERA, CONTROL Y TENSION SL, ELECTRO MERCANTIL, Factura, Importe
+=====================================
+
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 609273707
+Bultos
+4
+CÓDIGO
+DESCRIPCIÓN
+REF.PROV. CANTIDAD
+DIS02001040
+ZZZZZRAEE
+LEG43000200
+PANTALLA DISANO RODA FL 2X36 CEL
+2217802300
+ECOTASA (R.DECRETO 208/2005): DIS02001040
+CAJA EST LEGRAND 35966 220X170 CIEGA IP55 035966
+15,00
+15,00
+5,00
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 11 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+ญ
+Miembro de:

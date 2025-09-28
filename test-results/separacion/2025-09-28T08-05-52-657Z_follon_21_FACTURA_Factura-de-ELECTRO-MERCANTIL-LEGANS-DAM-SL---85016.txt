@@ -1,0 +1,51 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/22
+Tipo: factura
+Título: Factura de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L. - 850162
+Líneas originales: 790-825 (total: 36 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 453
+Descripción: Invoice from ELECTRO MERCANTIL LEGANÉS to CONTROL Y TENSION SL.
+Keywords: factura, ELECTRO MERCANTIL, 850162, CONTROL Y TENSION SL, 193,00
+=====================================
+
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+ALBARÁN
+1088169
+COPIA CLIENTE
+Página 1 de 1
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna:
+Hora:
+10:18
+Ref. Oferta:
+Tel.:
+C.I.F.:
+918964063
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Área:
+ALMACEN LEGANES
+1
+ENVIO
+28230
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+LAS ROZAS DE MADRID

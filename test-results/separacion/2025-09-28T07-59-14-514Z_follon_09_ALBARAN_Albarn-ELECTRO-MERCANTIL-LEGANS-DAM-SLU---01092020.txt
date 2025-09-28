@@ -1,0 +1,41 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 9/24
+Tipo: albaran
+Título: Albarán ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - 01/09/2020
+Líneas originales: 368-393 (total: 26 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 10 ---
+Marcador final: --- Página 11 ---
+Caracteres: 475
+Descripción: Delivery note from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. to Control y Tension S.L.
+Keywords: albarán, ELECTRO MERCANTIL, 1088220, CONTROL Y TENSION, DIS02001040, LEGRAND
+=====================================
+
+Fecha de la
+infracción
+Hora de la
+infracción
+5581FTH
+Lugar de la infracción
+1827563 31/07/2019 11/26 M-30 Xc K 19,06 Cr4
+Clave de la infracción
+10/2
+Precepto
+infringido
+Fecha de inconción
+76.A LSV
+del expediente
+16/10/2019
+Fecha de la
+Resolución
+13/02/2020
+Sobrepasar la velocidad máxima en vías limitadas en 60 km/h o más. circular a79 km/h limitada a70 km/h
+CALIFICACIÓN DE LA INFRACCIÓN: (GRAVE)
+PÉRDIDA DE PUNTOS: NO
+Importe de la
+N° Relacion
+sanción
+100,00 EUROS
+20/2020

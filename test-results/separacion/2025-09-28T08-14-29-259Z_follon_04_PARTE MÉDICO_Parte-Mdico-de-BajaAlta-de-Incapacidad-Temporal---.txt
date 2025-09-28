@@ -1,0 +1,58 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 4/23
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal - Antonio Lara Gutierrez (Empresa)
+Líneas originales: 125-166 (total: 42 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 4 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Marcador final: Ejemplar para la EMPRESA
+Caracteres: 916
+Descripción: Medical document indicating both low and high of temporary disability, copy for employer.
+Keywords: parte médico, baja, alta, incapacidad temporal, LRGT650802916019, 280373935701, 01827563Y, ANTONIO LARA GUTIERREZ, Control y Tension, 12/09/2020, 21/09/2020
+=====================================
+
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+(3)
+11/09/2021
+(3)
+A partir de esta fecha no se emitirán partes de confirmación. El INSS le remitirá comunicación sobre el proceso de IT del trabajador.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHEZ,
+21/09/2020
+. Firma, fecha y sello
+Nº de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para la EMPRESA
+
+--- Página 3 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑ INSS/ISM ☐ MUTUA|
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social

@@ -1,0 +1,27 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/27
+Tipo: unknown
+Título: Diagrama Eléctrico
+Líneas originales: 600-611 (total: 12 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+Marcador final: --- Página 20 ---
+Caracteres: 199
+Descripción: Diagrama eléctrico.
+Keywords: esquema, eléctrico, GS-Hydro
+=====================================
+
+KM/H O MÁS.
+CIRCULAR A 74 km/h LIMITE 70 km/h
+RELACION: 880/2020
+76.A LSV
+REFERENCIA DEL DESTINATARIO:
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ 10
+GALAPAGAR
+MADRID
+CP: 28260
+SC:00
+NT81150160009701460155D

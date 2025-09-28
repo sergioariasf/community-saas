@@ -1,0 +1,36 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 24/24
+Tipo: factura
+Título: Copia Factura - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 625-643 (total: 19 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: em
+electromercantil
+Distribución Activa Multisectorial
+Marcador final: ES57 2100 8661 09 0200037221
+Caracteres: 978
+Descripción: Copy of invoice from ELECTRO MERCANTIL to CONTROL Y TENSION SL.
+Keywords: factura, ELECTRO MERCANTIL, CONTROL Y TENSION SL, 850162, B83802850, 193,00
+=====================================
+
+han sido aplicados los márgenes de error previstos en la normativa de metro-
+logía vigente, habiendo sido utilizada para la graduación de la infracción
+la velocidad corregida según dichos márgenes de error, Y, por tanto, mino-
+rada en relación a la velocidad captada.
+En función de lo expuesto se puede afirmar que el vehículo circulaba, al me-
+nos, a la velocidad por la que fue sancionado, resultando carentes de funda-
+mento las alegaciones formuladas que dudan de la exactitud del elemento me-
+didor de la velocidad al cumplir éste con las exigencias que le marcan las
+normas que le son de aplicación. Queda, por tanto, demostrada la comisión
+de la infracción.
+SEGUNDO: No se aprecia ausencia de responsabilidad en la comisión de la in-
+fracción, ni vulneración de ninguno de los aspectos formales del procedi-
+miento, pues se ha tramitado cumpliendo los requisitos exigidos en la
+L.S.V., y demás normativa de general aplicación.
+......
+N.° BOLETÍN
+CONTROL
+IMPORTE
+MATRÍCULA

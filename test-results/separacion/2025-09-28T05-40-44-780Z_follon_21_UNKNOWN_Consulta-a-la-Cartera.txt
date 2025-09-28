@@ -1,0 +1,40 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/23
+Tipo: unknown
+Título: Consulta a la Cartera
+Líneas originales: 707-731 (total: 25 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: --- Página 23 ---
+Marcador final: --- Página 24 ---
+Caracteres: 463
+Descripción: List of invoices and financial information related to CONTROL Y TENSION SL
+Keywords: cartera, invoices, CONTROL Y TENSION SL
+=====================================
+
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Página 1 de 1

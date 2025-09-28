@@ -1,0 +1,18 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/24
+Tipo: unknown
+Título: Page Marker
+Líneas originales: 698-700 (total: 3 líneas)
+Confianza: 20%
+Soportado: NO
+Marcador inicio: --- Página 19 ---
+Marcador final: --- Página 20 ---
+Caracteres: 47
+Descripción: Just the number 19 on a page
+Keywords: page marker, 19
+=====================================
+
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS

@@ -1,0 +1,1739 @@
+
+=== TEXTO COMPLETO EXTRAÍDO ===
+Archivo: follon.pdf
+Timestamp: 2025-09-28T05:40:44.781Z
+Total caracteres: 43188
+Total líneas: 1730
+Documentos detectados: 23
+======================================
+
+--- Página 1 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) |
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+"
+FECHA DE LA BAJA
+12/09/2020
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+N° DEL PARTE DE CONFIRMACIÓN
+1
+TIPO DE PROCESO
+Muy corto
+Medio
+DURACIÓN ESTIMADA
+Corto ☑
+Largo
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020
+(Todas las contingencias)
+Código CIE-9
+Código CIE-10
+(Sólo en EP)
+Z20.828
+DIAGNÓSTICO CON DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL
+DIAGNÓSTICO DE CONFIRMACIÓN Contacto y (sospecha de) exposición a otras
+enfermedades víricas transmisibles
+DESCRIPCIÓN DE LA LIMITACIÓN FUNCIONAL EN ESTA FECHA Limitación movilidad/Inmovilización
+SÓLO EN CASO DEL TRASLADO DEL TRABAJADOR A OTRO SPS
+ÚLTIMO PARTE DE CONFIRMACIÓN POR TRASLADO
+PASA A CONTROL DEL INSS
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+☐
+11/09/2021
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a un reconocimiento médico tiene la obligación de acudir. En caso de no comparecer
+sin haber justificado su ausencia, el pago de su prestación será suspendido cautelarmente, en virtud de lo previsto en el
+art.132.3 de la Ley General de la Seguridad Social.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ANTONIO
+VILCH Z,
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para el TRABAJADOR
+
+--- Página 2 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL)
+Enfermedad profesional (EP)
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+FECHA DE LA BAJA
+12/09/2020
+;
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+TIPO DE PROCESO
+Muy corto
+Corto
+Medio
+☑
+Largo
+ㅁㅁ
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO
+N° DEL PARTE DE CONFIRMACIÓN
+1
+DURACIÓN ESTIMADA
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020
+DATOS OBLIGATORIOS
+CÓDIGO DE LA PROVINCIA DEL CENTRO DE SALUD DEL FACULTATIVO/MÉDICO INSPECTOR QUE EMITE EL PARTE DE CONFIRMACIÓN (1)
+28
+(1)
+Dato obligatorio con el fin de identificar la provincia de la entidad emisora de la baja médica, a efectos de coordinación y control de la IT del trabajador.
+SÓLO EN CASO DEL TRASLADO DEL TRABAJADOR A OTRO SPS
+ÚLTIMO PARTE DE CONFIRMACIÓN POR TRASLADO
+(2) ☐
+(2)
+En el caso de traslado, el próximo parte de confirmación se emitirá por otro SPS diferente al que emitió este parte de confirmación.
+PASA A CONTROL DEL INSS
+FECHA DE CUMPLIMIENTO DE LOS 365 DÍAS DE IT
+(3)
+11/09/2021
+(3)
+A partir de esta fecha no se emitirán partes de confirmación. El INSS le remitirá comunicación sobre el proceso de IT del trabajador.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHEZ,
+21/09/2020
+. Firma, fecha y sello
+Nº de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para la EMPRESA
+
+--- Página 3 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑ INSS/ISM ☐ MUTUA|
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+Localidad
+CL JAVIER VICENTE MONTERO, 2
+Provincia
+ESCORIAL, EL
+MADRID
+Nombre de la empresa
+Puesto de trabajo
+Código postal
+Teléfono móvil
+28280
+Teléfono fijo
+918964063 609273707
+Código nacional de ocupación (CNO)
+Directores generales, empresa privada
+Control y Tension
+ly'
+1120
+DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL (en el parte de baja) / RESULTADO DEL RECONOCIMIENTO MÉDICO (en el parte de alta)
+Curación/Mejoría que permite realizar trabajo habitual
+DIAGNÓSTICO
+Contacto y (sospecha de) exposición a otras enfermedades víricas transmisibles
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Fecha de AT o EP
+Código de enfermedad profesional
+Parte del cuerpo dañado
+(1)
+(1)
+Leve
+Grave
+Tipo de asistencia:
+Ambulatoria
+Muy grave
+Hospitalaria
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+Recaída:
+sí ☐ NO ☑
+Fecha de la baja del proceso inicial del que es
+PARTE DE ALTA ☑
+recaída
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+Código CIE-9
+(Todas las contingencias)
+Código CIE-10
+(Solo en EP)
+Z20.828
+Fecha de la siguiente revisión médica
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/ DATOS DEL MÉDICO INSPECTOR
+Curación/Mejoría que permite realizar trabajo habitual ☑
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHE.
+21/09/2020
+Firma, fecha y sello
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐ ☐ ☐ ☑
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+RECUERDE: Si el INSS/ISM o la MUTUA, le cita a reconocimiento médico tiene la obligación de acudir. En caso de no comparecer, sin haber justificado su ausencia, el pago de su prestación será suspendido
+cautelarmente, en virtud de lo previsto en el art. 132.3 de la Ley General de la Seguridad social.
+Contra este acto podrá interponer una reclamación previa a la vía judicial social, en el plazo de once dias siguientes al de su notificación, de conformidad con lo establecido en el artículo 71 de la Ley 36/2011, 10 de octubre,
+reguladora de la Jurisdicción social.
+En los casos de alta médica por contingencia prefesional emitida por una mutua, podrá interponer reclamación previa a la via judicial social, en el plazo de once días siguientes al de su notificación, de conformidad con lo
+establecido en el artículo 71 de la Ley 36/2011, de 10 de octubre, reguladora de la Jurisdicción social o podrá iniciar el procedimiento administrativo especial de revisión del alta ante la entidad gestora (INSS/ISM) competente en
+el plazo de diez días siguientes al de su notificación, con efecto suspensivo del alta, de conformidad con lo establecido en el artículo 4 del RD 1430/2009, de 11 de septiembre.
+Ejemplar para el TRABAJADOR
+
+--- Página 4 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+ENTIDAD EMISORA
+Periodo de observación por enfermedad profesional
+SPS ☑ INSS/ISM ☐ MUTUA |
+DATOS DE/LA TRABAJADOR/A
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Primer apellido
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+LARA
+GUTIERREZ
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+CL JAVIER VICENTE MONTERO, 2
+Localidad
+Provincia
+ESCORIAL, EL
+Nombre de la empresa
+Control y Tension
+MADRID
+Puesto de trabajo
+Directores generales, empresa privada
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Código postal Teléfono móvil
+Teléfono fijo
+28280
+918964063
+609273707
+Código nacional de ocupación (CNO)
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐
+Ejemplar para la EMPRESA
+
+--- Página 5 ---
+medio ambiente y MADRID
+movilidad
+Dirección General de Gestión y Vigilancia de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Órgano Instructor:
+Departamento de Instrucción de Multas de Circulación
+C/ Albarracín, 33 - 28037
+MADRID
+Horario de atención al público: Laborables de lunes a viernes (8:30 a 14 horas)
+Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+MODELO
+935
+INFORMACIÓN SOBRE PUBLICACIÓN DE EDICTO.
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ NUM 10
+28250 GALAPAGAR MADRID
+MULTA DE CIRCULACIÓN
+EMISOR 28992.9
+Con fecha 7 de Septiembre de 2020 se ha publicado en el Tablón Edictal Único (BOE) / Tablón Edictal de
+Sanciones de Tráfico la notificación relativa a la resolución sancionadora de la siguiente infracción de circulación:
+REFERENCIA DEL EXPEDIENTE: 935/711076230.0
+Matricula del
+vehiculo
+DNICIF
+Fecha de la
+infracción
+Hora de la
+infracción
+5581FTH
+Lugar de la infracción
+1827563 31/07/2019 11/26 M-30 Xc K 19,06 Cr4
+Clave de la infracción
+10/2
+Precepto
+infringido
+Fecha de inconción
+76.A LSV
+del expediente
+16/10/2019
+Fecha de la
+Resolución
+13/02/2020
+Sobrepasar la velocidad máxima en vías limitadas en 60 km/h o más. circular a79 km/h limitada a70 km/h
+CALIFICACIÓN DE LA INFRACCIÓN: (GRAVE)
+PÉRDIDA DE PUNTOS: NO
+Importe de la
+N° Relacion
+sanción
+100,00 EUROS
+20/2020
+El motivo de que la notificación haya sido publicada ha sido la imposibilidad de entregársela personalmente.
+Para conocer los medios de defensa jurídica de los que dispone puede consultar el Tablón Edictal Único del BOE o
+el Tablón Edictal de Sanciones de Tráfico de la Dirección General de Tráfico correspondiente a la fecha antes
+mencionada.
+Si desea pagar la multa podrá hacerlo durante el plazo de UN MES contado a partir del día siguiente a la práctica de
+la notificación.
+Podrá efectuar el pago de la multa por cualquiera de los siguientes medios:
+1.- En cualquier oficina de las entidades financieras que a continuación se relacionan, PRESENTANDO SIEMPRE
+ESTA COMUNICACIÓN:
+-
+BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)
+-
+CAIXABANK
+- BANCO SABADELL
+- IBERCAJA BANCO
+- BANCO SANTANDER
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección
+General de Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta
+notificación y la matrícula del vehículo, datos imprescindibles para su debida identificación.
+3. Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se
+llama desde fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista
+en www.madrid.es/Lineamadrid).
+4. Mediante Certificado digital o banca electrónica en www.madrid.es/multas.
+PODRÁ CONSULTAR LA NOTIFICACIÓN REALIZADA EN LAS SIGUIENTES DIRECCIONES:
+(BOE) http://www.boe.es/tablon edictal unico/o (TESTRA) https://sede.dgt.gob.es/sede/
+N°. BOLETÍN
+7110762300
+CONTROL
+IMPORTE
+10-11-2020
+49
+100,00
+MATRÍCULA
+5581FTH
+LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO
+007961-007962
+
+--- Página 6 ---
+1
+
+--- Página 7 ---
+0
+Albarán
+Fecha:
+Hoja
+01.10.2020
+1
+Cliente número:
+594182
+de
+Albarán número:
+Su NIF:
+2002337934
+ESB83802850
+1
+Comprador
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Su Persona de contacto
+fischer
+Ⓡ
+Fischer
+innovative solutions
+Fischer ibérica, S.A.U. CI. Klaus Fischer, 1/43300 Mont-roig del Camp
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Teléfono / Fax
+Su representante
+Su Pedido:
+Pedido número:
+Peso Bruto:
+Enviado por:
+reposicion
+215591934
+9,238 KG
+Condiciones de entrega:
+Bultos:
+251251 MRW (URGENTE-10)
+ZFH - Portes Pagados
+01
+Pos. Art-Nr Descripción
+Pedido número: 215591934 Su pedido: reposicion
+0010 538880 PMCU UNIVERSAL CENTRAL CLAMP
+GTIN: 8001132059913
+Referencia
+cliente
+Valor
+neto
+Cant.
+Cant. unid.
+рас
+entregadas
+41,92
+2
+20
+0020 71202
+STSR M10X200 A2 TORNILLO DOBLE ROSCA
+GTIN: 8001132712023
+52,64
+1
+25
+0030 71207
+RHS 8X20 A2 TORNILLO CABEZA DE MARTILLO
+GTIN: 8001132712078
+24,57
+1
+50
+0040 71952
+TUERCA ARANDELA MU F A2 M10
+14,02
+1
+100
+GTIN: 8001132719527
+0050 45707
+FIS H 18X130/200 K
+14,88
+1
+10
+GTIN: 4006209457078
+0060 543633
+Broca SDS short Pointer M 16/200/260
+GTIN: 4048962308747
+10,41
+1
+1
+0070 534616 MS LIQUIDO 1 KG MARRON
+11,55
+1
+1
+GTIN: 4048962234077
+Suma:
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.
+En caso de alguna incidencia en el pedido, no se admitirán devoluciones de material
+ni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.
+Telef.
+Fax
+: 0034 977 838 711
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE
+: ESA08150666
+207
+Fischer Ibérica, S.A.U.
+CI. Klaus Fischer, 1/43300 Mont-roig del Camp (Tarragona)
+R.M.T. Hoja 20.251 Folio 184 - Tomo 1.565 1 Inscripción N.I.F. A08150666
+Deutsche Bank cta. nr. 0019 0020 99 4010032435, IBAN: ES9800190020994010032435, SWIFT: DEUTESBR
+La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX
+
+--- Página 8 ---
+ÁREA DE GOBIERNO DE MEDIO AMBIENTE
+Y MOVILIDAD
+Dirección General de Gestión y Vigilancia
+de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Departamento de Recursos de Multas de Circulación
+MADRID
+C/ Albarracín, 33 28037 MADRID
+TITULAR
+NOTIFICACIÓN DE RESOLUCIÓN DE
+DESESTIMACIÓN DE RECURSO DE
+REPOSICIÓN
+EMISOR 28992.9
+Modelo
+9-5.1
+HORARIO DE ATENCIÓN AL PÚBLICO: Dias laborables de lunes a viernes, de 8:30 a 14 horas. Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+CONTROL Y TENSION SL
+MATRICULA 5581FTH
+MARCA
+MODELO
+LUGAR DE LA INFRACCIÓN
+REFERENCIA DEL EXPEDIENTE
+951/711023522.0
+N° DE NOTIFICACIÓN
+NOTIFI.951/201460155
+M-30 XC K 19,06 CR4
+FECHA DE INCOACIÓN
+DEL EXPEDIENTE
+FECHA DE EMISIÓN DE
+ESTA NOTIFICACIÓN
+10:50 16/09/2019 03/09/2020
+PÉRDIDA DE PUNTOS
+NO
+FECHA DE LA INFRACCIÓN HORA DE LA
+INFRACCIÓN
+21/06/2019
+CLAVE Y CALIFICACIÓN DE LA INFRACCIÓN
+10/002 GRAVE
+IMPORTE DE LA MULTA
+100,00
+PRECEPTO INFRINGIDO (ver dorso) *
+FECHA DE ESTA RESOLUCION
+27/08/2020
+INFRACCIÓN IMPUTADA
+SOBREPASAR LA VELOCIDAD
+MÁXIMA EN VÍAS LIMITADAS EN 60
+KM/H O MÁS.
+CIRCULAR A 74 km/h LIMITE 70 km/h
+RELACION: 880/2020
+76.A LSV
+REFERENCIA DEL DESTINATARIO:
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ 10
+GALAPAGAR
+MADRID
+CP: 28260
+SC:00
+NT81150160009701460155D
+M-30 TUNEL XC: M-30 Túnel Calzada 2ª entre Km. 19 y Km. 8
+ANTECEDENTES DE HECHO
+Primero: El expediente sancionador con número de referencia indicado en el encabezamiento de la presente notificación fue
+incoado como consecuencia de la comisión de la infracción señalada.
+Segundo: El procedimiento finalizó con la imposición de la correspondiente sanción mediante resolución de la Directora
+General de Gestión y Vigilancia de la Circulación.
+Tercero: La persona sancionada ha presentado recurso de reposición contra dicha resolución. Su recurso ha sido estudiado en
+el Departamento de Recursos de Multas de Circulación.
+FUNDAMENTOS DE DERECHO
+PRIMERO: La captación de la velocidad de un vehículo se realiza mediante un
+cinemómetro que ha sido homologado y verificado por el órgano competente. La
+medición realizada responde a la velocidad con la que el vehículo circulaba
+en el momento de cometerse la infracción. No obstante, a dicha medición le
+han sido aplicados los márgenes de error previstos en la normativa de metro-
+logía vigente, habiendo sido utilizada para la graduación de la infracción
+la velocidad corregida según dichos márgenes de error, Y, por tanto, mino-
+rada en relación a la velocidad captada.
+En función de lo expuesto se puede afirmar que el vehículo circulaba, al me-
+nos, a la velocidad por la que fue sancionado, resultando carentes de funda-
+mento las alegaciones formuladas que dudan de la exactitud del elemento me-
+didor de la velocidad al cumplir éste con las exigencias que le marcan las
+normas que le son de aplicación. Queda, por tanto, demostrada la comisión
+de la infracción.
+SEGUNDO: No se aprecia ausencia de responsabilidad en la comisión de la in-
+fracción, ni vulneración de ninguno de los aspectos formales del procedi-
+miento, pues se ha tramitado cumpliendo los requisitos exigidos en la
+L.S.V., y demás normativa de general aplicación.
+......
+N.° BOLETÍN
+CONTROL
+IMPORTE
+MATRÍCULA
+7110235220
+21-10-2020
+52
+100,00
+5581FTH
+000003108
+
+--- Página 9 ---
+Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general
+aplicación, la Directora General de Gestión y Vigilancia de la Circulación, en uso de las facultades que le han sido
+delegadas por Acuerdo de la Junta de Gobierno de 4 de julio de 2019, en relación con lo establecido en los artículos 17.1.k) y
+40 f) de la Ley 22/2006, de 4 de julio, de Capitalidad y de Régimen Especial de Madrid, ha RESUELTO:
+PRIMERO: DESESTIMAR el recurso de reposición interpuesto
+SEGUNDO: Notificar al interesado la presente resolución, informándole de que, si así lo desea, podrá interponer recurso
+contencioso administrativo ante los Juzgados de lo Contencioso Administrativo en el plazo de dos meses, a contar desde el día
+siguiente al de la práctica de esta notificación, de conformidad con lo dispuesto en el artículo 46.1 de la Ley 29/1998, de 13 de
+julio, Reguladora de la Jurisdicción Contencioso-Administrativa, sin perjuicio de que pueda ejercitar cualquier otro recurso que
+estime oportuno, a tenor de lo establecido en el artículo 88.3 de la LPACAP.
+TERCERO: Informarle de que, al haber adquirido firmeza la sanción, deberá hacer efectivo el pago de la multa por cualquiera
+de los medios que a continuación se especifican. Finalizado el plazo de pago en vía voluntaria sin que se haya abonado el
+importe de la multa, se iniciará el procedimiento de apremio (art. 110 LSV):
+1.- En cualquier oficina de las entidades financieras que a continuación se relacionan, presentando siempre esta notificación:
+- BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)
+- BANCO SABADELL
+· BANCO SANTANDER
+-
+- CAIXABANK
+- IBERCAJA BANCO
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección General de
+Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta notificación y la matrícula del
+vehículo, datos imprescindibles para su debida identificación.
+3.- Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se llama desde
+fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista en
+www.madrid.es/Lineamadrid).
+4.- Mediante certificado digital o banca electrónica en www.madrid.es/multas.
+Asimismo se le comunica lo siguiente:
+Las sanciones graves o muy graves y la detracción de puntos, en su caso, serán comunicadas al Registro de Conductores e
+Infractores de la Jefatura Central de Tráfico (art. 113 de la LSV).
+El impago de las multas por infracciones graves o muy graves puede derivar en limitaciones en los trámites relativos a los
+vehículos (artículo 107 de la LSV).
+La cuantía de las multas puede incrementarse en un 30% en atención a la gravedad del hecho, los antecedentes del infractor y
+a su condición de reincidente; por lo que los hechos por los que ha sido sancionado en este expediente podrían ser tenidos en
+cuenta en futuros expedientes sancionadores (artículo 81 de la LSV)
+Lo que se le notifica para su conocimiento y efectos.
+DE GESTION DE MULTAS DE CIRC
+GENERAL
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA
+VIGILANCIA
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Página 1 de 1
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna: 33350
+CERRADA
+Hora: 13:40
+Tel.:
+918964063
+Ref. Oferta: 25467
+C.I.F.:
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Ruta:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 609273707
+Bultos
+4
+CÓDIGO
+DESCRIPCIÓN
+REF.PROV. CANTIDAD
+DIS02001040
+ZZZZZRAEE
+LEG43000200
+PANTALLA DISANO RODA FL 2X36 CEL
+2217802300
+ECOTASA (R.DECRETO 208/2005): DIS02001040
+CAJA EST LEGRAND 35966 220X170 CIEGA IP55 035966
+15,00
+15,00
+5,00
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 11 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+ญ
+Miembro de:
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+ALBARÁN
+1088169
+COPIA CLIENTE
+Página 1 de 1
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna:
+Hora:
+10:18
+Ref. Oferta:
+Tel.:
+C.I.F.:
+918964063
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Área:
+ALMACEN LEGANES
+1
+ENVIO
+28230
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+LAS ROZAS DE MADRID
+Tel. 609273707
+Ruta:
+CÓDIGO
+DESCRIPCIÓN
+SAG04000210 EMERGENCIA SAGELUX EVO-110ST
+C Precio x 100 Unidades M = Precio x 1000 Unidades
+REF.PROV.
+CANTIDAD
+EVO-110ST
+25,00
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 12 ---
+ⓇSabadell
+NOTIFICACIÓN DE PAGO DE BS CONFIRMING
+Les comunicamos que Banco de Sabadell, S.A. ha sido contratado por MORFUS EQUIPAMIENTO COMERCIAL S.L. para gestionar
+el pago de las órdenes referenciadas, por un total de 8.226,96 EUR, que detallamos a continuación:
+Datos del proveedor
+CONTROL Y TENSION SL
+C/ JAVIER VICENTE MONTERO,
+2
+28282 EL ESCORIAL (MADRID)
+Orden de pago
+Núm. de orden
+1000037
+NIF: B83802850
+12677652
+Núm de referencia:
+Importe
+8.226,96
+Divisa
+EUR
+Vencimiento
+05.10.20
+Forma de pago
+Los pagos se efectuarán mediante transferencia a la cuenta: ES81-2100-2980-0602-0004-7252
+Espacio para modificar la domiciliación:
+La cuenta puede ser incorporada o modificada por ustedes en este mismo espacio, adjuntando Certificado de Titularidad con fecha de emisión inferior a 6 meses.
+SOLICITUD DE ANTICIPO DE BS CONFIRMING
+Banc Sabadell les ofrece la posibilidad de solicitar financiación sin recurso de dichas órdenes de pago:
+Solicitando esta financiación sin recurso el proveedor cede el crédito comercial a Banco de Sabadell, S.A., eliminando el riesgo de impago. Es una
+facilidad financiera que no consume sus líneas de financiación ni se imputa en su CIRBE. La solicitud supone la aceptación de las condiciones del
+anticipo del pago y las condiciones generales predispuestas que figuran en este documento, quedando sometida y condicionada a lo establecido en
+las mismas.
+Condiciones del anticipo del pago
+Tipo de interés: FIJO: 3,150%
+Modalidad de anticipo
+Comisión de anticipo: 0,45 %.
+☐ Anticipo general: solicitamos que procedan al anticipo de todas las órdenes de pago a nuestro favor que reciban a partir de hoy del cliente
+indicado. Estas instrucciones se mantendrán vigentes mientras no sean revocadas por escrito por alguna de las partes. Los tipos de interés de los
+anticipos serán actualizados y comunicados en las liquidaciones que se practiquen.
+Anticipo puntual: solicitamos que procedan al anticipo de las órdenes relacionadas el próximo día 1/8/20
+Banco de Sabadell, S.A.
+p.p.
+Sabadell, 20 de Julio de 2020
+¿Cómo solicitar el anticipo a Banc Sabadell?
+p.p.
+CONTROL Y TENSION S
+CONTROL
+TENSION,
+ENSION, S.L
+P.P.
+Por Internet desde www.confirmiline.com
+Por teléfono llamando al 902 120 495.
+Por SMS al 215675 (incluir el código CONF1, el nº de referencia de esta propuesta, su NIF y la letra P o G, según sea un anticipo Puntual o
+General). Coste del mensaje e impuestos a cargo del emisor.
+En cualquier oficina de Banc Sabadell.
+Por fax remitiendo todas las páginas firmadas al 937 451 991.
+ESTA SOLICITUD NO SERÁ VÁLIDA SI NO ADJUNTAN TODAS LAS PÁGINAS DEBIDAMENTE RELLENADAS Y FIRMADAS.
+La validez de la presente solicitud de anticipo queda sujeta a la disponibilidad de la línea de gestión de órdenes de pago concedida por Banco de
+Sabadell, S.A. al cliente ordenante.
+Banco de Sabadell, S.A. - Av. Óscar Esplá, 37 (Alicante) Ins. R. M. Alicante, Tomo 4070, Folio 1. Hoja A-156980 CIF A08000143
+Página 1 de 2
+KF232E-200720-E-EMA-GBSE 1200-00-001620-000511-IAENMA 14
+
+--- Página 13 ---
+ⓇSabadell
+BS Confirming
+Núm.de referencia:
+12677652
+CONDICIONES GENERALES
+Primera.Banco de Sabadell, S.A., a partir de ahora el Banco, anticipará el importe de las órdenes referenciadas en este documento en la
+fecha que ustedes escojan anterior a su vencimiento, en el caso de anticipo puntual, o en la fecha en que se reciban las órdenes de su
+cliente, en caso de solicitud de anticipo general. En todo caso, la aceptación de la solicitud de financiación por parte del Banco queda
+condicionada a la disponibilidad de la línea de gestión de órdenes de pago concedida por el Banco al cliente ordenante, siendo válida
+dicha solicitud de recibirse por el Banco dentro de los 15 días naturales a contar desde la fecha de emisión de la comunicación. El
+anticipo se efectuará deduciendo el descuento financiero resultante de aplicar al importe íntegro de las órdenes el tipo de interés que
+corresponda, devengado día a día, basándose en un año de 360 días desde el día en que se hace el anticipo hasta el día anterior al
+vencimiento o, en caso de ser inhábil (días festivos y sábados), hasta la fecha anterior al día siguiente hábil.
+Para que estos anticipos tengan efecto el día escogido por ustedes, se tendrán que haber recibido las solicitudes con una antelación
+mínima de dos días hábiles al día escogido.
+Segunda.
+Estos anticipos devengarán también una comisión del 0,45 % sobre el nominal del importe que se descuenta, a la que se
+añadirán los impuestos vigentes en el momento del anticipo.
+En caso de anticipo general y durante la vigencia de este contrato, el Banco podrá modificar el tipo de interés nominal y también la
+comisión a aplicar, para los casos en que ésta se haya previsto en esta condición segunda. Con esta finalidad, el Banco les comunicará
+las nuevas condiciones, que entrarán en vigor pasados quince días desde su comunicación. En caso de disconformidad con las nuevas
+condiciones, se podrá resolver este contrato y liquidar los anticipos pendientes de acuerdo con las últimas condiciones aceptadas o
+formalizar un contrato nuevo en el que se recojan las condiciones que regirán a partir de aquel momento. Si las modificaciones son más
+favorables para ustedes, se podrán aplicar inmediatamente.
+Tercera. En caso de aceptación de la solicitud de anticipo por parte del Banco, éste procederá a abonarles el importe resultante de la
+liquidación mediante la modalidad de pago indicada, en la fecha escogida por ustedes para el caso de anticipo puntual de las órdenes o
+en la fecha en que recibamos de su cliente las órdenes de pago a su favor, para las órdenes anticipadas como consecuencia de su
+solicitud de anticipo general. No procederá este abono en caso de que haya sido denunciado o resuelto el contrato de gestión de pagos
+suscritos entre el Banco y su cliente, en la fecha de recepción de su solicitud, en el supuesto de anticipo puntual, o a partir del momento
+en que se produzca, en caso de anticipo general. En la carta de abono se hará constar el tipo de interés y, si procede, las comisiones
+aplicadas, junto con la respectiva tasa anual equivalente.
+Cuarta. En el supuesto de que el Banco no reciba de ustedes la solicitud mencionada, de acuerdo con lo que se especifica en la
+condición tercera, se procederá a abonar el importe de las órdenes de pago el mismo día en el que el cliente abone efectivamente al
+Banco el importe a pagar.
+Quinta. La realización del anticipo que se indica en este documento comporta la cesión efectiva a Banco de Sabadell, S.A. de los créditos
+y/o derechos de cobro por las órdenes de pago anticipadas.
+Sexta. Este documento se regirá por la legislación española, a la que las partes se someten de manera expresa.
+Con esta finalidad, firma este documento el Sr./la Sra. ANTONIC LARA GUTIERREZ, con poderes suficientes para la
+realización de este acto según la escritura de poder otorgada el 23/10/2003 ante el notario de MADRID Sr./Sra.
+4213 inscrita en el registro mercantil de MADRID, que queda
+LUIS SANE RODERO, con el número de protocolo
+informado que el Banco tratará sus datos con los únicos efectos de gestionar esta solicitud y manifiesta que esta escritura no está
+revocada.
+Banco de Sabadell, S.A.
+p.p.
+Sabadell,, 20 de Julio de 2020
+CONTROL Y TENSION SL
+p.p.
+CONTROLYTENSION ST.
+P.P.
+MADRID
+10 dejucio de 2020
+Consulte y anticipe las órdenes a su favor a través de Internet desde (www.confirmiline.com) o por teléfono al 902
+120 495, sea o no cliente de Banc Sabadell.
+Banco de Sabadell, S.A. Av. Óscar Esplá, 37 (Alicante) Ins. R. M. Alicante, Tomo 4070, Folio 1. Hoja A-156980 CIF A08000143
+Página 2 de 2
+www.bancsabadell.com
+KF333E-200720-E-EMA-GBSE 1200-00-001621-000511-1AENMA14
+
+--- Página 14 ---
+MICROCOM
+SISTEMAS MODULARES, S. L.
+Sede Social, Fábrica y Almacén:
+C/Gorostiaga, 53 20305 IRUN (GIPUZKOA)
+C.I.F.: B26358036
+Tfno.: +(34) 943 639724
+microcom@microcom.es
+Fax.:+(34) 943 017800
+www.microcom.es
+CONTROL Y TENSION, S.L.
+CL/CABO RUFINO LAZARO, 5
+28230
+LAS ROZAS
+MADRID-ESPAÑA
+DOCUMENTO NÚMERO PÁG.
+FECHA
+ALBARAN
+18633
+1 13-07-2020
+C.I.F./N.I.F.
+SU PEDIDO N°
+SU REFERENCIA
+N° PROVEEDOR
+ESB83802850
+MAIL ANTONIO
+ARTICULO
+MC0000015
+TCR200
+DESCRIPCIÓN
+REMOTE GSM I/O MODULE 8ED,4EA,MODBUS
+GSM/GPRS 2G
+FORMA DE PAGO
+GIRO A 60 DÍAS
+CANTID. PRECIO SUBTOTAL
+DTO.
+TOTAL
+1
+334,90
+334,90
+334,90
+TIPO
+21,00
+IMPORTE
+334,90
+DESCUENTO
+PORTES
+FINANCIACIÓN
+12,00
+BASE
+346,90
+I.V.A.
+R.E.
+72,85
+OBSERVACIONES
+PORTES
+PAGADOS
+TRANSPORTISTA
+NACEX
+DIRECCION DE ENTREGA
+CONTROL Y TENSION, S.L.
+CL/CABO RUFINO LAZARO, 5
+LAS ROZAS
+28230
+MADRID - ESPAÑA
+TOTAL €
+419,75
+
+--- Página 15 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+Miembro de:
+AUNA
+distribución
+IMELCO
+lalal Ne
+ALBARÁN
+1084627
+COPIA CLIENTE
+Página 1 de 1
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Ref. Interna: 31425
+Ref. Oferta: 24495
+Fecha: 22/07/2020
+PENDIENTE Hora:
+18:39
+Tel.: 918964063
+C.I.F.:
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido
+por:
+FRANCISCO DIAZ
+L4
+Almacén:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+.
+Tel. 609273707
+Bultos
+3
+Ruta:
+CÓDIGO
+DESCRIPCIÓN
+REF.PROV. CANTIDAD PRECIO UV DTO
+IMPORTE
+PHI01000740
+FLUORESCENTE PHILIPS MASTER TL-D SUPER 63207440
+80 36W/865
+60,00
+1,31
+78,60
+ZZZZZRAEE
+PHI01000800
+ECOTASA (R.DECRETO 208/2005): PHI01000740
+FLUORESCENTE PHILIPS MASTER TL-D SUPER 63225840
+80 58W/865
+60,00
+0,30
+18,00
+20,00
+1,57
+31,40
+ZZZZZRAEE
+SAG04000200
+ECOTASA (R.DECRETO 208/2005): PHI01000800
+EMERGENCIA SAGELUX EVO-60ST
+20,00
+0,30
+6,00
+EVO-60ST
+33,00
+14,41
+475,53
+MATERIAL PENDIENTE DE ENTREGA
+Ref. interna:
+31425
+Ref. cliente :
+METRO
+SAG04000200
+EMERGENCIA SAGELUX EVO-60ST
+Cantidad Cantidad
+Pedida Pendiente
+50,00
+17,00
+C Precio x 100 Unidades
+%
+Importe Bruto
+609,53
+3,00
+M Precio x 1000 Unidades
+P.P.
+18,29
+24,00
+Base RAEE Base Imponible
+591,24 21,0 124,16
+%
+I.V.A.
+TOTAL ALBARÁN
+715,40 €
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+Firma y recoge
+
+--- Página 16 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+-
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+laubual releas
+TEL.: 916 879 106
+COPIA CLIENTE
+Página 1 de 1
+ALBARÁN
+(PRV)
+1084697
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Fecha: 23/07/2020
+Ref. Oferta:
+Ref. Interna: 31426
+24204
+CERRADA
+Hora: 12:37
+Tel.:
+918964063
+C.I.F.:
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido
+por:
+FRANCISCO DIAZ
+L4
+Almacén:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+.
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 918964063
+Ruta:
+CÓDIGO
+DESCRIPCIÓN
+REF.PROV.
+CANTIDAD PRECIO UV DTO
+IMPORTE
+PHI02{1011916
+PHI02 1046314
+PHI02{1004409
+HF-P 258 TL-D III 220-240V 50/60HZ IDC
+HF-P 158 TL-D III 220-240V 50/60HZ IDC
+HF-P 218/236 TL-D III 220-240V 50/60 Hz
+91172500
+3,00
+12,73
+38,19
+91170100
+3,00
+11,32
+33,96
+91166400
+3,00
+12,73
+38,19
+PHI02{1011135 HF-P 118/136 TL-D III 220-240V 50/60 Hz
+91164000
+3,00
+11,32
+33,96
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Importe Bruto
+%
+144,30
+3,00
+P.P.
+4,33
+Base Imponible
+%
+139,97 21,0
+I.V.A.
+29,39
+TOTAL ALBARÁN
+169,36 €
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+Firma y recoge
+
+--- Página 17 ---
+CONTROL Y TENSION
+Presupuesto
+control de procesos industriales
+sistemas automáticoas
+autómatas programables
+TRINIDAD ARBOIRO LINARES
+C/ ESPINO 26
+28660 BOADILLA DEL MONTE
+MADRID
+N.I.F. 33841582A
+NÚMERO
+1 180006
+FECHA
+03/02/2020
+COD. CLIENTE
+PÁGINA DESCRIPCIÓN DEL PRESUPUESTO
+0
+1
+INSTALACIOPNES IVE
+CÓDIGO
+DESCRIPCIÓN
+PRESUPUESTO PARA LA INSTALACIÓN Y LEGALIZACIÓN DE ACOMETIDA Y
+PROYECTO PARA UNA INSTALACIÓN PARA CARGADOR DE VEHÍCULO
+ELÉCTRICO EN CALLE ESPINO 26 DE BOADILLA DEL MONTE, MADRID
+CUADRO GENERAL DE DISTRIBUCIÓN
+Cuadro general de distribución de superficie ESTANCO IP65 instalado en
+trasera de fachada por el interior de la parcela junto a armario de contadores
+existente.
+Con automático general para una potencia máxima de 27,6Kw
+Protector de sobretensiones transitorias
+instalaciones eléctricas
+estudios energéticos
+domótica
+CANTIDAD
+PRECIO UND.
+DTO.
+TOTAL
+Protección magnetotérmica y diferencial para las salidas a Vivienda y a
+Cargador de Vehículo eléctrico
+1
+953,00
+953,00
+importe de mano de obra instalación de cuadro, desvío de acometidas,
+conexionado y pruebas
+1
+350,00
+350,00
+LEGALIZACIÓN
+Realización de proyecto eléctrico para instalación de IVE (infraestructuras para
+Vehículos eléctricos.
+Certificado Final de obra, pago de tasas en Colegio Oficial.
+Realización de Boletin de instalación. Presentación en industria y pago de tasas
+e inspección por Organismo de Control.
+1
+1.330,00
+1.330,00
+TIPO
+IMPORTE
+DESCUENTO
+PRONTO PAGO
+PORTES
+FINANCIACIÓN
+BASE
+I.V.A.
+R.E.
+21,00
+2.633,00
+2.633,00
+552,93
+10,00
+4,00
+OBSERVACIONES:
+LA CAIXA
+2100 2980 06 0200047252
+TOTAL:
+FORMA DE PAGO
+TRANSFERENCIA
+3.185,93
+CONTROL Y TENSIÓN S.L. c/ Cabo Rufino Lázaro 5, Las Rozas 20230 Madrid. CIF.: B83802850 Tel. 911 924 026 - FAX: 918 004 713 Mov. 609 273 707
+
+--- Página 18 ---
+O
+GS-Hydro
+CUADRO VIVIENA
+EXISTENTE
+CUADRO NUEVO A
+PO COCAR
+GS-HYDRO S.A.
+INGENIERÍA INTEGRAL ESPECIALIZADA EN TRANSMISIÓN DE POTENCIA HIDRÁULICA
+Departamento:
+Fecha:
+Asunto:
+T
+Página:
+1 ARMARIO CONTADOR
+eu
+FACHADA
+₤4×404
+4440/300
+4840/30
+1514
+*
+4840
+14×40A
+74840A
+&
+PROTECTOR
+SOBRE
+TEUSIQUES
+L
+4×201
+VE
+CUADRO CARGADOR
+IVE
+Cabo Rufino Lázaro, 5. P. Európolis - 28230 Las Rozas (Madrid) - Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es
+
+--- Página 20 ---
+O
+GS-HYDRO S.A.
+INGENIERÍA INTEGRAL ESPECIALIZADA EN TRANSMISIÓN DE POTENCIA HIDRÁULICA
+Departamento:
+GS-Hydro Asunto:
+Fecha:
+Página:
+CUADRO DE 54 don.
+54 den. CDNSEPT
+24490/30
+16300
+200,00
+34440
+30
+90,00
+1 Protector Sobretensions.
+286,00
+, blouteje
+250,02
+953,00
+Praedo bezdizecon
+Boleth insistore.
+850100
+48000
+1330.00
+Cabo Rufino Lázaro, 5. P. Európolis 28230 Las Rozas (Madrid) Tel.: 91 640 98 30 Fax: 91 637 77 38 e-mail: info@gshydro.es
+
+--- Página 21 ---
+SSALTOKI
+SALTOKI COLLADO VILLALBA
+C/Calibre, 1-28400 Collado Villalba (Madrid)
+Tfno.: 91 813 99 00 Fax: 91 813 99 02
+villalba@saltoki.es
+Razón social:
+Saltoki Centro, S.A. C.I.F.: A82825456
+Pol. Ind, n°6 C/ Puerto Navafría 21 28935 Mostoles (MAD)
+Delegaciones: Navarra (Pamplona, Tudela), Euskadi (Bilbao/Erandio, Oyarzun, Vitoria y Galdakao), Aragón (Zaragoza, Alcañiz, Monzón, Huesca), Cataluña (Cornella, Barcelona, Gavà,
+Abrera, Badalona, Sabadell, Granollers, Mataró, Pineda de Mar, Blanes, Girona, Vic, Reus, Tarragona, Valls, El Vendrell, Vilanova i la Geltrú, Vilafranca del Penedès, Igualada, Tortosa,
+Lleida), C. Valenciana (Castellón, Benicarló), Madrid (Móstoles, San Fernando, Leganés, Alcalá de H.), Galicia (A Coruña), Asturias (Oviedo, Gijón), La Rioja, Santander, Soria, Andorra,
+Ponferrada,
+CÓDIGO
+CONCEPTO
+8010508331 TEE CABEZA SELECTOR 2 POS. 0-1 ZB5AD2
+8010510139 TEE CUERPO CONTACTO NA COMPLETO ZB5AZ101
+OBRA: CONTROL Y TENSION S.L
+Total Lineas:
+%
+TODAS LAS MERCANCÍAS SE ENTIENDEN VENDIDAS EN NUESTO ALMACÉN, VIAJAN POR CUENTA Y RIESGO
+DEL COMPRADOR, Y SE SOMETEN EXPRESAMENTE LOS CONTRATANTES A LOS TRIBUNALES DE MADRID.
+Servido por: 7 / Oscar Moreno Agencia: .
+CLIENTE
+233325
+POR SALTOKI
+ALBARAN
+132.127
+FECHA
+17/02/20
+RECIBI DE CONFORMIDAD
+EL CLIENTE
+Pag: 1/1
+ALBARÁN
+CANTIDAD
+PRECIO
+DTO %
+IMPORTE
+1,00
+1,00
+16:26:27
+N.I.F.
+B83802850
+CONTROL Y TENSION S.L
+CL cabo rufino larazo 5
+28230 LAS ROZAS DE MADRID
+MADRID
+TLF: 911924026 TLF2: 609273707
+S/REF:GS HYDRO
+FAX:
+Calidad en tus oídos.
+Precisión en tu
+muñeca.
+SSALTOKI
+REGALO DIRECTO a elegir por la compra de:
+1 Caldera mural o
+Grupo térmico o
+Caldera o estufa de biomasa o
+Aerotermia o
+■ Equipo de aire acondicionado
+Promoción válida del 10 de febrero al 10 de abril
+o hasta fin de existencias
+Máximo 10 regalos por cliente.
+Promoción exclusiva para profesionales con ficha de cliente Saltoki.
+Auriculares Inalámbricos Pulsera de actividad
+Vieta MK007
+Xiaomi MiBand4
+Cortavientos Polar
+Regatta
+Consulta detalles de la promoción con tu comercial o en tu centro Saltoki
+
+--- Página 22 ---
+03/12/19
+90,75
+04/12/19259,10
+11/12/19-98,31
+17/02/20 33.88
+17/02/20301,25
+
+--- Página 23 ---
+ELECTRO MERCANTIL LEGANES DAM
+Fecha:
+Página:
+03/06/19
+1
+CONSULTA A LA CARTERA
+Ordenada por Cliente
+LTCLI031
+Fecha
+Código
+Nombre
+FP Efecto
+Fecha Vto. Factura
+S
+Importe
+Subtotal
+100
+CONTROL Y TENSION SL
+TR 90190700
+E 28/02/19
+12/04/19
+1
+1,450.20
+1,450.20
+100
+CONTROL Y TENSION SL
+TR 31123001
+E 15/03/19
+15/12/18
+1
+2,013.33
+3,463.53
+100
+CONTROL Y TENSION SL
+TR 90174952
+E 15/03/19
+18/02/19
+1
+1,807.87
+5,271.40
+100
+CONTROL Y TENSION SL
+TR 31148901
+E 31/03/19
+31/12/18
+1
+1,267.84
+6,539.24
+100
+CONTROL Y TENSION SL
+TR 31174701
+E 15/04/19
+15/01/19
+1
+222.52
+6,761.76
+100
+CONTROL Y TENSION SL
+TR 31196501
+E 30/04/19
+31/01/19
+1
+589.85
+7,351.61
+100
+CONTROL Y TENSION SL
+TR 31230201
+E 15/05/19
+15/02/19
+1
+720.25
+8,071.86
+100
+CONTROL Y TENSION SL
+TR 31258601
+E 30/05/19
+28/02/19
+1
+1,079.73
+9,151.59
+100
+CONTROL Y TENSION SL
+TR 31290301
+E 15/06/19
+15/03/19
+1
+176.83
+9,328.42
+100
+100
+CONTROL Y TENSION SL
+CONTROL Y TENSION SL
+TR 31321301
+E 30/06/19
+31/03/19
+1
+2,163.02
+11,491.44
+TR 31353501
+E 15/07/19
+15/04/19
+1
+1,104.38
+12,595.82
+100
+CONTROL Y TENSION SL
+TR 85016201
+100
+CONTROL Y TENSION SL
+TR 85013451
+E 20/08/19
+E 27/12/19
+20/05/19
+1
+193.00
+12,788.82
+*27/12/18
+1
+6.00
+12,794.82
+12,794.82
+2/02
+2/02
+Je zd
+Jesp
+Situación => 1.Generado, 2.Aceptado, 3.Devuelto, 4.Remesado, 5.Sus.Pagos, 6.Agrupado, 7.Amortizado
+吃
+
+--- Página 24 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+-
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+FECHA
+20/05/2019
+Página 1 de 1
+FACTURA
+850162
+Datos fiscales
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280
+MADRID
+El Escorial
+C.I.F.: B83802850
+CÓDIGO
+Albarán:
+Fecha:
+Cliente:
+100
+ญ
+Miembro de:
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+CONTROL Y TENSIÓN SL
+C/ Cabo Rufino Lázaro 5 Pol. Indust. Európolis
+28230 Las Rozas de Madrid
+MADRID
+DESCRIPCIÓN
+REF.PROV.
+CANTIDAD PRECIO UV DTO IMPORTE
+Ref. pedido:
+Obra:
+1,00
+193,00
+193,00
+GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO
+VENCIMIENTO 05/05/2019
+C Precio x 100 Unidades M = Precio x 1000 Unidades
+Importe Bruto
+193,00
+DATOS BANCARIOS
+Forma de pago:
+TRANSFERENCIA
+Entidad:
+Sucursal:
+Cuenta:
+Base Imponible
+193,00
+VENCIMIENTOS
+TOTAL FACTURA
+20/08/2019
+193,00
+193,00€
+ES57 2100 8661 09 0200037221
+ELECTRO MERCANTIL LEGANES D.A.M., S.L. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 25 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+Miembro de:
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+ES COPIA
+Página 1 de 1
+FACTURA
+850162
+FECHA
+20/05/2019
+Datos fiscales
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280
+MADRID
+El Escorial
+C.I.F.: B83802850
+CÓDIGO
+Albarán:
+Fecha:
+Cliente:
+100
+CONTROL Y TENSIÓN SL
+C/ Cabo Rufino Lázaro 5 Pol. Indust. Európolis
+28230 Las Rozas de Madrid
+MADRID
+DESCRIPCIÓN
+REF.PROV.
+CANTIDAD PRECIO UV DTO IMPORTE
+Ref. pedido:
+Obra:
+1,00
+193,00
+193,00
+GASTOS APLAZAMIENTO Y TIMBRADO ENDOSO
+VENCIMIENTO 05/05/2019
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Importe Bruto
+193,00
+DATOS BANCARIOS
+Forma de pago:
+Entidad:
+TRANSFERENCIA
+Sucursal:
+Cuenta:
+Base Imponible
+193,00
+VENCIMIENTOS
+TOTAL FACTURA
+20/08/2019
+193,00
+193,00€
+ES57 2100 8661 09 0200037221
+ELECTRO MERCANTIL LEGANES D.A.M., S.L. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306

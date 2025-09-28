@@ -1,0 +1,31 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 10/23
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (Emergencia)
+Líneas originales: 315-330 (total: 16 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 11 ---
+Marcador final: --- Página 12 ---
+Caracteres: 332
+Descripción: Delivery note from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. to Control y Tension SL, listing emergency lighting equipment.
+Keywords: albarán, ELECTRO MERCANTIL, 1088169, B-87621306, SAGELUX
+=====================================
+
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello

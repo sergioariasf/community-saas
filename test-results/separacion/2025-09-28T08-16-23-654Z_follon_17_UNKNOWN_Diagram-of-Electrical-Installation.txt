@@ -1,0 +1,25 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/23
+Tipo: unknown
+Título: Diagram of Electrical Installation
+Líneas originales: 537-546 (total: 10 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+Marcador final: --- Página 20 ---
+Caracteres: 128
+Descripción: Schematic diagram related to the electrical installation proposal.
+Keywords: GS-Hydro, CUADRO VIVIENA, CUADRO CARGADOR IVE
+=====================================
+
+Fax
+: 0034 977 838 711
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE
+: ESA08150666
+207

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2025-09-28T05:40:00.397Z",
+  "totalSteps": 3,
+  "successfulSteps": 2,
+  "failedSteps": 1,
+  "totalDuration": 38607,
+  "results": [
+    {
+      "step": "Verify Prerequisites",
+      "success": true,
+      "duration": 603,
+      "data": {
+        "server": "available",
+        "community": "c7e7b867-6180-4363-a2f8-2aa12eb804b5"
+      }
+    },
+    {
+      "step": "Load Test File",
+      "success": true,
+      "duration": 6,
+      "data": {
+        "filename": "follon.pdf",
+        "size": 5205268,
+        "buffer": "[Buffer omitted for file size]"
+      }
+    },
+    {
+      "step": "Multi-Analyze",
+      "success": false,
+      "error": "Multi-analyze returned error: undefined",
+      "duration": 37996
+    }
+  ],
+  "summary": "⚠️ ÉXITO PARCIAL: 2/3 pasos completados en 38607ms (66.7%)"
+}

@@ -1,0 +1,53 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 6/22
+Tipo: albaran
+Título: Albarán de Fischer Ibérica, S.A.U.
+Líneas originales: 203-240 (total: 38 líneas)
+Confianza: 90%
+Soportado: SÍ
+Marcador inicio: --- Página 7 ---
+Marcador final: --- Página 8 ---
+Caracteres: 769
+Descripción: Delivery note from Fischer Ibérica, S.A.U. to Control y Tension S.L., dated 01.10.2020, for various construction supplies.
+Keywords: albarán, fischer, 2002337934, 538880, 71202
+=====================================
+
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+Recaída:
+sí ☐ NO ☑
+Fecha de la baja del proceso inicial del que es
+PARTE DE ALTA ☑
+recaída
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+Código CIE-9
+(Todas las contingencias)
+Código CIE-10
+(Solo en EP)
+Z20.828
+Fecha de la siguiente revisión médica
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/ DATOS DEL MÉDICO INSPECTOR
+Curación/Mejoría que permite realizar trabajo habitual ☑
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHE.
+21/09/2020
+Firma, fecha y sello
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐ ☐ ☐ ☑
+N° de colegiado

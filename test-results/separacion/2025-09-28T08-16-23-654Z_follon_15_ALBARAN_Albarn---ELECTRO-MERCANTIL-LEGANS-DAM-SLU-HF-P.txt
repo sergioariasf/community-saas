@@ -1,0 +1,42 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 15/23
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. (HF-P)
+Líneas originales: 476-502 (total: 27 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 16 ---
+Marcador final: --- Página 17 ---
+Caracteres: 385
+Descripción: Delivery note from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. to Control y Tension SL, listing HF-P TL-D components.
+Keywords: albarán, ELECTRO MERCANTIL, 1084697, B83802850, HF-P
+=====================================
+
+ZFH - Portes Pagados
+01
+Pos. Art-Nr Descripción
+Pedido número: 215591934 Su pedido: reposicion
+0010 538880 PMCU UNIVERSAL CENTRAL CLAMP
+GTIN: 8001132059913
+Referencia
+cliente
+Valor
+neto
+Cant.
+Cant. unid.
+рас
+entregadas
+41,92
+2
+20
+0020 71202
+STSR M10X200 A2 TORNILLO DOBLE ROSCA
+GTIN: 8001132712023
+52,64
+1
+25
+0030 71207
+RHS 8X20 A2 TORNILLO CABEZA DE MARTILLO
+GTIN: 8001132712078
+24,57

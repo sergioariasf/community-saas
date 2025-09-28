@@ -1,0 +1,24 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/23
+Tipo: unknown
+Título: Esquema Eléctrico
+Líneas originales: 649-657 (total: 9 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+Marcador final: --- Página 20 ---
+Caracteres: 657
+Descripción: Diagram related to the electrical installation budget, likely part of the previous document.
+Keywords: esquema, eléctrico, IVE
+=====================================
+
+000003108
+
+--- Página 9 ---
+Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general
+aplicación, la Directora General de Gestión y Vigilancia de la Circulación, en uso de las facultades que le han sido
+delegadas por Acuerdo de la Junta de Gobierno de 4 de julio de 2019, en relación con lo establecido en los artículos 17.1.k) y
+40 f) de la Ley 22/2006, de 4 de julio, de Capitalidad y de Régimen Especial de Madrid, ha RESUELTO:
+PRIMERO: DESESTIMAR el recurso de reposición interpuesto
+SEGUNDO: Notificar al interesado la presente resolución, informándole de que, si así lo desea, podrá interponer recurso

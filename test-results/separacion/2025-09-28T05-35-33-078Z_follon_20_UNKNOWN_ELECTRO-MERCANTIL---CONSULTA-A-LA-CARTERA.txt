@@ -1,0 +1,53 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/22
+Tipo: unknown
+Título: ELECTRO MERCANTIL - CONSULTA A LA CARTERA
+Líneas originales: 680-717 (total: 38 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 23 ---
+Marcador final: --- Página 24 ---
+Caracteres: 1742
+Descripción: List of invoices and payment data for CONTROL Y TENSION SL from ELECTRO MERCANTIL.
+Keywords: electromercantil, CONSULTA A LA CARTERA, CONTROL Y TENSION SL, FACTURA
+=====================================
+
+Las sanciones graves o muy graves y la detracción de puntos, en su caso, serán comunicadas al Registro de Conductores e
+Infractores de la Jefatura Central de Tráfico (art. 113 de la LSV).
+El impago de las multas por infracciones graves o muy graves puede derivar en limitaciones en los trámites relativos a los
+vehículos (artículo 107 de la LSV).
+La cuantía de las multas puede incrementarse en un 30% en atención a la gravedad del hecho, los antecedentes del infractor y
+a su condición de reincidente; por lo que los hechos por los que ha sido sancionado en este expediente podrían ser tenidos en
+cuenta en futuros expedientes sancionadores (artículo 81 de la LSV)
+Lo que se le notifica para su conocimiento y efectos.
+DE GESTION DE MULTAS DE CIRC
+GENERAL
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA
+VIGILANCIA
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS

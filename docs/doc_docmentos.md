@@ -331,8 +331,8 @@ src/
 
 API Endpoints:
 
-- /src/app/api/documents/multi-analyze/route.ts - API para análisis y separación de PDFs multidocumento
-- /src/app/api/documents/process-separated/route.ts - API para procesar documentos ya separados (classify → metadata → chunks)
+- /src/app/api/documents/multi-analyze/route.ts - API para análisis y separación de PDFs multidocumento (funcional)
+- /src/app/api/documents/process-separated/route.ts - API para procesar documentos ya separados (TEMPORALMENTE DESHABILITADA para build Vercel)
 - /src/app/api/documents/[id]/view/route.ts - API para servir documentos (PDFs desde Storage, texto desde BD)
 
 UI Components:

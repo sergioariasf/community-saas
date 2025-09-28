@@ -197,6 +197,6 @@ npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts presupuesto --ste
 npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts albaran --steps=1,2,3,4,5,6
 npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts "Comunicado- INFORMACIÓN RELACIONADA CONTADORES LECTURA DE SUNFLOWER C.P. _AMARA HOMES_" --steps=1,2,3,4,5,6
 npx tsx src/lib/ingesta/test/test-complete-e2e-validation_1.ts escritura_D102B --steps=1,2,3,4,5,6
-
+npx tsx src/lib/ingesta/test/test-multidocument-e2e-complete.ts
 
 ```

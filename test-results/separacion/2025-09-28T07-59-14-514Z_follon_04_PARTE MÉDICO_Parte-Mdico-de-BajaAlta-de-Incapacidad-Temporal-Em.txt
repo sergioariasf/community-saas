@@ -1,0 +1,49 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 4/24
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal (Empresa)
+Líneas originales: 127-160 (total: 34 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 4 ---
+Marcador final: --- Página 5 ---
+Caracteres: 783
+Descripción: Copy of medical certificate documenting the start and end of temporary disability for Antonio Lara Gutierrez.
+Keywords: parte médico, baja, alta, incapacidad temporal, LRGT650802916019, ANTONIO LARA GUTIERREZ
+=====================================
+
+11/09/2021
+(3)
+A partir de esta fecha no se emitirán partes de confirmación. El INSS le remitirá comunicación sobre el proceso de IT del trabajador.
+DATOS DEL FACULTATIVO - CIAS
+/DATOS DEL MÉDICO INSPECTOR
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHEZ,
+21/09/2020
+. Firma, fecha y sello
+Nº de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para la EMPRESA
+
+--- Página 3 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑ INSS/ISM ☐ MUTUA|
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido

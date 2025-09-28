@@ -1,0 +1,62 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 5/23
+Tipo: multa
+Título: Información sobre Publicación de Edicto - Multa de Circulación
+Líneas originales: 133-179 (total: 47 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 5 ---
+Marcador final: --- Página 6 ---
+Caracteres: 848
+Descripción: Information regarding the publication of a traffic violation notice for Antonio Lara Gutierrez, related to speeding on the M-30. Ref: 935/711076230.0
+Keywords: multa de circulación, edicto, 935/711076230.0, 5581FTH, 1827563, Antonio Lara Gutierrez, M-30, 76.A LSV
+=====================================
+
+ΑΝΤΟΝΙΟ
+VILCHEZ,
+21/09/2020
+. Firma, fecha y sello
+Nº de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para la EMPRESA
+
+--- Página 3 ---
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑ INSS/ISM ☐ MUTUA|
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+Localidad
+CL JAVIER VICENTE MONTERO, 2
+Provincia
+ESCORIAL, EL
+MADRID
+Nombre de la empresa
+Puesto de trabajo
+Código postal
+Teléfono móvil
+28280

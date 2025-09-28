@@ -1,0 +1,45 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/22
+Tipo: factura
+Título: Factura de ELECTRO MERCANTIL LEGANES DAM
+Líneas originales: 718-747 (total: 30 líneas)
+Confianza: 90%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 381
+Descripción: Invoice from ELECTRO MERCANTIL LEGANES DAM to CONTROL Y TENSION SL, dated 20/05/2019.
+Keywords: factura, electromercantil, 850162, GASTOS APLAZAMIENTO
+=====================================
+
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Página 1 de 1
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna: 33350
+CERRADA
+Hora: 13:40
+Tel.:
+918964063
+Ref. Oferta: 25467
+C.I.F.:
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4

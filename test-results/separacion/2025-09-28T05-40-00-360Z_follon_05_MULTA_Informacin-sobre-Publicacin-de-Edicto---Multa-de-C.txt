@@ -1,0 +1,59 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 5/24
+Tipo: multa
+Título: Información sobre Publicación de Edicto - Multa de Circulación
+Líneas originales: 144-185 (total: 42 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 5 ---
+medio ambiente y MADRID
+movilidad
+Marcador final: 007961-007962
+Caracteres: 810
+Descripción: Notification of traffic violation and fine for Antonio Lara Gutierrez, published in BOE.
+Keywords: multa, circulación, 935/711076230.0, 5581FTH, 1827563, Antonio Lara Gutierrez, M-30
+=====================================
+
+PARTE MÉDICO DE BAJA/ALTA DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL) ☐
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑ INSS/ISM ☐ MUTUA|
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+Localidad
+CL JAVIER VICENTE MONTERO, 2
+Provincia
+ESCORIAL, EL
+MADRID
+Nombre de la empresa
+Puesto de trabajo
+Código postal
+Teléfono móvil
+28280
+Teléfono fijo
+918964063 609273707
+Código nacional de ocupación (CNO)
+Directores generales, empresa privada
+Control y Tension
+ly'

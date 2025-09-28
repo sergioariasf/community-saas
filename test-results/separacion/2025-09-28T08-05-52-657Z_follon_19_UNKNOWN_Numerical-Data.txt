@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/22
+Tipo: unknown
+Título: Numerical Data
+Líneas originales: 744-749 (total: 6 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 59
+Descripción: Collection of numerical data, possibly related to financial transactions.
+Keywords: numbers, 03/12/19, 90,75, 301,25
+=====================================
+
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Ruta:

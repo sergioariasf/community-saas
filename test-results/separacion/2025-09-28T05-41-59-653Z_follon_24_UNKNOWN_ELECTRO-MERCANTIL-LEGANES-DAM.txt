@@ -1,0 +1,16 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 24/27
+Tipo: unknown
+Título: ELECTRO MERCANTIL LEGANES DAM
+Líneas originales: 667-667 (total: 1 líneas)
+Confianza: 20%
+Soportado: NO
+Marcador inicio: 03/06/19
+Marcador final: Fecha
+Caracteres: 16
+Descripción: Posible cabecera de informe
+Keywords: ELECTRO MERCANTIL LEGANES DAM
+=====================================
+
+- BANCO SABADELL

@@ -1,0 +1,35 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/23
+Tipo: unknown
+Título: Diagrama Eléctrico (GS-Hydro)
+Líneas originales: 742-761 (total: 20 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+Marcador final: --- Página 20 ---
+Caracteres: 214
+Descripción: Sketch of electrical panel setup, possibly related to the previous budget.
+Keywords: CUADRO VIVIENA, CUADRO CARGADOR, IVE, GS-Hydro
+=====================================
+
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Ruta:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 609273707
+Bultos
+4
+CÓDIGO
+DESCRIPCIÓN

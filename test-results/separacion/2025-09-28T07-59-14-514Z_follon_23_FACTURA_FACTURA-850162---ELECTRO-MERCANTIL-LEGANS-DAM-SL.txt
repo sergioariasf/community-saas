@@ -1,0 +1,45 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/24
+Tipo: factura
+Título: FACTURA 850162 - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 765-794 (total: 30 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 669
+Descripción: Invoice from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L. to Control y Tension S.L.
+Keywords: factura, ELECTRO MERCANTIL, 850162, CONTROL Y TENSION, 20/05/2019, 193,00
+=====================================
+
+LEG43000200
+PANTALLA DISANO RODA FL 2X36 CEL
+2217802300
+ECOTASA (R.DECRETO 208/2005): DIS02001040
+CAJA EST LEGRAND 35966 220X170 CIEGA IP55 035966
+15,00
+15,00
+5,00
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 11 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+ญ
+Miembro de:
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+ALBARÁN

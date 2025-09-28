@@ -1,0 +1,35 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 10/23
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+Líneas originales: 342-361 (total: 20 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 11 ---
+Marcador final: --- Página 12 ---
+Caracteres: 564
+Descripción: Delivery note from Electro Mercantil Leganés for Control y Tension SL, containing specific items.
+Keywords: albarán, ELECTRO MERCANTIL, 1088169, SAG04000210, SAGELUX EVO-110ST
+=====================================
+
+
+--- Página 5 ---
+medio ambiente y MADRID
+movilidad
+Dirección General de Gestión y Vigilancia de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Órgano Instructor:
+Departamento de Instrucción de Multas de Circulación
+C/ Albarracín, 33 - 28037
+MADRID
+Horario de atención al público: Laborables de lunes a viernes (8:30 a 14 horas)
+Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+MODELO
+935
+INFORMACIÓN SOBRE PUBLICACIÓN DE EDICTO.
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ NUM 10
+28250 GALAPAGAR MADRID
+MULTA DE CIRCULACIÓN
+EMISOR 28992.9

@@ -1,0 +1,23 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/23
+Tipo: unknown
+Título: Random Date Amounts
+Líneas originales: 811-818 (total: 8 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 70
+Descripción: Unclear if this relates to any document.
+Keywords: 
+=====================================
+
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Área:

@@ -1,0 +1,26 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/23
+Tipo: unknown
+Título: GS-Hydro: Diagram
+Líneas originales: 604-614 (total: 11 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 20 ---
+Marcador final: --- Página 21 ---
+Caracteres: 327
+Descripción: Diagram of electrical panel.
+Keywords: GS-Hydro, CUADRO DE, Sobretensions, Boleth insistore
+=====================================
+
+REFERENCIA DEL DESTINATARIO:
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ 10
+GALAPAGAR
+MADRID
+CP: 28260
+SC:00
+NT81150160009701460155D
+M-30 TUNEL XC: M-30 Túnel Calzada 2ª entre Km. 19 y Km. 8
+ANTECEDENTES DE HECHO
+Primero: El expediente sancionador con número de referencia indicado en el encabezamiento de la presente notificación fue

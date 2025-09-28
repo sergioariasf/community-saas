@@ -1,0 +1,34 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 8/22
+Tipo: albaran
+Título: Albarán de Electro Mercantil Leganés D.A.M., S.L.U. - RODA FL
+Líneas originales: 318-336 (total: 19 líneas)
+Confianza: 90%
+Soportado: SÍ
+Marcador inicio: --- Página 10 ---
+Marcador final: --- Página 11 ---
+Caracteres: 384
+Descripción: Delivery note from Electro Mercantil Leganés D.A.M., S.L.U. to Control y Tension SL, dated 01/09/2020, for a PANTALLA DISANO RODA FL 2X36 CEL.
+Keywords: albarán, electromercantil, 1088220, DIS02001040, LEGRAND 35966
+=====================================
+
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑
+Fallecimiento

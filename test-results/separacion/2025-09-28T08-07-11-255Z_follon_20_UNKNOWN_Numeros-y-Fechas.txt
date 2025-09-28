@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/23
+Tipo: unknown
+Título: Numeros y Fechas
+Líneas originales: 651-656 (total: 6 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 526
+Descripción: Lista de fechas y cantidades
+Keywords: 90,75, 04/12/19, 259,10
+=====================================
+
+--- Página 9 ---
+Vistos los documentos y actuaciones obrantes en el expediente sancionador, así como la normativa de general
+aplicación, la Directora General de Gestión y Vigilancia de la Circulación, en uso de las facultades que le han sido
+delegadas por Acuerdo de la Junta de Gobierno de 4 de julio de 2019, en relación con lo establecido en los artículos 17.1.k) y
+40 f) de la Ley 22/2006, de 4 de julio, de Capitalidad y de Régimen Especial de Madrid, ha RESUELTO:
+PRIMERO: DESESTIMAR el recurso de reposición interpuesto

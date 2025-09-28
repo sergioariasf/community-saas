@@ -284,3 +284,5 @@ FLUJO DE TRABAJO SISTEMÁTICO
 - Clasificación ✓
 - Metadatos ✓
 - Chunks ✓
+
+REGLA DE ORO: "Separar COORDINACIÓN de EJECUCIÓN"

@@ -1,0 +1,63 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 3/22
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal - Page 3
+Líneas originales: 66-113 (total: 48 líneas)
+Confianza: 90%
+Soportado: NO
+Marcador inicio: --- Página 3 ---
+Marcador final: --- Página 4 ---
+Caracteres: 864
+Descripción: Medical certificate indicating both the start (baja) and end (alta) of temporary disability for Antonio Lara Gutierrez, from 12/09/2020 to 21/09/2020.
+Keywords: baja, alta, incapacidad temporal, enfermedad común, Z20.828, 21/09/2020
+=====================================
+
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para el TRABAJADOR
+
+--- Página 2 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL)
+Enfermedad profesional (EP)
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+FECHA DE LA BAJA
+12/09/2020
+;
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+TIPO DE PROCESO
+Muy corto
+Corto
+Medio
+☑
+Largo
+ㅁㅁ
+ACTIVO ☑
+SITUACIÓN
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO
+N° DEL PARTE DE CONFIRMACIÓN
+1
+DURACIÓN ESTIMADA
+14 días
+Fecha de la siguiente revisión médica
+21/09/2020

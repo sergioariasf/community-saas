@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 23/27
+Tipo: unknown
+Título: Fechas y valores
+Líneas originales: 661-666 (total: 6 líneas)
+Confianza: 20%
+Soportado: NO
+Marcador inicio: Consulta detalles de la promoción con tu comercial o en tu centro Saltoki
+Marcador final: 03/06/19
+Caracteres: 567
+Descripción: Fechas y valores posiblemente relacionados con facturas
+Keywords: fechas, valores
+=====================================
+
+estime oportuno, a tenor de lo establecido en el artículo 88.3 de la LPACAP.
+TERCERO: Informarle de que, al haber adquirido firmeza la sanción, deberá hacer efectivo el pago de la multa por cualquiera
+de los medios que a continuación se especifican. Finalizado el plazo de pago en vía voluntaria sin que se haya abonado el
+importe de la multa, se iniciará el procedimiento de apremio (art. 110 LSV):
+1.- En cualquier oficina de las entidades financieras que a continuación se relacionan, presentando siempre esta notificación:
+- BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)

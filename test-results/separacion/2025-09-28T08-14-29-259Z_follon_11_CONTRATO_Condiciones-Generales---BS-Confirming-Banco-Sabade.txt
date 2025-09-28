@@ -1,0 +1,67 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 11/23
+Tipo: contrato
+Título: Condiciones Generales - BS Confirming (Banco Sabadell)
+Líneas originales: 404-453 (total: 50 líneas)
+Confianza: 85%
+Soportado: SÍ
+Marcador inicio: --- Página 13 ---
+ⓇSabadell
+BS Confirming
+Marcador final: KF333E-200720-E-EMA-GBSE 1200-00-001621-000511-1AENMA14
+Caracteres: 1312
+Descripción: General conditions for BS Confirming services provided by Banco Sabadell.
+Keywords: BS Confirming, Banco Sabadell, condiciones generales, anticipo, interés, cesión de créditos
+=====================================
+
+BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)
+-
+CAIXABANK
+- BANCO SABADELL
+- IBERCAJA BANCO
+- BANCO SANTANDER
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección
+General de Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta
+notificación y la matrícula del vehículo, datos imprescindibles para su debida identificación.
+3. Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se
+llama desde fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista
+en www.madrid.es/Lineamadrid).
+4. Mediante Certificado digital o banca electrónica en www.madrid.es/multas.
+PODRÁ CONSULTAR LA NOTIFICACIÓN REALIZADA EN LAS SIGUIENTES DIRECCIONES:
+(BOE) http://www.boe.es/tablon edictal unico/o (TESTRA) https://sede.dgt.gob.es/sede/
+N°. BOLETÍN
+7110762300
+CONTROL
+IMPORTE
+10-11-2020
+49
+100,00
+MATRÍCULA
+5581FTH
+LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO
+007961-007962
+
+--- Página 6 ---
+1
+
+--- Página 7 ---
+0
+Albarán
+Fecha:
+Hoja
+01.10.2020
+1
+Cliente número:
+594182
+de
+Albarán número:
+Su NIF:
+2002337934
+ESB83802850
+1
+Comprador
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS

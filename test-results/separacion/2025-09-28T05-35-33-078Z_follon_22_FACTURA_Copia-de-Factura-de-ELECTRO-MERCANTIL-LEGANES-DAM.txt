@@ -1,0 +1,45 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/22
+Tipo: factura
+Título: Copia de Factura de ELECTRO MERCANTIL LEGANES DAM
+Líneas originales: 748-777 (total: 30 líneas)
+Confianza: 90%
+Soportado: SÍ
+Marcador inicio: --- Página 25 ---
+Marcador final: --- Página 25 ---
+Caracteres: 571
+Descripción: Copy of invoice from ELECTRO MERCANTIL LEGANES DAM to CONTROL Y TENSION SL, dated 20/05/2019.
+Keywords: factura, electromercantil, 850162, GASTOS APLAZAMIENTO
+=====================================
+
+Almacén:
+Ruta:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 609273707
+Bultos
+4
+CÓDIGO
+DESCRIPCIÓN
+REF.PROV. CANTIDAD
+DIS02001040
+ZZZZZRAEE
+LEG43000200
+PANTALLA DISANO RODA FL 2X36 CEL
+2217802300
+ECOTASA (R.DECRETO 208/2005): DIS02001040
+CAJA EST LEGRAND 35966 220X170 CIEGA IP55 035966
+15,00
+15,00
+5,00
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 11 ---

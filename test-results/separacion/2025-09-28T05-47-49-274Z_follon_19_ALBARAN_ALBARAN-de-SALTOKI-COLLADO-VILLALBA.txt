@@ -1,0 +1,53 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/23
+Tipo: albaran
+Título: ALBARAN de SALTOKI COLLADO VILLALBA
+Líneas originales: 773-810 (total: 38 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 21 ---
+Marcador final: --- Página 22 ---
+Caracteres: 719
+Descripción: Delivery note from SALTOKI to CONTROL Y TENSION S.L
+Keywords: ALBARAN, SALTOKI, 132.127, CONTROL Y TENSION S.L
+=====================================
+
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 11 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+ญ
+Miembro de:
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+ALBARÁN
+1088169
+COPIA CLIENTE
+Página 1 de 1
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna:
+Hora:
+10:18
+Ref. Oferta:
+Tel.:
+C.I.F.:
+918964063
+B83802850

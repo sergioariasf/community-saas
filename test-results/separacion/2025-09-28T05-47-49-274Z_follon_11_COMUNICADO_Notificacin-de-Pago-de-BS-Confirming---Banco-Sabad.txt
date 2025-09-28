@@ -1,0 +1,81 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 11/23
+Tipo: comunicado
+Título: Notificación de Pago de BS Confirming - Banco Sabadell
+Líneas originales: 444-509 (total: 66 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 12 ---
+Marcador final: --- Página 13 ---
+Caracteres: 951
+Descripción: Notification of payment through BS Confirming, offered by Banco Sabadell.
+Keywords: Sabadell, BS Confirming, pago, MORFUS EQUIPAMIENTO COMERCIAL S.L., CONTROL Y TENSION SL, 12677652
+=====================================
+
+Albarán número:
+Su NIF:
+2002337934
+ESB83802850
+1
+Comprador
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Su Persona de contacto
+fischer
+Ⓡ
+Fischer
+innovative solutions
+Fischer ibérica, S.A.U. CI. Klaus Fischer, 1/43300 Mont-roig del Camp
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Teléfono / Fax
+Su representante
+Su Pedido:
+Pedido número:
+Peso Bruto:
+Enviado por:
+reposicion
+215591934
+9,238 KG
+Condiciones de entrega:
+Bultos:
+251251 MRW (URGENTE-10)
+ZFH - Portes Pagados
+01
+Pos. Art-Nr Descripción
+Pedido número: 215591934 Su pedido: reposicion
+0010 538880 PMCU UNIVERSAL CENTRAL CLAMP
+GTIN: 8001132059913
+Referencia
+cliente
+Valor
+neto
+Cant.
+Cant. unid.
+рас
+entregadas
+41,92
+2
+20
+0020 71202
+STSR M10X200 A2 TORNILLO DOBLE ROSCA
+GTIN: 8001132712023
+52,64
+1
+25
+0030 71207
+RHS 8X20 A2 TORNILLO CABEZA DE MARTILLO
+GTIN: 8001132712078
+24,57
+1
+50
+0040 71952
+TUERCA ARANDELA MU F A2 M10
+14,02
+1
+100

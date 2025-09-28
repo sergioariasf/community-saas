@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/27
+Tipo: unknown
+Título: Diagrama Eléctrico GS-Hydro (Continuación)
+Líneas originales: 625-630 (total: 6 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: GS-Hydro Asunto:
+Marcador final: SSALTOKI
+Caracteres: 421
+Descripción: Diagrama eléctrico.
+Keywords: esquema, eléctrico, GS-Hydro
+=====================================
+
+han sido aplicados los márgenes de error previstos en la normativa de metro-
+logía vigente, habiendo sido utilizada para la graduación de la infracción
+la velocidad corregida según dichos márgenes de error, Y, por tanto, mino-
+rada en relación a la velocidad captada.
+En función de lo expuesto se puede afirmar que el vehículo circulaba, al me-
+nos, a la velocidad por la que fue sancionado, resultando carentes de funda-

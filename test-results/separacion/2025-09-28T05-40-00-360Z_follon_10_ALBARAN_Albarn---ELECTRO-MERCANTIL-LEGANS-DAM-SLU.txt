@@ -1,0 +1,36 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 10/24
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+Líneas originales: 315-332 (total: 18 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 11 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+Marcador final: ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+Caracteres: 359
+Descripción: Delivery note from ELECTRO MERCANTIL to CONTROL Y TENSION SL.
+Keywords: albarán, ELECTRO MERCANTIL, CONTROL Y TENSION SL, 1088169, B83802850, SAG04000210
+=====================================
+
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644

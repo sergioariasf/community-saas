@@ -1,0 +1,49 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/24
+Tipo: unknown
+Título: Consulta a la Cartera de ELECTRO MERCANTIL
+Líneas originales: 764-797 (total: 34 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: ELECTRO MERCANTIL LEGANES DAM
+Marcador final: Jesp
+Caracteres: 715
+Descripción: A list of invoices related to CONTROL Y TENSION SL with details.
+Keywords: ELECTRO MERCANTIL, CONTROL Y TENSION SL, 1,450.20, 2,013.33, 1,807.87
+=====================================
+
+ZZZZZRAEE
+LEG43000200
+PANTALLA DISANO RODA FL 2X36 CEL
+2217802300
+ECOTASA (R.DECRETO 208/2005): DIS02001040
+CAJA EST LEGRAND 35966 220X170 CIEGA IP55 035966
+15,00
+15,00
+5,00
+C Precio x 100 Unidades M Precio x 1000 Unidades
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+
+--- Página 11 ---
+em
+electromercantil
+Distribución Activa Multisectorial
+ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+TEL.: 916 879 106
+EMAIL: leganes@electromercantil.es
+ญ
+Miembro de:
+AUNA
+distribución
+IMELCO
+International Marketing Electrical Corp.
+ALBARÁN
+1088169
+COPIA CLIENTE
+Página 1 de 1

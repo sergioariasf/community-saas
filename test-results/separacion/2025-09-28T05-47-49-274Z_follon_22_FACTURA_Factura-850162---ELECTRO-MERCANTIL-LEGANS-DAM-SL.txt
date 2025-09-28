@@ -1,0 +1,46 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/23
+Tipo: factura
+Título: Factura 850162 - ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.
+Líneas originales: 853-883 (total: 31 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 1674
+Descripción: Invoice from ELECTRO MERCANTIL LEGANÉS D.A.M., S.L. to CONTROL Y TENSION SL.
+Keywords: FACTURA, ELECTRO MERCANTIL, 850162, CONTROL Y TENSION SL, 193,00€
+=====================================
+
+12677652
+Núm de referencia:
+Importe
+8.226,96
+Divisa
+EUR
+Vencimiento
+05.10.20
+Forma de pago
+Los pagos se efectuarán mediante transferencia a la cuenta: ES81-2100-2980-0602-0004-7252
+Espacio para modificar la domiciliación:
+La cuenta puede ser incorporada o modificada por ustedes en este mismo espacio, adjuntando Certificado de Titularidad con fecha de emisión inferior a 6 meses.
+SOLICITUD DE ANTICIPO DE BS CONFIRMING
+Banc Sabadell les ofrece la posibilidad de solicitar financiación sin recurso de dichas órdenes de pago:
+Solicitando esta financiación sin recurso el proveedor cede el crédito comercial a Banco de Sabadell, S.A., eliminando el riesgo de impago. Es una
+facilidad financiera que no consume sus líneas de financiación ni se imputa en su CIRBE. La solicitud supone la aceptación de las condiciones del
+anticipo del pago y las condiciones generales predispuestas que figuran en este documento, quedando sometida y condicionada a lo establecido en
+las mismas.
+Condiciones del anticipo del pago
+Tipo de interés: FIJO: 3,150%
+Modalidad de anticipo
+Comisión de anticipo: 0,45 %.
+☐ Anticipo general: solicitamos que procedan al anticipo de todas las órdenes de pago a nuestro favor que reciban a partir de hoy del cliente
+indicado. Estas instrucciones se mantendrán vigentes mientras no sean revocadas por escrito por alguna de las partes. Los tipos de interés de los
+anticipos serán actualizados y comunicados en las liquidaciones que se practiquen.
+Anticipo puntual: solicitamos que procedan al anticipo de las órdenes relacionadas el próximo día 1/8/20
+Banco de Sabadell, S.A.
+p.p.
+Sabadell, 20 de Julio de 2020
+¿Cómo solicitar el anticipo a Banc Sabadell?
+p.p.

@@ -1,0 +1,60 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 3/23
+Tipo: parte médico
+Título: Parte Médico de Baja/Alta de Incapacidad Temporal - Página 3
+Líneas originales: 61-105 (total: 45 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 3 ---
+Marcador final: --- Página 4 ---
+Caracteres: 768
+Descripción: Medical certificate confirming temporary disability and subsequent discharge for Antonio Lara Gutierrez due to a common illness, issued on 21/09/2020, indicating return to work.
+Keywords: incapacidad temporal, baja, alta, enfermedad común, LRGT650802916019, 280373935701, 01827563Y, Antonio Lara Gutierrez, Control y Tension, Z20.828
+=====================================
+
+ROMERO
+ANTONIO
+VILCH Z,
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Ejemplar para el TRABAJADOR
+
+--- Página 2 ---
+PARTE MÉDICO DE CONFIRMACIÓN DE INCAPACIDAD TEMPORAL
+Tipo de contingencia:
+Enfermedad común (EC) ☑
+Accidente de trabajo (AT) ☐
+Accidente no laboral (ANL)
+Enfermedad profesional (EP)
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑
+MUTUA
+NÚMERO DE LA TARJETA SANITARIA:
+LRGT650802916019
+NÚMERO DE LA SEGURIDAD SOCIAL:
+280373935701
+NÚMERO DEL DNI/NIE/PASAPORTE:
+01827563Y
+NOMBRE Y APELLIDOS:
+ANTONIO LARA GUTIERREZ
+EMPRESA:
+Control y Tension
+FECHA DE LA BAJA
+12/09/2020
+;
+FECHA DEL PARTE DE CONFIRMACIÓN
+19/09/2020
+TIPO DE PROCESO
+Muy corto
+Corto
+Medio
+☑
+Largo
+ㅁㅁ
+ACTIVO ☑

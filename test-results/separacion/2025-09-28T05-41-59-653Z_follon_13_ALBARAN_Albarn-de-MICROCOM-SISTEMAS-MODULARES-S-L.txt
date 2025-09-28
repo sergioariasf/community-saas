@@ -1,0 +1,38 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 13/27
+Tipo: albaran
+Título: Albarán de MICROCOM SISTEMAS MODULARES, S. L.
+Líneas originales: 471-493 (total: 23 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 14 ---
+Marcador final: --- Página 15 ---
+Caracteres: 315
+Descripción: Delivery note from MICROCOM SISTEMAS MODULARES, S. L. to CONTROL Y TENSION, S.L. listing delivered items and quantities.
+Keywords: albaran, MICROCOM, 18633, CONTROL Y TENSION, S.L., MC0000015, TCR200
+=====================================
+
+215591934
+9,238 KG
+Condiciones de entrega:
+Bultos:
+251251 MRW (URGENTE-10)
+ZFH - Portes Pagados
+01
+Pos. Art-Nr Descripción
+Pedido número: 215591934 Su pedido: reposicion
+0010 538880 PMCU UNIVERSAL CENTRAL CLAMP
+GTIN: 8001132059913
+Referencia
+cliente
+Valor
+neto
+Cant.
+Cant. unid.
+рас
+entregadas
+41,92
+2
+20
+0020 71202

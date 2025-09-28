@@ -1,0 +1,26 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/23
+Tipo: unknown
+Título: GS-Hydro Additional Information
+Líneas originales: 762-772 (total: 11 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 20 ---
+Marcador final: --- Página 21 ---
+Caracteres: 204
+Descripción: Additional notes or details potentially related to a budget or service order from GS-Hydro.
+Keywords: gs-hydro, cabo rufino
+=====================================
+
+REF.PROV. CANTIDAD
+DIS02001040
+ZZZZZRAEE
+LEG43000200
+PANTALLA DISANO RODA FL 2X36 CEL
+2217802300
+ECOTASA (R.DECRETO 208/2005): DIS02001040
+CAJA EST LEGRAND 35966 220X170 CIEGA IP55 035966
+15,00
+15,00
+5,00

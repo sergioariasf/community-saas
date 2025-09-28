@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/23
+Tipo: unknown
+Título: Fragment list of dates
+Líneas originales: 642-646 (total: 5 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+03/12/19
+Marcador final: 17/02/20301,25
+Caracteres: 42
+Descripción: Unclear fragment listing several dates and amounts.
+Keywords: dates, amounts
+=====================================
+
+IMPORTE
+MATRÍCULA
+7110235220
+21-10-2020
+52

@@ -1,0 +1,61 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/24
+Tipo: albaran
+Título: Albarán de SalToki
+Líneas originales: 712-757 (total: 46 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 21 ---
+Marcador final: --- Página 22 ---
+Caracteres: 631
+Descripción: Delivery note from Saltoki, detailing ordered items and delivery information for Control y Tension S.L.
+Keywords: albarán, SALTOKI, CONTROL Y TENSION S.L, 132.127, 8010508331, 8010510139, GS HYDRO
+=====================================
+
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106
+1088220
+COPIA CLIENTE
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Página 1 de 1
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna: 33350
+CERRADA
+Hora: 13:40
+Tel.:
+918964063
+Ref. Oferta: 25467
+C.I.F.:
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Ruta:
+ALMACEN LEGANES
+Área:
+1
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+28230 LAS ROZAS DE MADRID
+Tel. 609273707

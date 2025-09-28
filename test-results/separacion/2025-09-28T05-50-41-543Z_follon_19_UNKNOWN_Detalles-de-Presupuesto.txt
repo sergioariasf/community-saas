@@ -1,0 +1,27 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/24
+Tipo: unknown
+Título: Detalles de Presupuesto
+Líneas originales: 701-711 (total: 11 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: O
+GS-HYDRO S.A.
+Marcador final: e-mail: info@gshydro.es
+Caracteres: 710
+Descripción: Detalles del Presupuesto referente a una instalación eléctrica
+Keywords: GS-Hydro, CUADRO DE 54 don., Protector Sobretensions, Boleth insistore.
+=====================================
+
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil

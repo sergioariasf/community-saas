@@ -1,0 +1,22 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/24
+Tipo: unknown
+Título: Lista de fechas
+Líneas originales: 669-674 (total: 6 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+03/12/19
+Marcador final: 17/02/20301,25
+Caracteres: 339
+Descripción: Lista de fechas
+Keywords: 
+=====================================
+
+-
+- CAIXABANK
+- IBERCAJA BANCO
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección General de
+Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta notificación y la matrícula del
+vehículo, datos imprescindibles para su debida identificación.
