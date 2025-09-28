@@ -29,12 +29,6 @@ export default {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Configuración adicional para APIs
-  api: {
-    bodyParser: {
-      sizeLimit: '10mb',
-    },
-  },
   // Configuración para deployment
   async headers() {
     return [
