@@ -259,6 +259,24 @@ export class SimplePipeline {
           status: updates.classification_status,
           error_message: updates.classification_error || null
         });
+        
+        // Handle document_type update separately if present
+        if (updates.document_type) {
+          console.log(`🔄 [DEBUG] Also updating document_type to: ${updates.document_type}`);
+          const { SupabaseApiHelper } = await import('../../api/SupabaseApiHelper');
+          await SupabaseApiHelper.executeQuery(async (supabase) => {
+            const { error } = await supabase
+              .from('documents')
+              .update({ document_type: updates.document_type })
+              .eq('id', documentId);
+            
+            if (error) {
+              throw new Error(`Failed to update document_type: ${error.message}`);
+            }
+            
+            console.log(`✅ [DEBUG] Successfully updated document_type to: ${updates.document_type}`);
+          }, { useServiceRole: true });
+        }
       } else if (updates.metadata_status) {
         await DocumentsStore.updateProcessingStatus({
           document_id: documentId,
