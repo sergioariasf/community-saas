@@ -219,7 +219,7 @@ export class RealE2EGuaranteedTest {
       file_size: file.size,
       file_hash: uploadResult.metadata!.hash, // ← HASH REAL DEL STORAGE
       processing_level: 4,
-      document_type: this.inferDocumentType(filename),
+      document_type: null,  // ✅ FIXED: Use null like UI to test classification pipeline
       legacy_status: 'processing',
       extraction_status: 'pending',
       classification_status: 'pending', 
@@ -323,8 +323,24 @@ export class RealE2EGuaranteedTest {
         extracted_text_length: document.extracted_text?.length || 0,
         extraction_status: document.extraction_status,
         classification_status: document.classification_status,
-        metadata_status: document.metadata_status
+        metadata_status: document.metadata_status,
+        document_type: document.document_type  // ✅ CRITICAL: Verify document_type was set correctly
       });
+
+      // ✅ CRITICAL VALIDATION: Ensure document_type was classified correctly
+      if (!document.document_type) {
+        console.error(`❌ [CRITICAL BUG] document_type is null after pipeline - classification failed!`);
+        console.error(`❌ [CRITICAL BUG] Expected: ${docType}, Got: ${document.document_type}`);
+        throw new Error(`Pipeline bug: document_type not set after classification`);
+      }
+
+      if (document.document_type !== docType) {
+        console.error(`❌ [CRITICAL BUG] document_type mismatch - classification wrong!`);
+        console.error(`❌ [CRITICAL BUG] Expected: ${docType}, Got: ${document.document_type}`);
+        throw new Error(`Pipeline bug: wrong classification ${document.document_type} vs expected ${docType}`);
+      }
+
+      console.log(`✅ [VALIDATION] document_type correctly set: ${document.document_type}`);
 
       // Verificar datos específicos según tipo
       let specificData = null;
@@ -338,6 +354,28 @@ export class RealE2EGuaranteedTest {
           
           return data; // No throw error si no existe
         }, { useServiceRole: true });
+      } else if (docType === 'factura') {
+        // ✅ CRITICAL: Test factura data extraction too
+        specificData = await SupabaseApiHelper.executeQuery(async (supabase) => {
+          const { data, error } = await supabase
+            .from('extracted_invoices')
+            .select('*')
+            .eq('document_id', documentId)
+            .single();
+          
+          return data; // No throw error si no existe
+        }, { useServiceRole: true });
+        
+        if (specificData) {
+          console.log(`✅ [VALIDATION] Factura data extracted:`, {
+            provider_name: specificData.provider_name,
+            client_name: specificData.client_name,
+            total_amount: specificData.total_amount,
+            invoice_number: specificData.invoice_number
+          });
+        } else {
+          console.error(`❌ [CRITICAL BUG] No factura data extracted for document_type: ${document.document_type}`);
+        }
       }
 
       return {
