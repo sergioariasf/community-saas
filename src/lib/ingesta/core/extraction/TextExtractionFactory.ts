@@ -17,11 +17,17 @@ export class TextExtractionFactory {
   
   constructor() {
     // Registrar extractores ordenados por prioridad
+    const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1';
+    
     this.extractors = [
       new PdfParseExtractor(),      // Prioridad 1: Rápido y gratis
       new GoogleVisionExtractor(),  // Prioridad 2: OCR preciso
-      new GeminiFlashExtractor()    // Prioridad 3: TODO-EN-UNO para casos complejos
     ];
+    
+    // Solo incluir GeminiFlashExtractor en desarrollo debido a problemas de contexto Next.js
+    if (!isProduction) {
+      this.extractors.push(new GeminiFlashExtractor()); // Prioridad 3: TODO-EN-UNO para casos complejos
+    }
     
     // Ordenar por prioridad
     this.extractors.sort((a, b) => a.getPriority() - b.getPriority());
@@ -78,18 +84,23 @@ export class TextExtractionFactory {
       };
     }
     
-    // ESTRATEGIA 3: Gemini Flash OCR IA (TODO-EN-UNO)
-    const geminiExtractor = this.getExtractor('gemini-flash-ocr-ia') as GeminiFlashExtractor;
-    if (geminiExtractor) {
-      console.log('🤖 [TEXT EXTRACTION] Strategy 3: Gemini Flash OCR IA (TODO-EN-UNO)...');
-      const geminiResult = await geminiExtractor.extract(context) as GeminiAllInOneResult;
-      
-      if (geminiResult.success && geminiResult.allInOneComplete) {
-        console.log('✅ [TEXT EXTRACTION] Gemini Flash TODO-EN-UNO successful - pipeline completed');
-        return geminiResult;
+    // ESTRATEGIA 3: Gemini Flash OCR IA (TODO-EN-UNO) - Solo en desarrollo
+    const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1';
+    if (!isProduction) {
+      const geminiExtractor = this.getExtractor('gemini-flash-ocr-ia') as GeminiFlashExtractor;
+      if (geminiExtractor) {
+        console.log('🤖 [TEXT EXTRACTION] Strategy 3: Gemini Flash OCR IA (TODO-EN-UNO)...');
+        const geminiResult = await geminiExtractor.extract(context) as GeminiAllInOneResult;
+        
+        if (geminiResult.success && geminiResult.allInOneComplete) {
+          console.log('✅ [TEXT EXTRACTION] Gemini Flash TODO-EN-UNO successful - pipeline completed');
+          return geminiResult;
+        }
+        
+        lastResult = geminiResult;
       }
-      
-      lastResult = geminiResult;
+    } else {
+      console.log('⚠️ [TEXT EXTRACTION] Skipping Gemini Flash in production environment');
     }
     
     // FALLBACK: Mejor resultado disponible
