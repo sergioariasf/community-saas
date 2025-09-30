@@ -69,8 +69,9 @@ export class PdfParseExtractor extends BaseTextExtractor {
     try {
       this.log('info', 'Starting direct PDF-parse extraction...');
       
-      // Import pdf-parse with error handling
-      const pdfParse = require('pdf-parse');
+      // Import pdf-parse with error handling using dynamic import
+      const pdfParseModule = await import('pdf-parse');
+      const pdfParse = pdfParseModule.default;
       
       // Validate buffer before processing
       if (!Buffer.isBuffer(buffer) || buffer.length === 0) {

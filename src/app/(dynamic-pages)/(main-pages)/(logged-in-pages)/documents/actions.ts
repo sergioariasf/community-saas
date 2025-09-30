@@ -214,7 +214,7 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
         file_size: file.size,
         file_hash: uploadResult.metadata!.hash,
         processing_level: processingLevel,
-        document_type: 'acta',
+        document_type: null,  // Let intelligent classification determine the type
         legacy_status: 'processing',
         extraction_status: 'pending',
         uploaded_by: user.id,
