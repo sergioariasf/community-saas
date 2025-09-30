@@ -69,6 +69,7 @@ export default function ClientPage() {
   const toastRef = useRef<string | number | undefined>(undefined);
   const [communities, setCommunities] = useState<Array<{ id: string; name: string }>>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const [processingSteps, setProcessingSteps] = useState({
     upload: false,
     textExtraction: false,
@@ -94,8 +95,9 @@ export default function ClientPage() {
     },
   });
 
-  // Cargar comunidades al montar el componente
+  // Cargar comunidades al montar el componente y establecer isClient
   useEffect(() => {
+    setIsClient(true);
     loadCommunities();
   }, []);
 
@@ -250,7 +252,7 @@ export default function ClientPage() {
         setProcessingProgress(100);
         
         const successMessage = result.pipelineResult 
-          ? `¡Documento procesado exitosamente! Nivel ${result.pipelineResult.processing_level} completado en ${Math.round(result.pipelineResult.total_processing_time_ms / 1000)}s`
+          ? `¡Documento procesado exitosamente! Nivel ${result.pipelineResult.processing_level} completado en ${Math.round((result.pipelineResult.total_processing_time_ms || 0) / 1000)}s`
           : '¡Documento procesado exitosamente!';
         
         toast.success(successMessage, { id: toastRef.current });
@@ -293,11 +295,11 @@ export default function ClientPage() {
     }
   };
 
-  // Función para generar hash del archivo (simulado)
+  // Función para generar hash del archivo (simulado) - Sin Date.now() para evitar hidratación
   const generateFileHash = async (file: File): Promise<string> => {
     // En producción, usar crypto.subtle.digest
-    // Por ahora retornamos un hash simulado
-    return `hash_${file.name}_${file.size}_${Date.now()}`;
+    // Por ahora retornamos un hash simulado basado solo en contenido estático
+    return `hash_${file.name}_${file.size}`;
   };
 
   const formatFileSize = (bytes: number) => {
@@ -311,6 +313,41 @@ export default function ClientPage() {
   // Watch file para mostrar información
   const watchedFile = form.watch('file');
   const selectedFile = watchedFile?.[0];
+
+  // Prevenir hidratación inicial
+  if (!isClient) {
+    return (
+      <div className="container max-w-2xl mx-auto py-8">
+        <div className="mb-6">
+          <Link 
+            href="/documents" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Volver a Documentos
+          </Link>
+        </div>
+        <Card className="shadow-lg">
+          <CardHeader>
+            <CardTitle>
+              <div className="flex items-center gap-2">
+                <FileText className="h-5 w-5" />
+                <T.H2>Subir Documento</T.H2>
+              </div>
+            </CardTitle>
+            <CardDescription>
+              Cargando formulario...
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="flex items-center justify-center py-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -446,7 +483,7 @@ export default function ClientPage() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <p className="font-medium text-gray-800">Procesando documento...</p>
-                      <p className="text-sm text-gray-600">{Math.round(processingProgress)}%</p>
+                      <p className="text-sm text-gray-600">{Math.round(processingProgress || 0)}%</p>
                     </div>
                     
                     <Progress value={processingProgress} className="h-2" />
@@ -521,7 +558,7 @@ export default function ClientPage() {
                         {pipelineDetails.total_processing_time_ms && (
                           <div className="flex justify-between items-center mb-1">
                             <span>Tiempo de procesamiento:</span>
-                            <span className="font-medium">{Math.round(pipelineDetails.total_processing_time_ms / 1000)}s</span>
+                            <span className="font-medium">{Math.round((pipelineDetails.total_processing_time_ms || 0) / 1000)}s</span>
                           </div>
                         )}
                         {pipelineDetails.total_tokens_used && pipelineDetails.total_tokens_used > 0 && (

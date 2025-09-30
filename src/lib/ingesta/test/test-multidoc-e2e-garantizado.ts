@@ -121,19 +121,11 @@ export class MultiDocE2EGuaranteedTest {
       testResult.supportedDocuments = multiAnalyzeResult.supportedCount;
       testResult.unsupportedDocuments = multiAnalyzeResult.unsupportedCount;
 
-      // PASO 3: Ejecutar process-separated (crear documentos en BD)
-      const processSeparatedResult = await this.executeProcessSeparated(multiAnalyzeResult.data);
-      testResult.steps.processSeparated = processSeparatedResult.success;
-      
-      if (!processSeparatedResult.success) {
-        testResult.error = `Process-separated failed: ${processSeparatedResult.error}`;
-        testResult.duration = Date.now() - startTime;
-        return testResult;
-      }
-
-      console.log(`🏭 [MULTIDOC E2E] Process-separated exitoso: ${processSeparatedResult.documentsCreated} documentos`);
-      testResult.documentsCreated = processSeparatedResult.documentIds || [];
-      this.createdDocuments = processSeparatedResult.documentIds || [];
+      // ✅ NUEVA ARQUITECTURA: Los documentos se crean automáticamente en multi-analyze-stored
+      console.log(`🏭 [MULTIDOC E2E] Documentos creados automáticamente: ${multiAnalyzeResult.documentsCreated} documentos`);
+      testResult.steps.processSeparated = true; // Se hace automáticamente
+      testResult.documentsCreated = multiAnalyzeResult.documentIds || [];
+      this.createdDocuments = multiAnalyzeResult.documentIds || [];
 
       // PASO 4: Verificar documentos en base de datos
       const dbVerifyResult = await this.verifyDocumentsInDatabase();
@@ -195,22 +187,51 @@ export class MultiDocE2EGuaranteedTest {
   }
 
   /**
-   * PASO 2: Ejecutar API multi-analyze (detección de documentos)
+   * PASO 2: Ejecutar nuevo sistema de upload directo + API multi-analyze-stored
    */
   private async executeMultiAnalyze(fileBuffer: Buffer) {
     try {
-      console.log('🔍 [MULTIDOC E2E] Ejecutando API multi-analyze...');
+      console.log('🔍 [MULTIDOC E2E] Ejecutando nuevo sistema de upload directo...');
       
-      const formData = new FormData();
-      const blob = new Blob([new Uint8Array(fileBuffer)], { type: 'application/pdf' });
-      formData.append('file', blob, 'follon.pdf');
-      formData.append('outputPath', '/tmp/test-multidoc-garantizado');
-      formData.append('uploadToDatabase', 'true'); // IGUAL QUE LA UI
-      formData.append('communityId', this.communityId);
+      // PASO 2A: Upload directo a Supabase Storage (simular cliente)
+      console.log('📤 [MULTIDOC E2E] Subiendo archivo directo a Supabase Storage...');
+      const { SupabaseApiHelper } = await import('../../api/SupabaseApiHelper');
+      
+      const timestamp = Date.now();
+      const storagePath = `multi-documents/${timestamp}_follon.pdf`;
+      
+      await SupabaseApiHelper.executeQuery(async (supabase) => {
+        const { error: uploadError } = await supabase.storage
+          .from('documents')
+          .upload(storagePath, fileBuffer, {
+            contentType: 'application/pdf',
+            upsert: false
+          });
 
-      const response = await fetch(`${this.baseUrl}/api/documents/multi-analyze`, {
+        if (uploadError) {
+          throw new Error(`Error subiendo a Storage: ${uploadError.message}`);
+        }
+      }, { useServiceRole: true });
+
+      console.log('✅ [MULTIDOC E2E] Archivo subido a Storage:', storagePath);
+
+      // PASO 2B: Procesar archivo almacenado usando nueva API
+      console.log('🔧 [MULTIDOC E2E] Procesando archivo almacenado...');
+      
+      const processPayload = {
+        storagePath: storagePath,
+        originalFileName: 'follon.pdf',
+        fileSize: fileBuffer.length,
+        uploadToDatabase: true,
+        communityId: this.communityId
+      };
+
+      const response = await fetch(`${this.baseUrl}/api/documents/multi-analyze-stored`, {
         method: 'POST',
-        body: formData
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(processPayload),
       });
 
       if (!response.ok) {
@@ -234,16 +255,30 @@ export class MultiDocE2EGuaranteedTest {
         ['acta', 'factura', 'comunicado', 'contrato', 'escritura', 'albaran', 'presupuesto'].includes(doc.type?.toLowerCase())
       ).length;
 
+      // Extraer IDs de documentos creados automáticamente
+      const documentIds: string[] = [];
+      if (result.upload?.success && result.upload?.childDocuments) {
+        result.upload.childDocuments.forEach((childDoc: any) => {
+          if (childDoc.id) {
+            documentIds.push(childDoc.id);
+          }
+        });
+      }
+
       console.log(`📊 [MULTIDOC E2E] Análisis completado:`, {
         isMultiDocument: result.isMultiDocument,
         documentsDetected: result.detectedDocuments.length,
         supportedCount,
-        unsupportedCount: result.detectedDocuments.length - supportedCount
+        unsupportedCount: result.detectedDocuments.length - supportedCount,
+        documentsCreated: documentIds.length,
+        uploadSuccess: result.upload?.success || false
       });
 
       return {
         success: true,
         documentsDetected: result.detectedDocuments.length,
+        documentsCreated: documentIds.length,
+        documentIds: documentIds,
         supportedCount,
         unsupportedCount: result.detectedDocuments.length - supportedCount,
         data: {

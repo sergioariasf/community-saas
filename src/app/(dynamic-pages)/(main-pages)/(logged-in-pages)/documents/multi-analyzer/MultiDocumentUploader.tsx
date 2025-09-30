@@ -154,7 +154,7 @@ export function MultiDocumentUploader() {
 
     // Inicializar stages
     const stages: AnalysisStage[] = [
-      { name: 'upload', status: 'running', description: uploadAndAnalyze ? 'Subiendo a Supabase...' : 'Preparando análisis...' },
+      { name: 'upload', status: 'running', description: 'Subiendo archivo directo a Supabase Storage...' },
       { name: 'extraction', status: 'pending', description: 'Extrayendo texto con OCR...' },
       { name: 'analysis', status: 'pending', description: 'Analizando con Gemini Flash...' },
       { name: 'boundaries', status: 'pending', description: 'Detectando límites de documentos...' },
@@ -164,43 +164,77 @@ export function MultiDocumentUploader() {
     setAnalysisStages([...stages]);
 
     try {
-      const formData = new FormData();
-      formData.append('file', file);
-      formData.append('outputPath', '/tmp/multi-doc-analysis');
+      // PASO 1: Upload directo a Supabase Storage desde el cliente
+      console.log('📤 [MULTI-DOC UI] Starting direct upload to Supabase Storage...');
+      console.log('📄 [MULTI-DOC UI] File details:', {
+        name: file.name,
+        size: file.size,
+        sizeMB: (file.size / (1024 * 1024)).toFixed(2),
+        type: file.type
+      });
       
-      // Añadir datos para upload si está habilitado
-      if (uploadAndAnalyze) {
-        formData.append('uploadToDatabase', 'true');
-        formData.append('communityId', selectedCommunityId);
+      const supabase = createClient();
+      const timestamp = Date.now();
+      const storagePath = `multi-documents/${timestamp}_${file.name}`;
+      
+      // Update stage: upload running
+      setAnalysisStages(prev => prev.map((stage, index) => 
+        index === 0 ? { ...stage, status: 'running' } : stage
+      ));
+      
+      const { data: uploadData, error: uploadError } = await supabase.storage
+        .from('documents')
+        .upload(storagePath, file, {
+          contentType: file.type,
+          upsert: false
+        });
+
+      if (uploadError) {
+        throw new Error(`Error subiendo archivo: ${uploadError.message}`);
       }
 
-      // Simular progreso de stages
-      for (let i = 0; i < stages.length; i++) {
-        setTimeout(() => {
-          setAnalysisStages(prev => prev.map((stage, index) => {
-            if (index < i) return { ...stage, status: 'completed' };
-            if (index === i) return { ...stage, status: 'running' };
-            return stage;
-          }));
-        }, i * 1000);
-      }
+      console.log('✅ [MULTI-DOC UI] File uploaded successfully to:', storagePath);
+      
+      // Update stage: upload completed, extraction running
+      setAnalysisStages(prev => prev.map((stage, index) => {
+        if (index === 0) return { ...stage, status: 'completed' };
+        if (index === 1) return { ...stage, status: 'running' };
+        return stage;
+      }));
 
-      const response = await fetch('/api/documents/multi-analyze', {
+      // PASO 2: Procesar archivo ya almacenado usando nueva API
+      console.log('🔧 [MULTI-DOC UI] Starting processing of stored file...');
+      
+      const processPayload = {
+        storagePath: storagePath,
+        originalFileName: file.name,
+        fileSize: file.size,
+        uploadToDatabase: uploadAndAnalyze,
+        communityId: uploadAndAnalyze ? selectedCommunityId : null
+      };
+
+      const response = await fetch('/api/documents/multi-analyze-stored', {
         method: 'POST',
-        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(processPayload),
       });
 
       if (!response.ok) {
-        throw new Error(`Error del servidor: ${response.status}`);
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(`Error del servidor: ${response.status} - ${errorData.error || 'Unknown error'}`);
       }
 
       const result = await response.json();
+      console.log('✅ [MULTI-DOC UI] Processing completed successfully');
       
       // Marcar todos los stages como completados
       setAnalysisStages(prev => prev.map(stage => ({ ...stage, status: 'completed' })));
       setAnalysisResult(result);
       
     } catch (err) {
+      console.error('❌ [MULTI-DOC UI] Error during analysis:', err);
       setError(err instanceof Error ? err.message : 'Error durante el análisis');
       setAnalysisStages(prev => prev.map(stage => 
         stage.status === 'running' ? { ...stage, status: 'error' } : stage
@@ -270,7 +304,7 @@ export function MultiDocumentUploader() {
               {file ? file.name : 'Haz clic para seleccionar un PDF'}
             </p>
             <p className="text-xs text-gray-500">
-              Máximo 50MB • Hasta 100 páginas
+              Máximo 100MB • Upload directo sin límites de Vercel
             </p>
             <input
               ref={fileInputRef}

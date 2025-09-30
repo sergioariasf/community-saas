@@ -7,10 +7,10 @@
  * ACTUALIZADO: 2025-09-25
  */
 
-import { getSupportedDocumentTypes } from '../schemaBasedConfig';
-import { TextExtractionFactory } from '../extraction/TextExtractionFactory';
+import { getSupportedDocumentTypes } from '@/lib/ingesta/core/schemaBasedConfig';
+import { TextExtractionFactory } from '@/lib/ingesta/core/extraction/TextExtractionFactory';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { getGeminiModel } from '../../config/agentConfig';
+import { getGeminiModel } from '@/lib/ingesta/config/agentConfig';
 import fs from 'fs/promises';
 import path from 'path';
 

@@ -19,21 +19,69 @@ export async function POST(request: NextRequest) {
   try {
     console.log('🔍 [MULTI-DOC API] Starting multi-document analysis...');
     
-    // Parse form data
-    const formData = await request.formData();
+    // Log request details for debugging
+    const contentLength = request.headers.get('content-length');
+    console.log('📊 [MULTI-DOC API] Request details:', {
+      contentLength: contentLength ? `${contentLength} bytes` : 'unknown',
+      contentType: request.headers.get('content-type'),
+      url: request.url,
+      method: request.method
+    });
+    
+    // Parse form data with error handling
+    let formData: FormData;
+    try {
+      formData = await request.formData();
+      console.log('✅ [MULTI-DOC API] FormData parsed successfully');
+    } catch (formError) {
+      console.error('❌ [MULTI-DOC API] FormData parsing failed:', formError);
+      return NextResponse.json(
+        { 
+          error: 'Error parsing form data - file may be too large',
+          details: formError instanceof Error ? formError.message : 'Unknown form parsing error',
+          maxSize: 'Check Vercel limits (4.5MB for Hobby plan)'
+        },
+        { status: 413 }
+      );
+    }
+    
     const file = formData.get('file') as File;
     const outputPath = formData.get('outputPath') as string || '/tmp/multi-doc-analysis';
     const uploadToDatabase = formData.get('uploadToDatabase') === 'true';
     const communityId = formData.get('communityId') as string;
     
     if (!file || file.type !== 'application/pdf') {
+      console.error('❌ [MULTI-DOC API] Invalid file:', {
+        hasFile: !!file,
+        fileName: file?.name,
+        fileType: file?.type,
+        fileSize: file?.size
+      });
       return NextResponse.json(
         { error: 'Se requiere un archivo PDF válido' },
         { status: 400 }
       );
     }
 
-    console.log(`📄 [MULTI-DOC API] Processing file: ${file.name} (${file.size} bytes)`);
+    // Check file size limits
+    const fileSizeMB = file.size / (1024 * 1024);
+    console.log(`📄 [MULTI-DOC API] Processing file: ${file.name} (${file.size} bytes = ${fileSizeMB.toFixed(2)} MB)`);
+    
+    if (file.size > 4.5 * 1024 * 1024) { // 4.5MB limit for Vercel Hobby
+      console.error('❌ [MULTI-DOC API] File too large:', {
+        fileSize: file.size,
+        fileSizeMB: fileSizeMB.toFixed(2),
+        limit: '4.5MB'
+      });
+      return NextResponse.json(
+        { 
+          error: 'Archivo demasiado grande para procesamiento',
+          details: `Tamaño: ${fileSizeMB.toFixed(2)}MB. Límite: 4.5MB`,
+          maxSize: '4.5MB'
+        },
+        { status: 413 }
+      );
+    }
     console.log(`📁 [MULTI-DOC API] Output path: ${outputPath}`);
 
     // Convert file to buffer

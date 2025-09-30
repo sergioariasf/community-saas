@@ -70,7 +70,7 @@ export default function MultiDocumentAnalyzerPage() {
             • <strong>Motor IA:</strong> Gemini Flash con configuración del pipeline actual
           </p>
           <p className="text-xs text-muted-foreground">
-            • <strong>Límites:</strong> PDFs hasta 50MB, máximo 100 páginas
+            • <strong>Límites:</strong> PDFs hasta 100MB (upload directo a Supabase), máximo 100 páginas
           </p>
           <p className="text-xs text-muted-foreground">
             • <strong>Output:</strong> Documentos procesados automáticamente en el pipeline

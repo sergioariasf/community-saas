@@ -308,7 +308,9 @@ src/
 │   │   │   └── types.ts                      # 📋 TIPOS - Tipos del storage
 │   │   └── test/
 │   │       ├── test-real-e2e-garantizado.ts       # 🧪 TEST - E2E
-│   │       ├── test-real-e2e-garantizado.ts       # 🧪 TEST-
+│   │       ├── test-multidoc-e2e-garantizado.ts   # 🧪 TEST-
+│   │       ├── test-extraction-factory-debug.ts
+│   │       ├── test-individual-extractors.ts      # 🧪 Test individual de cada extractor para identificar cuál falla en producción
 │   │       ├── test-complete-e2e-validation_1.ts  # 🧪 TEST - E2E modernizado PRINCIPAL
 │   │       ├── README-E2E-TEST.md                 # 📚 DOC - Guía completa test E2E
 │   │       ├── check-document-status.js           # 🧪 TEST - Revisar estado documentos
