@@ -16,21 +16,46 @@ export class TextExtractionFactory {
   private extractors: BaseTextExtractor[];
   
   constructor() {
+    console.log('🔧 [FACTORY CONSTRUCTOR] Starting TextExtractionFactory initialization...');
+    
     // Registrar extractores ordenados por prioridad
     const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL === '1';
+    console.log(`🔧 [FACTORY CONSTRUCTOR] Environment: NODE_ENV=${process.env.NODE_ENV}, VERCEL=${process.env.VERCEL}, isProduction=${isProduction}`);
     
-    this.extractors = [
-      new PdfParseExtractor(),      // Prioridad 1: Rápido y gratis
-      new GoogleVisionExtractor(),  // Prioridad 2: OCR preciso
-    ];
-    
-    // Solo incluir GeminiFlashExtractor en desarrollo debido a problemas de contexto Next.js
-    if (!isProduction) {
-      this.extractors.push(new GeminiFlashExtractor()); // Prioridad 3: TODO-EN-UNO para casos complejos
+    try {
+      console.log('🔧 [FACTORY CONSTRUCTOR] Creating PdfParseExtractor...');
+      const pdfExtractor = new PdfParseExtractor();
+      console.log(`🔧 [FACTORY CONSTRUCTOR] PdfParseExtractor created: ${pdfExtractor.constructor.name}`);
+      
+      console.log('🔧 [FACTORY CONSTRUCTOR] Creating GoogleVisionExtractor...');
+      const visionExtractor = new GoogleVisionExtractor();
+      console.log(`🔧 [FACTORY CONSTRUCTOR] GoogleVisionExtractor created: ${visionExtractor.constructor.name}`);
+      
+      this.extractors = [pdfExtractor, visionExtractor];
+      console.log(`🔧 [FACTORY CONSTRUCTOR] Base extractors array length: ${this.extractors.length}`);
+      
+      // Solo incluir GeminiFlashExtractor en desarrollo debido a problemas de contexto Next.js
+      if (!isProduction) {
+        console.log('🔧 [FACTORY CONSTRUCTOR] Creating GeminiFlashExtractor (development only)...');
+        const geminiExtractor = new GeminiFlashExtractor();
+        console.log(`🔧 [FACTORY CONSTRUCTOR] GeminiFlashExtractor created: ${geminiExtractor.constructor.name}`);
+        this.extractors.push(geminiExtractor);
+      } else {
+        console.log('🔧 [FACTORY CONSTRUCTOR] Skipping GeminiFlashExtractor in production');
+      }
+      
+      console.log(`🔧 [FACTORY CONSTRUCTOR] Total extractors before sorting: ${this.extractors.length}`);
+      console.log(`🔧 [FACTORY CONSTRUCTOR] Extractor names: ${this.extractors.map(e => e.constructor.name).join(', ')}`);
+      
+      // Ordenar por prioridad
+      this.extractors.sort((a, b) => a.getPriority() - b.getPriority());
+      
+      console.log(`🔧 [FACTORY CONSTRUCTOR] Final extractors after sorting: ${this.extractors.map(e => e.constructor.name).join(', ')}`);
+      
+    } catch (error) {
+      console.error('❌ [FACTORY CONSTRUCTOR] Error during initialization:', error);
+      this.extractors = [];
     }
-    
-    // Ordenar por prioridad
-    this.extractors.sort((a, b) => a.getPriority() - b.getPriority());
   }
 
   /**
