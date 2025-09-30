@@ -368,10 +368,10 @@ export class RealE2EGuaranteedTest {
         
         if (specificData) {
           console.log(`✅ [VALIDATION] Factura data extracted:`, {
-            provider_name: specificData.provider_name,
-            client_name: specificData.client_name,
-            total_amount: specificData.total_amount,
-            invoice_number: specificData.invoice_number
+            provider_name: (specificData as any).provider_name,
+            client_name: (specificData as any).client_name,
+            total_amount: (specificData as any).total_amount,
+            invoice_number: (specificData as any).invoice_number
           });
         } else {
           console.error(`❌ [CRITICAL BUG] No factura data extracted for document_type: ${document.document_type}`);
