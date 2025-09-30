@@ -25,11 +25,11 @@ export class TextExtractionFactory {
     try {
       console.log('🔧 [FACTORY CONSTRUCTOR] Creating PdfParseExtractor...');
       const pdfExtractor = new PdfParseExtractor();
-      console.log(`🔧 [FACTORY CONSTRUCTOR] PdfParseExtractor created: ${pdfExtractor.constructor.name}`);
+      console.log(`🔧 [FACTORY CONSTRUCTOR] PdfParseExtractor created: ${pdfExtractor.getExtractorName()}`);
       
       console.log('🔧 [FACTORY CONSTRUCTOR] Creating GoogleVisionExtractor...');
       const visionExtractor = new GoogleVisionExtractor();
-      console.log(`🔧 [FACTORY CONSTRUCTOR] GoogleVisionExtractor created: ${visionExtractor.constructor.name}`);
+      console.log(`🔧 [FACTORY CONSTRUCTOR] GoogleVisionExtractor created: ${visionExtractor.getExtractorName()}`);
       
       this.extractors = [pdfExtractor, visionExtractor];
       console.log(`🔧 [FACTORY CONSTRUCTOR] Base extractors array length: ${this.extractors.length}`);
@@ -38,19 +38,19 @@ export class TextExtractionFactory {
       if (!isProduction) {
         console.log('🔧 [FACTORY CONSTRUCTOR] Creating GeminiFlashExtractor (development only)...');
         const geminiExtractor = new GeminiFlashExtractor();
-        console.log(`🔧 [FACTORY CONSTRUCTOR] GeminiFlashExtractor created: ${geminiExtractor.constructor.name}`);
+        console.log(`🔧 [FACTORY CONSTRUCTOR] GeminiFlashExtractor created: ${geminiExtractor.getExtractorName()}`);
         this.extractors.push(geminiExtractor);
       } else {
         console.log('🔧 [FACTORY CONSTRUCTOR] Skipping GeminiFlashExtractor in production');
       }
       
       console.log(`🔧 [FACTORY CONSTRUCTOR] Total extractors before sorting: ${this.extractors.length}`);
-      console.log(`🔧 [FACTORY CONSTRUCTOR] Extractor names: ${this.extractors.map(e => e.constructor.name).join(', ')}`);
+      console.log(`🔧 [FACTORY CONSTRUCTOR] Extractor names: ${this.extractors.map(e => e.getExtractorName()).join(', ')}`);
       
       // Ordenar por prioridad
       this.extractors.sort((a, b) => a.getPriority() - b.getPriority());
       
-      console.log(`🔧 [FACTORY CONSTRUCTOR] Final extractors after sorting: ${this.extractors.map(e => e.constructor.name).join(', ')}`);
+      console.log(`🔧 [FACTORY CONSTRUCTOR] Final extractors after sorting: ${this.extractors.map(e => e.getExtractorName()).join(', ')}`);
       
     } catch (error) {
       console.error('❌ [FACTORY CONSTRUCTOR] Error during initialization:', error);
@@ -173,22 +173,22 @@ export class TextExtractionFactory {
    */
   private getExtractor(extractorName: string): BaseTextExtractor | null {
     const nameMap: { [key: string]: string } = {
-      'pdf-parse': 'PdfParseExtractor',
-      'google-vision-ocr': 'GoogleVisionExtractor', 
-      'gemini-flash-ocr-ia': 'GeminiFlashExtractor'
+      'pdf-parse': 'pdf-parse',
+      'google-vision-ocr': 'google-vision-ocr', 
+      'gemini-flash-ocr-ia': 'gemini-flash-ocr-ia'
     };
     
-    const targetClassName = nameMap[extractorName];
-    if (!targetClassName) {
+    const targetExtractorName = nameMap[extractorName];
+    if (!targetExtractorName) {
       console.log(`🔍 [TEXT EXTRACTION] Unknown extractor name: ${extractorName}`);
       return null;
     }
     
-    const extractor = this.extractors.find(e => e.constructor.name === targetClassName);
+    const extractor = this.extractors.find(e => e.getExtractorName() === targetExtractorName);
     if (!extractor) {
-      console.log(`❌ [TEXT EXTRACTION] Extractor not found: ${targetClassName}`);
+      console.log(`❌ [TEXT EXTRACTION] Extractor not found: ${targetExtractorName}`);
     } else {
-      console.log(`✅ [TEXT EXTRACTION] Found extractor: ${targetClassName}`);
+      console.log(`✅ [TEXT EXTRACTION] Found extractor: ${targetExtractorName}`);
     }
     
     return extractor || null;
@@ -219,7 +219,7 @@ export class TextExtractionFactory {
    * Lista extractores disponibles
    */
   getAvailableExtractors(): string[] {
-    return this.extractors.map(e => e.constructor.name);
+    return this.extractors.map(e => e.getExtractorName());
   }
 
   /**

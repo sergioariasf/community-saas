@@ -47,6 +47,13 @@ export abstract class BaseTextExtractor {
    * Obtiene la prioridad de esta estrategia (menor número = mayor prioridad)
    */
   abstract getPriority(): number;
+  
+  /**
+   * Obtiene el nombre del extractor (robusto contra minificación)
+   */
+  getExtractorName(): string {
+    return this.extractorName;
+  }
 
   /**
    * Logging unificado para todas las estrategias
