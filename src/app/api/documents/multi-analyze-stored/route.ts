@@ -269,65 +269,8 @@ export async function POST(request: NextRequest) {
 
         console.log(`📊 [MULTI-DOC STORED API] Database upload completed: ${childDocuments.length} child documents created`);
 
-        // Process child documents automatically with pipeline (metadata and chunking)
-        console.log('🔄 [MULTI-DOC STORED API] Starting automatic processing of child documents...');
-        
-        const { SimplePipeline } = await import('@/lib/ingesta/core/progressivePipelineSimple');
-        const pipeline = new SimplePipeline();
-        
-        let processedCount = 0;
-        for (const childDoc of childDocuments) {
-          try {
-            console.log(`⚙️ [MULTI-DOC STORED API] Processing child document ${childDoc.id} (${childDoc.type})...`);
-            
-            // Get complete document from DB
-            const fullDoc = await SupabaseApiHelper.executeQuery(async (supabase) => {
-              const { data, error: fetchError } = await supabase
-                .from('documents')
-                .select('*')
-                .eq('id', childDoc.id)
-                .single();
-
-              if (fetchError || !data) {
-                throw new Error(`Error fetching child document ${childDoc.id}: ${fetchError?.message || 'No data returned'}`);
-              }
-              return data;
-            }, { useServiceRole: true });
-
-            // Process metadata
-            console.log(`📊 [MULTI-DOC STORED API] Extracting metadata for ${childDoc.id}...`);
-            await (pipeline as any).extractMetadata(fullDoc);
-            
-            // Process chunking
-            console.log(`🧩 [MULTI-DOC STORED API] Creating chunks for ${childDoc.id}...`);
-            await (pipeline as any).chunkDocument(fullDoc);
-            
-            // Update final status
-            await SupabaseApiHelper.executeQuery(async (supabase) => {
-              const { error: updateError } = await supabase
-                .from('documents')
-                // @ts-ignore - Temporal fix para problemas de tipos Supabase
-                .update({
-                  processing_level: 4, // Completely processed
-                  processing_completed_at: new Date().toISOString(),
-                  legacy_status: 'completed'
-                })
-                .eq('id', childDoc.id);
-
-              if (updateError) {
-                throw new Error(`Error updating document ${childDoc.id}: ${updateError.message}`);
-              }
-            }, { useServiceRole: true });
-              
-            processedCount++;
-            console.log(`✅ [MULTI-DOC STORED API] Child document ${childDoc.id} processed successfully`);
-            
-          } catch (processError) {
-            console.error(`❌ [MULTI-DOC STORED API] Error processing child document ${childDoc.id}:`, processError);
-          }
-        }
-        
-        console.log(`🏁 [MULTI-DOC STORED API] Automatic processing completed: ${processedCount}/${childDocuments.length} documents processed`);
+        // NOTE: Pipeline processing (metadata + chunking) will be handled by background jobs
+        // to avoid Vercel 60s timeout limit. Documents are ready for pipeline processing at level 2.
 
       } catch (uploadError) {
         console.error('❌ [MULTI-DOC STORED API] Database upload failed:', uploadError);
