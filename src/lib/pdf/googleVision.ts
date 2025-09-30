@@ -19,13 +19,24 @@ let visionClient: ImageAnnotatorClient | null = null;
  */
 function getVisionClient(): ImageAnnotatorClient {
   if (!visionClient) {
-    // Verificar si hay credentials configuradas
-    const credentials = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-    if (!credentials) {
-      throw new Error('GOOGLE_APPLICATION_CREDENTIALS environment variable is required for OCR');
-    }
+    // Priorizar GOOGLE_SERVICE_ACCOUNT_JSON para Vercel serverless
+    const serviceAccountJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+    const credentialsPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
     
-    visionClient = new ImageAnnotatorClient();
+    if (serviceAccountJson) {
+      console.log('🔧 [GOOGLE-VISION] Using GOOGLE_SERVICE_ACCOUNT_JSON credentials');
+      try {
+        const credentials = JSON.parse(serviceAccountJson);
+        visionClient = new ImageAnnotatorClient({ credentials });
+      } catch (error) {
+        throw new Error(`Invalid GOOGLE_SERVICE_ACCOUNT_JSON format: ${error instanceof Error ? error.message : 'Unknown error'}`);
+      }
+    } else if (credentialsPath) {
+      console.log('🔧 [GOOGLE-VISION] Using GOOGLE_APPLICATION_CREDENTIALS file path');
+      visionClient = new ImageAnnotatorClient();
+    } else {
+      throw new Error('Google Vision credentials required: set GOOGLE_SERVICE_ACCOUNT_JSON or GOOGLE_APPLICATION_CREDENTIALS');
+    }
   }
   return visionClient;
 }
@@ -289,7 +300,7 @@ async function extractWithGoogleVision(buffer: Buffer): Promise<TextExtractionRe
  */
 function isGoogleVisionAvailable() {
   try {
-    return !!process.env.GOOGLE_APPLICATION_CREDENTIALS;
+    return !!(process.env.GOOGLE_SERVICE_ACCOUNT_JSON || process.env.GOOGLE_APPLICATION_CREDENTIALS);
   } catch {
     return false;
   }

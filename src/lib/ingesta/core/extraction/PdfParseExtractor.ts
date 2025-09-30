@@ -50,6 +50,7 @@ export class PdfParseExtractor extends BaseTextExtractor {
           method: 'pdf-parse'
         });
       } else {
+        this.log('error', `PDF-parse failed: ${result.error || 'No text extracted'}`);
         return this.createErrorResult(
           result.error || 'PDF-parse extraction failed - no text extracted',
           'pdf-parse'
@@ -83,9 +84,22 @@ export class PdfParseExtractor extends BaseTextExtractor {
         max: 0 // Parse all pages (remove any other options that might cause conflicts)
       });
 
+      const extractedText = data.text.trim();
+      this.log('info', `PDF-parse completed: ${extractedText.length} characters, ${data.numpages} pages`);
+      
+      if (extractedText.length === 0) {
+        this.log('warning', 'PDF-parse returned empty text - possibly encrypted or image-only PDF');
+        return {
+          success: false,
+          error: 'PDF contains no extractable text (possibly encrypted or image-only)',
+          text: null,
+          pages: data.numpages || 0
+        };
+      }
+
       return {
         success: true,
-        text: data.text.trim(),
+        text: extractedText,
         pages: data.numpages,
         method: 'pdf-parse'
       };
