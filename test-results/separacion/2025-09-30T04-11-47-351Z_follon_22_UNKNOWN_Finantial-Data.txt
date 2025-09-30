@@ -1,0 +1,19 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/25
+Tipo: unknown
+Título: Finantial Data
+Líneas originales: 753-755 (total: 3 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: 03/12/19
+90,75
+Marcador final: 17/02/20301,25
+Caracteres: 50
+Descripción: Finantial Data for Saltoki
+Keywords: Financial, Data, Saltoki
+=====================================
+
+ENVIO
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5

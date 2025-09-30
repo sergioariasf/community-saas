@@ -1,0 +1,66 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 10/21
+Tipo: comunicado
+Título: Notificación de Pago de BS Confirming - Banco Sabadell
+Líneas originales: 308-358 (total: 51 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 12 ---
+Marcador final: --- Página 14 ---
+Caracteres: 1166
+Descripción: Payment notification from Banco Sabadell related to BS Confirming for invoices of MORFUS EQUIPAMIENTO COMERCIAL S.L.
+Keywords: Sabadell, Confirming, MORFUS EQUIPAMIENTO COMERCIAL, 1000037, 8.226,96 EUR, ES81-2100-2980-0602-0004-7252
+=====================================
+
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑
+Fallecimiento
+Propuesta de incapacidad permanente
+Inicio de situacion de maternidad
+Incomparecencia
+☐ ☐
+Ejemplar para la EMPRESA
+
+--- Página 5 ---
+medio ambiente y MADRID
+movilidad
+Dirección General de Gestión y Vigilancia de la Circulación
+Subdirección General de Gestión de Multas de Circulación
+Órgano Instructor:
+Departamento de Instrucción de Multas de Circulación
+C/ Albarracín, 33 - 28037
+MADRID
+Horario de atención al público: Laborables de lunes a viernes (8:30 a 14 horas)
+Tlf.: 010 (915298210 si se llama desde fuera de Madrid)
+MODELO
+935
+INFORMACIÓN SOBRE PUBLICACIÓN DE EDICTO.
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ NUM 10

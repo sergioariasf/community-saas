@@ -2,7 +2,7 @@
 
 Completamente implementado y funcionando en `http://localhost:3001/documents`
 
-## 1. PROPÓSITO DEL MÓDULO
+## PROPÓSITO DEL MÓDULO
 
 ### Objetivo Principal
 
@@ -231,6 +231,11 @@ flowchart TD
 
 ```
 src/
+├── docs
+│   └──  doc_documentos.md                    # 📚 DOC - Documentación del sistema
+├── supabase-clients/                         # 🔗 CLIENTES - Conexiones Supabase
+│   ├── server.ts                             # 🔗 CLIENTE - Server-side con service role
+│   └── client.ts                             # 🔗 CLIENTE - Client-side con user auth
 ├── app/
 │   ├── api/
 │   │   └── documents/                        # 📁 APIS DOCUMENTOS
@@ -238,8 +243,12 @@ src/
 │   │       │   └── route.ts                  # 🌐 API - CRUD documento individual
 │   │       ├── clean-all/
 │   │       │   └── route.ts                  # 🌐 API - Limpiar todos los documentos
-│   │       └── multi-analyze/                # 📁 API MULTI-DOCUMENTO
-│   │           └── route.ts                  # 🌐 API - Análisis y separación multi-documento (120 líneas)
+│   │       ├── multi-analyze/                # 📁 API MULTI-DOCUMENTO
+│   │       │   └── route.ts                  # 🌐 API - Análisis y separación multi-documento
+│   │       ├── process-separated/
+│   │       │   └── route.ts                  # 🌐 API para procesar documentos ya separados (TEMPORALMENTE DESHABILITADA para build Vercel)
+│   │       ├── process-separated-v2/
+│   │       │   └── route.ts                  # ?
 │   └── (dynamic-pages)/(main-pages)/(logged-in-pages)/documents/
 │       ├── actions.ts                        # 🔧 PROCESO - Server Actions para upload
 │       ├── page.tsx                          # 🎨 UI - Lista de documentos
@@ -249,7 +258,7 @@ src/
 │       │   └── page.tsx                      # 🎨 UI - Página de plantillas
 │       ├── multi-analyzer/                   # 📁 PROTOTIPO MULTI-DOCUMENTO
 │       │   ├── page.tsx                      # 🎨 UI - Página analizador multi-documento
-│       │   └── MultiDocumentUploader.tsx     # 🎨 UI - Uploader con análisis IA (450 líneas)
+│       │   └── MultiDocumentUploader.tsx     # 🎨 UI - Uploader con análisis IA
 │       └── [id]/
 │           └── page.tsx                      # 🎨 UI - Página detalle de documento
 ├── components/
@@ -268,12 +277,15 @@ src/
 │       ├── DocumentsList.tsx                 # 🎨 UI - Lista de documentos
 │       └── UploadForm.tsx                    # 🎨 UI - Formulario de subida
 ├── lib/
+│   ├── api/
+│   │   └── SupabaseApiHelper.ts              # ⚡ EJECUCIÓN - Cliente independiente, sin cookies Next.js
+│   ├── storage/
+│   │   └── supabaseStorage.ts                # 📁 STORAGE - Upload/download Storage (NECESITA FIX)
 │   ├── ingesta/
-│   │   ├── doc_documentos.md                 # 📚 DOC - Documentación del sistema
 │   │   ├── core/
-│   │   │   ├── progressivePipelineSimple.ts  # 🔧 PROCESO - Pipeline principal (1272 líneas)
+│   │   │   ├── progressivePipelineSimple.ts  # ⚡ EJECUCIÓN - Pipeline independiente (FIJADO)
 │   │   │   ├── multi-document/               # 📁 MÓDULO MULTI-DOCUMENTO
-│   │   │   │   └── MultiDocumentAnalyzer.ts  # 🤖 IA - Separador multi-documento (350 líneas)
+│   │   │   │   └──     .ts  # 🤖 IA - Separador multi-documento con Gemini Flash
 │   │   │   ├── strategies/                   # 📁 MÓDULO ESTRATEGIAS DOCUMENTO
 │   │   │   │   ├── BaseDocumentExtractor.ts  # 🔧 PROCESO - Interfaz base (65 líneas)
 │   │   │   │   ├── ActaExtractor.ts          # 🔧 PROCESO - Estrategia actas (70 líneas)
@@ -292,9 +304,11 @@ src/
 │   │   │   │   └── index.ts                  # 🔧 PROCESO - Exports (12 líneas)
 │   │   │   └── types.ts                      # 📋 TIPOS - Tipos del pipeline
 │   │   ├── storage/
-│   │   │   ├── documentsStore.ts             # 💾 BD - CRUD documentos + metadata
+│   │   │   ├── documentsStore.ts             # ⚡ EJECUCIÓN - CRUD independiente con cliente propio
 │   │   │   └── types.ts                      # 📋 TIPOS - Tipos del storage
 │   │   └── test/
+│   │       ├── test-real-e2e-garantizado.ts       # 🧪 TEST - E2E
+│   │       ├── test-real-e2e-garantizado.ts       # 🧪 TEST-
 │   │       ├── test-complete-e2e-validation_1.ts  # 🧪 TEST - E2E modernizado PRINCIPAL
 │   │       ├── README-E2E-TEST.md                 # 📚 DOC - Guía completa test E2E
 │   │       ├── check-document-status.js           # 🧪 TEST - Revisar estado documentos
@@ -331,20 +345,84 @@ src/
 
 API Endpoints:
 
-- /src/app/api/documents/multi-analyze/route.ts - API para análisis y separación de PDFs multidocumento (funcional)
-- /src/app/api/documents/process-separated/route.ts - API para procesar documentos ya separados (TEMPORALMENTE DESHABILITADA para build Vercel)
 - /src/app/api/documents/[id]/view/route.ts - API para servir documentos (PDFs desde Storage, texto desde BD)
-
-UI Components:
-
-- /src/app/(dynamic-pages)/(main-pages)/(logged-in-pages)/documents/multi-analyzer/page.tsx - Página principal del analizador multidocumento
-- /src/app/(dynamic-pages)/(main-pages)/(logged-in-pages)/documents/multi-analyzer/MultiDocumentUploader.tsx - Componente de carga y análisis
 
 Core Logic:
 
-- /src/lib/ingesta/core/multi-document/MultiDocumentAnalyzer.ts - Analizador principal con Gemini Flash
 - /src/lib/ingesta/core/multi-document/DocumentTypeMapper.ts - Mapeo de tipos de documentos
 - /src/lib/ingesta/core/multi-document/SchemaConfig.ts - Configuración automática de esquemas
+
+## ARQUITECTURA: COORDINACIÓN vs EJECUCIÓN
+
+### 🎯 **REGLA DE ORO DESCUBIERTA**
+
+**"Separar COORDINACIÓN de EJECUCIÓN"**
+
+Durante la implementación del test E2E real, descubrimos un patrón crítico para que la aplicación funcione tanto en desarrollo como en producción:
+
+### 🏗️ **COORDINACIÓN (Depende de Next.js)**
+
+**Componentes que usan cookies/request context de Next.js**
+
+```typescript
+// ❌ COORDINACIÓN - Solo funciona en contexto web Next.js
+import { createSupabaseClient } from '@/supabase-clients/server'; // Usa cookies()
+const supabase = await createSupabaseClient(); // Requiere request context
+```
+
+**Archivos de COORDINACIÓN:**
+
+- `actions.ts` - Server Actions (web)
+- `route.ts` - API Routes (web)
+- Componentes React Server Components
+
+### ⚡ **EJECUCIÓN (Independiente)**
+
+**Componentes que funcionan en cualquier contexto**
+
+```typescript
+// ✅ EJECUCIÓN - Funciona en web, tests, background jobs
+import { SupabaseApiHelper } from '@/lib/api/SupabaseApiHelper';
+await SupabaseApiHelper.executeQuery(
+  async (supabase) => {
+    // Opera con cliente independiente
+  },
+  { useServiceRole: true }
+);
+```
+
+**Archivos de EJECUCIÓN:**
+
+- `SupabaseApiHelper.ts` - Cliente independiente ⚡
+- `documentsStore.ts` - CRUD independiente ⚡
+- `progressivePipelineSimple.ts` - Pipeline independiente ⚡ (FIJADO)
+- Agentes IA, extractores, validadores
+
+### 🔧 **PROBLEMAS DETECTADOS Y SOLUCIONES**
+
+| Componente                     | Problema Original           | Solución Aplicada                         |
+| ------------------------------ | --------------------------- | ----------------------------------------- |
+| `progressivePipelineSimple.ts` | ❌ `createSupabaseClient()` | ✅ `SupabaseApiHelper` + `DocumentsStore` |
+| `supabaseStorage.ts`           | ❌ `createSupabaseClient()` | 🔧 **PENDIENTE** - Aplicar misma solución |
+
+### 📊 **BENEFICIOS ARQUITECTURA**
+
+1. **✅ Funciona en tests E2E** - Sin errores de cookies
+2. **✅ Funciona en background jobs** - Procesos independientes
+3. **✅ Funciona en producción** - Sin dependencias de request context
+4. **✅ Reutilizable** - Misma lógica en diferentes contextos
+
+### 🎯 **TEST E2E REAL COMO GARANTÍA**
+
+El test `test-real-e2e-garantizado.ts` simula **exactamente** el flujo de `actions.ts`:
+
+1. **Upload a Storage** → Como hace la UI
+2. **Crear documento en BD** → Con path real del Storage
+3. **Ejecutar pipeline completo** → Con datos reales
+4. **Verificar UI puede renderizar** → Mismas queries que la UI
+5. **Cleanup completo** → BD + Storage
+
+**Si el test pasa → La app funciona en producción** ⚡
 
 ## TABLAS
 
@@ -672,17 +750,20 @@ done
 **PROPÓSITO:** Cliente puro para comunicación con Google Gemini API, sin lógica de negocio
 
 **QUÉ HACE:**
+
 - 🔐 **Gestión singleton** - Un cliente reutilizable para toda la app
 - ⚙️ **Configuración por agente** - Modelos y parámetros específicos por tipo documento
 - ⏱️ **Timeout y manejo errores** - Previene cuelgues y gestiona fallos
 - 📊 **Métricas procesamiento** - Tiempo respuesta y metadata
 
 **USADO POR:**
-- AgentOrchestrator.ts (clasificación y metadata)  
+
+- AgentOrchestrator.ts (clasificación y metadata)
 - DocumentClassifier.ts (detectar tipo documento)
 - GeminiFlashExtractor.ts (extracción TODO-EN-UNO)
 
 **FUNCIONES CLAVE:**
+
 ```typescript
 callGeminiAPI(prompt: string, agentName: string): Promise<GeminiResponse>
 ```
@@ -694,17 +775,20 @@ callGeminiAPI(prompt: string, agentName: string): Promise<GeminiResponse>
 **PROPÓSITO:** Orquestador central que coordina todos los agentes de IA
 
 **QUÉ HACE:**
+
 - 🤖 **Selección inteligente** - Elige el agente correcto según tipo documento
 - 📝 **Construcción prompts** - Genera prompts específicos desde templates
 - 🔄 **Gestión respuestas** - Procesa y valida respuestas JSON de Gemini
 - 📋 **Configuración centralizada** - Un punto control para todos los agentes
 
 **USADO POR:**
+
 - progressivePipelineSimple.ts (extracción metadata)
 - DocumentExtractorFactory.ts (estrategias específicas)
 - Multi-document analyzer (separación documentos)
 
 **FLUJO:**
+
 1. Recibe texto + tipo documento
 2. Selecciona agente apropiado (factura-extractor, acta-extractor, etc.)
 3. Construye prompt desde template
@@ -713,6 +797,7 @@ callGeminiAPI(prompt: string, agentName: string): Promise<GeminiResponse>
 6. Retorna metadata estructurada
 
 **INTEGRACIÓN CRÍTICA:**
+
 - Sin AgentOrchestrator → No hay metadata
-- Sin GeminiClient → No hay comunicación IA  
+- Sin GeminiClient → No hay comunicación IA
 - Sin ambos → Pipeline falla en fase 3

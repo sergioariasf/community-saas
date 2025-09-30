@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/25
+Tipo: unknown
+Título: Advertisement
+Líneas originales: 690-694 (total: 5 líneas)
+Confianza: 50%
+Soportado: NO
+Marcador inicio: O
+GS-Hydro
+Marcador final: Cabo Rufino Lázaro, 5. P. Európolis
+Caracteres: 60
+Descripción: Advertisement for GS-Hydro
+Keywords: GS-Hydro
+=====================================
+
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA
+VIGILANCIA

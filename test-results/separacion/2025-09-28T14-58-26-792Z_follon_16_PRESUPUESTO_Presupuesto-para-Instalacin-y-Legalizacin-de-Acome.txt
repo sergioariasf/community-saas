@@ -1,0 +1,53 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 16/24
+Tipo: presupuesto
+Título: Presupuesto para Instalación y Legalización de Acometida
+Líneas originales: 579-615 (total: 37 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 17 ---
+CONTROL Y TENSION
+Marcador final: Mov. 609 273 707
+Caracteres: 889
+Descripción: Budget/Estimate for the installation and legalization of connections and projects, including detailed costs and description.
+Keywords: Presupuesto, CONTROL Y TENSION, BOADILLA DEL MONTE, 1 180006, IVE, CARGADOR DE VEHÍCULO ELÉCTRICO, 953,00, 3.185,93
+=====================================
+
+M-30 XC K 19,06 CR4
+FECHA DE INCOACIÓN
+DEL EXPEDIENTE
+FECHA DE EMISIÓN DE
+ESTA NOTIFICACIÓN
+10:50 16/09/2019 03/09/2020
+PÉRDIDA DE PUNTOS
+NO
+FECHA DE LA INFRACCIÓN HORA DE LA
+INFRACCIÓN
+21/06/2019
+CLAVE Y CALIFICACIÓN DE LA INFRACCIÓN
+10/002 GRAVE
+IMPORTE DE LA MULTA
+100,00
+PRECEPTO INFRINGIDO (ver dorso) *
+FECHA DE ESTA RESOLUCION
+27/08/2020
+INFRACCIÓN IMPUTADA
+SOBREPASAR LA VELOCIDAD
+MÁXIMA EN VÍAS LIMITADAS EN 60
+KM/H O MÁS.
+CIRCULAR A 74 km/h LIMITE 70 km/h
+RELACION: 880/2020
+76.A LSV
+REFERENCIA DEL DESTINATARIO:
+ANTONIO LARA GUTIERREZ
+CALLE BADAJOZ 10
+GALAPAGAR
+MADRID
+CP: 28260
+SC:00
+NT81150160009701460155D
+M-30 TUNEL XC: M-30 Túnel Calzada 2ª entre Km. 19 y Km. 8
+ANTECEDENTES DE HECHO
+Primero: El expediente sancionador con número de referencia indicado en el encabezamiento de la presente notificación fue
+incoado como consecuencia de la comisión de la infracción señalada.

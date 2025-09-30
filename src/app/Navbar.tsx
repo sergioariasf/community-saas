@@ -74,7 +74,7 @@ import { ExternalLinkIcon } from 'lucide-react';
 
 import Link from 'next/link';
 import Image from 'next/image';
-// import { ThemeToggle } from '@/components/tailwind/ThemeToggle';
+import { SimpleThemeToggle } from '@/components/ui/theme-toggle';
 
 export const ExternalNavigation = () => {
   return (
@@ -89,8 +89,9 @@ export const ExternalNavigation = () => {
         />
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
+        <SimpleThemeToggle />
         <Link
-          className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+          className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
           href="/auth?mode=login"
         >
           Acceso Clientes

@@ -1,6 +1,7 @@
 import { createSupabaseClient } from '@/supabase-clients/server';
 import { createClient } from '@supabase/supabase-js';
 import { NextRequest } from 'next/server';
+import type { Database } from '@/lib/database.types';
 
 export async function DELETE(
   request: NextRequest,
@@ -22,7 +23,7 @@ export async function DELETE(
       .from('documents')
       .select('*')
       .eq('id', id)
-      .single();
+      .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
     if (fetchError || !document) {
       return Response.json({ error: 'Documento no encontrado' }, { status: 404 });

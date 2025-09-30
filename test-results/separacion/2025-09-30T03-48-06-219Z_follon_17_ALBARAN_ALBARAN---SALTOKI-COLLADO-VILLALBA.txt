@@ -1,0 +1,39 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 17/21
+Tipo: albaran
+Título: ALBARAN - SALTOKI COLLADO VILLALBA
+Líneas originales: 464-487 (total: 24 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 21 ---
+Marcador final: --- Página 22 ---
+Caracteres: 372
+Descripción: Delivery note from Saltoki Collado Villalba.
+Keywords: ALBARAN, SALTOKI, ZB5AD2, ZB5AZ101, Saltoki Centro, S.A
+=====================================
+
+Teléfono / Fax
+Su representante
+Su Pedido:
+Pedido número:
+Peso Bruto:
+Enviado por:
+reposicion
+215591934
+9,238 KG
+Condiciones de entrega:
+Bultos:
+251251 MRW (URGENTE-10)
+ZFH - Portes Pagados
+01
+Pos. Art-Nr Descripción
+Pedido número: 215591934 Su pedido: reposicion
+0010 538880 PMCU UNIVERSAL CENTRAL CLAMP
+GTIN: 8001132059913
+Referencia
+cliente
+Valor
+neto
+Cant.
+Cant. unid.

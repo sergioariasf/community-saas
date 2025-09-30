@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-09-30T04:12:53.366Z",
+  "testType": "multidocument-guaranteed",
+  "file": "follon.pdf",
+  "result": {
+    "testName": "MultiDocument E2E Test: follon.pdf",
+    "success": true,
+    "steps": {
+      "fileUpload": true,
+      "multiAnalyze": true,
+      "processSeparated": true,
+      "databaseVerification": true,
+      "uiDataAvailable": true,
+      "cleanupCompleted": true
+    },
+    "duration": 108196,
+    "documentsCreated": [
+      "04112b97-f4ec-4b90-9033-7d071762540a",
+      "28dc296f-8e0f-4334-9cbb-1e23589c1212",
+      "9c3a23f0-1316-44f0-8375-6f116dbea959",
+      "fca06c09-cf18-49dc-8fd8-66b0907e1231",
+      "8afbaf14-36e4-46bf-b5b1-5074db2b0bff",
+      "25e4dd05-ad91-4e54-9b75-4664adc640b0",
+      "c4e6b6f9-9082-4637-9a05-967dc47f215b",
+      "312e9996-376b-4ac6-9803-ca9566e51f6c",
+      "f320ee1c-173b-4109-a2e1-f91200f7bde7",
+      "fdf2b9b7-95ce-41a9-98b7-e18277c442f0",
+      "a29001db-d732-4dbc-984f-a18093cda693"
+    ],
+    "supportedDocuments": 13,
+    "unsupportedDocuments": 12
+  }
+}

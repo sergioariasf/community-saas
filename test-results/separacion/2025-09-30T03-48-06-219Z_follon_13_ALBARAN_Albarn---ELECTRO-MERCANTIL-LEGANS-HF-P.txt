@@ -1,0 +1,36 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 13/21
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS (HF-P)
+Líneas originales: 403-423 (total: 21 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 16 ---
+Marcador final: --- Página 17 ---
+Caracteres: 957
+Descripción: Delivery note from Electro Mercantil Leganés D.A.M., S.L.U. for HF-P ballasts
+Keywords: albarán, ELECTRO MERCANTIL LEGANÉS, CONTROL Y TENSION SL, PHI02{1011916, HF-P
+=====================================
+
+-
+BANCO BILBAO VIZCAYA ARGENTARIA (BBVA)
+-
+CAIXABANK
+- BANCO SABADELL
+- IBERCAJA BANCO
+- BANCO SANTANDER
+2. Mediante cheque nominativo y conformado a favor del Ayuntamiento de Madrid, remitido a la Subdirección
+General de Gestión de Multas de Circulación, con indicación del número de referencia del expediente de esta
+notificación y la matrícula del vehículo, datos imprescindibles para su debida identificación.
+3. Mediante tarjeta de crédito o débito por Internet (www.madrid.es/multas), en el teléfono 010 (91-5298210 si se
+llama desde fuera de Madrid) o en cualquiera de las Oficinas de Atención al Ciudadano Línea Madrid (vea la lista
+en www.madrid.es/Lineamadrid).
+4. Mediante Certificado digital o banca electrónica en www.madrid.es/multas.
+PODRÁ CONSULTAR LA NOTIFICACIÓN REALIZADA EN LAS SIGUIENTES DIRECCIONES:
+(BOE) http://www.boe.es/tablon edictal unico/o (TESTRA) https://sede.dgt.gob.es/sede/
+N°. BOLETÍN
+7110762300
+CONTROL
+IMPORTE
+10-11-2020

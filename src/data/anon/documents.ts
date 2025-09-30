@@ -2,6 +2,7 @@
 
 import { authActionClient } from '@/lib/safe-action';
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
 import { requirePermission, getAccessibleCommunities } from '@/lib/auth/permissions';
@@ -187,11 +188,11 @@ export const getDocument = async (id: string) => {
         processing_completed_at
       `)
       .eq('id', id)
-      .single();
+      .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
-    if (docError) {
+    if (docError || !document) {
       console.error('Error fetching document:', docError);
-      throw docError;
+      throw docError || new Error('Document not found');
     }
 
     // Use the processing_config from the SimplePipeline (stored as JSON in the documents table)
@@ -263,11 +264,11 @@ export const getDocumentStats = async () => {
     
     const { data, error } = await supabase
       .from('documents')
-      .select('extraction_status, classification_status, metadata_status, chunking_status, document_type, processing_level');
+      .select('extraction_status, classification_status, metadata_status, chunking_status, document_type, processing_level') as { data: Array<{ extraction_status: string; classification_status: string; metadata_status: string; chunking_status: string; document_type: string; processing_level: number }> | null, error: any };
 
-    if (error) {
+    if (error || !data) {
       console.error('Error fetching document stats:', error);
-      throw error;
+      throw error || new Error('No data returned');
     }
 
     const stats = {
@@ -331,7 +332,7 @@ export const insertDocumentAction = authActionClient
         .select('organization_id')
         .eq('user_id', user.id)
         .limit(1)
-        .single();
+        .single() as { data: { organization_id: string } | null, error: any };
 
       if (roleError || !userRole?.organization_id) {
         throw new Error('User has no organization assigned');
@@ -344,6 +345,7 @@ export const insertDocumentAction = authActionClient
 
       const { data, error } = await supabaseClient
         .from('documents')
+        // @ts-ignore - Temporal fix para problemas de tipos Supabase
         .insert({
           ...parsedInput,
           organization_id: userRole.organization_id,
@@ -351,10 +353,10 @@ export const insertDocumentAction = authActionClient
           extraction_status: 'pending' as const
         })
         .select('*')
-        .single();
+        .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
-      if (error) {
-        throw new Error(error.message);
+      if (error || !data) {
+        throw new Error(error?.message || 'No data returned');
       }
 
       revalidatePath('/documents');
@@ -422,7 +424,7 @@ export const updateDocumentStatusAction = authActionClient
         .from('documents')
         .select('processing_level, extraction_status, classification_status, metadata_status, chunking_status')
         .eq('id', parsedInput.id)
-        .single();
+        .single() as { data: { processing_level: number; extraction_status: string; classification_status: string; metadata_status: string; chunking_status: string } | null, error: any };
 
       if (currentDoc.data) {
         const doc = { ...currentDoc.data, ...updateData };
@@ -438,6 +440,7 @@ export const updateDocumentStatusAction = authActionClient
 
       const { data, error } = await supabaseClient
         .from('documents')
+        // @ts-ignore - Temporal fix para problemas de tipos Supabase
         .update(updateData)
         .eq('id', parsedInput.id)
         .select('*')

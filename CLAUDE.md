@@ -32,7 +32,7 @@
 - **General:**
 - `npm run dev`: Iniciar el servidor de desarrollo en http://localhost:3001 [5]
 - `git commit -m "Mensaje"` / `git push`: Para control de versiones y despliegue (cuando Vercel esté OK). [33]
-- npm run build # TypeScript check
+- `npm run build` # TypeScript check
 
 ### modulo documentos
 
@@ -200,9 +200,17 @@ ACTUALIZADO: 2025-09-14
 
 ### Modulo Pago suscripcion 🚧
 
--
+### Modulo control de gastos 🚧
+
+- dominio
+- supabase
+- vercel
+- gemini
 
 # PROCESO DE TRABAJO
+
+Estoy aprendiendo a desaroollar hemrramientas SAAS asi que vamos siempore paso a paso explicandome en por que de la cosas.
+La idea es construir un SAAS robusto para produccion , modularizables , escalable.
 
 ## CREAR PLAN
 

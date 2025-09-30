@@ -1,0 +1,19 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 18/21
+Tipo: unknown
+Título: Fechas y valores
+Líneas originales: 488-491 (total: 4 líneas)
+Confianza: 40%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+Marcador final: --- Página 23 ---
+Caracteres: 22
+Descripción: Una serie de fechas y valores numéricos.
+Keywords: 03/12/19, 90,75, 04/12/19, 259,10, 17/02/20, 301,25
+=====================================
+
+рас
+entregadas
+41,92
+2

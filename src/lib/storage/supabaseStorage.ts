@@ -1,7 +1,16 @@
 'use server';
 
-import { createSupabaseClient } from '@/supabase-clients/server';
 import crypto from 'crypto';
+
+// Import dinámico para SupabaseApiHelper (EJECUCIÓN)
+let SupabaseApiHelper: any = null;
+
+async function loadSupabaseApiHelper() {
+  if (!SupabaseApiHelper) {
+    const { SupabaseApiHelper: Helper } = await import('../api/SupabaseApiHelper');
+    SupabaseApiHelper = Helper;
+  }
+}
 
 /**
  * Utilidades para manejo de archivos en Supabase Storage
@@ -66,10 +75,10 @@ export async function uploadDocumentToStorage(
     const filePath = generateFilePath(organizationId, file.name, fileHash, communityId);
     console.log(`[Storage Upload] File path: ${filePath}`);
 
-    // Subir archivo
-    console.log(`[Storage Upload] Step 4: Creating Supabase client...`);
-    const supabase = await createSupabaseClient();
-    console.log(`[Storage Upload] ✅ Supabase client created`);
+    // Subir archivo usando SupabaseApiHelper (EJECUCIÓN)
+    console.log(`[Storage Upload] Step 4: Loading SupabaseApiHelper...`);
+    await loadSupabaseApiHelper();
+    console.log(`[Storage Upload] ✅ SupabaseApiHelper loaded`);
     
     console.log(`[Storage Upload] Step 5: Starting Supabase Storage upload...`);
     console.log(`[Storage Upload] Bucket: ${DOCUMENTS_BUCKET}`);
@@ -78,44 +87,45 @@ export async function uploadDocumentToStorage(
     console.log(`[Storage Upload] Content-Type: ${file.type}`);
     
     const uploadStartTime = Date.now();
-    const { data, error } = await supabase.storage
-      .from(DOCUMENTS_BUCKET)
-      .upload(filePath, buffer, {
-        contentType: file.type,
-        cacheControl: '3600', // Cache por 1 hora
-        upsert: false, // No sobrescribir si existe
-      });
+    const { data, error } = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      const result = await supabase.storage
+        .from(DOCUMENTS_BUCKET)
+        .upload(filePath, buffer, {
+          contentType: file.type,
+          cacheControl: '3600', // Cache por 1 hora
+          upsert: false, // No sobrescribir si existe
+        });
+      
+      if (result.error) {
+        throw new Error(`Storage upload failed: ${result.error.message}`);
+      }
+      
+      return result;
+    }, { useServiceRole: true });
     
     const uploadTime = Date.now() - uploadStartTime;
     console.log(`[Storage Upload] Upload attempt completed in ${uploadTime}ms`);
+    console.log(`[Storage Upload] ✅ Upload successful: ${data?.path || filePath}`);
 
-    if (error) {
-      console.error('[Storage Upload] Error:', error);
+    // Generar URL pública (signed para seguridad) usando SupabaseApiHelper
+    const urlData = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      const { data: url, error: urlError } = await supabase.storage
+        .from(DOCUMENTS_BUCKET)
+        .createSignedUrl(filePath, 3600); // URL válida por 1 hora
       
-      // Manejo específico de errores
-      if (error.message.includes('already exists')) {
-        return {
-          success: false,
-          error: 'Este archivo ya ha sido subido anteriormente'
-        };
+      if (urlError) {
+        console.warn(`[Storage Upload] Could not generate signed URL: ${urlError.message}`);
+        return null;
       }
       
-      return {
-        success: false,
-        error: `Error al subir archivo: ${error.message}`
-      };
-    }
-
-    // Generar URL pública (signed para seguridad)
-    const { data: urlData } = await supabase.storage
-      .from(DOCUMENTS_BUCKET)
-      .createSignedUrl(filePath, 3600); // URL válida por 1 hora
+      return url;
+    }, { useServiceRole: true });
 
     console.log(`[Storage Upload] Success: ${filePath}`);
 
     return {
       success: true,
-      filePath: data.path,
+      filePath: data?.path || filePath,
       fileUrl: urlData?.signedUrl,
       metadata: {
         size: file.size,
@@ -138,14 +148,22 @@ export async function uploadDocumentToStorage(
  */
 export async function downloadDocumentFromStorage(filePath: string): Promise<Buffer | null> {
   try {
-    const supabase = await createSupabaseClient();
+    await loadSupabaseApiHelper();
     
-    const { data, error } = await supabase.storage
-      .from(DOCUMENTS_BUCKET)
-      .download(filePath);
+    const data = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      const { data: fileData, error } = await supabase.storage
+        .from(DOCUMENTS_BUCKET)
+        .download(filePath);
 
-    if (error) {
-      console.error('[Storage Download] Error:', error);
+      if (error) {
+        console.error('[Storage Download] Error:', error);
+        return null;
+      }
+
+      return fileData;
+    }, { useServiceRole: true });
+
+    if (!data) {
       return null;
     }
 
@@ -161,18 +179,22 @@ export async function downloadDocumentFromStorage(filePath: string): Promise<Buf
  */
 export async function getDocumentSignedUrl(filePath: string, expiresInSeconds: number = 3600): Promise<string | null> {
   try {
-    const supabase = await createSupabaseClient();
+    await loadSupabaseApiHelper();
     
-    const { data, error } = await supabase.storage
-      .from(DOCUMENTS_BUCKET)
-      .createSignedUrl(filePath, expiresInSeconds);
+    const data = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      const { data: urlData, error } = await supabase.storage
+        .from(DOCUMENTS_BUCKET)
+        .createSignedUrl(filePath, expiresInSeconds);
 
-    if (error) {
-      console.error('[Storage URL] Error:', error);
-      return null;
-    }
+      if (error) {
+        console.error('[Storage URL] Error:', error);
+        return null;
+      }
 
-    return data.signedUrl;
+      return urlData;
+    }, { useServiceRole: true });
+
+    return data?.signedUrl || null;
   } catch (error) {
     console.error('[Storage URL] Unexpected error:', error);
     return null;
@@ -184,19 +206,26 @@ export async function getDocumentSignedUrl(filePath: string, expiresInSeconds: n
  */
 export async function deleteDocumentFromStorage(filePath: string): Promise<boolean> {
   try {
-    const supabase = await createSupabaseClient();
+    await loadSupabaseApiHelper();
     
-    const { error } = await supabase.storage
-      .from(DOCUMENTS_BUCKET)
-      .remove([filePath]);
+    const success = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      const { error } = await supabase.storage
+        .from(DOCUMENTS_BUCKET)
+        .remove([filePath]);
 
-    if (error) {
-      console.error('[Storage Delete] Error:', error);
-      return false;
+      if (error) {
+        console.error('[Storage Delete] Error:', error);
+        return false;
+      }
+
+      return true;
+    }, { useServiceRole: true });
+
+    if (success) {
+      console.log(`[Storage Delete] Deleted: ${filePath}`);
     }
-
-    console.log(`[Storage Delete] Deleted: ${filePath}`);
-    return true;
+    
+    return success;
   } catch (error) {
     console.error('[Storage Delete] Unexpected error:', error);
     return false;
@@ -288,36 +317,44 @@ function sanitizeFilename(filename: string): string {
  */
 export async function setupDocumentsBucket(): Promise<boolean> {
   try {
-    const supabase = await createSupabaseClient();
+    await loadSupabaseApiHelper();
 
-    // Verificar si el bucket existe
-    const { data: buckets, error: listError } = await supabase.storage.listBuckets();
-    
-    if (listError) {
-      console.error('[Storage Setup] Error listing buckets:', listError);
-      return false;
-    }
-
-    const bucketExists = buckets.some(bucket => bucket.name === DOCUMENTS_BUCKET);
-
-    if (!bucketExists) {
-      // Crear bucket si no existe
-      const { error: createError } = await supabase.storage.createBucket(DOCUMENTS_BUCKET, {
-        public: false, // Archivos privados
-        allowedMimeTypes: ALLOWED_TYPES,
-        fileSizeLimit: MAX_FILE_SIZE,
-      });
-
-      if (createError) {
-        console.error('[Storage Setup] Error creating bucket:', createError);
+    // Verificar y crear bucket usando SupabaseApiHelper
+    const success = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      // Verificar si el bucket existe
+      const { data: buckets, error: listError } = await supabase.storage.listBuckets();
+      
+      if (listError) {
+        console.error('[Storage Setup] Error listing buckets:', listError);
         return false;
       }
 
-      console.log(`[Storage Setup] Created bucket: ${DOCUMENTS_BUCKET}`);
-    }
+      const bucketExists = buckets.some(bucket => bucket.name === DOCUMENTS_BUCKET);
 
-    console.log(`[Storage Setup] Bucket ${DOCUMENTS_BUCKET} is ready`);
-    return true;
+      if (!bucketExists) {
+        // Crear bucket si no existe
+        const { error: createError } = await supabase.storage.createBucket(DOCUMENTS_BUCKET, {
+          public: false, // Archivos privados
+          allowedMimeTypes: ALLOWED_TYPES,
+          fileSizeLimit: MAX_FILE_SIZE,
+        });
+
+        if (createError) {
+          console.error('[Storage Setup] Error creating bucket:', createError);
+          return false;
+        }
+
+        console.log(`[Storage Setup] Created bucket: ${DOCUMENTS_BUCKET}`);
+      }
+
+      return true;
+    }, { useServiceRole: true });
+
+    if (success) {
+      console.log(`[Storage Setup] Bucket ${DOCUMENTS_BUCKET} is ready`);
+    }
+    
+    return success;
 
   } catch (error) {
     console.error('[Storage Setup] Unexpected error:', error);
@@ -334,30 +371,34 @@ export async function getStorageStats(organizationId: string): Promise<{
   sizeMB: number;
 } | null> {
   try {
-    const supabase = await createSupabaseClient();
+    await loadSupabaseApiHelper();
     
-    // Obtener lista de archivos de la organización
-    const { data: files, error } = await supabase.storage
-      .from(DOCUMENTS_BUCKET)
-      .list(organizationId, {
-        limit: 1000, // Límite razonable
-        sortBy: { column: 'created_at', order: 'desc' }
-      });
+    const stats = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      // Obtener lista de archivos de la organización
+      const { data: files, error } = await supabase.storage
+        .from(DOCUMENTS_BUCKET)
+        .list(organizationId, {
+          limit: 1000, // Límite razonable
+          sortBy: { column: 'created_at', order: 'desc' }
+        });
 
-    if (error) {
-      console.error('[Storage Stats] Error:', error);
-      return null;
-    }
+      if (error) {
+        console.error('[Storage Stats] Error:', error);
+        return null;
+      }
 
-    const totalFiles = files.length;
-    const totalSize = files.reduce((sum, file) => sum + (file.metadata?.size || 0), 0);
-    const sizeMB = Math.round((totalSize / (1024 * 1024)) * 100) / 100;
+      const totalFiles = files.length;
+      const totalSize = files.reduce((sum, file) => sum + (file.metadata?.size || 0), 0);
+      const sizeMB = Math.round((totalSize / (1024 * 1024)) * 100) / 100;
 
-    return {
-      totalFiles,
-      totalSize,
-      sizeMB
-    };
+      return {
+        totalFiles,
+        totalSize,
+        sizeMB
+      };
+    }, { useServiceRole: true });
+
+    return stats;
 
   } catch (error) {
     console.error('[Storage Stats] Unexpected error:', error);

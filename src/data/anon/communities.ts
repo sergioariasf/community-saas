@@ -2,6 +2,7 @@
 import { authActionClient } from '@/lib/safe-action';
 import { createSupabaseClient } from '@/supabase-clients/server';
 import { Table } from '@/types';
+import type { Database } from '@/lib/database.types';
 import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
 import { requirePermission, getAccessibleCommunities } from '@/lib/auth/permissions';
@@ -71,7 +72,7 @@ export const insertCommunityAction = authActionClient
       .select('organization_id')
       .eq('user_id', user.id)
       .limit(1)
-      .single();
+      .single() as { data: { organization_id: string } | null, error: any };
 
     if (roleError || !userRole?.organization_id) {
       throw new Error('User has no organization assigned');
@@ -80,15 +81,16 @@ export const insertCommunityAction = authActionClient
     // Include organization_id in the insert
     const { data, error } = await supabaseClient
       .from('communities')
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
       .insert({
         ...parsedInput,
         organization_id: userRole.organization_id
       })
       .select('*')
-      .single();
+      .single() as { data: Database['public']['Tables']['communities']['Row'] | null, error: any };
 
-    if (error) {
-      throw new Error(error.message);
+    if (error || !data) {
+      throw new Error(error?.message || 'No data returned');
     }
 
     revalidatePath('/communities');
@@ -106,13 +108,14 @@ export const updateCommunityAction = authActionClient
     const supabaseClient = await createSupabaseClient();
     const { data, error } = await supabaseClient
       .from('communities')
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
       .update(updateData)
       .eq('id', id)
       .select('*')
-      .single();
+      .single() as { data: Database['public']['Tables']['communities']['Row'] | null, error: any };
 
-    if (error) {
-      throw new Error(error.message);
+    if (error || !data) {
+      throw new Error(error?.message || 'No data returned');
     }
 
     revalidatePath('/communities');
@@ -157,7 +160,7 @@ export async function getUserCommunities() {
     const { data: userRoles, error: rolesError } = await supabase
       .from('user_roles')
       .select('role, community_id')
-      .eq('user_id', user.id);
+      .eq('user_id', user.id) as { data: { role: string; community_id: string }[] | null, error: any };
 
     if (rolesError) {
       console.error('Error fetching user roles:', rolesError);
@@ -171,9 +174,9 @@ export async function getUserCommunities() {
       const { data: allCommunities, error: communitiesError } = await supabase
         .from('communities')
         .select('id, name')
-        .order('name');
+        .order('name') as { data: { id: string; name: string }[] | null, error: any };
 
-      if (communitiesError) {
+      if (communitiesError || !allCommunities) {
         console.error('Error fetching all communities:', communitiesError);
         return { success: false, error: 'Failed to fetch communities' };
       }

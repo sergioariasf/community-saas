@@ -1,0 +1,31 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 8/21
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS
+Líneas originales: 278-293 (total: 16 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 10 ---
+Marcador final: --- Página 11 ---
+Caracteres: 307
+Descripción: Delivery note from Electro Mercantil Leganés D.A.M., S.L.U. to CONTROL Y TENSION SL, listing electrical components.
+Keywords: albarán, ELECTRO MERCANTIL LEGANÉS, CONTROL Y TENSION SL, DIS02001040, LEG43000200, 35966
+=====================================
+
+LRGT650802916019
+280373935701
+CL JAVIER VICENTE MONTERO, 2
+Localidad
+Provincia
+ESCORIAL, EL
+Nombre de la empresa
+Control y Tension
+MADRID
+Puesto de trabajo
+Directores generales, empresa privada
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Código postal Teléfono móvil
+Teléfono fijo
+28280
+918964063

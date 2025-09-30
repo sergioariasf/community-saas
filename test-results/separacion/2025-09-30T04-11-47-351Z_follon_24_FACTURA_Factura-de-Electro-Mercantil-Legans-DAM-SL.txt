@@ -1,0 +1,56 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 24/25
+Tipo: factura
+Título: Factura de Electro Mercantil Leganés D.A.M., S.L.
+Líneas originales: 798-838 (total: 41 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 651
+Descripción: Invoice from Electro Mercantil Leganés for Control y Tension SL.
+Keywords: factura, Electro Mercantil, 850162, TRANSFERENCIA, B83802850
+=====================================
+
+CONTROL Y TENSION SL
+C/ Javier Vicente Montero 2
+28280 El Escorial
+Ref. Cliente: METRO
+Fecha: 01/09/2020
+Ref. Interna:
+Hora:
+10:18
+Ref. Oferta:
+Tel.:
+C.I.F.:
+918964063
+B83802850
+Fax:
+Zona:
+Cliente:
+100
+Atendido por: FRANCISCO DIAZ
+L4
+Almacén:
+Área:
+ALMACEN LEGANES
+1
+ENVIO
+28230
+CONTROL Y TENSIÓN SL
+C/ CABO RUFINO LÁZARO 5
+LAS ROZAS DE MADRID
+Tel. 609273707
+Ruta:
+CÓDIGO
+DESCRIPCIÓN
+SAG04000210 EMERGENCIA SAGELUX EVO-110ST
+C Precio x 100 Unidades M = Precio x 1000 Unidades
+REF.PROV.
+CANTIDAD
+EVO-110ST
+25,00
+Firma y recoge
+ELECTRO MERCANTIL LEGANES D.A.M., S.L.U. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+

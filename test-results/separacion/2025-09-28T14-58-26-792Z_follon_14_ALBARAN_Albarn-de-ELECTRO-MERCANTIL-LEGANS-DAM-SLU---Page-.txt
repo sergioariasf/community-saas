@@ -1,0 +1,60 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 14/24
+Tipo: albaran
+Título: Albarán de ELECTRO MERCANTIL LEGANÉS D.A.M., S.L.U. - Page 15
+Líneas originales: 502-544 (total: 43 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 15 ---
+em
+electromercantil
+Marcador final: Firma y recoge
+Caracteres: 872
+Descripción: Delivery note from Electro Mercantil Leganes, detailing the delivered items, their quantities, pending items, and total cost.
+Keywords: ALBARÁN, ELECTRO MERCANTIL, LEGANÉS, CONTROL Y TENSION SL, 1084627, PHILIPS MASTER TL-D, SAGELUX EVO-60ST, 715,40 €
+=====================================
+
+24,57
+1
+50
+0040 71952
+TUERCA ARANDELA MU F A2 M10
+14,02
+1
+100
+GTIN: 8001132719527
+0050 45707
+FIS H 18X130/200 K
+14,88
+1
+10
+GTIN: 4006209457078
+0060 543633
+Broca SDS short Pointer M 16/200/260
+GTIN: 4048962308747
+10,41
+1
+1
+0070 534616 MS LIQUIDO 1 KG MARRON
+11,55
+1
+1
+GTIN: 4048962234077
+Suma:
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.
+En caso de alguna incidencia en el pedido, no se admitirán devoluciones de material
+ni reclamaciones en precios transcurridos 7 días naturales desde la recepción del pedido.
+Telef.
+Fax
+: 0034 977 838 711
+: 0034 977 838 770
+E-mail
+: servicio.cliente@fischer.es
+:www.fischer.es
+Internet
+NIF UE

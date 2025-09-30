@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-09-28T15:28:59.779Z",
+  "successRate": 0,
+  "results": [
+    {
+      "testName": "Real E2E Test: ACTA 19 MAYO 2022.pdf",
+      "success": false,
+      "steps": {
+        "fileUpload": false,
+        "databaseInsert": true,
+        "pipelineExecution": false,
+        "dataExtraction": true,
+        "uiDataAvailable": false,
+        "cleanupCompleted": true
+      },
+      "duration": 2971,
+      "documentId": "e32b0f13-b2b9-49bf-9873-3c6ed2bb44c5",
+      "extractedData": {
+        "document": {
+          "id": "e32b0f13-b2b9-49bf-9873-3c6ed2bb44c5",
+          "organization_id": "e3f4370b-2235-45ad-869a-737ee9fd95ab",
+          "community_id": "c7e7b867-6180-4363-a2f8-2aa12eb804b5",
+          "filename": "ACTA 19 MAYO 2022.pdf",
+          "file_path": "/test-files/ACTA 19 MAYO 2022.pdf",
+          "file_size": 352259,
+          "file_hash": "4648746997714fdc6d0c918c3fa0f7a3",
+          "document_type": "acta",
+          "legacy_status": "processing",
+          "created_at": "2025-09-28T15:28:57.530319+00:00",
+          "processed_at": null,
+          "extracted_text": null,
+          "text_length": 0,
+          "page_count": 0,
+          "processing_level": 4,
+          "processing_config": {},
+          "extraction_status": "pending",
+          "extraction_error": null,
+          "extraction_method": null,
+          "extraction_completed_at": null,
+          "classification_status": "pending",
+          "classification_error": null,
+          "classification_completed_at": null,
+          "metadata_status": "pending",
+          "metadata_error": null,
+          "metadata_completed_at": null,
+          "chunking_status": "pending",
+          "chunking_error": null,
+          "chunking_completed_at": null,
+          "chunks_count": 0,
+          "total_processing_time_ms": 0,
+          "total_tokens_used": 0,
+          "estimated_cost_usd": 0,
+          "processing_started_at": null,
+          "processing_completed_at": null,
+          "last_processed_by": null,
+          "uploaded_by": null,
+          "mime_type": "application/pdf",
+          "original_filename": null
+        },
+        "specificData": null,
+        "hasExtractedText": false,
+        "hasSpecificData": false
+      }
+    }
+  ]
+}

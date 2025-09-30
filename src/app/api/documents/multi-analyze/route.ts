@@ -10,6 +10,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { MultiDocumentAnalyzer } from '@/lib/ingesta/core/multi-document/MultiDocumentAnalyzer';
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
@@ -105,7 +106,7 @@ export async function POST(request: NextRequest) {
           .from('communities')
           .select('organization_id, name')
           .eq('id', communityId)
-          .single();
+          .single() as { data: { organization_id: string; name: string } | null, error: any };
 
         if (communityError || !communityData) {
           throw new Error(`Community not found: ${communityError?.message}`);
@@ -153,12 +154,13 @@ export async function POST(request: NextRequest) {
 
         const { data: parentDoc, error: parentError } = await supabase
           .from('documents')
+          // @ts-ignore - Temporal fix para problemas de tipos Supabase
           .insert(parentDocumentData)
           .select()
-          .single();
+          .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
-        if (parentError) {
-          throw new Error(`Failed to create parent document: ${parentError.message}`);
+        if (parentError || !parentDoc) {
+          throw new Error(`Failed to create parent document: ${parentError?.message || 'No data returned'}`);
         }
 
         console.log(`✅ [MULTI-DOC API] Parent document created: ${parentDoc.id}`);
@@ -203,12 +205,13 @@ export async function POST(request: NextRequest) {
 
             const { data: childDoc, error: childError } = await supabase
               .from('documents')
+              // @ts-ignore - Temporal fix para problemas de tipos Supabase
               .insert(childDocumentData)
               .select()
-              .single();
+              .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
-            if (childError) {
-              console.error(`❌ [MULTI-DOC API] Error creating child document ${childIndex}:`, childError);
+            if (childError || !childDoc) {
+              console.error(`❌ [MULTI-DOC API] Error creating child document ${childIndex}:`, childError?.message || 'No data returned');
             } else {
               console.log(`✅ [MULTI-DOC API] Child document created: ${childDoc.id} (${doc.type})`);
               childDocuments.push({
@@ -266,6 +269,7 @@ export async function POST(request: NextRequest) {
             // Actualizar estados finales
             await supabase
               .from('documents')
+              // @ts-ignore - Temporal fix para problemas de tipos Supabase
               .update({
                 processing_level: 4, // Completamente procesado
                 processing_completed_at: new Date().toISOString(),

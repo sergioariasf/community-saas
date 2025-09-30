@@ -1,0 +1,38 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 14/21
+Tipo: presupuesto
+Título: Presupuesto - Instalación IVE
+Líneas originales: 424-446 (total: 23 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 17 ---
+Marcador final: --- Página 18 ---
+Caracteres: 257
+Descripción: Price quote for installation and legalization of a charging point for electric vehicles.
+Keywords: presupuesto, IVE, cargador de vehículo eléctrico, instalaciones eléctricas, 3.185,93
+=====================================
+
+49
+100,00
+MATRÍCULA
+5581FTH
+LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO
+007961-007962
+
+--- Página 6 ---
+1
+
+--- Página 7 ---
+0
+Albarán
+Fecha:
+Hoja
+01.10.2020
+1
+Cliente número:
+594182
+de
+Albarán número:
+Su NIF:
+2002337934

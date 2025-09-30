@@ -43,9 +43,9 @@ export class SupabaseApiHelper {
       } else {
         if (!supabaseClientCache) {
           const { createSupabaseClient } = await import('@/supabase-clients/server');
-          supabaseClientCache = await createSupabaseClient();
+          supabaseClientCache = await createSupabaseClient() as any;
         }
-        return supabaseClientCache;
+        return supabaseClientCache as any;
       }
     } catch (error) {
       console.error('[SUPABASE API HELPER] Error initializing client:', error);

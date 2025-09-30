@@ -1,0 +1,24 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 15/21
+Tipo: unknown
+Título: Diagrama GS-Hydro
+Líneas originales: 447-455 (total: 9 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 18 ---
+Marcador final: --- Página 20 ---
+Caracteres: 129
+Descripción: Diagram for electrical installations. Possibly related to the above budget.
+Keywords: CUADRO, FACHADA, GS-Hydro, Cabo Rufino Lázaro
+=====================================
+
+ESB83802850
+1
+Comprador
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Su Persona de contacto
+fischer

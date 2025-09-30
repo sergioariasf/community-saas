@@ -8,6 +8,7 @@
  */
 
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 import { T } from '@/components/ui/Typography';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import Link from 'next/link';
@@ -28,12 +29,12 @@ export default async function DocumentPageSimple({ params }: { params: Promise<{
     const supabase = await createSupabaseClient();
     console.log('DocumentPageSimple - Supabase client created');
 
-    // 1. Obtener documento básico
+    // 1. Obtener documento básico con tipos explícitos
     const { data: document, error: docError } = await supabase
       .from('documents')
       .select('*')
       .eq('id', id)
-      .single();
+      .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
     console.log('DocumentPageSimple - Document query result:', {
       hasDocument: !!document,

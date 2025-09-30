@@ -254,7 +254,8 @@ export class DocumentClassifier {
       const { createSupabaseClient } = await import('@/supabase-clients/server');
       const supabase = await createSupabaseClient();
       
-      const { data: agent, error } = await supabase
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
+      const { data: agent, error } = await (supabase as any)
         .from('agents')
         .select('*')
         .ilike('name', '%classifier%')

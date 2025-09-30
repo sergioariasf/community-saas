@@ -1,0 +1,67 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 5/25
+Tipo: multa
+Título: Información sobre Publicación de Edicto - Multa de Circulación
+Líneas originales: 149-200 (total: 52 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 5 ---
+Marcador final: --- Página 6 ---
+Caracteres: 1125
+Descripción: Traffic ticket notification published in the BOE for a speeding violation. Fines and penalties detailed.
+Keywords: multa, circulación, expediente, 935/711076230.0, 5581FTH, 1827563, M-30, 76.A LSV
+=====================================
+
+Enfermedad profesional (EP) ☐
+Periodo de observación por enfermedad profesional
+ENTIDAD EMISORA
+SPS ☑ INSS/ISM ☐ MUTUA|
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+Localidad
+CL JAVIER VICENTE MONTERO, 2
+Provincia
+ESCORIAL, EL
+MADRID
+Nombre de la empresa
+Puesto de trabajo
+Código postal
+Teléfono móvil
+28280
+Teléfono fijo
+918964063 609273707
+Código nacional de ocupación (CNO)
+Directores generales, empresa privada
+Control y Tension
+ly'
+1120
+DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL (en el parte de baja) / RESULTADO DEL RECONOCIMIENTO MÉDICO (en el parte de alta)
+Curación/Mejoría que permite realizar trabajo habitual
+DIAGNÓSTICO
+Contacto y (sospecha de) exposición a otras enfermedades víricas transmisibles
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Fecha de AT o EP
+Código de enfermedad profesional
+Parte del cuerpo dañado
+(1)
+(1)
+Leve
+Grave
+Tipo de asistencia:
+Ambulatoria

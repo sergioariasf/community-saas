@@ -13,7 +13,7 @@
 export interface TextExtractionResult {
   text: string;
   success: boolean;
-  method: 'pdf-parse' | 'pdf-parse-direct' | 'pdf-parse-external' | 'langchain-pypdf' | 'ocr' | 'error' | 'gemini-flash-ocr-ia';
+  method: 'pdf-parse' | 'pdf-parse' | 'pdf-parse-external' | 'langchain-pypdf' | 'ocr' | 'error' | 'gemini-flash-ocr-ia';
   metadata: {
     pages: number;
     size: number;
@@ -125,7 +125,7 @@ async function extractWithPdfParse(buffer: Buffer): Promise<TextExtractionResult
         return {
           text: extractedText,
           success: true,
-          method: 'pdf-parse-direct',
+          method: 'pdf-parse',
           metadata: {
             pages: data.numpages || 0,
             size: buffer.length,

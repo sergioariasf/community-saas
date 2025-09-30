@@ -1,0 +1,51 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 6/21
+Tipo: albaran
+Título: Albarán - Fischer Ibérica
+Líneas originales: 187-222 (total: 36 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 7 ---
+Marcador final: --- Página 8 ---
+Caracteres: 862
+Descripción: Delivery note from Fischer Ibérica to Control y Tension S.L., listing various construction-related items.
+Keywords: albarán, fischer, CONTROL Y TENSION S.L., 538880, 71202, 71207
+=====================================
+
+DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL (en el parte de baja) / RESULTADO DEL RECONOCIMIENTO MÉDICO (en el parte de alta)
+Curación/Mejoría que permite realizar trabajo habitual
+DIAGNÓSTICO
+Contacto y (sospecha de) exposición a otras enfermedades víricas transmisibles
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Fecha de AT o EP
+Código de enfermedad profesional
+Parte del cuerpo dañado
+(1)
+(1)
+Leve
+Grave
+Tipo de asistencia:
+Ambulatoria
+Muy grave
+Hospitalaria
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+Recaída:
+sí ☐ NO ☑
+Fecha de la baja del proceso inicial del que es
+PARTE DE ALTA ☑
+recaída
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+Código CIE-9
+(Todas las contingencias)

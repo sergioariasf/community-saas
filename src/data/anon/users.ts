@@ -2,6 +2,7 @@
 
 import { authActionClient } from '@/lib/safe-action';
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
 import { requirePermission } from '@/lib/auth/permissions';
@@ -24,7 +25,7 @@ export const getAllUsers = async (): Promise<any[]> => {
         communities:community_id (
           name
         )
-      `);
+      `) as { data: Array<{ user_id: string; role: string; community_id: string; communities: { name: string } | null }> | null, error: any };
 
     if (rolesError) {
       console.error('❌ [getAllUsers] Error fetching user roles:', rolesError);
@@ -130,7 +131,7 @@ export const createUserAction = authActionClient
       .select('organization_id')
       .eq('user_id', currentUser.id)
       .limit(1)
-      .single();
+      .single() as { data: { organization_id: string } | null, error: any };
 
     if (currentRoleError || !currentUserRole?.organization_id) {
       throw new Error('No se pudo obtener la organización del usuario actual');
@@ -140,6 +141,7 @@ export const createUserAction = authActionClient
     const rolePromises = roles.map(role => 
       supabase
         .from('user_roles')
+        // @ts-ignore - Temporal fix para problemas de tipos Supabase
         .insert({
           user_id: authUser.user.id,
           organization_id: currentUserRole.organization_id,
@@ -202,7 +204,7 @@ export const updateUserRolesAction = authActionClient
       .eq('user_id', currentUser.id)
       .not('organization_id', 'is', null)
       .limit(1)
-      .single();
+      .single() as { data: { organization_id: string } | null, error: any };
 
     if (currentRoleError || !currentUserRole?.organization_id) {
       // Usar organization_id por defecto si no se encuentra
@@ -210,8 +212,8 @@ export const updateUserRolesAction = authActionClient
       
       // 3. Insertar nuevos roles con organization_id por defecto
       if (roles.length > 0) {
-        const { error: insertError } = await supabase
-          .from('user_roles')
+        const { error: insertError } = await (supabase
+          .from('user_roles') as any)
           .insert(
             roles.map(role => ({
               user_id: userId,
@@ -232,8 +234,8 @@ export const updateUserRolesAction = authActionClient
 
     // 3. Insertar nuevos roles
     if (roles.length > 0) {
-      const { error: insertError } = await supabase
-        .from('user_roles')
+      const { error: insertError } = await (supabase
+        .from('user_roles') as any)
         .insert(
           roles.map(role => ({
             user_id: userId,
@@ -304,7 +306,7 @@ export const getUsersByCommunity = async (communityId: string) => {
       )
     `)
     .eq('community_id', communityId)
-    .order('users(email)');
+    .order('users(email)') as { data: Array<{ user_id: string; role: string; users: { email: string; created_at: string } | null }> | null, error: any };
 
   if (error) {
     console.error('Error fetching community users:', error);

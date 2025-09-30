@@ -1,0 +1,29 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 9/21
+Tipo: albaran
+Título: Albarán - ELECTRO MERCANTIL LEGANÉS (Emergencia)
+Líneas originales: 294-307 (total: 14 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 11 ---
+Marcador final: --- Página 12 ---
+Caracteres: 212
+Descripción: Another delivery note from Electro Mercantil Leganés for emergency lighting equipment.
+Keywords: albarán, ELECTRO MERCANTIL LEGANÉS, CONTROL Y TENSION SL, SAG04000210, EVO-110ST
+=====================================
+
+609273707
+Código nacional de ocupación (CNO)
+1120
+Fecha de AT o EP
+(1)
+(1)
+(1)
+Leve
+Grave
+Muy grave
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica

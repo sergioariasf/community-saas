@@ -1,0 +1,47 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 22/24
+Tipo: unknown
+Título: CONSULTA A LA CARTERA
+Líneas originales: 694-725 (total: 32 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: ELECTRO MERCANTIL LEGANES DAM
+Marcador final: Situación => 1.Generado, 2.Aceptado, 3.Devuelto, 4.Remesado, 5.Sus.Pagos, 6.Agrupado, 7.Amortizado
+Caracteres: 1027
+Descripción: Lista de carteras
+Keywords: CONSULTA A LA CARTERA, ELECTRO MERCANTIL LEGANES, Fecha Vto. Factura, Importe
+=====================================
+
+VIGILANCIA
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).
+R.G.V.: Reglamento General de Vehiculos (Real Decreto 2822/1998, de 23 de diciembre).
+LPACAP: Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.
+
+--- Página 10 ---
+em
+electromercantil
+Distribución Activa Multisector al
+ALBARÁN
+ELECTRO MERCANTIL LEGANÉS D.A.M.,
+S.L.U.
+RAMON Y CAJAL, N° 15
+28914 LEGANÉS
+MADRID
+N.I.F.: B-87621306
+Miembro de:
+AUNA
+distribución
+IMELCO
+slaus Mari
+TEL.: 916 879 106

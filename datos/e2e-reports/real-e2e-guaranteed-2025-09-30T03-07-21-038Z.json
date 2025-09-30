@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-09-30T03:07:21.038Z",
+  "successRate": 0,
+  "results": [
+    {
+      "testName": "Real E2E Test: ACTA 19 MAYO 2022.pdf",
+      "success": false,
+      "steps": {
+        "fileUpload": false,
+        "databaseInsert": false,
+        "pipelineExecution": false,
+        "dataExtraction": false,
+        "uiDataAvailable": false,
+        "cleanupCompleted": false
+      },
+      "duration": 1062,
+      "error": "Supabase Error [23505]: duplicate key value violates unique constraint \"unique_organization_file_hash\" - Key (organization_id, file_hash)=(e3f4370b-2235-45ad-869a-737ee9fd95ab, 893190a6c38f541f92bfa704013809404ab74fb39be8f38ac29501d45c17b3c0) already exists. "
+    }
+  ]
+}

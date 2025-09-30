@@ -1,0 +1,47 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 13/24
+Tipo: albaran
+Título: Albarán de MICROCOM SISTEMAS MODULARES, S. L.
+Líneas originales: 471-501 (total: 31 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 14 ---
+MICROCOM
+Marcador final: TOTAL €
+Caracteres: 454
+Descripción: Delivery note from Microcom Sistemas Modulares, detailing the item description, quantity, price, and total amount for Control y Tension, S.L.
+Keywords: ALBARAN, MICROCOM, CONTROL Y TENSION, S.L., 18633, REMOTE GSM I/O MODULE, 334,90, 419,75
+=====================================
+
+215591934
+9,238 KG
+Condiciones de entrega:
+Bultos:
+251251 MRW (URGENTE-10)
+ZFH - Portes Pagados
+01
+Pos. Art-Nr Descripción
+Pedido número: 215591934 Su pedido: reposicion
+0010 538880 PMCU UNIVERSAL CENTRAL CLAMP
+GTIN: 8001132059913
+Referencia
+cliente
+Valor
+neto
+Cant.
+Cant. unid.
+рас
+entregadas
+41,92
+2
+20
+0020 71202
+STSR M10X200 A2 TORNILLO DOBLE ROSCA
+GTIN: 8001132712023
+52,64
+1
+25
+0030 71207
+RHS 8X20 A2 TORNILLO CABEZA DE MARTILLO
+GTIN: 8001132712078

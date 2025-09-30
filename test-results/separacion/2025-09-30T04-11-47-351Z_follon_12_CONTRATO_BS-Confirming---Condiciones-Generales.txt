@@ -1,0 +1,72 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 12/25
+Tipo: contrato
+Título: BS Confirming - Condiciones Generales
+Líneas originales: 441-497 (total: 57 líneas)
+Confianza: 85%
+Soportado: SÍ
+Marcador inicio: --- Página 13 ---
+Marcador final: --- Página 14 ---
+Caracteres: 841
+Descripción: General conditions for BS Confirming service provided by Banco Sabadell.
+Keywords: BS Confirming, Banco Sabadell, condiciones generales, anticipo, cesión, créditos
+=====================================
+
+Cliente número:
+594182
+de
+Albarán número:
+Su NIF:
+2002337934
+ESB83802850
+1
+Comprador
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Su Persona de contacto
+fischer
+Ⓡ
+Fischer
+innovative solutions
+Fischer ibérica, S.A.U. CI. Klaus Fischer, 1/43300 Mont-roig del Camp
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Teléfono / Fax
+Su representante
+Su Pedido:
+Pedido número:
+Peso Bruto:
+Enviado por:
+reposicion
+215591934
+9,238 KG
+Condiciones de entrega:
+Bultos:
+251251 MRW (URGENTE-10)
+ZFH - Portes Pagados
+01
+Pos. Art-Nr Descripción
+Pedido número: 215591934 Su pedido: reposicion
+0010 538880 PMCU UNIVERSAL CENTRAL CLAMP
+GTIN: 8001132059913
+Referencia
+cliente
+Valor
+neto
+Cant.
+Cant. unid.
+рас
+entregadas
+41,92
+2
+20
+0020 71202
+STSR M10X200 A2 TORNILLO DOBLE ROSCA
+GTIN: 8001132712023
+52,64
+1

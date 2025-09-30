@@ -1,0 +1,60 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 6/24
+Tipo: albaran
+Título: Albarán de Fischer Ibérica, S.A.U.
+Líneas originales: 191-232 (total: 42 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 7 ---
+0
+Albarán
+Fecha:
+Marcador final: La Caixa cta. nr. 2100 3500 13 2200239101, IBAN: ES0521003500132200239101, SWIFT: CAIXESBBXXX
+Caracteres: 814
+Descripción: Delivery note from Fischer Ibérica, detailing ordered items, quantities, and delivery information for Control y Tension S.L.
+Keywords: Albarán, Fischer Ibérica, CONTROL Y TENSION S.L., 2002337934, 594182, 215591934, 538880, PMCU UNIVERSAL CENTRAL CLAMP, 71202, STSR M10X200 A2
+=====================================
+
+CUMPLIMENTAR SOLO EN CASO DE CONTINGENCIA PROFESIONAL:
+Fecha de AT o EP
+Código de enfermedad profesional
+Parte del cuerpo dañado
+(1)
+(1)
+Leve
+Grave
+Tipo de asistencia:
+Ambulatoria
+Muy grave
+Hospitalaria
+(1) Sólo en caso de accidente de trabajo
+TIPO DE PROCESO
+DURACIÓN ESTIMADA
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+Recaída:
+sí ☐ NO ☑
+Fecha de la baja del proceso inicial del que es
+PARTE DE ALTA ☑
+recaída
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+Código CIE-9
+(Todas las contingencias)
+Código CIE-10
+(Solo en EP)
+Z20.828
+Fecha de la siguiente revisión médica
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/ DATOS DEL MÉDICO INSPECTOR
+Curación/Mejoría que permite realizar trabajo habitual ☑
+ROMERO
+ΑΝΤΟΝΙΟ
+VILCHE.

@@ -1,0 +1,34 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 20/21
+Tipo: factura
+Título: FACTURA - ELECTRO MERCANTIL LEGANÉS
+Líneas originales: 516-534 (total: 19 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 24 ---
+Marcador final: --- Página 25 ---
+Caracteres: 541
+Descripción: Invoice from Electro Mercantil Leganés.
+Keywords: FACTURA, ELECTRO MERCANTIL LEGANÉS, CONTROL Y TENSION SL, 850162, 193,00
+=====================================
+
+GTIN: 4006209457078
+0060 543633
+Broca SDS short Pointer M 16/200/260
+GTIN: 4048962308747
+10,41
+1
+1
+0070 534616 MS LIQUIDO 1 KG MARRON
+11,55
+1
+1
+GTIN: 4048962234077
+Suma:
+169,99
+8
+Cualquier material faltante o dañado por transporte deberá ser indicado en el conforme de entrega
+y remitido, junto con imagen de la incidencia, al correo electrónico de Atención al
+Cliente servicio.clientes@fischer.es en un plazo máximo de 72 hrs desde la recepción del pedido.
+En caso de alguna incidencia en el pedido, no se admitirán devoluciones de material

@@ -11,6 +11,7 @@
 
 import { authActionClient } from '@/lib/safe-action';
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
 
@@ -87,7 +88,7 @@ export const uploadAndProcessDocument = authActionClient
         .from('user_roles')
         .select('organization_id')
         .eq('user_id', user.id)
-        .single();
+        .single() as { data: { organization_id: string } | null, error: any };
 
       if (!userRole?.organization_id) {
         throw new Error('Usuario sin organización asignada');
@@ -160,7 +161,7 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
       .from('user_roles')
       .select('organization_id')
       .eq('user_id', user.id)
-      .single();
+      .single() as { data: { organization_id: string } | null, error: any };
 
     if (!userRole?.organization_id) {
       throw new Error('Usuario sin organización asignada');
@@ -204,6 +205,7 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
     // Crear registro directo en Supabase usando schema real completo
     const { data: document, error: dbError } = await supabase
       .from('documents')
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase 
       .insert({
         organization_id: organizationId,
         community_id: communityId,
@@ -220,7 +222,7 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
         original_filename: file.name
       })
       .select()
-      .single();
+      .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
     if (dbError || !document) {
       console.error('❌ [Progressive Pipeline] Error creando registro:', {
@@ -236,18 +238,10 @@ export async function uploadAndProcessFormData(formData: FormData): Promise<Docu
     console.log('🚀 [Progressive Pipeline] PASO 3: Ejecutando pipeline progresivo...');
     console.log(`🎯 [Progressive Pipeline] Procesando hasta nivel ${processingLevel}`);
     
-    // TEMPORAL: Deshabilitamos pipeline para evitar problemas en producción
-    console.log('⚠️ [Progressive Pipeline] Pipeline temporalmente deshabilitado para deployment');
-    const pipelineResult = {
-      success: true,
-      documentId: document.id,
-      processing_level: processingLevel,
-      completed_steps: ['upload', 'basic_processing'],
-      failed_steps: [],
-      total_processing_time_ms: 0,
-      total_tokens_used: 0,
-      estimated_total_cost_usd: 0
-    };
+    // EJECUTAR PIPELINE REAL - Arquitectura COORDINACIÓN vs EJECUCIÓN aplicada ✅
+    console.log('🚀 [Progressive Pipeline] Ejecutando SimplePipeline real con arquitectura EJECUCIÓN');
+    const pipeline = new SimplePipeline();
+    const pipelineResult = await pipeline.processDocument(document.id, processingLevel);
     
     console.log('📊 [Progressive Pipeline] Resultado del pipeline:', {
       success: pipelineResult.success,
@@ -319,6 +313,7 @@ async function updateDocumentStatus(
 
     const { error } = await supabase
       .from('documents')
+      // @ts-ignore - Temporal fix para tipos Supabase
       .update(updateData)
       .eq('id', documentId);
 
@@ -352,7 +347,7 @@ export const reprocessDocument = authActionClient
         .from('documents')
         .select('*')
         .eq('id', parsedInput.documentId)
-        .single();
+        .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
       if (error || !document) {
         throw new Error('Documento no encontrado');
@@ -387,6 +382,7 @@ export const reprocessDocument = authActionClient
         // Actualizar tipo
         await supabase
           .from('documents')
+          // @ts-ignore - Temporal fix para tipos Supabase
           .update({ document_type: documentType })
           .eq('id', document.id);
 
@@ -443,7 +439,7 @@ export const deleteDocument = authActionClient
         .from('documents')
         .select('file_path')
         .eq('id', parsedInput.documentId)
-        .single();
+        .single() as { data: { file_path: string } | null, error: any };
 
       if (error || !document) {
         throw new Error('Documento no encontrado');

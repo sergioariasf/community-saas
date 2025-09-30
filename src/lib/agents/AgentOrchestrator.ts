@@ -9,7 +9,15 @@
 
 'use server';
 
-import { createSupabaseClient, createSupabaseServiceClient } from '@/supabase-clients/server';
+// Import dinámico para SupabaseApiHelper (EJECUCIÓN)
+let SupabaseApiHelper: any = null;
+
+async function loadSupabaseApiHelper() {
+  if (!SupabaseApiHelper) {
+    const { SupabaseApiHelper: Helper } = await import('../api/SupabaseApiHelper');
+    SupabaseApiHelper = Helper;
+  }
+}
 import { callGeminiAPI } from './gemini/GeminiClient';
 import { buildPrompt } from './gemini/PromptBuilder';
 import { parseAgentResponse } from './gemini/ResponseParser';
@@ -175,17 +183,26 @@ export async function callSaaSAgent(
  */
 async function getAgentConfig(agentName: string, useServiceClient = false): Promise<SaaSAgent | null> {
   try {
-    const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
+    // Cargar SupabaseApiHelper (EJECUCIÓN)
+    await loadSupabaseApiHelper();
     
-    const { data: agent, error } = await supabase
-      .from('agents')
-      .select('id, name, purpose, prompt_template, variables')
-      .eq('name', agentName)
-      .eq('is_active', true)
-      .single();
+    const agent = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      const { data, error } = await supabase
+        .from('agents')
+        .select('id, name, purpose, prompt_template, variables')
+        .eq('name', agentName)
+        .eq('is_active', true)
+        .single();
 
-    if (error || !agent) {
-      console.error(`[Agent Orchestrator] Agent not found: ${agentName}`, error);
+      if (error || !data) {
+        console.error(`[Agent Orchestrator] Agent not found: ${agentName}`, error);
+        return null;
+      }
+      
+      return data;
+    }, { useServiceRole: true });
+
+    if (!agent) {
       return null;
     }
 

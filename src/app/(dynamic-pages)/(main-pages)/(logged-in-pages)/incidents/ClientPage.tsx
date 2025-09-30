@@ -272,7 +272,7 @@ export default function IncidentsClientPage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <div className="text-sm text-muted-foreground">
-                    <p>Reportado: {new Date(incident.created_at).toLocaleDateString()}</p>
+                    <p>Reportado: {incident.created_at ? new Date(incident.created_at).toLocaleDateString() : 'N/A'}</p>
                     {incident.assigned_to && (
                       <p>Asignado a: {incident.assigned_to || 'Usuario'}</p>
                     )}

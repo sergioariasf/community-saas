@@ -28,7 +28,8 @@ export async function DELETE() {
     // PASO 1: Obtener todos los documentos
     const { data: documents, error: fetchError } = await supabase
       .from('documents')
-      .select('id, filename, file_path');
+      .select('id, filename, file_path')
+      .returns<Array<{id: string, filename: string, file_path: string}>>();
 
     if (fetchError) {
       return NextResponse.json({ 

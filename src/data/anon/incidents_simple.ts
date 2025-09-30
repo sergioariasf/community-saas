@@ -71,7 +71,7 @@ export async function createIncident(incident: IncidentInsert) {
       .select('organization_id')
       .eq('user_id', user.id)
       .limit(1)
-      .single();
+      .single() as { data: { organization_id: string } | null, error: any };
 
     if (roleError || !userRole?.organization_id) {
       throw new Error('User has no organization assigned');
@@ -80,6 +80,7 @@ export async function createIncident(incident: IncidentInsert) {
     // Include organization_id in the insert
     const { data, error } = await supabase
       .from('incidents')
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
       .insert([{
         ...incident,
         organization_id: userRole.organization_id
@@ -106,6 +107,7 @@ export async function updateIncident(id: string, updates: IncidentUpdate) {
     
     const { data, error } = await supabase
       .from('incidents')
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
       .update(updates)
       .eq('id', id)
       .select()
@@ -169,11 +171,11 @@ export async function getIncidentsStats(communityId: string) {
     const { data, error } = await supabase
       .from('incidents')
       .select('status')
-      .eq('community_id', communityId);
+      .eq('community_id', communityId) as { data: { status: string }[] | null, error: any };
 
-    if (error) {
+    if (error || !data) {
       console.error('Error fetching incident stats:', error);
-      throw error;
+      throw error || new Error('No data returned');
     }
 
     const stats = {

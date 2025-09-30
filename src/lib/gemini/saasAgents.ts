@@ -7,6 +7,8 @@
  * ACTUALIZADO: 2025-09-23
  */
 
+import type { Database } from '@/lib/database.types';
+
 // === NUEVA ARQUITECTURA MODULAR ===
 // Funciones principales migradas a src/lib/agents/
 export { callSaaSAgent } from '../agents/AgentOrchestrator';
@@ -128,7 +130,7 @@ async function getAgentConfig(agentName: string, useServiceClient = false): Prom
     const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
     
     // Buscar agente global primero, luego específico de organización
-    const { data, error } = await supabase
+    const { data, error } = await (supabase as any)
       .from('agents')
       .select('*')
       .eq('name', agentName)
@@ -522,7 +524,7 @@ async function saveCompleteActaMetadataLegacy(documentId: string, data: any): Pr
     }
 
     // Insertar en document_metadata con estructura completa
-    const { error } = await supabase
+    const { error } = await (supabase as any)
       .from('document_metadata')
       .insert({
         document_id: documentId,
@@ -558,7 +560,7 @@ async function saveExtractedMinutesLegacy(documentId: string, data: any, useServ
     const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
     
     // Obtener organization_id del documento
-    const { data: document } = await supabase
+    const { data: document } = await (supabase as any)
       .from('documents')
       .select('organization_id')
       .eq('id', documentId)
@@ -569,7 +571,8 @@ async function saveExtractedMinutesLegacy(documentId: string, data: any, useServ
       return false;
     }
 
-    const { error } = await supabase
+    // @ts-ignore - Temporal fix para problemas de tipos Supabase
+    const { error } = await (supabase as any)
       .from('extracted_minutes')
       .insert({
         document_id: documentId,

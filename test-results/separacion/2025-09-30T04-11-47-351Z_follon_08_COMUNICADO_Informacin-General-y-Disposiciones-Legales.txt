@@ -1,0 +1,45 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 8/25
+Tipo: comunicado
+Título: Información General y Disposiciones Legales
+Líneas originales: 306-335 (total: 30 líneas)
+Confianza: 80%
+Soportado: SÍ
+Marcador inicio: --- Página 9 ---
+Marcador final: --- Página 10 ---
+Caracteres: 587
+Descripción: General information regarding traffic fines, legal dispositions, and payment instructions.
+Keywords: LSV, LPACAP, R.G.C., R.P.S., R.G.V.
+=====================================
+
+DURACIÓN ESTIMADA
+Fecha de la siguiente revisión médica
+Muy corto
+Corto ☑
+Medio
+Largo
+14 días
+PARTE DE BAJA
+Fecha de la baja
+12/09/2020
+DATOS DEL FACULTATIVO - CIAS CAUSAS DEL ALTA MÉDICA:
+/DATOS DEL MÉDICO INSPECTOR
+Recaída:
+sí ☐
+NO ☑
+Fecha de la baja del proceso inicial del que es
+recaída
+PARTE DE ALTA ☑
+Fecha de alta (2) 21/09/2020
+(2) En los parte de alta, cumplimente también la fecha de baja
+7
+ROMERO VILCHEZ,
+ANTONIO
+21/09/2020
+Firma, fecha y sello
+N° de colegiado
+2828497644
+N° identificación del facultativo
+1606250106A
+Curación/Mejoría que permite realizar trabajo habitual ☑

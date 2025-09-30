@@ -11,6 +11,7 @@ import { ArrowLeft, Calendar, User, Clock, CheckCircle2, AlertTriangle, Edit3, T
 import { getIncidentById, updateIncidentStatus, deleteIncident } from '@/data/anon/incidents_simple';
 import { usePermissions } from '@/hooks/usePermissions';
 import type { Incident } from '@/data/anon/incidents_simple';
+import type { Database } from '@/lib/database.types';
 
 interface ClientPageProps {
   incidentId: string;
@@ -31,8 +32,8 @@ export default function IncidentDetailClientPage({ incidentId }: ClientPageProps
   const loadIncident = async () => {
     setIsLoading(true);
     try {
-      const result = await getIncidentById(incidentId);
-      if (result.success) {
+      const result = await getIncidentById(incidentId) as { success: boolean; data?: Incident; error?: string };
+      if (result.success && result.data) {
         setIncident(result.data);
       } else {
         console.error('Error loading incident:', result.error);
@@ -250,14 +251,14 @@ export default function IncidentDetailClientPage({ incidentId }: ClientPageProps
             <CardContent className="space-y-4">
               <div>
                 <Label className="text-sm font-medium text-muted-foreground">Creado</Label>
-                <p className="mt-1">{new Date(incident.created_at).toLocaleString()}</p>
+                <p className="mt-1">{incident.created_at ? new Date(incident.created_at).toLocaleString() : 'N/A'}</p>
               </div>
               
               <Separator />
               
               <div>
                 <Label className="text-sm font-medium text-muted-foreground">Última actualización</Label>
-                <p className="mt-1">{new Date(incident.updated_at).toLocaleString()}</p>
+                <p className="mt-1">{incident.updated_at ? new Date(incident.updated_at).toLocaleString() : 'N/A'}</p>
               </div>
               
               {incident.resolved_at && (

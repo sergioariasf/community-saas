@@ -1,0 +1,56 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 25/25
+Tipo: factura
+Título: Factura de Electro Mercantil Leganés D.A.M., S.L.
+Líneas originales: 839-879 (total: 41 líneas)
+Confianza: 95%
+Soportado: SÍ
+Marcador inicio: --- Página 25 ---
+Marcador final: ELECTRO MERCANTIL LEGANES D.A.M., S.L. Reg. Merc. Madrid Tomo 35033; Folio 78; Sección 8; Hoja M-630038; C.I.F. B-87621306
+Caracteres: 2019
+Descripción: Invoice from Electro Mercantil Leganés for Control y Tension SL.
+Keywords: factura, Electro Mercantil, 850162, TRANSFERENCIA, B83802850
+=====================================
+
+--- Página 12 ---
+ⓇSabadell
+NOTIFICACIÓN DE PAGO DE BS CONFIRMING
+Les comunicamos que Banco de Sabadell, S.A. ha sido contratado por MORFUS EQUIPAMIENTO COMERCIAL S.L. para gestionar
+el pago de las órdenes referenciadas, por un total de 8.226,96 EUR, que detallamos a continuación:
+Datos del proveedor
+CONTROL Y TENSION SL
+C/ JAVIER VICENTE MONTERO,
+2
+28282 EL ESCORIAL (MADRID)
+Orden de pago
+Núm. de orden
+1000037
+NIF: B83802850
+12677652
+Núm de referencia:
+Importe
+8.226,96
+Divisa
+EUR
+Vencimiento
+05.10.20
+Forma de pago
+Los pagos se efectuarán mediante transferencia a la cuenta: ES81-2100-2980-0602-0004-7252
+Espacio para modificar la domiciliación:
+La cuenta puede ser incorporada o modificada por ustedes en este mismo espacio, adjuntando Certificado de Titularidad con fecha de emisión inferior a 6 meses.
+SOLICITUD DE ANTICIPO DE BS CONFIRMING
+Banc Sabadell les ofrece la posibilidad de solicitar financiación sin recurso de dichas órdenes de pago:
+Solicitando esta financiación sin recurso el proveedor cede el crédito comercial a Banco de Sabadell, S.A., eliminando el riesgo de impago. Es una
+facilidad financiera que no consume sus líneas de financiación ni se imputa en su CIRBE. La solicitud supone la aceptación de las condiciones del
+anticipo del pago y las condiciones generales predispuestas que figuran en este documento, quedando sometida y condicionada a lo establecido en
+las mismas.
+Condiciones del anticipo del pago
+Tipo de interés: FIJO: 3,150%
+Modalidad de anticipo
+Comisión de anticipo: 0,45 %.
+☐ Anticipo general: solicitamos que procedan al anticipo de todas las órdenes de pago a nuestro favor que reciban a partir de hoy del cliente
+indicado. Estas instrucciones se mantendrán vigentes mientras no sean revocadas por escrito por alguna de las partes. Los tipos de interés de los
+anticipos serán actualizados y comunicados en las liquidaciones que se practiquen.
+Anticipo puntual: solicitamos que procedan al anticipo de las órdenes relacionadas el próximo día 1/8/20
+Banco de Sabadell, S.A.

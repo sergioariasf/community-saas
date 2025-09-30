@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-09-29T04:18:18.300Z",
+  "successRate": 0,
+  "results": [
+    {
+      "testName": "Real E2E Test: ACTA 19 MAYO 2022.pdf",
+      "success": false,
+      "steps": {
+        "fileUpload": false,
+        "databaseInsert": false,
+        "pipelineExecution": false,
+        "dataExtraction": false,
+        "uiDataAvailable": false,
+        "cleanupCompleted": false
+      },
+      "duration": 254,
+      "error": "Upload failed: Error inesperado al subir el archivo"
+    }
+  ]
+}

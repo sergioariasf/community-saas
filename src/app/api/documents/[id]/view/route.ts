@@ -9,6 +9,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 
 export async function GET(
   request: NextRequest,
@@ -26,7 +27,7 @@ export async function GET(
       .from('documents')
       .select('filename, file_path, mime_type, file_size, organization_id, extracted_text')
       .eq('id', id)
-      .single();
+      .single() as { data: Database['public']['Tables']['documents']['Row'] | null, error: any };
 
     if (docError || !document) {
       console.error('❌ [DOCUMENT VIEWER] Document not found:', docError);
@@ -122,7 +123,7 @@ export async function HEAD(
       .from('documents')
       .select('filename, file_path, mime_type, file_size')
       .eq('id', id)
-      .single();
+      .single() as { data: { filename: string; file_path: string; mime_type: string; file_size: number } | null, error: any };
 
     if (docError || !document) {
       return new NextResponse(null, { status: 404 });

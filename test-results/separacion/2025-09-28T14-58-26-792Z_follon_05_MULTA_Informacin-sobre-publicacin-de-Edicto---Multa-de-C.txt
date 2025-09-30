@@ -1,0 +1,54 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 5/24
+Tipo: multa
+Título: Información sobre publicación de Edicto - Multa de Circulación
+Líneas originales: 153-190 (total: 38 líneas)
+Confianza: 95%
+Soportado: NO
+Marcador inicio: --- Página 5 ---
+medio ambiente y MADRID
+Marcador final: LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO
+Caracteres: 825
+Descripción: Traffic ticket notification due to exceeding speed limits. The document details the infraction, fine amount, and payment methods.
+Keywords: MULTA DE CIRCULACIÓN, EXPEDIENTE:, 935/711076230.0, 5581FTH, 1827563, 31/07/2019, 100,00 EUROS, ANTONIO LARA GUTIERREZ, CALLE BADAJOZ, GALAPAGAR
+=====================================
+
+DATOS DE/LA TRABAJADOR/A
+Primer apellido
+LARA
+GUTIERREZ
+SITUACIÓN:
+ACTIVO ☑
+PERCEPTOR DE DESEMPLEO CONTRIBUTIVO ☐
+Segundo apellido
+Nombre
+DNI-NIE-Pasaporte
+ANTONIO
+01827563Y
+N° Tarjeta sanitaria
+N° de la Seg. Social
+Domicilio habitual:
+LRGT650802916019
+280373935701
+Localidad
+CL JAVIER VICENTE MONTERO, 2
+Provincia
+ESCORIAL, EL
+MADRID
+Nombre de la empresa
+Puesto de trabajo
+Código postal
+Teléfono móvil
+28280
+Teléfono fijo
+918964063 609273707
+Código nacional de ocupación (CNO)
+Directores generales, empresa privada
+Control y Tension
+ly'
+1120
+DESCRIPCIÓN DE LA LIMITACIÓN DE LA CAPACIDAD FUNCIONAL (en el parte de baja) / RESULTADO DEL RECONOCIMIENTO MÉDICO (en el parte de alta)
+Curación/Mejoría que permite realizar trabajo habitual
+DIAGNÓSTICO
+Contacto y (sospecha de) exposición a otras enfermedades víricas transmisibles

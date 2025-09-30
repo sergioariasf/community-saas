@@ -47,17 +47,17 @@ export class PdfParseExtractor extends BaseTextExtractor {
           confidence: 0.9,
           pages: result.pages,
           processingTime,
-          method: 'pdf-parse-direct'
+          method: 'pdf-parse'
         });
       } else {
         return this.createErrorResult(
           result.error || 'PDF-parse extraction failed - no text extracted',
-          'pdf-parse-direct'
+          'pdf-parse'
         );
       }
 
     } catch (error) {
-      return this.createErrorResult(error, 'pdf-parse-direct');
+      return this.createErrorResult(error, 'pdf-parse');
     }
   }
 
@@ -68,18 +68,26 @@ export class PdfParseExtractor extends BaseTextExtractor {
     try {
       this.log('info', 'Starting direct PDF-parse extraction...');
       
-      // Import pdf-parse (works better with require in Node context)
+      // Import pdf-parse with error handling
       const pdfParse = require('pdf-parse');
       
+      // Validate buffer before processing
+      if (!Buffer.isBuffer(buffer) || buffer.length === 0) {
+        throw new Error('Invalid buffer provided to pdf-parse');
+      }
+      
+      // Log buffer info for debugging
+      this.log('info', `Processing PDF buffer: ${buffer.length} bytes`);
+      
       const data = await pdfParse(buffer, {
-        max: 0 // Parse all pages
+        max: 0 // Parse all pages (remove any other options that might cause conflicts)
       });
 
       return {
         success: true,
         text: data.text.trim(),
         pages: data.numpages,
-        method: 'pdf-parse-direct'
+        method: 'pdf-parse'
       };
 
     } catch (error) {

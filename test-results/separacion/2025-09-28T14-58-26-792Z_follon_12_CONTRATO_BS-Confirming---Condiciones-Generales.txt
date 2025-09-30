@@ -1,0 +1,63 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 12/24
+Tipo: contrato
+Título: BS Confirming - Condiciones Generales
+Líneas originales: 424-470 (total: 47 líneas)
+Confianza: 90%
+Soportado: SÍ
+Marcador inicio: ⓇSabadell
+BS Confirming
+Marcador final: www.bancsabadell.com
+Caracteres: 657
+Descripción: General conditions for BS Confirming service, includes details of the provider, Banco Sabadell and details about orders and advance payments.
+Keywords: BS Confirming, Banco Sabadell, 12677652, ANTICIPO, cesión efectiva, legislación española
+=====================================
+
+49
+100,00
+MATRÍCULA
+5581FTH
+LA PRESENTE COMUNICACIÓN NO TIENE CARÁCTER DE NOTIFICACIÓN DE ACTO ADMINISTRATIVO
+007961-007962
+
+--- Página 6 ---
+1
+
+--- Página 7 ---
+0
+Albarán
+Fecha:
+Hoja
+01.10.2020
+1
+Cliente número:
+594182
+de
+Albarán número:
+Su NIF:
+2002337934
+ESB83802850
+1
+Comprador
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Su Persona de contacto
+fischer
+Ⓡ
+Fischer
+innovative solutions
+Fischer ibérica, S.A.U. CI. Klaus Fischer, 1/43300 Mont-roig del Camp
+CONTROL Y TENSION S.L.
+POL. EUROPOLIS
+CABO RUFINO LAZARO 5
+28230 LAS ROZAS
+Teléfono / Fax
+Su representante
+Su Pedido:
+Pedido número:
+Peso Bruto:
+Enviado por:
+reposicion

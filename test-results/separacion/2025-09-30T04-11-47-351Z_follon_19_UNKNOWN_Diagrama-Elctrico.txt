@@ -1,0 +1,26 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 19/25
+Tipo: unknown
+Título: Diagrama Eléctrico
+Líneas originales: 695-705 (total: 11 líneas)
+Confianza: 60%
+Soportado: NO
+Marcador inicio: --- Página 20 ---
+Marcador final: --- Página 21 ---
+Caracteres: 569
+Descripción: Diagram with electrical components and connections.
+Keywords: diagrama, eléctrico, conexiones, GS-Hydro
+=====================================
+
+GESTIÓN!
+*
+LA JEFA DE DEPARTAMENTO DE RECURSOS
+DE MULTAS DE CIRCULACIÓN.
+rece
+EVA GARCÍA MATAS
+* Ord. Mov.: Ordenanza de Movilidad
+R.G.C.: Reglamento General de Circulación (Real Decreto 1428/2003, de 21 de noviembre -BOE de 23.12.03-).
+L.S.V.:Texto refundido de la Ley sobre Tráfico, Circulación de Vehículos a Motor y Seguridad Vial (Real Decreto Legislativo 6/2015, de 30 de octubre).
+R.P.S.: Reglamento de Procedimiento Sancionador en Materia de Tráfico, Circulación de Vehiculos a Motor y Seguridad Vial (Real Decreto 320/1994, de 25
+de febrero -BOE de 21.04.94-).

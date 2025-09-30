@@ -1,6 +1,7 @@
 'use server';
 
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 import { redirect } from 'next/navigation';
 
 export type UserRole = 'admin' | 'manager' | 'resident';
@@ -38,7 +39,7 @@ export async function getCurrentUserPermissions(): Promise<UserPermissions | nul
         name
       )
     `)
-    .eq('user_id', user.id);
+    .eq('user_id', user.id) as { data: Array<{ role: string; community_id: string; communities: { name: string } | null }> | null, error: any };
 
   if (rolesError) {
     console.error('Error fetching user roles:', rolesError);

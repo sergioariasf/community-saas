@@ -1,0 +1,21 @@
+
+=== DOCUMENTO SEPARADO (DEBUG) ===
+Número: 21/24
+Tipo: unknown
+Título: Fechas y números
+Líneas originales: 689-693 (total: 5 líneas)
+Confianza: 20%
+Soportado: NO
+Marcador inicio: --- Página 22 ---
+03/12/19
+Marcador final: 17/02/20301,25
+Caracteres: 57
+Descripción: Fechas y números sueltos.
+Keywords: 03/12/19, 04/12/19, 11/12/19, 17/02/20
+=====================================
+
+GENERAL
+DIRE GENERAL
+NOIO
+CIRCULACIÓN
+VICIA DE LA CIRCULA

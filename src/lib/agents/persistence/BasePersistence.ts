@@ -7,7 +7,8 @@
  * ACTUALIZADO: 2025-09-23
  */
 
-import { createSupabaseClient, createSupabaseServiceClient } from '@/supabase-clients/server';
+import { SupabaseApiHelper } from '@/lib/api/SupabaseApiHelper';
+import type { Database } from '@/lib/database.types';
 
 export interface PersistenceResult {
   success: boolean;
@@ -27,18 +28,21 @@ export async function getDocumentInfo(documentId: string, useServiceClient = fal
   community_id?: string;
 } | null> {
   try {
-    const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
-    
-    const { data: document, error } = await supabase
-      .from('documents')
-      .select('organization_id, community_id')
-      .eq('id', documentId)
-      .single();
+    const document = await SupabaseApiHelper.executeQuery(async (supabase) => {
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
+      const { data, error } = await (supabase as any)
+        .from('documents')
+        .select('organization_id, community_id')
+        .eq('id', documentId)
+        .single();
 
-    if (error || !document) {
-      console.error('[Base Persistence] Document not found:', documentId, error);
-      return null;
-    }
+      if (error) {
+        console.error('[Base Persistence] Document not found:', documentId, error);
+        return null;
+      }
+
+      return data;
+    }, { useServiceRole: true });
 
     return document;
   } catch (error) {
@@ -80,25 +84,18 @@ export async function insertWithOrganization(
       ...data
     };
 
-    // Insertar en la tabla especificada
-    const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
-    
-    const { error } = await supabase
-      .from(tableName)
-      .insert(recordData);
+    // Insertar en la tabla especificada usando SupabaseApiHelper
+    await SupabaseApiHelper.executeQuery(async (supabase) => {
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
+      const { error } = await (supabase as any)
+        .from(tableName)
+        .insert(recordData);
 
-    if (error) {
-      console.error(`[Base Persistence] Error inserting into ${tableName}:`, error);
-      return {
-        success: false,
-        error: `Database insert failed: ${error.message}`,
-        metadata: {
-          documentId,
-          table: tableName,
-          processingTime: Date.now() - startTime
-        }
-      };
-    }
+      if (error) {
+        console.error(`[Base Persistence] Error inserting into ${tableName}:`, error);
+        throw new Error(`Database insert failed: ${error.message}`);
+      }
+    }, { useServiceRole: true });
 
     console.log(`[Base Persistence] Successfully saved to ${tableName} for document: ${documentId}`);
     
@@ -157,26 +154,20 @@ export async function upsertWithOrganization(
       ...data
     };
 
-    const supabase = useServiceClient ? createSupabaseServiceClient() : await createSupabaseClient();
-    
-    const { error } = await supabase
-      .from(tableName)
-      .upsert(recordData, {
-        onConflict: 'document_id'
-      });
+    // Realizar upsert usando SupabaseApiHelper
+    await SupabaseApiHelper.executeQuery(async (supabase) => {
+      // @ts-ignore - Temporal fix para problemas de tipos Supabase
+      const { error } = await (supabase as any)
+        .from(tableName)
+        .upsert(recordData, {
+          onConflict: 'document_id'
+        });
 
-    if (error) {
-      console.error(`[Base Persistence] Error upserting into ${tableName}:`, error);
-      return {
-        success: false,
-        error: `Database upsert failed: ${error.message}`,
-        metadata: {
-          documentId,
-          table: tableName,
-          processingTime: Date.now() - startTime
-        }
-      };
-    }
+      if (error) {
+        console.error(`[Base Persistence] Error upserting into ${tableName}:`, error);
+        throw new Error(`Database upsert failed: ${error.message}`);
+      }
+    }, { useServiceRole: useServiceClient });
 
     console.log(`[Base Persistence] Successfully upserted to ${tableName} for document: ${documentId}`);
     

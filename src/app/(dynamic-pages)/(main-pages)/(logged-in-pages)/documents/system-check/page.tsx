@@ -5,6 +5,7 @@ import { T } from '@/components/ui/Typography';
 import { CheckCircle, AlertCircle, XCircle, Settings, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import { createSupabaseClient } from '@/supabase-clients/server';
+import type { Database } from '@/lib/database.types';
 import { getGoogleVisionStatus } from '@/lib/pdf/googleVision';
 
 export const dynamic = 'force-dynamic';
@@ -56,7 +57,7 @@ async function SystemCheck() {
       const { data: agents } = await supabase
         .from('agents')
         .select('name, purpose')
-        .is('organization_id', null);
+        .is('organization_id', null) as { data: { name: string, purpose: string }[] | null, error: any };
 
       const requiredAgents = ['document_classifier', 'minutes_extractor', 'invoice_extractor'];
       const existingAgents = agents?.map(a => a.name) || [];
