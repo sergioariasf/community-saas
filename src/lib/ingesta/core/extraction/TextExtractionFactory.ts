@@ -39,6 +39,8 @@ export class TextExtractionFactory {
   async extractText(context: ExtractionContext): Promise<ExtractionResult> {
     console.log('🔧 [TEXT EXTRACTION] Starting extraction strategy chain...');
     console.log(`📄 [TEXT EXTRACTION] File: ${context.filename} (${context.buffer.length} bytes)`);
+    console.log(`🔧 [TEXT EXTRACTION] Environment: NODE_ENV=${process.env.NODE_ENV}, VERCEL=${process.env.VERCEL}`);
+    console.log(`🔧 [TEXT EXTRACTION] Available extractors: ${this.getAvailableExtractors().join(', ')}`);
     
     let lastResult: ExtractionResult | null = null;
     
@@ -46,14 +48,27 @@ export class TextExtractionFactory {
     const pdfExtractor = this.getExtractor('pdf-parse');
     if (pdfExtractor) {
       console.log('📄 [TEXT EXTRACTION] Strategy 1: PDF-parse extraction...');
-      const pdfResult = await pdfExtractor.extract(context);
-      lastResult = pdfResult;
-      
-      // Verificar si cumple con el mínimo de texto
-      if (this.isResultSufficient(pdfResult, context.minTextLength || 50)) {
-        console.log('✅ [TEXT EXTRACTION] PDF-parse successful - sufficient text extracted');
-        return pdfResult;
+      try {
+        const pdfResult = await pdfExtractor.extract(context);
+        lastResult = pdfResult;
+        console.log(`📄 [TEXT EXTRACTION] PDF-parse result: success=${pdfResult.success}, length=${pdfResult.textLength || 0}`);
+        
+        // Verificar si cumple con el mínimo de texto
+        if (this.isResultSufficient(pdfResult, context.minTextLength || 50)) {
+          console.log('✅ [TEXT EXTRACTION] PDF-parse successful - sufficient text extracted');
+          return pdfResult;
+        }
+      } catch (error) {
+        console.error('❌ [TEXT EXTRACTION] PDF-parse failed with error:', error);
+        lastResult = {
+          success: false,
+          method: 'pdf-parse-error',
+          error: error instanceof Error ? error.message : 'Unknown error',
+          textLength: 0
+        };
       }
+    } else {
+      console.log('❌ [TEXT EXTRACTION] PDF-parse extractor not found!');
     }
     
     console.log('⚠️ [TEXT EXTRACTION] PDF-parse insufficient - trying OCR strategies...');
@@ -62,13 +77,28 @@ export class TextExtractionFactory {
     const visionExtractor = this.getExtractor('google-vision-ocr');
     if (visionExtractor && visionExtractor.canHandle(context)) {
       console.log('👁️ [TEXT EXTRACTION] Strategy 2: Google Vision OCR...');
-      const visionResult = await visionExtractor.extract(context);
-      lastResult = visionResult;
-      
-      if (this.isResultSufficient(visionResult, context.minTextLength || 50)) {
-        console.log('✅ [TEXT EXTRACTION] Google Vision OCR successful');
-        return visionResult;
+      try {
+        const visionResult = await visionExtractor.extract(context);
+        lastResult = visionResult;
+        console.log(`👁️ [TEXT EXTRACTION] Google Vision result: success=${visionResult.success}, length=${visionResult.textLength || 0}`);
+        
+        if (this.isResultSufficient(visionResult, context.minTextLength || 50)) {
+          console.log('✅ [TEXT EXTRACTION] Google Vision OCR successful');
+          return visionResult;
+        }
+      } catch (error) {
+        console.error('❌ [TEXT EXTRACTION] Google Vision failed with error:', error);
+        lastResult = {
+          success: false,
+          method: 'google-vision-error',
+          error: error instanceof Error ? error.message : 'Unknown error',
+          textLength: 0
+        };
       }
+    } else if (visionExtractor) {
+      console.log('⚠️ [TEXT EXTRACTION] Google Vision extractor found but cannot handle this context');
+    } else {
+      console.log('❌ [TEXT EXTRACTION] Google Vision extractor not found!');
     }
     
     console.log('⚠️ [TEXT EXTRACTION] Google Vision insufficient - trying Gemini Flash...');
