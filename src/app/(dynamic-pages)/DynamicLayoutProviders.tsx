@@ -4,6 +4,7 @@ import React, { Suspense } from 'react';
 import { Toaster as SonnerToaster } from 'sonner';
 import { ThemeProvider, useTheme } from 'next-themes';
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import { VerticalProvider } from '@/providers/VerticalProvider';
 
 function CustomerToaster() {
   const theme = useTheme();
@@ -25,17 +26,25 @@ export function DynamicLayoutProviders({
   children: React.ReactNode;
 }) {
   return (
-    <ThemeProvider enableSystem themes={['light', 'dark']} defaultTheme="light">
-      {children}
-      <Suspense>
-        <ProgressBar
-          height="4px"
-          color="#0047ab"
-          options={{ showSpinner: false }}
-          shallowRouting
-        />
-        <CustomerToaster />
-      </Suspense>
+    <ThemeProvider 
+      enableSystem 
+      themes={['light', 'dark']} 
+      defaultTheme="system"
+      attribute="class"
+      disableTransitionOnChange={false}
+    >
+      <VerticalProvider>
+        {children}
+        <Suspense>
+          <ProgressBar
+            height="4px"
+            color="#0047ab"
+            options={{ showSpinner: false }}
+            shallowRouting
+          />
+          <CustomerToaster />
+        </Suspense>
+      </VerticalProvider>
     </ThemeProvider>
   );
 }

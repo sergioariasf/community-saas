@@ -78,14 +78,12 @@ import { SimpleThemeToggle } from '@/components/ui/theme-toggle';
 
 export const ExternalNavigation = () => {
   return (
-    <header className="container mx-auto px-4 lg:px-6 h-14 flex items-center">
+    <header className="container mx-auto px-4 lg:px-6 h-24 flex items-center">
       <Link className="flex items-center justify-center" href="/">
-        <Image 
-          src="/logos/logo-fazil.svg" 
-          alt="Fazil Logo" 
-          width={140} 
-          height={36}
-          className="h-9 w-auto"
+        <img
+          src="/images/logo-fazil.svg"
+          alt="Fazil"
+          className="h-20 w-auto"
         />
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">

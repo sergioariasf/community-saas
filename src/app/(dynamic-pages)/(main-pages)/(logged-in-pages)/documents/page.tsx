@@ -67,8 +67,8 @@ export default function DocumentsPage() {
             </Button>
           </Link>
           <Link href="/documents/multi-analyzer">
-            <Button variant="outline" className="flex items-center gap-2 border-blue-200 text-blue-700 hover:bg-blue-50">
-              <Scissors className="h-4 w-4" /> Multi-Documento
+            <Button variant="outline" className="flex items-center gap-2">
+              <Scissors className="h-4 w-4" /> Multidocumento
             </Button>
           </Link>
           <CleanAllButton />

@@ -183,7 +183,7 @@ ACTUALIZADO: 2025-09-14
 
 ### UI 🚧
 
-- Modo Dark 🚧
+- Modo Dark ✅
 - Mejorar upload seguimiento
 
 ### Modulo Chat 🚧

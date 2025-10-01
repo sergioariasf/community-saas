@@ -5,7 +5,8 @@
   "author": "Bhargav Ponnapalli <imbhargav5@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev --turbopack --port 3001",
+    "dev": "rm -rf .next && next dev --turbopack --port 3001",
+    "dev:no-clean": "next dev --turbopack --port 3001",
     "start": "next start",
     "generate:types:local": "export $(cat .env.local | xargs) &&  supabase gen types typescript --project-id ${SUPABASE_PROJECT_REF} --schema public > src/lib/database.types.ts",
     "generate:schema": "node supabase/scripts/update-database-schema.js",

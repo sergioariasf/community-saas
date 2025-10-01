@@ -10,6 +10,8 @@ import { PlusCircle, AlertTriangle, Clock, CheckCircle2, Filter, Eye } from 'luc
 import { getIncidentsByCommunity, getIncidentsStats, updateIncidentStatus } from '@/data/anon/incidents_simple';
 import { getUserCommunities } from '@/data/anon/communities';
 import { usePermissions } from '@/hooks/usePermissions';
+import { useVerticalLabel } from '@/hooks/useVertical';
+import { DynamicPageTitle } from '@/components/vertical/DynamicPageTitle';
 import type { Incident } from '@/data/anon/incidents_simple';
 
 type IncidentStats = {
@@ -29,6 +31,10 @@ export default function IncidentsClientPage() {
   
   const router = useRouter();
   const { isAdmin, isManager } = usePermissions();
+  
+  // 🚀 VERTICAL LABELS - Títulos dinámicos según el vertical
+  const incidentsLabel = useVerticalLabel('incidents');
+  const newIncidentLabel = useVerticalLabel('incidents.new');
 
   useEffect(() => {
     loadCommunities();
@@ -136,12 +142,15 @@ export default function IncidentsClientPage() {
 
   return (
     <div className="space-y-6">
+      {/* Componente para actualizar título de pestaña dinámicamente */}
+      <DynamicPageTitle labelKey="incidents" fallback="Incidencias" />
+      
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Sistema de Incidencias</h1>
+          <h1 className="text-3xl font-bold tracking-tight">Sistema de {incidentsLabel}</h1>
           <p className="text-muted-foreground">
-            Gestiona reportes y tickets de tu comunidad
+            Gestiona {incidentsLabel.toLowerCase()} de tu organización
           </p>
         </div>
         <div className="flex items-center gap-3">
@@ -159,7 +168,7 @@ export default function IncidentsClientPage() {
           </Select>
           <Button onClick={() => router.push('/incidents/new')}>
             <PlusCircle className="w-4 h-4 mr-2" />
-            Nueva Incidencia
+            {newIncidentLabel}
           </Button>
         </div>
       </div>
@@ -173,7 +182,7 @@ export default function IncidentsClientPage() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{stats.total}</div>
-            <p className="text-xs text-muted-foreground">incidencias registradas</p>
+            <p className="text-xs text-muted-foreground">{incidentsLabel.toLowerCase()} registradas</p>
           </CardContent>
         </Card>
         <Card>
@@ -233,16 +242,16 @@ export default function IncidentsClientPage() {
         <Card>
           <CardContent className="flex flex-col items-center justify-center py-8">
             <AlertTriangle className="w-12 h-12 text-muted-foreground mb-4" />
-            <h3 className="text-lg font-semibold mb-2">No hay incidencias</h3>
+            <h3 className="text-lg font-semibold mb-2">No hay {incidentsLabel.toLowerCase()}</h3>
             <p className="text-muted-foreground text-center mb-4">
               {statusFilter === 'all' 
-                ? 'No se encontraron incidencias en esta comunidad.'
-                : `No se encontraron incidencias con estado "${statusFilter}".`
+                ? `No se encontraron ${incidentsLabel.toLowerCase()} en esta comunidad.`
+                : `No se encontraron ${incidentsLabel.toLowerCase()} con estado "${statusFilter}".`
               }
             </p>
             <Button onClick={() => router.push('/incidents/new')}>
               <PlusCircle className="w-4 h-4 mr-2" />
-              Crear Primera Incidencia
+              {newIncidentLabel}
             </Button>
           </CardContent>
         </Card>

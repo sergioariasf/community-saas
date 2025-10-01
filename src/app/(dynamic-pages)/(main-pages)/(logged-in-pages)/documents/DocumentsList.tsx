@@ -374,7 +374,7 @@ export const DocumentsList = ({ documents, showActions = true }: DocumentsListPr
                 <TableHead>Tipo</TableHead>
                 <TableHead>Estado</TableHead>
                 <TableHead className="hidden md:table-cell">Tamaño</TableHead>
-                <TableHead className="hidden lg:table-cell">Fecha</TableHead>
+                <TableHead className="hidden lg:table-cell">Procesamiento</TableHead>
                 <TableHead className="text-right">Acciones</TableHead>
               </TableRow>
             </TableHeader>
