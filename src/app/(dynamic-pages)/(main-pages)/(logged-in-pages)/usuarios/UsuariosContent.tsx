@@ -27,10 +27,13 @@ import {
   Filter,
   Download,
   Eye,
-  X
+  X,
+  ChevronDown
 } from 'lucide-react';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createClient } from '@/supabase-clients/client';
+import { EditUserModal } from '@/components/usuarios/EditUserModal';
 import Link from 'next/link';
 
 interface UsuariosContentProps {
@@ -49,55 +52,43 @@ interface Usuario {
   created: string;
 }
 
-// Datos de ejemplo para demostración
-const usuariosEjemplo: Usuario[] = [
-  {
-    id: '1',
-    name: 'Sergio Arias',
-    email: 'sergioariasf@gmail.com',
-    role: 'admin',
-    community: 'Global',
-    status: 'active',
-    lastLogin: '2025-09-16',
-    created: '2024-01-15'
-  },
-  {
-    id: '2',
-    name: 'María García',
-    email: 'maria.garcia@email.com',
-    role: 'manager',
-    community: 'Residencial Las Flores',
-    status: 'active',
-    lastLogin: '2025-09-15',
-    created: '2024-03-20'
-  },
-  {
-    id: '3',
-    name: 'Juan Pérez',
-    email: 'juan.perez@email.com',
-    role: 'resident',
-    community: 'Residencial Las Flores',
-    status: 'pending',
-    lastLogin: null,
-    created: '2025-09-10'
-  },
-  {
-    id: '4',
-    name: 'Ana López',
-    email: 'ana.lopez@email.com',
-    role: 'manager',
-    community: 'Torre Azul',
-    status: 'active',
-    lastLogin: '2025-09-14',
-    created: '2024-06-12'
-  }
-];
+// Tipo para datos de usuario de la base de datos
+interface UserRoleData {
+  id: string;
+  user_id: string;
+  organization_id: string;
+  community_id: string | null;
+  role: string;
+  created_at: string;
+  auth_users: {
+    email: string;
+    raw_user_meta_data: any;
+    last_sign_in_at?: string;
+  };
+  communities?: {
+    name: string;
+  } | null;
+  organizations?: {
+    name: string;
+  } | null;
+}
 
 export function UsuariosContent({ user }: UsuariosContentProps) {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterRole, setFilterRole] = useState('all');
+  const [filterStatus, setFilterStatus] = useState('all');
+  const [showFilters, setShowFilters] = useState(false);
   const [selectedUser, setSelectedUser] = useState<Usuario | null>(null);
   const [showUserDetail, setShowUserDetail] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+  const [usuarios, setUsuarios] = useState<Usuario[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [stats, setStats] = useState({
+    total: 0,
+    admins: 0,
+    managers: 0,
+    pending: 0
+  });
 
   const getRoleBadge = (role: string) => {
     switch (role) {
@@ -135,6 +126,145 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
     setShowUserDetail(false);
   };
 
+  const openEditModal = (usuario: Usuario) => {
+    setSelectedUser(usuario);
+    setShowEditModal(true);
+  };
+
+  const closeEditModal = () => {
+    setSelectedUser(null);
+    setShowEditModal(false);
+  };
+
+  const handleUserUpdated = () => {
+    loadUsers(); // Recargar la lista de usuarios
+  };
+
+  // Función para cargar usuarios de la organización del admin
+  const loadUsers = async () => {
+    try {
+      setLoading(true);
+      const supabase = createClient();
+
+      // 1. Obtener la organización del usuario actual
+      const { data: currentUserRole, error: userError } = await supabase
+        .from('user_roles')
+        .select('organization_id')
+        .eq('user_id', user.id)
+        .single();
+
+
+      if (userError || !currentUserRole) {
+        console.error('Error getting current user organization:', userError);
+        return;
+      }
+
+      // 2. Obtener todos los user_roles de la misma organización
+      
+      const { data: userRolesData, error: userRolesError } = await supabase
+        .from('user_roles')
+        .select(`
+          id,
+          user_id,
+          organization_id,
+          community_id,
+          role,
+          created_at,
+          communities (
+            name
+          ),
+          organizations (
+            name
+          )
+        `)
+        .eq('organization_id', currentUserRole.organization_id);
+
+
+      if (userRolesError || !userRolesData) {
+        console.error('Error loading user roles:', userRolesError);
+        return;
+      }
+
+      // 3. Por ahora, crear datos simples basados en los user_ids
+      // TODO: Mejorar esto cuando tengamos acceso a auth.users
+      const userIds = userRolesData.map(ur => ur.user_id);
+
+      // Crear datos temporales usando los emails conocidos
+      const knownEmails: { [key: string]: string } = {
+        'ff97047d-9ce5-4d8f-80bc-a0da476d7f8b': 'sergioariasf@outlook.es',
+        '4d98258e-a547-467b-a239-ad1be3a41fa4': 'sergio.arias@fazilonline.com'
+      };
+
+      // 4. Combinar datos con emails conocidos
+      const usersData = userRolesData.map(userRole => {
+        const email = knownEmails[userRole.user_id] || `user-${userRole.user_id.slice(0,8)}@domain.com`;
+        return {
+          ...userRole,
+          auth_users: { 
+            email: email, 
+            raw_user_meta_data: { name: email.split('@')[0] }, 
+            last_sign_in_at: userRole.role === 'admin' ? new Date().toISOString() : null 
+          }
+        };
+      });
+
+
+      // 5. Transformar datos para la UI  
+      const transformedUsers: Usuario[] = (usersData || []).map((userData: any) => {
+        const fullName = userData.auth_users.raw_user_meta_data?.full_name || 
+                        userData.auth_users.raw_user_meta_data?.name || 
+                        userData.auth_users.email.split('@')[0];
+        
+        return {
+          id: userData.user_id,
+          name: fullName,
+          email: userData.auth_users.email,
+          role: userData.role,
+          community: userData.communities?.name || userData.organizations?.name || 'Global',
+          status: userData.auth_users.last_sign_in_at ? 'active' : 'pending',
+          lastLogin: userData.auth_users.last_sign_in_at || null,
+          created: userData.created_at
+        };
+      });
+
+      setUsuarios(transformedUsers);
+      
+      // 6. Calcular estadísticas
+      const totalUsers = transformedUsers.length;
+      const adminCount = transformedUsers.filter(u => u.role === 'admin').length;
+      const managerCount = transformedUsers.filter(u => u.role === 'manager').length;
+      const pendingCount = transformedUsers.filter(u => u.status === 'pending').length;
+      
+      setStats({
+        total: totalUsers,
+        admins: adminCount,
+        managers: managerCount,
+        pending: pendingCount
+      });
+
+    } catch (error) {
+      console.error('Error loading users:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // Función para filtrar usuarios
+  const filteredUsers = usuarios.filter(usuario => {
+    const matchesSearch = usuario.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                         usuario.email.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    const matchesRole = filterRole === 'all' || usuario.role === filterRole;
+    const matchesStatus = filterStatus === 'all' || usuario.status === filterStatus;
+    
+    return matchesSearch && matchesRole && matchesStatus;
+  });
+
+  // Cargar usuarios al montar el componente
+  useEffect(() => {
+    loadUsers();
+  }, [user.id]);
+
   return (
     <div className="container mx-auto py-8 px-4 max-w-7xl">
       <div className="mb-8">
@@ -163,7 +293,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
               <Users className="h-5 w-5 text-blue-600" />
               <div>
                 <p className="text-sm text-gray-600">Total Usuarios</p>
-                <p className="text-2xl font-bold">24</p>
+                <p className="text-2xl font-bold">{loading ? '...' : stats.total}</p>
               </div>
             </div>
           </CardContent>
@@ -175,7 +305,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
               <Shield className="h-5 w-5 text-green-600" />
               <div>
                 <p className="text-sm text-gray-600">Administradores</p>
-                <p className="text-2xl font-bold">3</p>
+                <p className="text-2xl font-bold">{loading ? '...' : stats.admins}</p>
               </div>
             </div>
           </CardContent>
@@ -187,7 +317,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
               <Building2 className="h-5 w-5 text-purple-600" />
               <div>
                 <p className="text-sm text-gray-600">Managers</p>
-                <p className="text-2xl font-bold">8</p>
+                <p className="text-2xl font-bold">{loading ? '...' : stats.managers}</p>
               </div>
             </div>
           </CardContent>
@@ -199,7 +329,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
               <UserPlus className="h-5 w-5 text-orange-600" />
               <div>
                 <p className="text-sm text-gray-600">Pendientes</p>
-                <p className="text-2xl font-bold">5</p>
+                <p className="text-2xl font-bold">{loading ? '...' : stats.pending}</p>
               </div>
             </div>
           </CardContent>
@@ -221,9 +351,14 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
             </div>
             
             <div className="flex gap-2">
-              <Button variant="outline" size="sm">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => setShowFilters(!showFilters)}
+              >
                 <Filter className="h-4 w-4 mr-2" />
                 Filtros
+                <ChevronDown className={`h-4 w-4 ml-2 transition-transform ${showFilters ? 'rotate-180' : ''}`} />
               </Button>
               <Button variant="outline" size="sm">
                 <Download className="h-4 w-4 mr-2" />
@@ -231,13 +366,71 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
               </Button>
             </div>
           </div>
+          
+          {/* Panel de filtros expandible */}
+          {showFilters && (
+            <div className="mt-4 pt-4 border-t">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Filtrar por rol
+                  </label>
+                  <select
+                    value={filterRole}
+                    onChange={(e) => setFilterRole(e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="all">Todos los roles</option>
+                    <option value="admin">👑 Administrador</option>
+                    <option value="manager">🛡️ Manager</option>
+                    <option value="resident">👤 Residente</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Filtrar por estado
+                  </label>
+                  <select
+                    value={filterStatus}
+                    onChange={(e) => setFilterStatus(e.target.value)}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="all">Todos los estados</option>
+                    <option value="active">Activo</option>
+                    <option value="pending">Pendiente</option>
+                    <option value="inactive">Inactivo</option>
+                  </select>
+                </div>
+                
+                <div className="flex items-end">
+                  <Button 
+                    variant="outline" 
+                    onClick={() => {
+                      setFilterRole('all');
+                      setFilterStatus('all');
+                      setSearchTerm('');
+                    }}
+                    className="w-full"
+                  >
+                    Limpiar filtros
+                  </Button>
+                </div>
+              </div>
+            </div>
+          )}
         </CardContent>
       </Card>
 
       {/* Tabla de usuarios */}
       <Card>
         <CardHeader>
-          <CardTitle>Lista de Usuarios</CardTitle>
+          <CardTitle className="flex items-center justify-between">
+            <span>Lista de Usuarios</span>
+            <span className="text-sm font-normal text-gray-500">
+              {loading ? 'Cargando...' : `${filteredUsers.length} de ${usuarios.length} usuarios`}
+            </span>
+          </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="overflow-x-auto">
@@ -253,7 +446,22 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
                 </tr>
               </thead>
               <tbody>
-                {usuariosEjemplo.map((usuario) => (
+                {loading ? (
+                  <tr>
+                    <td colSpan={6} className="p-8 text-center text-gray-500">
+                      Cargando usuarios...
+                    </td>
+                  </tr>
+                ) : filteredUsers.length === 0 ? (
+                  <tr>
+                    <td colSpan={6} className="p-8 text-center text-gray-500">
+                      {usuarios.length === 0 
+                        ? "No se encontraron usuarios en tu organización"
+                        : "No se encontraron usuarios que coincidan con los filtros"
+                      }
+                    </td>
+                  </tr>
+                ) : filteredUsers.map((usuario) => (
                   <tr key={usuario.id} className="border-b hover:bg-gray-50">
                     <td className="p-3">
                       <div className="flex items-center gap-3">
@@ -293,7 +501,12 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
                         >
                           <Eye className="h-4 w-4" />
                         </Button>
-                        <Button variant="ghost" size="sm" title="Editar usuario">
+                        <Button 
+                          variant="ghost" 
+                          size="sm" 
+                          title="Editar usuario"
+                          onClick={() => openEditModal(usuario)}
+                        >
                           <Edit className="h-4 w-4" />
                         </Button>
                         <Button variant="ghost" size="sm" title="Enviar email">
@@ -312,70 +525,6 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
         </CardContent>
       </Card>
 
-      {/* Acciones rápidas */}
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Acciones Rápidas</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            <Link href="/usuarios/new">
-              <Button variant="outline" className="w-full justify-start">
-                <UserPlus className="h-4 w-4 mr-2" />
-                Crear Nuevo Usuario
-              </Button>
-            </Link>
-            <Button variant="outline" className="w-full justify-start">
-              <Mail className="h-4 w-4 mr-2" />
-              Invitar por Email
-            </Button>
-            <Button variant="outline" className="w-full justify-start">
-              <Download className="h-4 w-4 mr-2" />
-              Importar desde CSV
-            </Button>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Gestión de Roles</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            <Button variant="outline" className="w-full justify-start">
-              <Shield className="h-4 w-4 mr-2" />
-              Configurar Permisos
-            </Button>
-            <Button variant="outline" className="w-full justify-start">
-              <Users className="h-4 w-4 mr-2" />
-              Asignar Roles Masivo
-            </Button>
-            <Button variant="outline" className="w-full justify-start">
-              <Building2 className="h-4 w-4 mr-2" />
-              Gestionar Comunidades
-            </Button>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-lg">Estadísticas</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-3">
-            <div className="flex justify-between text-sm">
-              <span>Usuarios activos:</span>
-              <span className="font-medium">18</span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span>Registros este mes:</span>
-              <span className="font-medium">6</span>
-            </div>
-            <div className="flex justify-between text-sm">
-              <span>Última actividad:</span>
-              <span className="font-medium">Hace 2 min</span>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
 
       {/* Modal de detalles del usuario */}
       {showUserDetail && selectedUser && (
@@ -563,6 +712,16 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Modal de edición de usuario */}
+      {showEditModal && selectedUser && (
+        <EditUserModal
+          user={selectedUser}
+          isOpen={showEditModal}
+          onClose={closeEditModal}
+          onUserUpdated={handleUserUpdated}
+        />
       )}
     </div>
   );
