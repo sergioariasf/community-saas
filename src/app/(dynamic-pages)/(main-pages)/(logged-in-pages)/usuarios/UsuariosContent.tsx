@@ -13,13 +13,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
-import { 
-  UserCog, 
-  UserPlus, 
-  Search, 
-  MoreHorizontal, 
-  Edit, 
-  Trash2, 
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import {
+  UserCog,
+  UserPlus,
+  Search,
+  MoreHorizontal,
+  Edit,
+  Trash2,
   Mail,
   Shield,
   Users,
@@ -28,12 +29,18 @@ import {
   Download,
   Eye,
   X,
-  ChevronDown
+  ChevronDown,
+  Send,
+  FileText,
+  Key
 } from 'lucide-react';
 import type { User as SupabaseUser } from '@supabase/supabase-js';
 import { useState, useEffect } from 'react';
 import { createClient } from '@/supabase-clients/client';
 import { EditUserModal } from '@/components/usuarios/EditUserModal';
+import { InvitationsPanel } from '@/components/usuarios/InvitationsPanel';
+import { PendingRegistrationsPanel } from '@/components/usuarios/PendingRegistrationsPanel';
+import { AccessCodesPanel } from '@/components/usuarios/AccessCodesPanel';
 import Link from 'next/link';
 
 interface UsuariosContentProps {
@@ -89,6 +96,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
     managers: 0,
     pending: 0
   });
+  const [currentOrgId, setCurrentOrgId] = useState<string | null>(null);
 
   const getRoleBadge = (role: string) => {
     switch (role) {
@@ -146,18 +154,23 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
       setLoading(true);
       const supabase = createClient();
 
-      // 1. Obtener la organización del usuario actual
-      const { data: currentUserRole, error: userError } = await supabase
+      // 1. Obtener la organización del usuario actual (tomar la primera si tiene múltiples roles)
+      const { data: userRoles, error: userError } = await supabase
         .from('user_roles')
         .select('organization_id')
         .eq('user_id', user.id)
-        .single();
+        .limit(1);
 
 
-      if (userError || !currentUserRole) {
+      if (userError || !userRoles || userRoles.length === 0) {
         console.error('Error getting current user organization:', userError);
         return;
       }
+
+      const currentUserRole = userRoles[0];
+
+      // Guardar organization_id para usar en otros paneles
+      setCurrentOrgId(currentUserRole.organization_id);
 
       // 2. Obtener todos los user_roles de la misma organización
       
@@ -298,7 +311,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
             </div>
           </CardContent>
         </Card>
-        
+
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
@@ -310,7 +323,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
             </div>
           </CardContent>
         </Card>
-        
+
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
@@ -322,7 +335,7 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
             </div>
           </CardContent>
         </Card>
-        
+
         <Card>
           <CardContent className="p-4">
             <div className="flex items-center gap-3">
@@ -336,7 +349,31 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
         </Card>
       </div>
 
-      {/* Filtros y búsqueda */}
+      {/* TABS - Sistema de Navegación */}
+      <Tabs defaultValue="lista" className="space-y-6">
+        <TabsList className="grid w-full grid-cols-4 h-auto">
+          <TabsTrigger value="lista" className="flex items-center gap-2 py-3">
+            <Users className="h-4 w-4" />
+            <span className="hidden sm:inline">Usuarios</span>
+            <Badge variant="secondary" className="ml-1">{stats.total}</Badge>
+          </TabsTrigger>
+          <TabsTrigger value="invitaciones" className="flex items-center gap-2 py-3">
+            <Send className="h-4 w-4" />
+            <span className="hidden sm:inline">Invitaciones</span>
+          </TabsTrigger>
+          <TabsTrigger value="solicitudes" className="flex items-center gap-2 py-3">
+            <FileText className="h-4 w-4" />
+            <span className="hidden sm:inline">Solicitudes</span>
+          </TabsTrigger>
+          <TabsTrigger value="codigos" className="flex items-center gap-2 py-3">
+            <Key className="h-4 w-4" />
+            <span className="hidden sm:inline">Códigos</span>
+          </TabsTrigger>
+        </TabsList>
+
+        {/* TAB 1: Lista de Usuarios (CONTENIDO ACTUAL) */}
+        <TabsContent value="lista" className="space-y-6">
+          {/* Filtros y búsqueda */}
       <Card className="mb-6">
         <CardContent className="p-4">
           <div className="flex flex-col sm:flex-row gap-4 items-center">
@@ -524,7 +561,23 @@ export function UsuariosContent({ user }: UsuariosContentProps) {
           </div>
         </CardContent>
       </Card>
+        </TabsContent>
 
+        {/* TAB 2: Invitaciones para Managers/Residents */}
+        <TabsContent value="invitaciones">
+          <InvitationsPanel organizationId={currentOrgId} />
+        </TabsContent>
+
+        {/* TAB 3: Solicitudes de Registro */}
+        <TabsContent value="solicitudes">
+          <PendingRegistrationsPanel />
+        </TabsContent>
+
+        {/* TAB 4: Códigos de Acceso */}
+        <TabsContent value="codigos">
+          <AccessCodesPanel />
+        </TabsContent>
+      </Tabs>
 
       {/* Modal de detalles del usuario */}
       {showUserDetail && selectedUser && (

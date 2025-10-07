@@ -21,6 +21,8 @@ export default {
       },
     ],
   },
+  // Marcar pdf-parse como paquete externo del servidor
+  serverExternalPackages: ['pdf-parse', 'pdfjs-dist', 'canvas'],
   experimental: {
     serverActions: {
       bodySizeLimit: '10mb', // Permitir archivos hasta 10MB
@@ -28,6 +30,25 @@ export default {
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  webpack: (config, { isServer }) => {
+    // Fix para pdf-parse en producción
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        canvas: false,
+      };
+
+      // Marcar pdf-parse como server-only en el cliente
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'pdf-parse': false,
+        'pdfjs-dist': false,
+      };
+    }
+
+    return config;
   },
   // Configuración para deployment
   async headers() {

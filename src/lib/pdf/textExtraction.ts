@@ -108,7 +108,8 @@ async function extractWithPdfParse(buffer: Buffer): Promise<TextExtractionResult
     // MÉTODO 1: Intentar directamente en Next.js
     try {
       console.log('[PDF Parse] Trying direct pdf-parse in Next.js...');
-      const pdfParse = (await import('pdf-parse')).default;
+      const pdfParseModule = await import('pdf-parse');
+      const pdfParse = (pdfParseModule as any).default || pdfParseModule;
       
       if (typeof pdfParse !== 'function') {
         throw new Error(`pdf-parse is not a function, got: ${typeof pdfParse}`);

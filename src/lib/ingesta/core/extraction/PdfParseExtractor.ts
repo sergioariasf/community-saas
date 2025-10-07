@@ -70,38 +70,37 @@ export class PdfParseExtractor extends BaseTextExtractor {
       this.log('info', 'Starting direct PDF-parse extraction...');
       
       // Import pdf-parse with error handling using dynamic import
-      const pdfParseModule = await import('pdf-parse');
-      const pdfParse = pdfParseModule.default;
-      
+      // Version 2.1.7 uses named export 'pdf' instead of default export
+      const { pdf } = await import('pdf-parse');
+
       // Validate buffer before processing
       if (!Buffer.isBuffer(buffer) || buffer.length === 0) {
         throw new Error('Invalid buffer provided to pdf-parse');
       }
-      
+
       // Log buffer info for debugging
       this.log('info', `Processing PDF buffer: ${buffer.length} bytes`);
-      
-      const data = await pdfParse(buffer, {
-        max: 0 // Parse all pages (remove any other options that might cause conflicts)
-      });
+
+      // Version 2.1.7 API: pdf(data) returns TextResult { text, total, pages, ... }
+      const data = await pdf(buffer);
 
       const extractedText = data.text.trim();
-      this.log('info', `PDF-parse completed: ${extractedText.length} characters, ${data.numpages} pages`);
-      
+      this.log('info', `PDF-parse completed: ${extractedText.length} characters, ${data.total} pages`);
+
       if (extractedText.length === 0) {
         this.log('warning', 'PDF-parse returned empty text - possibly encrypted or image-only PDF');
         return {
           success: false,
           error: 'PDF contains no extractable text (possibly encrypted or image-only)',
           text: null,
-          pages: data.numpages || 0
+          pages: data.total || 0
         };
       }
 
       return {
         success: true,
         text: extractedText,
-        pages: data.numpages,
+        pages: data.total,
         method: 'pdf-parse'
       };
 

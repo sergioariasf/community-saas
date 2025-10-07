@@ -11,6 +11,8 @@ import { Fragment } from 'react';
 
 function capitalize(word: string) {
   const lower = word.toLowerCase();
+  // Mapear nombres de providers a nombres amigables
+  if (word === 'azure') return 'Microsoft';
   return word.charAt(0).toUpperCase() + lower.slice(1);
 }
 

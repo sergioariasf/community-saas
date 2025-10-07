@@ -101,7 +101,7 @@ export const signInWithMagicLinkAction = actionClient
   });
 
 const signInWithProviderSchema = z.object({
-  provider: z.enum(['google', 'github', 'twitter']),
+  provider: z.enum(['google', 'azure', 'github', 'twitter']),
   next: z.string().optional(),
 });
 
@@ -121,11 +121,19 @@ export const signInWithProviderAction = actionClient
     if (next) {
       redirectToURL.searchParams.set('next', next);
     }
+
+    // Azure requiere el scope 'email' explícitamente
+    const oauthOptions: any = {
+      redirectTo: redirectToURL.toString(),
+    };
+
+    if (provider === 'azure') {
+      oauthOptions.scopes = 'email';
+    }
+
     const { error, data } = await supabase.auth.signInWithOAuth({
       provider,
-      options: {
-        redirectTo: redirectToURL.toString(),
-      },
+      options: oauthOptions,
     });
 
     if (error) {

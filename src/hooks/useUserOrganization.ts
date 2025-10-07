@@ -47,8 +47,8 @@ export function useUserOrganization(): UseUserOrganizationReturn {
         return;
       }
 
-      // Obtener organización del usuario a través de user_roles
-      const { data: userRoles, error: rolesError } = await supabase
+      // Obtener organización del usuario a través de user_roles (tomar primera si tiene múltiples)
+      const { data: userRolesData, error: rolesError } = await supabase
         .from('user_roles')
         .select(`
           organization_id,
@@ -61,16 +61,17 @@ export function useUserOrganization(): UseUserOrganizationReturn {
           )
         `)
         .eq('user_id', user.id)
-        .single();
+        .limit(1);
 
       if (rolesError) {
         throw new Error(`Error al obtener organización: ${rolesError.message}`);
       }
 
-      if (!userRoles?.organizations) {
+      if (!userRolesData || userRolesData.length === 0 || !userRolesData[0]?.organizations) {
         throw new Error('Usuario no tiene organización asignada');
       }
 
+      const userRoles = userRolesData[0];
       const org = userRoles.organizations as any;
       
       setOrganization({
